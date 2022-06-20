@@ -1,0 +1,52 @@
+site_name: Daffy
+theme:
+  name: material
+  logo: images/ducks.png
+  favicon: images/ducks.png
+  palette:
+    scheme: default
+    primary: black
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  features:
+    - navigation.instant
+    - navigation.indexes
+#    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    #- navigation.sections
+nav:
+-Home : index.md
+-nevNav : SupportingSoftware.md
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - def_list
+  - meta
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 5
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.details
+  - pymdownx.keys
+  #- pymdownx.magiclink
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+extra_css:
+    - css/extra.css
+    - css/code.css
