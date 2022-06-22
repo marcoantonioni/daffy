@@ -2,7 +2,8 @@
   height="500" style = "float">
 
 ##Step 1 Platform Requirements
-TESTING PUSH!! --TA
+THIS IS A NEW TEST --TA
+
 !!! danger "testing admonition feature, no danger"
     To use Daffy on **Amazon Web Services**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **AWS**, it breaks down to the following basic three items:
 
