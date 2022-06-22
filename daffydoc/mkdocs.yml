@@ -45,6 +45,7 @@ nav:
     - DB2: Supporting-Software/DB2.md
     - IBM LDAP: Supporting-Software/IBM-LDAP.md
     - Create Your Own Bastion: Supporting-Software/Create-Your-Own-Bastion.md
+    - Turbo: Supporting-Software/Turbo.md
   - Tips & Tricks:
     - Common Issues: Tips-&-Tricks/Common-Issues.md
     - Environment File: Tips-&-Tricks/Environment-File.md
