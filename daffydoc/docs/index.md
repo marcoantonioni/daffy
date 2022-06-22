@@ -4,8 +4,12 @@ title: Daffy
 hide:
   - toc
 ---
+<img src='ducks.png'/>
+DUCK IN MAIN
 [First Time User](openshift/index.md){ .md-button .md-button--primary }
 [Experienced User](cloud-paks/cp4data/installation/index.md){ .md-button .md-button--primary }
+
+
 <style>
   [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner { margin-left: 0;}
 
