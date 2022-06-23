@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -483,6 +488,8 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
+      
+        
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
@@ -1254,6 +1261,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1267,9 +1276,40 @@
                 
 
 
-  <h1>IBM Gym</h1>
-
-
+<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<p>The OpenShift Gym is a learning environment offering individuals the ability to deploy virtual machines to support installation of IBM technologies such as OpenShift and Cloud Paks.</p>
+<h1 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h1>
+<ol>
+<li>A <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym">Gym Membership</a> request can be made by filling out the form.</li>
+<li>An active <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/tecnet">TECNet VPN ID</a> is required to access and use the Gym. </li>
+</ol>
+<p>An email containing details on accessing the features of the OpenShift Gym is sent to the email address supplied once provisioning has completed. General information about the environment supplied is listed below. Refer to the provisioning email for detailed information.</p>
+<h1 id="set-up">Set Up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h1>
+<ol>
+<li>
+<p>Make Sure you are connected to the Tecnet VPN, in initaial setup it may require you to reset your password.</p>
+</li>
+<li>
+<p>Launch Termius or your preferred Terminal</p>
+<blockquote>
+<h3 id="termius">Termius<a class="headerlink" href="#termius" title="Permanent link">&para;</a></h3>
+</blockquote>
+</li>
+<li>on the left tabe click on hosts</li>
+<li>click on + New Host</li>
+<li>Add the IP address that was given in the provisioning email</li>
+</ol>
+<blockquote>
+<p>Your preffered Terminal
+run command
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ssh admin@{Server IP address} -p 32222
+</code></pre></div></p>
+</blockquote>
+<p>Next you will copy the prepopulated env file in your home directory to your daffy env directory
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cp vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
+</code></pre></div>
+You may make any changes needed in this file.</p>
+<h1 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h1>
 
               
             </article>

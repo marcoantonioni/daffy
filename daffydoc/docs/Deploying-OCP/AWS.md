@@ -1,10 +1,8 @@
-<img src='../images/aws.png'  align="top" width="400"
-  height="500" style = "float">
+<img src='../images/aws.png'  align="top" width="200"
+  height="300" style = "float">
 
 ##Step 1 Platform Requirements
-vcvcv
 
-helloo
 !!! danger "testing admonition feature, no danger"
     To use Daffy on **Amazon Web Services**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **AWS**, it breaks down to the following basic three items:
 

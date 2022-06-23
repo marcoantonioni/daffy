@@ -4,8 +4,8 @@ title: Daffy
 hide:
   - toc
 ---
-<img src='ducks.png'/>
-DUCK IN MAIN
+<img src='../images/ducks.png'
+     style="width:100px;height:100px;position:relative; right:5px; top:25px;"/>
 [First Time User](openshift/index.md){ .md-button .md-button--primary }
 [Experienced User](cloud-paks/cp4data/installation/index.md){ .md-button .md-button--primary }
 
@@ -27,10 +27,7 @@ DUCK IN MAIN
   }
 
   div.md-source-file {color: black; margin-left: 1rem;}
-
-
 </style>
-
 <div class="home-hero" style="margin:0 !!important">
   <div class="home-hero-text">
     <h1 style="display: inline">Daffy</h1>
