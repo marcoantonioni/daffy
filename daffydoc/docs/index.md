@@ -4,8 +4,9 @@ title: Daffy
 hide:
   - toc
 ---
-<img src='../images/ducks.png'
+<img src='/images/ducks.png'
      style="width:100px;height:100px;position:relative; right:5px; top:25px;"/>
+
 [First Time User](openshift/index.md){ .md-button .md-button--primary }
 [Experienced User](cloud-paks/cp4data/installation/index.md){ .md-button .md-button--primary }
 

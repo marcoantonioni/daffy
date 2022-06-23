@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#cloud-pak-for-data" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -656,10 +661,57 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Data
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-deploy-cloud-pak" class="md-nav__link">
+    Step 1: Deploy Cloud Pak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-deploying-service" class="md-nav__link">
+    Step 2: Deploying Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-status-of-deployment" class="md-nav__link">
+    Step 3: Status of Deployment
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1254,6 +1306,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-deploy-cloud-pak" class="md-nav__link">
+    Step 1: Deploy Cloud Pak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-deploying-service" class="md-nav__link">
+    Step 2: Deploying Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-status-of-deployment" class="md-nav__link">
+    Step 3: Status of Deployment
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1267,9 +1350,115 @@
                 
 
 
-  <h1>Data</h1>
-
-
+<h1 id="cloud-pak-for-data" style="text-align: left;">Cloud Pak for Data<a class="headerlink" href="#cloud-pak-for-data" title="Permanent link">&para;</a></h1>
+<p><img src='../images/data.png'
+       style="width:100px;height:100px;"/></p>
+<h2 id="step-1-deploy-cloud-pak">Step 1: Deploy Cloud Pak<a class="headerlink" href="#step-1-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
+<p>Deploying the Cloud Pak for Data requires one entries to your environment file (/data/daffy/env/<ENVIRONMENT_NAME>-env.sh).</p>
+<p>CP4D_VERSION=<version>     </p>
+<p>With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
+<table>
+<thead>
+<tr>
+<th align="left">CP4D Supported Version</th>
+<th align="center">OCP Versions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">4.0.5</td>
+<td align="center">4.6, 4.8</td>
+</tr>
+<tr>
+<td align="left">4.0.4</td>
+<td align="center">4.6, 4.8</td>
+</tr>
+<tr>
+<td align="left">4.0.3</td>
+<td align="center">4.6, 4.8</td>
+</tr>
+<tr>
+<td align="left">4.0.2</td>
+<td align="center">4.6</td>
+</tr>
+</tbody>
+</table>
+<p>You can copy the following to your <ENVIRONMENT_NAME>-env.sh</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CP4D_VERSION=&quot;4.0.5&quot;
+</code></pre></div>
+Run the following command to deploy the Cloud Pak for Data</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/cp4d/build.sh &lt;ENVIRONMENT_NAME&gt;
+</code></pre></div>
+When this step is complete, approx 60 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service/pattern is running at this point. The cluster is now ready to deploy the services/patterns.  At this stage, the cluster consist of bedrock operators and the Cloud Pak for Data operators in the following projects:</p>
+<p><strong>cpd-instance</strong>
+<strong>cpd-operators</strong>
+<strong>ibm-common-services</strong></p>
+<h2 id="step-2-deploying-service">Step 2: Deploying Service<a class="headerlink" href="#step-2-deploying-service" title="Permanent link">&para;</a></h2>
+<p>Deploying the Cloud Pak for Data requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are Watson Knowledge Studio (WKS), Watson Knowledge Catalog (WKC), Data Virtualization (DV), Watson Studio (WS), Statistical Package for Social Sciences (SPSS), and Watson Machine Learning (WML)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CP4D_ENABLE_SERVICE_WKS=&lt;true|false&gt;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>CP4D_ENABLE_SERVICE_WKC=&lt;true|false&gt;
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>CP4D_ENABLE_SERVICE_DV=&lt;true|false&gt;
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>CP4D_ENABLE_SERVICE_WS=&lt;true|false&gt;
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>CP4D_ENABLE_SERVICE_SPSS=&lt;true|false&gt;
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>CP4D_ENABLE_SERVICE_WML=&lt;true|false&gt;
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>CP4D_ENABLE_SERVICE_DATASTAGE=&lt;true|false&gt;
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>CP4D_ENABLE_SERVICE_DODS=&lt;true|false&gt;
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>CP4D_ENABLE_SERVICE_DMC=&lt;true|false&gt;
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>CP4D_ENABLE_SERVICE_COGNOS=&lt;true|false&gt;
+</code></pre></div>
+<p>With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
+<p><strong>WKS</strong> - Watson Knowledge Studio</p>
+<p><strong>WKC</strong> - Watson Knowledge Catalog</p>
+<p><strong>DV</strong> - Data Virtualization</p>
+<p><strong>WS</strong> - Watson Studio</p>
+<p><strong>SPSS</strong> - Statistical Package for Social Sciences</p>
+<p><strong>WML</strong> - Watson Machine Learning</p>
+<p><strong>DataStage</strong> - DataStage</p>
+<p><strong>DODS</strong> - Decision Optimization</p>
+<p><strong>DMC</strong> - DB2 Management Console</p>
+<p><strong>Cognos</strong> - Cognos</p>
+<p><strong>Run the following command</strong> to deploy the Cloud Pak for Data services.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt;
+</code></pre></div>
+<h2 id="step-3-status-of-deployment">Step 3: Status of Deployment<a class="headerlink" href="#step-3-status-of-deployment" title="Permanent link">&para;</a></h2>
+<p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the --help flag to see what flags you can use to get information on your service deployment.</p>
+<p><strong>Run the following commands to check the Cloud Pak for Data to see what command flags you can run</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --help
+</code></pre></div>
+The following command will give you the status of all components for the pattern you deployed</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --AllStatus
+</code></pre></div>
+<p>If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>watch -c /data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --AllStatus
+</code></pre></div>
+If you want to want to see more detail status on an individual service, you can run each service status.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WKCStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WKSStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WSStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --DVStatus
+</code></pre></div></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WMLStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --SPSSStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --DataStageStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --DODSStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>/data/daffy/cp4d/build.sh &lt;ENVIRONMENT_NAME&gt; --Console
+</code></pre></div></p>
 
               
             </article>
