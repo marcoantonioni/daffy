@@ -27,8 +27,8 @@ hide:
 </p>
 
 <html>
-  <head>
-    <style>
+<head>
+<style>
 .button {
   border: none;
   color: white;
@@ -43,18 +43,15 @@ hide:
 
 .button1 {background-color: #4CAF50;} /* Green */
 .button2 {background-color: #008CBA;} /* Blue */
-      </style>
-    </head>
-
-  <body>
-    <div style="text-align:center">
-
-    <button onclick="location.href='github.com'" class="button button1">First Time User</button>
-    <button class="button button2">Experienced User</button>
-
-  </body>
+</style>
+</head>
+<body>
+<div style="text-align:center">
+<button onclick="location.href='/Tips-%26-Tricks/Common-Issues/'" class="button button1">New User</button>
+<button onclick="location.href='/Overview/Tools-Installed/'" class="button button2">Experienced User</button>
+</div>
+</body>
 </html>
-
 
 <h1>
 Daffy is <b>D</b>eployment <b>A</b>utomation <b>F</b>ramework <b>F</b>or <b>Y</b>ou. A tool to do all the heavy lifting of the OpenShift and IBM Cloud Pak installs. The National Market Top Team created Daffy to assist the technical sales teams with the progression of IBM Cloud Pak opportunities. The goal is to provide the technical sales with a set of (easy to use) scripts that will aid in the installation of OpenShift and the IBM Cloud Pak's.
