@@ -77,6 +77,9 @@ Using Daffy IBMers, business partners and customers are onboarded to IBM Cloud P
     ## Daffy scripts were designed to help pre-sales(CTP/BP) with POC deployments. If you choose to use this in a production environment, you may, but it will be on the installer for support of that installation.  IBM can not give support for that deployment with the Daffy tool. The installer/business partner would need to verify  the environment that it meets all HA , best practices, management aspects and security requirements. As this is a scripting engine, you have full access to the logic/code and have ability to make any changes you feel fit. If you do make any changes to the daffy engine outside of your cluster environment file, you are on your own, we will not be able to assistant with that environment.  Please Refer to the Production Deployment Guides for the recommended approach when advising customers on how to deploy a Production Ready Environment.
 
 <p align = "center">
-    <img src='../images/process.png'  align="top" style = "float">
+    <img src='../images../process.png'  align="top" style = "float">
 </p>
 ![Tux, the Linux mascot](../images/process.png)
+
+
+<img src ="../../images/ducks.png">
