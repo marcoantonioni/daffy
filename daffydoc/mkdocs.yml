@@ -4,6 +4,9 @@ theme:
 #  custom_dir: overrides
   logo: images/ducks.png
   favicon: images/ducks.png
+  icon:
+    admonition:
+      <type>: material/alert
   palette:
     scheme: default
     primary: black
