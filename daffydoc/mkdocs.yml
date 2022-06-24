@@ -16,7 +16,7 @@ theme:
   features:
     - navigation.instant
     - navigation.indexes
-    - navigation.tabs
+  #  - navigation.tabs
     - navigation.tracking
     - navigation.top
     - toc.follow
