@@ -79,7 +79,11 @@ Using Daffy IBMers, business partners and customers are onboarded to IBM Cloud P
 <p align = "center">
     <img src='../images../process.png'  align="top" style = "float">
 </p>
-![Tux, the Linux mascot](../images/process.png)
+![process](../../images/process.png)
 
+<img src ="../images/ducks.png">
+
+<div class="dave-page" markdown='block'>
 
 <img src ="../../images/ducks.png">
+</div>
