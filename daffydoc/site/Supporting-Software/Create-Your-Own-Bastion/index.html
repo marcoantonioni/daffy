@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#what-is-a-bastion-server-why-does-it-exist" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -792,6 +797,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Create Your Own Bastion
@@ -1262,6 +1269,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1275,9 +1284,72 @@
                 
 
 
-  <h1>Create Your Own Bastion</h1>
-
-
+<h1 id="what-is-a-bastion-server-why-does-it-exist">What is a bastion server? Why does it exist?<a class="headerlink" href="#what-is-a-bastion-server-why-does-it-exist" title="Permanent link">&para;</a></h1>
+<p>A bastion host is <strong>a server whose purpose is to provide access to a private network from an external network,</strong> such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration. Openshift uses a bastion to help create a running cluster. A bastion can be reused for multiple clusters. In some scenarios for POC purposes such as User Provisioned Infrastructure (UPI), the bastion can be used as the proxy to the cluster.</p>
+<p>Bastion servers can be installed anywhere. This guide assumes the bastion server is Ubuntu 20.04 Minimal and will be in the IBM Cloud.</p>
+<p>Requirements for completing this task is to have an IBMid, an IBM cloud account, and a local SSH key. For more information, go to <strong>Daffy Prerequisites.</strong></p>
+<p>Detailed below are the instructions to build your own bastion to do an IPI or MSP install.</p>
+<h1 id="bastion-server-using-ibm-cloud">Bastion Server Using IBM Cloud<a class="headerlink" href="#bastion-server-using-ibm-cloud" title="Permanent link">&para;</a></h1>
+<ol>
+<li>
+<p>First, open a web browser and go to http://cloud.ibm.com</p>
+</li>
+<li>
+<p>Enter your id and click <strong>'Continue'</strong></p>
+</li>
+</ol>
+<p><img alt="1.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/1.png" /></p>
+<ol>
+<li>Once logged in, select <strong>'Catalog'</strong> in the top menu bar</li>
+</ol>
+<p><img alt="2.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/2.png" /></p>
+<ol>
+<li>Once the Catalog is loaded, select <strong>'Compute'</strong> or search the catalog for Virtual Servers. Select <strong>'Virtual Server for Classic'</strong></li>
+</ol>
+<p><img alt="3.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/3.png" /></p>
+<p>Alternative: Skip step 3 and search for "virtual server", choosing "virtual server for classic". Both options achieve the same thing.  </p>
+<p><img alt="4.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/4.png" /></p>
+<ol>
+<li>Fill out the details. (Public, hostname can be anything, and so can domain – feel free to leave what is there originally for your domain). Choose your billing method based on needs to be either <strong>Hourly</strong> or <strong>Monthly (~$40/mo.)</strong> and choose a <strong>Location.</strong></li>
+</ol>
+<p><img alt="5.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/5.png" /></p>
+<ol>
+<li>Scroll down and fill out the remainder of the information. Choose a <strong>server type</strong> and select your <strong>SSH key</strong> so you can login. Finally, make sure you have the <strong>Ubuntu 20.04</strong> Operating System selected.</li>
+</ol>
+<p><strong>Note:</strong> You can use any other available tool to create a key if needed</p>
+<p><img alt="6.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/6.png" /></p>
+<ol>
+<li>Click the <strong>agreement</strong> on the right-hand pane and select <strong>'Create'</strong></li>
+</ol>
+<p><img alt="7.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/7.png" /></p>
+<ol>
+<li>This will take you to a <strong>device page.</strong> You can search for your bastion you have created. Once your server is done provisioning and has a <strong>start date,</strong> you can login to it via Termius using the <strong>Public IP address.</strong></li>
+</ol>
+<p>**If connecting to a VPN to connect to the network, you will use the Private IP address, but Public will be used more frequently.</p>
+<p><img alt="8.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/8.png" /></p>
+<ol>
+<li>Create a new host in Termius: use your <strong>SSH key as the password</strong>, use <strong>root as the username</strong>, input the <strong>Public IP Address</strong> from the device list as your host's address, and <strong>create a label.</strong></li>
+</ol>
+<p><img alt="9.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/9.png" /></p>
+<p>**If you don't use a SSH Key, you can go into the details of the bastion you created by double clicking on it and going to the passwords section. This password will not show until provisioning is complete.</p>
+<ol>
+<li>Once you have connected your bastion to <strong>Termius</strong>, install <strong>Daffy</strong> to the terminal of your newly created host.</li>
+</ol>
+<h1 id="ibm-technology-zone">IBM Technology Zone<a class="headerlink" href="#ibm-technology-zone" title="Permanent link">&para;</a></h1>
+<p>An alternative to creating a bastion using a paid IBM Cloud account is to use <strong>IBM Technology Zone.</strong></p>
+<ol>
+<li>
+<p>Use this link to navigate to <strong>IBM Technology Zone:</strong> https://techzone.ibm.com/collection/base-images</p>
+</li>
+<li>
+<p>Scroll down to environments, and choose <strong>IBM Virtual Server Instance (Classic)</strong></p>
+</li>
+</ol>
+<p><img alt="10.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/10.png" /></p>
+<ol>
+<li>From there, complete your reservation. Make sure to <strong>fill out items 1 – 4</strong>, leaving the other fields <strong>blank</strong>.</li>
+</ol>
+<p><img alt="11.png" src="../../images/SupportingSoftware/CreateYourOwnBastion/11.png" /></p>
 
               
             </article>
