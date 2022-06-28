@@ -29,6 +29,8 @@ To find your GCP project you can refer to this:
 1. You can list your Project ID from the Drop down
 2. You can see your Project ID from the Dashboard
 
+![GCP1.png](../images/DeployingOCP/GCP/GCP1.png)
+
 ## Identifying a region or zone
 
 Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the **region** and the second part of the name describes the **zone** in the region:
@@ -60,9 +62,13 @@ For you to use Daffy to install on **GCP**, you need to create a service account
 
 Within your **GCP** project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements), make sure your service account has the correct permissions.
 
+![GCP2.png](../images/DeployingOCP/GCP/GCP2.png)
+
 **API Services Enabled:**
 
 For each **GCP** project, you need to enable API access. Within your **GCP** project, you would need to enable each API needed for the OpenShift install. From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements), you can search for each API and confirm/enable each API Service.
+
+![GCP3.png](../images/DeployingOCP/GCP/GCP3.png)
 
 **Quota:**
 
@@ -73,7 +79,11 @@ For each **GCP** project, you need to enable API access. Within your **GCP** pro
 3. Search for the quota you are looking for
 4. Verify Limit/Used Percentage
 
+![GCP4.png](../images/DeployingOCP/GCP/GCP4.png)
+
 ## Once you open the **"All Quotas"** Page, you can search for each quota to see its limits.
+
+![GCP5.png](../images/DeployingOCP/GCP/GCP5.png)
 
 **Dedicated public host Zone:**
 
@@ -84,6 +94,8 @@ You will need to create a DZS hosted Zone project.  For the OpenShift install, y
 3. Transfer the domain to GCP Name services listed in your new **GCP** DNS Zone
 
 # Setting up DNS for GCP Deployment with OpenShift:
+
+ [![IMAGE_ALT](https://www.youtube.com/watch?v=CAkWQnOJ88A.jpg)](https://www.youtube.com/watch?v=CAkWQnOJ88A)
 
 # Environment File
 
@@ -106,6 +118,13 @@ cp /data/daffy/env/samples/**gcp-ipi-env.sh** /data/daffy/env/**<ENVIRONMENT_NAM
 Optional:
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
+```
+OCP_INSTALL_TYPE="gcp-ipi"
+GCP_PROJECT_ID="<YourGCPProjectID>"       
+GCP_REGION="<AnyValidGCPRegion>"
+#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
+```
+
 If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
 
 For **GCP**, you need to download your Service Key as well.  Save this to your home path:  **~/.gcp/osServiceAccount.json**
@@ -115,15 +134,26 @@ For **GCP**, you need to download your Service Key as well.  Save this to your h
 1. In your **GCP** project, go to IAM and Select Service accounts
 2. Select or Create new Service Account
 3. From the Service Account, select the Keys tab to create new Key.
-   *** FYI  after you create the Key, you can not view/download it.  You can only get the details at the time of creation
+
+*** FYI  after you create the Key, you can not view/download it.  You can only get the details at the time of creation
+
+![GCP6.png](../images/DeployingOCP/GCP/GCP6.png)
 
 ## Execution
 
 To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory
 
+```
+/data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
+```
+
 Once your cluster is fully deployed you can access the help menu which has a number of options.
 
 **Note:** <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
+
+```
+/data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
+```
 
  Here is a full example for deploying OpenShift on **GCP** with the Daffy process.
 
