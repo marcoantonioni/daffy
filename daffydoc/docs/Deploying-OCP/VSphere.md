@@ -1,3 +1,6 @@
+<p align = "left">
+    <img src='../images/vsphere.png'  align="top" style = "float">
+</p>
 ## Platform Requirements
 
 To install Daffy on **VSphere**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.
