@@ -31,7 +31,6 @@
 Watson AIOps</button>
 <button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">
 WebSphere Automation</button>
-<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class=""</button>
 </div>
 </body>
 </html>

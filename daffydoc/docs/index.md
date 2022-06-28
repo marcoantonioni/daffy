@@ -47,17 +47,21 @@ hide:
 </head>
 <body>
 <div style="text-align:center">
-<button onclick="location.href='/daffy/Tips-%26-Tricks/Common-Issues/'" class="button button1">New User</button>
-<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">Experienced User</button>
+<button onclick="location.href='/daffy/Deploying-OCP/Pre-Req/'" class="button button1">New User</button>
+<button onclick="location.href='/daffy/Tips-%26-Tricks/Common-Issues'" class="button button2">Experienced User</button>
 </div>
 </body>
 </html>
 
 <h1>
+  <FONT COLOR="#000000">
 Daffy is <b>D</b>eployment <b>A</b>utomation <b>F</b>ramework <b>F</b>or <b>Y</b>ou. A tool to do all the heavy lifting of the OpenShift and IBM Cloud Pak installs. The National Market Top Team created Daffy to assist the technical sales teams with the progression of IBM Cloud Pak opportunities. The goal is to provide the technical sales with a set of (easy to use) scripts that will aid in the installation of OpenShift and the IBM Cloud Pak's.
+  </FONT>
 </h1>
 <h1>
+  <FONT COLOR="#000000">
 Using Daffy IBMers, business partners and customers are onboarded to IBM Cloud Pak's in less than a few hours, removing challenges that previously existing setting up OpenShift.
+  </FONT>
 </h1>
 
 !!! Warning "Important"
