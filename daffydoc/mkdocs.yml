@@ -16,11 +16,11 @@ theme:
   features:
     - navigation.instant
     - navigation.indexes
-  #  - navigation.tabs
+    - navigation.tabs
     - navigation.tracking
     - navigation.top
     - toc.follow
-  #  - navigation.sections
+    - navigation.sections
     - navigation.expand
     - navigation.tracking
 nav:
@@ -39,6 +39,7 @@ nav:
     - ROKS: Deploying-OCP/ROKS.md
     - TechZone: Deploying-OCP/TechZone.md
   - Cloud Paks:
+    - Cloud-Paks/index.md
     - Business Automation: Cloud-Paks/Business-Automation.md
     - Data: Cloud-Paks/Data.md
     - Integration: Cloud-Paks/Integration.md
