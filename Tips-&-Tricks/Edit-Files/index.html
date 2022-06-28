@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#editing-files" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -737,10 +742,43 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Edit Files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Edit Files
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-vi-commands-you-will-use-to-edit-your-environment-file" class="md-nav__link">
+    Basic vi commands you will use to edit your environment file:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1107,6 +1145,23 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-vi-commands-you-will-use-to-edit-your-environment-file" class="md-nav__link">
+    Basic vi commands you will use to edit your environment file:
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1120,9 +1175,22 @@
                 
 
 
-  <h1>Edit Files</h1>
-
-
+<h1 id="editing-files">Editing Files<a class="headerlink" href="#editing-files" title="Permanent link">&para;</a></h1>
+<h2 id="basic-vi-commands-you-will-use-to-edit-your-environment-file">Basic vi commands you will use to edit your environment file:<a class="headerlink" href="#basic-vi-commands-you-will-use-to-edit-your-environment-file" title="Permanent link">&para;</a></h2>
+<p>Use the arrows on your keyboard to go to location you want to edit, you can not use your mouse.</p>
+<p><strong>[ESC]</strong> starts all modes and <strong>[ESC]</strong> will end all modes.</p>
+<p>Modes:</p>
+<p><strong>[ESC] x</strong>     = deletes one character where you cursor is. Once done <strong>[ESC]</strong></p>
+<p><strong>[ESC] i</strong>      =  puts you in insert mode, just start typing what you want to add. Once done <strong>[ESC]</strong></p>
+<p><strong>[ESC] dd</strong>  = delete entire line cursor is on.  Once done <strong>[ESC]</strong></p>
+<p><strong>[ESC] u</strong>     = will undo your last action.  Once done <strong>[ESC]</strong></p>
+<p>Once done, the following will save your file:</p>
+<p><strong>[ESC] [SHIFT] : wq [ENTER]</strong>   </p>
+<p>If you messed up the file and you want to exit and not save your file:</p>
+<p><strong>[ESC] [SHIFT] :  q! [ENTER]</strong>   </p>
+<p>VI Cheat-sheet -</p>
+<p>https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf</p>
+<p>Nano Cheat-sheet           https://itsfoss.com/nano-editor-guide/</p>
 
               
             </article>
