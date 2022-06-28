@@ -47,8 +47,8 @@ hide:
 </head>
 <body>
 <div style="text-align:center">
-<button onclick="location.href='/Tips-%26-Tricks/Common-Issues/'" class="button button1">New User</button>
-<button onclick="location.href='/Overview/Tools-Installed/'" class="button button2">Experienced User</button>
+<button onclick="location.href='/daffy/Tips-%26-Tricks/Common-Issues/'" class="button button1">New User</button>
+<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">Experienced User</button>
 </div>
 </body>
 </html>
@@ -83,7 +83,9 @@ All roads lead to Cloud Pak. The Daffy automation process is a <b>three step pro
       <title>HTML Video embed</title>
    </head>
    <body>
+    <div style="text-align:center">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/LFqc0WD7x-U" frameborder="0" allowfullscreen></iframe>
       </iframe>
+      </div>
    </body>
 </html>

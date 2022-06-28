@@ -1,0 +1,127 @@
+At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
+
+##Step 1 Deploying the Cloud Pak
+
+Deploying the Cloud Pak for Integration only requires one entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
+
+**CP4I_VERSION=<version>**
+
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+
+```
+CP4I_VERSION=2021.4.1
+```
+
+With this one value, the daffy engine will be able to install the version of Cloud Pak for Integration and the Platform Navigator.
+
+The service consist of the following products.
+
+platform navigator
+
+| CP4D Supported Version    | OCP Versions |
+| :---      |    :----:     |  
+| 2021.4.1     | 4.6, 4.8      |
+| 2021.3.1     | 4.6, 4.8      |
+| 2021.2.1     | 4.6, 4.8      |
+
+**Run the following command** to deploy the Cloud Pak for Integration.
+
+```
+/data/daffy/cp4i/build.sh <ENVIRONMENT_NAME>
+```
+
+When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services/patterns.  At this stage, the cluster consists  of common services and the Cloud Pak for Integration operators and some services in the following projects:
+
+**cp4i**
+
+**ibm-common-services**
+
+## Step 2 Deploying Services
+
+Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS)
+
+```
+CP4I_ENABLE_SERVICE_ACEDESIGN=<true|false>
+
+CP4I_ENABLE_SERVICE_ACEDASH=<true|false>
+
+CP4I_ENABLE_SERVICE_ASSETREPO=<true|false>
+
+CP4I_ENABLE_SERVICE_TRACING=<true|false>
+
+CP4I_ENABLE_SERVICE_MQSINGLE=<true|false>
+
+CP4I_ENABLE_SERVICE_APIC=<true|false>
+
+CP4I_ENABLE_SERVICE_MQHA=<true|false>
+
+CP4I_ENABLE_SERVICE_EVENTSTREAMS=<true|false>
+```
+With these values, the daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.
+
+**ACEDESIGN** - App Connect Designer
+
+**ACEDASH** - App Connect Dashboard
+
+**ASSETREPO** - Integration Asset Repository
+
+**TRACING** - Operations Dashboard Tracing
+
+**MQSINGLE** - Single Instance of MQ
+
+**APIC** - API Connect
+
+**MQHA** - Cloud Native MQ HA
+
+**EVENTSTREAMS** - Event Streams
+
+**Run the following command** to deploy the Cloud Pak for Integration services.
+
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME>
+```
+## Step 3 Status of Deployment
+
+The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the CP4I service deployment you can run the help flag to see what flags you can use to get information on your service deployment.
+
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --help
+```
+
+**Run the following commands** to check the Cloud Pak for Integration services installation progress.
+
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --AllStatus
+```
+
+If you want to want to see more detail status on an individual service, you can run each service status.
+
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --AceDashStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --AceDesignStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --AssetRepoStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --TracingStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --MQSingleStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --APICStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --MQHAStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --EventStreamsStatus
+```
+To find out the connection info to your Integration Platform Navigator instance, you can run the console flag to get user names, passwords and URLs to connect to.
+
+```
+/data/daffy/cp4i/build.sh <ENVIRONMENT_NAME> --console
+```
