@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -208,9 +208,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
@@ -264,9 +262,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
@@ -531,9 +527,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
@@ -649,9 +643,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
@@ -751,9 +743,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
@@ -837,9 +827,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
@@ -971,9 +959,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
@@ -1041,9 +1027,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
@@ -1265,7 +1249,6 @@
 <li>You can list your Project ID from the Drop down</li>
 <li>You can see your Project ID from the Dashboard</li>
 </ol>
-<p><img alt="GCP1.png" src="../../images/DeployingOCP/GCP/GCP1.png" /></p>
 <h2 id="identifying-a-region-or-zone">Identifying a region or zone<a class="headerlink" href="#identifying-a-region-or-zone" title="Permanent link">&para;</a></h2>
 <p>Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the <strong>region</strong> and the second part of the name describes the <strong>zone</strong> in the region:</p>
 <p>Region</p>
@@ -1282,10 +1265,8 @@ To find a list of regions, you can refer to this:</p>
 <p><strong>Permission:</strong></p>
 <p><img src="/images/download.jpeg" style="float: left; margin-right: 10px;" /></p>
 <p>Within your <strong>GCP</strong> project, you would need to go to IAM  Section and create/use Service Account.  From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements">requirements doc</a>, make sure your service account has the correct permissions.</p>
-<p><img alt="GCP2.png" src="../../images/DeployingOCP/GCP/GCP2.png" /></p>
 <p><strong>API Services Enabled:</strong></p>
 <p>For each <strong>GCP</strong> project, you need to enable API access. Within your <strong>GCP</strong> project, you would need to enable each API needed for the OpenShift install. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements">requirements doc</a>, you can search for each API and confirm/enable each API Service.</p>
-<p><img alt="GCP3.png" src="../../images/DeployingOCP/GCP/GCP3.png" /></p>
 <p><strong>Quota:</strong></p>
 <p>For each <strong>GCP</strong> project, you need to enable API access. Within your <strong>GCP</strong> project, you would need to enable each API needed for the OpenShift install. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements">requirements doc</a>, you can search for each API and confirm/enable each API Service.</p>
 <ol>
@@ -1294,9 +1275,7 @@ To find a list of regions, you can refer to this:</p>
 <li>Search for the quota you are looking for</li>
 <li>Verify Limit/Used Percentage</li>
 </ol>
-<p><img alt="GCP4.png" src="../../images/DeployingOCP/GCP/GCP4.png" /></p>
 <h2 id="once-you-open-the-all-quotas-page-you-can-search-for-each-quota-to-see-its-limits">Once you open the <strong>"All Quotas"</strong> Page, you can search for each quota to see its limits.<a class="headerlink" href="#once-you-open-the-all-quotas-page-you-can-search-for-each-quota-to-see-its-limits" title="Permanent link">&para;</a></h2>
-<p><img alt="GCP5.png" src="../../images/DeployingOCP/GCP/GCP5.png" /></p>
 <p><strong>Dedicated public host Zone:</strong></p>
 <p>You will need to create a DZS hosted Zone project.  For the OpenShift install, you need the following:</p>
 <ol>
@@ -1305,7 +1284,6 @@ To find a list of regions, you can refer to this:</p>
 <li>Transfer the domain to GCP Name services listed in your new <strong>GCP</strong> DNS Zone</li>
 </ol>
 <h1 id="setting-up-dns-for-gcp-deployment-with-openshift">Setting up DNS for GCP Deployment with OpenShift:<a class="headerlink" href="#setting-up-dns-for-gcp-deployment-with-openshift" title="Permanent link">&para;</a></h1>
-<p><a href="https://www.youtube.com/watch?v=CAkWQnOJ88A"><img alt="IMAGE_ALT" src="https://www.youtube.com/watch?v=CAkWQnOJ88A.jpg" /></a></p>
 <h1 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h1>
 <p>Deploying the OpenShift on <strong>GCP</strong> only requires three entries to your <strong>existing</strong> core environment file (<strong><ENVIRONMENT_NAME></strong>-env.sh) plus a local service account file.</p>
 <p><strong>Note:</strong> You can look in the samples directory on your bastion for example of <strong>GCP</strong> install : /data/daffy/env/samples/<strong>gcp-ipi-env.sh</strong></p>
@@ -1317,28 +1295,18 @@ To find a list of regions, you can refer to this:</p>
 <p><strong>GCP_REGION</strong>= <a href="https://cloud.google.com/compute/docs/regions-zones"><AnyValidGCPRegion></a></p>
 <p>Optional:
 <strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>OCP_INSTALL_TYPE=&quot;gcp-ipi&quot;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>GCP_PROJECT_ID=&quot;&lt;YourGCPProjectID&gt;&quot;       
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>GCP_REGION=&quot;&lt;AnyValidGCPRegion&gt;&quot;
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
-</code></pre></div>
 <p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
 <p>For <strong>GCP</strong>, you need to download your Service Key as well.  Save this to your home path:  <strong>~/.gcp/osServiceAccount.json</strong></p>
 <ol>
 <li>In your <strong>GCP</strong> project, go to IAM and Select Service accounts</li>
 <li>Select or Create new Service Account</li>
-<li>From the Service Account, select the Keys tab to create new Key.</li>
+<li>From the Service Account, select the Keys tab to create new Key.
+   *** FYI  after you create the Key, you can not view/download it.  You can only get the details at the time of creation</li>
 </ol>
-<p>*** FYI  after you create the Key, you can not view/download it.  You can only get the details at the time of creation</p>
-<p><img alt="GCP6.png" src="../../images/DeployingOCP/GCP/GCP6.png" /></p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
-</code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
 <p><strong>Note:</strong> <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help
-</code></pre></div>
 <p>Here is a full example for deploying OpenShift on <strong>GCP</strong> with the Daffy process.</p>
 <p><a href="https://www.youtube.com/watch?v=4jpCXlG2ReE"><img alt="IMAGE_ALT" src="https://img.youtube.com/vi/UmX4kyB2wfg/0.jpg" /></a></p>
 
@@ -1413,10 +1381,10 @@ To find a list of regions, you can refer to this:</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.expand", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tracking", "navigation.top", "toc.follow", "navigation.expand", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a877e258.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>

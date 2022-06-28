@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -74,11 +74,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#cloud-pak-for-business-automation" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -208,9 +203,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
@@ -262,9 +255,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
@@ -462,9 +453,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
@@ -507,8 +496,6 @@
       
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
-      
-        
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
@@ -590,9 +577,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
@@ -692,9 +677,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
@@ -778,9 +761,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
@@ -912,9 +893,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
@@ -982,9 +961,7 @@
   
   
     
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
@@ -1130,8 +1107,6 @@
   
   
   
-    
-  
   
 </nav>
                   </div>
@@ -1145,113 +1120,9 @@
                 
 
 
-<h1 id="cloud-pak-for-business-automation">Cloud Pak for Business Automation<a class="headerlink" href="#cloud-pak-for-business-automation" title="Permanent link">&para;</a></h1>
-<p>At this point, you have a working OCP cluster on your platform of choice. Your <strong><environment-name></strong>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
-<p>1) The Cloud Pak info that you wish to install</p>
-<p>2) The services that you wish to install on the Cloud Pak</p>
-<h1 id="deploying-the-cloud-pak">Deploying the Cloud Pak<a class="headerlink" href="#deploying-the-cloud-pak" title="Permanent link">&para;</a></h1>
-<p>Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
-<p><strong>CP4BA_VERSION=</strong></p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
-<p>With these two values, the daffy engine will be able to install the version of Cloud Pak for Business Automation and the  and prepare for desired service.</p>
-<p>Optional you can specify IFIX:</p>
-<p><strong>CP4BA_IFIX=</strong></p>
-<p><strong>Valid Options:</strong></p>
-<p>CP4BA_VERSION              </p>
-<p><strong>21.0.3</strong></p>
-<p>CP4BA_IFIX (Optional)</p>
-<p><strong>IF005</strong>
-<strong>IF007</strong>                                          <br />
-<strong>IF008</strong></p>
-<p>CP4BA_DEPLOYMENT_STARTER_SERVICE</p>
-<p><strong>content</strong></p>
-<p><strong>decisions</strong></p>
-<p><strong>content-decisions</strong></p>
-<p><strong>workflow</strong></p>
-<p><strong>samples</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
-</code></pre></div>
-<p>Service Components  CP4BA Version
-decisions   odm,bai     21.0.3<br />
-content     filenet,cmis,ier,tm,bai     21.0.3<br />
-content-decisions   filenet,cmis,ier,tm,odm,bai     21.0.3<br />
-workflow    workflow,workstreams,pfs,baw_authoring,case,bai     21.0.3<br />
-samples     Depends on sample   21.0.3</p>
-<p>Run the following command to deploy the Cloud Pak for Business Automation.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/cp4ba/build.sh &lt;ENVIRONMENT_NAME&gt;
-</code></pre></div>
-<p>When this step is complete, approx 10 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service  is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consist of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:</p>
-<p>cp4ba-starter</p>
-<p>ibm-common-services</p>
-<p><a href="https://www.youtube.com/watch?v=GY57pn26Duw"><img alt="IMAGE_ALT" src="https://www.youtube.com/watch?v=GY57pn26Duw.jpg" /></a></p>
-<h1 id="deploying-services">Deploying Services<a class="headerlink" href="#deploying-services" title="Permanent link">&para;</a></h1>
-<p>Deploying the service does not need any new values to your environment file (<strong><ENVIRONMENT_NAME></strong>-env.sh).  It will use the same values during the cloud pak deployment.</p>
-<p><strong>CP4BA_VERSION=</strong></p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
-<p>With these two values, the daffy engine will be able to install the version of Cloud Pak for Business Automation and the desired service.</p>
-<p>Instead of using the include services,  you can also deploy your own sample or the included sample CR files from daffy.</p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE</strong>=samples</p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE</strong>=<valid sample in daffy samples folder></p>
-<div class="highlight"><pre><span></span><code> *** /data/daffy/cp4ba/templates/services/samples   **without the .yaml** in the name
-</code></pre></div>
-<p>To use samples, you would give the name of the sample in this directory .</p>
-<p>ocp-starter-ocs-adp-bai-IF008
-ocp-starter-ocs-bai-content-decisions-workflow-streams-IF007
-ocp-starter-ocs-workflow-IF008
-roks-starter-all-IF008
-roks-starter-nfs-all-IF008</p>
-<p>This is just the daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.</p>
-<p><strong>The given sample names tell you which platform, storage, service and version.</strong></p>
-<p><strong>Optional:</strong></p>
-<p>If  you want to deploy Open Prediction Service HUB(OPS), you can set this flag to setup it up in your cluster.</p>
-<p><strong>CP4BA_ENABLE_SERVICE_OPS</strong>=<true|false></p>
-<p><strong>Valid Options:</strong></p>
-<p>CP4BA_VERSION              </p>
-<div class="highlight"><pre><span></span><code>                                         21.0.3
-</code></pre></div>
-<p>CP4BA_DEPLOYMENT_STARTER_SERVICE</p>
-<div class="highlight"><pre><span></span><code>                                         content
+  <h1>Business Automation</h1>
 
-                                         decisions
 
-                                         content-decisions
-
-                                         workflow
-
-                                         samples
-</code></pre></div>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CP4BA_VERSION=&quot;21.0.3&quot;
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>CP4BA_DEPLOYMENT_STARTER_SERVICE=&quot;content&quot;
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-all-IF008
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>#CP4BA_ENABLE_SERVICE_OPS=&quot;&lt;true|false&gt;&quot;
-</code></pre></div>
-Service Components  CP4BA Version
-decisions   odm bai     21.0.3<br />
-content     filenet,cmis,ier,tm,bai     21.0.3<br />
-content-decisions   filenet,cmis,ier,tm,odm,bai     21.0.3<br />
-workflow    workflow,workstreams,pfs,baw_authoring,case,bai     21.0.3<br />
-samples     Depends on sample   21.0.3</p>
-<p>Be aware, this step is async, meaning that the daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete.  When the deployment of the service script is done, the service is not running yet.  Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.</p>
-<p>Run the following command to deploy the Cloud Pak for Business Automation services.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt;
-</code></pre></div>
-<p><a href="https://www.youtube.com/watch?v=tJxXS_dTuZ0"><img alt="IMAGE_ALT" src="https://www.youtube.com/watch?v=tJxXS_dTuZ0.jpg" /></a></p>
-<h1 id="status-of-deployment">Status of Deployment<a class="headerlink" href="#status-of-deployment" title="Permanent link">&para;</a></h1>
-<p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the help flag to see what flags you can use to get information on your service deployment.</p>
-<p>Run the following commands to check the Cloud Pak for Business Automation to see what command flags you can run</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --help
-</code></pre></div>
-<p>The following command will give you the status of all components for the service you deployed</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
-</code></pre></div>
-<p>If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>watch -c /data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
-</code></pre></div>
-<p>To find out the connection info to your new service, you can run the console flag to get user names, passwords and URLs to connect to.</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterConsole
-</code></pre></div>
-<a href="https://www.youtube.com/watch?v=yLhWYpCV5eo"><img alt="IMAGE_ALT" src="https://www.youtube.com/watch?v=yLhWYpCV5eo.jpg" /></a></p>
 
               
             </article>
@@ -1324,10 +1195,10 @@ samples     Depends on sample   21.0.3</p>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.expand", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tracking", "navigation.top", "toc.follow", "navigation.expand", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a877e258.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>
