@@ -101,4 +101,12 @@ Once your cluster is fully deployed you can access the help menu which has a num
 
 Here is a full example for deploying OpenShift on **ROKS** with the Daffy process.
 
-[![IMAGE_ALT](https://www.youtube.com/watch?v=4jpCXlG2ReE.jpg)](https://www.youtube.com/watch?v=4jpCXlG2ReE)
+<html>
+   <head>
+      <title>HTML Video embed</title>
+   </head>
+   <body>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4jpCXlG2ReE" frameborder="0" allowfullscreen></iframe>
+      </iframe>
+   </body>
+</html>

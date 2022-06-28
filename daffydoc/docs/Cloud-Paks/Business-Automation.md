@@ -73,7 +73,15 @@ cp4ba-starter
 
 ibm-common-services
 
-[![IMAGE_ALT](https://www.youtube.com/watch?v=GY57pn26Duw.jpg)](https://www.youtube.com/watch?v=GY57pn26Duw)
+<html>
+   <head>
+      <title>HTML Video embed</title>
+   </head>
+   <body>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GY57pn26Duw" frameborder="0" allowfullscreen></iframe>
+      </iframe>
+   </body>
+</html>
 
 # Deploying Services
 
@@ -154,7 +162,15 @@ Run the following command to deploy the Cloud Pak for Business Automation servic
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME>
 ```
 
-[![IMAGE_ALT](https://www.youtube.com/watch?v=tJxXS_dTuZ0.jpg)](https://www.youtube.com/watch?v=tJxXS_dTuZ0)
+<html>
+   <head>
+      <title>HTML Video embed</title>
+   </head>
+   <body>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/tJxXS_dTuZ0" frameborder="0" allowfullscreen></iframe>
+      </iframe>
+   </body>
+</html>
 
 # Status of Deployment
 
@@ -188,4 +204,13 @@ To find out the connection info to your new service, you can run the console fla
 
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole
 ```
-[![IMAGE_ALT](https://www.youtube.com/watch?v=yLhWYpCV5eo.jpg)](https://www.youtube.com/watch?v=yLhWYpCV5eo)
+
+<html>
+   <head>
+      <title>HTML Video embed</title>
+   </head>
+   <body>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yLhWYpCV5eo" frameborder="0" allowfullscreen></iframe>
+      </iframe>
+   </body>
+</html>
