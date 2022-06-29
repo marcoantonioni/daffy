@@ -16,13 +16,13 @@ With this one value, the daffy engine will be able to install the version of Web
 
 The service consist of the following products.
 
-       WebSphere Automation Small Profile (consists of):
+WebSphere Automation Small Profile (consists of):
 
-            WebSphere Automation
+- WebSphere Automation
 
-            WebSphere Health
+- WebSphere Health
 
-            WebSphere Secure
+- WebSphere Secure
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
