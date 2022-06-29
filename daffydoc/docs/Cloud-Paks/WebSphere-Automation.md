@@ -1,4 +1,6 @@
-At this point, you have a working OCP cluster on your platform of choice. Your <environment-name>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
+# WebSphere Automation
+
+At this point, you have a working OCP cluster on your platform of choice. Your **<environment-name>**-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
 
 1) The WebSphere Automation info that you wish to install
 
