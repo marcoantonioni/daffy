@@ -124,19 +124,20 @@ If  you want to deploy Open Prediction Service HUB(OPS), you can set this flag t
 
 CP4BA_VERSION              
 
-                                             21.0.3
+21.0.3
 
 CP4BA_DEPLOYMENT_STARTER_SERVICE
 
-                                             content
+  content
 
-                                             decisions
+  decisions
 
-                                             content-decisions
+  content-decisions
 
-                                             workflow
+  workflow
 
-                                             samples
+  samples
+  
 
 ```
 
