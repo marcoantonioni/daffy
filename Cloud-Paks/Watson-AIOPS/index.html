@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cloud-pak-for-watson-ai-ops" class="md-skip">
+        <a href="#step-1-cloud-pak-for-watson-ai-ops" class="md-skip">
           Skip to content
         </a>
       
@@ -721,12 +721,66 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Watson AIOPS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Watson AIOPS
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-cloud-pak-for-watson-ai-ops" class="md-nav__link">
+    Step 1: Cloud Pak for Watson AI Ops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-deploying-the-cloud-pak" class="md-nav__link">
+    Step 2: Deploying the Cloud Pak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-service" class="md-nav__link">
+    Deploying Service
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-3-status-of-deployment" class="md-nav__link">
+    Step 3: Status of Deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1293,8 +1347,48 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-cloud-pak-for-watson-ai-ops" class="md-nav__link">
+    Step 1: Cloud Pak for Watson AI Ops
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-deploying-the-cloud-pak" class="md-nav__link">
+    Step 2: Deploying the Cloud Pak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-service" class="md-nav__link">
+    Deploying Service
+  </a>
+  
+    <nav class="md-nav" aria-label="Deploying Service">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-3-status-of-deployment" class="md-nav__link">
+    Step 3: Status of Deployment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1308,7 +1402,7 @@
                 
 
 
-<h1 id="cloud-pak-for-watson-ai-ops">Cloud Pak for Watson AI Ops<a class="headerlink" href="#cloud-pak-for-watson-ai-ops" title="Permanent link">&para;</a></h1>
+<h2 id="step-1-cloud-pak-for-watson-ai-ops">Step 1: Cloud Pak for Watson AI Ops<a class="headerlink" href="#step-1-cloud-pak-for-watson-ai-ops" title="Permanent link">&para;</a></h2>
 <p>At this point, you have a working OCP cluster on your platform of choice. Your <strong><environment-name></strong>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
 <ol>
 <li>
@@ -1318,7 +1412,7 @@
 <p>The services  that you wish to install on the Cloud Pak</p>
 </li>
 </ol>
-<h1 id="deploying-the-cloud-pak">Deploying the Cloud Pak<a class="headerlink" href="#deploying-the-cloud-pak" title="Permanent link">&para;</a></h1>
+<h2 id="step-2-deploying-the-cloud-pak">Step 2: Deploying the Cloud Pak<a class="headerlink" href="#step-2-deploying-the-cloud-pak" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Watson AIOps only requires <strong>one</strong> entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
 <p><strong>CP4WAIOPS_VERSION=<version></strong></p>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
@@ -1342,7 +1436,7 @@
 <p>Here is the flag that will need to be set to enable the deployment of Event Manager with Watson AIOps.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CP4WAIOPS_DEPLOY_EMGR=&lt;true|false&gt;
 </code></pre></div>
-<h1 id="status-of-deployment">Status of Deployment<a class="headerlink" href="#status-of-deployment" title="Permanent link">&para;</a></h1>
+<h2 id="step-3-status-of-deployment">Step 3: Status of Deployment<a class="headerlink" href="#step-3-status-of-deployment" title="Permanent link">&para;</a></h2>
 <p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --help
 </code></pre></div>
