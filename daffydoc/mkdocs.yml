@@ -21,11 +21,12 @@ theme:
     - navigation.top
     - toc.follow
     - navigation.sections
-    - navigation.expand
+  #  - navigation.expand
     - navigation.tracking
 nav:
   - Home: index.md
   - Overview:
+    - Overview/index.md
     - Tools Installed: Overview/Tools-Installed.md
   - Deploying OCP:
     - Pre Req: Deploying-OCP/Pre-Req.md

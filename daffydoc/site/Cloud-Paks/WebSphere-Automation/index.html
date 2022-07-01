@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#websphere-automation" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -181,7 +186,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Overview/Tools-Installed/" class="md-tabs__link">
+      <a href="../../Overview/" class="md-tabs__link">
         Overview
       </a>
     </li>
@@ -359,19 +364,29 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
         
           
+            
+          
+        
+          
         
       
       
-        <label class="md-nav__link" for="__nav_2">
-          Overview
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Overview/">Overview</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Overview" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -379,6 +394,8 @@
           Overview
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -411,7 +428,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -718,6 +735,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         WebSphere Automation
@@ -745,7 +764,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -845,7 +864,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       
       
@@ -929,7 +948,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
@@ -1061,7 +1080,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
@@ -1129,7 +1148,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
       
       
@@ -1177,7 +1196,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
       
       
       
@@ -1274,6 +1293,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1287,9 +1308,54 @@
                 
 
 
-  <h1>WebSphere Automation</h1>
-
-
+<h1 id="websphere-automation">WebSphere Automation<a class="headerlink" href="#websphere-automation" title="Permanent link">&para;</a></h1>
+<p>At this point, you have a working OCP cluster on your platform of choice. Your <strong><environment-name></strong>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
+<p>1) The WebSphere Automation info that you wish to install</p>
+<p>2) The services that you wish to install on WebSphere Automation</p>
+<h1 id="deploying-wsa">Deploying WSA<a class="headerlink" href="#deploying-wsa" title="Permanent link">&para;</a></h1>
+<p>Deploying WebSphere Automation only requires <strong>one</strong> entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
+<p><strong>CPWSA_VERSION=<version></strong></p>
+<p>With this one value, the daffy engine will be able to install the version of WebSphere Automation.</p>
+<p>The service consist of the following products.</p>
+<p>WebSphere Automation Small Profile (consists of):</p>
+<ul>
+<li>
+<p>WebSphere Automation</p>
+</li>
+<li>
+<p>WebSphere Health</p>
+</li>
+<li>
+<p>WebSphere Secure</p>
+</li>
+</ul>
+<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CPWSA_VERSION=1.3
+</code></pre></div>
+<p>WSA Supported Versions  OCP Versions
+1.3     4.8<br />
+1.2     4.8</p>
+<p>Run the following command to deploy WebSphere Automation</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/wsa/build.sh &lt;ENVIRONMENT_NAME&gt;
+</code></pre></div>
+<p>When this step is complete, up to an hour depending on your environment, you have basics of WebSphere Automation running. This will install all of the operators including foundational services. The cluster is now ready to deploy additional services and or demos.  At this stage, the cluster consists  of common services and WebSphere Automation operators and some services in the following projects:</p>
+<p><strong>websphere-automation</strong></p>
+<p><strong>ibm-common-services</strong></p>
+<h2 id="deploying-service">Deploying service<a class="headerlink" href="#deploying-service" title="Permanent link">&para;</a></h2>
+<p>Currently there one service / demos for WebSphere Automation. We are adding new features on a regular basis, please stay tuned.  If you have a feature request for an additional service or demo, please fill out a request.</p>
+<h2 id="status-of-deployment">Status of Deployment<a class="headerlink" href="#status-of-deployment" title="Permanent link">&para;</a></h2>
+<p>The service can take a few hours to complete. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/data/daffy/wsa/build.sh &lt;ENVIRONMENT_NAME&gt; --help
+</code></pre></div>
+<p><strong>Run the following commands</strong> to check the WebSphere Automation installation progress.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/data/daffy/wsa/service.sh &lt;ENVIRONMENT_NAME&gt; --status
+</code></pre></div>
+<p>If you want to have a running job to refresh every few seconds,  you can run the status script using the watch command.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>watch -c /data/daffy/wsa/service.sh &lt;ENVIRONMENT_NAME&gt; --status
+</code></pre></div>
+<p>To find out the connection info to your new service/pattern, you can run the console flag to get user names, passwords and URLs to connect to.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/data/daffy/wsa/build.sh &lt;ENVIRONMENT_NAME&gt; --console
+</code></pre></div>
 
               
             </article>
@@ -1362,7 +1428,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.expand", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>

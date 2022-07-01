@@ -54,7 +54,7 @@
 </style>
 <div class="row">
   <div class="column">
-    <div class="card"style="width: 20rem;">
+    <div class="card"style="width: 18rem;">
       <img src="../images/Kyle.jpeg" style="width:100%">
       <div class="container">
         <h2>Kyle Dawson</h2>
@@ -67,7 +67,7 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 20rem;">
+    <div class="card"style="width: 18rem;">
       <img src="../images/David.jpeg"style="width:100%">
       <div class="container">
         <h2>David Krier</h2>
@@ -80,7 +80,7 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 20rem;">
+    <div class="card"style="width: 18rem;">
       <img src="../images/Jeff.jpeg" style="width:100%">
       <div class="container">
         <h2>Jeff Imholz</h2>
@@ -93,7 +93,7 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 20rem;">
+    <div class="card"style="width: 18rem;">
       <img src="../images/Sunil.jpeg" style="width:100%">
       <div class="container">
         <h2>Sunil S. Patel</h2>
@@ -107,7 +107,7 @@
 
 
   <div class="column">
-    <div class="card"style="width: 20rem;">
+    <div class="card"style="width: 18rem;">
       <img src="../images/Greta.jpeg"  style="width:100%">
       <div class="container">
         <h2>Greta Holland</h2>
@@ -120,7 +120,7 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 20rem;">
+    <div class="card"style="width: 18rem;">
       <img src="../images/Taner.jpg" style="width:100%">
       <div class="container">
         <h2>Taner Avci</h2>
@@ -132,7 +132,7 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 20rem;">
+    <div class="card"style="width: 18rem;">
       <img src="../images/Daniel.jpg" style="width:100%">
       <div class="container">
         <h2>Daniel Schroedl</h2>

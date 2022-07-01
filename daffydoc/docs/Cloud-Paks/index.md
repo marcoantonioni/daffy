@@ -1,8 +1,3 @@
-!!! info
-
-    ## This page is underconstruction
-
-
 <html>
 <head>
 <style>
@@ -24,12 +19,12 @@
 </head>
 <body>
 <div style="text-align:center">
-<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">Business Automation</button>
-<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">Data</button>
-<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">Integration</button>
-<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">
+<button onclick="location.href='/daffy/Cloud-Paks/Business-Automation/'" class="button button2">Business Automation</button>
+<button onclick="location.href='/daffy/Cloud-Paks/Data/'" class="button button2">Data</button>
+<button onclick="location.href='/daffy/Cloud-Paks/Integration/'" class="button button2">Integration</button>
+<button onclick="location.href='/daffy/Cloud-Paks/Watson-AIOPS/'" class="button button2">
 Watson AIOps</button>
-<button onclick="location.href='/daffy/Overview/Tools-Installed/'" class="button button2">
+<button onclick="location.href='/daffy/Cloud-Paks/WebSphere-Automation/'" class="button button2">
 WebSphere Automation</button>
 </div>
 </body>
