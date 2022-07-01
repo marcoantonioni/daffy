@@ -39,6 +39,7 @@ nav:
     - VSphere: Deploying-OCP/VSphere.md
     - ROKS: Deploying-OCP/ROKS.md
     - TechZone: Deploying-OCP/TechZone.md
+    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
     - Cloud-Paks/index.md
     - Business Automation: Cloud-Paks/Business-Automation.md
