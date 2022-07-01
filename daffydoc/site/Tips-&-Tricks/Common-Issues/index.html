@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#your-environment-file-name-must-follow-simple-rules" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -181,7 +186,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Overview/Tools-Installed/" class="md-tabs__link">
+      <a href="../../Overview/" class="md-tabs__link">
         Overview
       </a>
     </li>
@@ -359,19 +364,29 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
         
           
+            
+          
+        
+          
         
       
       
-        <label class="md-nav__link" for="__nav_2">
-          Overview
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Overview/">Overview</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Overview" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -379,6 +394,8 @@
           Overview
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -411,7 +428,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -607,7 +624,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -735,7 +752,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -874,6 +891,8 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Common Issues
@@ -929,7 +948,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
@@ -1061,7 +1080,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
       
       
       
@@ -1129,7 +1148,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
       
       
@@ -1177,7 +1196,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
       
       
       
@@ -1274,6 +1293,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1287,9 +1308,59 @@
                 
 
 
-  <h1>Common Issues</h1>
-
-
+<h1 id="your-environment-file-name-must-follow-simple-rules">Your environment file name must follow simple rules.<a class="headerlink" href="#your-environment-file-name-must-follow-simple-rules" title="Permanent link">&para;</a></h1>
+<p>All lower case no spaces
+Alphanumeric  or - (no special characters)
+Must end in -env.sh
+Environment name is the prefix for the file name</p>
+<table>
+<thead>
+<tr>
+<th align="left">Environment Name</th>
+<th align="center">File Name</th>
+<th align="center">Status</th>
+<th align="center">Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">lab12</td>
+<td align="center">/data/daffy/env/lab12-env.sh</td>
+<td align="center">VALID</td>
+<td align="center">Perfect</td>
+</tr>
+<tr>
+<td align="left">lab12</td>
+<td align="center">/data/daffy/env/lab12-env</td>
+<td align="center">INVALID</td>
+<td align="center">Does not end in .sh</td>
+</tr>
+<tr>
+<td align="left">lab12</td>
+<td align="center">/data/daffy/env/lab12</td>
+<td align="center">INVALID</td>
+<td align="center">Does not end in -env.sh</td>
+</tr>
+<tr>
+<td align="left">lab12</td>
+<td align="center">/data/daffy/env/Lab 12-env.sh</td>
+<td align="center">INVALID</td>
+<td align="center">Upper case and Space in name</td>
+</tr>
+<tr>
+<td align="left">lab12</td>
+<td align="center">/data/daffy/env/lab-env.sh</td>
+<td align="center">INVALID</td>
+<td align="center">Environment name does not match file prefix</td>
+</tr>
+<tr>
+<td align="left">lab12</td>
+<td align="center">/data/daffy/lab12-env.sh</td>
+<td align="center">INVALID</td>
+<td align="center">Not in the /data/daffy/env folder</td>
+</tr>
+</tbody>
+</table>
 
               
             </article>
@@ -1362,7 +1433,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
+<<<<<<< HEAD
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.expand", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+=======
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+>>>>>>> ed8d0436b3e5372f056013a7d4d23c143d0c1577
     
     
       <script src="../../assets/javascripts/bundle.a877e258.min.js"></script>

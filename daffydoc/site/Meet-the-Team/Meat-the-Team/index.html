@@ -181,7 +181,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Overview/Tools-Installed/" class="md-tabs__link">
+      <a href="../../Overview/" class="md-tabs__link">
         Overview
       </a>
     </li>
@@ -359,19 +359,29 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
         
           
+            
+          
+        
+          
         
       
       
-        <label class="md-nav__link" for="__nav_2">
-          Overview
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Overview/">Overview</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Overview" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
@@ -379,6 +389,8 @@
           Overview
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -411,7 +423,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -607,7 +619,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -735,7 +747,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -835,7 +847,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
       
       
       
@@ -919,7 +931,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
@@ -1129,7 +1141,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
       
       
@@ -1177,7 +1189,7 @@
     <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
       
       
       
@@ -1289,7 +1301,152 @@
 
   <h1>Meat the Team</h1>
 
+<style>
+/* Three columns side by side */
+.column {
+  float: left;
+  width:35%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+<div class="row">
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Kyle.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Kyle Dawson</h2>
+        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market</p>
+        <p>Coral Gables, FL , United States</p>
+        <p>Kyle Dawson/Orlando/IBM</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/David.jpeg"style="width:100%">
+      <div class="container">
+        <h2>David Krier</h2>
+        <p class="title">Principal Integration Technical Specialist, IBM Technology, US National Market</p>
+        <p>Des Moines, IA , United States</p>
+        <p>David A Krier/Des Moines/IBM</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Jeff.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Jeff Imholz</h2>
+        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market</p>
+        <p>Columbus, OH , United States</p>
+        <p>Jeffrey Imholz/Dublin/IBM</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Sunil.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Sunil S. Patel</h2>
+        <p class="title">Principal Technical Sales Manager, Data-AI-Automation Blackbelt team, IBM Technology, US National Market</p>
+        <p>Coppell, TX , United States</p>
+        <p>Sunil S Patel/Dallas/IBM</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Greta.jpeg"  style="width:100%">
+      <div class="container">
+        <h2>Greta Holland</h2>
+        <p class="title">Associate AI Applications Technical Specialist, IBM Technology, US National Market Global Sales - Software Sales</p>
+        <p>Coppell, TX , United States</p>
+        <p>Greta Holland/US/IBM</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Taner.jpg" style="width:100%">
+      <div class="container">
+        <h2>Taner Avci</h2>
+        <p class="title">Brand Technical Sales Specialist Intern</p>
+        <p> New York, NY </p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Daniel.jpg" style="width:100%">
+      <div class="container">
+        <h2>Daniel Schroedl</h2>
+        <p class="title">Brand Technical Sales Specialist Intern</p>
+        <p> Boston, MA </p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
               
             </article>
@@ -1362,7 +1519,11 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
+<<<<<<< HEAD
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.expand", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+=======
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+>>>>>>> ed8d0436b3e5372f056013a7d4d23c143d0c1577
     
     
       <script src="../../assets/javascripts/bundle.a877e258.min.js"></script>
