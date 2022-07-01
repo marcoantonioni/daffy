@@ -1,4 +1,4 @@
-# Cloud Pak for Watson AI Ops
+## Step 1: Cloud Pak for Watson AI Ops
 
 At this point, you have a working OCP cluster on your platform of choice. Your **<environment-name>**-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
 
@@ -6,7 +6,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your *
 
 2.  The services  that you wish to install on the Cloud Pak
 
-# Deploying the Cloud Pak
+## Step 2: Deploying the Cloud Pak
 
 Deploying the Cloud Pak for Watson AIOps only requires **one** entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -53,7 +53,7 @@ Here is the flag that will need to be set to enable the deployment of Event Mana
 ```
 CP4WAIOPS_DEPLOY_EMGR=<true|false>
 ```
-# Status of Deployment
+## Step 3: Status of Deployment
 
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.
 

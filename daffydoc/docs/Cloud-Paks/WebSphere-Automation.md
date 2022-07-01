@@ -1,4 +1,4 @@
-# WebSphere Automation
+## Step 1: WebSphere Automation
 
 At this point, you have a working OCP cluster on your platform of choice. Your **<environment-name>**-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
 
@@ -6,7 +6,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your *
 
 2) The services that you wish to install on WebSphere Automation
 
-# Deploying WSA
+## Step2: Deploying WSA
 
 Deploying WebSphere Automation only requires **one** entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -48,11 +48,11 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Deploying service
+## Step 3: Deploying service
 
 Currently there one service / demos for WebSphere Automation. We are adding new features on a regular basis, please stay tuned.  If you have a feature request for an additional service or demo, please fill out a request.
 
-## Status of Deployment
+## Step 4: Status of Deployment
 
 The service can take a few hours to complete. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.
 
