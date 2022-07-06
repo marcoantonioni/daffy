@@ -54,7 +54,7 @@
 </style>
 <div class="row">
   <div class="column">
-    <div class="card"style="width: 18rem;">
+    <div class="card"style="width: 13rem;">
       <img src="./images/Kyle.jpeg" style="width:100%">
       <div class="container">
         <h2>Kyle Dawson</h2>
@@ -64,7 +64,7 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
+    <div class="card"style="width: 13rem;">
       <img src="./images/David.jpeg"style="width:100%">
       <div class="container">
         <h2>David Krier</h2>
@@ -74,8 +74,8 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Jeff.jpeg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Jeff.jpeg" style="width:100%">
       <div class="container">
         <h2>Jeff Imholz</h2>
         <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market</p>
@@ -84,8 +84,8 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Sunil.jpeg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Sunil.jpeg" style="width:100%">
       <div class="container">
         <h2>Sunil S. Patel</h2>
         <p class="title">Principal Technical Sales Manager, Data-AI-Automation Blackbelt team, IBM Technology, US National Market</p>
@@ -95,8 +95,8 @@
 
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Greta.jpeg"  style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Greta.jpeg"  style="width:100%">
       <div class="container">
         <h2>Greta Holland</h2>
         <p class="title">Associate AI Applications Technical Specialist, IBM Technology, US National Market Global Sales - Software Sales</p>
@@ -105,8 +105,8 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Taner.jpg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Taner.jpg" style="width:100%">
       <div class="container">
         <h2>Taner Avci</h2>
         <p class="title">Brand Technical Sales Specialist Intern</p>
@@ -115,8 +115,8 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Daniel.jpg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Daniel.jpg" style="width:100%">
       <div class="container">
         <h2>Daniel Schroedl</h2>
         <p class="title">Brand Technical Sales Specialist Intern</p>

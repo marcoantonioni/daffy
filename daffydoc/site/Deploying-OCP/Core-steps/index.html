@@ -268,7 +268,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Request-Forms/Demo-Request/" class="md-tabs__link">
+      <a href="../../Request-Forms/" class="md-tabs__link">
         Request Forms
       </a>
     </li>
@@ -1002,23 +1002,17 @@
       
         
           
-        
-          
-        
-          
-        
-          
-        
-          
-        
+            
           
         
       
       
-        <label class="md-nav__link" for="__nav_7">
-          Request Forms
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Request-Forms/">Request Forms</a>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Request Forms" data-md-level="1">
         <label class="md-nav__title" for="__nav_7">
@@ -1027,88 +1021,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Request-Forms/Demo-Request/" class="md-nav__link">
-        Demo Request
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Request-Forms/Feature-Requests/" class="md-nav__link">
-        Feature Request
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Request-Forms/Get-Involved/" class="md-nav__link">
-        Get Involved
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Request-Forms/POC-Request-Form/" class="md-nav__link">
-        POC Request Form
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Request-Forms/Training/" class="md-nav__link">
-        Training
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Request-Forms/L200-Adv-Training/" class="md-nav__link">
-        L200 Adv Training
-      </a>
-    </li>
-  
-
             
           
         </ul>
@@ -1373,8 +1285,10 @@
 <p><b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b></p>
 <h2 id="step-2-install-daffy">Step 2: Install Daffy<a class="headerlink" href="#step-2-install-daffy" title="Permanent link">&para;</a></h2>
 <p>Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
 </code></pre></div>
+<strong>Optional:</strong> You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file
+<a class="md-button md-button--primary" href="http://config.daffy-installer.com:1887/start">Daffy On-Line Configurator</a></p>
 <h2 id="step-3-create-envsh">Step 3: Create <environment-name>-env.sh<a class="headerlink" href="#step-3-create-envsh" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>DAFFY_UNIQUE_ID=&quot;&lt;YourID@ibm.com&gt;&quot;
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>#This is required - Values POC/Demo/Enablement/HCCX/TechZone
@@ -1418,7 +1332,7 @@
 <a class="md-button md-button--primary" href="../AWS/">Amazon Web Services</a>
 <a class="md-button md-button--primary" href="../Azure/">Microsoft Azure</a>
 <a class="md-button md-button--primary" href="../VSphere/">VMWare VSphere</a>
-<a class="md-button md-button--primary" href="../Deploying-OCP/ROK.md">IBM RedHat OpenShift</a></p>
+<a class="md-button md-button--primary" href="../ROKS/">IBM RedHat OpenShift</a></p>
 
               
             </article>
