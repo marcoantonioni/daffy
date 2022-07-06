@@ -1,10 +1,11 @@
+#AWS Install
+
 <img src='../images/aws.png'  align="top" width="200"
-  height="300" style = "float">
+    height="300" style = "float">
 
-##Step 1 Platform Requirements
+##Step 1: Platform Requirements
 
-!!! danger "testing admonition feature, no danger"
-    To use Daffy on **Amazon Web Services**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **AWS**, it breaks down to the following basic three items:
+To use Daffy on **Amazon Web Services**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **AWS**, it breaks down to the following basic three items:
 
   **Account Details** - The account that you plan to install OpenShift
 
@@ -16,7 +17,7 @@
 
   https://ibm.box.com/v/DaffyProviderRequirements
 
-##Step 2 Finding Provider Details
+##Step 2: Finding Provider Details
 
 To install Daffy on **AWS**, the hardest part can be finding the provider details in the portal.
 
@@ -69,9 +70,67 @@ For each OpenShift deployment into **AWS**, you need to create a **Route 53 Host
 
 **Important**: You must create a Hosted Zone that exactly matches your Base Domain.
 
-**Important:** Once you create your Hosted Zone, you must point your DNS registry Name Server records to the assigned AWS DNS Name Server records listed in this Hosted Zone. You will see the Name Servers listed once you have created the Hosted Zone. {: .notice}
+**Important:** Once you create your Hosted Zone, you must point your DNS registry Name Server records to the assigned AWS DNS Name Server records listed in this Hosted Zone. You will see the Name Servers listed once you have created the Hosted Zone.
 
-:smile: :heart: :thumbsup:
+<img src='../images/aws_9.png'/>
+<img src='../images/aws_10.png'/>
 
-Hello Dan
-Hello Tan
+### Setting up DNS for GCP Deployment with OpenShift:
+
+<html>
+   <head>
+      <title>HTML Video embed</title>
+   </head>
+   <body>
+    <div style="text-align:center">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Zg3eFa47PKk" frameborder="0" allowfullscreen></iframe>
+      </iframe>
+      </div>
+   </body>
+</html>
+
+## Step 3: Environment File
+
+Below are the AWS specific environment variables that must be defined in the /data/daffy/env/**<ENVIRONMENT_NAME>**-env.sh file.
+
+- **AWS_REGION**
+- **AWS_ACCESS_KEY_ID**
+
+**Note**: You can look in the samples directory on your bastion for example of **AWS** install : /data/daffy/env/samples/**aws-ipi-env.sh**
+
+You can run this command to build your **new** file from the sample.
+```
+cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env.sh
+```
+**Valid Options:**
+
+- **OCP_INSTALL_TYPE**= aws-ipi
+- **AWS_REGION**=<AWS-REGION>
+- **AWS_ACCESS_KEY_ID**=<AWS-ACCESS_KEY-ID>
+
+```
+OCP_INSTALL_TYPE="aws-ipi"
+AWS_REGION="<AWS-REGION>"
+AWS_ACCESS_KEY_ID="<AWS-ACCESS_KEY-ID>"
+#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
+```
+
+**Optional:**
+
+-**OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
+
+If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
+## Step 4: Execution
+
+To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.
+
+```
+/data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
+```
+
+Once your cluster is fully deployed you can access the help menu which as a number of options.
+
+**Note:** <environment> is the first part of your name that you used for the <environment>-env.sh file
+```
+/data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
+```

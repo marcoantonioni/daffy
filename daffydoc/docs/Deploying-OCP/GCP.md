@@ -1,5 +1,7 @@
 # GCP Install
-
+<img src='../images/GCP.png'   align="top" width="200"
+  height="300" style = "float">
+  
 At this point, you have a **bastion** machine where you have installed the Daffy tool, created your core **<environment-name>-env.sh** and can execute the install of **OCP** on **GCP**.
 
 ## Platform Requirements

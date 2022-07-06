@@ -39,7 +39,7 @@ nav:
     - VSphere: Deploying-OCP/VSphere.md
     - ROKS: Deploying-OCP/ROKS.md
     - TechZone: Deploying-OCP/TechZone.md
-    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
+#    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
     - Cloud-Paks/index.md
     - Business Automation: Cloud-Paks/Business-Automation.md
@@ -64,8 +64,9 @@ nav:
     - Training: Request-Forms/Training.md
     - L200 Adv Training: Request-Forms/L200-Adv-Training.md
   - Meet the Team:
-    - Meat the Team: Meet-the-Team/Meat-the-Team.md
-    - Workstreams: Meet-the-Team/Workstreams.md
+    - Meet-the-Team/index.md
+    #- Meet The teamm 2: Meet-the-Team/Meat-the-Team.md
+    #- Workstreams: Meet-the-Team/Workstreams.md
   - More:
     - Glossary: More/Glossary.md
     - FAQ:

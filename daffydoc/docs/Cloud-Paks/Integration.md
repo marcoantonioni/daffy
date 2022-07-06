@@ -1,3 +1,9 @@
+Cloud Pak for Integration {: style="text-align: left;"}
+===============
+<img src='../images/integration.png'
+       style="width:100px;height:100px;"/>
+
+
 At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
 
 ##Step 1 Deploying the Cloud Pak

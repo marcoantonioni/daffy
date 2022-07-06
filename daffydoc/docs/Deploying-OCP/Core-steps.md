@@ -1,5 +1,5 @@
 ## Step 1: Access your bastion Server
-[Create Bastion Steps](/Supporting-Software/Create-Your-Own-Bastion.md){ .md-button .md-button--primary }
+[Create Bastion Steps](../Supporting-Software/Create-Your-Own-Bastion.md){ .md-button .md-button--primary }
 
   <b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b>
 

@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+#ROKS Install
+
+<img src='../images/ROKS.jpeg'   align="top" width="200"
+  height="300" style = "float">
 
 At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
 
@@ -31,7 +34,7 @@ https://cloud.ibm.com/docs/account?topic=account-account-getting-started
 You must have an IBMid before logging in and the link above can help create one. If you are an IBM employee, after the number will most likely be your name.
 
 You can list your Account ID from the Drop down
-<img src="/images/download.jpeg" style="float: left; margin-right: 10px;" />
+<img src="../images/download.jpeg" style="float: left; margin-right: 10px;" />
 
 Location/Zone:
 To find a list of available datacenter locations/zones, you can refer to this:
