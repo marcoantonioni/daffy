@@ -83,6 +83,8 @@ You are NOW ready to begin making the necessary edits to your **/data/daffy/env/
 [KVM](../Deploying-OCP/kvm.md){ .md-button .md-button--primary }
 [Google Cloud Platform](../Deploying-OCP/GCP.md){ .md-button .md-button--primary }
 [Amazon Web Services](../Deploying-OCP/AWS.md){ .md-button .md-button--primary }
+
 [Microsoft Azure](../Deploying-OCP/Azure.md){ .md-button .md-button--primary }
 [VMWare VSphere](../Deploying-OCP/VSphere.md){ .md-button .md-button--primary }
 [IBM RedHat OpenShift](../Deploying-OCP/ROKS.md){ .md-button .md-button--primary }
+[TechZone](../Deploying-OCP/TechZone.md){ .md-button .md-button--primary }

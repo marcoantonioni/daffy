@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#roks-install" class="md-skip">
+        <a href="#techzone-install" class="md-skip">
           Skip to content
         </a>
       
@@ -637,41 +637,6 @@
         <li class="md-nav__item">
   <a href="#platform-requirements" class="md-nav__link">
     Platform Requirements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-provider-details" class="md-nav__link">
-    Finding Provider Details
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifying-a-datacenter-location" class="md-nav__link">
-    Identifying a datacenter location/
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-are-account-types" class="md-nav__link">
-    What are account types?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-file" class="md-nav__link">
-    Environment file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execution" class="md-nav__link">
-    Execution
   </a>
   
 </li>
@@ -1263,41 +1228,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#finding-provider-details" class="md-nav__link">
-    Finding Provider Details
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifying-a-datacenter-location" class="md-nav__link">
-    Identifying a datacenter location/
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#what-are-account-types" class="md-nav__link">
-    What are account types?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#environment-file" class="md-nav__link">
-    Environment file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#execution" class="md-nav__link">
-    Execution
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1312,67 +1242,33 @@
                 
 
 
-<h1 id="roks-install">ROKS install<a class="headerlink" href="#roks-install" title="Permanent link">&para;</a></h1>
-<p>At this point, you have a <strong>bastion</strong> machine where you have installed the Daffy tool, created your core <strong><environment-name></strong>-env.sh and can execute the install of <strong>OCP</strong> on <strong>ROKS.</strong></p>
+<h1 id="techzone-install">TechZone Install<a class="headerlink" href="#techzone-install" title="Permanent link">&para;</a></h1>
+<p><img src='../images/TechZone.jpeg'   align="top" width="100"
+  height="200" style = "float"></p>
+<p>At this point, you have a <strong>bastion</strong> machine where you have installed the Daffy tool, created your core <strong><environment-name></strong>-env.sh.  Depneding on if you use TechZone to build your cluster, you may skip Daffy Step 1 that builds your cluster. You will not use the bastion to build your cluster, but follow the steps to have TechZone build your cluster.  Once that is done, you would move on with the daffy process and install your cloud paks from your new <strong>bastion.</strong></p>
 <h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
-<p>To use Daffy to provision <strong>R</strong>ed Hat <strong>O</strong>penShift <strong>K</strong>ubernetes <strong>S</strong>ervices on IBM Cloud (<strong>ROKS</strong>) , there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For ROKS, it breaks down to the following basic two items:</p>
-<p><strong>Account Details</strong> - The account that you plan to install ROKS</p>
-<p><strong>Account Type</strong> - The account type needed to perform the install</p>
-<p>For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.</p>
-<p>https://ibm.box.com/v/DaffyProviderRequirements</p>
-<h2 id="finding-provider-details">Finding Provider Details<a class="headerlink" href="#finding-provider-details" title="Permanent link">&para;</a></h2>
-<p>To use Daffy to install ROKS, you must find the provider details. Luckily, Daffy automates this as it walks you through this process using ibmcloud CLI. Below are the steps you can use to make sure you use the right information.</p>
-<p>Account:</p>
-<p>To find more details IBM Cloud account and how to manage you can refer to this:</p>
-<p>https://cloud.ibm.com/docs/account?topic=account-account-getting-started</p>
-<p>You must have an IBMid before logging in and the link above can help create one. If you are an IBM employee, after the number will most likely be your name.</p>
-<p>You can list your Account ID from the Drop down</p>
-<p><img alt="TZ1.png" src="../../images/DeployingOCP/TechZone/TZ1.png" /></p>
-<p><strong>Location/Zone:</strong>
-To find a list of available datacenter locations/zones, you can refer to this:</p>
-<p>https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table</p>
-<p><strong>Note:</strong> Daffy currently only supports <strong>single</strong> datacenter location installs with classic infrastructure</p>
-<h2 id="identifying-a-datacenter-location">Identifying a datacenter location/<a class="headerlink" href="#identifying-a-datacenter-location" title="Permanent link">&para;</a></h2>
-<p>Red Hat OpenShift on IBM Cloud has a number of locations geographically spread with single or multizone regions. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the datacenter <strong>location,</strong> and the second part of the name describes the <strong>zone number</strong> in the region. For ROKS, we currently only support a single datacenter deployment.</p>
-<p><strong>Location/Zone</strong></p>
-<p>Regions are collections of zones. Zones have high-bandwidth, low-latency network connections to other zones in the same region. In order to deploy fault-tolerant applications that have high availability, IBM recommends deploying applications across multiple zones and multiple regions. This helps protect against unexpected failures of components, up to and including a single zone or region.</p>
-<p>Choose regions that makes sense for your scenario. For example, if you only have customers in the US, or if you have specific needs that require your data to live in the US, it makes sense to store your resources in zones in the dal13 zone or in the wdc07 zone. Daffy currently defaults to dal13 when deploying a ROKS cluster</p>
-<p><strong>Account Type:</strong></p>
-<p>For you to use Daffy to install on <strong>ROKS</strong>, you need to have a Pay-As-You-Go or subscription IBM Cloud account.</p>
-<p>https://cloud.ibm.com/docs/account?topic=account-accounts</p>
-<h2 id="what-are-account-types">What are account types?<a class="headerlink" href="#what-are-account-types" title="Permanent link">&para;</a></h2>
-<p>Your IBM Cloud account includes many interacting components and systems for resource, user, and access management. Concepts like how certain components are connected or how access works help you in understanding how to set up your account type. Many features are free to use regardless of account type.</p>
-<h2 id="environment-file">Environment file<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
-<p>Deploying OpenShift on <strong>ROKS</strong> only requires one entry to your existing core environment file (&lt;<strong>ENVIRONMENT_NAME&gt;</strong>-env.sh).</p>
-<p><strong>Note:</strong> You can look in the samples directory on your bastion for example of <strong>ROKS</strong> install : /data/daffy/env/samples/<strong>roks-msp-env.sh</strong></p>
-<p>You can copy the sample file to build your new environment  file.</p>
-<p>cp /data/daffy/env/samples/<strong>roks-msp-env.sh</strong> /data/daffy/env/<strong><ENVIRONMENT_NAME></strong>-env.sh</p>
-<p><strong>Valid Options:</strong></p>
-<p><strong>OCP_INSTALL_TYPE=</strong> roks-msp</p>
-<p>Optional:</p>
-<p><strong>ROKS_ZONE=</strong>dal13</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>OCP_INSTALL_TYPE=&quot;roks-msp&quot;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>#ROKS_ZONE=&quot;dal13&quot;
-</code></pre></div>
-<h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
-<p>To deploy your OCP cluster to ROKS, run the build.sh script from the /data/daffy/ocp directory. The installer will ask you a number of questions to login to ibmcloud via the CLI. When prompted with a region, select any but stay within your geography. For instance, us-south. This is used to talk with IBM Cloud via the right API endpoint.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
-</code></pre></div>
-<p>Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
-<p><strong>Note:</strong> <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help
-</code></pre></div>
-<p>Here is a full example for deploying OpenShift on <strong>ROKS</strong> with the Daffy process.</p>
-<p><html>
-   <head>
-      <title>HTML Video embed</title>
-   </head>
- <br />
-<body>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4jpCXlG2ReE" frameborder="0" allowfullscreen></iframe>
-      </iframe>
-   </body></p>
-<p></html></p>
+<p>There are three options with TechZone</p>
+<ol>
+<li>
+<p>OpenShift Cluster via AWS, Azure (<strong>Prebuilt</strong> Cluster)   https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters</p>
+<ul>
+<li>With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you. (This will fail at you do not have access to create cluster)</li>
+<li>You still need to have a bastion and core values in your <strong><environment-name></strong>-env.sh</li>
+</ul>
+</li>
+<li>
+<p>Tech Zone VSphere (<strong>Daffy</strong> build's cluster) https://techzone.ibm.com/collection/ocp-gymnasium</p>
+<ul>
+<li>Once you crate the access to your VSphere ,it will create your own bastion and give you the instructions on how to use Daffy in that environment.</li>
+</ul>
+</li>
+<li>TechZone Roks (<strong>Prebuilt</strong> Cluster)https://techzone.ibm.com/collection/custom-roks-vmware-requests<ul>
+<li>With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you (This will fail as you do not have access to create cluster)</li>
+<li>Once you create the access, you would follow the same steps of ROKS with Daffy</li>
+<li>One extra setting to change in your environment file  DAFFY_DEPLOYMENT_TYPE=TechZone</li>
+</ul>
+</li>
+</ol>
 
               
             </article>
