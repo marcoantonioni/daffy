@@ -271,13 +271,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="Meat-the-Team/" class="md-tabs__link">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
         Meet the Team
       </a>
     </li>
@@ -425,8 +427,6 @@
       
       
       
-        
-          
         
           
         
@@ -596,20 +596,6 @@
     <li class="md-nav__item">
       <a href="../Deploying-OCP/TechZone/" class="md-nav__link">
         TechZone
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Deploying-OCP/Pre-Built-Cluster/" class="md-nav__link">
-        Pre-built Clusters
       </a>
     </li>
   
@@ -1072,26 +1058,30 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
       
       
       
         
           
-        
+            
           
         
       
       
-        <label class="md-nav__link" for="__nav_8">
-          Meet the Team
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index md-nav__link--active">
+          <a href="./">Meet the Team</a>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Meet the Team" data-md-level="1">
         <label class="md-nav__title" for="__nav_8">
@@ -1100,32 +1090,6 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Meat-the-Team/" class="md-nav__link">
-        Meat the Team
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="Workstreams/" class="md-nav__link">
-        Workstreams
-      </a>
-    </li>
-  
-
             
           
         </ul>
@@ -1305,7 +1269,133 @@
 
   <h1>Index</h1>
 
+<style>
+/* Three columns side by side */
+.column {
+  float: left;
+  width:35%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
 
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+<div class="row">
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="./images/Kyle.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Kyle Dawson</h2>
+        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="./images/David.jpeg"style="width:100%">
+      <div class="container">
+        <h2>David Krier</h2>
+        <p class="title">Principal Integration Technical Specialist, IBM Technology, US National Market</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Jeff.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Jeff Imholz</h2>
+        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Sunil.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Sunil S. Patel</h2>
+        <p class="title">Principal Technical Sales Manager, Data-AI-Automation Blackbelt team, IBM Technology, US National Market</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Greta.jpeg"  style="width:100%">
+      <div class="container">
+        <h2>Greta Holland</h2>
+        <p class="title">Associate AI Applications Technical Specialist, IBM Technology, US National Market Global Sales - Software Sales</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Taner.jpg" style="width:100%">
+      <div class="container">
+        <h2>Taner Avci</h2>
+        <p class="title">Brand Technical Sales Specialist Intern</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card"style="width: 18rem;">
+      <img src="../images/Daniel.jpg" style="width:100%">
+      <div class="container">
+        <h2>Daniel Schroedl</h2>
+        <p class="title">Brand Technical Sales Specialist Intern</p>
+      </div>
+    </div>
+  </div>
+
+</div>
 
               
             </article>
@@ -1321,6 +1411,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../Request-Forms/L200-Adv-Training/" class="md-footer__link md-footer__link--prev" aria-label="Previous: L200 Adv Training" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              L200 Adv Training
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../More/Glossary/" class="md-footer__link md-footer__link--next" aria-label="Next: Glossary" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Glossary
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
