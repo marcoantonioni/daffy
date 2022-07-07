@@ -36,15 +36,15 @@ CP4BA_IFIX (Optional)
 
 CP4BA_DEPLOYMENT_STARTER_SERVICE
 
-**content**
+- **content**
 
-**decisions**
+- **decisions**
 
-**content-decisions**
+- **content-decisions**
 
-**workflow**
+- **workflow**
 
-**samples**
+- **samples**
 
 ```
 
@@ -52,12 +52,13 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE
 
 ```
 
-Service	Components	CP4BA Version
-decisions  	odm,bai  	21.0.3  
-content  	filenet,cmis,ier,tm,bai  	21.0.3  
-content-decisions  	filenet,cmis,ier,tm,odm,bai  	21.0.3  
-workflow  	workflow,workstreams,pfs,baw_authoring,case,bai  	21.0.3  
-samples  	Depends on sample  	21.0.3
+Service | Components | CP4BA Version
+:----------- |:-------------:| -----------:
+decisions        | odm,bai        | 21.0.3
+content        | filenet,cmis,ier,tm,bai        | 21.0.3
+content-decisions        | filenet,cmis,ier,tm,odm,bai        | 21.0.3
+workflow       | workflow,workstreams,pfs,baw_authoring,case,bai       | 21.0.3
+samples        | Depends on sample        | 21.0.3
 
 Run the following command to deploy the Cloud Pak for Business Automation.
 
@@ -101,7 +102,7 @@ Instead of using the include services,  you can also deploy your own sample or t
 
      *** /data/daffy/cp4ba/templates/services/samples   **without the .yaml** in the name
 
-To use samples, you would give the name of the sample in this directory .
+To use samples, you would give the name of the sample in this directory.
 
 ocp-starter-ocs-adp-bai-IF008
 ocp-starter-ocs-bai-content-decisions-workflow-streams-IF007
@@ -122,21 +123,21 @@ If  you want to deploy Open Prediction Service HUB(OPS), you can set this flag t
 
 **Valid Options:**
 
-CP4BA_VERSION              
+- CP4BA_VERSION              
 
-21.0.3
+- 21.0.3
 
-CP4BA_DEPLOYMENT_STARTER_SERVICE
+- CP4BA_DEPLOYMENT_STARTER_SERVICE
 
-  content
+- content
 
-  decisions
+- decisions
 
-  content-decisions
+- content-decisions
 
-  workflow
+- workflow
 
-  samples
+- samples
 
 
 ```
