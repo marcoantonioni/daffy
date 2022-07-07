@@ -1,4 +1,7 @@
-## Step 1: Cloud Pak for Business Automation
+Cloud Pak for Business Automation {: style="text-align: left;"}
+===============
+<img src='../images/ba.png'
+       style="width:100px;height:100px;"/>
 
 At this point, you have a working OCP cluster on your platform of choice. Your **<environment-name>**-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
 
@@ -6,7 +9,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your *
 
 2) The services that you wish to install on the Cloud Pak
 
-## Step 2: Deploying the Cloud Pak
+## Step 1: Deploying the Cloud Pak
 
 Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -84,7 +87,7 @@ ibm-common-services
    </body>
 </html>
 
-## Step 3: Deploying Services
+## Step 2: Deploying Services
 
 Deploying the service does not need any new values to your environment file (**<ENVIRONMENT_NAME>**-env.sh).  It will use the same values during the cloud pak deployment.
 
@@ -174,7 +177,7 @@ Run the following command to deploy the Cloud Pak for Business Automation servic
    </body>
 </html>
 
-## Step 4: Status of Deployment
+## Step 3: Status of Deployment
 
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the help flag to see what flags you can use to get information on your service deployment.
 

@@ -112,9 +112,6 @@
       <div class="container">
         <h2>Greta Holland</h2>
         <p class="title">Associate AI Applications Technical Specialist, IBM Technology, US National Market Global Sales - Software Sales</p>
-        <p>Coppell, TX , United States</p>
-        <p>Greta Holland/US/IBM</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>

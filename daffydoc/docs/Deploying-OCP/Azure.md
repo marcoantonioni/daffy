@@ -1,6 +1,7 @@
+#Azure Install
 
-<img src='../images/Azure-Logo-1024x752.jpeg'   align="top" width="400"
-  height="500" style = "float">
+<img src='../images/Azure-Logo-1024x752.jpeg'   align="top" width="200"
+  height="300" style = "float">
 
 <a>[PREREQ](AWS.md){.md-button .md-button--primary}</a>
 

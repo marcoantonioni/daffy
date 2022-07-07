@@ -1,5 +1,5 @@
 ## Step 1: Access your bastion Server
-[Create Bastion Steps](/Supporting-Software/Create-Your-Own-Bastion.md){ .md-button .md-button--primary }
+[Create Bastion Steps](../Supporting-Software/Create-Your-Own-Bastion.md){ .md-button .md-button--primary }
 
   <b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b>
 
@@ -11,7 +11,8 @@ Log into your Bastion Machine (as root) and run the following command to downloa
 wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
 
 ```
-
+**Optional:** You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file
+[Daffy On-Line Configurator](http://config.daffy-installer.com:1887/start){ .md-button .md-button--primary }
 ## Step 3: Create <environment-name>-env.sh
 
 ```
@@ -82,6 +83,8 @@ You are NOW ready to begin making the necessary edits to your **/data/daffy/env/
 [KVM](../Deploying-OCP/kvm.md){ .md-button .md-button--primary }
 [Google Cloud Platform](../Deploying-OCP/GCP.md){ .md-button .md-button--primary }
 [Amazon Web Services](../Deploying-OCP/AWS.md){ .md-button .md-button--primary }
+
 [Microsoft Azure](../Deploying-OCP/Azure.md){ .md-button .md-button--primary }
 [VMWare VSphere](../Deploying-OCP/VSphere.md){ .md-button .md-button--primary }
-[IBM RedHat OpenShift](../Deploying-OCP/ROK.md){ .md-button .md-button--primary }
+[IBM RedHat OpenShift](../Deploying-OCP/ROKS.md){ .md-button .md-button--primary }
+[TechZone](../Deploying-OCP/TechZone.md){ .md-button .md-button--primary }
