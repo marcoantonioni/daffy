@@ -26,7 +26,7 @@ Content coming!
 
 ## Domain Name System (DNS):
 
-The Domain Name System (DNS) is the hierarchical and decentralized naming system used to identify computers, services, and other resources reachable through the Internet or other Internet Protocol (IP) networks. The resource records contained in the DNS associate domain names with other forms of information. These are most commonly used to map human-friendly domain names to the numerical IP addresses computers need to locate services and devices using the underlying network protocols, but have been extended over time to perform many other functions as well.
+The Domain Name System (DNS) is the hierarchical and decentralized naming system used to identify computers, servr ices, and other resources reachable through the Internet or other Internet Protocol (IP) networks. The resource records contained in the DNS associate domain names with other forms of information. These are most commonly used to map human-friendly domain names to the numerical IP addresses computers need to locate services and devices using the underlying network protocols, but have been extended over time to perform many other functions as well.
 
 - In a nutshell, its a system where your local computer can call other computers on the internet to translate a website name to a computer IP address.  Think of it as the internet phone book.
 
