@@ -1,6 +1,6 @@
 #AWS Install
 
-<img src='../images/aws.png'  align="top" width="200"
+<img src='../images/aws_new.jpeg'  align="top" width="200"
     height="300" style = "float">
 
 ##Step 1: Platform Requirements
@@ -134,3 +134,11 @@ Once your cluster is fully deployed you can access the help menu which as a numb
 ```
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
+[Cloud Paks](../Cloud-Paks/index.md){ .md-button .md-button--primary }
+
+<head>
+<link rel="stylesheet" type="text/css" href="/Deploying-OCP/style.css" media="screen" />
+</head>
+<div class="frame">
+  <button onclick="location.href='/daffy/Cloud-Paks/Data/'" class="custom-btn btn-7"><span>Read More</span></button>
+</div>

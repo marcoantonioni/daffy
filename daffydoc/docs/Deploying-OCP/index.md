@@ -1,16 +1,26 @@
-#Cloud Paks
-
+#Deploying OCP
 <html>
 <body>
 <div style="text-align:center">
-<button onclick="location.href='/daffy/Cloud-Paks/Business-Automation/'" class="custom-btn btn-7">Business Automation</button>
-<button onclick="location.href='/daffy/Cloud-Paks/Data/'" class="custom-btn btn-7">Data</button>
-<button onclick="location.href='/daffy/Cloud-Paks/Integration/'" class="custom-btn btn-7">Integration</button>
-<button onclick="location.href='/daffy/Cloud-Paks/Watson-AIOPS/'" class="custom-btn btn-7">
-Watson AIOps</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/IBM-gym/'" class="custom-btn btn-7">IBM GYM</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/GCP/'" class="custom-btn btn-7">GCP</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/Azure/'" class="custom-btn btn-7">AZURE</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/AWS/'" class="custom-btn btn-7">
+AWS</button>
 <div></div>
-<button onclick="location.href='/daffy/Cloud-Paks/WebSphere-Automation/'" class="custom-btn btn-7">
-WebSphere Automation</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/VSphere/'" class="custom-btn btn-7">
+VSphere</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/ROKS/'" class="custom-btn btn-7">
+ROKS</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/TechZone/'" class="custom-btn btn-7">
+TechZone</button>
 
 </div>
 </body>

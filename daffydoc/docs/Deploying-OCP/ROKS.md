@@ -5,10 +5,6 @@
 
 At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
 
-<a>[PREREQ](AWS.md){.md-button .md-button--primary}</a>
-
-[CORE STEPS](index.md){.md-button .md-button--primary}
-
 ##Step 1 Platform Requirements
 
 To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernetes <b>S</b>ervices on IBM Cloud (ROKS) , there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For ROKS, it breaks down to the following basic two items:
@@ -100,3 +96,5 @@ Once your cluster is fully deployed you can access the help menu which has a num
 ```
 
 Here is a full example for deploying OpenShift on <b>ROKS</b> with the Daffy process.
+
+[Cloud Paks](../Cloud-Paks/index.md){ .md-button .md-button--primary }

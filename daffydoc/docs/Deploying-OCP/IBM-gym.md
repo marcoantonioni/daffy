@@ -1,3 +1,11 @@
+---
+hide:
+  - footer
+---
+# IBM Gym
+<img src='../images/gym.png'   align="top" width="200"
+  height="300" style = "float">
+
 #Overview
 The OpenShift Gym is a learning environment offering individuals the ability to deploy virtual machines to support installation of IBM technologies such as OpenShift and Cloud Paks.
 
@@ -29,3 +37,6 @@ cp vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
 You may make any changes needed in this file.
 
 #Deploying
+
+
+[Cloud Paks](../Cloud-Paks/index.md){ .md-button .md-button--primary }

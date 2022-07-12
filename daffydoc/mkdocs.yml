@@ -1,7 +1,7 @@
-site_name: Daffy
+site_name: Deployment Automation Framework For You
 theme:
   name: material
-#  custom_dir: overrides
+  #custom_dir: overrides
   logo: images/ducks.png
   favicon: images/ducks.png
   icon:
@@ -29,11 +29,12 @@ nav:
     - Overview/index.md
     - Tools Installed: Overview/Tools-Installed.md
   - Deploying OCP:
-    - Pre Req: Deploying-OCP/Pre-Req.md
+    - Deploying-OCP/index.md
+    - Pre-Req: Deploying-OCP/Pre-Req.md
     - Core Steps: Deploying-OCP/Core-steps.md
     - IBM Gym: Deploying-OCP/IBM-gym.md
     - GCP: Deploying-OCP/GCP.md
-    - kvm: Deploying-OCP/kvm.md
+    - KVM: Deploying-OCP/kvm.md
     - Azure: Deploying-OCP/Azure.md
     - AWS: Deploying-OCP/AWS.md
     - VSphere: Deploying-OCP/VSphere.md

@@ -1,7 +1,7 @@
 # GCP Install
 <img src='../images/GCP.png'   align="top" width="200"
   height="300" style = "float">
-  
+
 At this point, you have a **bastion** machine where you have installed the Daffy tool, created your core **<environment-name>-env.sh** and can execute the install of **OCP** on **GCP**.
 
 ## Platform Requirements
@@ -160,3 +160,5 @@ Once your cluster is fully deployed you can access the help menu which has a num
  Here is a full example for deploying OpenShift on **GCP** with the Daffy process.
 
  [![IMAGE_ALT](https://img.youtube.com/vi/UmX4kyB2wfg/0.jpg)](https://www.youtube.com/watch?v=4jpCXlG2ReE)
+
+ [Cloud Paks](../Cloud-Paks/index.md){ .md-button .md-button--primary }

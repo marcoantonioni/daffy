@@ -101,3 +101,5 @@ Once your cluster is fully deployed you can access the help menu which as a numb
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
 Deploying an OpenShift cluster on VSphere using the Daffy Scripts.  (Using VSPhere-IPI Install Type)
+
+[Cloud Paks](../Cloud-Paks/index.md){ .md-button .md-button--primary }

@@ -1,11 +1,6 @@
 #Azure Install
-
 <img src='../images/Azure-Logo-1024x752.jpeg'   align="top" width="200"
   height="300" style = "float">
-
-<a>[PREREQ](AWS.md){.md-button .md-button--primary}</a>
-
-[CORE STEPS](index.md){.md-button .md-button--primary}
 
 At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
 
@@ -108,3 +103,5 @@ Once your cluster is fully deployed you can access the help menu which has a num
 **Note:**<ENVIRONMENT_NAME> is the first part of your name that you used for the <**ENVIRONMENT_NAME**>-env.sh file
 
 Here is a full example for deploying OpenShfit on **Azure** with the Daffy process.
+
+[Cloud Paks](../Cloud-Paks/index.md){ .md-button .md-button--primary }
