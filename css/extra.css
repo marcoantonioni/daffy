@@ -300,3 +300,5 @@ aside, body, input {
   width: 50px;
   border-radius: 50%;
 }
+
+.md-footer__inner { display: none }
