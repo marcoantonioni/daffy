@@ -60,8 +60,6 @@ For you to use Daffy to install on **GCP**, you need to create a service account
 
 **Permission:**
 
-<img src="/images/download.jpeg" style="float: left; margin-right: 10px;" />
-
 Within your **GCP** project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements), make sure your service account has the correct permissions.
 
 ![GCP2.png](../images/DeployingOCP/GCP/GCP2.png)
