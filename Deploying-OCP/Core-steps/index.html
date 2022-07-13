@@ -236,7 +236,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../Supporting-Software/DB2/" class="md-tabs__link">
+      <a href="../../Supporting-Software/" class="md-tabs__link">
         Supporting Software
       </a>
     </li>
@@ -846,6 +846,10 @@
       
         
           
+            
+          
+        
+          
         
           
         
@@ -855,10 +859,16 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5">
-          Supporting Software
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Supporting-Software/">Supporting Software</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Supporting Software" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
@@ -866,6 +876,8 @@
           Supporting Software
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -1309,7 +1321,7 @@
   <h1>Core Steps</h1>
 
 <h2 id="step-1-access-your-bastion-server">Step 1: Access your bastion Server<a class="headerlink" href="#step-1-access-your-bastion-server" title="Permanent link">&para;</a></h2>
-<p><a class="md-button md-button--primary" href="../../Supporting-Software/Create-Your-Own-Bastion/">Create Bastion Steps</a></p>
+<p><button onclick="location.href='/daffy/Supporting-Software/Create-Your-Own-Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button></p>
 <p><b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b></p>
 <h2 id="step-2-install-daffy">Step 2: Install Daffy<a class="headerlink" href="#step-2-install-daffy" title="Permanent link">&para;</a></h2>
 <p>Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts.</p>
@@ -1354,14 +1366,135 @@
 </code></pre></div>
 <p>You are NOW ready to begin making the necessary edits to your <strong>/data/daffy/env/<environment>-env.sh</strong> file for a deployment of OCP to a specific platform.</p>
 <h2 id="step-4-install-openshift-on-your-selected-platform">Step 4: Install OpenShift on your selected platform<a class="headerlink" href="#step-4-install-openshift-on-your-selected-platform" title="Permanent link">&para;</a></h2>
-<p><a class="md-button md-button--primary" href="../IBM-gym/">IBM GYM</a>
-<a class="md-button md-button--primary" href="../kvm/">KVM</a>
-<a class="md-button md-button--primary" href="../GCP/">Google Cloud Platform</a>
-<a class="md-button md-button--primary" href="../AWS/">Amazon Web Services</a></p>
-<p><a class="md-button md-button--primary" href="../Azure/">Microsoft Azure</a>
-<a class="md-button md-button--primary" href="../VSphere/">VMWare VSphere</a>
-<a class="md-button md-button--primary" href="../ROKS/">IBM RedHat OpenShift</a>
-<a class="md-button md-button--primary" href="../TechZone/">TechZone</a></p>
+<div style="text-align:left">
+
+<button onclick="location.href='/daffy/Deploying-OCP/IBM-gym/'" class="custom-btn btn-7">IBM GYM</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/GCP/'" class="custom-btn btn-7">GCP</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/Azure/'" class="custom-btn btn-7">AZURE</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/AWS/'" class="custom-btn btn-7">
+AWS</button>
+<div></div>
+
+<button onclick="location.href='/daffy/Deploying-OCP/VSphere/'" class="custom-btn btn-7">
+VSphere</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/ROKS/'" class="custom-btn btn-7">
+ROKS</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/TechZone/'" class="custom-btn btn-7">
+TechZone</button>
+
+</div>
+
+<!-- PUT ANY JS OR CSS BELOW HERE-->
+
+<style>
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 5px;
+}
+.custom-btn {
+  width: 200px;
+  height: 50px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 7 */
+.btn-7 {
+background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover{
+  color: rgba(251,75,2,1);
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+}
+</style>
 
               
             </article>
