@@ -636,17 +636,17 @@
       
         <li class="md-nav__item">
   <a href="#step-1-platform-requirements" class="md-nav__link">
-    Step 1 Platform Requirements
+    Step 1: Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#step-2-finding-provider-details" class="md-nav__link">
-    Step 2 Finding Provider Details
+    Step 2: Finding Provider Details
   </a>
   
-    <nav class="md-nav" aria-label="Step 2 Finding Provider Details">
+    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -670,14 +670,14 @@
       
         <li class="md-nav__item">
   <a href="#step-3-environment-file" class="md-nav__link">
-    Step 3 Environment File
+    Step 3: Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#step-4-execution" class="md-nav__link">
-    Step 4 Execution
+    Step 4: Execution
   </a>
   
 </li>
@@ -712,7 +712,7 @@
   
     <li class="md-nav__item">
       <a href="../Air-Gap/" class="md-nav__link">
-        Air Gap
+        Restricted Network
       </a>
     </li>
   
@@ -1304,17 +1304,17 @@
       
         <li class="md-nav__item">
   <a href="#step-1-platform-requirements" class="md-nav__link">
-    Step 1 Platform Requirements
+    Step 1: Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#step-2-finding-provider-details" class="md-nav__link">
-    Step 2 Finding Provider Details
+    Step 2: Finding Provider Details
   </a>
   
-    <nav class="md-nav" aria-label="Step 2 Finding Provider Details">
+    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1338,14 +1338,14 @@
       
         <li class="md-nav__item">
   <a href="#step-3-environment-file" class="md-nav__link">
-    Step 3 Environment File
+    Step 3: Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#step-4-execution" class="md-nav__link">
-    Step 4 Execution
+    Step 4: Execution
   </a>
   
 </li>
@@ -1368,13 +1368,13 @@
 <p><img src='../images/ROKS.jpeg'   align="top" width="200"
   height="300" style = "float"></p>
 <p>At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.</p>
-<h2 id="step-1-platform-requirements">Step 1 Platform Requirements<a class="headerlink" href="#step-1-platform-requirements" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-platform-requirements">Step 1: Platform Requirements<a class="headerlink" href="#step-1-platform-requirements" title="Permanent link">&para;</a></h2>
 <p>To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernetes <b>S</b>ervices on IBM Cloud (ROKS) , there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For ROKS, it breaks down to the following basic two items:</p>
 <p><b>Account Details</b> - The account that you plan to install ROKS</p>
 <p><b>Account Type</b> - The account type needed to perform the install</p>
 <p>For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.</p>
 <p>https://ibm.box.com/v/DaffyProviderRequirements</p>
-<h2 id="step-2-finding-provider-details">Step 2 Finding Provider Details<a class="headerlink" href="#step-2-finding-provider-details" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-finding-provider-details">Step 2: Finding Provider Details<a class="headerlink" href="#step-2-finding-provider-details" title="Permanent link">&para;</a></h2>
 <p>To use Daffy to install ROKS, you must find the provider details. Luckily, Daffy automates this as it walks you through this process using ibmcloud CLI. Below are the steps you can use to make sure you use the right information.</p>
 <p><b>Account:</b></p>
 <p>To find more details IBM Cloud account and how to manage you can refer to this:</p>
@@ -1394,7 +1394,7 @@ For you to use Daffy to install on ROKS, you need to have a Pay-As-You-Go or sub
 <p>https://cloud.ibm.com/docs/account?topic=account-accounts</p>
 <h3 id="what-are-account-types">What are account types?<a class="headerlink" href="#what-are-account-types" title="Permanent link">&para;</a></h3>
 <p>Your IBM Cloud account includes many interacting components and systems for resource, user, and access management. Concepts like how certain components are connected or how access works help you in understanding how to set up your account type. Many features are free to use regardless of account type.</p>
-<h2 id="step-3-environment-file">Step 3 Environment File<a class="headerlink" href="#step-3-environment-file" title="Permanent link">&para;</a></h2>
+<h2 id="step-3-environment-file">Step 3: Environment File<a class="headerlink" href="#step-3-environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying OpenShift on ROKS only requires one entry to your existing core environment file (<ENVIRONMENT_NAME>-env.sh).</p>
 <p>Note: You can look in the samples directory on your bastion for example of ROKS install : /data/daffy/env/samples/roks-msp-env.sh</p>
 <p>You can copy the sample file to build your new environment  file.
@@ -1407,7 +1407,7 @@ Valid Options:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>OCP_INSTALL_TYPE=&quot;roks-msp&quot;
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>#ROKS_ZONE=&quot;dal13&quot;
 </code></pre></div>
-<h2 id="step-4-execution">Step 4 Execution<a class="headerlink" href="#step-4-execution" title="Permanent link">&para;</a></h2>
+<h2 id="step-4-execution">Step 4: Execution<a class="headerlink" href="#step-4-execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your OCP cluster to ROKS, run the build.sh script from the /data/daffy/ocp directory. The installer will ask you a number of questions to login to ibmcloud via the CLI. When prompted with a region, select any but stay within your geography. For instance, us-south. This is used to talk with IBM Cloud via the right API endpoint.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>

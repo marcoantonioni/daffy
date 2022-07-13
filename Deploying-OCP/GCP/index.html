@@ -565,36 +565,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-requirements" class="md-nav__link">
-    Platform Requirements
+  <a href="#step-1-platform-requirements" class="md-nav__link">
+    Step 1: Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finding-provider-details" class="md-nav__link">
-    Finding Provider Details
+  <a href="#step-2-finding-provider-details" class="md-nav__link">
+    Step 2: Finding Provider Details
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#identifying-a-region-or-zone" class="md-nav__link">
     Identifying a region or zone
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-are-service-accounts" class="md-nav__link">
     What are service accounts?
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#once-you-open-the-all-quotas-page-you-can-search-for-each-quota-to-see-its-limits" class="md-nav__link">
-    Once you open the "All Quotas" Page, you can search for each quota to see its limits.
+  <a href="#step-3-environment-file" class="md-nav__link">
+    Step 3: Environment File
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-execution" class="md-nav__link">
+    Step 4: Execution
   </a>
   
 </li>
@@ -699,7 +712,7 @@
   
     <li class="md-nav__item">
       <a href="../Air-Gap/" class="md-nav__link">
-        Air Gap
+        Restricted Network
       </a>
     </li>
   
@@ -1290,36 +1303,49 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-requirements" class="md-nav__link">
-    Platform Requirements
+  <a href="#step-1-platform-requirements" class="md-nav__link">
+    Step 1: Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finding-provider-details" class="md-nav__link">
-    Finding Provider Details
+  <a href="#step-2-finding-provider-details" class="md-nav__link">
+    Step 2: Finding Provider Details
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#identifying-a-region-or-zone" class="md-nav__link">
     Identifying a region or zone
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-are-service-accounts" class="md-nav__link">
     What are service accounts?
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#once-you-open-the-all-quotas-page-you-can-search-for-each-quota-to-see-its-limits" class="md-nav__link">
-    Once you open the "All Quotas" Page, you can search for each quota to see its limits.
+  <a href="#step-3-environment-file" class="md-nav__link">
+    Step 3: Environment File
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-execution" class="md-nav__link">
+    Step 4: Execution
   </a>
   
 </li>
@@ -1342,14 +1368,14 @@
 <p><img src='../images/GCP.png'   align="top" width="200"
   height="300" style = "float"></p>
 <p>At this point, you have a <strong>bastion</strong> machine where you have installed the Daffy tool, created your core <strong><environment-name>-env.sh</strong> and can execute the install of <strong>OCP</strong> on <strong>GCP</strong>.</p>
-<h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-platform-requirements">Step 1: Platform Requirements<a class="headerlink" href="#step-1-platform-requirements" title="Permanent link">&para;</a></h2>
 <p>To use Daffy on <strong>G</strong>oogle <strong>C</strong>loud <strong>P</strong>latform, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For GCP, it breaks down to the following basic three items:</p>
 <p><strong>Account Details</strong> - The account that you plan to install OpenShift</p>
 <p><strong>Permissions</strong> - The permissions need to perform the install</p>
 <p><strong>Quota</strong> - The ability to add new workload to that platform</p>
 <p>For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.</p>
 <p>[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements</p>
-<h2 id="finding-provider-details">Finding Provider Details<a class="headerlink" href="#finding-provider-details" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-finding-provider-details">Step 2: Finding Provider Details<a class="headerlink" href="#step-2-finding-provider-details" title="Permanent link">&para;</a></h2>
 <p>To install Daffy on <strong>G</strong>oogle <strong>C</strong>loud <strong>P</strong>latform, the hardest part can be finding the provider details.</p>
 <p><strong>Project ID:</strong></p>
 <p>To find your GCP project you can refer to this:</p>
@@ -1359,7 +1385,7 @@
 <li>You can see your Project ID from the Dashboard</li>
 </ol>
 <p><img alt="GCP1.png" src="../../images/DeployingOCP/GCP/GCP1.png" /></p>
-<h2 id="identifying-a-region-or-zone">Identifying a region or zone<a class="headerlink" href="#identifying-a-region-or-zone" title="Permanent link">&para;</a></h2>
+<h3 id="identifying-a-region-or-zone">Identifying a region or zone<a class="headerlink" href="#identifying-a-region-or-zone" title="Permanent link">&para;</a></h3>
 <p>Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the <strong>region</strong> and the second part of the name describes the <strong>zone</strong> in the region:</p>
 <p>Region</p>
 <p>Regions are collections of zones. Zones have high-bandwidth, low-latency network connections to other zones in the same region. In order to deploy fault-tolerant applications that have high availability, Google recommends deploying applications across multiple zones and multiple regions. This helps protect against unexpected failures of components, up to and including a single zone or region.</p>
@@ -1367,7 +1393,7 @@
 <p><strong>Region:</strong>
 To find a list of regions, you can refer to this:</p>
 <p><a href="https://cloud.google.com/compute/docs/regions-zones">https://cloud.google.com/compute/docs/regions-zones</a></p>
-<h2 id="what-are-service-accounts">What are service accounts?<a class="headerlink" href="#what-are-service-accounts" title="Permanent link">&para;</a></h2>
+<h3 id="what-are-service-accounts">What are service accounts?<a class="headerlink" href="#what-are-service-accounts" title="Permanent link">&para;</a></h3>
 <p>A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make <a href="https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests">authorized API calls</a>, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through <a href="https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority">domain-wide delegation</a>.</p>
 <p><strong>Service Account:</strong></p>
 <p>For you to use Daffy to install on <strong>GCP</strong>, you need to create a service account that has the correct permission to install.</p>
@@ -1388,8 +1414,8 @@ To find a list of regions, you can refer to this:</p>
 <li>Verify Limit/Used Percentage</li>
 </ol>
 <p><img alt="GCP4.png" src="../../images/DeployingOCP/GCP/GCP4.png" /></p>
-<h2 id="once-you-open-the-all-quotas-page-you-can-search-for-each-quota-to-see-its-limits">Once you open the <strong>"All Quotas"</strong> Page, you can search for each quota to see its limits.<a class="headerlink" href="#once-you-open-the-all-quotas-page-you-can-search-for-each-quota-to-see-its-limits" title="Permanent link">&para;</a></h2>
-<p><img alt="GCP5.png" src="../../images/DeployingOCP/GCP/GCP5.png" /></p>
+<p><strong>Once you open the "All Quotas" Page, you can search for each quota to see its limits.</strong></p>
+<p><img alt="GCP5.png" src="../images/gcp5.png" /></p>
 <p><strong>Dedicated public host Zone:</strong></p>
 <p>You will need to create a DZS hosted Zone project.  For the OpenShift install, you need the following:</p>
 <ol>
@@ -1397,9 +1423,11 @@ To find a list of regions, you can refer to this:</p>
 <li>GCP DNS Zone        <strong>- myexample-com</strong></li>
 <li>Transfer the domain to GCP Name services listed in your new <strong>GCP</strong> DNS Zone</li>
 </ol>
-<h1 id="setting-up-dns-for-gcp-deployment-with-openshift">Setting up DNS for GCP Deployment with OpenShift:<a class="headerlink" href="#setting-up-dns-for-gcp-deployment-with-openshift" title="Permanent link">&para;</a></h1>
-<p><a href="https://www.youtube.com/watch?v=CAkWQnOJ88A"><img alt="IMAGE_ALT" src="https://www.youtube.com/watch?v=CAkWQnOJ88A.jpg" /></a></p>
-<h1 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h1>
+<p><strong>Setting up DNS for GCP Deployment with OpenShift:</strong></p>
+<div style="text-align:center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CAkWQnOJ88A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2 id="step-3-environment-file">Step 3: Environment File<a class="headerlink" href="#step-3-environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying the OpenShift on <strong>GCP</strong> only requires three entries to your <strong>existing</strong> core environment file (<strong><ENVIRONMENT_NAME></strong>-env.sh) plus a local service account file.</p>
 <p><strong>Note:</strong> You can look in the samples directory on your bastion for example of <strong>GCP</strong> install : /data/daffy/env/samples/<strong>gcp-ipi-env.sh</strong></p>
 <p>You can copy the sample file to build your <strong>new</strong> environment  file.</p>
@@ -1424,7 +1452,7 @@ To find a list of regions, you can refer to this:</p>
 </ol>
 <p>*** FYI  after you create the Key, you can not view/download it.  You can only get the details at the time of creation</p>
 <p><img alt="GCP6.png" src="../../images/DeployingOCP/GCP/GCP6.png" /></p>
-<h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
+<h2 id="step-4-execution">Step 4: Execution<a class="headerlink" href="#step-4-execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
@@ -1432,8 +1460,6 @@ To find a list of regions, you can refer to this:</p>
 <p><strong>Note:</strong> <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help
 </code></pre></div>
-<p>Here is a full example for deploying OpenShift on <strong>GCP</strong> with the Daffy process.</p>
-<p><a href="https://www.youtube.com/watch?v=4jpCXlG2ReE"><img alt="IMAGE_ALT" src="https://img.youtube.com/vi/UmX4kyB2wfg/0.jpg" /></a></p>
 <p><button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
  Installing Cloud Paks</button></p>
 <!-- PUT ANY JS OR CSS BELOW HERE-->

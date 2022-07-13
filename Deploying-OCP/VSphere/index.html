@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#platform-requirements" class="md-skip">
+        <a href="#step-1-platform-requirements" class="md-skip">
           Skip to content
         </a>
       
@@ -617,18 +617,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-requirements" class="md-nav__link">
-    Platform Requirements
+  <a href="#step-1-platform-requirements" class="md-nav__link">
+    Step 1: Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finding-provider-details" class="md-nav__link">
-    Finding Provider Details
+  <a href="#step-2-finding-provider-details" class="md-nav__link">
+    Step 2: Finding Provider Details
   </a>
   
-    <nav class="md-nav" aria-label="Finding Provider Details">
+    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -644,15 +644,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment-file" class="md-nav__link">
-    Environment File
+  <a href="#step-3-environment-file" class="md-nav__link">
+    Step 3: Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#execution" class="md-nav__link">
-    Execution
+  <a href="#step-4-execution" class="md-nav__link">
+    Step 4: Execution
   </a>
   
 </li>
@@ -701,7 +701,7 @@
   
     <li class="md-nav__item">
       <a href="../Air-Gap/" class="md-nav__link">
-        Air Gap
+        Restricted Network
       </a>
     </li>
   
@@ -1290,18 +1290,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-requirements" class="md-nav__link">
-    Platform Requirements
+  <a href="#step-1-platform-requirements" class="md-nav__link">
+    Step 1: Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finding-provider-details" class="md-nav__link">
-    Finding Provider Details
+  <a href="#step-2-finding-provider-details" class="md-nav__link">
+    Step 2: Finding Provider Details
   </a>
   
-    <nav class="md-nav" aria-label="Finding Provider Details">
+    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1317,15 +1317,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#environment-file" class="md-nav__link">
-    Environment File
+  <a href="#step-3-environment-file" class="md-nav__link">
+    Step 3: Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#execution" class="md-nav__link">
-    Execution
+  <a href="#step-4-execution" class="md-nav__link">
+    Step 4: Execution
   </a>
   
 </li>
@@ -1349,12 +1349,12 @@
 <p align = "left">
     <img src='../images/vsphere.png'  align="top" style = "float">
 </p>
-<h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-platform-requirements">Step 1: Platform Requirements<a class="headerlink" href="#step-1-platform-requirements" title="Permanent link">&para;</a></h2>
 <p>To install Daffy on <strong>VSphere</strong>, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.</p>
 <p>There is a number of permissions you MUST have as a user on VCenter for deployment of OpenShift on VSphere.</p>
 <p>Please refer to the requirements document for the specific requirements for IPI or UPI installs on VSphere.</p>
 <p>https://ibm.box.com/v/DaffyProviderRequirements</p>
-<h2 id="finding-provider-details">Finding Provider Details<a class="headerlink" href="#finding-provider-details" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-finding-provider-details">Step 2: Finding Provider Details<a class="headerlink" href="#step-2-finding-provider-details" title="Permanent link">&para;</a></h2>
 <p>To install Daffy on <strong>VSphere</strong>, the hardest part can be finding the provider details in the VCenter Console.</p>
 <p>Some of the variables are easily understood, but a few can be a bit tricky to find.</p>
 <table>
@@ -1436,7 +1436,7 @@
       </div>
    </body></p>
 <p></html></p>
-<h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
+<h2 id="step-3-environment-file">Step 3: Environment File<a class="headerlink" href="#step-3-environment-file" title="Permanent link">&para;</a></h2>
 <p>Below are the VSphere IPI specific environment variables that must be defined in the /data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file.</p>
 <p>Note: You can look in the samples directory on your bastion for example of <strong>VSphere</strong> install : /data/daffy/env/samples/<strong>vsphere-ipi-env.sh</strong></p>
 <p><u>Valid Options:</u></p>
@@ -1467,7 +1467,7 @@
 <p>Optional:</p>
 <p><strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
 <p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
-<h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
+<h2 id="step-4-execution">Step 4: Execution<a class="headerlink" href="#step-4-execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
