@@ -9,6 +9,12 @@ hide:
 #Overview
 The OpenShift Gym is a learning environment offering individuals the ability to deploy virtual machines to support installation of IBM technologies such as OpenShift and Cloud Paks.
 
+The HCXX Gym has documentation on using daffy, below are some shortcuts for their instructions. Its same basic instructions based on VSphere, but they have some pre-built steps for Gym Members.
+
+1. [Main Gym Page](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/README.md)
+
+2. [VMware IPI deployment - using DAFFY](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/workouts/vmwaredaffy.md)
+
 # Prerequisites
 1. A [Gym Membership](https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym) request can be made by filling out the form.
 2. An active [TECNet VPN ID](https://w3.ibm.com/w3publisher/ibm-americas-hccx/tecnet) is required to access and use the Gym. 
@@ -37,6 +43,3 @@ cp vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
 You may make any changes needed in this file.
 
 #Deploying
-
-
-[Cloud Paks](../Cloud-Paks/index.md){ .md-button .md-button--primary }

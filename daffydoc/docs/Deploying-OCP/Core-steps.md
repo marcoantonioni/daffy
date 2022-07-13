@@ -1,5 +1,5 @@
 ## Step 1: Access your bastion Server
-[Create Bastion Steps](../Supporting-Software/Create-Your-Own-Bastion.md){ .md-button .md-button--primary }
+<button onclick="location.href='/daffy/Supporting-Software/Create-Your-Own-Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
 
   <b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b>
 
@@ -43,6 +43,7 @@ Place your file in :
 
 
 **DAFFY_DEPLOYMENT_TYPE** - Values POC/Demo/Enablement/HCCX/TechZone
+
 **DAFFY_ISC_NUMBER** - If Demo or POC, the ISC Record Number
 
 **DAFFY_CUSTOMER_NAME** - If Demo or POC, the Customer Name
@@ -79,12 +80,132 @@ You are NOW ready to begin making the necessary edits to your **/data/daffy/env/
 
 ## Step 4: Install OpenShift on your selected platform
 
-[IBM GYM](../Deploying-OCP/IBM-gym.md){ .md-button .md-button--primary }
-[KVM](../Deploying-OCP/kvm.md){ .md-button .md-button--primary }
-[Google Cloud Platform](../Deploying-OCP/GCP.md){ .md-button .md-button--primary }
-[Amazon Web Services](../Deploying-OCP/AWS.md){ .md-button .md-button--primary }
+<div style="text-align:left">
 
-[Microsoft Azure](../Deploying-OCP/Azure.md){ .md-button .md-button--primary }
-[VMWare VSphere](../Deploying-OCP/VSphere.md){ .md-button .md-button--primary }
-[IBM RedHat OpenShift](../Deploying-OCP/ROKS.md){ .md-button .md-button--primary }
-[TechZone](../Deploying-OCP/TechZone.md){ .md-button .md-button--primary }
+<button onclick="location.href='/daffy/Deploying-OCP/IBM-gym/'" class="custom-btn btn-7">IBM GYM</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/GCP/'" class="custom-btn btn-7">GCP</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/Azure/'" class="custom-btn btn-7">AZURE</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/AWS/'" class="custom-btn btn-7">
+AWS</button>
+<div></div>
+
+<button onclick="location.href='/daffy/Deploying-OCP/VSphere/'" class="custom-btn btn-7">
+VSphere</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/ROKS/'" class="custom-btn btn-7">
+ROKS</button>
+
+<button onclick="location.href='/daffy/Deploying-OCP/TechZone/'" class="custom-btn btn-7">
+TechZone</button>
+
+</div>
+
+<!-- PUT ANY JS OR CSS BELOW HERE-->
+
+<style>
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 5px;
+}
+.custom-btn {
+  width: 200px;
+  height: 50px;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 7 */
+.btn-7 {
+background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover{
+  color: rgba(251,75,2,1);
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: rgba(251,75,2,1);
+  box-shadow:
+   -7px -7px 20px 0px rgba(255,255,255,.9),
+   -4px -4px 5px 0px rgba(255,255,255,.9),
+   7px 7px 20px 0px rgba(0,0,0,.2),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+}
+</style>

@@ -40,7 +40,7 @@ nav:
     - VSphere: Deploying-OCP/VSphere.md
     - ROKS: Deploying-OCP/ROKS.md
     - TechZone: Deploying-OCP/TechZone.md
-    - Air Gap: Deploying-OCP/Air-Gap.md
+    - Restricted Network: Deploying-OCP/Air-Gap.md
 #    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
     - Cloud-Paks/index.md
@@ -50,6 +50,7 @@ nav:
     - Watson AIOPS: Cloud-Paks/Watson-AIOPS.md
     - WebSphere Automation: Cloud-Paks/WebSphere-Automation.md
   - Supporting Software:
+    - Supporting-Software/index.md
     - DB2: Supporting-Software/DB2.md
     - IBM LDAP: Supporting-Software/IBM-LDAP.md
     - Create Your Own Bastion: Supporting-Software/Create-Your-Own-Bastion.md
