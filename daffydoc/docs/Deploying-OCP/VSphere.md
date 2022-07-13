@@ -13,9 +13,8 @@ To install Daffy on **VSphere**, there are some platform info and requirements t
 There is a number of permissions you MUST have as a user on VCenter for deployment of OpenShift on VSphere.
 
 Please refer to the requirements document for the specific requirements for IPI or UPI installs on VSphere.
-
-https://ibm.box.com/v/DaffyProviderRequirements
-
+<a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">https://ibm.box.com/v/DaffyProviderRequirements
+</a>
 ## Step 2: Finding Provider Details
 
 To install Daffy on **VSphere**, the hardest part can be finding the provider details in the VCenter Console.
@@ -24,7 +23,7 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 
 
 | Variable Name   | Info          | Install Type | Required |
-| :---            |    :----:     |   :----:     |   :----:     |  
+| :---------         |    :---------    |   :----     |   :----     |  
 | VSPHERE_DATASTORE           | This is the name of the VSphere Datastore       |IPI/UPI |Yes
 | VSPHERE_CLUSTER          | The VSphere cluster is NOT the same as your OpenShift Cluster name. This is variable is referring to the VSphere Cluster name. Note: This is the name of the VSphere Cluster      |IPI/UPI|Yes
 |VSPHERE_ISO_DATASTORE|This is the name of the datastore where the the coreos iso is located|IPI/UPI|Yes
@@ -34,6 +33,8 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 |VSPHERE_FOLDER|This is the location of where you will store the NEW VM's.|IPI/UPI|Yes
 |VSPHERE_API_VIP|This is an UNUSED IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address.|IPI|Yes
 |VSPHERE_INGRESS|This is an UNUSED IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.|IPI|Yes
+
+
 
 ### Setting up DNS for VSphere Deployment with OpenShift:
 
@@ -58,16 +59,16 @@ Note: You can look in the samples directory on your bastion for example of **VSp
 <u>Valid Options:</u>
 
 **VSPHERE_USERNAME**='userid'  
-**VSPHERE_HOSTNAME**='vsphere-host-name'
-**VSPHERE_DATASTORE**='datastore'     
-**VSPHERE_CLUSTER**='cluster-name'.   
-**VSPHERE_ISO_DATASTORE**='iso-datastore'     
+**VSPHERE_HOSTNAME**='vsphere-host-name'  
+**VSPHERE_DATASTORE**='datastore'  
+**VSPHERE_CLUSTER**='cluster-name'    
+**VSPHERE_ISO_DATASTORE**='iso-datastore'       
 **VSPHERE_ISO_IMAGE_BASE**='datastore-directory'     
 **VSPHERE_NETWORK1**='vlan-name'      
 **VSPHERE_DATACENTER**='vsphere-datacenter'     
 **VSPHERE_FOLDER**="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"   
-**VSPHERE_API_VIP**="xx.xxx.xxx.xxx"
-**VSPHERE_INGRESS_VIP**="xx.xxx.xxx"
+**VSPHERE_API_VIP**="xx.xxx.xxx.xxx"  
+**VSPHERE_INGRESS_VIP**="xx.xxx.xxx"  
 
 ```
 VSPHERE_USERNAME='userid'     
