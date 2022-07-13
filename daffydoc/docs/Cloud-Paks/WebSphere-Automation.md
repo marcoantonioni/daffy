@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 Cloud Pak for WebSphere Automation {: style="text-align: left;"}
 ===============
 <img src='../images/WSA.png'

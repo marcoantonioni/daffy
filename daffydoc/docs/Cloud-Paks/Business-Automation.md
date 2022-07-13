@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 Cloud Pak for Business Automation {: style="text-align: left;"}
 ===============
 <img src='../images/ba.png'

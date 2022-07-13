@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 #Deploying OCP
 <html>
 <body>

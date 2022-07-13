@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 # TechZone Install
 
 <img src='../images/techzone.jpeg'   align="top" width="100"

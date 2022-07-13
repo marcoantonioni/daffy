@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 #Azure Install
 <img src='../images/Azure-Logo-1024x752.jpeg'   align="top" width="200"
   height="300" style = "float">

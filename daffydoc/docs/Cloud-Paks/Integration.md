@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 Cloud Pak for Integration {: style="text-align: left;"}
 ===============
 <img src='../images/integration.png'

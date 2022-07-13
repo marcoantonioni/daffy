@@ -38,3 +38,58 @@ nmon | always
 |ibmcloud |ROKS Install and IBM DNS Used
 |ibm-cp-automation |CP4BA Install Only
 |podman |CP4BA Install or mirror local registry
+
+
+##Kernel-based Virtual Machine Utilities(KVM)
+
+| Tool   | 	When |
+| :---      |    :----:     |  
+|lvm2 KVM install Only
+|bridge-utils |KVM install Only
+|qemu-kvm |KVM install Only
+|virtinst |KVM install Only
+|libvirt-daemon |KVM install Only
+|virt-manager |KVM install Only
+|cifs-utils KVM |install Only
+|libosinfo-bin |KVM install Only
+|uvtool |KVM install Only
+|matchbox |KVM install Only
+|rhcos-live-initramfs.x86_64.img| KVM install Only
+|rhcos-live-kernel-x86_64 |KVM install Only
+|rhcos-live-rootfs.x86_64.img |KVM install Only
+|apache2| VMDashboard Only
+|mysql-server| VMDashboard Only
+|php |VMDashboard Only
+|libapache2-mod-php| VMDashboard Only
+|php-mysql |VMDashboard Only
+|php-xml |VMDashboard Only
+|php-libvirt-php| VMDashboard Only
+|python |VMDashboard Only
+
+##UPI
+
+| Tool   | 	When |
+| :---      |    :----:     |  
+|haproxy |KVM or VSphere install Only
+|dnsmasq |KVM or VSphere install Only
+
+##AirGap Tools
+
+| Tool   | 	When |
+| :---      |    :----:     |  
+|opm |build local registry only
+|rhcos-4.6.40-x86_64-live.x86_64.iso| build local registry only
+|rhcos-4.7.13-x86_64-live.x86_64.iso |build local registry only
+|rhcos-4.8.2-x86_64-live.x86_64.iso |build local registry only
+|rhcos-4.9.0-x86_64-live.x86_64.iso |build local registry only
+|podman |build local registry only
+
+##VSphere
+
+| Tool   | 	When |
+| :---      |    :----:     |  
+|rhcos-4.6.47-x86_64-vmware.x86_64.ova |VSphere IPI only
+|rhcos-4.7.33-x86_64-vmware.x86_64.ova |VSphere IPI only
+|rhcos-4.8.14-x86_64-vmware.x86_64.ova |VSphere IPI only
+|rhcos-4.9.0-x86_64-vmware.x86_64.ova| VSphere IPI only
+|govc |VSphere Install only

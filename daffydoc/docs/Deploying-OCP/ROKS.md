@@ -1,3 +1,9 @@
+---
+hide:
+  - footer
+---
+
+
 #ROKS Install
 
 <img src='../images/ROKS.jpeg'   align="top" width="200"

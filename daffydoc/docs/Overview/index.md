@@ -1,5 +1,5 @@
 <p align = "center">
-  <img src='./images/Daffy Capabilities.png'  align="top"  style = "float">
+  <img src='./images/Daffy_Capabilities_new.png'  align="top"  style = "float">
 </p>
 
 <p align = "center">

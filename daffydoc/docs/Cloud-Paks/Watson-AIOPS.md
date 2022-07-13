@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 Cloud Pak for Watson AI Ops {: style="text-align: left;"}
 ===============
 <img src='../images/WAIOPS.png'

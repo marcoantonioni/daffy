@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 <p align = "left">
     <img src='../images/vsphere.png'  align="top" style = "float">
 </p>

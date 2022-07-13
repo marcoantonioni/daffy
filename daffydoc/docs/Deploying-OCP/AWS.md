@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 #AWS Install
 
 <img src='../images/aws_new.jpeg'  align="top" width="200"

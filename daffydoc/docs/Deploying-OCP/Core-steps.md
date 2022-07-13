@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 ## Step 1: Access your bastion Server
 <button onclick="location.href='/daffy/Supporting-Software/Create-Your-Own-Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
 

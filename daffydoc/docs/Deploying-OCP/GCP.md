@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 # GCP Install
 <img src='../images/GCP.png'   align="top" width="200"
   height="300" style = "float">

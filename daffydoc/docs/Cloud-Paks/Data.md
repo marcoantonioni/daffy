@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 Cloud Pak for Data {: style="text-align: left;"}
 ===============
 <img src='../images/data.png'
