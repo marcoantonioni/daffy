@@ -3,7 +3,7 @@ Thought out the Daffy process,  it will install all support tools it would need.
 
 ## Core
 | Tool   | 	When |
-| :---      |    :----:     |  
+| :---      |    :----     |  
 |oc|always
 |openshfit-install|always
 |kubectl|always
@@ -26,7 +26,7 @@ nmon | always
 
 ## Cloud CLI
 | Tool   | 	When |
-| :---      |    :----:     |  
+| :---      |    :----     |  
 |awscli |AWS Install only
 |azure-cli |Azure Install only
 |gcloud |GCP Install only
@@ -43,7 +43,7 @@ nmon | always
 ##Kernel-based Virtual Machine Utilities(KVM)
 
 | Tool   | 	When |
-| :---      |    :----:     |  
+| :---      |    :----     |  
 |lvm2 KVM install Only
 |bridge-utils |KVM install Only
 |qemu-kvm |KVM install Only
@@ -69,14 +69,14 @@ nmon | always
 ##UPI
 
 | Tool   | 	When |
-| :---      |    :----:     |  
+| :---      |    :----     |  
 |haproxy |KVM or VSphere install Only
 |dnsmasq |KVM or VSphere install Only
 
 ##AirGap Tools
 
 | Tool   | 	When |
-| :---      |    :----:     |  
+| :---      |    :----     |  
 |opm |build local registry only
 |rhcos-4.6.40-x86_64-live.x86_64.iso| build local registry only
 |rhcos-4.7.13-x86_64-live.x86_64.iso |build local registry only
@@ -87,7 +87,7 @@ nmon | always
 ##VSphere
 
 | Tool   | 	When |
-| :---      |    :----:     |  
+| :---      |    :----     |  
 |rhcos-4.6.47-x86_64-vmware.x86_64.ova |VSphere IPI only
 |rhcos-4.7.33-x86_64-vmware.x86_64.ova |VSphere IPI only
 |rhcos-4.8.14-x86_64-vmware.x86_64.ova |VSphere IPI only

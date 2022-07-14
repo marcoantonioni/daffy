@@ -21,7 +21,7 @@ To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernet
 
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-https://ibm.box.com/v/DaffyProviderRequirements
+[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
 
 ##Step 2: Finding Provider Details
 

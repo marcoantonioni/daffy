@@ -21,7 +21,7 @@ To use Daffy on **G**oogle **C**loud **P**latform, there are some platform info 
 
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements
+[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
 
 ## Step 2: Finding Provider Details
 

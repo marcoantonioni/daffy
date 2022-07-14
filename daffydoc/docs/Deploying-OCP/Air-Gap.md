@@ -3,9 +3,7 @@ hide:
   - footer
 ---
 
-!!! info
 
-    This page is under construction
 <!-- CSS FOR SLIDESHOW -->
 <style>
 * {box-sizing:border-box}

@@ -1,4 +1,4 @@
-## Your environment file name must follow simple rules.
+## Your environment file name must follow simple rules:
 
 1. All lower case no spaces
 2. Alphanumeric  or - (no special characters)

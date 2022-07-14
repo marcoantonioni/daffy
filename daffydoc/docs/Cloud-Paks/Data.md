@@ -17,7 +17,7 @@ CP4D_VERSION=<version>
 With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
-| :---      |    :----:     |  
+| :---      |    :----     |  
 | 4.0.5     | 4.6, 4.8      |
 | 4.0.4     | 4.6, 4.8      |
 | 4.0.3     | 4.6, 4.8      |

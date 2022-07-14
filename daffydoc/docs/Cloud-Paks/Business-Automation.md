@@ -61,7 +61,7 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE
 ```
 
 Service | Components | CP4BA Version
-:----------- |:-------------:| -----------:
+:----------- |:-------------| -----------
 decisions        | odm,bai        | 21.0.3
 content        | filenet,cmis,ier,tm,bai        | 21.0.3
 content-decisions        | filenet,cmis,ier,tm,odm,bai        | 21.0.3

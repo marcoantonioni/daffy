@@ -1,12 +1,15 @@
 <p align = "center">
-  <img src='./images/Daffy_Capabilities_new.png'  align="top"  style = "float">
+  <img src='./images/Daffy_Capabilities_2.png'  align="top"  style = "float">
 </p>
 
 <p align = "center">
   <img src='./images/download.png'  align="top"  style = "float">
 </p>
-# Demo Video
-## OpenShift install on Azure with Cloud Pak for Data and Watson Knowledge Catalog
+
+<FONT COLOR="black">
+<h1>Demo Video</h1>
+<h2>OpenShift install on Azure with Cloud Pak for Data and Watson Knowledge Catalog</h2>
+</FONT>
 <html>
    <head>
       <title>HTML Video embed</title>

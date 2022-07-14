@@ -6,7 +6,7 @@ Must end in -env.sh
 Environment name is the prefix for the file name
 
 | Environment Name   | File Name          | Status | Reason |
-| :---            |    :----:     |   :----:     |   :----:     |  
+| :---            |    :----     |   :----     |   :----     |  
 | lab12           | /data/daffy/env/lab12-env.sh | VALID | Perfect|
 | lab12          | /data/daffy/env/lab12-env | INVALID |Does not end in .sh|
 | lab12          |/data/daffy/env/lab12|INVALID |Does not end in -env.sh

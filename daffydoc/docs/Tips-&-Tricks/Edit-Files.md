@@ -26,6 +26,6 @@ If you messed up the file and you want to exit and not save your file:
 
 VI Cheat-sheet -
 
-https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
+[https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf](https://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf)
 
-Nano Cheat-sheet           https://itsfoss.com/nano-editor-guide/
+Nano Cheat-sheet           [https://itsfoss.com/nano-editor-guide/](https://itsfoss.com/nano-editor-guide/)
