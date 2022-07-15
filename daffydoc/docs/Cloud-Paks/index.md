@@ -8,10 +8,10 @@ hide:
 <html>
 <body>
 <div style="text-align:center">
-<button onclick="location.href='Business-Automation/'" class="custom-btn btn-7">Business Automation</button>
-<button onclick="location.href='Data/'" class="custom-btn btn-7">Data</button>
-<button onclick="location.href='Integration/'" class="custom-btn btn-7">Integration</button>
-<button onclick="location.href='Watson-AIOPS/'" class="custom-btn btn-7">
+<button onclick="location.href='./Business-Automation/'" class="custom-btn btn-7">Business Automation</button>
+<button onclick="location.href='./Data/'" class="custom-btn btn-7">Data</button>
+<button onclick="location.href='./Integration/'" class="custom-btn btn-7">Integration</button>
+<button onclick="location.href='./Watson-AIOPS/'" class="custom-btn btn-7">
 Watson AIOps</button>
 <div></div>
 <button onclick="location.href='WebSphere-Automation/'" class="custom-btn btn-7">
