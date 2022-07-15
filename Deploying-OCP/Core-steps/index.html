@@ -1292,8 +1292,8 @@
 <p>Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts.</p>
 <p><div class="highlight"><pre><span></span><code>wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
 </code></pre></div>
-<strong>Optional:</strong> You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file
-<a class="md-button md-button--primary" href="http://config.daffy-installer.com:1887/start">Daffy On-Line Configurator</a></p>
+<strong>Optional:</strong> You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file</p>
+<p><button onclick="location.href='http://config.daffy-installer.com:1887/start/'" class="custom-btn btn-7">Create Bastion Steps</button></p>
 <h2 id="step-3-create-envsh">Step 3: Create <environment-name>-env.sh<a class="headerlink" href="#step-3-create-envsh" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>DAFFY_UNIQUE_ID=&quot;&lt;YourID@ibm.com&gt;&quot;
 #This is required - Values POC/Demo/Enablement/HCCX/TechZone
@@ -1309,27 +1309,69 @@ OCP_RELEASE=&quot;4.8.36&quot;
 VM_TSHIRT_SIZE=&quot;Large&quot;
 </code></pre></div>
 <p>This file is where you store values that will define your environment and Daffy will use to build your environment.</p>
-<p>Place your file in :</p>
-<p>/data/daffy/env/<ENVIRONMENT_NAME>-env.sh</p>
-<p>** Best practices is <ENVIRONMENT_NAME> is your cluster name but not required.</p>
-<p><strong>DAFFY_DEPLOYMENT_TYPE</strong> - Values POC/Demo/Enablement/HCCX/TechZone</p>
-<p><strong>DAFFY_ISC_NUMBER</strong> - If Demo or POC, the ISC Record Number</p>
-<p><strong>DAFFY_CUSTOMER_NAME</strong> - If Demo or POC, the Customer Name</p>
-<p><strong>BASE_DOMAIN</strong> - Is your DNS name your cluster will use</p>
-<p><strong>CLUSTER_NAM</strong>E - The name you want to give your OpenShift Cluster</p>
-<p><strong>OCP_RELEASE</strong> - What version of OpenShift you want to Install</p>
-<p><strong>VM_TSHIRT_SIZE</strong> - How large you want the OpenShift Cluster to be. Min and Large Supported today</p>
-<p><strong> If </strong>MSP<strong> type install like ROKS, </strong>BASE_DOMAIN** is not needed.</p>
+<p>Place your file in following folder with your environment name like the folling :</p>
+<p>/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
+<p>Best practices is &lt;<strong>ENVIRONMENT_NAME</strong>&gt; is your cluster name that will be used and you set in your file, but not required.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Example Values</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">DAFFY_DEPLOYMENT_TYPE</td>
+<td style="text-align: left;">Enablement</td>
+<td style="text-align: left;">POC/Demo/Enablement/HCCX/TechZone</td>
+</tr>
+<tr>
+<td style="text-align: left;">DAFFY_ISC_NUMBER</td>
+<td style="text-align: left;">$ISC_NUMBER}</td>
+<td style="text-align: left;">Required if Demo or POC</td>
+</tr>
+<tr>
+<td style="text-align: left;">DAFFY_CUSTOMER_NAME</td>
+<td style="text-align: left;">Acme Shoes</td>
+<td style="text-align: left;">Required if Demo or POC</td>
+</tr>
+<tr>
+<td style="text-align: left;">BASE_DOMAIN</td>
+<td style="text-align: left;">acme-shoes.com</td>
+<td style="text-align: left;">Is your DNS name your cluster will use</td>
+</tr>
+<tr>
+<td style="text-align: left;">CLUSTER_NAME</td>
+<td style="text-align: left;">demo01</td>
+<td style="text-align: left;">The name you want to give your OpenShift Cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_RELEASE</td>
+<td style="text-align: left;">4.10.17</td>
+<td style="text-align: left;">What version of OpenShift you want to Install</td>
+</tr>
+<tr>
+<td style="text-align: left;">VM_TSHIRT_SIZE</td>
+<td style="text-align: left;">Large</td>
+<td style="text-align: left;">How large you want the OpenShift Cluster to be. <strong>Min</strong> and <strong>Large</strong> Supported today</td>
+</tr>
+</tbody>
+</table>
+<p>If <strong>MSP</strong> type install like ROKS, <strong>BASE_DOMAIN</strong> is not needed.</p>
 <p><strong>Optionally:</strong> As a starting point, you can copy a sample environment file from the samples folder located here:  /data/daffy/env/samples/<platform>-env.sh
 <div class="highlight"><pre><span></span><code>cd /data/daffy/env/samples
 </code></pre></div></p>
 <p>Replace these values for the next command.</p>
-<p><strong><platform></strong> = This is the sample file name for the platform you are planning to deploy your OCP Cluster.</p>
-<p><strong><environment></strong> = This is the name of your environment file. As a best practice, we recommend you use the name of your cluster.</p>
-<p>This command will copy the the sample file and place it in the /data/daffy/env directory (back one folder)</p>
+<p>&lt;<strong>platform</strong>&gt; = This is the sample file name for the platform you are planning to deploy your OCP Cluster.</p>
+<p>&lt;<strong>environment</strong>&gt; = This is the name of your environment file. As a best practice, we recommend you use the name of your cluster.</p>
+<ul>
+<li><strong>example:</strong>  cp aws-ipi-env.sh ../demo01-env.sh</li>
+</ul>
+<p>This command will copy the sample file and place it in the /data/daffy/env directory (back one folder)</p>
 <div class="highlight"><pre><span></span><code>cp &lt;platform&gt;-env.sh ../&lt;environment&gt;-env.sh
 </code></pre></div>
-<p>You are NOW ready to begin making the necessary edits to your <strong>/data/daffy/env/<environment>-env.sh</strong> file for a deployment of OCP to a specific platform.</p>
+<p>You are <strong>NOW</strong> ready to begin making the necessary edits to your /data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file for a deployment of OCP to a specific platform.</p>
 <h2 id="step-4-install-openshift-on-your-selected-platform">Step 4: Install OpenShift on your selected platform<a class="headerlink" href="#step-4-install-openshift-on-your-selected-platform" title="Permanent link">&para;</a></h2>
 <div style="text-align:left">
 
