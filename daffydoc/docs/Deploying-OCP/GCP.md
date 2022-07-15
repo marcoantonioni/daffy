@@ -27,7 +27,7 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 
 To install Daffy on **G**oogle **C**loud **P**latform, the hardest part can be finding the provider details.
 
-**Project ID:**
+Project ID
 
 To find your GCP project you can refer to this:
 
@@ -38,7 +38,7 @@ To find your GCP project you can refer to this:
 
 ![GCP1.png](../images/DeployingOCP/GCP/GCP1.png)
 
-### Identifying a region or zone
+Identifying a region or zone
 
 Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the **region** and the second part of the name describes the **zone** in the region:
 
@@ -53,7 +53,7 @@ To find a list of regions, you can refer to this:
 
 [https://cloud.google.com/compute/docs/regions-zones](https://cloud.google.com/compute/docs/regions-zones)
 
-### What are service accounts?
+What are service accounts?
 
 A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make [authorized API calls](https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests), authorized as either the service account itself, or as Google Workspace or Cloud Identity users through [domain-wide delegation](https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority).
 
