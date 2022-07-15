@@ -51,7 +51,7 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Step 2: Deploy Service
+## Step 2: Deploy Services
 
 The Event Manager for WatsonAIOps is an optional service deployment, that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file.
 
