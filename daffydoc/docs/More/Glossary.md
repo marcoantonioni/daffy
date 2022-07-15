@@ -2,23 +2,37 @@
 
 ## Bastion:
 
-Content coming!
+A bastion host is a special-purpose computer on a network specifically designed and configured to withstand attacks, so named by analogy to the military fortification. The computer generally hosts a single application or process, for example, a proxy server or load balancer, and all other services are removed or limited to reduce the threat to the computer. It is hardened in this manner primarily due to its location and purpose, which is either on the outside of a firewall or inside of a demilitarized zone (DMZ) and usually involves access from untrusted networks or computers. These computers are also equipped with special networking interfaces to withstand high-bandwidth attacks through the internet.
+
+- In a nutshell,
 
 ## Catalog:
 
-Content coming!
 
 ## Cloud Pak:
 
-Content coming!
+IBM Cloud Paks are packaged based on solution domains and harness the combined power of container technology and IBM enterprise expertise to help organizations solve their most pressing challenges:
+
+- IBM Cloud Pak® for Data: Unify cloud storage and simplify the collection, organization and analysis of data.
+- IBM Cloud Pak® for Business Automation: Automate business operations to achieve better performance.
+- IBM Cloud Pak® for Watson AIOps: Place AI at the core of your IT operations tool chain. Automate operations management decisions while resolving real-world operations management scenarios to deliver actionable insights.
+- IBM Cloud Pak® for Integration: Automate application and data flows to improve client experiences. Connect your applications and data wherever they live. Get new tools for automated integrations based on APIs that extend capability and modernize flexibility for ongoing adaption.
+- IBM Cloud Pak® for Security: Generate deeper insights into threats, and orchestrate actions for scalability and automated responses.
+- IBM Cloud Pak® for Network Automation: Automate networks to deliver zero-touch operations.
 
 ## Cloud Provider:
 
-Content coming!
+A cloud service provider is a third-party company offering a cloud-based platform, infrastructure, application, or storage services. Much like a homeowner would pay for a utility such as electricity or gas, companies typically have to pay only for the amount of cloud services they use, as business demands require.
+
+Besides the pay-per-use model, cloud service providers also give companies a wide range of benefits. Businesses can take advantage of scalability and flexibility by not being limited to physical constraints of on-premises servers, the reliability of multiple data centers with multiple redundancies, customization by configuring servers to your preferences, and responsive load balancing that can easily respond to changing demands. Though businesses should also evaluate security considerations of storing information in the cloud to ensure industry-recommended access and compliance management configurations and practices are enacted and met.
+
+- In a nutshell,
 
 ## Cluster:
 
-Content coming!
+Multiple computing nodes or hosts that work together to support an application or middleware such as a database. A cluster is a group of inter-connected computers or hosts that work together to support applications and middleware (e.g. databases).  In a cluster, each computer is referred to as a “node”. Unlike grid computers, where each node performs a different task, computer clusters assign the same task to each node. Nodes in a cluster are usually connected to each other through high-speed local area networks. Each node runs its own instance of an operating system. A computer cluster may range from a simple two-node system connecting two personal computers to a supercomputer with a cluster architecture. Computer clusters are often used for cost-effective high-performance computing (HPC) and high availability (HA). If a single component fails in a computer cluster, the other nodes continue to provide uninterrupted processing.  A computer cluster can provide faster processing speed, larger storage capacity, better data integrity, greater reliability and wider availability of resources. Computer clusters are usually dedicated to specific functions, such as load balancing, high availability, high performance or large-scale processing.
+
+- In a nutshell,
 
 ## Control Plane:
 
@@ -72,7 +86,15 @@ Content coming!
 
 ## Master Node:
 
-Content coming!
+The master node is responsible for running several Kubernetes processes that are absolutely necessary to run and manage the cluster properly:
+
+- API Server: This is essentially the entry-point to the Kubernates cluster, which itself is a container. This is the process that allows communication between different Kubernetes clients and the cluster. The clients include the UI, if we are using the Kubernetes Dashboard, the API if we are running scripts, or the command-line tool. All these clients talk to the API Server to interact with the cluster.
+
+- Controller Manager: This keeps track of the state of the cluster. It keeps an eye on the cluster and checks whether a node needs to be repaired or restarted.
+
+- Scheduler: Scheduler ensures proper pod placement on the worker nodes based on several factors such as the available resources and the current load on the cluster.
+
+- etcd: This is the key-value storage responsible for holding the state of the cluster at any given time. etcd has the configuration information and status data of each node in the cluster. etcd snapshots allow us to recover the whole cluster state, hence it is used in backing up and restoring a cluster.
 
 ## Namespace:
 
@@ -88,11 +110,13 @@ Content coming!
 
 ## Pod:
 
-Content coming!
+Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
 
-## Service:
+A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers. A Pod's contents are always co-located and co-scheduled, and run in a shared context. A Pod models an application-specific "logical host": it contains one or more application containers which are relatively tightly coupled. In non-cloud contexts, applications executed on the same physical or virtual machine are analogous to cloud applications executed on the same logical host.
 
-Content coming!
+As well as application containers, a Pod can contain init containers that run during Pod startup. You can also inject ephemeral containers for debugging if your cluster offers this.
+
+- In a nutshell,
 
 ## Service:
 
@@ -104,8 +128,18 @@ Content coming!
 
 ## Storage Class:
 
-Content coming!
+A StorageClass provides a way for administrators to describe the "classes" of storage they offer. Different classes might map to quality-of-service levels, or to backup policies, or to arbitrary policies determined by the cluster administrators. Kubernetes itself is unopinionated about what classes represent. This concept is sometimes called "profiles" in other storage systems.
+
+- In a nutshell,
 
 ## Worker Node:
 
-Content coming!
+The worker nodes are the part of the Kubernetes clusters which actually execute the containers and applications on them. They have two main components, the Kubelet Service and the Kube-proxy Service.
+
+- Kubelet Service: Each worker node has a Kubelet process running on it that allows the cluster to talk to each other and execute some tasks on the worker nodes, such as running application processes. It listens for instructions from the Api Server and manages containers running on the node.
+
+- Kube-proxy Service: The Kube-Proxy Service is responsible for enabling communication between services within the cluster.
+
+These worker nodes have docker containers for each application running on them. There may be a different number of containers running on each node depending on the distribution of the workload.
+
+Worker nodes are generally more powerful than master nodes because they have to run hundreds of clusters on them. However, master nodes hold more significance because they manage the distribution of workload and the state of the cluster.
