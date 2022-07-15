@@ -21,7 +21,7 @@ To use Daffy on **G**oogle **C**loud **P**latform, there are some platform info 
 
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
+[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
 ## Step 2: Finding Provider Details
 
@@ -31,7 +31,7 @@ Project ID
 
 To find your GCP project you can refer to this:
 
-[https://cloud.google.com/resource-manager/docs/creating-managing-projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+[https://cloud.google.com/resource-manager/docs/creating-managing-projects](https://cloud.google.com/resource-manager/docs/creating-managing-projects){target=_blank}
 
 1. You can list your Project ID from the Drop down
 2. You can see your Project ID from the Dashboard
@@ -51,21 +51,21 @@ Choose regions that makes sense for your scenario. For example, if you only have
 **Region:**
 To find a list of regions, you can refer to this:
 
-[https://cloud.google.com/compute/docs/regions-zones](https://cloud.google.com/compute/docs/regions-zones)
+[https://cloud.google.com/compute/docs/regions-zones](https://cloud.google.com/compute/docs/regions-zones){target=_blank}
 
 What are service accounts?
 
-A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make [authorized API calls](https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests), authorized as either the service account itself, or as Google Workspace or Cloud Identity users through [domain-wide delegation](https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority).
+A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make [authorized API calls](https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests){target=_blank}, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through [domain-wide delegation](https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority){target=_blank}.
 
 **Service Account:**
 
 For you to use Daffy to install on **GCP**, you need to create a service account that has the correct permission to install.
 
-[https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating)
+[https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating){target=_blank}
 
 **Permission:**
 
-Within your **GCP** project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements), make sure your service account has the correct permissions.
+Within your **GCP** project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements){target=_blank}, make sure your service account has the correct permissions.
 
 ![GCP2.png](../images/DeployingOCP/GCP/GCP2.png)
 
@@ -77,7 +77,7 @@ For each **GCP** project, you need to enable API access. Within your **GCP** pro
 
 **Quota:**
 
-For each **GCP** project, you need to enable API access. Within your **GCP** project, you would need to enable each API needed for the OpenShift install. From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements), you can search for each API and confirm/enable each API Service.
+For each **GCP** project, you need to enable API access. Within your **GCP** project, you would need to enable each API needed for the OpenShift install. From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements){target=_blank}, you can search for each API and confirm/enable each API Service.
 
 1. Search for "Quotas" within your GCP project
 2. Select the "All Quotas"
@@ -117,9 +117,9 @@ cp /data/daffy/env/samples/**gcp-ipi-env.sh** /data/daffy/env/**<ENVIRONMENT_NAM
 
 **OCP_INSTALL_TYPE=** gcp-ipi
 
-**GCP_PROJECT_ID=** [<YourGCPProjectID>](https://cloud.google.com/resource-manager/docs/creating-managing-projects)          
+**GCP_PROJECT_ID=** [<YourGCPProjectID>](https://cloud.google.com/resource-manager/docs/creating-managing-projects){target=_blank}          
 
-**GCP_REGION**= [<AnyValidGCPRegion>](https://cloud.google.com/compute/docs/regions-zones)
+**GCP_REGION**= [<AnyValidGCPRegion>](https://cloud.google.com/compute/docs/regions-zones){target=_blank}
 
 Optional:
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true

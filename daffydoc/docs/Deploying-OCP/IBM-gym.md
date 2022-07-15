@@ -11,13 +11,13 @@ The OpenShift Gym is a learning environment offering individuals the ability to 
 
 The HCXX Gym has documentation on using daffy, below are some shortcuts for their instructions. Its same basic instructions based on VSphere, but they have some pre-built steps for Gym Members.
 
-1. [Main Gym Page](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/README.md)
+1. [Main Gym Page](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/README.md){target=_blank}
 
-2. [VMware IPI deployment - using DAFFY](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/workouts/vmwaredaffy.md)
+2. [VMware IPI deployment - using DAFFY](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/workouts/vmwaredaffy.md){target=_blank}
 
 # Prerequisites
-1. A [Gym Membership](https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym) request can be made by filling out the form.
-2. An active [TECNet VPN ID](https://w3.ibm.com/w3publisher/ibm-americas-hccx/tecnet) is required to access and use the Gym. 
+1. A [Gym Membership](https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym){target=_blank} request can be made by filling out the form.
+2. An active [TECNet VPN ID](https://w3.ibm.com/w3publisher/ibm-americas-hccx/tecnet){target=_blank} is required to access and use the Gym. 
 
 An email containing details on accessing the features of the OpenShift Gym is sent to the email address supplied once provisioning has completed. General information about the environment supplied is listed below. Refer to the provisioning email for detailed information.
 

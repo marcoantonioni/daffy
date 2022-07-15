@@ -20,7 +20,7 @@ To use Daffy on **Amazon Web Services**, there are some platform info and requir
 
   For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-  [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
+  [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
 ##Step 2: Finding Provider Details
 
@@ -28,7 +28,7 @@ To install Daffy on **AWS**, the hardest part can be finding the provider detail
 
 To create or use an existing AWS Access Key ID you can refer to this:
 
-[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey)
+[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey){target=_blank}
 
 Note: Use the Identity and Access Management (IAM) service to manage access keys.
 
@@ -65,7 +65,7 @@ Within your **AWS** project, you would need to go to IAM  Section and make sure 
 At minimum, you need to have this role: AdministratorAccess
 
 
-Please see the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements) for more information!
+Please see the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank} for more information!
 
 <img src='../images/aws_8.png'/>
 

@@ -21,7 +21,7 @@ To use Daffy on **Azure**, there are some platform info and requirements that ne
 
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
+[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
 ##Step 2: Finding Provider Details
 

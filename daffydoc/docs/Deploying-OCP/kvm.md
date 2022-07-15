@@ -23,7 +23,7 @@ To use Daffy on **K**ernel-based **V**irtual **M**achine, there are some platfor
 
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
+[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
 Public DNS Setup:
 
