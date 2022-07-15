@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1319,49 +1319,49 @@
 </li>
 </ul>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CP4BA_VERSION=&quot;22.0.1&quot;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>#CP4BA_IFIX=
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>CP4BA_DEPLOYMENT_STARTER_SERVICE=&quot;content&quot;
+<div class="highlight"><pre><span></span><code>CP4BA_VERSION=&quot;22.0.1&quot;
+#CP4BA_IFIX=
+CP4BA_DEPLOYMENT_STARTER_SERVICE=&quot;content&quot;
 </code></pre></div></p>
 <p>Options for Cloud Pak</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Service</th>
-<th style="text-align: left;">Components</th>
+<th align="left">Service</th>
+<th align="left">Components</th>
 <th>CP4BA Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">decisions</td>
-<td style="text-align: left;">odm,bai</td>
+<td align="left">decisions</td>
+<td align="left">odm,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">content</td>
-<td style="text-align: left;">filenet,cmis,ier,tm,bai</td>
+<td align="left">content</td>
+<td align="left">filenet,cmis,ier,tm,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">content-decisions</td>
-<td style="text-align: left;">filenet,cmis,ier,tm,odm,bai</td>
+<td align="left">content-decisions</td>
+<td align="left">filenet,cmis,ier,tm,odm,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">workflow</td>
-<td style="text-align: left;">workflow,workstreams,pfs,baw_authoring,case,bai</td>
+<td align="left">workflow</td>
+<td align="left">workflow,workstreams,pfs,baw_authoring,case,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">samples</td>
-<td style="text-align: left;">Depends on sample</td>
+<td align="left">samples</td>
+<td align="left">Depends on sample</td>
 <td>21.0.3 or 21.0.1</td>
 </tr>
 </tbody>
 </table>
 <p>Run the following command to deploy the Cloud Pak for Business Automation.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/cp4ba/build.sh &lt;ENVIRONMENT_NAME&gt;
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 <p>When this step is complete, approx 10 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service  is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consist of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:</p>
 <ul>
@@ -1432,52 +1432,52 @@
 </li>
 </ul>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CP4BA_VERSION=&quot;22.0.1&quot;
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>CP4BA_DEPLOYMENT_STARTER_SERVICE=&quot;content&quot;
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>#CP4BA_ENABLE_SERVICE_OPS=&quot;&lt;true|false&gt;&quot;
+<div class="highlight"><pre><span></span><code>CP4BA_VERSION=&quot;22.0.1&quot;
+
+CP4BA_DEPLOYMENT_STARTER_SERVICE=&quot;content&quot;
+#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1
+#CP4BA_ENABLE_SERVICE_OPS=&quot;&lt;true|false&gt;&quot;
 </code></pre></div>
 <p>Options for Services</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Service</th>
-<th style="text-align: left;">Components</th>
+<th align="left">Service</th>
+<th align="left">Components</th>
 <th>CP4BA Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">decisions</td>
-<td style="text-align: left;">odm,bai</td>
+<td align="left">decisions</td>
+<td align="left">odm,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">content</td>
-<td style="text-align: left;">filenet,cmis,ier,tm,bai</td>
+<td align="left">content</td>
+<td align="left">filenet,cmis,ier,tm,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">content-decisions</td>
-<td style="text-align: left;">filenet,cmis,ier,tm,odm,bai</td>
+<td align="left">content-decisions</td>
+<td align="left">filenet,cmis,ier,tm,odm,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">workflow</td>
-<td style="text-align: left;">workflow,workstreams,pfs,baw_authoring,case,bai</td>
+<td align="left">workflow</td>
+<td align="left">workflow,workstreams,pfs,baw_authoring,case,bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td style="text-align: left;">samples</td>
-<td style="text-align: left;">Depends on sample</td>
+<td align="left">samples</td>
+<td align="left">Depends on sample</td>
 <td>21.0.3 or 21.0.1</td>
 </tr>
 </tbody>
 </table>
 <p>Be aware, this step is async, meaning that the daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete.  When the deployment of the service script is done, the service is not running yet.  Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.</p>
 <p>Run the following command to deploy the Cloud Pak for Business Automation services.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt;
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 <p><html>
    <head>
@@ -1492,16 +1492,16 @@
 <h2 id="step-3-status-of-deployment">Step 3: Status of Deployment<a class="headerlink" href="#step-3-status-of-deployment" title="Permanent link">&para;</a></h2>
 <p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the help flag to see what flags you can use to get information on your service deployment.</p>
 <p>Run the following commands to check the Cloud Pak for Business Automation to see what command flags you can run</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --help
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --help
 </code></pre></div>
 <p>The following command will give you the status of all components for the service you deployed</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
 </code></pre></div>
 <p>If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>watch -c /data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
+<div class="highlight"><pre><span></span><code>watch -c /data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
 </code></pre></div>
 <p>To find out the connection info to your new service, you can run the console flag to get user names, passwords and URLs to connect to.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterConsole
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterConsole
 </code></pre></div>
 <p><html>
    <head>
@@ -1587,10 +1587,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>
