@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1291,7 +1291,7 @@
 <p>Deploying the Cloud Pak for Watson AIOps only requires <strong>one</strong> entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
 <p><strong>CP4WAIOPS_VERSION=<version></strong></p>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
-<div class="highlight"><pre><span></span><code>CP4WAIOPS_VERSION=3.3.1
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>CP4WAIOPS_VERSION=3.3.1
 </code></pre></div>
 <p>With this one value, the daffy engine will be able to install the version of Cloud Pak for Watson AI Ops and the Platform Navigator. Along with the base cloud pak components, the AI Manager will be installed.</p>
 <p>The service consist of the following products.</p>
@@ -1300,7 +1300,7 @@
 3.2.0   4.8<br />
 3.3.1   4.8</p>
 <p><strong>Run the following command</strong> to deploy the Cloud Pak for Watson AIOps.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt;
 </code></pre></div>
 <p>When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services and or demos.  At this stage, the cluster consists  of common services and the Cloud Pak for Watson AIOps operators and some services in the following projects:</p>
 <p><strong>cp4waiops</strong></p>
@@ -1309,20 +1309,20 @@
 <p>The Event Manager for WatsonAIOps is an optional service deployment, that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file.</p>
 <p><strong>Please Note:</strong> As of today, You can ONLY deploy the Event Manager service as an additional component to the Cloud Pak for Watson AIOps. Installing the Watson AIOps Cloud Pak will by default install the AI Manager component. It is not possible today, to only install the Event Manager component without the AI Manager.  </p>
 <p>Here is the flag that will need to be set to enable the deployment of Event Manager with Watson AIOps.</p>
-<div class="highlight"><pre><span></span><code>CP4WAIOPS_DEPLOY_EMGR=&lt;true|false&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CP4WAIOPS_DEPLOY_EMGR=&lt;true|false&gt;
 </code></pre></div>
 <h2 id="step-3-status-of-deployment">Step 3: Status of Deployment<a class="headerlink" href="#step-3-status-of-deployment" title="Permanent link">&para;</a></h2>
 <p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --help
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --help
 </code></pre></div>
 <p><strong>Run the following commands</strong> to check the Cloud Pak for Watson AIOps installation progress.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --status
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --status
 </code></pre></div>
 <p>If you want to have a running job to refresh every few seconds,  you can run the status script using the watch command.</p>
-<div class="highlight"><pre><span></span><code>watch -c /data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --status
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>watch -c /data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --status
 </code></pre></div>
 <p>To find out the connection info to your new service/pattern, you can run the console flag to get user names, passwords and URLs to connect to.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --console
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_FILE_PREFIX&gt; --console
 </code></pre></div>
 
               
@@ -1398,10 +1398,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
