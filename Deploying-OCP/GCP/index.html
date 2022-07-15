@@ -578,26 +578,6 @@
     Step 2: Finding Provider Details
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#identifying-a-region-or-zone" class="md-nav__link">
-    Identifying a region or zone
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-are-service-accounts" class="md-nav__link">
-    What are service accounts?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1279,26 +1259,6 @@
     Step 2: Finding Provider Details
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Finding Provider Details">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#identifying-a-region-or-zone" class="md-nav__link">
-    Identifying a region or zone
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-are-service-accounts" class="md-nav__link">
-    What are service accounts?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1342,7 +1302,7 @@
 <p><a href="https://ibm.box.com/v/DaffyProviderRequirements">https://ibm.box.com/v/DaffyProviderRequirements</a></p>
 <h2 id="step-2-finding-provider-details">Step 2: Finding Provider Details<a class="headerlink" href="#step-2-finding-provider-details" title="Permanent link">&para;</a></h2>
 <p>To install Daffy on <strong>G</strong>oogle <strong>C</strong>loud <strong>P</strong>latform, the hardest part can be finding the provider details.</p>
-<p><strong>Project ID:</strong></p>
+<p>Project ID</p>
 <p>To find your GCP project you can refer to this:</p>
 <p><a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">https://cloud.google.com/resource-manager/docs/creating-managing-projects</a></p>
 <ol>
@@ -1350,7 +1310,7 @@
 <li>You can see your Project ID from the Dashboard</li>
 </ol>
 <p><img alt="GCP1.png" src="../../images/DeployingOCP/GCP/GCP1.png" /></p>
-<h3 id="identifying-a-region-or-zone">Identifying a region or zone<a class="headerlink" href="#identifying-a-region-or-zone" title="Permanent link">&para;</a></h3>
+<p>Identifying a region or zone</p>
 <p>Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the <strong>region</strong> and the second part of the name describes the <strong>zone</strong> in the region:</p>
 <p>Region</p>
 <p>Regions are collections of zones. Zones have high-bandwidth, low-latency network connections to other zones in the same region. In order to deploy fault-tolerant applications that have high availability, Google recommends deploying applications across multiple zones and multiple regions. This helps protect against unexpected failures of components, up to and including a single zone or region.</p>
@@ -1358,7 +1318,7 @@
 <p><strong>Region:</strong>
 To find a list of regions, you can refer to this:</p>
 <p><a href="https://cloud.google.com/compute/docs/regions-zones">https://cloud.google.com/compute/docs/regions-zones</a></p>
-<h3 id="what-are-service-accounts">What are service accounts?<a class="headerlink" href="#what-are-service-accounts" title="Permanent link">&para;</a></h3>
+<p>What are service accounts?</p>
 <p>A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make <a href="https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests">authorized API calls</a>, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through <a href="https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority">domain-wide delegation</a>.</p>
 <p><strong>Service Account:</strong></p>
 <p>For you to use Daffy to install on <strong>GCP</strong>, you need to create a service account that has the correct permission to install.</p>
