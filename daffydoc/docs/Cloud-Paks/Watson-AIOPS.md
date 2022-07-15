@@ -15,7 +15,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your *
 
 2.  The services  that you wish to install on the Cloud Pak
 
-## Step 1: Deploying the Cloud Pak
+## Step 1: Deploy Cloud Pak
 
 Deploying the Cloud Pak for Watson AIOps only requires **one** entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -51,7 +51,7 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Step 2: Deploying Service
+## Step 2: Deploy Service
 
 The Event Manager for WatsonAIOps is an optional service deployment, that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file.
 

@@ -44,7 +44,7 @@ When this step is complete, approx 60 minutes depending on your environment, you
 **cpd-operators**   
 **ibm-common-services**    
 
-## Step 2: Deploying Service
+## Step 2: Deploy Service
 
 Deploying the Cloud Pak for Data requires some entries to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
