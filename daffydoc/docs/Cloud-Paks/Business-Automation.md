@@ -64,7 +64,7 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 ```
 
-##    Options for Cloud Pak
+Options for Cloud Pak
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
@@ -171,7 +171,7 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_ENABLE_SERVICE_OPS="<true|false>"
 ```
 
-##  Options for Services
+Options for Services
 
 
 Service | Components | CP4BA Version
