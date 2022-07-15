@@ -1279,8 +1279,8 @@
 <p><img src='../images/data.png'
        style="width:100px;height:100px;"/></p>
 <h2 id="step-1-deploy-cloud-pak">Step 1: Deploy Cloud Pak<a class="headerlink" href="#step-1-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
-<p>Deploying the Cloud Pak for Data requires one entries to your environment file (/data/daffy/env/<ENVIRONMENT_NAME>-env.sh).</p>
-<p>CP4D_VERSION=<version>     </p>
+<p>Deploying the Cloud Pak for Data requires one entries to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh).</p>
+<p><strong>CP4D_VERSION=</strong></p>
 <p>With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
 <table>
 <thead>
@@ -1324,18 +1324,18 @@
 </tr>
 </tbody>
 </table>
-<p>You can copy the following to your <ENVIRONMENT_NAME>-env.sh</p>
+<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
 <p><div class="highlight"><pre><span></span><code>CP4D_VERSION=&quot;4.0.9&quot;
 </code></pre></div>
 Run the following command to deploy the Cloud Pak for Data</p>
 <p><div class="highlight"><pre><span></span><code>/data/daffy/cp4d/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 When this step is complete, approx 60 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service/pattern is running at this point. The cluster is now ready to deploy the services/patterns.  At this stage, the cluster consist of bedrock operators and the Cloud Pak for Data operators in the following projects:</p>
-<p><strong>cpd-instance</strong>
-<strong>cpd-operators</strong>
-<strong>ibm-common-services</strong></p>
+<p><strong>cpd-instance</strong>  <br />
+<strong>cpd-operators</strong> <br />
+<strong>ibm-common-services</strong>    </p>
 <h2 id="step-2-deploying-service">Step 2: Deploying Service<a class="headerlink" href="#step-2-deploying-service" title="Permanent link">&para;</a></h2>
-<p>Deploying the Cloud Pak for Data requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are Watson Knowledge Studio (WKS), Watson Knowledge Catalog (WKC), Data Virtualization (DV), Watson Studio (WS), Statistical Package for Social Sciences (SPSS), and Watson Machine Learning (WML)</p>
+<p>Deploying the Cloud Pak for Data requires some entries to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh).</p>
 <div class="highlight"><pre><span></span><code>CP4D_ENABLE_SERVICE_WKS=&lt;true|false&gt;
 
 CP4D_ENABLE_SERVICE_WKC=&lt;true|false&gt;
@@ -1367,12 +1367,12 @@ CP4D_ENABLE_SERVICE_COGNOS=&lt;true|false&gt;
 <p><strong>DODS</strong> - Decision Optimization</p>
 <p><strong>DMC</strong> - DB2 Management Console</p>
 <p><strong>Cognos</strong> - Cognos</p>
-<p><strong>Run the following command</strong> to deploy the Cloud Pak for Data services.</p>
+<p>Run the following command** to deploy the Cloud Pak for Data services.</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 <h2 id="step-3-status-of-deployment">Step 3: Status of Deployment<a class="headerlink" href="#step-3-status-of-deployment" title="Permanent link">&para;</a></h2>
 <p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the --help flag to see what flags you can use to get information on your service deployment.</p>
-<p><strong>Run the following commands to check the Cloud Pak for Data to see what command flags you can run</strong>
+<p>Run the following commands to check the Cloud Pak for Data to see what command flags you can run
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --help
 </code></pre></div>
 The following command will give you the status of all components for the pattern you deployed</p>
@@ -1389,8 +1389,8 @@ If you want to want to see more detail status on an individual service, you can 
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WSStatus
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --DVStatus
-</code></pre></div></p>
-<p><div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WMLStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WMLStatus
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --SPSSStatus
 </code></pre></div>
