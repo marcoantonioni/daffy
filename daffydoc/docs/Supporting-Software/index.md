@@ -8,11 +8,11 @@
   <body>
     <div style="text-align:center">
 
-      <button onclick="location.href='/daffy/Supporting-Software/Create-Your-Own-Bastion/'" class="custom-btn btn-7">Bastion Server</button>
+      <button onclick="location.href='./Create-Your-Own-Bastion/'" class="custom-btn btn-7">Bastion Server</button>
 
-      <button onclick="location.href='/daffy/Supporting-Software/DB2/'" class="custom-btn btn-7">IBM DB2</button>
+      <button onclick="location.href='./DB2/'" class="custom-btn btn-7">IBM DB2</button>
 
-      <button onclick="location.href='/daffy/Supporting-Software/IBM-LDAP/'" class="custom-btn btn-7">IBM LDAP</button>
+      <button onclick="location.href='./IBM-LDAP/'" class="custom-btn btn-7">IBM LDAP</button>
 
 
 
