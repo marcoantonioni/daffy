@@ -88,7 +88,7 @@ For each **GCP** project, you need to enable API access. Within your **GCP** pro
 
 **Once you open the "All Quotas" Page, you can search for each quota to see its limits.**
 
-![GCP5.png](../images/gcp5.png)
+![GCP5.png](../images/DeployingOCP/GCP/GCP5.png)
 
 **Dedicated public host Zone:**
 
