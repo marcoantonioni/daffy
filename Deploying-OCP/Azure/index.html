@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1324,13 +1324,13 @@ insert video Here</p>
 <p>Deploying the OpenShift on Azure only requires three entries to your <strong>existing</strong> core environment file (<strong><ENVIRONMENT_NAME></strong>-env.sh) plus a local service account file.</p>
 <p><strong>Note:</strong> You can look in the samples directory on your bastion for example of <strong>Azure</strong> install : /data/daffy/env/samples/<strong>azure-ipi-env.sh</strong></p>
 <p>You can copy the sample file to build your new environment  file.</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>OCP_INSTALL_TYPE=&quot;azure-ipi&quot;
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>AZURE_SUBSCRIPTION_ID=&quot;999999-999999-999999-99999&quot;
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>AZURE_CLIENT_ID=&quot;999999-999999-999999-99999&quot;
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>AZURE_TENANT_ID=&quot;999999-999999-999999-99999&quot;
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME=&quot;&lt;YOUR_RESOURCE_GROUP_FOR_DNS&gt;&quot;
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>AZURE_REGION=&quot;&lt;YOUR_REGION&gt;&quot;
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
+<p><div class="highlight"><pre><span></span><code>OCP_INSTALL_TYPE=&quot;azure-ipi&quot;
+AZURE_SUBSCRIPTION_ID=&quot;999999-999999-999999-99999&quot;
+AZURE_CLIENT_ID=&quot;999999-999999-999999-99999&quot;
+AZURE_TENANT_ID=&quot;999999-999999-999999-99999&quot;
+AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME=&quot;&lt;YOUR_RESOURCE_GROUP_FOR_DNS&gt;&quot;
+AZURE_REGION=&quot;&lt;YOUR_REGION&gt;&quot;
+#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
 </code></pre></div>
 <u>
 <strong>Valid Options:</strong>
@@ -1347,7 +1347,7 @@ insert video Here</p>
 <p><strong>** It will prompt you for the Client Secret during the install.</strong></p>
 <h2 id="step-4-execution">Step 4: Execution<a class="headerlink" href="#step-4-execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your OCP cluster to <strong>Azure</strong> , run the build.sh script from the /data/daffy/ocp directory</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
+<div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
 <p><strong>Note:</strong><ENVIRONMENT_NAME> is the first part of your name that you used for the &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file</p>
@@ -1534,10 +1534,10 @@ background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>
