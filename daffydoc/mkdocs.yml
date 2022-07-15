@@ -73,10 +73,9 @@ nav:
     #- Workstreams: Meet-the-Team/Workstreams.md
   - More:
     - Glossary: More/Glossary.md
-    - FAQ:
-      - FAQ : More/FAQ/FAQ.md
-      - Deployment Estimates: More/FAQ/Deployment-Estimates.md
-      - IBM Entitlement Keys: More/FAQ/IBM-Entitlement Keys.md
+    - FAQ: More/FAQ/FAQ.md
+    - Deployment Estimates: More/FAQ/Deployment-Estimates.md
+    - IBM Entitlement Keys: More/FAQ/IBM-Entitlement Keys.md
 markdown_extensions:
   - attr_list
   - admonition
