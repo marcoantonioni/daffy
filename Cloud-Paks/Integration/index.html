@@ -765,15 +765,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-deploying-the-cloud-pak" class="md-nav__link">
-    Step 1: Deploying the Cloud Pak
+  <a href="#step-1-deploy-cloud-pak" class="md-nav__link">
+    Step 1: Deploy Cloud Pak
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-deploying-services" class="md-nav__link">
-    Step 2: Deploying Services
+  <a href="#step-2-deploy-services" class="md-nav__link">
+    Step 2: Deploy Services
   </a>
   
 </li>
@@ -1241,15 +1241,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-deploying-the-cloud-pak" class="md-nav__link">
-    Step 1: Deploying the Cloud Pak
+  <a href="#step-1-deploy-cloud-pak" class="md-nav__link">
+    Step 1: Deploy Cloud Pak
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-deploying-services" class="md-nav__link">
-    Step 2: Deploying Services
+  <a href="#step-2-deploy-services" class="md-nav__link">
+    Step 2: Deploy Services
   </a>
   
 </li>
@@ -1279,7 +1279,7 @@
 <p><img src='../images/integration.png'
        style="width:100px;height:100px;"/></p>
 <p>At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.</p>
-<h2 id="step-1-deploying-the-cloud-pak">Step 1: Deploying the Cloud Pak<a class="headerlink" href="#step-1-deploying-the-cloud-pak" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-deploy-cloud-pak">Step 1: Deploy Cloud Pak<a class="headerlink" href="#step-1-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Integration only requires one entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
 <p><strong>CP4I_VERSION=<version></strong></p>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
@@ -1316,7 +1316,7 @@
 <p>When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services/patterns.  At this stage, the cluster consists  of common services and the Cloud Pak for Integration operators and some services in the following projects:</p>
 <p><strong>cp4i</strong></p>
 <p><strong>ibm-common-services</strong></p>
-<h2 id="step-2-deploying-services">Step 2: Deploying Services<a class="headerlink" href="#step-2-deploying-services" title="Permanent link">&para;</a></h2>
+<h2 id="step-2-deploy-services">Step 2: Deploy Services<a class="headerlink" href="#step-2-deploy-services" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS)</p>
 <p><div class="highlight"><pre><span></span><code>CP4I_ENABLE_SERVICE_ACEDESIGN=&lt;true|false&gt;
 
