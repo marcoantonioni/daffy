@@ -56,7 +56,7 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Step 2: Deploy service
+## Step 2: Deploy Services
 
 Currently there one service / demos for WebSphere Automation. We are adding new features on a regular basis, please stay tuned.  If you have a feature request for an additional service or demo, please fill out a request.
 
