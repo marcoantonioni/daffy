@@ -8,13 +8,13 @@ hide:
 <html>
 <body>
 <div style="text-align:center">
-<button onclick="location.href='daffy/Cloud-Paks/Business-Automation/'" class="custom-btn btn-7">Business Automation</button>
-<button onclick="location.href='daffy/Cloud-Paks/Data/'" class="custom-btn btn-7">Data</button>
-<button onclick="location.href='daffy/Cloud-Paks/Integration/'" class="custom-btn btn-7">Integration</button>
-<button onclick="location.href='daffy/Cloud-Paks/Watson-AIOPS/'" class="custom-btn btn-7">
+<button onclick="location.href='Business-Automation/'" class="custom-btn btn-7">Business Automation</button>
+<button onclick="location.href='Data/'" class="custom-btn btn-7">Data</button>
+<button onclick="location.href='Integration/'" class="custom-btn btn-7">Integration</button>
+<button onclick="location.href='Watson-AIOPS/'" class="custom-btn btn-7">
 Watson AIOps</button>
 <div></div>
-<button onclick="location.href='daffy/Cloud-Paks/WebSphere-Automation/'" class="custom-btn btn-7">
+<button onclick="location.href='WebSphere-Automation/'" class="custom-btn btn-7">
 WebSphere Automation</button>
 
 </div>
