@@ -1278,7 +1278,9 @@
 <h1 id="cloud-pak-for-integration" style="text-align: left;">Cloud Pak for Integration<a class="headerlink" href="#cloud-pak-for-integration" title="Permanent link">&para;</a></h1>
 <p><img src='../images/integration.png'
        style="width:100px;height:100px;"/></p>
-<p>At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.</p>
+<p>At this point, you have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
+<p>1) The Cloud Pak info that you wish to install</p>
+<p>2) The services that you wish to install on the Cloud Pak</p>
 <h2 id="step-1-deploy-cloud-pak">Step 1: Deploy Cloud Pak<a class="headerlink" href="#step-1-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Integration only requires one entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
 <p><strong>CP4I_VERSION=<version></strong></p>
