@@ -1299,12 +1299,12 @@
 <p><strong>Permissions</strong> - The permissions need to perform the install</p>
 <p><strong>Quota</strong> - The ability to add new workload to that platform</p>
 <p>For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.</p>
-<p><a href="https://ibm.box.com/v/DaffyProviderRequirements">https://ibm.box.com/v/DaffyProviderRequirements</a></p>
+<p><a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">https://ibm.box.com/v/DaffyProviderRequirements</a></p>
 <h2 id="step-2-finding-provider-details">Step 2: Finding Provider Details<a class="headerlink" href="#step-2-finding-provider-details" title="Permanent link">&para;</a></h2>
 <p>To install Daffy on <strong>G</strong>oogle <strong>C</strong>loud <strong>P</strong>latform, the hardest part can be finding the provider details.</p>
 <p>Project ID</p>
 <p>To find your GCP project you can refer to this:</p>
-<p><a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">https://cloud.google.com/resource-manager/docs/creating-managing-projects</a></p>
+<p><a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank">https://cloud.google.com/resource-manager/docs/creating-managing-projects</a></p>
 <ol>
 <li>You can list your Project ID from the Drop down</li>
 <li>You can see your Project ID from the Dashboard</li>
@@ -1317,20 +1317,20 @@
 <p>Choose regions that makes sense for your scenario. For example, if you only have customers in the US, or if you have specific needs that require your data to live in the US, it makes sense to store your resources in zones in the us-central1 region or zones in the us-east1 region.</p>
 <p><strong>Region:</strong>
 To find a list of regions, you can refer to this:</p>
-<p><a href="https://cloud.google.com/compute/docs/regions-zones">https://cloud.google.com/compute/docs/regions-zones</a></p>
+<p><a href="https://cloud.google.com/compute/docs/regions-zones" target="_blank">https://cloud.google.com/compute/docs/regions-zones</a></p>
 <p>What are service accounts?</p>
-<p>A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make <a href="https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests">authorized API calls</a>, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through <a href="https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority">domain-wide delegation</a>.</p>
+<p>A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make <a href="https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests" target="_blank">authorized API calls</a>, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through <a href="https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority" target="_blank">domain-wide delegation</a>.</p>
 <p><strong>Service Account:</strong></p>
 <p>For you to use Daffy to install on <strong>GCP</strong>, you need to create a service account that has the correct permission to install.</p>
-<p><a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating">https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating</a></p>
+<p><a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating" target="_blank">https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating</a></p>
 <p><strong>Permission:</strong></p>
-<p>Within your <strong>GCP</strong> project, you would need to go to IAM  Section and create/use Service Account.  From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements">requirements doc</a>, make sure your service account has the correct permissions.</p>
+<p>Within your <strong>GCP</strong> project, you would need to go to IAM  Section and create/use Service Account.  From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements" target="_blank">requirements doc</a>, make sure your service account has the correct permissions.</p>
 <p><img alt="GCP2.png" src="../../images/DeployingOCP/GCP/GCP2.png" /></p>
 <p><strong>API Services Enabled:</strong></p>
 <p>For each <strong>GCP</strong> project, you need to enable API access. Within your <strong>GCP</strong> project, you would need to enable each API needed for the OpenShift install. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements">requirements doc</a>, you can search for each API and confirm/enable each API Service.</p>
 <p><img alt="GCP3.png" src="../../images/DeployingOCP/GCP/GCP3.png" /></p>
 <p><strong>Quota:</strong></p>
-<p>For each <strong>GCP</strong> project, you need to enable API access. Within your <strong>GCP</strong> project, you would need to enable each API needed for the OpenShift install. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements">requirements doc</a>, you can search for each API and confirm/enable each API Service.</p>
+<p>For each <strong>GCP</strong> project, you need to enable API access. Within your <strong>GCP</strong> project, you would need to enable each API needed for the OpenShift install. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements" target="_blank">requirements doc</a>, you can search for each API and confirm/enable each API Service.</p>
 <ol>
 <li>Search for "Quotas" within your GCP project</li>
 <li>Select the "All Quotas"</li>
@@ -1358,8 +1358,8 @@ To find a list of regions, you can refer to this:</p>
 <p>cp /data/daffy/env/samples/<strong>gcp-ipi-env.sh</strong> /data/daffy/env/<strong><ENVIRONMENT_NAME></strong>-env.sh</p>
 <p><strong>Valid Options:</strong></p>
 <p><strong>OCP_INSTALL_TYPE=</strong> gcp-ipi</p>
-<p><strong>GCP_PROJECT_ID=</strong> <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects"><YourGCPProjectID></a>          </p>
-<p><strong>GCP_REGION</strong>= <a href="https://cloud.google.com/compute/docs/regions-zones"><AnyValidGCPRegion></a></p>
+<p><strong>GCP_PROJECT_ID=</strong> <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects" target="_blank"><YourGCPProjectID></a>          </p>
+<p><strong>GCP_REGION</strong>= <a href="https://cloud.google.com/compute/docs/regions-zones" target="_blank"><AnyValidGCPRegion></a></p>
 <p>Optional:
 <strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
 <div class="highlight"><pre><span></span><code>OCP_INSTALL_TYPE=&quot;gcp-ipi&quot;
