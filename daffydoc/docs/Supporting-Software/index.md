@@ -1,7 +1,7 @@
 <html>
 
 <div style="text-align:center">
-<h1> Spporting software </h1>
+<h1> Supporting software </h1>
 <h2>Instructions on other software you can install</h2>
 </div>
 
