@@ -17,7 +17,9 @@ wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 da
 
 ```
 **Optional:** You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file
-[Daffy On-Line Configurator](http://config.daffy-installer.com:1887/start){ .md-button .md-button--primary }
+
+<button onclick="location.href='http://config.daffy-installer.com:1887/start/'" class="custom-btn btn-7">Create Bastion Steps</button>
+
 ## Step 3: Create <environment-name>-env.sh
 
 ```
