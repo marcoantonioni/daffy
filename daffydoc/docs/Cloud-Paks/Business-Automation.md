@@ -100,7 +100,7 @@ When this step is complete, approx 10 minutes depending on your environment, you
 
 ## Step 2: Deploy Services
 
-Deploying the service does not need any new values to your environment file (**<ENVIRONMENT_NAME>**-env.sh).  It will use the same values during the cloud pak deployment.
+Deploying the service does not need any new values to your environment file (<**ENVIRONMENT_NAME**>-env.sh>).  It will use the same values during the cloud pak deployment.
 
 **CP4BA_VERSION=**
 
