@@ -20,8 +20,6 @@
    </head>
    <body>
     <div style="text-align:center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LFqc0WD7x-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      <iframe width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-      </iframe>
-      </div>
+<iframe width="1800" height="700" src="https://www.youtube.com/embed/LFqc0WD7x-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
    </body>
 </html>
