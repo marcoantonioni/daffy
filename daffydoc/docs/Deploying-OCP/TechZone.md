@@ -8,7 +8,7 @@ hide:
 <img src='../images/techzone.jpeg'   align="top" width="100"
   height="200" style = "float">
 
-At this point, you have a **bastion** machine where you have installed the Daffy tool, created your core <**ENVIRONMENT_NAME**>-env.sh.  Depneding on if you use TechZone to build your cluster, you may skip Daffy Step 1 that builds your cluster. You will not use the bastion to build your cluster, but follow the steps to have TechZone build your cluster.  Once that is done, you would move on with the daffy process and install your cloud paks from your new **bastion.**
+At this point, you have a **bastion** machine where you have installed the Daffy tool, created your core <**ENVIRONMENT_NAME**>-env.sh.  Depending on if you use TechZone to build your cluster, you may skip Daffy Step 1 that builds your cluster. You will not use the bastion to build your cluster, but follow the steps to have TechZone build your cluster.  Once that is done, you would move on with the daffy process and install your cloud paks from your new **bastion.**
 
 ## Platform Requirements
 
