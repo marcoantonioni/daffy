@@ -57,7 +57,7 @@ You will need to create a DNS Zone within a new/existing resource group.  For th
 insert video Here
 ## Step 3: Environment File
 
-Deploying the OpenShift on Azure only requires three entries to your **existing** core environment file (**<ENVIRONMENT_NAME>**-env.sh) plus a local service account file.
+Deploying the OpenShift on Azure only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
 **Note:** You can look in the samples directory on your bastion for example of **Azure** install : /data/daffy/env/samples/**azure-ipi-env.sh**
 

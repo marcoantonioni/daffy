@@ -96,7 +96,7 @@ For each OpenShift deployment into **AWS**, you need to create a **Route 53 Host
 
 ## Step 3: Environment File
 
-Below are the AWS specific environment variables that must be defined in the /data/daffy/env/**<ENVIRONMENT_NAME>**-env.sh file.
+Below are the AWS specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
 
 - **AWS_REGION**
 - **AWS_ACCESS_KEY_ID**

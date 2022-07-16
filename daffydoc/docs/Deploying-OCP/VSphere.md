@@ -87,9 +87,9 @@ To deploy your cluster, run the build.sh script from the /data/daffy/ocp directo
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 
-Once your cluster is fully deployed you can access the help menu which as a number of options.
+Once your cluster is fully deployed you can access the help menu which has a number of options.
 
-**Note: <ENVIRONMENT_NAME>** is the first part of your name that you used for the **<ENVIRONMENT_NAME>**-env.sh file
+**Note: <ENVIRONMENT_NAME>** is the first part of your name that you used for the <**ENVIRONMENT_NAME**>-env.sh file
 
 ```
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help

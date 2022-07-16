@@ -105,13 +105,13 @@ You will need to create a DZS hosted Zone project.  For the OpenShift install, y
 </div>
 ## Step 3: Environment File
 
-Deploying the OpenShift on **GCP** only requires three entries to your **existing** core environment file (**<ENVIRONMENT_NAME>**-env.sh) plus a local service account file.
+Deploying the OpenShift on **GCP** only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
 **Note:** You can look in the samples directory on your bastion for example of **GCP** install : /data/daffy/env/samples/**gcp-ipi-env.sh**
 
 You can copy the sample file to build your **new** environment  file.
 
-cp /data/daffy/env/samples/**gcp-ipi-env.sh** /data/daffy/env/**<ENVIRONMENT_NAME>**-env.sh
+cp /data/daffy/env/samples/**gcp-ipi-env.sh** /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh
 
 **Valid Options:**
 
