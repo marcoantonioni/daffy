@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-a-bastion-server-why-does-it-exist" class="md-skip">
+        <a href="#what-is-a-bastion-server" class="md-skip">
           Skip to content
         </a>
       
@@ -833,12 +833,53 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bastion
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Bastion
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-bastion-server" class="md-nav__link">
+    What is a bastion server?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibm-cloud" class="md-nav__link">
+    IBM Cloud
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibm-technology-zone" class="md-nav__link">
+    IBM Technology Zone
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1182,8 +1223,35 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-bastion-server" class="md-nav__link">
+    What is a bastion server?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibm-cloud" class="md-nav__link">
+    IBM Cloud
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibm-technology-zone" class="md-nav__link">
+    IBM Technology Zone
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1197,12 +1265,14 @@
                 
 
 
-<h1 id="what-is-a-bastion-server-why-does-it-exist">What is a bastion server? Why does it exist?<a class="headerlink" href="#what-is-a-bastion-server-why-does-it-exist" title="Permanent link">&para;</a></h1>
+  <h1>Bastion</h1>
+
+<h2 id="what-is-a-bastion-server">What is a bastion server?<a class="headerlink" href="#what-is-a-bastion-server" title="Permanent link">&para;</a></h2>
 <p>A bastion host is <strong>a server whose purpose is to provide access to a private network from an external network,</strong> such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration. Openshift uses a bastion to help create a running cluster. A bastion can be reused for multiple clusters. In some scenarios for POC purposes such as User Provisioned Infrastructure (UPI), the bastion can be used as the proxy to the cluster.</p>
 <p>Bastion servers can be installed anywhere. This guide assumes the bastion server is Ubuntu 20.04 Minimal and will be in the IBM Cloud.</p>
 <p>Requirements for completing this task is to have an IBMid, an IBM cloud account, and a local SSH key. For more information, go to <strong>Daffy Prerequisites.</strong></p>
 <p>Detailed below are the instructions to build your own bastion to do an IPI or MSP install.</p>
-<h1 id="bastion-server-using-ibm-cloud">Bastion Server Using IBM Cloud<a class="headerlink" href="#bastion-server-using-ibm-cloud" title="Permanent link">&para;</a></h1>
+<h2 id="ibm-cloud">IBM Cloud<a class="headerlink" href="#ibm-cloud" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>First, open a web browser and go to http://cloud.ibm.com</p>
@@ -1248,8 +1318,13 @@
 <ol>
 <li>Once you have connected your bastion to <strong>Termius</strong>, install <strong>Daffy</strong> to the terminal of your newly created host.</li>
 </ol>
-<h1 id="ibm-technology-zone">IBM Technology Zone<a class="headerlink" href="#ibm-technology-zone" title="Permanent link">&para;</a></h1>
-<p>An alternative to creating a bastion using a paid IBM Cloud account is to use <strong>IBM Technology Zone.</strong></p>
+<h2 id="ibm-technology-zone">IBM Technology Zone<a class="headerlink" href="#ibm-technology-zone" title="Permanent link">&para;</a></h2>
+<p>An alternative to creating a bastion using a paid IBM Cloud account is to use <strong>IBM Technology Zone.</strong>
+There are three options with TechZone</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>For internal IBM or Business partner use only</p>
+</div>
 <ol>
 <li>
 <p>Use this link to navigate to <strong>IBM Technology Zone:</strong> https://techzone.ibm.com/collection/base-images</p>

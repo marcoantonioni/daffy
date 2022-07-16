@@ -528,9 +528,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          IBM Gym
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         IBM Gym
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-up" class="md-nav__link">
+    Set Up
+  </a>
+  
+    <nav class="md-nav" aria-label="Set Up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#termius" class="md-nav__link">
+    Termius
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying" class="md-nav__link">
+    Deploying
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1189,6 +1254,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-up" class="md-nav__link">
+    Set Up
+  </a>
+  
+    <nav class="md-nav" aria-label="Set Up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#termius" class="md-nav__link">
+    Termius
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying" class="md-nav__link">
+    Deploying
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1204,7 +1318,7 @@
 <h1 id="ibm-gym">IBM Gym<a class="headerlink" href="#ibm-gym" title="Permanent link">&para;</a></h1>
 <p><img src='../images/gym.png'   align="top" width="200"
   height="300" style = "float"></p>
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>The OpenShift Gym is a learning environment offering individuals the ability to deploy virtual machines to support installation of IBM technologies such as OpenShift and Cloud Paks.</p>
 <p>The HCXX Gym has documentation on using daffy, below are some shortcuts for their instructions. Its same basic instructions based on VSphere, but they have some pre-built steps for Gym Members.</p>
 <ol>
@@ -1215,13 +1329,18 @@
 <p><a href="https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/workouts/vmwaredaffy.md" target="_blank">VMware IPI deployment - using DAFFY</a></p>
 </li>
 </ol>
-<h1 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h1>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>There are three options with TechZone</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>For internal IBM use only, Links may only work while in the IBM Network</p>
+</div>
 <ol>
 <li>A <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym" target="_blank">Gym Membership</a> request can be made by filling out the form.</li>
 <li>An active <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/tecnet" target="_blank">TECNet VPN ID</a> is required to access and use the Gym. </li>
 </ol>
 <p>An email containing details on accessing the features of the OpenShift Gym is sent to the email address supplied once provisioning has completed. General information about the environment supplied is listed below. Refer to the provisioning email for detailed information.</p>
-<h1 id="set-up">Set Up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h1>
+<h2 id="set-up">Set Up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
 <p>Make Sure you are connected to the Technet VPN, in initial setup it may require you to reset your password.</p>
@@ -1255,7 +1374,7 @@
 <div class="highlight"><pre><span></span><code>cp ~/vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
 </code></pre></div>
 You may make any changes needed in this file, add cloud paks, change sizing, etc.</p>
-<h1 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h1>
+<h2 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h2>
 <p>You can now run the daffy process</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/build.sh  {env-name}
 </code></pre></div>
