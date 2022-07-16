@@ -870,6 +870,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Supporting-Software/Bastion/" class="md-nav__link">
+        Bastion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Supporting-Software/DB2/" class="md-nav__link">
         DB2
       </a>
@@ -886,20 +900,6 @@
     <li class="md-nav__item">
       <a href="../../Supporting-Software/IBM-LDAP/" class="md-nav__link">
         IBM LDAP
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Supporting-Software/Create-Your-Own-Bastion/" class="md-nav__link">
-        Create Your Own Bastion
       </a>
     </li>
   
@@ -1250,27 +1250,34 @@
 <h1 id="techzone-install">TechZone Install<a class="headerlink" href="#techzone-install" title="Permanent link">&para;</a></h1>
 <p><img src='../images/techzone.jpeg'   align="top" width="100"
   height="200" style = "float"></p>
-<p>At this point, you have a <strong>bastion</strong> machine where you have installed the Daffy tool, created your core <strong><environment-name></strong>-env.sh.  Depneding on if you use TechZone to build your cluster, you may skip Daffy Step 1 that builds your cluster. You will not use the bastion to build your cluster, but follow the steps to have TechZone build your cluster.  Once that is done, you would move on with the daffy process and install your cloud paks from your new <strong>bastion.</strong></p>
+<p>At this point, you have a <strong>bastion</strong> machine where you have installed the Daffy tool, created your core &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh.  Depneding on if you use TechZone to build your cluster, you may skip Daffy Step 1 that builds your cluster. You will not use the bastion to build your cluster, but follow the steps to have TechZone build your cluster.  Once that is done, you would move on with the daffy process and install your cloud paks from your new <strong>bastion.</strong></p>
 <h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
 <p>There are three options with TechZone</p>
 <ol>
 <li>
 <p>OpenShift Cluster via AWS, Azure (<strong>Prebuilt</strong> Cluster)   <a href="https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters">https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters</a></p>
 <ul>
-<li>With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you. (This will fail at you do not have access to create cluster)</li>
-<li>You still need to have a bastion and core values in your <strong><environment-name></strong>-env.sh</li>
+<li>With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you. (This would fail as you do not have access to create cluster with a techzone setup)</li>
+<li>You still need to have a bastion and core values in your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</li>
 </ul>
 </li>
 <li>
 <p>Tech Zone VSphere (<strong>Daffy</strong> build's cluster) <a href="https://techzone.ibm.com/collection/ocp-gymnasium">https://techzone.ibm.com/collection/ocp-gymnasium</a></p>
 <ul>
-<li>Once you crate the access to your VSphere ,it will create your own bastion and give you the instructions on how to use Daffy in that environment.</li>
+<li>Once you create the request and the VSPhere environment has been provisioned, it will create your own bastion and give you the instructions on how to use Daffy in that environment with the prebuild &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh.</li>
 </ul>
 </li>
-<li>TechZone Roks (<strong>Prebuilt</strong> Cluster) <a href="https://techzone.ibm.com/collection/custom-roks-vmware-requests">https://techzone.ibm.com/collection/custom-roks-vmware-requests</a><ul>
-<li>With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you (This will fail as you do not have access to create cluster)</li>
+<li>
+<p>TechZone Roks (<strong>Prebuilt</strong> Cluster) <a href="https://techzone.ibm.com/collection/custom-roks-vmware-requests">https://techzone.ibm.com/collection/custom-roks-vmware-requests</a></p>
+<ul>
+<li>With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you (This will fail as you do not have access to create cluster with a techzone setup)</li>
 <li>Once you create the access, you would follow the same steps of ROKS with Daffy</li>
-<li>One extra setting to change in your environment file  DAFFY_DEPLOYMENT_TYPE=TechZone</li>
+<li>You still need to have a bastion and core values in your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh  </li>
+<li>Extra setting to change in your environment file      <ol>
+<li><strong>ROKS_PROVIDER=</strong>techzone</li>
+<li><strong>DAFFY_DEPLOYMENT_TYPE=</strong>TechZone</li>
+</ol>
+</li>
 </ul>
 </li>
 </ol>
