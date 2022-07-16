@@ -75,7 +75,7 @@ nav:
     - Glossary: More/Glossary.md
     - FAQ: More/FAQ/FAQ.md
     - Deployment Estimates: More/FAQ/Deployment-Estimates.md
-    - IBM Entitlement Keys: More/FAQ/IBM-Entitlement Keys.md
+    - IBM Entitlement Keys: More/FAQ/IBM-Entitlement-Keys.md
 markdown_extensions:
   - attr_list
   - admonition
