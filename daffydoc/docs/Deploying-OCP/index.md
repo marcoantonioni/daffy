@@ -12,7 +12,7 @@ hide:
 
 <button onclick="location.href='./GCP/'" class="custom-btn btn-7">GCP</button>
 
-<button onclick="location.href='../Azure/'" class="custom-btn btn-7">AZURE</button>
+<button onclick="location.href='./Azure/'" class="custom-btn btn-7">AZURE</button>
 
 <button onclick="location.href='./AWS/'" class="custom-btn btn-7">
 AWS</button>
