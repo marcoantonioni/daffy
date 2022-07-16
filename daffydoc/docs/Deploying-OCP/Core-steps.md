@@ -4,7 +4,7 @@ hide:
 ---
 
 ## Step 1: Access your bastion Server
-<button onclick="location.href='/daffy/Supporting-Software/Create-Your-Own-Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
+<button onclick="location.href='../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
 
   <b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b>
 
@@ -87,23 +87,23 @@ You are **NOW** ready to begin making the necessary edits to your /data/daffy/en
 
 <div style="text-align:left">
 
-<button onclick="location.href='/daffy/Deploying-OCP/IBM-gym/'" class="custom-btn btn-7">IBM GYM</button>
+<button onclick="location.href='../IBM-gym'" class="custom-btn btn-7">IBM GYM</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/GCP/'" class="custom-btn btn-7">GCP</button>
+<button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/Azure/'" class="custom-btn btn-7">AZURE</button>
+<button onclick="location.href='../Azure'" class="custom-btn btn-7">AZURE</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/AWS/'" class="custom-btn btn-7">
+<button onclick="location.href='../AWS'" class="custom-btn btn-7">
 AWS</button>
 <div></div>
 
-<button onclick="location.href='/daffy/Deploying-OCP/VSphere/'" class="custom-btn btn-7">
+<button onclick="location.href='../VSphere'" class="custom-btn btn-7">
 VSphere</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/ROKS/'" class="custom-btn btn-7">
+<button onclick="location.href='../ROKS'" class="custom-btn btn-7">
 ROKS</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/TechZone/'" class="custom-btn btn-7">
+<button onclick="location.href='../TechZone'" class="custom-btn btn-7">
 TechZone</button>
 
 </div>

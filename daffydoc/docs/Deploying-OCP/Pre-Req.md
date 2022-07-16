@@ -9,7 +9,7 @@ Before you can use the Daffy scripts, you must have the following.
 - The Termius installer can be found here:  [Windows](https://termius.com/windows){target=_blank} or [Mac](https://termius.com/mac-os){target=_blank}  (Only the Free Version is needed)
 
 ### A Bastion Machine
-- [Create Bastion Instructions](https://w3.ibm.com/w3publisher/daffy/supporting-software/create-your-own-bastion){target=_blank}
+- [Create Bastion Instructions](../../Supporting-Software/Bastion/){target=_blank}
 - Ubuntu 20.04 (Minimum Requirements: 2 CPU, 2GB Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
 - Ubuntu 20.04 (Minimum Requirements: 60+ CPU, 128GB+ Memory) with full root access  **(KVM-UPI)**
 - RHEL 8.X         (Minimum Requirements: 2 CPU, 2GB Memory) with full root access  **(*-IPI and *-MSP)**
