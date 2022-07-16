@@ -114,8 +114,8 @@ Instead of using the include services,  you can also deploy your own sample or t
 
 **CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=**valid sample name in daffy samples folder
 
-!!! Warning "Name is important"
-Without the .yaml  in the name
+!!! Warning "Sample Name"
+The value you use is without the .yaml in the name
 
 
      cd /data/daffy/cp4ba/templates/services/samples  
