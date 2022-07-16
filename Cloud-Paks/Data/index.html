@@ -1284,6 +1284,9 @@
 <h2 id="step-1-deploy-cloud-pak">Step 1: Deploy Cloud Pak<a class="headerlink" href="#step-1-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Data requires one entries to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh).</p>
 <p><strong>CP4D_VERSION=</strong></p>
+<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
+<div class="highlight"><pre><span></span><code>CP4D_VERSION=&quot;4.0.9&quot;
+</code></pre></div>
 <p>With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
 <table>
 <thead>
@@ -1327,10 +1330,7 @@
 </tr>
 </tbody>
 </table>
-<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
-<p><div class="highlight"><pre><span></span><code>CP4D_VERSION=&quot;4.0.9&quot;
-</code></pre></div>
-Run the following command to deploy the Cloud Pak for Data</p>
+<p>Run the following command to deploy the Cloud Pak for Data</p>
 <p><div class="highlight"><pre><span></span><code>/data/daffy/cp4d/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 When this step is complete, approx 60 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service/pattern is running at this point. The cluster is now ready to deploy the services/patterns.  At this stage, the cluster consist of bedrock operators and the Cloud Pak for Data operators in the following projects:</p>
