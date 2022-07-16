@@ -19,7 +19,7 @@ No, sorry.
 
 If the /data/daffy/refresh.sh hangs or does not work, you can run the following command to put latest version of daffy:
 
-curl  http://get.daffy-installer.com:1887/download-scripts/daffy-init.sh | bash
+curl  http://get.daffy-installer.com/download-scripts/daffy-init.sh | bash
 
 ##I put invalid or wrong Red Hat Pull Secret during the OCP install process, how do you fix?
 
