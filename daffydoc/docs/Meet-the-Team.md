@@ -59,7 +59,7 @@ hide:
 <div class="row">
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../../images/Kyle.jpeg" style="width:100%">
+      <img src="../images/Kyle.jpeg" style="width:100%">
       <div class="container">
         <h2>Kyle Dawson</h2>
         <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market<br><br><br></p>
@@ -69,7 +69,7 @@ hide:
 
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../../images/David.jpeg"style="width:100%">
+      <img src="../images/David.jpeg"style="width:100%">
       <div class="container">
         <h2>David Krier</h2>
         <p class="title">Principal Integration Technical Specialist, IBM Technology, US National Market<br><br><br></p>
@@ -79,7 +79,7 @@ hide:
 
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../../images/Jeff.jpeg" style="width:100%">
+      <img src="../images/Jeff.jpeg" style="width:100%">
       <div class="container">
         <h2>Jeff Imholz</h2>
         <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market<br><br><br></p>
@@ -89,7 +89,7 @@ hide:
 
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../../images/Sunil.jpeg" style="width:100%">
+      <img src="../images/Sunil.jpeg" style="width:100%">
       <div class="container">
         <h2>Sunil S. Patel</h2>
         <p class="title">Principal Technical Sales Manager, Data-AI-Automation Blackbelt team, IBM Technology, US National Market</p>
@@ -100,7 +100,7 @@ hide:
 
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../../images/Greta.jpeg"  style="width:100%">
+      <img src="../images/Greta.jpeg"  style="width:100%">
       <div class="container">
         <h2>Greta Holland</h2>
         <p class="title">Associate AI Applications Technical Specialist, IBM Technology, US National Market Global Sales - Software Sales</p>
@@ -110,7 +110,7 @@ hide:
 
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../../images/taner1.jpg" style="width:100%">
+      <img src="../images/taner1.jpg" style="width:100%">
       <div class="container">
         <h2>Taner Avci</h2>
         <p class="title">Brand Technical Sales Specialist Intern<br><br><br><br><br></p>
@@ -120,7 +120,7 @@ hide:
 
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../../images/Daniel.jpg" style="width:100%">
+      <img src="../images/Daniel.jpg" style="width:100%">
       <div class="container">
         <h2>Daniel Schroedl</h2>
         <p class="title">Brand Technical Sales Specialist Intern<br><br><br><br></p>
@@ -129,7 +129,7 @@ hide:
   </div>
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../.../../images/ducks.png" style="width:85%">
+      <img src="../images/ducks.png" style="width:85%">
       <div class="container">
         <h2>Daffy the Mascot</h2>
         <p class="title">OpenShift Expert, IBM Technology, US National Market Global Sales - Software Sales<br><br></p>
