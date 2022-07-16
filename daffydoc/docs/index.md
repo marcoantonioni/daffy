@@ -39,6 +39,8 @@ hide:
           <img src='./images/ducks.png'  align="left" width="200"
           height="100" style = "float">
         </p>
+        <button onclick="location.href='Deploying-OCP/Pre-Req/'" class="custom-btn btn-7"><span>New User</span></button>
+        <button onclick="location.href='Deploying-OCP/'" class="custom-btn btn-7"><span>Experienced User</span></button>
       </div>
 
       <div class='column'>
@@ -62,31 +64,12 @@ hide:
 
 <div class="dave-page" markdown='block'>
 
-### Quick Links
-
-  <button onclick="location.href='/daffy/Deploying-OCP/Pre-Req/'" class="custom-btn btn-7"><span>New User</span></button>
-  <button onclick="location.href='/daffy/Deploying-OCP/'" class="custom-btn btn-7"><span>Experienced User</span></button>
-
-
 </div>
 
 <p align = "center">
     <img src='./images/process.png'  align="top" style = "float">
 </p>
 
-
-
-<html>
-   <head>
-      <title>HTML Video embed</title>
-   </head>
-   <body>
-    <div style="text-align:center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/LFqc0WD7x-U" frameborder="0" allowfullscreen></iframe>
-      </iframe>
-      </div>
-   </body>
-</html>
 
 
 
