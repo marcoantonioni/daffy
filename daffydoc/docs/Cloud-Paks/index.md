@@ -138,7 +138,7 @@ Before you can deploy a cloud pak, you must have the following:
 
 Important: If your installing on a customer owned platform account or an on-prem customer datacenter, you **`MUST`** instruct your customer to register for a trial account and use their pull secret for the install if they don't own the software. Do not use your own pull secret for customer engagements.
 
-NOTE: All IBMer's are entitled to an IBM Entitlement Key. Your key can **`ONLY`** be used for training and demo purposes. Do not provide your personal entitlement key to customers.
+NOTE: All IBMer's are entitled to an IBM Entitlement Key. Your key can **`ONLY`** be used for training and demo purposes. Do not provide your personal entitlement key to others.
 
 ******If customer or business partner does not have an IBM entitlement key, go to the following link to get one(IBM Internal Link)
 
