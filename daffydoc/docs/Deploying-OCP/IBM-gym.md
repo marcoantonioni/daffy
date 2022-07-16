@@ -22,24 +22,45 @@ The HCXX Gym has documentation on using daffy, below are some shortcuts for thei
 An email containing details on accessing the features of the OpenShift Gym is sent to the email address supplied once provisioning has completed. General information about the environment supplied is listed below. Refer to the provisioning email for detailed information.
 
 #Set Up
-1. Make Sure you are connected to the Tecnet VPN, in initaial setup it may require you to reset your password.
+1. Make Sure you are connected to the Technet VPN, in initial setup it may require you to reset your password.
 
 2. Launch Termius or your preferred Terminal
 > ###Termius
-1. on the left tabe click on hosts
-2. click on + New Host
-3. Add the IP address that was given in the provisioning email
+    1. on the left tab click on hosts
+    2. click on + New Host
+    3. Add the IP address that was given in the provisioning email
+    4. Add password that was giving in the email
+    5. Change port to 32222
 
->Your preffered Terminal
-run command
+> Standard Terminal run command
 ```
 ssh admin@{Server IP address} -p 32222
 ```
 
+After logging in as admin, switch to root user
+
+```
+  sudo su -
+```
+
+install latest daffy
+
+```
+curl  http://get.daffy-installer.com/download-scripts/daffy-init.sh | bash
+
+```
+
+
 Next you will copy the prepopulated env file in your home directory to your daffy env directory
 ```
-cp vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
+cp ~/vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
 ```
-You may make any changes needed in this file.
+You may make any changes needed in this file, add cloud paks, change sizing, etc.
 
 #Deploying
+You can now run the daffy process
+
+```
+/data/daffy/build.sh  {env-name}
+
+```
