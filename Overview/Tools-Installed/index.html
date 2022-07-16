@@ -75,11 +75,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#core" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -318,6 +313,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -412,73 +409,9 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Tools Installed
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         Tools Installed
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core" class="md-nav__link">
-    Core
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-cli" class="md-nav__link">
-    Cloud CLI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kernel-based-virtual-machine-utilitieskvm" class="md-nav__link">
-    Kernel-based Virtual Machine Utilities(KVM)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upi" class="md-nav__link">
-    UPI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#airgap-tools" class="md-nav__link">
-    AirGap Tools
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vsphere" class="md-nav__link">
-    VSphere
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1235,6 +1168,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1244,56 +1179,6 @@
   
   
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core" class="md-nav__link">
-    Core
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cloud-cli" class="md-nav__link">
-    Cloud CLI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kernel-based-virtual-machine-utilitieskvm" class="md-nav__link">
-    Kernel-based Virtual Machine Utilities(KVM)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upi" class="md-nav__link">
-    UPI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#airgap-tools" class="md-nav__link">
-    AirGap Tools
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vsphere" class="md-nav__link">
-    VSphere
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1309,330 +1194,349 @@
 
   <h1>Tools Installed</h1>
 
+<p><head></p>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+</style>
+<p></head></p>
 <p>Thought out the Daffy process,  it will install all support tools it would need. Depending on the step of daffy you are running and feature it uses, the tools are different.
-<b>****If the tool is present already and correct version, it will not be installed.</b></p>
-<h2 id="core">Core<a class="headerlink" href="#core" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">When</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">oc</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">openshfit-install</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">kubectl</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">nmon</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">curl</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">nano</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">vim</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">tree</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">wget</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">jq</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">expect</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">apache2-util</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">unzip</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">git</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">dnsutils</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">openssh-client</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">grepcidr</td>
-<td style="text-align: left;">always</td>
-</tr>
-<tr>
-<td style="text-align: left;">nfs-kernel-server</td>
-<td style="text-align: left;">NFS Option only</td>
-</tr>
-<tr>
-<td style="text-align: left;">nfs-common</td>
-<td style="text-align: left;">NFS Option only</td>
-</tr>
-</tbody>
-</table>
-<h2 id="cloud-cli">Cloud CLI<a class="headerlink" href="#cloud-cli" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">When</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">awscli</td>
-<td style="text-align: left;">AWS Install only</td>
-</tr>
-<tr>
-<td style="text-align: left;">azure-cli</td>
-<td style="text-align: left;">Azure Install only</td>
-</tr>
-<tr>
-<td style="text-align: left;">gcloud</td>
-<td style="text-align: left;">GCP Install only</td>
-</tr>
-<tr>
-<td style="text-align: left;">cloudctl</td>
-<td style="text-align: left;">Cloud Pak install if Flag is set</td>
-</tr>
-<tr>
-<td style="text-align: left;">python2</td>
-<td style="text-align: left;">Cloud Pak install if cloudctl Flag is set (&lt; 4.0.6)</td>
-</tr>
-<tr>
-<td style="text-align: left;">python3</td>
-<td style="text-align: left;">Cloud Pak install if cloudctl Flag is set (&gt;= 4.0.6)</td>
-</tr>
-<tr>
-<td style="text-align: left;">pip2</td>
-<td style="text-align: left;">Cloud Pak install if Flag is set (&lt; 4.0.6)</td>
-</tr>
-<tr>
-<td style="text-align: left;">pip3</td>
-<td style="text-align: left;">Cloud Pak install if Flag is set (&gt;= 4.0.6)</td>
-</tr>
-<tr>
-<td style="text-align: left;">ibmcloud</td>
-<td style="text-align: left;">ROKS Install and IBM DNS Used</td>
-</tr>
-<tr>
-<td style="text-align: left;">ibm-cp-automation</td>
-<td style="text-align: left;">CP4BA Install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">podman</td>
-<td style="text-align: left;">CP4BA Install or mirror local registry</td>
-</tr>
-</tbody>
-</table>
-<h2 id="kernel-based-virtual-machine-utilitieskvm">Kernel-based Virtual Machine Utilities(KVM)<a class="headerlink" href="#kernel-based-virtual-machine-utilitieskvm" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">When</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">lvm2 KVM install Only</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;">bridge-utils</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">qemu-kvm</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">virtinst</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">libvirt-daemon</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">virt-manager</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">cifs-utils KVM</td>
-<td style="text-align: left;">install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">libosinfo-bin</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">uvtool</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">matchbox</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-live-initramfs.x86_64.img</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-live-kernel-x86_64</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-live-rootfs.x86_64.img</td>
-<td style="text-align: left;">KVM install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">apache2</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">mysql-server</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">php</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">libapache2-mod-php</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">php-mysql</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">php-xml</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">php-libvirt-php</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">python</td>
-<td style="text-align: left;">VMDashboard Only</td>
-</tr>
-</tbody>
-</table>
-<h2 id="upi">UPI<a class="headerlink" href="#upi" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">When</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">haproxy</td>
-<td style="text-align: left;">KVM or VSphere install Only</td>
-</tr>
-<tr>
-<td style="text-align: left;">dnsmasq</td>
-<td style="text-align: left;">KVM or VSphere install Only</td>
-</tr>
-</tbody>
-</table>
-<h2 id="airgap-tools">AirGap Tools<a class="headerlink" href="#airgap-tools" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">When</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">opm</td>
-<td style="text-align: left;">build local registry only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-4.6.40-x86_64-live.x86_64.iso</td>
-<td style="text-align: left;">build local registry only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-4.7.13-x86_64-live.x86_64.iso</td>
-<td style="text-align: left;">build local registry only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-4.8.2-x86_64-live.x86_64.iso</td>
-<td style="text-align: left;">build local registry only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-4.9.0-x86_64-live.x86_64.iso</td>
-<td style="text-align: left;">build local registry only</td>
-</tr>
-<tr>
-<td style="text-align: left;">podman</td>
-<td style="text-align: left;">build local registry only</td>
-</tr>
-</tbody>
-</table>
-<h2 id="vsphere">VSphere<a class="headerlink" href="#vsphere" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tool</th>
-<th style="text-align: left;">When</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">rhcos-4.6.47-x86_64-vmware.x86_64.ova</td>
-<td style="text-align: left;">VSphere IPI only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-4.7.33-x86_64-vmware.x86_64.ova</td>
-<td style="text-align: left;">VSphere IPI only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-4.8.14-x86_64-vmware.x86_64.ova</td>
-<td style="text-align: left;">VSphere IPI only</td>
-</tr>
-<tr>
-<td style="text-align: left;">rhcos-4.9.0-x86_64-vmware.x86_64.ova</td>
-<td style="text-align: left;">VSphere IPI only</td>
-</tr>
-<tr>
-<td style="text-align: left;">govc</td>
-<td style="text-align: left;">VSphere Install only</td>
-</tr>
-</tbody>
-</table>
+If the tool is present already and correct version, it will not be installed.</p>
+<div class="row">
+  <div class="column">Core
+    <table>
+      <tr>
+        <th bgcolor="#FFA500">Tool</th>
+        <th bgcolor="#FFA500">When</th>
+      </tr>
+      <tr>
+        <td>oc</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>openshfit-install</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>kubectl</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>nmon</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>curl</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>nano</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>vim</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>tree</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>wget</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>jq</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>dnsutils</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>openssh-client</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>grepcidr</td>
+        <td>always</td>
+      </tr>
+      <tr>
+        <td>nfs-kernel-server</td>
+        <td>NFS Option only </td>
+      </tr>
+      <tr>
+        <td>nfs-common</td>
+        <td>NFS Option only </td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">Cloud CLI
+    <table>
+      <tr>
+        <th bgcolor="#FFA500">Tool</th>
+        <th bgcolor="#FFA500">When</th>
+      </tr>
+      <tr>
+        <td>awscli</td>
+        <td>AWS Install only</td>
+      </tr>
+      <tr>
+        <td>azure-cli </td>
+        <td>Azure Install only </td>
+      </tr>
+      <tr>
+        <td>gcloud</td>
+        <td>GCP Install only </td>
+      </tr>
+      <tr>
+        <td>cloudctl</td>
+        <td>cloudctl Flag</td>
+      </tr>
+      <tr>
+        <td>python2</td>
+        <td>cloudctl Flag</td>
+      </tr>
+      <tr>
+        <td>python3</td>
+        <td>cloudctl Flag</td>
+      </tr>
+      <tr>
+        <td>pip2</td>
+        <td>cloudctl Flag</td>
+      </tr>
+      <tr>
+        <td>pip3</td>
+        <td>cloudctl Flag</td>
+      </tr>
+      <tr>
+        <td>ibmcloud</td>
+        <td>ROKS & IBM DNS</td>
+      </tr>
+      <tr>
+        <td>ibm-cp-automation </td>
+        <td>CP4BA Install Only</td>
+      </tr>
+      <tr>
+        <td>podman</td>
+        <td>CP4BA Install</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">VSphere
+    <table>
+      <tr>
+        <th bgcolor="#FFA500">Tool</th>
+        <th bgcolor="#FFA500">When</th>
+      </tr>
+      <tr>
+        <td>rhcos-4.6.XX-x86_64-vmware.x86_64.ova</td>
+        <td>VSphere IPI only</td>
+      </tr>
+      <tr>
+        <td>rhcos-4.7.XX-x86_64-vmware.x86_64.ova </td>
+        <td>VSphere IPI only</td>
+      </tr>
+      <tr>
+        <td>rhcos-4.8.XX-x86_64-vmware.x86_64.ova</td>
+        <td>VSphere IPI only </td>
+      </tr>
+      <tr>
+        <td>rhcos-4.9.XX-x86_64-vmware.x86_64.ova</td>
+        <td>VSphere IPI only </td>
+      </tr>
+      <tr>
+        <td>rhcos-4.10.XX-x86_64-vmware.x86_64.ova</td>
+        <td>VSphere IPI only </td>
+      </tr>
+      <tr>
+        <td>govc</td>
+        <td>VSphere Install only</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">Airgap
+    <table>
+      <tr>
+        <th bgcolor="#FFA500">Tool</th>
+        <th bgcolor="#FFA500">When</th>
+      </tr>
+      <tr>
+        <td>mirror-registry</td>
+        <td>build local registry only</td>
+      </tr>
+      <tr>
+        <td>rhcos-4.6.XX-x86_64-live.x86_64.iso </td>
+        <td>build local registry only</td>
+      </tr>
+      <tr>
+        <td>rhcos-4.7.XX-x86_64-live.x86_64.iso </td>
+        <td>build local registry only</td>
+      </tr>
+      <tr>
+        <td>rhcos-4.8.XX-x86_64-live.x86_64.iso </td>
+        <td>build local registry only</td>
+      </tr>
+      <tr>
+        <td>rhcos-4.9.XX-x86_64-live.x86_64.iso </td>
+        <td>build local registry only</td>
+      </tr>
+      <tr>
+        <td>rhcos-4.10.XX-x86_64-live.x86_64.iso </td>
+        <td>build local registry only</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="column">UPI
+    <table>
+      <tr>
+        <th bgcolor="#FFA500">Tool</th>
+        <th bgcolor="#FFA500">When</th>
+      </tr>
+      <tr>
+        <td>haproxy</td>
+        <td>KVM or VSphere install Only</td>
+      </tr>
+      <tr>
+        <td>dnsmasq</td>
+        <td>KVM or VSphere install Only</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">KVM
+    <table>
+      <tr>
+        <th bgcolor="#FFA500">Tool</th>
+        <th bgcolor="#FFA500">When</th>
+      </tr>
+      <tr>
+        <td>lvm2</td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>bridge-utils</td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>qemu-kvm</td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>virtinst</td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td> libvirt-daemon </td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td> virt-manager </td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td> cifs-utils  </td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>libosinfo-bin  </td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>uvtool</td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>matchbox</td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td> rhcos-live-initramfs.x86_64.img </td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>rhcos-live-kernel-x86_64 </td>
+        <td>KVM install Only </td>
+      </tr>
+      <tr>
+        <td>rhcos-live-rootfs.x86_64.img </td>
+        <td>KVM install Only </td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">KVM Dashboard
+    <table>
+      <tr>
+        <th bgcolor="#FFA500">Tool</th>
+        <th bgcolor="#FFA500">When</th>
+      </tr>
+      <tr>
+        <td>apache2</td>
+        <td>VMDashboard Only</td>
+      </tr>
+      <tr>
+        <td>php</td>
+        <td>VMDashboard Only </td>
+      </tr>
+      <tr>
+        <td>libapache2-mod-php </td>
+        <td>VMDashboard Only </td>
+      </tr>
+      <tr>
+        <td>php-mysql </td>
+        <td>VMDashboard Only </td>
+      </tr>
+      <tr>
+        <td>php-xml </td>
+        <td>VMDashboard Only </td>
+      </tr>
+      <tr>
+        <td>php-libvirt-php </td>
+        <td>VMDashboard Only </td>
+      </tr>
+      <tr>
+        <td>python </td>
+        <td>VMDashboard Only </td>
+      </tr>
+    </table>
+  </div>
+</div>
 
               
             </article>
@@ -1650,7 +1554,9 @@
         <footer class="md-footer">
   
     
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
       
         
         <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index" rel="prev">
