@@ -3,7 +3,11 @@
 </p>
 
 <p align = "center">
-  <img src='./images/download.png'  align="top"  style = "float">
+    <img src='./images/process.png'  align="top" style = "float">
+</p>
+
+<p align = "center">
+  <img src='./images/referanceArchitecture.png'  align="top"  style = "float">
 </p>
 
 <FONT COLOR="black">

@@ -66,13 +66,6 @@ hide:
 
 </div>
 
-<p align = "center">
-    <img src='./images/process.png'  align="top" style = "float">
-</p>
-
-
-
-
 <style>
 
 .frame {
