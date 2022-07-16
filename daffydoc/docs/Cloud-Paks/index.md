@@ -131,7 +131,7 @@ Before you can deploy a cloud pak, you must have the following:
 
 ###  You must have a cluster running    
 - An existing cluster in a supported provider
-- Can be build with daffy or any other process  
+- Can be built with daffy or any other process  
 ###  IBM entitlement key   
 - You can obtain your existing entitlement key here:
 - [https://myibm.ibm.com/products-services/containerlibrary](https://myibm.ibm.com/products-services/containerlibrary)
