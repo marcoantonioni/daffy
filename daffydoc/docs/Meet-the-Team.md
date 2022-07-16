@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 <style>
 /* Three columns side by side */
 .column {
@@ -54,61 +58,49 @@
 </style>
 <div class="row">
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Kyle.jpeg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Kyle.jpeg" style="width:100%">
       <div class="container">
         <h2>Kyle Dawson</h2>
-        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market</p>
-        <p>Coral Gables, FL , United States</p>
-        <p>Kyle Dawson/Orlando/IBM</p>
-        <p><button class="button">Contact</button></p>
+        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market<br><br><br></p>
       </div>
     </div>
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/David.jpeg"style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/David.jpeg"style="width:100%">
       <div class="container">
         <h2>David Krier</h2>
-        <p class="title">Principal Integration Technical Specialist, IBM Technology, US National Market</p>
-        <p>Des Moines, IA , United States</p>
-        <p>David A Krier/Des Moines/IBM</p>
-        <p><button class="button">Contact</button></p>
+        <p class="title">Principal Integration Technical Specialist, IBM Technology, US National Market<br><br><br></p>
       </div>
     </div>
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Jeff.jpeg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Jeff.jpeg" style="width:100%">
       <div class="container">
         <h2>Jeff Imholz</h2>
-        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market</p>
-        <p>Columbus, OH , United States</p>
-        <p>Jeffrey Imholz/Dublin/IBM</p>
-        <p><button class="button">Contact</button></p>
+        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market<br><br><br></p>
       </div>
     </div>
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Sunil.jpeg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Sunil.jpeg" style="width:100%">
       <div class="container">
         <h2>Sunil S. Patel</h2>
         <p class="title">Principal Technical Sales Manager, Data-AI-Automation Blackbelt team, IBM Technology, US National Market</p>
-        <p>Coppell, TX , United States</p>
-        <p>Sunil S Patel/Dallas/IBM</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
 
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Greta.jpeg"  style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Greta.jpeg"  style="width:100%">
       <div class="container">
         <h2>Greta Holland</h2>
         <p class="title">Associate AI Applications Technical Specialist, IBM Technology, US National Market Global Sales - Software Sales</p>
@@ -117,27 +109,31 @@
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Taner.jpg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/taner1.jpg" style="width:100%">
       <div class="container">
         <h2>Taner Avci</h2>
-        <p class="title">Brand Technical Sales Specialist Intern</p>
-        <p> New York, NY </p>
-        <p><button class="button">Contact</button></p>
+        <p class="title">Brand Technical Sales Specialist Intern<br><br><br><br><br></p>
       </div>
     </div>
   </div>
 
   <div class="column">
-    <div class="card"style="width: 18rem;">
-      <img src="../images/Daniel.jpg" style="width:100%">
+    <div class="card"style="width: 13rem;">
+      <img src="./images/Daniel.jpg" style="width:100%">
       <div class="container">
         <h2>Daniel Schroedl</h2>
-        <p class="title">Brand Technical Sales Specialist Intern</p>
-        <p> Boston, MA </p>
-        <p><button class="button">Contact</button></p>
+        <p class="title">Brand Technical Sales Specialist Intern<br><br><br><br></p>
       </div>
     </div>
   </div>
-
+  <div class="column">
+    <div class="card"style="width: 13rem;">
+      <img src="../../images/ducks.png" style="width:85%">
+      <div class="container">
+        <h2>Daffy the Mascot</h2>
+        <p class="title">OpenShift Expert, IBM Technology, US National Market Global Sales - Software Sales<br><br></p>
+      </div>
+    </div>
+  </div>
 </div>
