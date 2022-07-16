@@ -1224,29 +1224,41 @@
 <h1 id="set-up">Set Up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h1>
 <ol>
 <li>
-<p>Make Sure you are connected to the Tecnet VPN, in initaial setup it may require you to reset your password.</p>
+<p>Make Sure you are connected to the Technet VPN, in initial setup it may require you to reset your password.</p>
 </li>
 <li>
 <p>Launch Termius or your preferred Terminal</p>
 <blockquote>
 <h3 id="termius">Termius<a class="headerlink" href="#termius" title="Permanent link">&para;</a></h3>
 </blockquote>
-</li>
-<li>on the left tabe click on hosts</li>
+<ol>
+<li>on the left tab click on hosts</li>
 <li>click on + New Host</li>
 <li>Add the IP address that was given in the provisioning email</li>
+<li>Add password that was giving in the email</li>
+<li>Change port to 32222</li>
+</ol>
+</li>
 </ol>
 <blockquote>
-<p>Your preffered Terminal
-run command
+<p>Standard Terminal run command
 <div class="highlight"><pre><span></span><code>ssh admin@{Server IP address} -p 32222
 </code></pre></div></p>
 </blockquote>
-<p>Next you will copy the prepopulated env file in your home directory to your daffy env directory
-<div class="highlight"><pre><span></span><code>cp vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
+<p>After logging in as admin, switch to root user</p>
+<div class="highlight"><pre><span></span><code>  sudo su -
 </code></pre></div>
-You may make any changes needed in this file.</p>
+<p>install latest daffy</p>
+<div class="highlight"><pre><span></span><code>curl  http://get.daffy-installer.com/download-scripts/daffy-init.sh | bash
+</code></pre></div>
+<p>Next you will copy the prepopulated env file in your home directory to your daffy env directory
+<div class="highlight"><pre><span></span><code>cp ~/vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
+</code></pre></div>
+You may make any changes needed in this file, add cloud paks, change sizing, etc.</p>
 <h1 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h1>
+<p>You can now run the daffy process</p>
+<div class="highlight"><pre><span></span><code>/data/daffy/build.sh  {env-name}
+</code></pre></div>
 
               
             </article>
