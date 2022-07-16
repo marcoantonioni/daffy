@@ -140,6 +140,8 @@ Important: If your installing on a customer owned platform account or an on-prem
 
 NOTE: All IBMer's are entitled to an IBM Entitlement Key. Your key can **`ONLY`** be used for training and demo purposes. Do not provide your personal entitlement key to others.
 
-******If customer or business partner does not have an IBM entitlement key, go to the following link to get one(IBM Internal Link)
+!!! Warning   
+      For internal IBM use only, Link below will only work while in the IBM Network
+If customer or business partner does not have an IBM entitlement key, go to the following link to get one(IBM Internal Link)
 
  [IBM Trial Software Process ](https://ibm.seismic.com/Link/Content/DC82Wc9PpPqf68MHHTjBpVC84RBB)

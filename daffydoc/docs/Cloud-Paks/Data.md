@@ -19,6 +19,12 @@ Deploying the Cloud Pak for Data requires one entries to your environment file (
 
 **CP4D_VERSION=**
 
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+
+```
+CP4D_VERSION="4.0.9"
+```
+
 With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
@@ -33,11 +39,7 @@ With these values, the daffy engine will be able to install the version of Cloud
 | 4.0.2     | 4.6           |
 
 
-You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
-```
-CP4D_VERSION="4.0.9"
-```
 Run the following command to deploy the Cloud Pak for Data
 
 ```
