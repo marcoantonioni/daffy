@@ -132,7 +132,7 @@ hide:
       <img src="../images/ducks.png" style="width:85%">
       <div class="container">
         <h2>Daffy the Mascot</h2>
-        <p class="title">OpenShift Expert, IBM Technology, US National Market Global Sales - Software Sales<br><br></p>
+        <p class="title">OpenShift Expert, IBM Technology, US National Market Global Sales - Software Sales<br><br><br></p>
       </div>
     </div>
   </div>
