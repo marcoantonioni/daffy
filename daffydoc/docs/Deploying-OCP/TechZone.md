@@ -15,18 +15,21 @@ At this point, you have a **bastion** machine where you have installed the Daffy
 There are three options with TechZone
 
   1. OpenShift Cluster via AWS, Azure (**Prebuilt** Cluster)   [https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters](https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters)
-    * With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you. (This would fail as you do not have access to create cluster with a techzone setup)
-    * You still need to have a bastion and core values in your <**ENVIRONMENT_NAME**>-env.sh
+    - Does **NOT** include Bastion with request
+    - With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you. (This would fail as you do not have access to create cluster with a techzone setup)
+    - You still need to have a bastion and core values in your <**ENVIRONMENT_NAME**>-env.sh
 
 
 
   2. Tech Zone VSphere (**Daffy** build's cluster) [https://techzone.ibm.com/collection/ocp-gymnasium](https://techzone.ibm.com/collection/ocp-gymnasium)
+    - Includes Bastion with request
     - Once you create the request and the VSPhere environment has been provisioned, it will create your own bastion and give you the instructions on how to use Daffy in that environment with the prebuild <**ENVIRONMENT_NAME**>-env.sh.
 
 
   3. TechZone Roks (**Prebuilt** Cluster) [https://techzone.ibm.com/collection/custom-roks-vmware-requests](https://techzone.ibm.com/collection/custom-roks-vmware-requests)
+    - Does **NOT** include Bastion with request
     - With this option, you will skip Daffy step 1 (Build cluster) as TechZone will build for you (This will fail as you do not have access to create cluster with a techzone setup)
-    - Once you create the access, you would follow the same steps of ROKS with Daffy
+    - Once you create the request, you would follow the same steps of ROKS with Daffy
     - You still need to have a bastion and core values in your <**ENVIRONMENT_NAME**>-env.sh  
     - Extra setting to change in your environment file      
           1. **ROKS_PROVIDER=**techzone
