@@ -51,8 +51,8 @@ If the tool is present already and correct version, it will not be installed.
   <div class="column">Core
     <table>
       <tr>
-        <th bgcolor="#FFA500">Tool</th>
-        <th bgcolor="#FFA500">When</th>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
         <td>oc</td>
@@ -119,8 +119,8 @@ If the tool is present already and correct version, it will not be installed.
   <div class="column">Cloud CLI
     <table>
       <tr>
-        <th bgcolor="#FFA500">Tool</th>
-        <th bgcolor="#FFA500">When</th>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
         <td>awscli</td>
@@ -171,8 +171,8 @@ If the tool is present already and correct version, it will not be installed.
   <div class="column">VSphere
     <table>
       <tr>
-        <th bgcolor="#FFA500">Tool</th>
-        <th bgcolor="#FFA500">When</th>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
         <td>rhcos-4.6.XX-x86_64-vmware.x86_64.ova</td>
@@ -203,8 +203,8 @@ If the tool is present already and correct version, it will not be installed.
   <div class="column">Airgap
     <table>
       <tr>
-        <th bgcolor="#FFA500">Tool</th>
-        <th bgcolor="#FFA500">When</th>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
         <td>mirror-registry</td>
@@ -237,8 +237,8 @@ If the tool is present already and correct version, it will not be installed.
   <div class="column">UPI
     <table>
       <tr>
-        <th bgcolor="#FFA500">Tool</th>
-        <th bgcolor="#FFA500">When</th>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
         <td>haproxy</td>
@@ -253,8 +253,8 @@ If the tool is present already and correct version, it will not be installed.
   <div class="column">KVM
     <table>
       <tr>
-        <th bgcolor="#FFA500">Tool</th>
-        <th bgcolor="#FFA500">When</th>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
         <td>lvm2</td>
@@ -313,8 +313,8 @@ If the tool is present already and correct version, it will not be installed.
   <div class="column">KVM Dashboard
     <table>
       <tr>
-        <th bgcolor="#FFA500">Tool</th>
-        <th bgcolor="#FFA500">When</th>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
         <td>apache2</td>

@@ -13,6 +13,8 @@ At this point, you have a **bastion** machine where you have installed the Daffy
 ## Platform Requirements
 
 There are three options with TechZone
+!!! Warning   
+      For internal IBM use only, Links may only work while in the IBM Network
 
   1. OpenShift Cluster via AWS, Azure (**Prebuilt** Cluster)   [https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters](https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters)
     - Does **NOT** include Bastion with request

@@ -1,4 +1,4 @@
-# What is a bastion server? Why does it exist?
+## What is a bastion server?
 
 A bastion host is **a server whose purpose is to provide access to a private network from an external network,** such as the Internet. Because of its exposure to potential attack, a bastion host must minimize the chances of penetration. Openshift uses a bastion to help create a running cluster. A bastion can be reused for multiple clusters. In some scenarios for POC purposes such as User Provisioned Infrastructure (UPI), the bastion can be used as the proxy to the cluster.
 
@@ -8,7 +8,7 @@ Requirements for completing this task is to have an IBMid, an IBM cloud account,
 
 Detailed below are the instructions to build your own bastion to do an IPI or MSP install.
 
-# Bastion Server Using IBM Cloud
+## IBM Cloud
 
 1. First, open a web browser and go to http://cloud.ibm.com
 
@@ -56,9 +56,12 @@ Alternative: Skip step 3 and search for "virtual server", choosing "virtual serv
 
 10. Once you have connected your bastion to **Termius**, install **Daffy** to the terminal of your newly created host.
 
-# IBM Technology Zone
+## IBM Technology Zone
 
 An alternative to creating a bastion using a paid IBM Cloud account is to use **IBM Technology Zone.**
+There are three options with TechZone
+!!! Warning   
+      For internal IBM or Business partner use only
 
 1. Use this link to navigate to **IBM Technology Zone:** https://techzone.ibm.com/collection/base-images
 
