@@ -38,7 +38,7 @@ There are three options with TechZone
           2. **DAFFY_DEPLOYMENT_TYPE=**TechZone
 
 
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

@@ -109,7 +109,7 @@ Once your cluster is fully deployed you can access the help menu which has a num
 
 Here is a full example for deploying OpenShfit on **Azure** with the Daffy process.
 
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

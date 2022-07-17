@@ -82,7 +82,7 @@ Note: <ENVIRONMENT_NAME> is the first part of your name that you used for the <E
 
 Here is a full example for deploying OpenShift on Kernel-based Virtual Machine with the Daffy process.
 
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

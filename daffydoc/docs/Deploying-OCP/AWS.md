@@ -122,7 +122,7 @@ AWS_ACCESS_KEY_ID="<AWS-ACCESS_KEY-ID>"
 
 **Optional:**
 
--**OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
+**OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
 If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
 ## Step 4: Execution
@@ -139,7 +139,7 @@ Once your cluster is fully deployed you can access the help menu which as a numb
 ```
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

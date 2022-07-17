@@ -96,7 +96,7 @@ Once your cluster is fully deployed you can access the help menu which has a num
 ```
 Deploying an OpenShift cluster on VSphere using the Daffy Scripts.  (Using VSPhere-IPI Install Type)
 
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 
