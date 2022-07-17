@@ -40,7 +40,7 @@ nav:
     - VSphere: Deploying-OCP/VSphere.md
     - ROKS: Deploying-OCP/ROKS.md
     - TechZone: Deploying-OCP/TechZone.md
-    - Restricted Network: Deploying-OCP/Air-Gap.md
+    - Restricted Network: Deploying-OCP/Restricted-Network.md
 #    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
     - Cloud-Paks/index.md
