@@ -1658,7 +1658,7 @@ function showSlides(n) {
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Difference between Airgap and Proxy install.</p>
 <h3 id="proxy-install">Proxy install<a class="headerlink" href="#proxy-install" title="Permanent link">&para;</a></h3>
-<p>OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  The cluster you build must also have direct access to the proxy server. This proxy server can then control what access is granted via whitelist.</p>
+<p>OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  The bastion and cluster you build must also have direct access to the proxy server. This proxy server can then control what access is granted via whitelist.</p>
 <p>If you are doing proxy install, you only need one bastion and no jump box.  This bastion must have access to the restricted network and the proxy server as well.</p>
 <div class="highlight"><pre><span></span><code>#Airgap - Proxy Install#
 ######################################################################################
