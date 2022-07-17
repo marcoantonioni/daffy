@@ -691,9 +691,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#environment-file" class="md-nav__link">
     Environment File
   </a>
+  
+    <nav class="md-nav" aria-label="Environment File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1341,9 +1361,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#environment-file" class="md-nav__link">
     Environment File
   </a>
+  
+    <nav class="md-nav" aria-label="Environment File">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overrides" class="md-nav__link">
+    Overrides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1618,7 +1658,7 @@ function showSlides(n) {
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>Difference between Airgap and Proxy install.</p>
 <h3 id="proxy-install">Proxy install<a class="headerlink" href="#proxy-install" title="Permanent link">&para;</a></h3>
-<p>OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  This proxy server can then control what access is granted via whitelist.</p>
+<p>OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  The cluster you build must also have direct access to the proxy server. This proxy server can then control what access is granted via whitelist.</p>
 <p>If you are doing proxy install, you only need one bastion and no jump box.  This bastion must have access to the restricted network and the proxy server as well.</p>
 <div class="highlight"><pre><span></span><code>#Airgap - Proxy Install#
 ######################################################################################
@@ -1637,6 +1677,11 @@ To do this we will use the following terms:</p>
 <li><strong>Jump box</strong> - Machine that will have direct access to the internet to mirror(download) public registry software.</li>
 <li><strong>Bastion</strong>  - Machine that will install the cluster and have direct access to the restricted network where the cluster will run.</li>
 </ol>
+<h4 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Jump Box  - 4X32 100GB Disk (Disk depending on what you plan to mirror)</li>
+<li>Bastion   - 4X32 100GB Disk (Disk depending on what you plan to mirror)</li>
+</ol>
 <h4 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h4>
 <p>You should build your environment file based the final install you want to  build and should include those values in this file as well.  </p>
 <p>The following values are required specifical for <strong>Airgap</strong> install.</p>
@@ -1652,6 +1697,20 @@ LOCAL_REGISTRY_IP=
 LOCAL_AIRGAP_REGISTRY_DNS_NAME=
 LOCAL_AIRGAP_REGISTRY_IP=
 </code></pre></div>
+<blockquote>
+<h5 id="overrides">Overrides<a class="headerlink" href="#overrides" title="Permanent link">&para;</a></h5>
+<p>Current values that you can add to your own environment file to override if needed but not reqired:
+<div class="highlight"><pre><span></span><code>OCP_REGISTRY_ROOT=&quot;/mirror/registry&quot;
+OCP_CATALOG_MIRRORS=&quot;compliance-operator,container-security-operator,file-integrity-operator,local-storage-operator,ocs-operator&quot;
+OCP_AIRGAP_EXPORT_FREE_DISK_SIZE_NEEDED=&quot;100&quot;
+OCP_AIRGAP_IMPORT_FREE_DISK_SIZE_NEEDED=&quot;100&quot;
+LOCAL_REGISTRY_CERTS_FOLDER=&quot;${DATA_DIR}/${PROJECT_NAME}/certs&quot;
+CA_CERT_OU=&quot;ca.${CLUSTER_NAME}.${BASE_DOMAIN}&quot;
+LOCAL_REGISTRY_PORT=&quot;8443&quot;
+LOCAL_OCP_REPOSITORY_NAME=&quot;ocp4/openshift4&quot;
+LOCAL_OLM_MIRROR_REPOSITORY_NAME=&quot;olm-mirror&quot;
+</code></pre></div></p>
+</blockquote>
 <h4 id="mirror-locally">Mirror locally<a class="headerlink" href="#mirror-locally" title="Permanent link">&para;</a></h4>
 <p>From your jump box run the following command:
 <div class="highlight"><pre><span></span><code>/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;
@@ -1660,7 +1719,8 @@ LOCAL_AIRGAP_REGISTRY_IP=
 <p>After the first command runs, it will display all the files that it created and you will not to move to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.</p>
 <h4 id="move-files">Move Files<a class="headerlink" href="#move-files" title="Permanent link">&para;</a></h4>
 <p>In our example we will move via scp because our jump box has access to the bastion.  This could be via firewall or it has dual NIC cards (Public Nic/Private Nic)</p>
-<div class="highlight"><pre><span></span><code>scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap
+<div class="highlight"><pre><span></span><code>ssh &lt;BASTION-IP&gt; mkdir -p /data/import/airgap
+scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap
 </code></pre></div>
 <h4 id="prepare-bastion">Prepare Bastion<a class="headerlink" href="#prepare-bastion" title="Permanent link">&para;</a></h4>
 <p>Once all the files are on the bastion in the restricted network, you can run the script that was build from the previous step and copied over.  This will unrar all files, install all command line tools and also install daffy locally.</p>
