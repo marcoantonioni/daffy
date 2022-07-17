@@ -87,11 +87,11 @@ You are **NOW** ready to begin making the necessary edits to your /data/daffy/en
 
 <div style="text-align:left">
 
-<button onclick="location.href='../IBM-gym'" class="custom-btn btn-7">IBM GYM</button>
+<button onclick="location.href='../IBM-gym'" class="custom-btn btn-7">IBM Gym</button>
 
 <button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
 
-<button onclick="location.href='../Azure'" class="custom-btn btn-7">AZURE</button>
+<button onclick="location.href='../Azure'" class="custom-btn btn-7">Azure</button>
 
 <button onclick="location.href='../AWS'" class="custom-btn btn-7">
 AWS</button>

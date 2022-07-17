@@ -8,11 +8,11 @@ hide:
 <body>
 <div style="text-align:center">
 
-<button onclick="location.href='./IBM-gym/'" class="custom-btn btn-7">IBM GYM</button>
+<button onclick="location.href='./IBM-gym/'" class="custom-btn btn-7">IBM Gym</button>
 
 <button onclick="location.href='./GCP/'" class="custom-btn btn-7">GCP</button>
 
-<button onclick="location.href='./Azure/'" class="custom-btn btn-7">AZURE</button>
+<button onclick="location.href='./Azure/'" class="custom-btn btn-7">Azure</button>
 
 <button onclick="location.href='./AWS/'" class="custom-btn btn-7">
 AWS</button>
