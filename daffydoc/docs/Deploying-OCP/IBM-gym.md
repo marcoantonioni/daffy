@@ -27,15 +27,15 @@ An email containing details on accessing the features of the OpenShift Gym is se
 ## Set Up
 1. Make Sure you are connected to the Technet VPN, in initial setup it may require you to reset your password.
 
-2. Launch Termius or your preferred Terminal
+2. Launch your preferred Terminal
 > ###Termius
-    1. on the left tab click on hosts
-    2. click on + New Host
+    1. On the left tab click on hosts
+    2. Click on + New Host
     3. Add the IP address that was given in the provisioning email
     4. Add password that was giving in the email
     5. Change port to 32222
 
-> Standard Terminal run command
+> ###Standard Terminal run command
 ```
 ssh admin@{Server IP address} -p 32222
 ```
@@ -45,6 +45,12 @@ After logging in as admin, switch to root user
 ```
   sudo su -
 ```
+
+!!! Warning  
+      Before you can start with daffy, you must registry your RedHat Enterprise Linux(RHEL)( [Here](https://access.redhat.com/solutions/253273){target=_blank})
+      ```
+      subscription-manager register --username <username> --password <password> --auto-attach
+      ```
 
 install latest daffy
 
