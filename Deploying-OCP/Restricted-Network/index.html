@@ -672,47 +672,73 @@
     Overview
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proxy-install" class="md-nav__link">
+    Proxy install
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#airgap-install" class="md-nav__link">
+    Airgap install
+  </a>
+  
+    <nav class="md-nav" aria-label="Airgap install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#environment-file" class="md-nav__link">
     Environment File
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mirror-locally" class="md-nav__link">
     Mirror locally
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#export-files" class="md-nav__link">
     Export Files
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#move-files" class="md-nav__link">
     Move Files
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#prepare-bastion" class="md-nav__link">
     Prepare Bastion
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#build-local-mirror" class="md-nav__link">
     Build Local Mirror
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1296,47 +1322,73 @@
     Overview
   </a>
   
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proxy-install" class="md-nav__link">
+    Proxy install
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
+  <a href="#airgap-install" class="md-nav__link">
+    Airgap install
+  </a>
+  
+    <nav class="md-nav" aria-label="Airgap install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#environment-file" class="md-nav__link">
     Environment File
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mirror-locally" class="md-nav__link">
     Mirror locally
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#export-files" class="md-nav__link">
     Export Files
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#move-files" class="md-nav__link">
     Move Files
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#prepare-bastion" class="md-nav__link">
     Prepare Bastion
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#build-local-mirror" class="md-nav__link">
     Build Local Mirror
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1363,10 +1415,6 @@
 
   <h1>Restricted Network</h1>
 
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Detailed instruction's coming soon!</p>
-</div>
 <!-- CSS FOR SLIDESHOW -->
 <h2 id="slide-show">Slide Show<a class="headerlink" href="#slide-show" title="Permanent link">&para;</a></h2>
 <style>
@@ -1568,13 +1616,68 @@ function showSlides(n) {
 <!-- END OF JS-->
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
-<h2 id="mirror-locally">Mirror locally<a class="headerlink" href="#mirror-locally" title="Permanent link">&para;</a></h2>
-<h2 id="export-files">Export Files<a class="headerlink" href="#export-files" title="Permanent link">&para;</a></h2>
-<h2 id="move-files">Move Files<a class="headerlink" href="#move-files" title="Permanent link">&para;</a></h2>
-<h2 id="prepare-bastion">Prepare Bastion<a class="headerlink" href="#prepare-bastion" title="Permanent link">&para;</a></h2>
-<h2 id="build-local-mirror">Build Local Mirror<a class="headerlink" href="#build-local-mirror" title="Permanent link">&para;</a></h2>
+<p>Difference between Airgap and Proxy install.</p>
+<h3 id="proxy-install">Proxy install<a class="headerlink" href="#proxy-install" title="Permanent link">&para;</a></h3>
+<p>OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  This proxy server can then control what access is granted via whitelist.</p>
+<p>If you are doing proxy install, you only need one bastion and no jump box.  This bastion must have access to the restricted network and the proxy server as well.</p>
+<div class="highlight"><pre><span></span><code>#Airgap - Proxy Install#
+######################################################################################
+OCP_PROXY_HTTP_PROXY=
+OCP_PROXY_HTTPS_PROXY=
+OCP_PROXY_NO_PROXY=
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>At this point for a proxy install, you can skip the following steps and move to the last step and install your cluster.</p>
+</div>
+<h3 id="airgap-install">Airgap install<a class="headerlink" href="#airgap-install" title="Permanent link">&para;</a></h3>
+<p>OpenShift environments can deny direct access to the internet completely. With this method you must replicate or mirror the public registries local in your restricted network.<br />
+To do this we will use the following terms:</p>
+<ol>
+<li><strong>Jump box</strong> - Machine that will have direct access to the internet to mirror(download) public registry software.</li>
+<li><strong>Bastion</strong>  - Machine that will install the cluster and have direct access to the restricted network where the cluster will run.</li>
+</ol>
+<h4 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h4>
+<p>You should build your environment file based the final install you want to  build and should include those values in this file as well.  </p>
+<p>The following values are required specifical for <strong>Airgap</strong> install.</p>
+<p><strong>LOCAL_REGISTRY_DNS_NAME=</strong>This is your jump box DNS name. If you not have DNS, you can also put the ip address <br />
+<strong>LOCAL_REGISTRY_IP=</strong>This is your jump box IP address  <br />
+<strong>LOCAL_AIRGAP_REGISTRY_DNS_NAME=</strong>This is your restricted network bastion box DNS name. If you not have DNS, you can also put the ip    address  <br />
+<strong>LOCAL_AIRGAP_REGISTRY_IP=</strong>This is your restricted network bastion box IP address   </p>
+<div class="highlight"><pre><span></span><code>#Local Registry Info
+###############################
+LOCAL_REGISTRY_ENABLED=&lt;true|false&gt;
+LOCAL_REGISTRY_DNS_NAME=
+LOCAL_REGISTRY_IP=
+LOCAL_AIRGAP_REGISTRY_DNS_NAME=
+LOCAL_AIRGAP_REGISTRY_IP=
+</code></pre></div>
+<h4 id="mirror-locally">Mirror locally<a class="headerlink" href="#mirror-locally" title="Permanent link">&para;</a></h4>
+<p>From your jump box run the following command:
+<div class="highlight"><pre><span></span><code>/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;
+</code></pre></div></p>
+<h4 id="export-files">Export Files<a class="headerlink" href="#export-files" title="Permanent link">&para;</a></h4>
+<p>After the first command runs, it will display all the files that it created and you will not to move to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.</p>
+<h4 id="move-files">Move Files<a class="headerlink" href="#move-files" title="Permanent link">&para;</a></h4>
+<p>In our example we will move via scp because our jump box has access to the bastion.  This could be via firewall or it has dual NIC cards (Public Nic/Private Nic)</p>
+<div class="highlight"><pre><span></span><code>scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap
+</code></pre></div>
+<h4 id="prepare-bastion">Prepare Bastion<a class="headerlink" href="#prepare-bastion" title="Permanent link">&para;</a></h4>
+<p>Once all the files are on the bastion in the restricted network, you can run the script that was build from the previous step and copied over.  This will unrar all files, install all command line tools and also install daffy locally.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>It does not mirror the registry but gets the bastion ready for that step</p>
+</div>
+<div class="highlight"><pre><span></span><code>/data/import/airgap/airgap-prep.sh
+</code></pre></div>
+<h4 id="build-local-mirror">Build Local Mirror<a class="headerlink" href="#build-local-mirror" title="Permanent link">&para;</a></h4>
+<p>From your bastion box run the following command:
+<div class="highlight"><pre><span></span><code>/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;
+</code></pre></div></p>
 <h2 id="install-cluster">Install Cluster<a class="headerlink" href="#install-cluster" title="Permanent link">&para;</a></h2>
+<p>No you would just follow the normal steps to build your OpenShift registry.  </p>
+<div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
+</code></pre></div>
 
               
             </article>
