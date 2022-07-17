@@ -24,7 +24,7 @@ There are three options with TechZone
 
 An email containing details on accessing the features of the OpenShift Gym is sent to the email address supplied once provisioning has completed. General information about the environment supplied is listed below. Refer to the provisioning email for detailed information.
 
-## Set Up
+## Connection
 1. Make Sure you are connected to the Technet VPN, in initial setup it may require you to reset your password.
 
 2. Launch your preferred Terminal
@@ -35,11 +35,13 @@ An email containing details on accessing the features of the OpenShift Gym is se
     4. Add password that was giving in the email
     5. Change port to 32222
 
-> ###Standard Terminal run command
+> ###Standard Terminal
 ```
 ssh admin@{Server IP address} -p 32222
 ```
 
+## Set Up
+### Login as root
 After logging in as admin, switch to root user
 
 ```
@@ -52,14 +54,14 @@ After logging in as admin, switch to root user
       subscription-manager register --username <username> --password <password> --auto-attach
       ```
 
-install latest daffy
+### Install latest daffy
 
 ```
 curl  http://get.daffy-installer.com/download-scripts/daffy-init.sh | bash
 
 ```
 
-
+### Copy environment file
 Next you will copy the prepopulated env file in your home directory to your daffy env directory
 ```
 cp ~/vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
