@@ -1685,7 +1685,8 @@ To do this we will use the following terms:</p>
 <h4 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h4>
 <p>You should build your environment file based the final install you want to  build and should include those values in this file as well.  </p>
 <p>The following values are required specifical for <strong>Airgap</strong> install.</p>
-<p><strong>LOCAL_REGISTRY_DNS_NAME=</strong>This is your jump box DNS name. If you not have DNS, you can also put the ip address <br />
+<p><strong>LOCAL_REGISTRY_ENABLED=</strong>Do you want this to be an airgap install true|false.  <strong>Lower case</strong> <br />
+<strong>LOCAL_REGISTRY_DNS_NAME=</strong>This is your jump box DNS name. If you not have DNS, you can also put the ip address <br />
 <strong>LOCAL_REGISTRY_IP=</strong>This is your jump box IP address  <br />
 <strong>LOCAL_AIRGAP_REGISTRY_DNS_NAME=</strong>This is your restricted network bastion box DNS name. If you not have DNS, you can also put the ip    address  <br />
 <strong>LOCAL_AIRGAP_REGISTRY_IP=</strong>This is your restricted network bastion box IP address   </p>
