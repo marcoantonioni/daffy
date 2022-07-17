@@ -10,9 +10,10 @@ Before you can use the Daffy scripts, you must have the following.
 
 ### A Bastion Machine
 - [Create Bastion Instructions](../../Supporting-Software/Bastion/){target=_blank}
-- Ubuntu 20.04 (Minimum Requirements: 2 CPU, 2GB Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
+- Ubuntu 20.04 (Minimum Requirements: 2   CPU, 2GB    Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
 - Ubuntu 20.04 (Minimum Requirements: 60+ CPU, 128GB+ Memory) with full root access  **(KVM-UPI)**
-- RHEL 8.X         (Minimum Requirements: 2 CPU, 2GB Memory) with full root access  **(*-IPI and *-MSP)**
+- Ubuntu 20.04 (Minimum Requirements: 4+  CPU, 32GB+  Memory) with full root access  **(AirGap Bastion/Jump Box Mirror Registry)**
+- RHEL 8.X     (Minimum Requirements: 2   CPU, 2GB    Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
 
 ### Red Hat pull secret
 1. If you or your customer does not have a Red Hat pull secret.
