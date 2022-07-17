@@ -233,8 +233,12 @@ To do this we will use the following terms:
 2. **Bastion**  - Machine that will install the cluster and have direct access to the restricted network where the cluster will run.
 
 #### Requirements
-1. Jump Box  - 4X32 100GB Disk (Disk depending on what you plan to mirror)
-2. Bastion   - 4X32 100GB Disk (Disk depending on what you plan to mirror)
+1. **Jump Box**  - 4X32 100GB Disk (Disk depending on what you plan to mirror)
+    1.  Default will need storge **/data/export** and **/mirror/registry**
+2. **Bastion**   - 4X32 100GB Disk (Disk depending on what you plan to mirror)
+    1.  Default will need storge **/data/import** and **/mirror/registry**
+
+
 
 #### Environment File
 You should build your environment file based the final install you want to  build and should include those values in this file as well.  
@@ -268,6 +272,8 @@ CA_CERT_OU="ca.${CLUSTER_NAME}.${BASE_DOMAIN}"
 LOCAL_REGISTRY_PORT="8443"
 LOCAL_OCP_REPOSITORY_NAME="ocp4/openshift4"
 LOCAL_OLM_MIRROR_REPOSITORY_NAME="olm-mirror"
+OCP_AIRGAP_EXPORT="${DATA_DIR}/export/airgap"
+OCP_AIRGAP_IMPORT="${DATA_DIR}/import/airgap"
 ```
 
 #### Mirror locally
