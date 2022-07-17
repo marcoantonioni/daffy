@@ -33,4 +33,4 @@ Before you can use the Daffy scripts, you must have the following.
 1. If you need to get your own IBM entitlement key you can get [ here](https://myibm.ibm.com/products-services/containerlibrary).
      - Copy to clipboard and save to a local file
 2. If you need create one for a customer you can submit request here. [here](https://ibm.seismic.com/app#/doccenter/5477419a-9474-4c51-94af-b442e9169fab/doc/%252Fdd98c5a3df-6b7c-1d77-6f07-d12e63954c78%252FdfOTRiYmU4NTQtNWY4NC03Y2QyLWZjYWUtOGIxYmFmZjkyZThk%252CPT0%253D%252CU2VsbGVyIGVuYWJsZW1lbnQ%253D%252Flfd6999bf8-4782-460e-980c-a37faf7b2b69//?mode=view&searchId=76d7b1d4-65bc-4d7d-98f9-fedbcd7fade9).
-3. Customer can use these links to request their own trail keys here. [here](https://w3.ibm.com/w3publisher/daffy/faq/ibm-entitlement-keys).
+3. Customer can use these links to request their own trail keys here. [here](https://ibm.github.io/daffy/More/FAQ/IBM-Entitlement-Keys/).
