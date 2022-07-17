@@ -2,9 +2,8 @@
 hide:
   - footer
 ---
-
-
 <!-- CSS FOR SLIDESHOW -->
+## Slide Show
 <style>
 * {box-sizing:border-box}
 
@@ -204,3 +203,112 @@ function showSlides(n) {
 
 </script>
 <!-- END OF JS-->
+
+
+## Overview
+Difference between Airgap and Proxy install.
+### Proxy install
+OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  The cluster you build must also have direct access to the proxy server. This proxy server can then control what access is granted via whitelist.
+
+If you are doing proxy install, you only need one bastion and no jump box.  This bastion must have access to the restricted network and the proxy server as well.
+
+
+```
+#Airgap - Proxy Install#
+######################################################################################
+OCP_PROXY_HTTP_PROXY=
+OCP_PROXY_HTTPS_PROXY=
+OCP_PROXY_NO_PROXY=
+```
+
+!!! Info
+      At this point for a proxy install, you can skip the following steps and move to the last step and install your cluster.
+
+
+### Airgap install
+OpenShift environments can deny direct access to the internet completely. With this method you must replicate or mirror the public registries local in your restricted network.  
+To do this we will use the following terms:
+
+1. **Jump box** - Machine that will have direct access to the internet to mirror(download) public registry software.
+2. **Bastion**  - Machine that will install the cluster and have direct access to the restricted network where the cluster will run.
+
+#### Requirements
+1. Jump Box  - 4X32 100GB Disk (Disk depending on what you plan to mirror)
+2. Bastion   - 4X32 100GB Disk (Disk depending on what you plan to mirror)
+
+#### Environment File
+You should build your environment file based the final install you want to  build and should include those values in this file as well.  
+
+The following values are required specifical for **Airgap** install.
+
+**LOCAL_REGISTRY_ENABLED=**Do you want this to be an airgap install true|false.  **Lower case**   
+**LOCAL_REGISTRY_DNS_NAME=**This is your jump box DNS name. If you not have DNS, you can also put the ip address   
+**LOCAL_REGISTRY_IP=**This is your jump box IP address    
+**LOCAL_AIRGAP_REGISTRY_DNS_NAME=**This is your restricted network bastion box DNS name. If you not have DNS, you can also put the ip    address    
+**LOCAL_AIRGAP_REGISTRY_IP=**This is your restricted network bastion box IP address   
+
+```
+#Local Registry Info
+###############################
+LOCAL_REGISTRY_ENABLED=<true|false>
+LOCAL_REGISTRY_DNS_NAME=
+LOCAL_REGISTRY_IP=
+LOCAL_AIRGAP_REGISTRY_DNS_NAME=
+LOCAL_AIRGAP_REGISTRY_IP=
+```
+>##### Overrides
+Current values that you can add to your own environment file to override if needed but not reqired:
+```
+OCP_REGISTRY_ROOT="/mirror/registry"
+OCP_CATALOG_MIRRORS="compliance-operator,container-security-operator,file-integrity-operator,local-storage-operator,ocs-operator"
+OCP_AIRGAP_EXPORT_FREE_DISK_SIZE_NEEDED="100"
+OCP_AIRGAP_IMPORT_FREE_DISK_SIZE_NEEDED="100"
+LOCAL_REGISTRY_CERTS_FOLDER="${DATA_DIR}/${PROJECT_NAME}/certs"
+CA_CERT_OU="ca.${CLUSTER_NAME}.${BASE_DOMAIN}"
+LOCAL_REGISTRY_PORT="8443"
+LOCAL_OCP_REPOSITORY_NAME="ocp4/openshift4"
+LOCAL_OLM_MIRROR_REPOSITORY_NAME="olm-mirror"
+```
+
+#### Mirror locally
+
+From your jump box run the following command:
+```
+/data/daffy/ocp/registry/build.sh <ENVIRONMENT_NAME>
+```
+
+#### Export Files
+After the first command runs, it will display all the files that it created and you will not to move to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.
+
+#### Move Files
+In our example we will move via scp because our jump box has access to the bastion.  This could be via firewall or it has dual NIC cards (Public Nic/Private Nic)
+
+```
+ssh <BASTION-IP> mkdir -p /data/import/airgap
+scp /data/export/airgap/* <BASTION-IP>:/data/import/airgap
+```
+
+
+#### Prepare Bastion
+Once all the files are on the bastion in the restricted network, you can run the script that was build from the previous step and copied over.  This will unrar all files, install all command line tools and also install daffy locally.
+!!! Info
+    It does not mirror the registry but gets the bastion ready for that step
+
+```
+/data/import/airgap/airgap-prep.sh
+```
+
+
+
+#### Build Local Mirror
+From your bastion box run the following command:
+```
+/data/daffy/ocp/registry/build.sh <ENVIRONMENT_NAME>
+```
+## Install Cluster
+
+No you would just follow the normal steps to build your OpenShift registry.  
+
+```
+/data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
+```
