@@ -16,7 +16,6 @@ The HCCX Gym has documentation on using daffy, below are some shortcuts for thei
 2. [VMware IPI deployment - using DAFFY](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/workouts/vmwaredaffy.md){target=_blank}
 
 ## Prerequisites
-There are three options with TechZone
 !!! Warning   
       For internal IBM use only, Links may only work while in the IBM Network
 1. A [Gym Membership](https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym){target=_blank} request can be made by filling out the form.
