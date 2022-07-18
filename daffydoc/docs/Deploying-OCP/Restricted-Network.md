@@ -260,21 +260,37 @@ LOCAL_REGISTRY_IP=
 LOCAL_AIRGAP_REGISTRY_DNS_NAME=
 LOCAL_AIRGAP_REGISTRY_IP=
 ```
+
 >##### Overrides
-Current values that you can add to your own environment file to override if needed but not reqired:
+Current values that you can add to your own environment file to override if needed but not required:
+<details>
+<summary>Click to expand!</summary>
 ```
-OCP_REGISTRY_ROOT="/mirror/registry"
+#Catalogs to mirror
+####################
 OCP_CATALOG_MIRRORS="compliance-operator,container-security-operator,file-integrity-operator,local-storage-operator,ocs-operator"
+
+#Directory Info
+####################
+OCP_REGISTRY_ROOT="/mirror/registry"
+OCP_AIRGAP_EXPORT="${DATA_DIR}/export/airgap"
+OCP_AIRGAP_IMPORT="${DATA_DIR}/import/airgap"
 OCP_AIRGAP_EXPORT_FREE_DISK_SIZE_NEEDED="100"
 OCP_AIRGAP_IMPORT_FREE_DISK_SIZE_NEEDED="100"
-LOCAL_REGISTRY_CERTS_FOLDER="${DATA_DIR}/${PROJECT_NAME}/certs"
+
+#Cert Info
+####################
 CA_CERT_OU="ca.${CLUSTER_NAME}.${BASE_DOMAIN}"
+LOCAL_REGISTRY_CERTS_FOLDER="${DATA_DIR}/${PROJECT_NAME}/certs"
+
+#Registry Info
+####################
 LOCAL_REGISTRY_PORT="8443"
 LOCAL_OCP_REPOSITORY_NAME="ocp4/openshift4"
 LOCAL_OLM_MIRROR_REPOSITORY_NAME="olm-mirror"
-OCP_AIRGAP_EXPORT="${DATA_DIR}/export/airgap"
-OCP_AIRGAP_IMPORT="${DATA_DIR}/import/airgap"
+
 ```
+</details>
 
 #### Mirror locally
 
