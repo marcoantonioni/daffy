@@ -6,7 +6,6 @@ hide:
   - navigation
   - footer
 ---
-<head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L33BY57ZVG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -15,7 +14,6 @@ hide:
 
   gtag('config', 'G-L33BY57ZVG');
 </script>
-</head>
 
 <style>
   [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner { margin-left: 0;}

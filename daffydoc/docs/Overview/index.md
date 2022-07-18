@@ -1,4 +1,4 @@
-<head>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-L33BY57ZVG"></script>
 <script>
@@ -8,7 +8,7 @@
 
   gtag('config', 'G-L33BY57ZVG');
 </script>
-</head>
+
 
 <p align = "center">
   <img src='./images/Daffy_Capabilities_2.png'  align="top"  style = "float">
