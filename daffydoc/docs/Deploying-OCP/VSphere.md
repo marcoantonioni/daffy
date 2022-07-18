@@ -58,27 +58,15 @@ Note: You can look in the samples directory on your bastion for example of **VSp
 
 <u>Valid Options:</u>
 
-**VSPHERE_USERNAME**='userid'  
-**VSPHERE_HOSTNAME**='vsphere-host-name'  
-**VSPHERE_DATASTORE**='datastore'  
-**VSPHERE_CLUSTER**='cluster-name'    
-**VSPHERE_ISO_DATASTORE**='iso-datastore'       
-**VSPHERE_ISO_IMAGE_BASE**='datastore-directory'     
-**VSPHERE_NETWORK1**='vlan-name'      
-**VSPHERE_DATACENTER**='vsphere-datacenter'     
-**VSPHERE_FOLDER**="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"   
-**VSPHERE_API_VIP**="xx.xxx.xxx.xxx"  
-**VSPHERE_INGRESS_VIP**="xx.xxx.xxx"  
-
 ```
-VSPHERE_USERNAME='userid'     
-VSPHERE_HOSTNAME='vsphere-host-name'
-VSPHERE_DATASTORE='datastore'     
-VSPHERE_CLUSTER='cluster-name'.   
-VSPHERE_ISO_DATASTORE='iso-datastore'     
-VSPHERE_ISO_IMAGE_BASE='datastore-directory'     
-VSPHERE_NETWORK1='vlan-name'      
-VSPHERE_DATACENTER='vsphere-datacenter'     
+VSPHERE_USERNAME="userid"     
+VSPHERE_HOSTNAME="vsphere-host-name"
+VSPHERE_DATASTORE="datastore"     
+VSPHERE_CLUSTER="cluster-name".   
+VSPHERE_ISO_DATASTORE="iso-datastore"     
+VSPHERE_ISO_IMAGE_BASE="datastore-directory"     
+VSPHERE_NETWORK1="vlan-name"      
+VSPHERE_DATACENTER="vsphere-datacenter"     
 VSPHERE_FOLDER="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"   
 VSPHERE_API_VIP="xx.xxx.xxx.xxx"
 VSPHERE_INGRESS_VIP="xx.xxx.xxx"
@@ -99,16 +87,16 @@ To deploy your cluster, run the build.sh script from the /data/daffy/ocp directo
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 
-Once your cluster is fully deployed you can access the help menu which as a number of options.
+Once your cluster is fully deployed you can access the help menu which has a number of options.
 
-**Note: <ENVIRONMENT_NAME>** is the first part of your name that you used for the **<ENVIRONMENT_NAME>**-env.sh file
+**Note: <ENVIRONMENT_NAME>** is the first part of your name that you used for the <**ENVIRONMENT_NAME**>-env.sh file
 
 ```
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
 Deploying an OpenShift cluster on VSphere using the Daffy Scripts.  (Using VSPhere-IPI Install Type)
 
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

@@ -8,17 +8,25 @@ Cloud Pak for WebSphere Automation {: style="text-align: left;"}
 <img src='../images/WSA.png'
        style="width:100px;height:100px;"/>
 
-At this point, you have a working OCP cluster on your platform of choice. Your **<environment-name>**-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
+At this point, you have a working OCP cluster on your platform of choice. Your <**ENVIRONMENT_NAME**>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
 
-1) The WebSphere Automation info that you wish to install
+1) The Cloud Pak info that you wish to install
 
-2) The services that you wish to install on WebSphere Automation
+2) The services that you wish to install on the Cloud Pak
 
-## Step 1: Deploying WSA
+
+## Step 1: Deploy WSA
 
 Deploying WebSphere Automation only requires **one** entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
 **CPWSA_VERSION=<version>**
+
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+
+```
+
+CPWSA_VERSION=1.3
+```
 
 With this one value, the daffy engine will be able to install the version of WebSphere Automation.
 
@@ -32,12 +40,7 @@ WebSphere Automation Small Profile (consists of):
 
 - WebSphere Secure
 
-You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
-```
-
-CPWSA_VERSION=1.3
-```
 
 WSA Supported Versions	OCP Versions
 1.3  	4.8  
@@ -56,7 +59,7 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Step 2: Deploying service
+## Step 2: Deploy Services
 
 Currently there one service / demos for WebSphere Automation. We are adding new features on a regular basis, please stay tuned.  If you have a feature request for an additional service or demo, please fill out a request.
 

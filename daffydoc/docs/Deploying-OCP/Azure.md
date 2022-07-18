@@ -21,7 +21,7 @@ To use Daffy on **Azure**, there are some platform info and requirements that ne
 
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
+[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
 ##Step 2: Finding Provider Details
 
@@ -57,7 +57,7 @@ You will need to create a DNS Zone within a new/existing resource group.  For th
 insert video Here
 ## Step 3: Environment File
 
-Deploying the OpenShift on Azure only requires three entries to your **existing** core environment file (**<ENVIRONMENT_NAME>**-env.sh) plus a local service account file.
+Deploying the OpenShift on Azure only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
 **Note:** You can look in the samples directory on your bastion for example of **Azure** install : /data/daffy/env/samples/**azure-ipi-env.sh**
 
@@ -109,7 +109,7 @@ Once your cluster is fully deployed you can access the help menu which has a num
 
 Here is a full example for deploying OpenShfit on **Azure** with the Daffy process.
 
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

@@ -32,7 +32,7 @@ nav:
     - Deploying-OCP/index.md
     - Pre-Req: Deploying-OCP/Pre-Req.md
     - Core Steps: Deploying-OCP/Core-steps.md
-    - IBM Gym: Deploying-OCP/IBM-gym.md
+    - HCCX Gym: Deploying-OCP/HCCX-gym.md
     - GCP: Deploying-OCP/GCP.md
     - KVM: Deploying-OCP/kvm.md
     - Azure: Deploying-OCP/Azure.md
@@ -40,7 +40,7 @@ nav:
     - VSphere: Deploying-OCP/VSphere.md
     - ROKS: Deploying-OCP/ROKS.md
     - TechZone: Deploying-OCP/TechZone.md
-    - Restricted Network: Deploying-OCP/Air-Gap.md
+    - Restricted Network: Deploying-OCP/Restricted-Network.md
 #    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
     - Cloud-Paks/index.md
@@ -51,9 +51,9 @@ nav:
     - WebSphere Automation: Cloud-Paks/WebSphere-Automation.md
   - Supporting Software:
     - Supporting-Software/index.md
+    - Bastion: Supporting-Software/Bastion.md
     - DB2: Supporting-Software/DB2.md
     - IBM LDAP: Supporting-Software/IBM-LDAP.md
-    - Create Your Own Bastion: Supporting-Software/Create-Your-Own-Bastion.md
     - Turbo: Supporting-Software/Turbo.md
   - Tips & Tricks:
     - Common Issues: Tips-&-Tricks/Common-Issues.md
@@ -68,14 +68,14 @@ nav:
     #- Training: Request-Forms/Training.md
     #- L200 Adv Training: Request-Forms/L200-Adv-Training.md
   - Meet the Team:
-    - Meet-the-Team/index.md
+    - Meet-the-Team.md
     #- Meet The teamm 2: Meet-the-Team/Meat-the-Team.md
     #- Workstreams: Meet-the-Team/Workstreams.md
   - More:
     - Glossary: More/Glossary.md
     - FAQ: More/FAQ/FAQ.md
     - Deployment Estimates: More/FAQ/Deployment-Estimates.md
-    - IBM Entitlement Keys: More/FAQ/IBM-Entitlement Keys.md
+    - IBM Entitlement Keys: More/FAQ/IBM-Entitlement-Keys.md
 markdown_extensions:
   - attr_list
   - admonition

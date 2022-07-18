@@ -8,27 +8,38 @@ Cloud Pak for Data {: style="text-align: left;"}
 <img src='../images/data.png'
        style="width:100px;height:100px;"/>
 
+At this point, you have a working OCP cluster on your platform of choice. Your <**ENVIRONMENT_NAME**>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
+
+1) The Cloud Pak info that you wish to install
+
+2) The services that you wish to install on the Cloud Pak
 ## Step 1: Deploy Cloud Pak
 
-Deploying the Cloud Pak for Data requires one entries to your environment file (/data/daffy/env/<ENVIRONMENT_NAME>-env.sh).
+Deploying the Cloud Pak for Data requires one entries to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh).
 
-CP4D_VERSION=<version>     
+**CP4D_VERSION=**
+
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+
+```
+CP4D_VERSION="4.0.9"
+```
 
 With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
-| :---      |    :----     |  
+| :---      |    :----     |
+| 4.0.9     | 4.6, 4.8     |
+| 4.0.8     | 4.6, 4.8      |
+| 4.0.7     | 4.6, 4.8      |
+| 4.0.6     | 4.6, 4.8      |  
 | 4.0.5     | 4.6, 4.8      |
 | 4.0.4     | 4.6, 4.8      |
 | 4.0.3     | 4.6, 4.8      |
 | 4.0.2     | 4.6           |
 
 
-You can copy the following to your <ENVIRONMENT_NAME>-env.sh
 
-```
-CP4D_VERSION="4.0.5"
-```
 Run the following command to deploy the Cloud Pak for Data
 
 ```
@@ -36,13 +47,13 @@ Run the following command to deploy the Cloud Pak for Data
 ```
 When this step is complete, approx 60 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service/pattern is running at this point. The cluster is now ready to deploy the services/patterns.  At this stage, the cluster consist of bedrock operators and the Cloud Pak for Data operators in the following projects:
 
-**cpd-instance**
-**cpd-operators**
-**ibm-common-services**
+**cpd-instance**    
+**cpd-operators**   
+**ibm-common-services**    
 
-## Step 2: Deploying Service
+## Step 2: Deploy Services
 
-Deploying the Cloud Pak for Data requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are Watson Knowledge Studio (WKS), Watson Knowledge Catalog (WKC), Data Virtualization (DV), Watson Studio (WS), Statistical Package for Social Sciences (SPSS), and Watson Machine Learning (WML)
+Deploying the Cloud Pak for Data requires some entries to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
 ```
 CP4D_ENABLE_SERVICE_WKS=<true|false>
@@ -88,7 +99,7 @@ With these values, the daffy engine will be able to install the version of Cloud
 
 **Cognos** - Cognos
 
-**Run the following command** to deploy the Cloud Pak for Data services.
+Run the following command** to deploy the Cloud Pak for Data services.
 
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME>
@@ -96,7 +107,7 @@ With these values, the daffy engine will be able to install the version of Cloud
 ## Step 3: Status of Deployment
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the --help flag to see what flags you can use to get information on your service deployment.
 
-**Run the following commands to check the Cloud Pak for Data to see what command flags you can run**
+Run the following commands to check the Cloud Pak for Data to see what command flags you can run
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --help
 ```
@@ -125,7 +136,6 @@ If you want to want to see more detail status on an individual service, you can 
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --DVStatus
 ```
-
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --WMLStatus
 ```

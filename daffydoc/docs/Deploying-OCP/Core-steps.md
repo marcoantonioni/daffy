@@ -4,7 +4,7 @@ hide:
 ---
 
 ## Step 1: Access your bastion Server
-<button onclick="location.href='/daffy/Supporting-Software/Create-Your-Own-Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
+<button onclick="location.href='../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
 
   <b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b>
 
@@ -17,7 +17,9 @@ wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 da
 
 ```
 **Optional:** You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file
-[Daffy On-Line Configurator](http://config.daffy-installer.com:1887/start){ .md-button .md-button--primary }
+
+<button onclick=" window.open('http://config.daffy-installer.com:1887/start', '_blank'); return false;" class="custom-btn btn-7">Online Configurator</button>
+
 ## Step 3: Create <environment-name>-env.sh
 
 ```
@@ -37,31 +39,27 @@ VM_TSHIRT_SIZE="Large"
 
 This file is where you store values that will define your environment and Daffy will use to build your environment.
 
-Place your file in :
+Place your file in following folder with your environment name like the folling :
 
-/data/daffy/env/<ENVIRONMENT_NAME>-env.sh
-
-
-
-** Best practices is <ENVIRONMENT_NAME> is your cluster name but not required.
+/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh
 
 
 
-**DAFFY_DEPLOYMENT_TYPE** - Values POC/Demo/Enablement/HCCX/TechZone
+Best practices is <**ENVIRONMENT_NAME**> is your cluster name that will be used and you set in your file, but not required.
 
-**DAFFY_ISC_NUMBER** - If Demo or POC, the ISC Record Number
 
-**DAFFY_CUSTOMER_NAME** - If Demo or POC, the Customer Name
 
-**BASE_DOMAIN** - Is your DNS name your cluster will use
+Name  | Example Values  | Description
+:----------- |:----------- |:-----------
+DAFFY_DEPLOYMENT_TYPE | Enablement |  POC/Demo/Enablement/HCCX/TechZone |
+DAFFY_ISC_NUMBER | $ISC_NUMBER} |  Required if Demo or POC
+DAFFY_CUSTOMER_NAME | Acme Shoes  | Required if Demo or POC
+BASE_DOMAIN | acme-shoes.com |  Is your DNS name your cluster will use
+CLUSTER_NAME | demo01 | The name you want to give your OpenShift Cluster
+OCP_RELEASE | 4.10.17 | What version of OpenShift you want to Install
+VM_TSHIRT_SIZE | Large | How large you want the OpenShift Cluster to be. **Min** and **Large** Supported today
 
-**CLUSTER_NAM**E - The name you want to give your OpenShift Cluster
-
-**OCP_RELEASE** - What version of OpenShift you want to Install
-
-**VM_TSHIRT_SIZE** - How large you want the OpenShift Cluster to be. Min and Large Supported today
-
-** If **MSP** type install like ROKS, **BASE_DOMAIN** is not needed.
+If **MSP** type install like ROKS, **BASE_DOMAIN** is not needed.
 
 **Optionally:** As a starting point, you can copy a sample environment file from the samples folder located here:  /data/daffy/env/samples/<platform>-env.sh
 ```
@@ -70,40 +68,42 @@ cd /data/daffy/env/samples
 
 Replace these values for the next command.
 
-**<platform>** = This is the sample file name for the platform you are planning to deploy your OCP Cluster.
+<**platform**> = This is the sample file name for the platform you are planning to deploy your OCP Cluster.
 
-**<environment>** = This is the name of your environment file. As a best practice, we recommend you use the name of your cluster.
+<**environment**> = This is the name of your environment file. As a best practice, we recommend you use the name of your cluster.
 
-This command will copy the the sample file and place it in the /data/daffy/env directory (back one folder)
+- **example:**  cp aws-ipi-env.sh ../demo01-env.sh
+
+This command will copy the sample file and place it in the /data/daffy/env directory (back one folder)
 
 ```
 cp <platform>-env.sh ../<environment>-env.sh
 
 ```
 
-You are NOW ready to begin making the necessary edits to your **/data/daffy/env/<environment>-env.sh** file for a deployment of OCP to a specific platform.
+You are **NOW** ready to begin making the necessary edits to your /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file for a deployment of OCP to a specific platform.
 
 ## Step 4: Install OpenShift on your selected platform
 
 <div style="text-align:left">
 
-<button onclick="location.href='/daffy/Deploying-OCP/IBM-gym/'" class="custom-btn btn-7">IBM GYM</button>
+<button onclick="location.href='../HCCX-gym'" class="custom-btn btn-7">IBM Gym</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/GCP/'" class="custom-btn btn-7">GCP</button>
+<button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/Azure/'" class="custom-btn btn-7">AZURE</button>
+<button onclick="location.href='../Azure'" class="custom-btn btn-7">Azure</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/AWS/'" class="custom-btn btn-7">
+<button onclick="location.href='../AWS'" class="custom-btn btn-7">
 AWS</button>
 <div></div>
 
-<button onclick="location.href='/daffy/Deploying-OCP/VSphere/'" class="custom-btn btn-7">
+<button onclick="location.href='../VSphere'" class="custom-btn btn-7">
 VSphere</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/ROKS/'" class="custom-btn btn-7">
+<button onclick="location.href='../ROKS'" class="custom-btn btn-7">
 ROKS</button>
 
-<button onclick="location.href='/daffy/Deploying-OCP/TechZone/'" class="custom-btn btn-7">
+<button onclick="location.href='../TechZone'" class="custom-btn btn-7">
 TechZone</button>
 
 </div>

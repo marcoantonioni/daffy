@@ -14,7 +14,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 
 2) The services that you wish to install on the Cloud Pak
 
-## Step 1: Deploying the Cloud Pak
+## Step 1: Deploy Cloud Pak
 
 Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -98,9 +98,9 @@ When this step is complete, approx 10 minutes depending on your environment, you
    </body>
 </html>
 
-## Step 2: Deploying Services
+## Step 2: Deploy Services
 
-Deploying the service does not need any new values to your environment file (**<ENVIRONMENT_NAME>**-env.sh).  It will use the same values during the cloud pak deployment.
+Deploying the service does not need any new values to your environment file (<**ENVIRONMENT_NAME**>-env.sh>).  It will use the same values during the cloud pak deployment.
 
 **CP4BA_VERSION=**
 
@@ -114,8 +114,9 @@ Instead of using the include services,  you can also deploy your own sample or t
 
 **CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=**valid sample name in daffy samples folder
 
+!!! Warning "Sample Name"
+The value you use is without the .yaml in the name
 
-  without the .yaml** in the name
 
      cd /data/daffy/cp4ba/templates/services/samples  
 

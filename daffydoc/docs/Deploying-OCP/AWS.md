@@ -20,7 +20,7 @@ To use Daffy on **Amazon Web Services**, there are some platform info and requir
 
   For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-  [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
+  [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
 ##Step 2: Finding Provider Details
 
@@ -28,7 +28,7 @@ To install Daffy on **AWS**, the hardest part can be finding the provider detail
 
 To create or use an existing AWS Access Key ID you can refer to this:
 
-[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey)
+[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey){target=_blank}
 
 Note: Use the Identity and Access Management (IAM) service to manage access keys.
 
@@ -65,7 +65,7 @@ Within your **AWS** project, you would need to go to IAM  Section and make sure 
 At minimum, you need to have this role: AdministratorAccess
 
 
-Please see the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements) for more information!
+Please see the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank} for more information!
 
 <img src='../images/aws_8.png'/>
 
@@ -96,7 +96,7 @@ For each OpenShift deployment into **AWS**, you need to create a **Route 53 Host
 
 ## Step 3: Environment File
 
-Below are the AWS specific environment variables that must be defined in the /data/daffy/env/**<ENVIRONMENT_NAME>**-env.sh file.
+Below are the AWS specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
 
 - **AWS_REGION**
 - **AWS_ACCESS_KEY_ID**
@@ -122,7 +122,7 @@ AWS_ACCESS_KEY_ID="<AWS-ACCESS_KEY-ID>"
 
 **Optional:**
 
--**OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
+**OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
 If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
 ## Step 4: Execution
@@ -139,7 +139,7 @@ Once your cluster is fully deployed you can access the help menu which as a numb
 ```
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

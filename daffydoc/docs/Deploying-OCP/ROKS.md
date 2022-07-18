@@ -21,7 +21,7 @@ To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernet
 
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
-[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements)
+[https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
 ##Step 2: Finding Provider Details
 
@@ -103,7 +103,7 @@ Once your cluster is fully deployed you can access the help menu which has a num
 
 Here is a full example for deploying OpenShift on <b>ROKS</b> with the Daffy process.
 
-<button onclick="location.href='/daffy/Cloud-Paks/'" class="custom-btn btn-7">
+<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
 
 

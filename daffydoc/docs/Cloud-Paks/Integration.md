@@ -8,10 +8,13 @@ Cloud Pak for Integration {: style="text-align: left;"}
 <img src='../images/integration.png'
        style="width:100px;height:100px;"/>
 
+At this point, you have a working OCP cluster on your platform of choice. Your <**ENVIRONMENT_NAME**>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
 
-At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
+1) The Cloud Pak info that you wish to install
 
-##Step 1: Deploying the Cloud Pak
+2) The services that you wish to install on the Cloud Pak
+
+##Step 1: Deploy Cloud Pak
 
 Deploying the Cloud Pak for Integration only requires one entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -47,7 +50,7 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Step 2: Deploying Services
+## Step 2: Deploy Services
 
 Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS)
 
