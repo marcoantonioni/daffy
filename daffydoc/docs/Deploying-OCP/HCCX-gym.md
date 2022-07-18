@@ -9,7 +9,7 @@ hide:
 ## Overview
 The OpenShift Gym is a learning environment offering individuals the ability to deploy virtual machines to support installation of IBM technologies such as OpenShift and Cloud Paks.
 
-The HCXX Gym has documentation on using daffy, below are some shortcuts for their instructions. Its same basic instructions based on VSphere, but they have some pre-built steps for Gym Members.
+The HCCX Gym has documentation on using daffy, below are some shortcuts for their instructions. Its same basic instructions based on VSphere, but they have some pre-built steps for Gym Members.
 
 1. [Main Gym Page](https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/README.md){target=_blank}
 

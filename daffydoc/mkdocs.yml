@@ -32,7 +32,7 @@ nav:
     - Deploying-OCP/index.md
     - Pre-Req: Deploying-OCP/Pre-Req.md
     - Core Steps: Deploying-OCP/Core-steps.md
-    - IBM Gym: Deploying-OCP/IBM-gym.md
+    - HCCX Gym: Deploying-OCP/HCCX-gym.md
     - GCP: Deploying-OCP/GCP.md
     - KVM: Deploying-OCP/kvm.md
     - Azure: Deploying-OCP/Azure.md

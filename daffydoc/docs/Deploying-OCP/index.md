@@ -8,7 +8,7 @@ hide:
 <body>
 <div style="text-align:center">
 
-<button onclick="location.href='./IBM-gym/'" class="custom-btn btn-7">IBM Gym</button>
+<button onclick="location.href='./HCCX-gym/'" class="custom-btn btn-7">HCCX Gym</button>
 
 <button onclick="location.href='./GCP/'" class="custom-btn btn-7">GCP</button>
 
