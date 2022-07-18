@@ -2,7 +2,9 @@
 
 ## Bastion
 
-Content coming!
+A bastion host is a special-purpose computer on a network specifically designed and configured to withstand attacks, so named by analogy to the military fortification. The computer generally hosts a single application or process, for example, a proxy server or load balancer, and all other services are removed or limited to reduce the threat to the computer. It is hardened in this manner primarily due to its location and purpose, which is either on the outside of a firewall or inside of a demilitarized zone (DMZ) and usually involves access from untrusted networks or computers. These computers are also equipped with special networking interfaces to withstand high-bandwidth attacks through the internet.
+
+https://en.wikipedia.org/wiki/Bastion_host
 
 ## Catalog
 
@@ -25,17 +27,23 @@ A cloud service provider is a third-party company offering a cloud-based platfor
 
 Besides the pay-per-use model, cloud service providers also give companies a wide range of benefits. Businesses can take advantage of scalability and flexibility by not being limited to physical constraints of on-premises servers, the reliability of multiple data centers with multiple redundancies, customization by configuring servers to your preferences, and responsive load balancing that can easily respond to changing demands. Though businesses should also evaluate security considerations of storing information in the cloud to ensure industry-recommended access and compliance management configurations and practices are enacted and met.
 
-- In a nutshell,
-
 ## Cluster
 
 Multiple computing nodes or hosts that work together to support an application or middleware such as a database. A cluster is a group of inter-connected computers or hosts that work together to support applications and middleware (e.g. databases).  In a cluster, each computer is referred to as a “node”. Unlike grid computers, where each node performs a different task, computer clusters assign the same task to each node. Nodes in a cluster are usually connected to each other through high-speed local area networks. Each node runs its own instance of an operating system. A computer cluster may range from a simple two-node system connecting two personal computers to a supercomputer with a cluster architecture. Computer clusters are often used for cost-effective high-performance computing (HPC) and high availability (HA). If a single component fails in a computer cluster, the other nodes continue to provide uninterrupted processing.  A computer cluster can provide faster processing speed, larger storage capacity, better data integrity, greater reliability and wider availability of resources. Computer clusters are usually dedicated to specific functions, such as load balancing, high availability, high performance or large-scale processing.
 
-- In a nutshell,
-
 ## Control Plane
 
-Content coming!
+In network routing, the control plane is the part of the router architecture that is concerned with drawing the network topology, or the information in a routing table that defines what to do with incoming packets. Control plane functions, such as participating in routing protocols, run in the architectural control element.[1] In most cases, the routing table contains a list of destination addresses and the outgoing interface(s) associated with each. Control plane logic also can identify certain packets to be discarded, as well as preferential treatment of certain packets for which a high quality of service is defined by such mechanisms as differentiated services.
+
+Depending on the specific router implementation, there may be a separate forwarding information base that is populated by the control plane, but used by the high-speed forwarding plane to look up packets and decide how to handle them.
+
+In computing, the control plane is the part of the software that configures and shuts down the data plane.[2] By contrast, the data plane is the part of the software that processes the data requests.[3] The data plane is also sometimes referred to as the forwarding plane.
+
+The distinction has proven useful in the networking field where it originated, as it separates the concerns: the data plane is optimized for speed of processing, and for simplicity and regularity. The control plane is optimized for customizability, handling policies, handling exceptional situations, and in general facilitating and simplifying the data plane processing.[4] [5]
+
+The conceptual separation of the data plane from the control plane has been done for years.[6] An early example is Unix, where the basic file operations are open, close for the control plane and read write for the data plane.[7]
+
+https://en.wikipedia.org/wiki/Control_planes
 
 ## Domain Name System (DNS)
 
@@ -115,8 +123,6 @@ A Pod (as in a pod of whales or pea pod) is a group of one or more containers, w
 
 As well as application containers, a Pod can contain init containers that run during Pod startup. You can also inject ephemeral containers for debugging if your cluster offers this.
 
-- In a nutshell,
-
 ## Service
 
 Content coming!
@@ -128,8 +134,6 @@ Content coming!
 ## Storage Class
 
 A StorageClass provides a way for administrators to describe the "classes" of storage they offer. Different classes might map to quality-of-service levels, or to backup policies, or to arbitrary policies determined by the cluster administrators. Kubernetes itself is unopinionated about what classes represent. This concept is sometimes called "profiles" in other storage systems.
-
-- In a nutshell,
 
 ## Worker Node
 
