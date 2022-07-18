@@ -33,13 +33,13 @@ nav:
     - Pre-Req: Deploying-OCP/Pre-Req.md
     - Core Steps: Deploying-OCP/Core-steps.md
     - HCCX Gym: Deploying-OCP/HCCX-gym.md
-    - GCP: Deploying-OCP/GCP.md
-    - KVM: Deploying-OCP/kvm.md
+    - TechZone: Deploying-OCP/TechZone.md
+    - ROKS: Deploying-OCP/ROKS.md
     - Azure: Deploying-OCP/Azure.md
     - AWS: Deploying-OCP/AWS.md
+    - GCP: Deploying-OCP/GCP.md
+    - KVM: Deploying-OCP/kvm.md
     - VSphere: Deploying-OCP/VSphere.md
-    - ROKS: Deploying-OCP/ROKS.md
-    - TechZone: Deploying-OCP/TechZone.md
     - Restricted Network: Deploying-OCP/Restricted-Network.md
 #    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
