@@ -312,9 +312,9 @@ scp /data/export/airgap/* <BASTION-IP>:/data/import/airgap
 
 
 #### Prepare Bastion
-Once all the files are on the bastion in the restricted network, you can run the script that was build from the previous step and copied over.  This will unrar all files, install all command line tools and also install daffy locally.
+Once all the files are on the bastion in the restricted network, you can run the script that was build from the previous step and copied over.  This will untar all files, install all command line tools and also install daffy locally.
 !!! Info
-    It does not mirror the registry but gets the bastion ready for that step
+    It does not mirror the registry or build the local registry, but gets the bastion ready for that next step
 
 ```
 /data/import/airgap/airgap-prep.sh
