@@ -1706,7 +1706,10 @@ LOCAL_AIRGAP_REGISTRY_IP=
 </code></pre></div>
 <blockquote>
 <h5 id="overrides">Overrides<a class="headerlink" href="#overrides" title="Permanent link">&para;</a></h5>
-<p>Current values that you can add to your own environment file to override if needed but not reqired:
+<p>Current values that you can add to your own environment file to override if needed but not required:</p>
+</blockquote>
+<details>
+<summary>Click to expand!</summary>
 <div class="highlight"><pre><span></span><code>OCP_REGISTRY_ROOT=&quot;/mirror/registry&quot;
 OCP_CATALOG_MIRRORS=&quot;compliance-operator,container-security-operator,file-integrity-operator,local-storage-operator,ocs-operator&quot;
 OCP_AIRGAP_EXPORT_FREE_DISK_SIZE_NEEDED=&quot;100&quot;
@@ -1718,8 +1721,9 @@ LOCAL_OCP_REPOSITORY_NAME=&quot;ocp4/openshift4&quot;
 LOCAL_OLM_MIRROR_REPOSITORY_NAME=&quot;olm-mirror&quot;
 OCP_AIRGAP_EXPORT=&quot;${DATA_DIR}/export/airgap&quot;
 OCP_AIRGAP_IMPORT=&quot;${DATA_DIR}/import/airgap&quot;
-</code></pre></div></p>
-</blockquote>
+</code></pre></div>
+</details>
+
 <h4 id="mirror-locally">Mirror locally<a class="headerlink" href="#mirror-locally" title="Permanent link">&para;</a></h4>
 <p>From your jump box run the following command:
 <div class="highlight"><pre><span></span><code>/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;
