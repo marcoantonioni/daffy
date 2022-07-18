@@ -1533,7 +1533,8 @@
 
 <h1 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h1>
 <h2 id="bastion">Bastion<a class="headerlink" href="#bastion" title="Permanent link">&para;</a></h2>
-<p>Content coming!</p>
+<p>A bastion host is a special-purpose computer on a network specifically designed and configured to withstand attacks, so named by analogy to the military fortification. The computer generally hosts a single application or process, for example, a proxy server or load balancer, and all other services are removed or limited to reduce the threat to the computer. It is hardened in this manner primarily due to its location and purpose, which is either on the outside of a firewall or inside of a demilitarized zone (DMZ) and usually involves access from untrusted networks or computers. These computers are also equipped with special networking interfaces to withstand high-bandwidth attacks through the internet.</p>
+<p>https://en.wikipedia.org/wiki/Bastion_host</p>
 <h2 id="catalog">Catalog<a class="headerlink" href="#catalog" title="Permanent link">&para;</a></h2>
 <p>Content coming!</p>
 <h2 id="cloud-pak">Cloud Pak<a class="headerlink" href="#cloud-pak" title="Permanent link">&para;</a></h2>
@@ -1549,16 +1550,15 @@
 <h2 id="cloud-provider">Cloud Provider<a class="headerlink" href="#cloud-provider" title="Permanent link">&para;</a></h2>
 <p>A cloud service provider is a third-party company offering a cloud-based platform, infrastructure, application, or storage services. Much like a homeowner would pay for a utility such as electricity or gas, companies typically have to pay only for the amount of cloud services they use, as business demands require.</p>
 <p>Besides the pay-per-use model, cloud service providers also give companies a wide range of benefits. Businesses can take advantage of scalability and flexibility by not being limited to physical constraints of on-premises servers, the reliability of multiple data centers with multiple redundancies, customization by configuring servers to your preferences, and responsive load balancing that can easily respond to changing demands. Though businesses should also evaluate security considerations of storing information in the cloud to ensure industry-recommended access and compliance management configurations and practices are enacted and met.</p>
-<ul>
-<li>In a nutshell,</li>
-</ul>
 <h2 id="cluster">Cluster<a class="headerlink" href="#cluster" title="Permanent link">&para;</a></h2>
 <p>Multiple computing nodes or hosts that work together to support an application or middleware such as a database. A cluster is a group of inter-connected computers or hosts that work together to support applications and middleware (e.g. databases).  In a cluster, each computer is referred to as a “node”. Unlike grid computers, where each node performs a different task, computer clusters assign the same task to each node. Nodes in a cluster are usually connected to each other through high-speed local area networks. Each node runs its own instance of an operating system. A computer cluster may range from a simple two-node system connecting two personal computers to a supercomputer with a cluster architecture. Computer clusters are often used for cost-effective high-performance computing (HPC) and high availability (HA). If a single component fails in a computer cluster, the other nodes continue to provide uninterrupted processing.  A computer cluster can provide faster processing speed, larger storage capacity, better data integrity, greater reliability and wider availability of resources. Computer clusters are usually dedicated to specific functions, such as load balancing, high availability, high performance or large-scale processing.</p>
-<ul>
-<li>In a nutshell,</li>
-</ul>
 <h2 id="control-plane">Control Plane<a class="headerlink" href="#control-plane" title="Permanent link">&para;</a></h2>
-<p>Content coming!</p>
+<p>In network routing, the control plane is the part of the router architecture that is concerned with drawing the network topology, or the information in a routing table that defines what to do with incoming packets. Control plane functions, such as participating in routing protocols, run in the architectural control element.[1] In most cases, the routing table contains a list of destination addresses and the outgoing interface(s) associated with each. Control plane logic also can identify certain packets to be discarded, as well as preferential treatment of certain packets for which a high quality of service is defined by such mechanisms as differentiated services.</p>
+<p>Depending on the specific router implementation, there may be a separate forwarding information base that is populated by the control plane, but used by the high-speed forwarding plane to look up packets and decide how to handle them.</p>
+<p>In computing, the control plane is the part of the software that configures and shuts down the data plane.[2] By contrast, the data plane is the part of the software that processes the data requests.[3] The data plane is also sometimes referred to as the forwarding plane.</p>
+<p>The distinction has proven useful in the networking field where it originated, as it separates the concerns: the data plane is optimized for speed of processing, and for simplicity and regularity. The control plane is optimized for customizability, handling policies, handling exceptional situations, and in general facilitating and simplifying the data plane processing.[4] [5]</p>
+<p>The conceptual separation of the data plane from the control plane has been done for years.[6] An early example is Unix, where the basic file operations are open, close for the control plane and read write for the data plane.[7]</p>
+<p>https://en.wikipedia.org/wiki/Control_planes</p>
 <h2 id="domain-name-system-dns">Domain Name System (DNS)<a class="headerlink" href="#domain-name-system-dns" title="Permanent link">&para;</a></h2>
 <p>The Domain Name System (DNS) is the hierarchical and decentralized naming system used to identify computers, servr ices, and other resources reachable through the Internet or other Internet Protocol (IP) networks. The resource records contained in the DNS associate domain names with other forms of information. These are most commonly used to map human-friendly domain names to the numerical IP addresses computers need to locate services and devices using the underlying network protocols, but have been extended over time to perform many other functions as well.</p>
 <ul>
@@ -1615,18 +1615,12 @@
 <p>Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.</p>
 <p>A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers. A Pod's contents are always co-located and co-scheduled, and run in a shared context. A Pod models an application-specific "logical host" it contains one or more application containers which are relatively tightly coupled. In non-cloud contexts, applications executed on the same physical or virtual machine are analogous to cloud applications executed on the same logical host.</p>
 <p>As well as application containers, a Pod can contain init containers that run during Pod startup. You can also inject ephemeral containers for debugging if your cluster offers this.</p>
-<ul>
-<li>In a nutshell,</li>
-</ul>
 <h2 id="service">Service<a class="headerlink" href="#service" title="Permanent link">&para;</a></h2>
 <p>Content coming!</p>
 <h2 id="suscription">Suscription<a class="headerlink" href="#suscription" title="Permanent link">&para;</a></h2>
 <p>Content coming!</p>
 <h2 id="storage-class">Storage Class<a class="headerlink" href="#storage-class" title="Permanent link">&para;</a></h2>
 <p>A StorageClass provides a way for administrators to describe the "classes" of storage they offer. Different classes might map to quality-of-service levels, or to backup policies, or to arbitrary policies determined by the cluster administrators. Kubernetes itself is unopinionated about what classes represent. This concept is sometimes called "profiles" in other storage systems.</p>
-<ul>
-<li>In a nutshell,</li>
-</ul>
 <h2 id="worker-node">Worker Node<a class="headerlink" href="#worker-node" title="Permanent link">&para;</a></h2>
 <p>The worker nodes are the part of the Kubernetes clusters which actually execute the containers and applications on them. They have two main components, the Kubelet Service and the Kube-proxy Service.</p>
 <ul>
