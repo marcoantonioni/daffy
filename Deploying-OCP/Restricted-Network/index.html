@@ -1710,17 +1710,28 @@ LOCAL_AIRGAP_REGISTRY_IP=
 </blockquote>
 <details>
 <summary>Click to expand!</summary>
-<div class="highlight"><pre><span></span><code>OCP_REGISTRY_ROOT=&quot;/mirror/registry&quot;
+<div class="highlight"><pre><span></span><code>#Catalogs to mirror
+####################
 OCP_CATALOG_MIRRORS=&quot;compliance-operator,container-security-operator,file-integrity-operator,local-storage-operator,ocs-operator&quot;
+
+#Directory Info
+####################
+OCP_REGISTRY_ROOT=&quot;/mirror/registry&quot;
+OCP_AIRGAP_EXPORT=&quot;${DATA_DIR}/export/airgap&quot;
+OCP_AIRGAP_IMPORT=&quot;${DATA_DIR}/import/airgap&quot;
 OCP_AIRGAP_EXPORT_FREE_DISK_SIZE_NEEDED=&quot;100&quot;
 OCP_AIRGAP_IMPORT_FREE_DISK_SIZE_NEEDED=&quot;100&quot;
-LOCAL_REGISTRY_CERTS_FOLDER=&quot;${DATA_DIR}/${PROJECT_NAME}/certs&quot;
+
+#Cert Info
+####################
 CA_CERT_OU=&quot;ca.${CLUSTER_NAME}.${BASE_DOMAIN}&quot;
+LOCAL_REGISTRY_CERTS_FOLDER=&quot;${DATA_DIR}/${PROJECT_NAME}/certs&quot;
+
+#Registry Info
+####################
 LOCAL_REGISTRY_PORT=&quot;8443&quot;
 LOCAL_OCP_REPOSITORY_NAME=&quot;ocp4/openshift4&quot;
 LOCAL_OLM_MIRROR_REPOSITORY_NAME=&quot;olm-mirror&quot;
-OCP_AIRGAP_EXPORT=&quot;${DATA_DIR}/export/airgap&quot;
-OCP_AIRGAP_IMPORT=&quot;${DATA_DIR}/import/airgap&quot;
 </code></pre></div>
 </details>
 
