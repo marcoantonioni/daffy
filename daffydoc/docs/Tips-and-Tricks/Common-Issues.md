@@ -4,7 +4,7 @@
 
 If you run into issues with your install, please take the time to read the output of the script. In most cases, the output will give you a clear indication of what the problem is and in some cases how to fix it.
 
-When reading the output during an error, always read all messages starting from the top of your console output.  Daffy will try to find as many errors as it can, so **ALWAYS** start at the **top** of your output.
+When reading the output during an error, always read messages starting from the top of your console output.  Daffy will try to find as many errors as it can, so **ALWAYS** start at the **top** of your output.
 
 
 
