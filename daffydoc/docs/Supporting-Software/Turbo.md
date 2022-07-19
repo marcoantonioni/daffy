@@ -21,15 +21,6 @@ KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data 
 TURBO_PLATFORM_VERSION=8.5.4
 ```
 
-The script to deploy the Turbonomic Platform is located in the following directory: 
-
-**/data/daffy/turbo/platform**
-
-``` py title="Deploy Turbo Platform"
-/data/daffy/turbo/platform/build.sh <env-prefix>
-```
-
-
 ##KUBETURBO 
 
 **_REQUIRED ENVIRONMENT VARIABLES_**
@@ -51,10 +42,24 @@ TURBO_PLATFORM_USERNAME="administrator"
 ```
 
 
-The script to deploy KubeTurbo is located in the following directory: 
+## Executing Scripts
 
-**/data/daffy/turbo/kubeturbo**
+=== "Turbo Platform"
+
+	The script to deploy the Turbonomic Platform is located in the following directory: 
+
+	**/data/daffy/turbo/platform**
+
+	``` py title="Deploy Turbo Platform"
+	/data/daffy/turbo/platform/build.sh <env-prefix>
+	```
+
+=== "KubeTurbo "
+
+	The script to deploy KubeTurbo is located in the following directory: 
+
+	**/data/daffy/turbo/kubeturbo**
 	
-``` py title="Deploy KubeTurbo"
-/data/daffy/turbo/kubeturbo/build.sh <env-prefix>
-```
+	``` py title="Deploy KubeTurbo"
+	/data/daffy/turbo/kubeturbo/build.sh <env-prefix>
+	```
