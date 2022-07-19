@@ -79,13 +79,16 @@ I assume you will all know how to do that!!
 Deploying your changes.
 
 1. Navigate to your cloned repo directory in a terminal window.
+
+	*You must be inside the /daffydoc directory to run the following commands.*
+
 2. Build the files using the build command
 	
 ```
 mkdocs build
 ```
 	
-1. Deploy the newly built files to the Github Pages site 
+3. Deploy the newly built files to the Github Pages site 
 
 !!! note inline end
 
