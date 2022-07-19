@@ -42,8 +42,7 @@ AIOps Supported Versions	OCP Versions
 **Run the following command** to deploy the Cloud Pak for Watson AIOps.
 
 ```
-
-/data/daffy/cp4waiops/build.sh <ENVIRONMENT_FILE_PREFIX>
+/data/daffy/cp4waiops/build.sh <ENVIRONMENT_NAME>
 ```
 
 When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services and or demos.  At this stage, the cluster consists  of common services and the Cloud Pak for Watson AIOps operators and some services in the following projects:
@@ -68,23 +67,23 @@ CP4WAIOPS_DEPLOY_EMGR=<true|false>
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.
 
 ```
-/data/daffy/cp4waiops/build.sh <ENVIRONMENT_FILE_PREFIX> --help
+/data/daffy/cp4waiops/build.sh <ENVIRONMENT_NAME> --help
 ```
 
 **Run the following commands** to check the Cloud Pak for Watson AIOps installation progress.
 
 ```
-/data/daffy/cp4waiops/build.sh <ENVIRONMENT_FILE_PREFIX> --status
+/data/daffy/cp4waiops/build.sh <ENVIRONMENT_NAME> --status
 ```
 
 If you want to have a running job to refresh every few seconds,  you can run the status script using the watch command.
 
 ```
-watch -c /data/daffy/cp4waiops/build.sh <ENVIRONMENT_FILE_PREFIX> --status
+watch -c /data/daffy/cp4waiops/build.sh <ENVIRONMENT_NAME> --status
 ```
 
 To find out the connection info to your new service/pattern, you can run the console flag to get user names, passwords and URLs to connect to.
 
 ```
-/data/daffy/cp4waiops/build.sh <ENVIRONMENT_FILE_PREFIX> --console
+/data/daffy/cp4waiops/build.sh <ENVIRONMENT_NAME> --console
 ```
