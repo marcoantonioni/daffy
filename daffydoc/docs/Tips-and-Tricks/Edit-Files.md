@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Editing Files
 
 ## Basic vi commands you will use to edit your environment file:
