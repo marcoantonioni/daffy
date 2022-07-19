@@ -1,15 +1,20 @@
-#Your environment file name must follow simple rules.
+#Common Issues & Tips
 
-All lower case no spaces
-Alphanumeric  or - (no special characters)
-Must end in -env.sh
-Environment name is the prefix for the file name
+![](../images/tips/daffy-read.png)
 
-| Environment Name   | File Name          | Status | Reason |
-| :---            |    :----     |   :----     |   :----     |  
-| lab12           | /data/daffy/env/lab12-env.sh | VALID | Perfect|
-| lab12          | /data/daffy/env/lab12-env | INVALID |Does not end in .sh|
-| lab12          |/data/daffy/env/lab12|INVALID |Does not end in -env.sh
-| lab12          |/data/daffy/env/Lab 12-env.sh|INVALID |Upper case and Space in name
-| lab12          |/data/daffy/env/lab-env.sh|INVALID |Environment name does not match file prefix
-| lab12          |/data/daffy/lab12-env.sh|INVALID |Not in the /data/daffy/env folder
+If you run into issues with your install, please take the time to read the output of the script. In most cases, the output will give you a clear indication of what the probolem is and in some cases how to fix it. 
+
+
+
+![](../images/tips/daffy-typos.png)
+
+Most cases, the issue is a simple typo or a missing variable in the environment file. Please double check your environment file for any errors. 
+
+
+![](../images/tips/daffy-update.png)
+
+Run the /data/daffy/refresh.sh script to download the latest version of the daffy scripts. 
+
+![](../images/tips/daffy-cleanup.png)
+
+Run the /data/daffy/security-cleanup.sh script to remove all the sensitive data and the next time you run, the scripts will prompt you for the necessary input.
