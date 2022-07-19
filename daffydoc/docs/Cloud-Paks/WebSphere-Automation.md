@@ -15,7 +15,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 2) The services that you wish to install on the Cloud Pak
 
 
-## Step 1: Deploy WSA
+## Step 2: Deploy WSA
 
 Deploying WebSphere Automation only requires **one** entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -59,11 +59,11 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Step 2: Deploy Services
+## Step 3: Deploy Services
 
 Currently there one service / demos for WebSphere Automation. We are adding new features on a regular basis, please stay tuned.  If you have a feature request for an additional service or demo, please fill out a request.
 
-## Step 3: Status of Deployment
+## Step 3a: Status
 
 The service can take a few hours to complete. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.
 

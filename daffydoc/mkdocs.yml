@@ -56,9 +56,9 @@ nav:
     - IBM LDAP: Supporting-Software/IBM-LDAP.md
     - Turbo: Supporting-Software/Turbo.md
   - Tips & Tricks:
-    - Common Issues: Tips-&-Tricks/Common-Issues.md
-    - Environment File: Tips-&-Tricks/Environment-File.md
-    - Edit Files: Tips-&-Tricks/Edit-Files.md
+    - Common Issues: Tips-and-Tricks/Common-Issues.md
+    - Environment File: Tips-and-Tricks/Environment-File.md
+    - Edit Files: Tips-and-Tricks/Edit-Files.md
   - Request Forms:
     - Request-Forms/index.md
     #- Demo Request: Request-Forms/Demo-Request.md

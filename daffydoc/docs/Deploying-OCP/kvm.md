@@ -11,7 +11,7 @@ hide:
 
   At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
 
-##Step 1: Platform Requirements
+## Platform Requirements
 
 To use Daffy on **K**ernel-based **V**irtual **M**achine, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For KVM , it breaks down to the following three basic items:
 
@@ -39,7 +39,7 @@ You will need to create a DNS entries and domain.  For the OpenShift install, yo
 **Setting up DNS for KVM Deployment with OpenShift:**    
 INSERT VIDEO Here
 
-## Step 2: Environment File
+## Environment File
 
 Deploying the OpenShift on **K**ernel-based **V**irtual **M**achine only requires three entries to your <b>existing</b> core environment file (<ENVIRONMENT_NAME>-env.sh) plus a local service account file.
 
@@ -65,7 +65,7 @@ If your host does not have its own public IP address, you need to specify the ba
 
 If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
 
-##Step 3: Execution
+## Execution
 
 To deploy your OCP cluster to Kernel-based Virtual Machine, run the build.sh script from the /data/daffy/ocp directory
 

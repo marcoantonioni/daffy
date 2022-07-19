@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Editing Files
 
 ## Basic vi commands you will use to edit your environment file:
@@ -17,8 +21,6 @@ Modes:
 ++esc++ - ++u++     = will undo your last action.  Once done ++esc++
 
 Once done, the following will save your file:
-
-++esc++ - ++shift++ - ++colon++
 
 ++esc++ - ++shift++ - ++colon++ - ++w++ - ++q++ ++enter++   
 

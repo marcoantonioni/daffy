@@ -6,7 +6,7 @@ hide:
 <p align = "left">
     <img src='../images/vsphere.png'  align="top" style = "float">
 </p>
-## Step 1: Platform Requirements
+## Platform Requirements
 
 To install Daffy on **VSphere**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.
 
@@ -15,7 +15,7 @@ There is a number of permissions you MUST have as a user on VCenter for deployme
 Please refer to the requirements document for the specific requirements for IPI or UPI installs on VSphere.
 <a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">https://ibm.box.com/v/DaffyProviderRequirements
 </a>
-## Step 2: Finding Provider Details
+## Finding Provider Details
 
 To install Daffy on **VSphere**, the hardest part can be finding the provider details in the VCenter Console.
 
@@ -50,7 +50,7 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
    </body>
 </html>
 
-## Step 3: Environment File
+## Environment File
 
 Below are the VSphere IPI specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
 
@@ -79,7 +79,7 @@ Optional:
 
 If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
 
-## Step 4: Execution
+## Execution
 
 To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.
 

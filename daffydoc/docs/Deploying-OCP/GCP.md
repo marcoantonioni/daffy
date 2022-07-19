@@ -4,12 +4,13 @@ hide:
 ---
 
 # GCP Install
-<img src='../images/GCP.png'   align="top" width="200"
+
+<img src="../images/GCP.png"   align="top" width="200"
   height="300" style = "float">
 
 At this point, you have a **bastion** machine where you have installed the Daffy tool, created your core **<environment-name>-env.sh** and can execute the install of **OCP** on **GCP**.
 
-## Step 1: Platform Requirements
+## Platform Requirements
 
 To use Daffy on **G**oogle **C**loud **P**latform, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For GCP, it breaks down to the following basic three items:
 
@@ -23,7 +24,7 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 
 [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
-## Step 2: Finding Provider Details
+## Finding Provider Details
 
 To install Daffy on **G**oogle **C**loud **P**latform, the hardest part can be finding the provider details.
 
@@ -103,7 +104,7 @@ You will need to create a DZS hosted Zone project.  For the OpenShift install, y
   <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CAkWQnOJ88A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-## Step 3: Environment File
+## Environment File
 
 Deploying the OpenShift on **GCP** only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
@@ -145,7 +146,7 @@ For **GCP**, you need to download your Service Key as well.  Save this to your h
 
 ![GCP6.png](../images/DeployingOCP/GCP/GCP6.png)
 
-##Step 4: Execution
+## Execution
 
 To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory
 
