@@ -1,15 +1,11 @@
----
-hide:
-  - toc
----
-#Common Issues & Tips
+
+# Common Issues & Tips
 
 ![](../images/tips/daffy-read.png)
 
 If you run into issues with your install, please take the time to read the output of the script. In most cases, the output will give you a clear indication of what the problem is and in some cases how to fix it.
 
 When reading the output during an error, always read messages starting from the **TOP** of your console output.  Daffy will try to find as many errors as it can, so **ALWAYS** start at the **TOP** of your output.
-
 
 
 ![](../images/tips/daffy-typos.png)
