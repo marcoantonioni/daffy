@@ -623,29 +623,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-platform-requirements" class="md-nav__link">
-    Step 1: Platform Requirements
+  <a href="#platform-requirements" class="md-nav__link">
+    Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-finding-provider-details" class="md-nav__link">
-    Step 2: Finding Provider Details
+  <a href="#finding-provider-details" class="md-nav__link">
+    Finding Provider Details
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-environment-file" class="md-nav__link">
-    Step 3: Environment File
+  <a href="#environment-file" class="md-nav__link">
+    Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-execution" class="md-nav__link">
-    Step 4: Execution
+  <a href="#execution" class="md-nav__link">
+    Execution
   </a>
   
 </li>
@@ -1256,29 +1256,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-platform-requirements" class="md-nav__link">
-    Step 1: Platform Requirements
+  <a href="#platform-requirements" class="md-nav__link">
+    Platform Requirements
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-2-finding-provider-details" class="md-nav__link">
-    Step 2: Finding Provider Details
+  <a href="#finding-provider-details" class="md-nav__link">
+    Finding Provider Details
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-environment-file" class="md-nav__link">
-    Step 3: Environment File
+  <a href="#environment-file" class="md-nav__link">
+    Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-execution" class="md-nav__link">
-    Step 4: Execution
+  <a href="#execution" class="md-nav__link">
+    Execution
   </a>
   
 </li>
@@ -1301,14 +1301,14 @@
 <p><img src='../images/GCP.png'   align="top" width="200"
   height="300" style = "float"></p>
 <p>At this point, you have a <strong>bastion</strong> machine where you have installed the Daffy tool, created your core <strong><environment-name>-env.sh</strong> and can execute the install of <strong>OCP</strong> on <strong>GCP</strong>.</p>
-<h2 id="step-1-platform-requirements">Step 1: Platform Requirements<a class="headerlink" href="#step-1-platform-requirements" title="Permanent link">&para;</a></h2>
+<h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
 <p>To use Daffy on <strong>G</strong>oogle <strong>C</strong>loud <strong>P</strong>latform, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For GCP, it breaks down to the following basic three items:</p>
 <p><strong>Account Details</strong> - The account that you plan to install OpenShift</p>
 <p><strong>Permissions</strong> - The permissions need to perform the install</p>
 <p><strong>Quota</strong> - The ability to add new workload to that platform</p>
 <p>For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.</p>
 <p><a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">https://ibm.box.com/v/DaffyProviderRequirements</a></p>
-<h2 id="step-2-finding-provider-details">Step 2: Finding Provider Details<a class="headerlink" href="#step-2-finding-provider-details" title="Permanent link">&para;</a></h2>
+<h2 id="finding-provider-details">Finding Provider Details<a class="headerlink" href="#finding-provider-details" title="Permanent link">&para;</a></h2>
 <p>To install Daffy on <strong>G</strong>oogle <strong>C</strong>loud <strong>P</strong>latform, the hardest part can be finding the provider details.</p>
 <p>Project ID</p>
 <p>To find your GCP project you can refer to this:</p>
@@ -1359,7 +1359,7 @@ To find a list of regions, you can refer to this:</p>
 <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CAkWQnOJ88A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<h2 id="step-3-environment-file">Step 3: Environment File<a class="headerlink" href="#step-3-environment-file" title="Permanent link">&para;</a></h2>
+<h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying the OpenShift on <strong>GCP</strong> only requires three entries to your <strong>existing</strong> core environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh) plus a local service account file.</p>
 <p><strong>Note:</strong> You can look in the samples directory on your bastion for example of <strong>GCP</strong> install : /data/daffy/env/samples/<strong>gcp-ipi-env.sh</strong></p>
 <p>You can copy the sample file to build your <strong>new</strong> environment  file.</p>
@@ -1384,7 +1384,7 @@ GCP_REGION=&quot;&lt;AnyValidGCPRegion&gt;&quot;
 </ol>
 <p>*** FYI  after you create the Key, you can not view/download it.  You can only get the details at the time of creation</p>
 <p><img alt="GCP6.png" src="../../images/DeployingOCP/GCP/GCP6.png" /></p>
-<h2 id="step-4-execution">Step 4: Execution<a class="headerlink" href="#step-4-execution" title="Permanent link">&para;</a></h2>
+<h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
