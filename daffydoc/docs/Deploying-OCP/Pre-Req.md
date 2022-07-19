@@ -12,7 +12,7 @@ Before you can use the Daffy scripts, you must have the following.
 - [Create Bastion Instructions](../../Supporting-Software/Bastion/)
 - Ubuntu 20.04 (Minimum Requirements: 2   CPU, 2GB    Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
 - Ubuntu 20.04 (Minimum Requirements: 60+ CPU, 128GB+ Memory) with full root access  **(KVM-UPI)**
-- Ubuntu 20.04 (Minimum Requirements: 4+  CPU, 32GB+  Memory) with full root access  **(AirGap Bastion/Jump Box Mirror Registry)**
+- Ubuntu 20.04 (Minimum Requirements: 4+  CPU, 32GB+  Memory, 100 GB Disk) with full root access  **(AirGap Bastion/Jump Box Mirror Registry)**
 - RHEL 8.X     (Minimum Requirements: 2   CPU, 2GB    Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
 
 ### Red Hat pull secret
