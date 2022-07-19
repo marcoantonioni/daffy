@@ -344,6 +344,10 @@ No you would just follow the normal steps to build your OpenShift registry.
 ```
 
 ## Demo Video
+!!! Info
+      No voice over yet in video!
+
+
 <html>
    <head>
       <title>HTML Video embed</title>
