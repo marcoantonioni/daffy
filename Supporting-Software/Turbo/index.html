@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -878,9 +878,47 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Turbo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Turbo
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#turbonomic-platofrm" class="md-nav__link">
+    TURBONOMIC PLATOFRM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubeturbo" class="md-nav__link">
+    KUBETURBO
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1193,6 +1231,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#turbonomic-platofrm" class="md-nav__link">
+    TURBONOMIC PLATOFRM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubeturbo" class="md-nav__link">
+    KUBETURBO
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1206,7 +1266,36 @@
 
 
 <h1 id="turbonomic">Turbonomic<a class="headerlink" href="#turbonomic" title="Permanent link">&para;</a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+</div>
+<p>You will be required to provide a license key to fully enable the Turbonomic Platform. When the platform installation is complete, you will be presented with a URL where you will need to configure the administrator password and provide a valid Turbonomic license key. </p>
 <p><img alt="DeployingTurbonomicsOnOpenShift.png" src="../../images/SupportingSoftware/Turbonomics/DeployingTurbonomicsOnOpenShift.png" /></p>
+<p>KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data from the Kubernetes environment to a Turbonomic Platform instance. Installing KubeTurbo will require you to provide the Turbonomic Platform topology processor URL and the administrator password. </p>
+<div class="admonition info inline end">
+<p class="admonition-title">Info</p>
+</div>
+<p>The default admin username for the Turbonomic Platform is: administrator. </p>
+<h2 id="turbonomic-platofrm">TURBONOMIC PLATOFRM<a class="headerlink" href="#turbonomic-platofrm" title="Permanent link">&para;</a></h2>
+<p><strong><em>REQUIRED ENVIRONMENT VARIABLES</em></strong></p>
+<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_VERSION=8.5.4
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>There are no optional environment variables for the Turbononmic Platform</p>
+<h2 id="kubeturbo">KUBETURBO<a class="headerlink" href="#kubeturbo" title="Permanent link">&para;</a></h2>
+<p><strong><em>REQUIRED ENVIRONMENT VARIABLES</em></strong></p>
+<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_URL=&quot;https://topology-processor-turbo.apps.yourdomain.net&quot;
+TURBO_KUBE_CLUSTER_NAME=&quot;gamma03&quot;
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+</div>
+<p>The TURBO_PLATFORM_URL will be the "topology-processor" OpenShift ROUTE URL (If using the Turbo Platform Deployed by Daffy). If the Turbo Platform was deployed without DAFFY, the URL may be the nginx endpoint.</p>
+<p><strong><em>OPTIONAL ENVIRONMENT VARIABLES</em></strong></p>
+<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_USERNAME=&quot;administrator&quot;
+</code></pre></div>
 
               
             </article>
@@ -1279,10 +1368,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
