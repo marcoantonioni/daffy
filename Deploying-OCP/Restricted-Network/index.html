@@ -769,13 +769,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#demo-video" class="md-nav__link">
-    Demo Video
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1446,13 +1439,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#demo-video" class="md-nav__link">
-    Demo Video
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1566,55 +1552,55 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture1.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/cover.png" style="width:100%">
     <div class="text">Intro</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture2.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic1.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture3.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic2.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture4.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic3.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture5.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic4.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture6.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic5.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture7.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic6.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture8.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic7.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Restricted-Network-ppt/Picture9.png" style="width:100%">
+    <img src="../Restricted-Network-ppt/pic8.png" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
@@ -1670,7 +1656,12 @@ function showSlides(n) {
 <!-- END OF JS-->
 
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>Difference between Airgap and Proxy install.</p>
+<p>Deploying OpenShift in a restricted network (air-gap), can be done with the Daffy Restricted Network scripts. This page will primarly focus on the steps to perform aa Airgap install; however, please note the Proxy Install approach can be a viable option and is a more simple approach. Regardless, of which one you choose, both install options will result in a OpenShift cluster with restricted network access. Also, note that the Airgap install is more complicated and will require a JUMP BOX that has internet access to the Quay Repository. </p>
+<p><strong><em>There are two basic options for deployment</em></strong></p>
+<ul>
+<li>Option 1.) <strong>Airgap Install</strong></li>
+<li>Option 2.) <strong>Proxy Install</strong>  </li>
+</ul>
 <h3 id="proxy-install">Proxy install<a class="headerlink" href="#proxy-install" title="Permanent link">&para;</a></h3>
 <p>OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  The bastion and cluster you build must also have direct access to the proxy server. This proxy server can then control what access is granted via whitelist.</p>
 <p>If you are doing proxy install, you only need one bastion and no jump box.  This bastion must have access to the restricted network and the proxy server as well.</p>
@@ -1776,20 +1767,6 @@ scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap
 <p>No you would just follow the normal steps to build your OpenShift registry.  </p>
 <div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
-<h2 id="demo-video">Demo Video<a class="headerlink" href="#demo-video" title="Permanent link">&para;</a></h2>
-<p><html>
-   <head>
-      <title>HTML Video embed</title>
-   </head>
- <br />
-<body>
-   <center>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/stDQ1mxumKA" frameborder="0" allowfullscreen></iframe>
-      </iframe>
-      </center>
-   </body></p>
-<p></html></p>
-<p><html></p>
 
               
             </article>
