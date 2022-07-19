@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#your-environment-file-name-must-follow-simple-rules" class="md-skip">
+        <a href="#common-issues-tips" class="md-skip">
           Skip to content
         </a>
       
@@ -1205,59 +1205,15 @@
                 
 
 
-<h1 id="your-environment-file-name-must-follow-simple-rules">Your environment file name must follow simple rules.<a class="headerlink" href="#your-environment-file-name-must-follow-simple-rules" title="Permanent link">&para;</a></h1>
-<p>All lower case no spaces
-Alphanumeric  or - (no special characters)
-Must end in -env.sh
-Environment name is the prefix for the file name</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Environment Name</th>
-<th style="text-align: left;">File Name</th>
-<th style="text-align: left;">Status</th>
-<th style="text-align: left;">Reason</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">lab12</td>
-<td style="text-align: left;">/data/daffy/env/lab12-env.sh</td>
-<td style="text-align: left;">VALID</td>
-<td style="text-align: left;">Perfect</td>
-</tr>
-<tr>
-<td style="text-align: left;">lab12</td>
-<td style="text-align: left;">/data/daffy/env/lab12-env</td>
-<td style="text-align: left;">INVALID</td>
-<td style="text-align: left;">Does not end in .sh</td>
-</tr>
-<tr>
-<td style="text-align: left;">lab12</td>
-<td style="text-align: left;">/data/daffy/env/lab12</td>
-<td style="text-align: left;">INVALID</td>
-<td style="text-align: left;">Does not end in -env.sh</td>
-</tr>
-<tr>
-<td style="text-align: left;">lab12</td>
-<td style="text-align: left;">/data/daffy/env/Lab 12-env.sh</td>
-<td style="text-align: left;">INVALID</td>
-<td style="text-align: left;">Upper case and Space in name</td>
-</tr>
-<tr>
-<td style="text-align: left;">lab12</td>
-<td style="text-align: left;">/data/daffy/env/lab-env.sh</td>
-<td style="text-align: left;">INVALID</td>
-<td style="text-align: left;">Environment name does not match file prefix</td>
-</tr>
-<tr>
-<td style="text-align: left;">lab12</td>
-<td style="text-align: left;">/data/daffy/lab12-env.sh</td>
-<td style="text-align: left;">INVALID</td>
-<td style="text-align: left;">Not in the /data/daffy/env folder</td>
-</tr>
-</tbody>
-</table>
+<h1 id="common-issues-tips">Common Issues &amp; Tips<a class="headerlink" href="#common-issues-tips" title="Permanent link">&para;</a></h1>
+<p><img alt="" src="../../images/tips/daffy-read.png" /></p>
+<p>If you run into issues with your install, please take the time to read the output of the script. In most cases, the output will give you a clear indication of what the probolem is and in some cases how to fix it. </p>
+<p><img alt="" src="../../images/tips/daffy-typos.png" /></p>
+<p>Most cases, the issue is a simple typo or a missing variable in the environment file. Please double check your environment file for any errors. </p>
+<p><img alt="" src="../../images/tips/daffy-update.png" /></p>
+<p>Run the /data/daffy/refresh.sh script to download the latest version of the daffy scripts. </p>
+<p><img alt="" src="../../images/tips/daffy-cleanup.png" /></p>
+<p>Run the /data/daffy/security-cleanup.sh script to remove all the sensitive data and the next time you run, the scripts will prompt you for the necessary input.</p>
 
               
             </article>
