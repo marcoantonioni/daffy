@@ -13,7 +13,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 1) The Cloud Pak info that you wish to install
 
 2) The services that you wish to install on the Cloud Pak
-## Step 1: Deploy Cloud Pak
+## Step 2: Deploy Cloud Pak
 
 Deploying the Cloud Pak for Data requires one entries to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh).
 
@@ -51,7 +51,7 @@ When this step is complete, approx 60 minutes depending on your environment, you
 **cpd-operators**   
 **ibm-common-services**    
 
-## Step 2: Deploy Services
+## Step 3: Deploy Services
 
 Deploying the Cloud Pak for Data requires some entries to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
@@ -104,7 +104,7 @@ Run the following command** to deploy the Cloud Pak for Data services.
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME>
 ```
-## Step 3: Status of Deployment
+## Step 3a: Status
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the --help flag to see what flags you can use to get information on your service deployment.
 
 Run the following commands to check the Cloud Pak for Data to see what command flags you can run

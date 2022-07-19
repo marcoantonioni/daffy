@@ -11,7 +11,7 @@ hide:
 
 At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
 
-##Step 1: Platform Requirements
+## Platform Requirements
 
 To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernetes <b>S</b>ervices on IBM Cloud (ROKS) , there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For ROKS, it breaks down to the following basic two items:
 
@@ -23,7 +23,7 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 
 [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
-##Step 2: Finding Provider Details
+## Finding Provider Details
 
 To use Daffy to install ROKS, you must find the provider details. Luckily, Daffy automates this as it walks you through this process using ibmcloud CLI. Below are the steps you can use to make sure you use the right information.
 
@@ -58,7 +58,7 @@ https://cloud.ibm.com/docs/account?topic=account-accounts
 ### What are account types?
 Your IBM Cloud account includes many interacting components and systems for resource, user, and access management. Concepts like how certain components are connected or how access works help you in understanding how to set up your account type. Many features are free to use regardless of account type.
 
-## Step 3: Environment File
+## Environment File
 
 Deploying OpenShift on ROKS only requires one entry to your existing core environment file (<ENVIRONMENT_NAME>-env.sh).
 
@@ -87,7 +87,7 @@ OCP_INSTALL_TYPE="roks-msp"
 #ROKS_ZONE="dal13"
 
 ```
-## Step 4: Execution
+## Execution
 
 To deploy your OCP cluster to ROKS, run the build.sh script from the /data/daffy/ocp directory. The installer will ask you a number of questions to login to ibmcloud via the CLI. When prompted with a region, select any but stay within your geography. For instance, us-south. This is used to talk with IBM Cloud via the right API endpoint.
 ```

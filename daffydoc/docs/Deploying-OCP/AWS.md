@@ -8,7 +8,7 @@ hide:
 <img src='../images/aws_new.jpeg'  align="top" width="200"
     height="300" style = "float">
 
-##Step 1: Platform Requirements
+##Platform Requirements
 
 To use Daffy on **Amazon Web Services**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **AWS**, it breaks down to the following basic three items:
 
@@ -22,7 +22,7 @@ To use Daffy on **Amazon Web Services**, there are some platform info and requir
 
   [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
-##Step 2: Finding Provider Details
+##Finding Provider Details
 
 To install Daffy on **AWS**, the hardest part can be finding the provider details in the portal.
 
@@ -94,7 +94,7 @@ For each OpenShift deployment into **AWS**, you need to create a **Route 53 Host
    </body>
 </html>
 
-## Step 3: Environment File
+##Environment File
 
 Below are the AWS specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
 
@@ -125,7 +125,7 @@ AWS_ACCESS_KEY_ID="<AWS-ACCESS_KEY-ID>"
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
 If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
-## Step 4: Execution
+##Execution
 
 To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.
 

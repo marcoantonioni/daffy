@@ -14,7 +14,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 
 2) The services that you wish to install on the Cloud Pak
 
-##Step 1: Deploy Cloud Pak
+##Step 2: Deploy Cloud Pak
 
 Deploying the Cloud Pak for Integration only requires one entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
@@ -50,7 +50,7 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-## Step 2: Deploy Services
+## Step 3: Deploy Services
 
 Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS)
 
@@ -94,7 +94,7 @@ With these values, the daffy engine will be able to install the version of Cloud
 ```
 /data/daffy/cp4i/service.sh <ENVIRONMENT_NAME>
 ```
-## Step 3: Status of Deployment
+## Step 3a: Status
 
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the CP4I service deployment you can run the help flag to see what flags you can use to get information on your service deployment.
 

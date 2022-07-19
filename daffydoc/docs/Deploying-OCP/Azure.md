@@ -9,7 +9,7 @@ hide:
 
 At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.
 
-##Step 1: Platform Requirements
+## Platform Requirements
 
 To use Daffy on **Azure**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **Azure**, it breaks down to the following basic three items:
 
@@ -23,7 +23,7 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 
 [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
-##Step 2: Finding Provider Details
+## Finding Provider Details
 
 To install Daffy on Azure, the hardest part can be finding the provider details.
 
@@ -55,7 +55,7 @@ You will need to create a DNS Zone within a new/existing resource group.  For th
 
 **Setting up DNS for Azure Deployment with OpenShift:**
 insert video Here
-## Step 3: Environment File
+## Environment File
 
 Deploying the OpenShift on Azure only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
@@ -96,7 +96,7 @@ If you plan to install a cloud pak and/or need storage, you need to set the flag
 
 **** It will prompt you for the Client Secret during the install.**
 
-## Step 4: Execution
+## Execution
 To deploy your OCP cluster to **Azure** , run the build.sh script from the /data/daffy/ocp directory
 
 ```
@@ -107,7 +107,6 @@ Once your cluster is fully deployed you can access the help menu which has a num
 
 **Note:**<ENVIRONMENT_NAME> is the first part of your name that you used for the <**ENVIRONMENT_NAME**>-env.sh file
 
-Here is a full example for deploying OpenShfit on **Azure** with the Daffy process.
 
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
