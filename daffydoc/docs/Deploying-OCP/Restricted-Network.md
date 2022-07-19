@@ -349,9 +349,8 @@ No you would just follow the normal steps to build your OpenShift registry.
       <title>HTML Video embed</title>
    </head>
    <body>
-   <center>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/stDQ1mxumKA" frameborder="0" allowfullscreen></iframe>
-      </iframe>
+      <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/stDQ1mxumKA" frameborder="0" allowfullscreen></iframe>
       </center>
    </body>
 </html>

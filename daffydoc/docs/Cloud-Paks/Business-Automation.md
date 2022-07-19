@@ -199,8 +199,9 @@ Run the following command to deploy the Cloud Pak for Business Automation servic
       <title>HTML Video embed</title>
    </head>
    <body>
+   <center>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/tJxXS_dTuZ0" frameborder="0" allowfullscreen></iframe>
-      </iframe>
+   </center>
    </body>
 </html>
 
