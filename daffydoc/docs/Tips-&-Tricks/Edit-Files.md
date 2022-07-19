@@ -4,25 +4,27 @@
 
 Use the arrows on your keyboard to go to location you want to edit, you can not use your mouse.
 
-**[ESC]** starts all modes and **[ESC]** will end all modes.
+++esc++    starts all modes and ++esc++  will end all modes.
 
 Modes:
 
-**[ESC] x**     = deletes one character where you cursor is. Once done **[ESC]**
+++esc++ - ++x++     = deletes one character where you cursor is. Once done ++esc++
 
-**[ESC] i**      =  puts you in insert mode, just start typing what you want to add. Once done **[ESC]**
+++esc++ - ++i++      =  puts you in insert mode, just start typing what you want to add. Once done ++esc++
 
-**[ESC] dd**  = delete entire line cursor is on.  Once done **[ESC]**
+++esc++ - ++d++ - ++d++  = delete entire line cursor is on.  Once done ++esc++
 
-**[ESC] u**     = will undo your last action.  Once done **[ESC]**
+++esc++ - ++u++     = will undo your last action.  Once done ++esc++
 
 Once done, the following will save your file:
 
-**[ESC] [SHIFT] : wq [ENTER]**   
+++esc++ - ++shift++ - ++colon++
+
+++esc++ - ++shift++ - ++colon++ - ++w++ - ++q++ ++enter++   
 
 If you messed up the file and you want to exit and not save your file:
 
-**[ESC] [SHIFT] :  q! [ENTER]**   
+++esc++ - ++shift++ - ++colon++ - ++q++ - ++exclamation++ - ++enter++    
 
 VI Cheat-sheet -
 
