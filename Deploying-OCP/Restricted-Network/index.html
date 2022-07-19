@@ -1759,7 +1759,7 @@ LOCAL_OLM_MIRROR_REPOSITORY_NAME=&quot;olm-mirror&quot;
 <div class="highlight"><pre><span></span><code>/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div></p>
 <h4 id="export-files">Export Files<a class="headerlink" href="#export-files" title="Permanent link">&para;</a></h4>
-<p>After the first command runs, it will display all the files that it created and you will not to move to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.</p>
+<p>After the first command runs, it will display all the files that it created and you will now need to move them to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.</p>
 <h4 id="move-files">Move Files<a class="headerlink" href="#move-files" title="Permanent link">&para;</a></h4>
 <p>In our example we will move via scp because our jump box has access to the bastion.  This could be via firewall or it has dual NIC cards (Public Nic/Private Nic)</p>
 <div class="highlight"><pre><span></span><code>ssh &lt;BASTION-IP&gt; mkdir -p /data/import/airgap
