@@ -17,4 +17,8 @@ Run the /data/daffy/refresh.sh script to download the latest version of the daff
 
 ![](../images/tips/daffy-cleanup.png)
 
-Run the /data/daffy/security-cleanup.sh script to remove all the sensitive data and the next time you run, the scripts will prompt you for the necessary input.
+Run the security-cleanup.sh script to remove all the sensitive data and the next time you run, the scripts will prompt you for the necessary input.
+
+```
+/data/daffy/security-cleanup.sh 
+```
