@@ -308,7 +308,7 @@ From your jump box run the following command:
 ```
 
 #### Export Files
-After the first command runs, it will display all the files that it created and you will not to move to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.
+After the first command runs, it will display all the files that it created and you will now need to move them to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.
 
 #### Move Files
 In our example we will move via scp because our jump box has access to the bastion.  This could be via firewall or it has dual NIC cards (Public Nic/Private Nic)
