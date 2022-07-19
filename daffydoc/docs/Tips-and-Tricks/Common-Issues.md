@@ -1,5 +1,9 @@
+---
+hide:
+  - toc
+---
 
-# Common Issues & Tips
+# Common Issues & Tips 3
 
 ![](../images/tips/daffy-read.png)
 
