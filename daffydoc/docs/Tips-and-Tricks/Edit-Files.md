@@ -18,8 +18,6 @@ Modes:
 
 Once done, the following will save your file:
 
-++esc++ - ++shift++ - ++colon++
-
 ++esc++ - ++shift++ - ++colon++ - ++w++ - ++q++ ++enter++   
 
 If you messed up the file and you want to exit and not save your file:
