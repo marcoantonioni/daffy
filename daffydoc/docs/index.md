@@ -7,7 +7,7 @@ hide:
   - footer
 ---
 <script>
-  document.title = "Deployment Automation Framework For You";
+  document.title = "Home";
 </script>
 <style>
   [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner { margin-left: 0;}
