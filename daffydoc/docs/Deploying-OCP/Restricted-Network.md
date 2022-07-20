@@ -2,6 +2,9 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Deploy OCP - Restricted Network";
+</script>
 <!-- CSS FOR SLIDESHOW -->
 ## Slide Show
 <style>

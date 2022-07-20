@@ -2,6 +2,9 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Deploy OCP - Azure";
+</script>
 
 #Azure Install
 <img src='../images/Azure-Logo-1024x752.jpeg'   align="top" width="200"

@@ -3,7 +3,9 @@ hide:
   - footer
 ---
 
-
+<script>
+  document.title = "Deploy OCP - ROKS";
+</script>
 #ROKS Install
 
 <img src='../images/ROKS.jpeg'   align="top" width="200"

@@ -2,7 +2,10 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Deploy OCP - VSphere";
 
+</script>
 <p align = "left">
     <img src='../images/vsphere.png'  align="top" style = "float">
 </p>

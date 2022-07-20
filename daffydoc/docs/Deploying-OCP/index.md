@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Deploy OCP";
+</script>
 #Deploying OCP
 <html>
 <body>
