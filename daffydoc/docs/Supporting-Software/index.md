@@ -1,6 +1,8 @@
 
 <html>
-
+<script>
+  document.title = "Supporting Software";
+</script>
 <div style="text-align:center">
 <h1> Supporting software </h1>
 <h2>Instructions on other software you can install</h2>
