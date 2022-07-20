@@ -63,13 +63,22 @@ VSPHERE_USERNAME="userid"
 VSPHERE_HOSTNAME="vsphere-host-name"
 VSPHERE_DATASTORE="datastore"     
 VSPHERE_CLUSTER="cluster-name".   
-VSPHERE_ISO_DATASTORE="iso-datastore"     
-VSPHERE_ISO_IMAGE_BASE="datastore-directory"     
-VSPHERE_NETWORK1="vlan-name"      
+ VSPHERE_NETWORK1="vlan-name"      
 VSPHERE_DATACENTER="vsphere-datacenter"     
-VSPHERE_FOLDER="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"   
+VSPHERE_FOLDER="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"
+
+#IPI Only
+############  
 VSPHERE_API_VIP="xx.xxx.xxx.xxx"
 VSPHERE_INGRESS_VIP="xx.xxx.xxx"
+
+#UPI Only
+############
+VSPHERE_ISO_DATASTORE="iso-datastore"     
+VSPHERE_ISO_IMAGE_BASE="datastore-directory"    
+
+#Storage Option for OpenShift
+############
 #OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
 ```
 
