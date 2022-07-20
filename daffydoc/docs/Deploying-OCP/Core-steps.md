@@ -2,6 +2,9 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Deploy OCP - Core Steps";
+</script>
 
 ## Step 1: Access your bastion Server
 <button onclick="location.href='../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
