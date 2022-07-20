@@ -116,3 +116,4 @@ extra:
   analytics:
     provider: google
     property: G-L33BY57ZVG
+  generator: false
