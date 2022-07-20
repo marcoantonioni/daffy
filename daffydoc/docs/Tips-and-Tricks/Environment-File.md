@@ -2,6 +2,9 @@
 hide:
   - toc
 ---
+<script>
+  document.title = "Tips and Tricks - Environment File";
+</script>
 ## Your environment file name must follow simple rules:
 
 1. All lower case no spaces

@@ -2,6 +2,9 @@
 hide:
   - toc
 ---
+<script>
+  document.title = "Tips and Tricks - Edit Files";
+</script>
 # Editing Files
 
 ## Basic vi commands you will use to edit your environment file:

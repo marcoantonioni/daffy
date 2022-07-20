@@ -1,3 +1,6 @@
+<script>
+  document.title = "Tips and Tricks - Common Issues";
+</script>
 # Common Issues & Tips
 
 ![](../images/tips/daffy-read.png)

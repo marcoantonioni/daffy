@@ -1,4 +1,6 @@
-
+<script>
+  document.title = "FAQ";
+</script>
 ##Why the name Daffy?
 
 Its a great name and mascot.
