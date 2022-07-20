@@ -52,7 +52,7 @@ Best practices is <**ENVIRONMENT_NAME**> is your cluster name that will be used 
 Name  | Example Values  | Description
 :----------- |:----------- |:-----------
 DAFFY_DEPLOYMENT_TYPE | Enablement |  POC/Demo/Enablement/HCCX/TechZone |
-DAFFY_ISC_NUMBER | $ISC_NUMBER} |  Required if Demo or POC
+DAFFY_ISC_NUMBER | $ISC_NUMBER |  Required if Demo or POC
 DAFFY_CUSTOMER_NAME | Acme Shoes  | Required if Demo or POC
 BASE_DOMAIN | acme-shoes.com |  Is your DNS name your cluster will use
 CLUSTER_NAME | demo01 | The name you want to give your OpenShift Cluster
