@@ -2,6 +2,9 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Cloud Pak - Business Automation";
+</script>
 
 Cloud Pak for Business Automation {: style="text-align: left;"}
 ===============

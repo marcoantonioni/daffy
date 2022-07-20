@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Cloud Pak";
+</script>
 #Cloud Paks
 
 <html>

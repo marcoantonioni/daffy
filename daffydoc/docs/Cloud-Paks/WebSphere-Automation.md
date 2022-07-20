@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Cloud Pak - WebSphere Automation";
+</script>
 Cloud Pak for WebSphere Automation {: style="text-align: left;"}
 ===============
 <img src='../images/WSA.png'
