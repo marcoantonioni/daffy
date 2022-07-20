@@ -2,6 +2,9 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Deploy OCP - AWS";
+</script>
 
 #AWS Install
 
