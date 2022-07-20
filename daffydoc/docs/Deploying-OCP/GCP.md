@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Deploy OCP - GCP";
+</script>
 # GCP Install
 
 <img src="../images/gcp.png"   align="top" width="200"
