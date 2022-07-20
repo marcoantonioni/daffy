@@ -104,3 +104,13 @@ markdown_extensions:
 extra_css:
     - css/extra.css
     - css/code.css
+copyright: Copyright &copy; 2021 - 2022 IBM Black Belt Team
+extra:
+
+  social:
+    - icon: fontawesome/solid/paper-plane
+      name: Feedback on Daffy
+      link: mailto:feedback@daffy-installer.com
+  analytics:
+    provider: google
+    property: G-L33BY57ZVG
