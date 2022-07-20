@@ -106,7 +106,6 @@ extra_css:
     - css/code.css
 copyright: Copyright &copy; 2021 - 2022 IBM Black Belt Team
 extra:
-
   social:
     - icon: fontawesome/solid/paper-plane
       name: Feedback on Daffy
