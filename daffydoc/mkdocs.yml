@@ -110,6 +110,9 @@ extra:
     - icon: fontawesome/solid/paper-plane
       name: Feedback on Daffy
       link: mailto:feedback@daffy-installer.com
+    - icon: fontawesome/brands/youtube
+      name: Daffy YouTube Channel
+      link: https://www.youtube.com/channel/UC-hFkVL6kBcgCJeWneHGoKw
   analytics:
     provider: google
     property: G-L33BY57ZVG
