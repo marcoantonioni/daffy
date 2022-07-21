@@ -27,13 +27,12 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 | Variable Name   | Info          | Install Type | Required |
 | :---------         |    :---------    |   :----     |   :----     |  
 | VSPHERE_DATASTORE           | This is the name of the VSphere Datastore       |IPI/UPI |Yes
-| VSPHERE_CLUSTER          | The VSphere cluster is NOT the same as your OpenShift Cluster name. This is variable is referring to the VSphere Cluster name. Note: This is the name of the VSphere Cluster      |IPI/UPI|Yes
-
+| VSPHERE_CLUSTER          | The VSphere cluster is NOT the same as your OpenShift Cluster name. This is variable is referring to the VSphere Cluster name.  |IPI/UPI|Yes
 |VSPHERE_NETWORK1|This is the VSphere VLAN name|IPI/UPI|Yes
 |VSPHERE_DATACENTER|This is the name of the VSphere Datacenter|IPI/UPI|Yes
 |VSPHERE_FOLDER|This is the location of where you will store the NEW VM's.|IPI/UPI|Yes
-|VSPHERE_API_VIP|This is an UNUSED IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address.|IPI|Yes
-|VSPHERE_INGRESS|This is an UNUSED IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.|IPI|Yes
+|VSPHERE_API_VIP|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address.|IPI|Yes
+|VSPHERE_INGRESS|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.|IPI|Yes
 |VSPHERE_ISO_DATASTORE|This is the name of the datastore where the the coreos iso is located|UPI|Yes
 |VSPHERE_ISO_IMAGE_BASE|This is the directory within the datastore where the iso image is located.|UPI|Yes
 
