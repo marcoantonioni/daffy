@@ -38,7 +38,7 @@ There are three options with TechZone
     - You still need to have a bastion and core values in your <**ENVIRONMENT_NAME**>-env.sh  
     - Extra setting to change in your environment file      
           1. **ROKS_PROVIDER=**techzone
-          2. **DAFFY_DEPLOYMENT_TYPE=**TechZone
+          2. **DAFFY_DEPLOYMENT_TYPE=**techzone
 
 
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
