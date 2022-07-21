@@ -35,8 +35,8 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 |VSPHERE_INGRESS|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.|IPI|Yes
 |VSPHERE_ISO_DATASTORE|This is the name of the datastore where the the coreos iso is located|UPI|Yes
 |VSPHERE_ISO_IMAGE_BASE|This is the directory within the datastore where the iso image is located.|UPI|Yes
-|BASTION_HOST|This is the name of the bastion host, IP and DNS value|UPI|No
-|BASTION_USER|This is non admin id on the bastion host that has access to logon via SSH|UPI|Yes
+|BASTION_HOST|This is the name of the bastion host, IP or  DNS value|UPI|No
+|BASTION_USER|This is non admin id on the bastion host that has authorzation to logon via SSH to bastion|UPI|Yes
 
 
 
