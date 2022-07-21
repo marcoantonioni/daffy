@@ -606,8 +606,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regions" class="md-nav__link">
-    Regions
+  <a href="#zones" class="md-nav__link">
+    Zones
   </a>
   
 </li>
@@ -1301,8 +1301,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#regions" class="md-nav__link">
-    Regions
+  <a href="#zones" class="md-nav__link">
+    Zones
   </a>
   
 </li>
@@ -1363,7 +1363,6 @@
 <h2 id="finding-provider-details">Finding Provider Details<a class="headerlink" href="#finding-provider-details" title="Permanent link">&para;</a></h2>
 <p>To use Daffy to install ROKS, you must find the provider details. Luckily, Daffy automates this as it walks you through this process using ibmcloud CLI. Below are the steps you can use to make sure you use the right information.</p>
 <p><b>Account:</b>
-{target=_blank}
 To find more details IBM Cloud account and how to manage you can refer to this:</p>
 <p><a href="https://cloud.ibm.com/docs/account?topic=account-account-getting-started" target="_blank">https://cloud.ibm.com/docs/account?topic=account-account-getting-started</a></p>
 <p>You must have an IBMid before logging in and the link above can help create one. If you are an IBM employee, after the number will most likely be your name.</p>
@@ -1373,14 +1372,15 @@ To find more details IBM Cloud account and how to manage you can refer to this:<
 To find a list of available datacenter locations/zones, you can refer to this:</p>
 <p><a href="https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table" target="_blank">https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table</a></p>
 <p>Note: Daffy currently only supports single datacenter location installs with classic infrastructure</p>
-<h3 id="regions">Regions<a class="headerlink" href="#regions" title="Permanent link">&para;</a></h3>
+<h3 id="zones">Zones<a class="headerlink" href="#zones" title="Permanent link">&para;</a></h3>
 <p>Regions are collections of zones. Zones have high-bandwidth, low-latency network connections to other zones in the same region. In order to deploy fault-tolerant applications that have high availability, IBM recommends deploying applications across multiple zones and multiple regions. This helps protect against unexpected failures of components, up to and including a single zone or region.</p>
 <p>Choose regions that makes sense for your scenario. For example, if you only have customers in the US, or if you have specific needs that require your data to live in the US, it makes sense to store your resources in zones in the dal13 zone or in the wdc07 zone. Daffy currently defaults to dal13 when deploying a ROKS cluster</p>
-<p><b> Account Type: </b>
-For you to use Daffy to install on ROKS, you need to have a Pay-As-You-Go or subscription IBM Cloud account.
-<a href="https://cloud.ibm.com/docs/account?topic=account-accounts" target="_blank">https://cloud.ibm.com/docs/account?topic=account-accounts</a></p>
+<p><a href="https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones#locations" target="_blank">https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones#locations</a></p>
 <h3 id="account-types">Account types<a class="headerlink" href="#account-types" title="Permanent link">&para;</a></h3>
 <p>Your IBM Cloud account includes many interacting components and systems for resource, user, and access management. Concepts like how certain components are connected or how access works help you in understanding how to set up your account type. Many features are free to use regardless of account type.</p>
+<p><b> Account Type: </b>
+For you to use Daffy to install on ROKS, you need to have a Pay-As-You-Go or subscription IBM Cloud account.</p>
+<p><a href="https://cloud.ibm.com/docs/account?topic=account-accounts" target="_blank">https://cloud.ibm.com/docs/account?topic=account-accounts</a></p>
 <h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying OpenShift on ROKS only requires one entry to your existing core environment file (<ENVIRONMENT_NAME>-env.sh).</p>
 <p>Note: You can look in the samples directory on your bastion for example of ROKS install : /data/daffy/env/samples/roks-msp-env.sh</p>
