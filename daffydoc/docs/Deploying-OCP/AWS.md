@@ -83,7 +83,7 @@ For each OpenShift deployment into **AWS**, you need to create a **Route 53 Host
 <img src='../images/aws_9.png'/>
 <img src='../images/aws_10.png'/>
 
-### Setting up DNS for GCP Deployment with OpenShift:
+### Setting up DNS
 
 <html>
    <head>

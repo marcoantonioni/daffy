@@ -56,7 +56,7 @@ You will need to create a DNS Zone within a new/existing resource group.  For th
 2. Azure DNS Zone              - **myexample-com**
 3. Transfer the domain to **Azure** Name services listed in your new **Azure** DNS Zone
 
-**Setting up DNS for Azure Deployment with OpenShift:**
+## Setting up DNS 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V8biZjrHfOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

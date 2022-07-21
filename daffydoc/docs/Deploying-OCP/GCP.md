@@ -101,7 +101,7 @@ You will need to create a DZS hosted Zone project.  For the OpenShift install, y
 2. GCP DNS Zone        **- myexample-com**
 3. Transfer the domain to GCP Name services listed in your new **GCP** DNS Zone
 
-**Setting up DNS for GCP Deployment with OpenShift:**
+## Setting up DNS
 
   <div style="text-align:center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CAkWQnOJ88A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
