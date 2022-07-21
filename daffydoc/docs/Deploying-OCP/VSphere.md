@@ -40,7 +40,7 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 
 
 
-### Setting up DNS for VSphere Deployment with OpenShift:
+### Setting up DNS
 
 <html>
    <head>
