@@ -2,6 +2,10 @@
 hide:
   - navigation
 ---
+
+<script>
+  document.title = "Meet the Team";
+</script>
 <style>
 /* Three columns side by side */
 .column {
