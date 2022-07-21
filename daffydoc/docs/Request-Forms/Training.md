@@ -1,3 +1,7 @@
+<script>
+  document.title = "Request Forms - Training";
+</script>
+
 # Daffy Training/Enablement Request
 
 This form is for those interested in being trained on Daffy. This requires your management approval
