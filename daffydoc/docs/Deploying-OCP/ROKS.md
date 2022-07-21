@@ -30,10 +30,11 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 To use Daffy to install ROKS, you must find the provider details. Luckily, Daffy automates this as it walks you through this process using ibmcloud CLI. Below are the steps you can use to make sure you use the right information.
 
 <b>Account:</b>
-
+{target=_blank}
 To find more details IBM Cloud account and how to manage you can refer to this:
 
-https://cloud.ibm.com/docs/account?topic=account-account-getting-started
+
+[https://cloud.ibm.com/docs/account?topic=account-account-getting-started](https://cloud.ibm.com/docs/account?topic=account-account-getting-started){target=_blank}
 
 You must have an IBMid before logging in and the link above can help create one. If you are an IBM employee, after the number will most likely be your name.
 
@@ -43,10 +44,11 @@ You can list your Account ID from the Drop down
 Location/Zone:
 To find a list of available datacenter locations/zones, you can refer to this:
 
-https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table
+[https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table](https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table){target=_blank}
+
 
 Note: Daffy currently only supports single datacenter location installs with classic infrastructure
-### Identifying a datacenter location/zone
+### Regions
 
 Regions are collections of zones. Zones have high-bandwidth, low-latency network connections to other zones in the same region. In order to deploy fault-tolerant applications that have high availability, IBM recommends deploying applications across multiple zones and multiple regions. This helps protect against unexpected failures of components, up to and including a single zone or region.
 
@@ -54,10 +56,10 @@ Choose regions that makes sense for your scenario. For example, if you only have
 
 <b> Account Type: </b>
 For you to use Daffy to install on ROKS, you need to have a Pay-As-You-Go or subscription IBM Cloud account.
+[https://cloud.ibm.com/docs/account?topic=account-accounts](https://cloud.ibm.com/docs/account?topic=account-accounts){target=_blank}
 
-https://cloud.ibm.com/docs/account?topic=account-accounts
 
-### What are account types?
+### Account types
 Your IBM Cloud account includes many interacting components and systems for resource, user, and access management. Concepts like how certain components are connected or how access works help you in understanding how to set up your account type. Many features are free to use regardless of account type.
 
 ## Environment File
