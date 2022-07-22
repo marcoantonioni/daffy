@@ -29,14 +29,14 @@ To use Daffy on **Amazon Web Services**, there are some platform info and requir
 
 To install Daffy on **AWS**, the hardest part can be finding the provider details in the portal.
 
-To create or use an existing AWS Access Key ID you can refer to this:
+To create or use an existing **AWS Access Key ID** you can refer to this:
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey){target=_blank}
 
 Note: Use the Identity and Access Management (IAM) service to manage access keys.
 
-Select Search - find   IAM   service
-You can create a new access key or use an existing key. The access key must have authority to the account you wan to install OpenShift into.
+1. Select Search - find   IAM   service
+2. You can create a new access key or use an existing key. The access key must have authority to the account you wan to install OpenShift into.
 
 <img src='../images/aws_1.png'/>
 <img src='../images/aws_2.png'/>
@@ -97,6 +97,10 @@ For each OpenShift deployment into **AWS**, you need to create a **Route 53 Host
    </body>
 </html>
 
+**Quota:**
+
+Please refer to the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank} for a list of resource quota's that are required for deployment of OpenShift in AWS.
+
 ##Environment File
 
 Below are the AWS specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
@@ -112,9 +116,9 @@ cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env
 ```
 **Valid Options:**
 
-- **OCP_INSTALL_TYPE**= aws-ipi
-- **AWS_REGION**=<AWS-REGION>
-- **AWS_ACCESS_KEY_ID**=<AWS-ACCESS_KEY-ID>
+- **OCP_INSTALL_TYPE**=aws-ipi
+- **AWS_REGION**=AWS-REGION
+- **AWS_ACCESS_KEY_ID**=AWS-ACCESS_KEY-ID
 
 ```
 OCP_INSTALL_TYPE="aws-ipi"
@@ -138,7 +142,7 @@ To deploy your cluster, run the build.sh script from the /data/daffy/ocp directo
 
 Once your cluster is fully deployed you can access the help menu which as a number of options.
 
-**Note:** <environment> is the first part of your name that you used for the <environment>-env.sh file
+**Note:** <**environment**> is the first part of your name that you used for the <environment>-env.sh file
 ```
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```

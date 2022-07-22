@@ -41,6 +41,7 @@ nav:
     - KVM: Deploying-OCP/kvm.md
     - VSphere: Deploying-OCP/VSphere.md
     - Restricted Network: Deploying-OCP/Restricted-Network.md
+    - Extra Features: Deploying-OCP/extra_features.md
 #    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
     - Cloud-Paks/index.md
