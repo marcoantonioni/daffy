@@ -41,7 +41,7 @@ nav:
     - KVM: Deploying-OCP/kvm.md
     - VSphere: Deploying-OCP/VSphere.md
     - Restricted Network: Deploying-OCP/Restricted-Network.md
-    - Extra Features: Deploying-OCP/extra_features.md
+#   - Extra Features: Deploying-OCP/extra_features.md
 #    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
     - Cloud-Paks/index.md
@@ -105,6 +105,7 @@ markdown_extensions:
 extra_css:
     - css/extra.css
     - css/code.css
+    - css/button.css
 copyright: Copyright &copy; 2021 - 2022 IBM Black Belt Team
 extra:
   social:
