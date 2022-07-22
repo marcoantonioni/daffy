@@ -1,15 +1,10 @@
 ---
 #template: home.html
-title: Deployment Automation Framework For You
 hide:
   - toc
   - navigation
   - footer
 ---
-
-<script>
-  document.title = "Meet the Team";
-</script>
 <script>
   document.title = "Daffy Home";
 </script>
