@@ -1,20 +1,13 @@
 ---
 #template: home.html
-title: Deployment Automation Framework For You
 hide:
   - toc
   - navigation
   - footer
 ---
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L33BY57ZVG"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L33BY57ZVG');
+  document.title = "Daffy Home";
 </script>
-
 <style>
   [dir="ltr"] .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner { margin-left: 0;}
 

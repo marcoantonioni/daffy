@@ -1,3 +1,6 @@
+<script>
+  document.title = "Deployment Estimates";
+</script>
 !!! Warning "Note"
   Below are some estimates for Daffy T-Shirt sizes running on each cloud platform. These are rough examples, customer accounts may have more/less discounts then the estimates we obtained.  These numbers are used to help prepare some high level cost estimates for POC's for OpenShift and IBM Cloud Paks.
 

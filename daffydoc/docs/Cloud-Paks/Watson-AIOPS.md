@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Cloud Pak - Watson AIOPS";
+</script>
 Cloud Pak for Watson AI Ops {: style="text-align: left;"}
 ===============
 <img src='../images/WAIOPS.png'

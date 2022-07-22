@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Deploy OCP - VSphere";
+</script>
 <p align = "left">
     <img src='../images/vsphere.png'  align="top" style = "float">
 </p>
@@ -25,18 +27,20 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 | Variable Name   | Info          | Install Type | Required |
 | :---------         |    :---------    |   :----     |   :----     |  
 | VSPHERE_DATASTORE           | This is the name of the VSphere Datastore       |IPI/UPI |Yes
-| VSPHERE_CLUSTER          | The VSphere cluster is NOT the same as your OpenShift Cluster name. This is variable is referring to the VSphere Cluster name. Note: This is the name of the VSphere Cluster      |IPI/UPI|Yes
-|VSPHERE_ISO_DATASTORE|This is the name of the datastore where the the coreos iso is located|IPI/UPI|Yes
-|VSPHERE_ISO_IMAGE_BASE|This is the directory within the datastore where the iso image is located.|IPI/UPI|Yes
+| VSPHERE_CLUSTER          | The VSphere cluster is NOT the same as your OpenShift Cluster name. This is variable is referring to the VSphere Cluster name.  |IPI/UPI|Yes
 |VSPHERE_NETWORK1|This is the VSphere VLAN name|IPI/UPI|Yes
 |VSPHERE_DATACENTER|This is the name of the VSphere Datacenter|IPI/UPI|Yes
 |VSPHERE_FOLDER|This is the location of where you will store the NEW VM's.|IPI/UPI|Yes
-|VSPHERE_API_VIP|This is an UNUSED IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address.|IPI|Yes
-|VSPHERE_INGRESS|This is an UNUSED IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.|IPI|Yes
+|VSPHERE_API_VIP|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address.|IPI|Yes
+|VSPHERE_INGRESS|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.|IPI|Yes
+|VSPHERE_ISO_DATASTORE|This is the name of the datastore where the the coreos iso is located|UPI|Yes
+|VSPHERE_ISO_IMAGE_BASE|This is the directory within the datastore where the iso image is located.|UPI|Yes
+|BASTION_HOST|This is the name of the bastion host, IP or  DNS value|UPI|No
+|BASTION_USER|This is non admin id on the bastion host that has authorzation to logon via SSH to bastion|UPI|Yes
 
 
 
-### Setting up DNS for VSphere Deployment with OpenShift:
+### Setting up DNS
 
 <html>
    <head>
@@ -63,13 +67,22 @@ VSPHERE_USERNAME="userid"
 VSPHERE_HOSTNAME="vsphere-host-name"
 VSPHERE_DATASTORE="datastore"     
 VSPHERE_CLUSTER="cluster-name".   
-VSPHERE_ISO_DATASTORE="iso-datastore"     
-VSPHERE_ISO_IMAGE_BASE="datastore-directory"     
-VSPHERE_NETWORK1="vlan-name"      
+ VSPHERE_NETWORK1="vlan-name"      
 VSPHERE_DATACENTER="vsphere-datacenter"     
-VSPHERE_FOLDER="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"   
+VSPHERE_FOLDER="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"
+
+#IPI Only
+############  
 VSPHERE_API_VIP="xx.xxx.xxx.xxx"
 VSPHERE_INGRESS_VIP="xx.xxx.xxx"
+
+#UPI Only
+############
+VSPHERE_ISO_DATASTORE="iso-datastore"     
+VSPHERE_ISO_IMAGE_BASE="datastore-directory"    
+
+#Storage Option for OpenShift
+############
 #OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
 ```
 

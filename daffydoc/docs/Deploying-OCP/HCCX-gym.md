@@ -2,6 +2,10 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Deploy OCP - HCCX";
+</script>
+
 # HCCX Gym
 <img src='../images/gym.png'   align="top" width="200"
   height="300" style = "float">

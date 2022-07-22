@@ -2,6 +2,9 @@
 hide:
   - footer
 ---
+<script>
+  document.title = "Tools Installed";
+</script>
 <head>
 <style>
 * {

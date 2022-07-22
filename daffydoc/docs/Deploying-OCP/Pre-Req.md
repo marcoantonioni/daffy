@@ -1,3 +1,7 @@
+<script>
+  document.title = "Deploy OCP - Pre-Req";
+</script>
+
 # Daffy Pre-Requirements
 
 ## Whats is required to use Daffy?

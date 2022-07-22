@@ -1,3 +1,6 @@
+<script>
+  document.title = "IBM Entitlement";
+</script>
 To run software from the IBM Entitled Registry, you must supply your entitlement key as a Kubernetes pull secret. Below are links for customers to obtain trial keys.
 
 Components | Length | Link

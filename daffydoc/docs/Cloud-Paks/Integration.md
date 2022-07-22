@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Cloud Pak - Integration";
+</script>
 Cloud Pak for Integration {: style="text-align: left;"}
 ===============
 <img src='../images/integration.png'

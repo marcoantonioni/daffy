@@ -2,7 +2,9 @@
 hide:
   - footer
 ---
-
+<script>
+  document.title = "Cloud Pak - Data";
+</script>
 Cloud Pak for Data {: style="text-align: left;"}
 ===============
 <img src='../images/data.png'

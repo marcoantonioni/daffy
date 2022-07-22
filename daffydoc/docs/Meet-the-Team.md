@@ -2,6 +2,10 @@
 hide:
   - navigation
 ---
+
+<script>
+  document.title = "Meet the Team";
+</script>
 <style>
 /* Three columns side by side */
 .column {
@@ -101,7 +105,7 @@ hide:
       <img src="../images/TobyLiu.jpg" style="width:100%">
       <div class="container">
         <h2>Toby Liu</h2>
-        <p class="title">Cloud Engineer, Client Engineering, Global Sales<br><br><br><br></p>
+        <p class="title">Cloud Engineer, Client Engineering, Global Sales, US National Market<br><br><br><br></p>
       </div>
     </div>
   </div>

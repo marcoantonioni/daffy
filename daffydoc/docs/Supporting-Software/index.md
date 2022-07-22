@@ -1,14 +1,8 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L33BY57ZVG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-L33BY57ZVG');
-</script>
 
 <html>
-
+<script>
+  document.title = "Supporting Software";
+</script>
 <div style="text-align:center">
 <h1> Supporting software </h1>
 <h2>Instructions on other software you can install</h2>
