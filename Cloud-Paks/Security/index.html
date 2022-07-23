@@ -13,7 +13,7 @@
     
     
       
-        <title>WebSphere Automation - Deployment Automation Framework For You</title>
+        <title>Security - Deployment Automation Framework For You</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cloud-pak-for-websphere-automation" class="md-skip">
+        <a href="#cloud-pak-for-security" class="md-skip">
           Skip to content
         </a>
       
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              WebSphere Automation
+              Security
             
           </span>
         </div>
@@ -771,20 +771,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../Security/" class="md-nav__link">
-        Security
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -797,12 +783,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          WebSphere Automation
+          Security
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        WebSphere Automation
+        Security
       </a>
       
         
@@ -821,8 +807,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-2-deploy-wsa" class="md-nav__link">
-    Step 2: Deploy WSA
+  <a href="#step-2-deploy-cloud-pak" class="md-nav__link">
+    Step 2: Deploy Cloud Pak
   </a>
   
 </li>
@@ -845,6 +831,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../WebSphere-Automation/" class="md-nav__link">
+        WebSphere Automation
+      </a>
     </li>
   
 
@@ -1277,8 +1277,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-2-deploy-wsa" class="md-nav__link">
-    Step 2: Deploy WSA
+  <a href="#step-2-deploy-cloud-pak" class="md-nav__link">
+    Step 2: Deploy Cloud Pak
   </a>
   
 </li>
@@ -1312,58 +1312,20 @@
 
 
 <script>
-  document.title = "Cloud Pak - WebSphere Automation";
+  document.title = "Cloud Pak - Security";
 </script>
-<h1 id="cloud-pak-for-websphere-automation" style="text-align: left;">Cloud Pak for WebSphere Automation<a class="headerlink" href="#cloud-pak-for-websphere-automation" title="Permanent link">&para;</a></h1>
-<p><img src='../images/WSA.png'
+<h1 id="cloud-pak-for-security" style="text-align: left;">Cloud Pak for Security<a class="headerlink" href="#cloud-pak-for-security" title="Permanent link">&para;</a></h1>
+<p><img src='../images/security.png'
        style="width:100px;height:100px;"/></p>
+<div class="admonition info">
+<p class="admonition-title">Content coming</p>
+</div>
 <p>At this point, you have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
 <p>1) The Cloud Pak info that you wish to install</p>
 <p>2) The services that you wish to install on the Cloud Pak</p>
-<h2 id="step-2-deploy-wsa">Step 2: Deploy WSA<a class="headerlink" href="#step-2-deploy-wsa" title="Permanent link">&para;</a></h2>
-<p>Deploying WebSphere Automation only requires <strong>one</strong> entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
-<p><strong>CPWSA_VERSION=<version></strong></p>
-<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
-<div class="highlight"><pre><span></span><code>CPWSA_VERSION=1.3
-</code></pre></div>
-<p>With this one value, the daffy engine will be able to install the version of WebSphere Automation.</p>
-<p>The service consist of the following products.</p>
-<p>WebSphere Automation Small Profile (consists of):</p>
-<ul>
-<li>
-<p>WebSphere Automation</p>
-</li>
-<li>
-<p>WebSphere Health</p>
-</li>
-<li>
-<p>WebSphere Secure</p>
-</li>
-</ul>
-<p>WSA Supported Versions  OCP Versions
-1.3     4.8<br />
-1.2     4.8</p>
-<p>Run the following command to deploy WebSphere Automation</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/wsa/build.sh &lt;ENVIRONMENT_NAME&gt;
-</code></pre></div>
-<p>When this step is complete, up to an hour depending on your environment, you have basics of WebSphere Automation running. This will install all of the operators including foundational services. The cluster is now ready to deploy additional services and or demos.  At this stage, the cluster consists  of common services and WebSphere Automation operators and some services in the following projects:</p>
-<p><strong>websphere-automation</strong></p>
-<p><strong>ibm-common-services</strong></p>
+<h2 id="step-2-deploy-cloud-pak">Step 2: Deploy Cloud Pak<a class="headerlink" href="#step-2-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
-<p>Currently there one service / demos for WebSphere Automation. We are adding new features on a regular basis, please stay tuned.  If you have a feature request for an additional service or demo, please fill out a request.</p>
 <h2 id="step-3a-status">Step 3a: Status<a class="headerlink" href="#step-3a-status" title="Permanent link">&para;</a></h2>
-<p>The service can take a few hours to complete. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/wsa/build.sh &lt;ENVIRONMENT_NAME&gt; --help
-</code></pre></div>
-<p><strong>Run the following commands</strong> to check the WebSphere Automation installation progress.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/wsa/service.sh &lt;ENVIRONMENT_NAME&gt; --status
-</code></pre></div>
-<p>If you want to have a running job to refresh every few seconds,  you can run the status script using the watch command.</p>
-<div class="highlight"><pre><span></span><code>watch -c /data/daffy/wsa/service.sh &lt;ENVIRONMENT_NAME&gt; --status
-</code></pre></div>
-<p>To find out the connection info to your new service/pattern, you can run the console flag to get user names, passwords and URLs to connect to.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/wsa/build.sh &lt;ENVIRONMENT_NAME&gt; --console
-</code></pre></div>
 
               
             </article>
@@ -1386,7 +1348,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" hidden>
       
         
-        <a href="../Security/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Security" rel="prev">
+        <a href="../Watson-AIOPS/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Watson AIOPS" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1395,20 +1357,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Security
+              Watson AIOPS
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../Supporting-Software/" class="md-footer__link md-footer__link--next" aria-label="Next: Index" rel="next">
+        <a href="../WebSphere-Automation/" class="md-footer__link md-footer__link--next" aria-label="Next: WebSphere Automation" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Index
+              WebSphere Automation
             </div>
           </div>
           <div class="md-footer__button md-icon">
