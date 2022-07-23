@@ -8,7 +8,7 @@ hide:
 
 Cloud Pak for Business Automation {: style="text-align: left;"}
 ===============
-<img src='../images/ba.png'
+<img src='../images/ba.svg'
        style="width:100px;height:100px;"/>
 
 At this point, you have a working OCP cluster on your platform of choice. Your <**ENVIRONMENT_NAME**>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
