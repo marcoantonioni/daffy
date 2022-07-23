@@ -13,7 +13,7 @@
     
     
       
-        <title>Turbo - Deployment Automation Framework For You</title>
+        <title>IBM - Deployment Automation Framework For You</title>
       
     
     
@@ -87,11 +87,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#turbonomic" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -120,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Turbo
+              IBM
             
           </span>
         </div>
@@ -1204,37 +1199,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#turbonomic-platofrm" class="md-nav__link">
-    TURBONOMIC PLATOFRM
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubeturbo" class="md-nav__link">
-    KUBETURBO
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#executing-scripts" class="md-nav__link">
-    Executing Scripts
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1248,57 +1212,14 @@
                 
 
 
+  <h1>IBM</h1>
+
 <script>
-  document.title = "Supporting Software - Turbo";
+  document.title = "Supporting Software - IBM";
 </script>
-<h1 id="turbonomic">Turbonomic<a class="headerlink" href="#turbonomic" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Early features - Still in testing mode, may not always work.  User be aware!!!</p>
-</div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>You will be required to provide a license key to fully enable the   Turbonomic Platform. When the platform installation is complete, you will   be presented with a URL where you will need to configure the administrator  password and provide a valid Turbonomic license key.</p>
-</div>
-<p><img alt="DeployingTurbonomicsOnOpenShift.png" src="../../images/SupportingSoftware/Turbonomics/DeployingTurbonomicsOnOpenShift.png" /></p>
-<div class="admonition info inline end">
-<p class="admonition-title">Info</p>
-<p>The default admin username for the Turbonomic Platform is:<br />
-<strong>administrator</strong></p>
-</div>
-<p>KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data from the Kubernetes environment to a Turbonomic Platform instance. Installing KubeTurbo will require you to provide the Turbonomic Platform topology processor URL and the administrator password.</p>
-<h2 id="turbonomic-platofrm">TURBONOMIC PLATOFRM<a class="headerlink" href="#turbonomic-platofrm" title="Permanent link">&para;</a></h2>
-<p><strong><em>REQUIRED ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_VERSION=8.5.4
-</code></pre></div>
-<h2 id="kubeturbo">KUBETURBO<a class="headerlink" href="#kubeturbo" title="Permanent link">&para;</a></h2>
-<p><strong><em>REQUIRED ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_URL=&quot;https://topology-processor-turbo.apps.yourdomain.net&quot;
-TURBO_KUBE_CLUSTER_NAME=&quot;gamma03&quot;
-</code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>The TURBO_PLATFORM_URL will be the "topology-processor" OpenShift ROUTE URL     (If using the Turbo Platform Deployed by Daffy). If the Turbo Platform was  deployed without DAFFY, the URL may be the nginx endpoint.</p>
-</div>
-<p><strong><em>OPTIONAL ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_USERNAME=&quot;administrator&quot;
-</code></pre></div>
-<h2 id="executing-scripts">Executing Scripts<a class="headerlink" href="#executing-scripts" title="Permanent link">&para;</a></h2>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Turbo Platform</label><label for="__tabbed_1_2">KubeTurbo </label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>The script to deploy the Turbonomic Platform is located in the following directory:</p>
-<p><strong>/data/daffy/turbo/platform</strong></p>
-<div class="highlight"><span class="filename">Deploy Turbo Platform</span><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">turbo</span><span class="o">/</span><span class="n">platform</span><span class="o">/</span><span class="n">build</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">prefix</span><span class="o">&gt;</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>The script to deploy KubeTurbo is located in the following directory:</p>
-<p><strong>/data/daffy/turbo/kubeturbo</strong></p>
-<div class="highlight"><span class="filename">Deploy KubeTurbo</span><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">turbo</span><span class="o">/</span><span class="n">kubeturbo</span><span class="o">/</span><span class="n">build</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">prefix</span><span class="o">&gt;</span>
-</code></pre></div>
-</div>
-</div>
 </div>
 
               
