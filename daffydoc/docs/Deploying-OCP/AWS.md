@@ -8,8 +8,7 @@ hide:
 
 #AWS Install
 
-<img src='../images/aws_new.jpeg'  align="top" width="200"
-    height="300" style = "float">
+<img src='../images/aws_new.jpeg'  align="top" width="200" height="300" style = "float">
 
 ##Platform Requirements
 
@@ -148,4 +147,3 @@ Once your cluster is fully deployed you can access the help menu which as a numb
 ```
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
- 

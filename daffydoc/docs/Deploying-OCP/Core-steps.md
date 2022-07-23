@@ -118,6 +118,7 @@ You are **NOW** ready to begin making the necessary edits to your /data/daffy/en
 <button onclick="location.href='../TechZone'" class="custom-btn btn-7">TechZone</button>
 <button onclick="location.href='../ROKS'" class="custom-btn btn-7">ROKS</button>
 <button onclick="location.href='../VSphere'" class="custom-btn btn-7">VSphere</button>
+<div></div>
 <button onclick="location.href='../Azure'" class="custom-btn btn-7">Azure</button>
 <button onclick="location.href='../AWS'" class="custom-btn btn-7">AWS</button>
 <button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
