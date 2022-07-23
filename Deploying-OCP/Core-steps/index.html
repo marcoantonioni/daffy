@@ -52,6 +52,8 @@
     
       <link rel="stylesheet" href="../../css/code.css">
     
+      <link rel="stylesheet" href="../../css/button.css">
+    
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -86,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#step-1-access-your-bastion-server" class="md-skip">
+        <a href="#step-1-bastion-server" class="md-skip">
           Skip to content
         </a>
       
@@ -473,8 +475,6 @@
         
           
         
-          
-        
       
       
         
@@ -547,8 +547,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-access-your-bastion-server" class="md-nav__link">
-    Step 1: Access your bastion Server
+  <a href="#step-1-bastion-server" class="md-nav__link">
+    Step 1: Bastion Server
   </a>
   
 </li>
@@ -561,15 +561,56 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-create-envsh" class="md-nav__link">
-    Step 3: Create -env.sh
+  <a href="#step-3-environment-file" class="md-nav__link">
+    Step 3: Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-install-openshift-on-your-selected-platform" class="md-nav__link">
-    Step 4: Install OpenShift on your selected platform
+  <a href="#step-4-dns-requirements" class="md-nav__link">
+    Step 4:  DNS Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4:  DNS Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vsphere-and-kvm-upi" class="md-nav__link">
+    vSphere and KVM UPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vsphere-ipi" class="md-nav__link">
+    vSphere IPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsazuregcp-ipi" class="md-nav__link">
+    AWS,Azure,GCP IPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#techzone-hccx-roks" class="md-nav__link">
+    TechZone, HCCX, ROKS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-install-openshift" class="md-nav__link">
+    Step 5: Install OpenShift
   </a>
   
 </li>
@@ -703,20 +744,6 @@
     <li class="md-nav__item">
       <a href="../Restricted-Network/" class="md-nav__link">
         Restricted Network
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../extra_features/" class="md-nav__link">
-        Extra Features
       </a>
     </li>
   
@@ -1276,8 +1303,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#step-1-access-your-bastion-server" class="md-nav__link">
-    Step 1: Access your bastion Server
+  <a href="#step-1-bastion-server" class="md-nav__link">
+    Step 1: Bastion Server
   </a>
   
 </li>
@@ -1290,15 +1317,56 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-create-envsh" class="md-nav__link">
-    Step 3: Create -env.sh
+  <a href="#step-3-environment-file" class="md-nav__link">
+    Step 3: Environment File
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-4-install-openshift-on-your-selected-platform" class="md-nav__link">
-    Step 4: Install OpenShift on your selected platform
+  <a href="#step-4-dns-requirements" class="md-nav__link">
+    Step 4:  DNS Requirements
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4:  DNS Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vsphere-and-kvm-upi" class="md-nav__link">
+    vSphere and KVM UPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vsphere-ipi" class="md-nav__link">
+    vSphere IPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#awsazuregcp-ipi" class="md-nav__link">
+    AWS,Azure,GCP IPI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#techzone-hccx-roks" class="md-nav__link">
+    TechZone, HCCX, ROKS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-install-openshift" class="md-nav__link">
+    Step 5: Install OpenShift
   </a>
   
 </li>
@@ -1322,8 +1390,7 @@
 <script>
   document.title = "Deploy OCP - Core Steps";
 </script>
-
-<h2 id="step-1-access-your-bastion-server">Step 1: Access your bastion Server<a class="headerlink" href="#step-1-access-your-bastion-server" title="Permanent link">&para;</a></h2>
+<h2 id="step-1-bastion-server">Step 1: Bastion Server<a class="headerlink" href="#step-1-bastion-server" title="Permanent link">&para;</a></h2>
 <p><button onclick="location.href='../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button></p>
 <p><b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b></p>
 <h2 id="step-2-install-daffy">Step 2: Install Daffy<a class="headerlink" href="#step-2-install-daffy" title="Permanent link">&para;</a></h2>
@@ -1332,7 +1399,7 @@
 </code></pre></div>
 <strong>Optional:</strong> You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file</p>
 <p><button onclick=" window.open('http://config.daffy-installer.com:1887/start', '_blank'); return false;" class="custom-btn btn-7">Online Configurator</button></p>
-<h2 id="step-3-create-envsh">Step 3: Create <environment-name>-env.sh<a class="headerlink" href="#step-3-create-envsh" title="Permanent link">&para;</a></h2>
+<h2 id="step-3-environment-file">Step 3: Environment File<a class="headerlink" href="#step-3-environment-file" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>DAFFY_UNIQUE_ID=&quot;&lt;YourID@ibm.com&gt;&quot;
 #This is required - Values POC/Demo/Enablement/HCCX/TechZone
 DAFFY_DEPLOYMENT_TYPE=&quot;&quot;
@@ -1353,46 +1420,46 @@ VM_TSHIRT_SIZE=&quot;Large&quot;
 <table>
 <thead>
 <tr>
-<th align="left">Name</th>
-<th align="left">Example Values</th>
-<th align="left">Description</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Example Values</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">DAFFY_DEPLOYMENT_TYPE</td>
-<td align="left">Enablement</td>
-<td align="left">POC/Demo/Enablement/HCCX/TechZone</td>
+<td style="text-align: left;">DAFFY_DEPLOYMENT_TYPE</td>
+<td style="text-align: left;">Enablement</td>
+<td style="text-align: left;">POC/Demo/Enablement/HCCX/TechZone</td>
 </tr>
 <tr>
-<td align="left">DAFFY_ISC_NUMBER</td>
-<td align="left">$ISC_NUMBER</td>
-<td align="left">Required if Demo or POC</td>
+<td style="text-align: left;">DAFFY_ISC_NUMBER</td>
+<td style="text-align: left;">$ISC_NUMBER</td>
+<td style="text-align: left;">Required if Demo or POC</td>
 </tr>
 <tr>
-<td align="left">DAFFY_CUSTOMER_NAME</td>
-<td align="left">Acme Shoes</td>
-<td align="left">Required if Demo or POC</td>
+<td style="text-align: left;">DAFFY_CUSTOMER_NAME</td>
+<td style="text-align: left;">Acme Shoes</td>
+<td style="text-align: left;">Required if Demo or POC</td>
 </tr>
 <tr>
-<td align="left">BASE_DOMAIN</td>
-<td align="left">acme-shoes.com</td>
-<td align="left">Is your DNS name your cluster will use</td>
+<td style="text-align: left;">BASE_DOMAIN</td>
+<td style="text-align: left;">acme-shoes.com</td>
+<td style="text-align: left;">Is your DNS name your cluster will use</td>
 </tr>
 <tr>
-<td align="left">CLUSTER_NAME</td>
-<td align="left">demo01</td>
-<td align="left">The name you want to give your OpenShift Cluster</td>
+<td style="text-align: left;">CLUSTER_NAME</td>
+<td style="text-align: left;">demo01</td>
+<td style="text-align: left;">The name you want to give your OpenShift Cluster</td>
 </tr>
 <tr>
-<td align="left">OCP_RELEASE</td>
-<td align="left">4.10.17</td>
-<td align="left">What version of OpenShift you want to Install</td>
+<td style="text-align: left;">OCP_RELEASE</td>
+<td style="text-align: left;">4.10.17</td>
+<td style="text-align: left;">What version of OpenShift you want to Install</td>
 </tr>
 <tr>
-<td align="left">VM_TSHIRT_SIZE</td>
-<td align="left">Large</td>
-<td align="left">How large you want the OpenShift Cluster to be. <strong>Min</strong> and <strong>Large</strong> Supported today</td>
+<td style="text-align: left;">VM_TSHIRT_SIZE</td>
+<td style="text-align: left;">Large</td>
+<td style="text-align: left;">How large you want the OpenShift Cluster to be. <strong>Min</strong> and <strong>Large</strong> Supported today</td>
 </tr>
 </tbody>
 </table>
@@ -1404,142 +1471,53 @@ VM_TSHIRT_SIZE=&quot;Large&quot;
 <p>&lt;<strong>platform</strong>&gt; = This is the sample file name for the platform you are planning to deploy your OCP Cluster.</p>
 <p>&lt;<strong>environment</strong>&gt; = This is the name of your environment file. As a best practice, we recommend you use the name of your cluster.</p>
 <ul>
-<li><strong>example:</strong>  cp aws-ipi-env.sh ../demo01-env.sh</li>
+<li><strong>example:</strong>  cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/demo01-env.sh</li>
 </ul>
-<p>This command will copy the sample file and place it in the /data/daffy/env directory (back one folder)</p>
-<div class="highlight"><pre><span></span><code>cp &lt;platform&gt;-env.sh ../&lt;environment&gt;-env.sh
+<p>This command will copy the sample file and place it in the /data/daffy/env directory and your new environment name will be <strong>demo01</strong></p>
+<div class="highlight"><pre><span></span><code>cp /data/daffy/env/samples/&lt;platform&gt;-env.sh /data/daffy/env/&lt;environment&gt;-env.sh
 </code></pre></div>
+<h2 id="step-4-dns-requirements">Step 4:  DNS Requirements<a class="headerlink" href="#step-4-dns-requirements" title="Permanent link">&para;</a></h2>
+<p>For openshift to be installed , you will need to setup your own DNS or use existing Domain/Subdomain. You can not use local host files or local resolver.</p>
+<h3 id="vsphere-and-kvm-upi"><strong>vSphere and KVM UPI</strong><a class="headerlink" href="#vsphere-and-kvm-upi" title="Permanent link">&para;</a></h3>
+<ol>
+<li>api.${CLUSTER}.${YOUR.DOMAIN.COM}          ---&gt;    ${YOUR.BASTION.IP}  </li>
+<li>api-int.${CLUSTER}.${YOUR.DOMAIN.COM}      ---&gt;    ${YOUR.BASTION.IP}  </li>
+<li>*.apps.${CLUSTER}.${YOUR.DOMAIN.COM}      ---&gt;    ${YOUR.BASTION.IP}  </li>
+</ol>
+<h3 id="vsphere-ipi"><strong>vSphere IPI</strong><a class="headerlink" href="#vsphere-ipi" title="Permanent link">&para;</a></h3>
+<ol>
+<li>api.${CLUSTER}.${YOUR.DOMAIN.COM}          ---&gt;    Unused Static IP #1   </li>
+<li>*.apps.${CLUSTER}.${YOUR.DOMAIN.COM}       ---&gt;    Unused Static IP #2   </li>
+</ol>
+<details class="info">
+<summary>Allow Daffy to crate DNS entries in IBM Cloud</summary>
+<p>If you want the daffy tool to create your above DNS entires in IBM Cloud, add the following to your ~/.profiles
+<div class="highlight"><pre><span></span><code>DNS_API_KEY=&quot;YOURDNSAPIKEY&quot;
+DNS_DOMAIN_ID=&quot;YOURDNSDOMAINID&quot;
+</code></pre></div></p>
+</details>
+<h3 id="awsazuregcp-ipi"><strong>AWS,Azure,GCP IPI</strong><a class="headerlink" href="#awsazuregcp-ipi" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Have/Create DNS domain/subdomain (<strong>More Detail for DNS on next steps</strong>)</li>
+<li>Transfer domain/subdomain to your provider(if not created there already)  <br />
+  a. Create hosted zone in provider    <br />
+  b. Use Name servers from hosted zone to transfer your domain/subdomain      </li>
+</ol>
+<h3 id="techzone-hccx-roks"><strong>TechZone, HCCX, ROKS</strong><a class="headerlink" href="#techzone-hccx-roks" title="Permanent link">&para;</a></h3>
+<ol>
+<li>You will not need DNS as they will provide for you</li>
+</ol>
+<h2 id="step-5-install-openshift">Step 5: Install OpenShift<a class="headerlink" href="#step-5-install-openshift" title="Permanent link">&para;</a></h2>
 <p>You are <strong>NOW</strong> ready to begin making the necessary edits to your /data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file for a deployment of OCP to a specific platform.</p>
-<h2 id="step-4-install-openshift-on-your-selected-platform">Step 4: Install OpenShift on your selected platform<a class="headerlink" href="#step-4-install-openshift-on-your-selected-platform" title="Permanent link">&para;</a></h2>
-<div style="text-align:left">
-
-<button onclick="location.href='../HCCX-gym'" class="custom-btn btn-7">IBM Gym</button>
-
-<button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
-
+<div style="text-align:center">
+<button onclick="location.href='../HCCX-gym'" class="custom-btn btn-7">HCCX Gym</button>
+<button onclick="location.href='../TechZone'" class="custom-btn btn-7">TechZone</button>
+<button onclick="location.href='../ROKS'" class="custom-btn btn-7">ROKS</button>
+<button onclick="location.href='../VSphere'" class="custom-btn btn-7">VSphere</button>
 <button onclick="location.href='../Azure'" class="custom-btn btn-7">Azure</button>
-
-<button onclick="location.href='../AWS'" class="custom-btn btn-7">
-AWS</button>
-<div></div>
-
-<button onclick="location.href='../VSphere'" class="custom-btn btn-7">
-VSphere</button>
-
-<button onclick="location.href='../ROKS'" class="custom-btn btn-7">
-ROKS</button>
-
-<button onclick="location.href='../TechZone'" class="custom-btn btn-7">
-TechZone</button>
-
+<button onclick="location.href='../AWS'" class="custom-btn btn-7">AWS</button>
+<button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
 </div>
-
-<!-- PUT ANY JS OR CSS BELOW HERE-->
-
-<style>
-
-.frame {
-  width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}
-button {
-  margin: 5px;
-}
-.custom-btn {
-  width: 200px;
-  height: 50px;
-  color: black;
-  border-radius: 10px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-
-/* 7 */
-.btn-7 {
-background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
-  line-height: 42px;
-  padding: 0;
-  border: none;
-}
-.btn-7 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-7:before,
-.btn-7:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-7:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-7:hover{
-  color: rgba(251,75,2,1);
-  background: transparent;
-}
-.btn-7:hover:before {
-  height: 100%;
-}
-.btn-7:hover:after {
-  width: 100%;
-}
-.btn-7 span:before,
-.btn-7 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-7 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-7 span:hover:before {
-  height: 100%;
-}
-.btn-7 span:hover:after {
-  width: 100%;
-}
-}
-</style>
 
               
             </article>
