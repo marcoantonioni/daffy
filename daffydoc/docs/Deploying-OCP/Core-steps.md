@@ -5,8 +5,7 @@ hide:
 <script>
   document.title = "Deploy OCP - Core Steps";
 </script>
-
-## Step 1: Access your bastion Server
+## Step 1: Bastion Server
 <button onclick="location.href='../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
 
   <b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b>
@@ -23,7 +22,7 @@ wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 da
 
 <button onclick=" window.open('http://config.daffy-installer.com:1887/start', '_blank'); return false;" class="custom-btn btn-7">Online Configurator</button>
 
-## Step 3: Create <environment-name>-env.sh
+## Step 3: Environment File
 
 ```
 DAFFY_UNIQUE_ID="<YourID@ibm.com>"
@@ -75,145 +74,51 @@ Replace these values for the next command.
 
 <**environment**> = This is the name of your environment file. As a best practice, we recommend you use the name of your cluster.
 
-- **example:**  cp aws-ipi-env.sh ../demo01-env.sh
+- **example:**  cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/demo01-env.sh
 
-This command will copy the sample file and place it in the /data/daffy/env directory (back one folder)
-
-```
-cp <platform>-env.sh ../<environment>-env.sh
+This command will copy the sample file and place it in the /data/daffy/env directory and your new environment name will be **demo01**
 
 ```
+cp /data/daffy/env/samples/<platform>-env.sh /data/daffy/env/<environment>-env.sh
 
+```
+## Step 4:  DNS Requirements
+
+For openshift to be installed , you will need to setup your own DNS or use existing Domain/Subdomain. You can not use local host files or local resolver.
+
+### **vSphere and KVM UPI**
+1. api.${CLUSTER}.${YOUR.DOMAIN.COM}          --->    ${YOUR.BASTION.IP}  
+2. api-int.${CLUSTER}.${YOUR.DOMAIN.COM}      --->    ${YOUR.BASTION.IP}  
+3.  *.apps.${CLUSTER}.${YOUR.DOMAIN.COM}      --->    ${YOUR.BASTION.IP}  
+
+### **vSphere IPI**
+1. api.${CLUSTER}.${YOUR.DOMAIN.COM}          --->    Unused Static IP #1   
+2. *.apps.${CLUSTER}.${YOUR.DOMAIN.COM}       --->    Unused Static IP #2   
+
+??? Info "Allow Daffy to crate DNS entries in IBM Cloud"
+    If you want the daffy tool to create your above DNS entires in IBM Cloud, add the following to your ~/.profiles
+    ```  
+    DNS_API_KEY="YOURDNSAPIKEY"
+    DNS_DOMAIN_ID="YOURDNSDOMAINID"
+    ```
+### **AWS,Azure,GCP IPI**
+
+1. Have/Create DNS domain/subdomain (**More Detail for DNS on next steps**)
+2. Transfer domain/subdomain to your provider(if not created there already)    
+  a. Create hosted zone in provider      
+  b. Use Name servers from hosted zone to transfer your domain/subdomain      
+
+### **TechZone, HCCX, ROKS**
+1. You will not need DNS as they will provide for you
+
+## Step 5: Install OpenShift
 You are **NOW** ready to begin making the necessary edits to your /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file for a deployment of OCP to a specific platform.
-
-## Step 4: Install OpenShift on your selected platform
-
-<div style="text-align:left">
-
-<button onclick="location.href='../HCCX-gym'" class="custom-btn btn-7">IBM Gym</button>
-
-<button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
-
+<div style="text-align:center">
+<button onclick="location.href='../HCCX-gym'" class="custom-btn btn-7">HCCX Gym</button>
+<button onclick="location.href='../TechZone'" class="custom-btn btn-7">TechZone</button>
+<button onclick="location.href='../ROKS'" class="custom-btn btn-7">ROKS</button>
+<button onclick="location.href='../VSphere'" class="custom-btn btn-7">VSphere</button>
 <button onclick="location.href='../Azure'" class="custom-btn btn-7">Azure</button>
-
-<button onclick="location.href='../AWS'" class="custom-btn btn-7">
-AWS</button>
-<div></div>
-
-<button onclick="location.href='../VSphere'" class="custom-btn btn-7">
-VSphere</button>
-
-<button onclick="location.href='../ROKS'" class="custom-btn btn-7">
-ROKS</button>
-
-<button onclick="location.href='../TechZone'" class="custom-btn btn-7">
-TechZone</button>
-
+<button onclick="location.href='../AWS'" class="custom-btn btn-7">AWS</button>
+<button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
 </div>
-
-<!-- PUT ANY JS OR CSS BELOW HERE-->
-
-<style>
-
-.frame {
-  width: 90%;
-  margin: 40px auto;
-  text-align: center;
-}
-button {
-  margin: 5px;
-}
-.custom-btn {
-  width: 200px;
-  height: 50px;
-  color: black;
-  border-radius: 10px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-
-/* 7 */
-.btn-7 {
-background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
-  line-height: 42px;
-  padding: 0;
-  border: none;
-}
-.btn-7 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-7:before,
-.btn-7:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-7:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-7:hover{
-  color: rgba(251,75,2,1);
-  background: transparent;
-}
-.btn-7:hover:before {
-  height: 100%;
-}
-.btn-7:hover:after {
-  width: 100%;
-}
-.btn-7 span:before,
-.btn-7 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: rgba(251,75,2,1);
-  box-shadow:
-   -7px -7px 20px 0px rgba(255,255,255,.9),
-   -4px -4px 5px 0px rgba(255,255,255,.9),
-   7px 7px 20px 0px rgba(0,0,0,.2),
-   4px 4px 5px 0px rgba(0,0,0,.3);
-  transition: all 0.3s ease;
-}
-.btn-7 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-7 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-7 span:hover:before {
-  height: 100%;
-}
-.btn-7 span:hover:after {
-  width: 100%;
-}
-}
-</style>
