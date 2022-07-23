@@ -2,7 +2,9 @@
   document.title = "Supporting Software - Turbo";
 </script>
 # Turbonomic
-
+!!! Warning   
+      Early features - Still in testing mode, may not always work.  User be aware!!!
+      
 !!! attention
 
 	You will be required to provide a license key to fully enable the 	Turbonomic Platform. When the platform installation is complete, you will 	be presented with a URL where you will need to configure the administrator 	password and provide a valid Turbonomic license key.
