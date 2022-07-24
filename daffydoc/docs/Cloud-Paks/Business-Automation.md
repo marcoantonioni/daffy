@@ -60,7 +60,7 @@ Valid Options:
 
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
-```
+```R
 CP4BA_VERSION="22.0.1"
 #CP4BA_IFIX=
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
@@ -79,10 +79,8 @@ samples        | Depends on sample        | 21.0.3 or 21.0.1
 
 Run the following command to deploy the Cloud Pak for Business Automation.
 
-```
-
+```shell
 /data/daffy/cp4ba/build.sh <ENVIRONMENT_NAME>
-
 ```
 
 When this step is complete, approx 10 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service  is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consist of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:
@@ -166,7 +164,7 @@ Valid Options:
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
-```
+```R
 
 CP4BA_VERSION="22.0.1"
 
@@ -193,7 +191,6 @@ Be aware, this step is async, meaning that the daffy engine will deploy the serv
 Run the following command to deploy the Cloud Pak for Business Automation services.
 
 ```
-
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME>
 ```
 
@@ -215,7 +212,6 @@ The service can take a few hours to complete, based on which one you chose to de
 Run the following commands to check the Cloud Pak for Business Automation to see what command flags you can run
 
 ```
-
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --help
 ```
 
@@ -223,21 +219,18 @@ The following command will give you the status of all components for the service
 
 
 ```
-
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
 ```
 
 If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command.
 
 ```
-
 watch -c /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
 ```
 
 To find out the connection info to your new service, you can run the console flag to get user names, passwords and URLs to connect to.
 
 ```
-
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole
 ```
 

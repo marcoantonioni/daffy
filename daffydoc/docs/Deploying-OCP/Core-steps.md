@@ -14,7 +14,7 @@ hide:
 
 Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts.
 
-```
+```console
 wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
 
 ```
@@ -24,24 +24,29 @@ wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 da
 
 ## Step 3: Environment File
 
-```
-DAFFY_UNIQUE_ID="<YourID@ibm.com>"
+```R
+#Daffy Values
+#########################
+DAFFY_UNIQUE_ID="<YourID@email.com>"
 #This is required - Values POC/Demo/Enablement/HCCX/TechZone
-DAFFY_DEPLOYMENT_TYPE=""
+DAFFY_DEPLOYMENT_TYPE="PickValueFromAbove"
 #If POC/Demo, these are required.
 #ISC number must be 18 characters
 #DAFFY_ISC_NUMBER="0045h00000w1nvKAAG"
 #DAFFY_CUSTOMER_NAME="Acme Customer"
 
+#Core Values
+#########################
 BASE_DOMAIN="<YOUR.BASEDOMAIN.COM>"
 CLUSTER_NAME="<ENVIRONMENT_NAME>"
 OCP_RELEASE="4.8.36"
 VM_TSHIRT_SIZE="Large"
 ```
 
+
 This file is where you store values that will define your environment and Daffy will use to build your environment.
 
-Place your file in following folder with your environment name like the folling :
+Place your file in following folder with your environment name like the following :
 
 /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh
 
@@ -64,7 +69,7 @@ VM_TSHIRT_SIZE | Large | How large you want the OpenShift Cluster to be. **Min**
 If **MSP** type install like ROKS, **BASE_DOMAIN** is not needed.
 
 **Optionally:** As a starting point, you can copy a sample environment file from the samples folder located here:  /data/daffy/env/samples/<platform>-env.sh
-```
+```console
 cd /data/daffy/env/samples
 ```
 
@@ -78,7 +83,7 @@ Replace these values for the next command.
 
 This command will copy the sample file and place it in the /data/daffy/env directory and your new environment name will be **demo01**
 
-```
+```console
 cp /data/daffy/env/samples/<platform>-env.sh /data/daffy/env/<environment>-env.sh
 
 ```
