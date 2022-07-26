@@ -57,7 +57,7 @@ When this step is complete, approx 60 minutes depending on your environment, you
 
 Deploying the Cloud Pak for Data requires some entries to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
-```
+```R
 CP4D_ENABLE_SERVICE_WKS=<true|false>
 
 CP4D_ENABLE_SERVICE_WKC=<true|false>

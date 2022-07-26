@@ -26,8 +26,7 @@ Deploying the Cloud Pak for Watson AIOps only requires **one** entry to your env
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
-```
-
+```R
 CP4WAIOPS_VERSION=3.3.1
 ```
 
@@ -61,7 +60,7 @@ The Event Manager for WatsonAIOps is an optional service deployment, that can be
 
 Here is the flag that will need to be set to enable the deployment of Event Manager with Watson AIOps.
 
-```
+```R
 CP4WAIOPS_DEPLOY_EMGR=<true|false>
 ```
 ## Step 3a: Status

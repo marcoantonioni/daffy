@@ -25,8 +25,7 @@ Deploying WebSphere Automation only requires **one** entry to your environment f
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
-```
-
+```R
 CPWSA_VERSION=1.3
 ```
 
