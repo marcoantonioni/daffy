@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1414,10 +1414,10 @@ To find a list of regions, you can refer to this:</p>
 <p><strong>GCP_REGION</strong>= <a href="https://cloud.google.com/compute/docs/regions-zones" target="_blank"><AnyValidGCPRegion></a></p>
 <p>Optional:
 <strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
-<div class="highlight"><pre><span></span><code>OCP_INSTALL_TYPE=&quot;gcp-ipi&quot;
-GCP_PROJECT_ID=&quot;&lt;YourGCPProjectID&gt;&quot;       
-GCP_REGION=&quot;&lt;AnyValidGCPRegion&gt;&quot;
-#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
+<div class="highlight"><pre><span></span><code><span class="n">OCP_INSTALL_TYPE</span><span class="o">=</span><span class="s">&quot;gcp-ipi&quot;</span>
+<span class="n">GCP_PROJECT_ID</span><span class="o">=</span><span class="s">&quot;&lt;YourGCPProjectID&gt;&quot;</span>       
+<span class="n">GCP_REGION</span><span class="o">=</span><span class="s">&quot;&lt;AnyValidGCPRegion&gt;&quot;</span>
+<span class="c1">#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true</span>
 </code></pre></div>
 <p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
 <p>For <strong>GCP</strong>, you need to download your Service Key as well.  Save this to your home path:  <strong>~/.gcp/osServiceAccount.json</strong></p>
@@ -1430,11 +1430,11 @@ GCP_REGION=&quot;&lt;AnyValidGCPRegion&gt;&quot;
 <p><img alt="GCP6.png" src="../../images/DeployingOCP/GCP/GCP6.png" /></p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
 <p><strong>Note:</strong> <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file</p>
-<p><div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help
+<p><div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help</span>
 </code></pre></div>
  <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7"> Installing Cloud Paks</button></p>
 
@@ -1526,10 +1526,10 @@ GCP_REGION=&quot;&lt;AnyValidGCPRegion&gt;&quot;
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>

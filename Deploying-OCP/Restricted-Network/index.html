@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1710,11 +1710,11 @@ function showSlides(n) {
 <h3 id="proxy-install">Proxy install<a class="headerlink" href="#proxy-install" title="Permanent link">&para;</a></h3>
 <p>OpenShift environments can deny direct access to the internet and instead have an HTTP or HTTPS proxy available. This can be done during an cluster installation. This would allow the cluster to be in a restricted network but gain access to public registries via proxy server.  The bastion and cluster you build must also have direct access to the proxy server. This proxy server can then control what access is granted via whitelist.</p>
 <p>If you are doing proxy install, you only need one bastion and no jump box.  This bastion must have access to the restricted network and the proxy server as well.</p>
-<div class="highlight"><pre><span></span><code>#Airgap - Proxy Install#
-######################################################################################
-OCP_PROXY_HTTP_PROXY=
-OCP_PROXY_HTTPS_PROXY=
-OCP_PROXY_NO_PROXY=
+<div class="highlight"><pre><span></span><code><span class="c1">#Airgap - Proxy Install#</span>
+<span class="c1">######################################################################################</span>
+<span class="n">OCP_PROXY_HTTP_PROXY</span><span class="o">=</span>
+<span class="n">OCP_PROXY_HTTPS_PROXY</span><span class="o">=</span>
+<span class="n">OCP_PROXY_NO_PROXY</span><span class="o">=</span>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -1746,13 +1746,13 @@ To do this we will use the following terms:</p>
 <strong>LOCAL_REGISTRY_IP=</strong>This is your jump box IP address  <br />
 <strong>LOCAL_AIRGAP_REGISTRY_DNS_NAME=</strong>This is your restricted network bastion box DNS name. If you not have DNS, you can also put the ip    address  <br />
 <strong>LOCAL_AIRGAP_REGISTRY_IP=</strong>This is your restricted network bastion box IP address   </p>
-<div class="highlight"><pre><span></span><code>#Local Registry Info
-###############################
-LOCAL_REGISTRY_ENABLED=&lt;true|false&gt;
-LOCAL_REGISTRY_DNS_NAME=
-LOCAL_REGISTRY_IP=
-LOCAL_AIRGAP_REGISTRY_DNS_NAME=
-LOCAL_AIRGAP_REGISTRY_IP=
+<div class="highlight"><pre><span></span><code><span class="c1">#Local Registry Info</span>
+<span class="c1">###############################</span>
+<span class="n">LOCAL_REGISTRY_ENABLED</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">LOCAL_REGISTRY_DNS_NAME</span><span class="o">=</span>
+<span class="n">LOCAL_REGISTRY_IP</span><span class="o">=</span>
+<span class="n">LOCAL_AIRGAP_REGISTRY_DNS_NAME</span><span class="o">=</span>
+<span class="n">LOCAL_AIRGAP_REGISTRY_IP</span><span class="o">=</span>
 </code></pre></div>
 <blockquote>
 <h5 id="overrides">Overrides<a class="headerlink" href="#overrides" title="Permanent link">&para;</a></h5>
@@ -1760,41 +1760,41 @@ LOCAL_AIRGAP_REGISTRY_IP=
 </blockquote>
 <details>
 <summary>Click to expand!</summary>
-<div class="highlight"><pre><span></span><code>#Catalogs to mirror
-####################
-OCP_CATALOG_MIRRORS=&quot;compliance-operator,container-security-operator,file-integrity-operator,local-storage-operator,ocs-operator&quot;
+<div class="highlight"><pre><span></span><code><span class="c1">#Catalogs to mirror</span>
+<span class="c1">####################</span>
+<span class="n">OCP_CATALOG_MIRRORS</span><span class="o">=</span><span class="s">&quot;compliance-operator,container-security-operator,file-integrity-operator,local-storage-operator,ocs-operator&quot;</span>
 
-#Directory Info
-####################
-OCP_REGISTRY_ROOT=&quot;/mirror/registry&quot;
-OCP_AIRGAP_EXPORT=&quot;${DATA_DIR}/export/airgap&quot;
-OCP_AIRGAP_IMPORT=&quot;${DATA_DIR}/import/airgap&quot;
-OCP_AIRGAP_EXPORT_FREE_DISK_SIZE_NEEDED=&quot;100&quot;
-OCP_AIRGAP_IMPORT_FREE_DISK_SIZE_NEEDED=&quot;100&quot;
+<span class="c1">#Directory Info</span>
+<span class="c1">####################</span>
+<span class="n">OCP_REGISTRY_ROOT</span><span class="o">=</span><span class="s">&quot;/mirror/registry&quot;</span>
+<span class="n">OCP_AIRGAP_EXPORT</span><span class="o">=</span><span class="s">&quot;${DATA_DIR}/export/airgap&quot;</span>
+<span class="n">OCP_AIRGAP_IMPORT</span><span class="o">=</span><span class="s">&quot;${DATA_DIR}/import/airgap&quot;</span>
+<span class="n">OCP_AIRGAP_EXPORT_FREE_DISK_SIZE_NEEDED</span><span class="o">=</span><span class="s">&quot;100&quot;</span>
+<span class="n">OCP_AIRGAP_IMPORT_FREE_DISK_SIZE_NEEDED</span><span class="o">=</span><span class="s">&quot;100&quot;</span>
 
-#Cert Info
-####################
-CA_CERT_OU=&quot;ca.${CLUSTER_NAME}.${BASE_DOMAIN}&quot;
-LOCAL_REGISTRY_CERTS_FOLDER=&quot;${DATA_DIR}/${PROJECT_NAME}/certs&quot;
+<span class="c1">#Cert Info</span>
+<span class="c1">####################</span>
+<span class="n">CA_CERT_OU</span><span class="o">=</span><span class="s">&quot;ca.${CLUSTER_NAME}.${BASE_DOMAIN}&quot;</span>
+<span class="n">LOCAL_REGISTRY_CERTS_FOLDER</span><span class="o">=</span><span class="s">&quot;${DATA_DIR}/${PROJECT_NAME}/certs&quot;</span>
 
-#Registry Info
-####################
-LOCAL_REGISTRY_PORT=&quot;8443&quot;
-LOCAL_OCP_REPOSITORY_NAME=&quot;ocp4/openshift4&quot;
-LOCAL_OLM_MIRROR_REPOSITORY_NAME=&quot;olm-mirror&quot;
+<span class="c1">#Registry Info</span>
+<span class="c1">####################</span>
+<span class="n">LOCAL_REGISTRY_PORT</span><span class="o">=</span><span class="s">&quot;8443&quot;</span>
+<span class="n">LOCAL_OCP_REPOSITORY_NAME</span><span class="o">=</span><span class="s">&quot;ocp4/openshift4&quot;</span>
+<span class="n">LOCAL_OLM_MIRROR_REPOSITORY_NAME</span><span class="o">=</span><span class="s">&quot;olm-mirror&quot;</span>
 </code></pre></div>
 </details>
 
 <h4 id="mirror-locally">Mirror locally<a class="headerlink" href="#mirror-locally" title="Permanent link">&para;</a></h4>
 <p>From your jump box run the following command:
-<div class="highlight"><pre><span></span><code>/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div></p>
 <h4 id="export-files">Export Files<a class="headerlink" href="#export-files" title="Permanent link">&para;</a></h4>
 <p>After the first command runs, it will display all the files that it created and you will now need to move them to your bastion box in the restricted network. You can do this via portable USB disk, scp, etc.  You just need to move these files any way you can to your restricted network bastion.</p>
 <h4 id="move-files">Move Files<a class="headerlink" href="#move-files" title="Permanent link">&para;</a></h4>
 <p>In our example we will move via scp because our jump box has access to the bastion.  This could be via firewall or it has dual NIC cards (Public Nic/Private Nic)</p>
-<div class="highlight"><pre><span></span><code>ssh &lt;BASTION-IP&gt; mkdir -p /data/import/airgap
-scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap
+<div class="highlight"><pre><span></span><code><span class="go">ssh &lt;BASTION-IP&gt; mkdir -p /data/import/airgap</span>
+<span class="go">scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap</span>
 </code></pre></div>
 <h4 id="prepare-bastion">Prepare Bastion<a class="headerlink" href="#prepare-bastion" title="Permanent link">&para;</a></h4>
 <p>Once all the files are on the bastion in the restricted network, you can run the script that was build from the previous step and copied over.  This will untar all files, install all command line tools and also install daffy locally.</p>
@@ -1802,15 +1802,15 @@ scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap
 <p class="admonition-title">Info</p>
 <p>It does not mirror the registry or build the local registry, but gets the bastion ready for that next step</p>
 </div>
-<div class="highlight"><pre><span></span><code>/data/import/airgap/airgap-prep.sh
+<div class="highlight"><pre><span></span><code><span class="go">/data/import/airgap/airgap-prep.sh</span>
 </code></pre></div>
 <h4 id="build-local-mirror">Build Local Mirror<a class="headerlink" href="#build-local-mirror" title="Permanent link">&para;</a></h4>
 <p>From your bastion box run the following command:
-<div class="highlight"><pre><span></span><code>/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/registry/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div></p>
 <h2 id="install-cluster">Install Cluster<a class="headerlink" href="#install-cluster" title="Permanent link">&para;</a></h2>
 <p>No you would just follow the normal steps to build your OpenShift registry.  </p>
-<div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div>
 <h2 id="demo-video">Demo Video<a class="headerlink" href="#demo-video" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
@@ -1918,10 +1918,10 @@ scp /data/export/airgap/* &lt;BASTION-IP&gt;:/data/import/airgap
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>
