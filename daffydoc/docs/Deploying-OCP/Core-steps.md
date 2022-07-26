@@ -102,7 +102,7 @@ For openshift to be installed , you will need to setup your own DNS or use exist
 
 ??? Info "Allow Daffy to crate DNS entries in IBM Cloud"
     If you want the daffy tool to create your above DNS entires in IBM Cloud, add the following to your ~/.profiles
-    ```  
+    ```R  
     DNS_API_KEY="YOURDNSAPIKEY"
     DNS_DOMAIN_ID="YOURDNSDOMAINID"
     ```

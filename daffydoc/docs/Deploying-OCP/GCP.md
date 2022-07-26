@@ -126,7 +126,7 @@ cp /data/daffy/env/samples/**gcp-ipi-env.sh** /data/daffy/env/<**ENVIRONMENT_NAM
 Optional:
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
-```
+```R
 OCP_INSTALL_TYPE="gcp-ipi"
 GCP_PROJECT_ID="<YourGCPProjectID>"       
 GCP_REGION="<AnyValidGCPRegion>"
@@ -151,7 +151,7 @@ For **GCP**, you need to download your Service Key as well.  Save this to your h
 
 To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory
 
-```
+```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 
@@ -159,7 +159,7 @@ Once your cluster is fully deployed you can access the help menu which has a num
 
 **Note:** <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
 
-```
+```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
  <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7"> Installing Cloud Paks</button>

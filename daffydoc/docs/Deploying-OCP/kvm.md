@@ -70,14 +70,14 @@ If you plan to install a cloud pak and/or need storage, you need to set the flag
 
 To deploy your OCP cluster to Kernel-based Virtual Machine, run the build.sh script from the /data/daffy/ocp directory
 
-```
+```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 
 Once your cluster is fully deployed you can access the help menu which has a number of options.
 
 Note: <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
-```
+```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
 

@@ -110,7 +110,7 @@ Below are the AWS specific environment variables that must be defined in the /da
 **Note**: You can look in the samples directory on your bastion for example of **AWS** install : /data/daffy/env/samples/**aws-ipi-env.sh**
 
 You can run this command to build your **new** file from the sample.
-```
+```R
 cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env.sh
 ```
 **Valid Options:**
@@ -119,7 +119,7 @@ cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env
 - **AWS_REGION**=AWS-REGION
 - **AWS_ACCESS_KEY_ID**=AWS-ACCESS_KEY-ID
 
-```
+```R
 OCP_INSTALL_TYPE="aws-ipi"
 AWS_REGION="<AWS-REGION>"
 AWS_ACCESS_KEY_ID="<AWS-ACCESS_KEY-ID>"
@@ -135,14 +135,14 @@ If you plan to install a cloud pak and/or need storage, you need to set the flag
 
 To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.
 
-```
+```R
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 
 Once your cluster is fully deployed you can access the help menu which as a number of options.
 
 **Note:** <**environment**> is the first part of your name that you used for the <environment>-env.sh file
-```
+```R
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">

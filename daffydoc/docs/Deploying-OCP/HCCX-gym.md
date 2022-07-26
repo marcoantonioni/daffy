@@ -46,26 +46,26 @@ ssh admin@{Server IP address} -p 32222
 ### Login as root
 After logging in as admin, switch to root user
 
-```
+```console
   sudo su -
 ```
 
 !!! Warning  
       Before you can start with daffy, you must registry your RedHat Enterprise Linux(RHEL)( [Here](https://access.redhat.com/solutions/253273){target=_blank})
-      ```
+      ```console
       subscription-manager register --username <username> --password <password> --auto-attach
       ```
 
 ### Install latest daffy
 
-```
+```console
 curl  http://get.daffy-installer.com/download-scripts/daffy-init.sh | bash
 
 ```
 
 ### Copy environment file
 Next you will copy the prepopulated env file in your home directory to your daffy env directory
-```
+```console
 cp ~/vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh
 ```
 You may make any changes needed in this file, add cloud paks, change sizing, etc.
@@ -73,7 +73,7 @@ You may make any changes needed in this file, add cloud paks, change sizing, etc
 ## Deploying
 You can now run the daffy process
 
-```
+```console
 /data/daffy/build.sh  {env-name}
 
 ```

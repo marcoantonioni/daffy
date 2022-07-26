@@ -66,7 +66,7 @@ Deploying the OpenShift on Azure only requires three entries to your **existing*
 **Note:** You can look in the samples directory on your bastion for example of **Azure** install : /data/daffy/env/samples/**azure-ipi-env.sh**
 
 You can copy the sample file to build your new environment  file.
-```
+```R
 cp /data/daffy/env/samples/azure-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env.sh
 ```
 
@@ -91,7 +91,7 @@ Optional:
 
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
-```
+```R
 OCP_INSTALL_TYPE="azure-ipi"
 AZURE_SUBSCRIPTION_ID="999999-999999-999999-99999"
 AZURE_CLIENT_ID="999999-999999-999999-99999"
@@ -108,7 +108,7 @@ If you plan to install a cloud pak and/or need storage, you need to set the flag
 ## Execution
 To deploy your OCP cluster to **Azure** , run the build.sh script from the /data/daffy/ocp directory
 
-```
+```R
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 

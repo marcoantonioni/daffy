@@ -73,7 +73,7 @@ Note: You can look in the samples directory on your bastion for example of ROKS 
 
 
 You can copy the sample file to build your new environment  file.
-```
+```console
 cp /data/daffy/env/samples/roks-msp-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env.sh
 ```
 Valid Options:
@@ -86,7 +86,7 @@ Optional:
 
 ROKS_ZONE=dal13
 
-```
+```R
 OCP_INSTALL_TYPE="roks-msp"
 #ROKS_ZONE="dal13"
 
@@ -94,14 +94,14 @@ OCP_INSTALL_TYPE="roks-msp"
 ## Execution
 
 To deploy your OCP cluster to ROKS, run the build.sh script from the /data/daffy/ocp directory. The installer will ask you a number of questions to login to ibmcloud via the CLI. When prompted with a region, select any but stay within your geography. For instance, us-south. This is used to talk with IBM Cloud via the right API endpoint.
-```
+```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 Once your cluster is fully deployed you can access the help menu which has a number of options.
 
 <b> Note: </b> <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
 
-```
+```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
 
