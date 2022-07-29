@@ -57,7 +57,7 @@ hide:
         Fit for purpose
       </div>
       <div class='column'>
-        Using Daffy IBMers, business partners and customers are onboarded to IBM Cloud Pak's in less than a few hours, removing challenges that previously existing setting up OpenShift.
+        Using Daffy IBMers, business partners and customers are onboarded to IBM Cloud Paks in less than a few hours, removing challenges that previously existed when setting up OpenShift.
       </div>
     </div>
   </div>
@@ -66,4 +66,4 @@ hide:
 </div>
 
 !!! Warning "Important"
-    ###Daffy scripts were designed to help pre-sales(CTP/BP) with POC deployments. If you choose to use this in a production environment, you may, but it will be on the installer for support of that installation.  IBM can not give support for daffy itself. As it relates to OpenShift and Cloud pak deployments, you can open ticket with IBM Support. The installer/business partner would need to verify  the environment that it meets all HA , best practices, management aspects and security requirements. As this is a scripting engine, you have full access to the logic/code and have ability to make any changes you feel fit. If you do make any changes to the daffy engine outside of your cluster environment file, you are on your own, we will not be able to assistant with that environment.  Please Refer to the Production Deployment Guides for the recommended approach when advising customers on how to deploy a Production Ready Environment.
+    ###Daffy scripts were designed to help pre-sales(CTP/BP) with POC deployments. If you choose to use this in a production environment, you may, but it will be the installer's responsibility to support that installation. IBM can not give support for Daffy itself. As it relates to OpenShift and Cloud pak deployments, you can open a ticket with IBM Support. The installer/business partner would need to verify that the environment meets all HA, best practices, management aspects, and security requirements. As this is a scripting engine, you have full access to the logic/code and have ability to make any changes you feel fit. If you do make any changes to the Daffy engine outside of your cluster environment file, you are on your own, and we will not be able to assist with that environment. Please refer to the Production Deployment Guides for the recommended approach when advising customers on how to deploy a Production Ready Environment.
