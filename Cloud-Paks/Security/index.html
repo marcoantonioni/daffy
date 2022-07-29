@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.3">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -813,20 +813,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#step-3-deploy-services" class="md-nav__link">
-    Step 3: Deploy Services
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3a-status" class="md-nav__link">
-    Step 3a: Status
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1283,20 +1269,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#step-3-deploy-services" class="md-nav__link">
-    Step 3: Deploy Services
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#step-3a-status" class="md-nav__link">
-    Step 3a: Status
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1315,17 +1287,16 @@
   document.title = "Cloud Pak - Security";
 </script>
 <h1 id="cloud-pak-for-security" style="text-align: left;">Cloud Pak for Security<a class="headerlink" href="#cloud-pak-for-security" title="Permanent link">&para;</a></h1>
-<p><img src='../images/security.png'
+<p><img src='../images/Security.png'
        style="width:100px;height:100px;"/></p>
-<div class="admonition info">
-<p class="admonition-title">Content coming</p>
-</div>
-<p>At this point, you have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
-<p>1) The Cloud Pak info that you wish to install</p>
-<p>2) The services that you wish to install on the Cloud Pak</p>
+<p>At this point, you have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of the Cloud Pak info that you wish to install</p>
 <h2 id="step-2-deploy-cloud-pak">Step 2: Deploy Cloud Pak<a class="headerlink" href="#step-2-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
-<h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
-<h2 id="step-3a-status">Step 3a: Status<a class="headerlink" href="#step-3a-status" title="Permanent link">&para;</a></h2>
+<p>Deploying the Cloud Pak for Security only requires one entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
+<p><strong>CP4SEC_VERSION=<version></strong></p>
+<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
+<div class="highlight"><pre><span></span><code><span class="n">CP4SEC_VERSION</span><span class="o">=</span><span class="s">&quot;1.10&quot;</span>
+</code></pre></div>
+<p>With this one value, the daffy engine will be able to install the version of Cloud Pak for Security.</p>
 
               
             </article>
@@ -1415,10 +1386,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>
