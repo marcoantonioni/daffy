@@ -8,11 +8,11 @@ hide:
 ## Step 1: Bastion Server
 <button onclick="location.href='../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
 
-  <b>*** If  you do not have a bastion, above button/link will walk you thru the process to create a Linux bastion server.</b>
+  <b>*** If  you do not have a bastion, above button/link will walk you through the process to create a Linux bastion server.</b>
 
 ## Step 2: Install Daffy
 
-Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts.
+Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts:
 
 ```console
 wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
@@ -46,13 +46,13 @@ VM_TSHIRT_SIZE="Large"
 
 This file is where you store values that will define your environment and Daffy will use to build your environment.
 
-Place your file in following folder with your environment name like the following :
+Place your file in the following folder with your environment name in the following formatting:
 
+```console
 /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh
+```
 
-
-
-Best practices is <**ENVIRONMENT_NAME**> is your cluster name that will be used and you set in your file, but not required.
+Best practice is to set <**ENVIRONMENT_NAME**> as your cluster name, but that is not required.
 
 
 
@@ -68,20 +68,20 @@ VM_TSHIRT_SIZE | Large | How large you want the OpenShift Cluster to be. **Min**
 
 If **MSP** type install like ROKS, **BASE_DOMAIN** is not needed.
 
-**Optionally:** As a starting point, you can copy a sample environment file from the samples folder located here:  /data/daffy/env/samples/<platform>-env.sh
+**Optionally:** as a starting point, you can copy a sample environment file from the samples folder located here:  /data/daffy/env/samples/&lt;platform&gt;-env.sh
 ```console
 cd /data/daffy/env/samples
 ```
 
-Replace these values for the next command.
+Replace these values for the next command:
 
-<**platform**> = This is the sample file name for the platform you are planning to deploy your OCP Cluster.
+- <**platform**> = the sample file name for the platform you are planning to deploy your OCP Cluster.
 
-<**environment**> = This is the name of your environment file. As a best practice, we recommend you use the name of your cluster.
+- <**environment**> = the name of your environment file. As a best practice, we recommend you use the name of your cluster.
 
-- **example:**  cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/demo01-env.sh
+**Example:**  cp /data/daffy/env/samples/aws-ipi-env.sh /data/daffy/env/demo01-env.sh
 
-This command will copy the sample file and place it in the /data/daffy/env directory and your new environment name will be **demo01**
+This command will copy the sample file and place it in the /data/daffy/env directory, and your new environment name will be **demo01**
 
 ```console
 cp /data/daffy/env/samples/<platform>-env.sh /data/daffy/env/<environment>-env.sh
@@ -89,7 +89,7 @@ cp /data/daffy/env/samples/<platform>-env.sh /data/daffy/env/<environment>-env.s
 ```
 ## Step 4:  DNS Requirements
 
-For openshift to be installed , you will need to setup your own DNS or use existing Domain/Subdomain. You can not use local host files or local resolver.
+For OpenShift to be installed, you will need to setup your own DNS or use existing domain/subdomain. You can not use local host files or local resolver.
 
 ### **vSphere and KVM UPI**
 1. api.${CLUSTER}.${YOUR.DOMAIN.COM}          --->    ${YOUR.BASTION.IP}  
@@ -106,12 +106,12 @@ For openshift to be installed , you will need to setup your own DNS or use exist
     DNS_API_KEY="YOURDNSAPIKEY"
     DNS_DOMAIN_ID="YOURDNSDOMAINID"
     ```
-### **AWS,Azure,GCP IPI**
+### **AWS, Azure, GCP IPI**
 
 1. Have/Create DNS domain/subdomain (**More Detail for DNS on next steps**)
-2. Transfer domain/subdomain to your provider(if not created there already)    
+2. Transfer domain/subdomain to your provider (if not created there already)    
   a. Create hosted zone in provider      
-  b. Use Name servers from hosted zone to transfer your domain/subdomain      
+  b. Use name servers from hosted zone to transfer your domain/subdomain      
 
 ### **TechZone, HCCX, ROKS**
 1. You will not need DNS as they will provide for you
