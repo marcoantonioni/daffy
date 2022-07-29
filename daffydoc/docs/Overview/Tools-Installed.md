@@ -47,8 +47,7 @@ tr:nth-child(even) {
 </style>
 </head>
 
-Thought out the Daffy process,  it will install all support tools it would need. Depending on the step of daffy you are running and feature it uses, the tools are different.
-If the tool is present already and correct version, it will not be installed.
+Throughout the Daffy process, it will install all support tools it would need. Depending on the step of Daffy you are running and feature it is using, the tools will be different. If the tool is present already and the correct version, it will not be installed.
 
 <div class="row">
   <div class="column">Core
