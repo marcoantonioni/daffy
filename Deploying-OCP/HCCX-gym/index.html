@@ -1441,7 +1441,7 @@
 <p><img src='../images/gym.png'   align="top" width="200"  height="300" style = "float"></p>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
 <p>The OpenShift Gym is a learning environment offering individuals the ability to deploy virtual machines to support installation of IBM technologies such as OpenShift and Cloud Paks.</p>
-<p>The HCCX Gym has documentation on using daffy, below are some shortcuts for their instructions. Its same basic instructions based on VSphere, but they have some pre-built steps for Gym Members.</p>
+<p>The HCCX Gym has documentation on using Daffy, below are some shortcuts for their instructions. It's the same basic instructions based on VSphere, but they have some pre-built steps for Gym Members.</p>
 <ol>
 <li>
 <p><a href="https://github.ibm.com/Kerry-Malland/openshift-gym-documentation/blob/main/README.md" target="_blank">Main Gym Page</a></p>
@@ -1456,14 +1456,14 @@
 <p>For internal IBM use only, Links may only work while in the IBM Network</p>
 </div>
 <ol>
-<li>A <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym" target="_blank">Gym Membership</a> request can be made by filling out the form.</li>
-<li>An active <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/tecnet" target="_blank">TECNet VPN ID</a> is required to access and use the Gym. </li>
+<li>A <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/openshift-gym" target="_blank">Gym Membership</a> request can be made by filling out the form</li>
+<li>An active <a href="https://w3.ibm.com/w3publisher/ibm-americas-hccx/tecnet" target="_blank">TECNet VPN ID</a> is required to access and use the Gym</li>
 </ol>
-<p>An email containing details on accessing the features of the OpenShift Gym is sent to the email address supplied once provisioning has completed. General information about the environment supplied is listed below. Refer to the provisioning email for detailed information.</p>
+<p>An email containing details on accessing the features of the OpenShift Gym is sent to the email address supplied once provisioning is completed. General information about the environment supplied is listed below. Refer to the provisioning email for detailed information.</p>
 <h2 id="connection">Connection<a class="headerlink" href="#connection" title="Permanent link">&para;</a></h2>
 <ol>
 <li>
-<p>Make Sure you are connected to the Technet VPN, in initial setup it may require you to reset your password.</p>
+<p>Make sure you are connected to the Technet VPN. During initial setup, it may require you to reset your password.</p>
 </li>
 <li>
 <p>Launch your preferred Terminal</p>
@@ -1471,10 +1471,10 @@
 <h3 id="termius">Termius<a class="headerlink" href="#termius" title="Permanent link">&para;</a></h3>
 </blockquote>
 <ol>
-<li>On the left tab click on hosts</li>
+<li>On the left tab, click on hosts</li>
 <li>Click on + New Host</li>
 <li>Add the IP address that was given in the provisioning email</li>
-<li>Add password that was giving in the email</li>
+<li>Add password that was given in the email</li>
 <li>Change port to 32222</li>
 </ol>
 </li>
@@ -1486,7 +1486,7 @@
 </blockquote>
 <h2 id="set-up">Set Up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h2>
 <h3 id="login-as-root">Login as root<a class="headerlink" href="#login-as-root" title="Permanent link">&para;</a></h3>
-<p>After logging in as admin, switch to root user</p>
+<p>After logging in as admin, switch to root user.</p>
 <div class="highlight"><pre><span></span><code><span class="go">  sudo su -</span>
 </code></pre></div>
 <div class="admonition warning">
@@ -1499,12 +1499,12 @@
 <div class="highlight"><pre><span></span><code><span class="go">curl  http://get.daffy-installer.com/download-scripts/daffy-init.sh | bash</span>
 </code></pre></div>
 <h3 id="copy-environment-file">Copy environment file<a class="headerlink" href="#copy-environment-file" title="Permanent link">&para;</a></h3>
-<p>Next you will copy the prepopulated env file in your home directory to your daffy env directory
+<p>Next you will copy the pre-populated env file in your home directory to your Daffy env directory
 <div class="highlight"><pre><span></span><code><span class="go">cp ~/vmware-ipi-env.sh /data/daffy/env/{env-name}-env.sh</span>
 </code></pre></div>
 You may make any changes needed in this file, add cloud paks, change sizing, etc.</p>
 <h2 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h2>
-<p>You can now run the daffy process</p>
+<p>You can now run the daffy process.</p>
 <p><div class="highlight"><pre><span></span><code><span class="go">/data/daffy/build.sh  {env-name}</span>
 </code></pre></div>
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button></p>
