@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -1330,42 +1330,42 @@
 <table>
 <thead>
 <tr>
-<th align="left">CP4D Supported Version</th>
-<th align="left">OCP Versions</th>
+<th style="text-align: left;">CP4D Supported Version</th>
+<th style="text-align: left;">OCP Versions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">4.0.9</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">4.0.9</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">4.0.8</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">4.0.8</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">4.0.7</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">4.0.7</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">4.0.6</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">4.0.6</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">4.0.5</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">4.0.5</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">4.0.4</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">4.0.4</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">4.0.3</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">4.0.3</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">4.0.2</td>
-<td align="left">4.6</td>
+<td style="text-align: left;">4.0.2</td>
+<td style="text-align: left;">4.6</td>
 </tr>
 </tbody>
 </table>
@@ -1378,25 +1378,25 @@ When this step is complete, approx 60 minutes depending on your environment, you
 <strong>ibm-common-services</strong>    </p>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Data requires some entries to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh).</p>
-<div class="highlight"><pre><span></span><code><span class="n">CP4D_ENABLE_SERVICE_WKS</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="n">CP4D_ENABLE_SERVICE_WKS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_WKC</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_WKC</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_DV</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_DV</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_WS</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_WS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_SPSS</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_SPSS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_WML</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_WML</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_DATASTAGE</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_DATASTAGE</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_DODS</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_DODS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_DMC</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_DMC</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 
-<span class="n">CP4D_ENABLE_SERVICE_COGNOS</span><span class="o">=&lt;</span><span class="n">true</span><span class="o">|</span><span class="n">false</span><span class="o">&gt;</span>
+<span class="n">CP4D_ENABLE_SERVICE_COGNOS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 </code></pre></div>
 <p>With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
 <p><strong>WKS</strong> - Watson Knowledge Studio</p>
