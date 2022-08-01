@@ -58,25 +58,25 @@ When this step is complete, approx 60 minutes depending on your environment, you
 Deploying the Cloud Pak for Data requires some entries to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
 ```R
-CP4D_ENABLE_SERVICE_WKS=<true|false>
+CP4D_ENABLE_SERVICE_WKS="true|false"
 
-CP4D_ENABLE_SERVICE_WKC=<true|false>
+CP4D_ENABLE_SERVICE_WKC="true|false"
 
-CP4D_ENABLE_SERVICE_DV=<true|false>
+CP4D_ENABLE_SERVICE_DV="true|false"
 
-CP4D_ENABLE_SERVICE_WS=<true|false>
+CP4D_ENABLE_SERVICE_WS="true|false"
 
-CP4D_ENABLE_SERVICE_SPSS=<true|false>
+CP4D_ENABLE_SERVICE_SPSS="true|false"
 
-CP4D_ENABLE_SERVICE_WML=<true|false>
+CP4D_ENABLE_SERVICE_WML="true|false"
 
-CP4D_ENABLE_SERVICE_DATASTAGE=<true|false>
+CP4D_ENABLE_SERVICE_DATASTAGE="true|false"
 
-CP4D_ENABLE_SERVICE_DODS=<true|false>
+CP4D_ENABLE_SERVICE_DODS="true|false"
 
-CP4D_ENABLE_SERVICE_DMC=<true|false>
+CP4D_ENABLE_SERVICE_DMC="true|false"
 
-CP4D_ENABLE_SERVICE_COGNOS=<true|false>
+CP4D_ENABLE_SERVICE_COGNOS="true|false"
 ```
 
 With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
