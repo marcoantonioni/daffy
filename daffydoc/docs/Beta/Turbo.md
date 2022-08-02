@@ -26,7 +26,7 @@ TURBO_PLATFORM_VERSION=8.5.4
 
 ##Kubeturbo
 
-**_REQUIRED ENVIRONMENT VARIABLES_**
+**_OPTIONAL ENVIRONMENT VARIABLES_**
 
 ```
 TURBO_PLATFORM_URL="https://topology-processor-turbo.apps.yourdomain.net"
