@@ -56,5 +56,5 @@ TURBO_PLATFORM_USERNAME="administrator"
 === "KubeTurbo "
 
 	``` py title="Deploy KubeTurbo"
-	/data/daffy/turbo/service.sh <env-prefix>
+	/data/daffy/turbo/services.sh <env-prefix>
 	```
