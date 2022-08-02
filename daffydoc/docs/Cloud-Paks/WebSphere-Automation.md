@@ -26,7 +26,7 @@ Deploying WebSphere Automation only requires **one** entry to your environment f
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
 ```R
-CPWSA_VERSION=1.3
+CPWSA_VERSION=1.4
 ```
 
 With this one value, the daffy engine will be able to install the version of WebSphere Automation.
@@ -42,10 +42,11 @@ WebSphere Automation Small Profile (consists of):
 - WebSphere Secure
 
 
-
-WSA Supported Versions	OCP Versions
-1.3  	4.8  
-1.2  	4.8
+| WSA Supported Version    | OCP Versions |
+| :---      |    :----     |  
+| 1.4    | 4.10   |
+| 1.3    |  4.8   |
+| 1.2     | 4.8   |
 
 Run the following command to deploy WebSphere Automation
 

@@ -25,7 +25,7 @@ Deploying the Cloud Pak for Integration only requires one entry to your environm
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
 
 ```R
-CP4I_VERSION=2021.4.1
+CP4I_VERSION=2022.2.1
 ```
 
 With this one value, the daffy engine will be able to install the version of Cloud Pak for Integration and the Platform Navigator.
@@ -36,6 +36,7 @@ platform navigator
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |  
+| 2022.2.1     | 4.10     |
 | 2021.4.1     | 4.6, 4.8      |
 | 2021.3.1     | 4.6, 4.8      |
 | 2021.2.1     | 4.6, 4.8      |
@@ -57,21 +58,21 @@ When this step is complete, up to an hour depending on your environment, you hav
 Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS)
 
 ```R
-CP4I_ENABLE_SERVICE_ACEDESIGN=<true|false>
+CP4I_ENABLE_SERVICE_ACEDESIGN="true|false"
 
-CP4I_ENABLE_SERVICE_ACEDASH=<true|false>
+CP4I_ENABLE_SERVICE_ACEDASH="true|false"
 
-CP4I_ENABLE_SERVICE_ASSETREPO=<true|false>
+CP4I_ENABLE_SERVICE_ASSETREPO="true|false"
 
-CP4I_ENABLE_SERVICE_TRACING=<true|false>
+CP4I_ENABLE_SERVICE_TRACING="true|false"
 
-CP4I_ENABLE_SERVICE_MQSINGLE=<true|false>
+CP4I_ENABLE_SERVICE_MQSINGLE="true|false"
 
-CP4I_ENABLE_SERVICE_APIC=<true|false>
+CP4I_ENABLE_SERVICE_APIC="true|false"
 
-CP4I_ENABLE_SERVICE_MQHA=<true|false>
+CP4I_ENABLE_SERVICE_MQHA="true|false"
 
-CP4I_ENABLE_SERVICE_EVENTSTREAMS=<true|false>
+CP4I_ENABLE_SERVICE_EVENTSTREAMS="true|false"
 ```
 With these values, the daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.
 
