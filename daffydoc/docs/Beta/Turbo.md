@@ -2,9 +2,7 @@
   document.title = "Supporting Software - Turbo";
 </script>
 # Turbonomic
-!!! Warning   
-      Early features - Still in testing mode, may not always work.  User be aware!!!
-      
+
 !!! attention
 
 	You will be required to provide a license key to fully enable the 	Turbonomic Platform. When the platform installation is complete, you will 	be presented with a URL where you will need to configure the administrator 	password and provide a valid Turbonomic license key.
@@ -18,7 +16,7 @@
 
 KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data from the Kubernetes environment to a Turbonomic Platform instance. Installing KubeTurbo will require you to provide the Turbonomic Platform topology processor URL and the administrator password.
 
-##TURBONOMIC PLATOFRM
+##Turbonomic Platform
 
 **_REQUIRED ENVIRONMENT VARIABLES_**
 
@@ -26,7 +24,7 @@ KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data 
 TURBO_PLATFORM_VERSION=8.5.4
 ```
 
-##KUBETURBO
+##Kubeturbo
 
 **_REQUIRED ENVIRONMENT VARIABLES_**
 
