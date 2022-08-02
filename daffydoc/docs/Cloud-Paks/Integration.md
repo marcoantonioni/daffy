@@ -34,7 +34,7 @@ The service consist of the following products.
 
 platform navigator
 
-| CP4D Supported Version    | OCP Versions |
+| Integration Supported Version    | OCP Versions |
 | :---      |    :----     |  
 | 2022.2.1     | 4.10     |
 | 2021.4.1     | 4.6, 4.8      |
