@@ -1324,7 +1324,7 @@
 <p>Deploying WebSphere Automation only requires <strong>one</strong> entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
 <p><strong>CPWSA_VERSION=<version></strong></p>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
-<div class="highlight"><pre><span></span><code><span class="n">CPWSA_VERSION</span><span class="o">=</span><span class="m">1.3</span>
+<div class="highlight"><pre><span></span><code><span class="n">CPWSA_VERSION</span><span class="o">=</span><span class="m">1.4</span>
 </code></pre></div>
 <p>With this one value, the daffy engine will be able to install the version of WebSphere Automation.</p>
 <p>The service consist of the following products.</p>
@@ -1340,9 +1340,28 @@
 <p>WebSphere Secure</p>
 </li>
 </ul>
-<p>WSA Supported Versions  OCP Versions
-1.3     4.8<br />
-1.2     4.8</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">WSA Supported Version</th>
+<th style="text-align: left;">OCP Versions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1.4</td>
+<td style="text-align: left;">4.10</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.3</td>
+<td style="text-align: left;">4.8</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.2</td>
+<td style="text-align: left;">4.8</td>
+</tr>
+</tbody>
+</table>
 <p>Run the following command to deploy WebSphere Automation</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/wsa/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
