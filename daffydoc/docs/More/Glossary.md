@@ -1,6 +1,6 @@
 <script>
   document.title = "Glossary";
-</script>
+</script>    
 # Glossary
 
 ## Bastion
