@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.3">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -17,7 +17,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
@@ -1356,21 +1356,21 @@
 <p><img src='../images/ROKS.jpeg'   align="top" width="200"  height="300" style = "float"></p>
 <p>At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on ROKS.</p>
 <h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
-<p>To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernetes <b>S</b>ervices on IBM Cloud (ROKS), there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that lists all providers and what would be needed. For ROKS, it breaks down to the following basic two items:</p>
-<p><b>Account Details</b> - the account that you plan to install ROKS on</p>
-<p><b>Account Type</b> - the account type needed to perform the install</p>
-<p>For a detailed list of the above, you can read the Daffy Provider Requirements. Please review before proceeding.</p>
+<p>To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernetes <b>S</b>ervices on IBM Cloud (ROKS) , there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For ROKS, it breaks down to the following basic two items:</p>
+<p><b>Account Details</b> - The account that you plan to install ROKS</p>
+<p><b>Account Type</b> - The account type needed to perform the install</p>
+<p>For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.</p>
 <p><a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">https://ibm.box.com/v/DaffyProviderRequirements</a></p>
 <h2 id="finding-provider-details">Finding Provider Details<a class="headerlink" href="#finding-provider-details" title="Permanent link">&para;</a></h2>
-<p>To use Daffy to install ROKS, you must find the provider details. Luckily, Daffy automatically walks you through this process using IBM Cloud CLI. Below are the steps you can use to make sure you use the right information.</p>
+<p>To use Daffy to install ROKS, you must find the provider details. Luckily, Daffy automates this as it walks you through this process using ibmcloud CLI. Below are the steps you can use to make sure you use the right information.</p>
 <p><b>Account:</b>
-to find more details on managing your IBM Cloud account, you can refer to this.</p>
+To find more details IBM Cloud account and how to manage you can refer to this:</p>
 <p><a href="https://cloud.ibm.com/docs/account?topic=account-account-getting-started" target="_blank">https://cloud.ibm.com/docs/account?topic=account-account-getting-started</a></p>
-<p>You must have an IBMid before logging in. The link above can help create one. If you are an IBM employee, your IBMid is most likely some numbers followed by your name.</p>
-<p>You can list your Account ID from the drop down:
+<p>You must have an IBMid before logging in and the link above can help create one. If you are an IBM employee, after the number will most likely be your name.</p>
+<p>You can list your Account ID from the Drop down
 <img src="../images/download.jpeg" style="float: left; margin-right: 10px;" /></p>
-<p><b>Location/Zone:</b>
-to find a list of available data center locations/zones, you can refer to this.</p>
+<p>Location/Zone:
+To find a list of available datacenter locations/zones, you can refer to this:</p>
 <p><a href="https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table" target="_blank">https://cloud.ibm.com/docs/overview?topic=overview-locations#mzr-table</a></p>
 <p>Note: Daffy currently only supports single datacenter location installs with classic infrastructure</p>
 <h3 id="zones">Zones<a class="headerlink" href="#zones" title="Permanent link">&para;</a></h3>
@@ -1380,7 +1380,7 @@ to find a list of available data center locations/zones, you can refer to this.<
 <h3 id="account-types">Account types<a class="headerlink" href="#account-types" title="Permanent link">&para;</a></h3>
 <p>Your IBM Cloud account includes many interacting components and systems for resource, user, and access management. Concepts like how certain components are connected or how access works help you in understanding how to set up your account type. Many features are free to use regardless of account type.</p>
 <p><b> Account Type: </b>
-for you to use Daffy to install on ROKS, you need to have a Pay-As-You-Go or subscription IBM Cloud account.</p>
+For you to use Daffy to install on ROKS, you need to have a Pay-As-You-Go or subscription IBM Cloud account.</p>
 <p><a href="https://cloud.ibm.com/docs/account?topic=account-accounts" target="_blank">https://cloud.ibm.com/docs/account?topic=account-accounts</a></p>
 <h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying OpenShift on ROKS only requires one entry to your existing core environment file (<ENVIRONMENT_NAME>-env.sh).</p>
@@ -1396,10 +1396,10 @@ Valid Options:</p>
 <span class="c1">#ROKS_ZONE=&quot;dal13&quot;</span>
 </code></pre></div>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
-<p>To deploy your OCP cluster to ROKS, run the build.sh script from the /data/daffy/ocp directory. The installer will ask you a number of questions to login to IBM Cloud via the CLI. When prompted with a region, select any but stay within your geography. For instance, us-south. This is used to talk with IBM Cloud via the right API endpoint.
+<p>To deploy your OCP cluster to ROKS, run the build.sh script from the /data/daffy/ocp directory. The installer will ask you a number of questions to login to ibmcloud via the CLI. When prompted with a region, select any but stay within your geography. For instance, us-south. This is used to talk with IBM Cloud via the right API endpoint.
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div>
-Once your cluster is fully deployed, you can access the help menu which has a number of options.</p>
+Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
 <p><b> Note: </b> <ENVIRONMENT_NAME> is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help</span>
 </code></pre></div>
@@ -1494,10 +1494,10 @@ Once your cluster is fully deployed, you can access the help menu which has a nu
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.indexes", "navigation.tabs", "navigation.tracking", "navigation.top", "toc.follow", "navigation.sections", "navigation.tracking", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
