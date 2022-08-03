@@ -105,3 +105,8 @@ mkdocs build
 ```
 mkdocs gh-deploy
 ```
+
+##Update mkdocs
+```
+pip3 install -U mkdocs
+```

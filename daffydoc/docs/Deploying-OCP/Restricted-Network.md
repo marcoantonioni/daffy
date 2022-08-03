@@ -209,7 +209,7 @@ function showSlides(n) {
 
 
 ## Overview
-Deploying OpenShift in a restricted network (air-gap), can be done with the Daffy Restricted Network scripts. This page will primarly focus on the steps to perform aa Airgap install; however, please note the Proxy Install approach can be a viable option and is a more simple approach. Regardless, of which one you choose, both install options will result in a OpenShift cluster with restricted network access. Also, note that the Airgap install is more complicated and will require a JUMP BOX that has internet access to the Quay Repository.
+Deploying OpenShift in a restricted network (air-gap), can be done with the Daffy Restricted Network scripts. This page will primarily focus on the steps to perform an Airgap install; however, please note the Proxy Install approach can be a viable option and is a more simple approach. Regardless, of which one you choose, both install options will result in a OpenShift cluster with restricted network access. Also, note that the Airgap install is more complicated and will require a JUMP BOX that has internet access to the Quay Repository.
 
 ***There are two basic options for deployment***
 

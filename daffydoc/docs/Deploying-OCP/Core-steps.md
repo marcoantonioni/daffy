@@ -87,6 +87,15 @@ This command will copy the sample file and place it in the /data/daffy/env direc
 cp /data/daffy/env/samples/<platform>-env.sh /data/daffy/env/<environment>-env.sh
 
 ```
+
+**Debug Flag**
+
+Setting the debug flag to true will stop you at every check point and ask you to hit enter. Setting the debug flag to false will run though the script without any interference.  
+
+```R
+DEBUG=false
+```
+
 ## Step 4:  DNS Requirements
 
 For OpenShift to be installed, you will need to setup your own DNS or use existing domain/subdomain. You can not use local host files or local resolver.
