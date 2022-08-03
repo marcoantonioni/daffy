@@ -20,15 +20,15 @@ KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data 
 
 **_REQUIRED ENVIRONMENT VARIABLES_**
 
-```
-TURBO_PLATFORM_VERSION=8.5.4
+```R
+TURBO_PLATFORM_VERSION="8.5.4"
 ```
 
 ##Kubeturbo
 
 **_OPTIONAL ENVIRONMENT VARIABLES_**
 
-```
+```R
 TURBO_PLATFORM_URL="https://topology-processor-turbo.apps.yourdomain.net"
 TURBO_KUBE_CLUSTER_NAME="gamma03"
 ```
@@ -40,7 +40,7 @@ TURBO_KUBE_CLUSTER_NAME="gamma03"
 **_OPTIONAL ENVIRONMENT VARIABLES_**
 
 
-```
+```R
 TURBO_PLATFORM_USERNAME="administrator"
 ```
 
