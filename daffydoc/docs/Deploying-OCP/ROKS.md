@@ -16,9 +16,9 @@ At this point, you have a bastion machine where you have installed the Daffy too
 
 To use Daffy to provision <b>R</b>ed <b>H</b>at <b>O</b>penShift <b>K</b>ubernetes <b>S</b>ervices on IBM Cloud (ROKS), there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that lists all providers and what would be needed. For ROKS, it breaks down to the following basic two items:
 
-<b>Account Details:</b> the account that you plan to install ROKS on
+<b>Account Details</b> - the account that you plan to install ROKS on
 
-<b>Account Type:</b> the account type needed to perform the install
+<b>Account Type</b> - the account type needed to perform the install
 
 For a detailed list of the above, you can read the Daffy Provider Requirements. Please review before proceeding.
 
