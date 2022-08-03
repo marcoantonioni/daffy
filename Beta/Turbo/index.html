@@ -1249,29 +1249,29 @@
 <p>KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data from the Kubernetes environment to a Turbonomic Platform instance. Installing KubeTurbo will require you to provide the Turbonomic Platform topology processor URL and the administrator password.</p>
 <h2 id="turbonomic-platform">Turbonomic Platform<a class="headerlink" href="#turbonomic-platform" title="Permanent link">&para;</a></h2>
 <p><strong><em>REQUIRED ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_VERSION=8.5.4
+<div class="highlight"><pre><span></span><code><span class="n">TURBO_PLATFORM_VERSION</span><span class="o">=</span><span class="s">&quot;8.5.4&quot;</span>
 </code></pre></div>
 <h2 id="kubeturbo">Kubeturbo<a class="headerlink" href="#kubeturbo" title="Permanent link">&para;</a></h2>
 <p><strong><em>OPTIONAL ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_URL=&quot;https://topology-processor-turbo.apps.yourdomain.net&quot;
-TURBO_KUBE_CLUSTER_NAME=&quot;gamma03&quot;
+<div class="highlight"><pre><span></span><code><span class="n">TURBO_PLATFORM_URL</span><span class="o">=</span><span class="s">&quot;https://topology-processor-turbo.apps.yourdomain.net&quot;</span>
+<span class="n">TURBO_KUBE_CLUSTER_NAME</span><span class="o">=</span><span class="s">&quot;gamma03&quot;</span>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The TURBO_PLATFORM_URL will be the "topology-processor" OpenShift ROUTE URL     (If using the Turbo Platform Deployed by Daffy). If the Turbo Platform was  deployed without DAFFY, the URL may be the nginx endpoint.</p>
 </div>
 <p><strong><em>OPTIONAL ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_USERNAME=&quot;administrator&quot;
+<div class="highlight"><pre><span></span><code><span class="n">TURBO_PLATFORM_USERNAME</span><span class="o">=</span><span class="s">&quot;administrator&quot;</span>
 </code></pre></div>
 <h2 id="executing-scripts">Executing Scripts<a class="headerlink" href="#executing-scripts" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Turbo Platform</label><label for="__tabbed_1_2">KubeTurbo </label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">Deploy Turbo Platform</span><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">turbo</span><span class="o">/</span><span class="n">build</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">prefix</span><span class="o">&gt;</span>
+<div class="highlight"><span class="filename">Deploy Turbo Platform</span><pre><span></span><code>/data/daffy/turbo/build.sh &lt;env-prefix&gt;
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><span class="filename">Deploy KubeTurbo</span><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">turbo</span><span class="o">/</span><span class="n">services</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">prefix</span><span class="o">&gt;</span>
+<div class="highlight"><span class="filename">Deploy KubeTurbo</span><pre><span></span><code>/data/daffy/turbo/services.sh &lt;env-prefix&gt;
 </code></pre></div>
 </div>
 </div>
