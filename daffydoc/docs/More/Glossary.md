@@ -44,7 +44,8 @@ The distinction has proven useful in the networking field where it originated, a
 
 The conceptual separation of the data plane from the control plane has been done for years.[6] An early example is Unix, where the basic file operations are open, close for the control plane and read write for the data plane.[7]
 
-https://en.wikipedia.org/wiki/Control_planes
+[Control Plane](https://en.wikipedia.org/wiki/Control_planes){target=_blank}
+
 
 ## Domain Name System (DNS)
 
@@ -52,7 +53,8 @@ The Domain Name System (DNS) is the hierarchical and decentralized naming system
 
 - In a nutshell, its a system where your local computer can call other computers on the internet to translate a website name to a computer IP address.  Think of it as the internet phone book.
 
-https://en.wikipedia.org/wiki/Domain_Name_System
+[Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System){target=_blank}
+
 
 ## DNS Registrar/Registry
 
@@ -65,8 +67,8 @@ A domain name **registry** is a database of all domain names and the associated 
 - In a nutshell, its where website names are stored and has a mapping from name to IP Address.   Like **"www.mywebsite.com"** points to 169.45.45.55
 
 
+[Domain Name Registrar](https://en.wikipedia.org/wiki/Domain_name_registrar){target=_blank}
 
-https://en.wikipedia.org/wiki/Domain_name_registrar
 
 ## Enviornment Name/File
 
@@ -82,9 +84,10 @@ The Ingress Operator makes it possible for external clients to access your servi
 
 - In a nutshell, it allows external access to your cluster and all the running pods/services/applications. Its basically an inbound router for your OpenShift Cluster.
 
-https://docs.openshift.com/container-platform/4.8/networking/ingress-operator.html
+[Ingress Operator](https://docs.openshift.com/container-platform/4.8/networking/ingress-operator.html){target=_blank}
 
-## Install Type IPI:
+
+## Install Type IPI
 
 Content coming!
 
