@@ -36,9 +36,10 @@ The service consist of the following products.
 
 **AI Manager**
 
-AIOps Supported Versions	OCP Versions
-3.2.0  	4.8  
-3.3.1  	4.8
+| AIOps Supported Version    | OCP Versions |
+| :---      |    :----     |
+| 3.3.1     | 4.8     |
+| 3.2.0     | 4.8     |
 
 **Run the following command** to deploy the Cloud Pak for Watson AIOps.
 
