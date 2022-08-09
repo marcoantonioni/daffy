@@ -1393,7 +1393,7 @@
        style="width:100px;height:100px;"/></p>
 <p>At this point, you have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
 <p>1) The Cloud Pak info that you wish to install</p>
-<p>2) The services that you wish to install on the cloud pak</p>
+<p>2) The services that you wish to install on the Cloud Pak</p>
 <h2 id="step-2-deploy-cloud-pak">Step 2: Deploy Cloud Pak<a class="headerlink" href="#step-2-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh):</p>
 <p><strong>CP4BA_VERSION=</strong></p>
@@ -1436,7 +1436,7 @@
 <span class="c1">#CP4BA_IFIX=</span>
 <span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
 </code></pre></div></p>
-<p>Options for Cloud Pak</p>
+<p>Options for Cloud Pak:</p>
 <table>
 <thead>
 <tr>
@@ -1476,7 +1476,7 @@
 <p>Run the following command to deploy the Cloud Pak for Business Automation.</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
-<p>When this step is complete, approximately 10 minutes depending on your environment, you will have the cloud pak running. This is just the core cloud pak operators, no service  is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:</p>
+<p>When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:</p>
 <ul>
 <li>
 <p>cp4ba-starter</p>
@@ -1496,7 +1496,7 @@
    </body></p>
 <p></html></p>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
-<p>Deploying the service does not need any new values to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh&gt;). It will use the same values during the cloud pak deployment.</p>
+<p>Deploying the service does not need any new values to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh&gt;). It will use the same values during the Cloud Pak deployment.</p>
 <p><strong>CP4BA_VERSION=</strong></p>
 <p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
 <p>With these two values, the Daffy engine will be able to install the version of Cloud Pak for Business Automation and the desired service.</p>
