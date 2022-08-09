@@ -1429,7 +1429,7 @@
 <h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
 <p>To install Daffy on <strong>VSphere</strong>, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.</p>
 <p>There is a number of permissions you MUST have as a user on VCenter for deployment of OpenShift on VSphere.</p>
-<p>Please refer to the requirements document for the specific requirements for IPI or UPI installs on VSphere.
+<p>Please refer to the requirements document for the specific requirements for IPI or UPI installs on VSphere:
 <a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">https://ibm.box.com/v/DaffyProviderRequirements
 </a></p>
 <h2 id="finding-provider-details">Finding Provider Details<a class="headerlink" href="#finding-provider-details" title="Permanent link">&para;</a></h2>
@@ -1471,19 +1471,19 @@
 </tr>
 <tr>
 <td align="left">VSPHERE_FOLDER</td>
-<td align="left">This is the location of where you will store the NEW VM's.</td>
+<td align="left">This is the location of where you will store the NEW VM's</td>
 <td align="left">IPI/UPI</td>
 <td align="left">Yes</td>
 </tr>
 <tr>
 <td align="left">VSPHERE_API_VIP</td>
-<td align="left">This is an <strong>UNUSED</strong> IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address.</td>
+<td align="left">This is an <strong>UNUSED</strong> IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address</td>
 <td align="left">IPI</td>
 <td align="left">Yes</td>
 </tr>
 <tr>
 <td align="left">VSPHERE_INGRESS</td>
-<td align="left">This is an <strong>UNUSED</strong> IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.</td>
+<td align="left">This is an <strong>UNUSED</strong> IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address</td>
 <td align="left">IPI</td>
 <td align="left">Yes</td>
 </tr>
@@ -1495,7 +1495,7 @@
 </tr>
 <tr>
 <td align="left">VSPHERE_ISO_IMAGE_BASE</td>
-<td align="left">This is the directory within the datastore where the iso image is located.</td>
+<td align="left">This is the directory within the datastore where the iso image is located</td>
 <td align="left">UPI</td>
 <td align="left">Yes</td>
 </tr>
@@ -1534,7 +1534,7 @@
 <span class="n">VSPHERE_HOSTNAME</span><span class="o">=</span><span class="s">&quot;vsphere-host-name&quot;</span>
 <span class="n">VSPHERE_DATASTORE</span><span class="o">=</span><span class="s">&quot;datastore&quot;</span>     
 <span class="n">VSPHERE_CLUSTER</span><span class="o">=</span><span class="s">&quot;cluster-name&quot;</span><span class="n">.</span>   
- <span class="n">VSPHERE_NETWORK1</span><span class="o">=</span><span class="s">&quot;vlan-name&quot;</span>      
+<span class="n">VSPHERE_NETWORK1</span><span class="o">=</span><span class="s">&quot;vlan-name&quot;</span>      
 <span class="n">VSPHERE_DATACENTER</span><span class="o">=</span><span class="s">&quot;vsphere-datacenter&quot;</span>     
 <span class="n">VSPHERE_FOLDER</span><span class="o">=</span><span class="s">&quot;/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}&quot;</span>
 
@@ -1554,16 +1554,16 @@
 </code></pre></div>
 <p>Optional:</p>
 <p><strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
-<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
+<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.</p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
-<p><strong>Note: <ENVIRONMENT_NAME></strong> is the first part of your name that you used for the &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file</p>
-<p><div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help</span>
+<p><strong>Note:</strong> &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file</p>
+<p>Deploying an OpenShift cluster on VSphere using the Daffy scripts (using VSPhere-IPI install type):</p>
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help</span>
 </code></pre></div>
-Deploying an OpenShift cluster on VSphere using the Daffy Scripts.  (Using VSPhere-IPI Install Type)</p>
 <p><button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button></p>
 
               

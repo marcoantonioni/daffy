@@ -1421,14 +1421,14 @@ INSERT VIDEO Here</p>
 <p>Optional:</p>
 <p><strong>BASTION_HOST</strong>="xxx.xxx.xxx.xxx"</p>
 <p>If your host does not have its own public IP address, you need to specify the bastion IP address that the OCP cluster would use to reach your bastion host, i.e. its local IP address you used to connect to the bastion.</p>
-<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
+<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage:</p>
 <p><strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=</strong>true</p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your OCP cluster to Kernel-based Virtual Machine, run the build.sh script from the /data/daffy/ocp directory</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
-<p>Note: &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
+<p>Note: &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --help</span>
 </code></pre></div></p>
 <p>Here is a full example for deploying OpenShift on Kernel-based Virtual Machine with the Daffy process.</p>
