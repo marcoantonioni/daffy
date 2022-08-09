@@ -62,7 +62,7 @@ Optional:
 
 If your host does not have its own public IP address, you need to specify the bastion IP address that the OCP cluster would use to reach your bastion host, i.e. its local IP address you used to connect to the bastion.
 
-If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
+If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage:
 
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=**true
 
@@ -76,7 +76,7 @@ To deploy your OCP cluster to Kernel-based Virtual Machine, run the build.sh scr
 
 Once your cluster is fully deployed you can access the help menu which has a number of options.
 
-Note: &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
+Note: &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file
 ```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```

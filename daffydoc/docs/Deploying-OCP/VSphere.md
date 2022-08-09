@@ -14,7 +14,7 @@ To install Daffy on **VSphere**, there are some platform info and requirements t
 
 There is a number of permissions you MUST have as a user on VCenter for deployment of OpenShift on VSphere.
 
-Please refer to the requirements document for the specific requirements for IPI or UPI installs on VSphere.
+Please refer to the requirements document for the specific requirements for IPI or UPI installs on VSphere:
 <a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">https://ibm.box.com/v/DaffyProviderRequirements
 </a>
 ## Finding Provider Details
@@ -30,11 +30,11 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 | VSPHERE_CLUSTER          | The VSphere cluster is NOT the same as your OpenShift Cluster name. This is variable is referring to the VSphere Cluster name.  |IPI/UPI|Yes
 |VSPHERE_NETWORK1|This is the VSphere VLAN name|IPI/UPI|Yes
 |VSPHERE_DATACENTER|This is the name of the VSphere Datacenter|IPI/UPI|Yes
-|VSPHERE_FOLDER|This is the location of where you will store the NEW VM's.|IPI/UPI|Yes
-|VSPHERE_API_VIP|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address.|IPI|Yes
-|VSPHERE_INGRESS|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address.|IPI|Yes
+|VSPHERE_FOLDER|This is the location of where you will store the NEW VM's|IPI/UPI|Yes
+|VSPHERE_API_VIP|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the API Virtual IP Address|IPI|Yes
+|VSPHERE_INGRESS|This is an **UNUSED** IP address that will be utilized by the OpenShift IPI installer to provision the Ingress Virtual IP Address|IPI|Yes
 |VSPHERE_ISO_DATASTORE|This is the name of the datastore where the the coreos iso is located|UPI|Yes
-|VSPHERE_ISO_IMAGE_BASE|This is the directory within the datastore where the iso image is located.|UPI|Yes
+|VSPHERE_ISO_IMAGE_BASE|This is the directory within the datastore where the iso image is located|UPI|Yes
 |BASTION_HOST|This is the name of the bastion host, IP or  DNS value|UPI|No
 |BASTION_USER|This is non admin id on the bastion host that has authorzation to logon via SSH to bastion|UPI|Yes
 
@@ -67,7 +67,7 @@ VSPHERE_USERNAME="userid"
 VSPHERE_HOSTNAME="vsphere-host-name"
 VSPHERE_DATASTORE="datastore"     
 VSPHERE_CLUSTER="cluster-name".   
- VSPHERE_NETWORK1="vlan-name"      
+VSPHERE_NETWORK1="vlan-name"      
 VSPHERE_DATACENTER="vsphere-datacenter"     
 VSPHERE_FOLDER="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"
 
@@ -90,7 +90,7 @@ Optional:
 
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
-If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
+If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.
 
 ## Execution
 
@@ -102,11 +102,12 @@ To deploy your cluster, run the build.sh script from the /data/daffy/ocp directo
 
 Once your cluster is fully deployed you can access the help menu which has a number of options.
 
-**Note: <ENVIRONMENT_NAME>** is the first part of your name that you used for the <**ENVIRONMENT_NAME**>-env.sh file
+**Note:** &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file
+
+Deploying an OpenShift cluster on VSphere using the Daffy scripts (using VSPhere-IPI install type):
 
 ```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
-Deploying an OpenShift cluster on VSphere using the Daffy Scripts.  (Using VSPhere-IPI Install Type)
 
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button>
