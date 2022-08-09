@@ -1393,12 +1393,12 @@
        style="width:100px;height:100px;"/></p>
 <p>At this point, you have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:</p>
 <p>1) The Cloud Pak info that you wish to install</p>
-<p>2) The services that you wish to install on the Cloud Pak</p>
+<p>2) The services that you wish to install on the cloud pak</p>
 <h2 id="step-2-deploy-cloud-pak">Step 2: Deploy Cloud Pak<a class="headerlink" href="#step-2-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
-<p>Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
+<p>Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh):</p>
 <p><strong>CP4BA_VERSION=</strong></p>
 <p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
-<p>With these two values, the daffy engine will be able to install the version of Cloud Pak for Business Automation and the  and prepare for desired service.</p>
+<p>With these two values, the Daffy engine will be able to install the version of Cloud Pak for Business Automation and prepare the desired service.</p>
 <p>Optional you can specify IFIX:</p>
 <p><strong>CP4BA_IFIX=</strong></p>
 <p>Valid Options:</p>
@@ -1448,22 +1448,22 @@
 <tbody>
 <tr>
 <td align="left">decisions</td>
-<td align="left">odm,bai</td>
+<td align="left">odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
 <td align="left">content</td>
-<td align="left">filenet,cmis,ier,tm,bai</td>
+<td align="left">filenet, cmis, ier, tm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
 <td align="left">content-decisions</td>
-<td align="left">filenet,cmis,ier,tm,odm,bai</td>
+<td align="left">filenet, cmis, ier, tm, odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
 <td align="left">workflow</td>
-<td align="left">workflow,workstreams,pfs,baw_authoring,case,bai</td>
+<td align="left">workflow, workstreams, pfs, baw_authoring, case, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
@@ -1476,7 +1476,7 @@
 <p>Run the following command to deploy the Cloud Pak for Business Automation.</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
-<p>When this step is complete, approx 10 minutes depending on your environment, you have the Cloud Pak running. This is just the core Cloud Pak operators, no service  is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consist of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:</p>
+<p>When this step is complete, approximately 10 minutes depending on your environment, you will have the cloud pak running. This is just the core cloud pak operators, no service  is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:</p>
 <ul>
 <li>
 <p>cp4ba-starter</p>
@@ -1496,17 +1496,17 @@
    </body></p>
 <p></html></p>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
-<p>Deploying the service does not need any new values to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh&gt;).  It will use the same values during the cloud pak deployment.</p>
+<p>Deploying the service does not need any new values to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh&gt;). It will use the same values during the cloud pak deployment.</p>
 <p><strong>CP4BA_VERSION=</strong></p>
 <p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
-<p>With these two values, the daffy engine will be able to install the version of Cloud Pak for Business Automation and the desired service.</p>
-<p>Instead of using the include services,  you can also deploy your own sample or the included sample CR files from daffy.</p>
+<p>With these two values, the Daffy engine will be able to install the version of Cloud Pak for Business Automation and the desired service.</p>
+<p>Instead of using the included services, you can also deploy your own sample or the included sample CR files from Daffy.</p>
 <p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong>samples  </p>
 <p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=</strong>valid sample name in daffy samples folder</p>
 <div class="admonition warning">
 <p class="admonition-title">Sample Name</p>
 </div>
-<p>The value you use is without the .yaml in the name</p>
+<p>The value you use is without the .yaml in the name.</p>
 <div class="highlight"><pre><span></span><code> cd /data/daffy/cp4ba/templates/services/samples
 </code></pre></div>
 <p>To use samples, you would give the name of the sample in this directory.</p>
@@ -1519,10 +1519,10 @@
 <li>ocp-starter-ocs-all-22.0.1  </li>
 <li>roks-starter-ibm-all-22.0.1  </li>
 </ul>
-<p>This is just the daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.</p>
+<p>This is just the Daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.</p>
 <p>The given sample names tell you which platform, storage, service and version.</p>
 <p>Optional:</p>
-<p>If  you want to deploy Open Prediction Service HUB(OPS), you can set this flag to setup it up in your cluster.</p>
+<p>If  you want to deploy Open Prediction Service HUB (OPS), you can set this flag to setup it up in your cluster.</p>
 <p><strong>CP4BA_ENABLE_SERVICE_OPS=</strong><true|false></p>
 <p>Valid Options:</p>
 <p><strong>CP4BA_VERSION=</strong>             </p>
@@ -1566,22 +1566,22 @@
 <tbody>
 <tr>
 <td align="left">decisions</td>
-<td align="left">odm,bai</td>
+<td align="left">odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
 <td align="left">content</td>
-<td align="left">filenet,cmis,ier,tm,bai</td>
+<td align="left">filenet, cmis, ier, tm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
 <td align="left">content-decisions</td>
-<td align="left">filenet,cmis,ier,tm,odm,bai</td>
+<td align="left">filenet, cmis, ier, tm, odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
 <td align="left">workflow</td>
-<td align="left">workflow,workstreams,pfs,baw_authoring,case,bai</td>
+<td align="left">workflow, workstreams, pfs, baw_authoring, case, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
@@ -1591,7 +1591,7 @@
 </tr>
 </tbody>
 </table>
-<p>Be aware, this step is async, meaning that the daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete.  When the deployment of the service script is done, the service is not running yet.  Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.</p>
+<p>Be aware, this step is async, meaning that the Daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete. When the deployment of the service script is done, the service is not running yet. Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.</p>
 <p>Run the following command to deploy the Cloud Pak for Business Automation services.</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
@@ -1607,17 +1607,17 @@
    </body></p>
 <p></html></p>
 <h2 id="step-3a-status">Step 3a: Status<a class="headerlink" href="#step-3a-status" title="Permanent link">&para;</a></h2>
-<p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment you can run the help flag to see what flags you can use to get information on your service deployment.</p>
-<p>Run the following commands to check the Cloud Pak for Business Automation to see what command flags you can run</p>
+<p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service deployment, you can run the help flag to see what flags you can use to get information on your service deployment.</p>
+<p>Run the following commands to check the Cloud Pak for Business Automation to see what command flags you can run:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --help
 </code></pre></div>
-<p>The following command will give you the status of all components for the service you deployed</p>
+<p>The following command will give you the status of all components for the service you deployed:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
 </code></pre></div>
-<p>If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command.</p>
+<p>If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command:</p>
 <div class="highlight"><pre><span></span><code>watch -c /data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
 </code></pre></div>
-<p>To find out the connection info to your new service, you can run the console flag to get user names, passwords and URLs to connect to.</p>
+<p>To find out the connection info to your new service, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterConsole
 </code></pre></div>
 <p><html>
