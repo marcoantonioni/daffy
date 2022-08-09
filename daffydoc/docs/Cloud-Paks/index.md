@@ -22,7 +22,7 @@ hide:
 
 ## What is required to deploy a Cloud Pak?
 
-Before you can deploy a cloud pak, you must have the following:
+Before you can deploy a Cloud Pak, you must have the following:
 
 ###  You must have a cluster running    
 - An existing cluster in a supported provider
