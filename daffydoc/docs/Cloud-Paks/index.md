@@ -26,17 +26,17 @@ Before you can deploy a cloud pak, you must have the following:
 
 ###  You must have a cluster running    
 - An existing cluster in a supported provider
-- Can be built with daffy or any other process  
+- Can be built with Daffy or any other process  
 ###  IBM entitlement key   
 - You can obtain your existing entitlement key here:
 - [https://myibm.ibm.com/products-services/containerlibrary](https://myibm.ibm.com/products-services/containerlibrary)
 
-Important: If your installing on a customer owned platform account or an on-prem customer datacenter, you **`MUST`** instruct your customer to register for a trial account and use their pull secret for the install if they don't own the software. Do not use your own pull secret for customer engagements.
+Important: if you're installing on a customer owned platform account or an on-prem customer data center, you **`MUST`** instruct your customer to register for a trial account and use their pull secret for the install if they don't own the software. Do not use your own pull secret for customer engagements.
 
-NOTE: All IBMer's are entitled to an IBM Entitlement Key. Your key can **`ONLY`** be used for training and demo purposes. Do not provide your personal entitlement key to others.
+**Note:** all IBMer's are entitled to an IBM Entitlement Key. Your key can **`ONLY`** be used for training and demo purposes. Do not provide your personal entitlement key to others.
 
 !!! Warning   
       For internal IBM use only, Link below will only work while in the IBM Network
-If customer or business partner does not have an IBM entitlement key, go to the following link to get one(IBM Internal Link)
+If customer or business partner does not have an IBM entitlement key, go to the following link to get one (IBM Internal Link):
 
  [IBM Trial Software Process ](https://ibm.seismic.com/Link/Content/DC82Wc9PpPqf68MHHTjBpVC84RBB)
