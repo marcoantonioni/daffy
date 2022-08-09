@@ -94,13 +94,13 @@ If you plan to install a cloud pak and/or need storage, you need to set the flag
 
 ## Execution
 
-To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.
+To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory:
 
 ```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
 ```
 
-Once your cluster is fully deployed you can access the help menu which has a number of options.
+Once your cluster is fully deployed, you can access the help menu which has a number of options.
 
 **Note:** &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file
 
