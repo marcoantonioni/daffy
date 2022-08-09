@@ -1399,8 +1399,8 @@
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
 <div class="highlight"><pre><span></span><code><span class="n">CP4I_VERSION</span><span class="o">=</span><span class="m">2022.2</span><span class="n">.</span><span class="m">1</span>
 </code></pre></div>
-<p>With this one value, the daffy engine will be able to install the version of Cloud Pak for Integration and the Platform Navigator.</p>
-<p>The service consist of the following products.</p>
+<p>With this one value, the Daffy engine will be able to install the version of Cloud Pak for Integration and the Platform Navigator.</p>
+<p>The service consist of the following products:</p>
 <p>platform navigator</p>
 <table>
 <thead>
@@ -1428,10 +1428,10 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Run the following command</strong> to deploy the Cloud Pak for Integration.</p>
+<p><strong>Run the following command</strong> to deploy the Cloud Pak for Integration:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
-<p>When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services/patterns.  At this stage, the cluster consists  of common services and the Cloud Pak for Integration operators and some services in the following projects:</p>
+<p>When this step is complete, up to an hour depending on your environment, you will have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services/patterns.  At this stage, the cluster consists of common services and the Cloud Pak for Integration operators and some services in the following projects:</p>
 <p><strong>cp4i</strong></p>
 <p><strong>ibm-common-services</strong></p>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
@@ -1452,7 +1452,7 @@
 
 <span class="n">CP4I_ENABLE_SERVICE_EVENTSTREAMS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
 </code></pre></div>
-With these values, the daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.</p>
+With these values, the Daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.</p>
 <p><strong>ACEDESIGN</strong> - App Connect Designer</p>
 <p><strong>ACEDASH</strong> - App Connect Dashboard</p>
 <p><strong>ASSETREPO</strong> - Integration Asset Repository</p>
@@ -1461,17 +1461,17 @@ With these values, the daffy engine will be able to install the version of Cloud
 <p><strong>APIC</strong> - API Connect</p>
 <p><strong>MQHA</strong> - Cloud Native MQ HA</p>
 <p><strong>EVENTSTREAMS</strong> - Event Streams</p>
-<p><strong>Run the following command</strong> to deploy the Cloud Pak for Integration services.</p>
+<p><strong>Run the following command</strong> to deploy the Cloud Pak for Integration services:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 <h2 id="step-3a-status">Step 3a: Status<a class="headerlink" href="#step-3a-status" title="Permanent link">&para;</a></h2>
-<p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the CP4I service deployment you can run the help flag to see what flags you can use to get information on your service deployment.</p>
+<p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the CP4I service deployment you can run the help flag to see what flags you can use to get information on your service deployment:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/service.sh &lt;ENVIRONMENT_NAME&gt; --help
 </code></pre></div>
-<p><strong>Run the following commands</strong> to check the Cloud Pak for Integration services installation progress.</p>
+<p><strong>Run the following commands</strong> to check the Cloud Pak for Integration services installation progress:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/service.sh &lt;ENVIRONMENT_NAME&gt; --AllStatus
 </code></pre></div>
-<p>If you want to want to see more detail status on an individual service, you can run each service status.</p>
+<p>If you want to want to see more detail status on an individual service, you can run each service status:</p>
 <p><div class="highlight"><pre><span></span><code>/data/daffy/cp4i/service.sh &lt;ENVIRONMENT_NAME&gt; --AceDashStatus
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/service.sh &lt;ENVIRONMENT_NAME&gt; --AceDesignStatus
@@ -1488,7 +1488,7 @@ With these values, the daffy engine will be able to install the version of Cloud
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/service.sh &lt;ENVIRONMENT_NAME&gt; --EventStreamsStatus
 </code></pre></div>
-To find out the connection info to your Integration Platform Navigator instance, you can run the console flag to get user names, passwords and URLs to connect to.</p>
+To find out the connection info to your Integration Platform Navigator instance, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/build.sh &lt;ENVIRONMENT_NAME&gt; --console
 </code></pre></div>
 
