@@ -18,7 +18,7 @@ To use Daffy on **K**ernel-based **V**irtual **M**achine, there are some platfor
 
 **Hardware** - enough to run the OCP Cluster based on T-Shirt Sizing
 
-**OS Version** - Ubuntu 20.0.4(**Only supported by Daffy**)
+**OS Version** - Ubuntu 20.0.4 (**only supported by Daffy**)
 
 **Permission** - full root authority
 
