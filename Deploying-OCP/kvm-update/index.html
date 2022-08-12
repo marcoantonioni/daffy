@@ -1349,11 +1349,20 @@
 </ol>
 </li>
 </ol>
-<p><strong>Setting up DNS for KVM Deployment with OpenShift:</strong></p>
+<p><strong>Setting up DNS for KVM Deployment with IBM Cloud Internet Services:</strong></p>
 <ol>
-<li>Register domain name. Detailed instructions for domain registration on IBM Cloud can be found on the <a href="https://cloud.ibm.com/catalog/infrastructure/domain_registration">IBM Cloud Domain Name Registration page</a>.</li>
-<li>Open the IBM Cloud Internet Services (CIS) application</li>
-<li>Add your domain and create the 3 DNS entries previously mentioned. Detailed instructions can be found on the <a href="https://cloud.ibm.com/docs/cis?topic=cis-getting-started">Getting Started on IBM CIS page</a>.</li>
+<li>Register domain name. Detailed instructions for domain registration can be found on the <a href="https://cloud.ibm.com/catalog/infrastructure/domain_registration">IBM Cloud Domain Name Registration page</a>.</li>
+<li>Create an IBM Cloud Internet Services (CIS) resource. You can find IBM CIS by searching for "Internet Services" in the IBM Cloud catalog. IBM CIS will prompt you for your domain name during resource creation.</li>
+<li>Add the 3 DNS entries previously mentioned. Detailed instructions can be found on the <a href="https://cloud.ibm.com/docs/cis?topic=cis-getting-started">Getting Started on IBM CIS page</a>.<ol>
+<li>Find your IBM CIS service in your resource list and click on it to access the console</li>
+<li>On the left menu, click on "Reliability"</li>
+<li>On the Reliability page menu, below your domain name and next to Global load balancers, click on "DNS."</li>
+<li>At the bottom of the page, you will find a list of DNS records. Click on the "Add button."
+<img alt="KVM1.png" src="../../images/DeployingOCP/KVM/KVM1.png" /></li>
+<li>You can now add the 3 required DNS entries for OCP install
+<img alt="KVM2.png" src="../../images/DeployingOCP/KVM/KVM2.png" /></li>
+</ol>
+</li>
 </ol>
 <h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying the OpenShift on <strong>K</strong>ernel-based <strong>V</strong>irtual <strong>M</strong>achine only requires two entries to your <b>existing</b> core environment file (<ENVIRONMENT_NAME>-env.sh).</p>
