@@ -35,11 +35,18 @@ You will need to create DNS entries and domain. For the OpenShift install, you n
     3. *.apps.${CLUSTER_NAME}.myexample.com         --->    ${YOUR.BASTION.IP}
 
 
-**Setting up DNS for KVM Deployment with OpenShift:**
+**Setting up DNS for KVM Deployment with IBM Cloud Internet Services:**
 
-1. Register domain name. Detailed instructions for domain registration on IBM Cloud can be found on the [IBM Cloud Domain Name Registration page](https://cloud.ibm.com/catalog/infrastructure/domain_registration).
-2. Open the IBM Cloud Internet Services (CIS) application
-3. Add your domain and create the 3 DNS entries previously mentioned. Detailed instructions can be found on the [Getting Started on IBM CIS page](https://cloud.ibm.com/docs/cis?topic=cis-getting-started).
+1. Register domain name. Detailed instructions for domain registration can be found on the [IBM Cloud Domain Name Registration page](https://cloud.ibm.com/catalog/infrastructure/domain_registration).
+2. Create an IBM Cloud Internet Services (CIS) resource. You can find IBM CIS by searching for "Internet Services" in the IBM Cloud catalog. IBM CIS will prompt you for your domain name during resource creation.
+3. Add the 3 DNS entries previously mentioned. Detailed instructions can be found on the [Getting Started on IBM CIS page](https://cloud.ibm.com/docs/cis?topic=cis-getting-started).
+    1. Find your IBM CIS service in your resource list and click on it to access the console
+    2. On the left menu, click on "Reliability"
+    3. On the Reliability page menu, below your domain name and next to Global load balancers, click on "DNS."
+    4. At the bottom of the page, you will find a list of DNS records. Click on the "Add button."
+    ![KVM1.png](../images/DeployingOCP/KVM/KVM1.png)
+    5. You can now add the 3 required DNS entries for OCP install
+    ![KVM2.png](../images/DeployingOCP/KVM/KVM2.png)
 
 ## Environment File
 
