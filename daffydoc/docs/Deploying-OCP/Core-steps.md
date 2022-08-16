@@ -137,3 +137,10 @@ You are **NOW** ready to begin making the necessary edits to your /data/daffy/en
 <button onclick="location.href='../AWS'" class="custom-btn btn-7">AWS</button>
 <button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
 </div>
+
+## Optional: Existing Cluster
+
+If you already have an existing cluster that was not built with Daffy, you can still use daffy for Step 2 and/or Step 3.
+The only extra step you need to do is via the command line on your bastion. You will need to login to your cluster via the **oc login** command. You can get this command from your OpenShift console.
+
+<button onclick="location.href='../../Cloud-Paks'" class="custom-btn btn-7">Cloud Paks</button>

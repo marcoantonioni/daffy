@@ -60,26 +60,26 @@ nav:
     - IBM LDAP: Supporting-Software/IBM-LDAP.md
     #- Turbo: Supporting-Software/Turbo.md
   #- Overrides:
-  #  - overrides/index.md
-  #  - Daffy: overrides/daffy.md
-  #  - OpenShift: overrides/ocp.md
-  #  - Platforms:
-  #      - cloudpaks/index.md
-  #      - AWS: overrides/platforms/aws.md
-  #      - Azure: overrides/platforms/azure.md
-  #      - Google: overrides/platforms/gcp.md
-  #      - VSphere: overrides/platforms/vsphere.md
-  #  - Cloud Paks:
-  #      - platforms/index.md
-  #      - Business Automation: overrides/cloudpaks/cp4ba.md
-  #      - Data: overrides/cloudpaks/cp4d.md
-  #      - Integration: overrides/cloudpaks/cp4i.md
-  #      - Security: overrides/cloudpaks/cp4security.md
-  #      - Wations AIOps: overrides/cloudpaks/cp4waiops.md
-    - Software:
-        - DB2: overrides/software/db2.md
-        - LDAP: overrides/software/ldap.md
-        - Turbonomics: overrides/software/turbonomics.md
+#    - overrides/index.md
+#    - Daffy: overrides/daffy.md
+#    - OpenShift: overrides/ocp.md
+#    - Platforms:
+#        - cloudpaks/index.md
+#        - AWS: overrides/platforms/aws.md
+#        - Azure: overrides/platforms/azure.md
+#        - Google: overrides/platforms/gcp.md
+#        - VSphere: overrides/platforms/vsphere.md
+#    - Cloud Paks:
+#        - platforms/index.md
+#        - Business Automation: overrides/cloudpaks/cp4ba.md
+#        - Data: overrides/cloudpaks/cp4d.md
+#        - Integration: overrides/cloudpaks/cp4i.md
+#        - Security: overrides/cloudpaks/cp4security.md
+#        - Wations AIOps: overrides/cloudpaks/cp4waiops.md
+#    - Software:
+#        - DB2: overrides/software/db2.md
+#        - LDAP: overrides/software/ldap.md
+#        - Turbonomics: overrides/software/turbonomics.md
   - Tips & Tricks:
     - Common Issues: Tips-and-Tricks/Common-Issues.md
     - Environment File: Tips-and-Tricks/Environment-File.md
