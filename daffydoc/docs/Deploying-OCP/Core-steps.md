@@ -125,7 +125,7 @@ For OpenShift to be installed, you will need to setup your own DNS or use existi
 ### **TechZone, HCCX, ROKS**
 1. You will not need DNS as they will provide for you
 
-## Step 5: Install OpenShift
+## Step 5a: Install OpenShift
 You are **NOW** ready to begin making the necessary edits to your /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file for a deployment of OCP to a specific platform.
 <div style="text-align:center">
 <button onclick="location.href='../HCCX-gym'" class="custom-btn btn-7">HCCX Gym</button>
@@ -138,9 +138,9 @@ You are **NOW** ready to begin making the necessary edits to your /data/daffy/en
 <button onclick="location.href='../GCP'" class="custom-btn btn-7">GCP</button>
 </div>
 
-## Optional: Existing Cluster
+## Step 5b: Existing Cluster
 
 If you already have an existing cluster that was not built with Daffy, you can still use daffy for Step 2 and/or Step 3.
-The only extra step you need to do is via the command line on your bastion. You will need to login to your cluster via the **oc login** command. You can get this command from your OpenShift console.
+The only extra step you need to do is via the command line on your bastion. You will need to login to your cluster via the **oc login** command. You can get this command from your OpenShift console. You would then move on to the Cloud Pak steps and skip the OpenShift Install. 
 
 <button onclick="location.href='../../Cloud-Paks'" class="custom-btn btn-7">Cloud Paks</button>
