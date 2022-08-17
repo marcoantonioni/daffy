@@ -46,7 +46,8 @@ Note: Use the Identity and Access Management (IAM) service to manage access keys
 **Secret Access Key:**
 The secret access key is ONLY displayed at the time of creation. When you create the access key, you will then have the opportunity to capture the secret access key
 
-**Note:** This is sensitive information, please make sure you store this in a secure location
+!!! Note
+      This is sensitive information, please make sure you store this in a secure location
 
 The screen to the right is an example of what you will see when you create a NEW access Key.
 <img src='../images/aws_6.png'/>
@@ -130,7 +131,8 @@ AWS_ACCESS_KEY_ID="<AWS-ACCESS_KEY-ID>"
 
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**=true
 
-If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
+If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.
+
 ##Execution
 
 To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.
@@ -141,9 +143,12 @@ To deploy your cluster, run the build.sh script from the /data/daffy/ocp directo
 
 Once your cluster is fully deployed you can access the help menu which as a number of options.
 
-**Note:** <**environment**> is the first part of your name that you used for the <environment>-env.sh file
+!!! Note
+      &lt;**environment**&gt; is the first part of your name that you used for the &lt;**environment**&gt;-env.sh file
+
 ```R
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
 ```
+
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button>
