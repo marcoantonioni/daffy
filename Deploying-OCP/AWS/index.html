@@ -1354,7 +1354,10 @@
 <img src='../images/aws_5.png'/></p>
 <p><strong>Secret Access Key:</strong>
 The secret access key is ONLY displayed at the time of creation. When you create the access key, you will then have the opportunity to capture the secret access key</p>
-<p><strong>Note:</strong> This is sensitive information, please make sure you store this in a secure location</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is sensitive information, please make sure you store this in a secure location</p>
+</div>
 <p>The screen to the right is an example of what you will see when you create a NEW access Key.
 <img src='../images/aws_6.png'/></p>
 <p><strong>Region:</strong></p>
@@ -1411,16 +1414,19 @@ The secret access key is ONLY displayed at the time of creation. When you create
 </code></pre></div>
 <p><strong>Optional:</strong></p>
 <p><strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
-<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
+<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.</p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
 <p>To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">ocp</span><span class="o">/</span><span class="n">build.sh</span> <span class="o">&lt;</span><span class="n">ENVIRONMENT_NAME</span><span class="o">&gt;</span>
 </code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which as a number of options.</p>
-<p><strong>Note:</strong> &lt;<strong>environment</strong>&gt; is the first part of your name that you used for the <environment>-env.sh file
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>&lt;<strong>environment</strong>&gt; is the first part of your name that you used for the &lt;<strong>environment</strong>&gt;-env.sh file</p>
+</div>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">ocp</span><span class="o">/</span><span class="n">build.sh</span> <span class="o">&lt;</span><span class="n">ENVIRONMENT_NAME</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">help</span>
 </code></pre></div>
-<button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
+<p><button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">
 Installing Cloud Paks</button></p>
 
               
