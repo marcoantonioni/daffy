@@ -209,7 +209,7 @@ function showSlides(n) {
 
 
 ## Overview
-Deploying OpenShift in a restricted network (air gap), can be done with the Daffy Restricted Network scripts. This page will primarily focus on the steps to perform an air gap install; however, please note the Proxy Install approach can be a viable option and is a more simple approach. Regardless of which one you choose, both install options will result in an OpenShift cluster with restricted network access. Also, note that the air gap install is more complicated and will require a JUMP BOX that has internet access to the Quay Repository.
+Deploying OpenShift in a restricted network (air gap), can be done with the Daffy Restricted Network scripts. This page will primarily focus on the steps to perform an air gap install; however, please note the Proxy Install approach can be a viable option and is a easier approach. Regardless of which one you choose, both install options will result in an OpenShift cluster with restricted network access. Also, note that the air gap install is more complicated and will require a JUMP BOX that has internet access to the Quay Repository.
 
 ***There are two basic options for deployment***
 
@@ -256,7 +256,7 @@ You should build your environment file based on the final install you want to  b
 
 The following values are required specifically for **air gap** install.
 
-**LOCAL_REGISTRY_ENABLED =** do you want this to be an air gap install true|false
+**LOCAL_REGISTRY_ENABLED =** do you want this to be an air gap install true|false    
 **LOCAL_REGISTRY_DNS_NAME =** this is your jump box DNS name. If you not have DNS, you can also put the ip address   
 **LOCAL_REGISTRY_IP =** this is your jump box IP address    
 **LOCAL_AIRGAP_REGISTRY_DNS_NAME =** this is your restricted network bastion box DNS name. If you not have DNS, you can also put the ip address.    
