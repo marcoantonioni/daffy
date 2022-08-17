@@ -63,7 +63,8 @@ You will need to create a DNS Zone within a new/existing resource group.  For th
 
 Deploying the OpenShift on Azure only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
-**Note:** You can look in the samples directory on your bastion for example of **Azure** install : /data/daffy/env/samples/**azure-ipi-env.sh**
+!!! Note
+    You can look in the samples directory on your bastion for example of Azure install : /data/daffy/env/samples/**azure-ipi-env.sh**
 
 You can copy the sample file to build your new environment  file.
 ```R
@@ -114,7 +115,8 @@ To deploy your OCP cluster to **Azure** , run the build.sh script from the /data
 
 Once your cluster is fully deployed you can access the help menu which has a number of options.
 
-**Note:** <**ENVIRONMENT_NAME**> is the first part of your name that you used for the <**ENVIRONMENT_NAME**>-env.sh file
+!!! Note
+      <**ENVIRONMENT_NAME**> is the first part of your name that you used for the <**ENVIRONMENT_NAME**>-env.sh file
 
 
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button>
