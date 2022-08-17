@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
@@ -1362,7 +1362,10 @@
 
 <h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying the OpenShift on Azure only requires three entries to your <strong>existing</strong> core environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh) plus a local service account file.</p>
-<p><strong>Note:</strong> You can look in the samples directory on your bastion for example of <strong>Azure</strong> install : /data/daffy/env/samples/<strong>azure-ipi-env.sh</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can look in the samples directory on your bastion for example of Azure install : /data/daffy/env/samples/<strong>azure-ipi-env.sh</strong></p>
+</div>
 <p>You can copy the sample file to build your new environment  file.
 <div class="highlight"><pre><span></span><code><span class="n">cp</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">env</span><span class="o">/</span><span class="n">samples</span><span class="o">/</span><span class="n">azure</span><span class="o">-</span><span class="n">ipi</span><span class="o">-</span><span class="n">env.sh</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">env</span><span class="o">/&lt;</span><span class="n">ENVIRONMENT_NAME</span><span class="o">&gt;-</span><span class="n">env.sh</span>
 </code></pre></div></p>
@@ -1392,7 +1395,10 @@
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">ocp</span><span class="o">/</span><span class="n">build.sh</span> <span class="o">&lt;</span><span class="n">ENVIRONMENT_NAME</span><span class="o">&gt;</span>
 </code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which has a number of options.</p>
-<p><strong>Note:</strong> &lt;<strong>ENVIRONMENT_NAME</strong>&gt; is the first part of your name that you used for the &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>&lt;<strong>ENVIRONMENT_NAME</strong>&gt; is the first part of your name that you used for the &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file</p>
+</div>
 <p><button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button></p>
 
               
