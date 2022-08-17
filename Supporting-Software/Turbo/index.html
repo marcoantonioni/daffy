@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -236,13 +236,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Supporting Software
       </a>
     </li>
@@ -803,18 +805,22 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
         
           
             
+          
+        
           
         
           
@@ -882,6 +888,75 @@
       <a href="../IBM-LDAP/" class="md-nav__link">
         IBM LDAP
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Turbo
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Turbo
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#turbonomic-platform" class="md-nav__link">
+    Turbonomic Platform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kubeturbo" class="md-nav__link">
+    Kubeturbo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executing-scripts" class="md-nav__link">
+    Executing Scripts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1200,15 +1275,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#turbonomic-platofrm" class="md-nav__link">
-    TURBONOMIC PLATOFRM
+  <a href="#turbonomic-platform" class="md-nav__link">
+    Turbonomic Platform
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#kubeturbo" class="md-nav__link">
-    KUBETURBO
+    Kubeturbo
   </a>
   
 </li>
@@ -1249,35 +1324,31 @@
 <strong>administrator</strong></p>
 </div>
 <p>KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data from the Kubernetes environment to a Turbonomic Platform instance. Installing KubeTurbo will require you to provide the Turbonomic Platform topology processor URL and the administrator password.</p>
-<h2 id="turbonomic-platofrm">TURBONOMIC PLATOFRM<a class="headerlink" href="#turbonomic-platofrm" title="Permanent link">&para;</a></h2>
+<h2 id="turbonomic-platform">Turbonomic Platform<a class="headerlink" href="#turbonomic-platform" title="Permanent link">&para;</a></h2>
 <p><strong><em>REQUIRED ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_VERSION=8.5.4
+<div class="highlight"><pre><span></span><code><span class="n">TURBO_PLATFORM_VERSION</span><span class="o">=</span><span class="s">&quot;8.5.4&quot;</span>
 </code></pre></div>
-<h2 id="kubeturbo">KUBETURBO<a class="headerlink" href="#kubeturbo" title="Permanent link">&para;</a></h2>
-<p><strong><em>REQUIRED ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_URL=&quot;https://topology-processor-turbo.apps.yourdomain.net&quot;
-TURBO_KUBE_CLUSTER_NAME=&quot;gamma03&quot;
+<h2 id="kubeturbo">Kubeturbo<a class="headerlink" href="#kubeturbo" title="Permanent link">&para;</a></h2>
+<p><strong><em>OPTIONAL ENVIRONMENT VARIABLES</em></strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">TURBO_PLATFORM_URL</span><span class="o">=</span><span class="s">&quot;https://topology-processor-turbo.apps.yourdomain.net&quot;</span>
+<span class="n">TURBO_KUBE_CLUSTER_NAME</span><span class="o">=</span><span class="s">&quot;gamma03&quot;</span>
 </code></pre></div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The TURBO_PLATFORM_URL will be the "topology-processor" OpenShift ROUTE URL     (If using the Turbo Platform Deployed by Daffy). If the Turbo Platform was  deployed without DAFFY, the URL may be the nginx endpoint.</p>
 </div>
 <p><strong><em>OPTIONAL ENVIRONMENT VARIABLES</em></strong></p>
-<div class="highlight"><pre><span></span><code>TURBO_PLATFORM_USERNAME=&quot;administrator&quot;
+<div class="highlight"><pre><span></span><code><span class="n">TURBO_PLATFORM_USERNAME</span><span class="o">=</span><span class="s">&quot;administrator&quot;</span>
 </code></pre></div>
 <h2 id="executing-scripts">Executing Scripts<a class="headerlink" href="#executing-scripts" title="Permanent link">&para;</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Turbo Platform</label><label for="__tabbed_1_2">KubeTurbo </label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>The script to deploy the Turbonomic Platform is located in the following directory:</p>
-<p><strong>/data/daffy/turbo/platform</strong></p>
-<div class="highlight"><span class="filename">Deploy Turbo Platform</span><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">turbo</span><span class="o">/</span><span class="n">platform</span><span class="o">/</span><span class="n">build</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">prefix</span><span class="o">&gt;</span>
+<div class="highlight"><span class="filename">Deploy Turbo Platform</span><pre><span></span><code>/data/daffy/turbo/build.sh &lt;env-prefix&gt;
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>The script to deploy KubeTurbo is located in the following directory:</p>
-<p><strong>/data/daffy/turbo/kubeturbo</strong></p>
-<div class="highlight"><span class="filename">Deploy KubeTurbo</span><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">turbo</span><span class="o">/</span><span class="n">kubeturbo</span><span class="o">/</span><span class="n">build</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">prefix</span><span class="o">&gt;</span>
+<div class="highlight"><span class="filename">Deploy KubeTurbo</span><pre><span></span><code>/data/daffy/turbo/service.sh &lt;env-prefix&gt;
 </code></pre></div>
 </div>
 </div>
@@ -1297,6 +1368,42 @@ TURBO_KUBE_CLUSTER_NAME=&quot;gamma03&quot;
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../IBM-LDAP/" class="md-footer__link md-footer__link--prev" aria-label="Previous: IBM LDAP" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              IBM LDAP
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../Tips-and-Tricks/Common-Issues/" class="md-footer__link md-footer__link--next" aria-label="Next: Common Issues" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Common Issues
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
