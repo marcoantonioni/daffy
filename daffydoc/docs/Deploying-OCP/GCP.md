@@ -42,7 +42,7 @@ To find your GCP project you can refer to this:
 
 Identifying a region or zone
 
-Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the **region** and the second part of the name describes the **zone** in the region:
+Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the **region** and the second part of the name describes the **zone** in the region.
 
 Region
 
@@ -61,7 +61,7 @@ A service account is a special kind of account used by an application or compute
 
 **Service Account:**
 
-For you to use Daffy to install on **GCP**, you need to create a service account that has the correct permission to install.
+In order to install on **GCP** with Daffy, you need to create a service account that has the correct permission to install.
 
 [https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating){target=_blank}
 
@@ -109,7 +109,8 @@ You will need to create a DZS hosted Zone project.  For the OpenShift install, y
 
 Deploying the OpenShift on **GCP** only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
-**Note:** You can look in the samples directory on your bastion for example of **GCP** install : /data/daffy/env/samples/**gcp-ipi-env.sh**
+!!! Note
+      You can look in the samples directory on your bastion for example of **GCP** install : /data/daffy/env/samples/**gcp-ipi-env.sh**
 
 You can copy the sample file to build your **new** environment  file.
 
@@ -133,7 +134,7 @@ GCP_REGION="<AnyValidGCPRegion>"
 #OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
 ```
 
-If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage
+If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.
 
 For **GCP**, you need to download your Service Key as well.  Save this to your home path:  **~/.gcp/osServiceAccount.json**
 
@@ -149,7 +150,7 @@ For **GCP**, you need to download your Service Key as well.  Save this to your h
 
 ## Execution
 
-To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory
+To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory:
 
 ```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>

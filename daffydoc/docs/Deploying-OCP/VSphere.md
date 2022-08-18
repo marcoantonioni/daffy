@@ -58,7 +58,8 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 
 Below are the VSphere IPI specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
 
-Note: You can look in the samples directory on your bastion for example of **VSphere** install : /data/daffy/env/samples/**vsphere-ipi-env.sh**
+!!! Note
+      You can look in the samples directory on your bastion for example of **VSphere** install : /data/daffy/env/samples/**vsphere-ipi-env.sh**
 
 <u>Valid Options:</u>
 
@@ -102,7 +103,8 @@ To deploy your cluster, run the build.sh script from the /data/daffy/ocp directo
 
 Once your cluster is fully deployed, you can access the help menu which has a number of options.
 
-**Note:** &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file
+!!! Note
+      &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the &lt;ENVIRONMENT_NAME&gt;-env.sh file
 
 Deploying an OpenShift cluster on VSphere using the Daffy scripts (using VSPhere-IPI install type):
 

@@ -68,7 +68,7 @@ VM_TSHIRT_SIZE | Large | How large you want the OpenShift Cluster to be. **Min**
 
 If **MSP** type install like ROKS, **BASE_DOMAIN** is not needed.
 
-**Optionally:** as a starting point, you can copy a sample environment file from the samples folder located here:  /data/daffy/env/samples/&lt;platform&gt;-env.sh
+**Optionally:** As a starting point, you can copy a sample environment file from the samples folder located here:  /data/daffy/env/samples/&lt;platform&gt;-env.sh
 ```console
 cd /data/daffy/env/samples
 ```

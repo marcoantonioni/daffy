@@ -14,7 +14,7 @@ hide:
 
 ## Platform Requirements
 
-To use Daffy on **K**ernel-based **V**irtual **M**achine, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For KVM , it breaks down to the following three basic items:
+To use Daffy on **K**ernel-based **V**irtual **M**achine, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For KVM, it breaks down to the following three basic items:
 
 **Hardware** - enough to run the OCP Cluster based on T-Shirt Sizing
 

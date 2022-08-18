@@ -32,7 +32,7 @@ To create or use an existing **AWS Access Key ID** you can refer to this:
 
 [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey){target=_blank}
 
-Note: Use the Identity and Access Management (IAM) service to manage access keys.
+**Note:** Use the Identity and Access Management (IAM) service to manage access keys.
 
 1. Select Search - find   IAM   service
 2. You can create a new access key or use an existing key. The access key must have authority to the account you wan to install OpenShift into.
@@ -103,12 +103,13 @@ Please refer to the [requirements doc](https://ibm.box.com/v/DaffyProviderRequir
 
 ##Environment File
 
-Below are the AWS specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file.
+Below are the AWS specific environment variables that must be defined in the /data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh file:
 
 - **AWS_REGION**
 - **AWS_ACCESS_KEY_ID**
 
-**Note**: You can look in the samples directory on your bastion for example of **AWS** install : /data/daffy/env/samples/**aws-ipi-env.sh**
+!!! Note
+      You can look in the samples directory on your bastion for example of **AWS** install : /data/daffy/env/samples/**aws-ipi-env.sh**
 
 You can run this command to build your **new** file from the sample.
 ```R
@@ -135,7 +136,7 @@ If you plan to install a cloud pak and/or need storage, you need to set the flag
 
 ##Execution
 
-To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.
+To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory:
 
 ```R
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME>
