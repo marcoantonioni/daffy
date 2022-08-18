@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
@@ -1358,7 +1358,7 @@
 <p>To install Daffy on <strong>AWS</strong>, the hardest part can be finding the provider details in the portal.</p>
 <p>To create or use an existing <strong>AWS Access Key ID</strong> you can refer to this:</p>
 <p><a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey" target="_blank">https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey</a></p>
-<p>Note: Use the Identity and Access Management (IAM) service to manage access keys.</p>
+<p><strong>Note:</strong> Use the Identity and Access Management (IAM) service to manage access keys.</p>
 <ol>
 <li>Select Search - find   IAM   service</li>
 <li>You can create a new access key or use an existing key. The access key must have authority to the account you wan to install OpenShift into.</li>
@@ -1408,12 +1408,15 @@ The secret access key is ONLY displayed at the time of creation. When you create
 <p><strong>Quota:</strong></p>
 <p>Please refer to the <a href="https://ibm.box.com/v/DaffyProviderRequirements" target="_blank">requirements doc</a> for a list of resource quota's that are required for deployment of OpenShift in AWS.</p>
 <h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
-<p>Below are the AWS specific environment variables that must be defined in the /data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file.</p>
+<p>Below are the AWS specific environment variables that must be defined in the /data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh file:</p>
 <ul>
 <li><strong>AWS_REGION</strong></li>
 <li><strong>AWS_ACCESS_KEY_ID</strong></li>
 </ul>
-<p><strong>Note</strong>: You can look in the samples directory on your bastion for example of <strong>AWS</strong> install : /data/daffy/env/samples/<strong>aws-ipi-env.sh</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can look in the samples directory on your bastion for example of <strong>AWS</strong> install : /data/daffy/env/samples/<strong>aws-ipi-env.sh</strong></p>
+</div>
 <p>You can run this command to build your <strong>new</strong> file from the sample.
 <div class="highlight"><pre><span></span><code><span class="n">cp</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">env</span><span class="o">/</span><span class="n">samples</span><span class="o">/</span><span class="n">aws</span><span class="o">-</span><span class="n">ipi</span><span class="o">-</span><span class="n">env.sh</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">env</span><span class="o">/&lt;</span><span class="n">ENVIRONMENT_NAME</span><span class="o">&gt;-</span><span class="n">env.sh</span>
 </code></pre></div>
@@ -1432,7 +1435,7 @@ The secret access key is ONLY displayed at the time of creation. When you create
 <p><strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
 <p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.</p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
-<p>To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory.</p>
+<p>To deploy your cluster, run the build.sh script from the /data/daffy/ocp directory:</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">ocp</span><span class="o">/</span><span class="n">build.sh</span> <span class="o">&lt;</span><span class="n">ENVIRONMENT_NAME</span><span class="o">&gt;</span>
 </code></pre></div>
 <p>Once your cluster is fully deployed you can access the help menu which as a number of options.</p>

@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
@@ -1365,7 +1365,7 @@
 </ol>
 <p><img alt="GCP1.png" src="../../images/DeployingOCP/GCP/GCP1.png" /></p>
 <p>Identifying a region or zone</p>
-<p>Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the <strong>region</strong> and the second part of the name describes the <strong>zone</strong> in the region:</p>
+<p>Each region in Compute Engine contains a number of zones. Each zone name contains two parts that describe each zone in detail. The first part of the zone name is the <strong>region</strong> and the second part of the name describes the <strong>zone</strong> in the region.</p>
 <p>Region</p>
 <p>Regions are collections of zones. Zones have high-bandwidth, low-latency network connections to other zones in the same region. In order to deploy fault-tolerant applications that have high availability, Google recommends deploying applications across multiple zones and multiple regions. This helps protect against unexpected failures of components, up to and including a single zone or region.</p>
 <p>Choose regions that makes sense for your scenario. For example, if you only have customers in the US, or if you have specific needs that require your data to live in the US, it makes sense to store your resources in zones in the us-central1 region or zones in the us-east1 region.</p>
@@ -1375,7 +1375,7 @@ to find a list of regions, you can refer to this:</p>
 <p>What are service accounts?</p>
 <p>A service account is a special kind of account used by an application or compute workload, such as a Compute Engine virtual machine (VM) instance, rather than a person. Applications use service accounts to make <a href="https://developers.google.com/identity/protocols/oauth2/service-account#authorizingrequests" target="_blank">authorized API calls</a>, authorized as either the service account itself, or as Google Workspace or Cloud Identity users through <a href="https://developers.google.com/identity/protocols/oauth2/service-account#delegatingauthority" target="_blank">domain-wide delegation</a>.</p>
 <p><strong>Service Account:</strong></p>
-<p>For you to use Daffy to install on <strong>GCP</strong>, you need to create a service account that has the correct permission to install.</p>
+<p>In order to install on <strong>GCP</strong> with Daffy, you need to create a service account that has the correct permission to install.</p>
 <p><a href="https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating" target="_blank">https://cloud.google.com/iam/docs/creating-managing-service-account-keys#creating</a></p>
 <p><strong>Permission:</strong></p>
 <p>Within your <strong>GCP</strong> project, you would need to go to IAM  Section and create/use Service Account.  From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements" target="_blank">requirements doc</a>, make sure your service account has the correct permissions.</p>
@@ -1407,7 +1407,10 @@ to find a list of regions, you can refer to this:</p>
 </div>
 <h2 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h2>
 <p>Deploying the OpenShift on <strong>GCP</strong> only requires three entries to your <strong>existing</strong> core environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh) plus a local service account file.</p>
-<p><strong>Note:</strong> You can look in the samples directory on your bastion for example of <strong>GCP</strong> install : /data/daffy/env/samples/<strong>gcp-ipi-env.sh</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can look in the samples directory on your bastion for example of <strong>GCP</strong> install : /data/daffy/env/samples/<strong>gcp-ipi-env.sh</strong></p>
+</div>
 <p>You can copy the sample file to build your <strong>new</strong> environment  file.</p>
 <p>cp /data/daffy/env/samples/<strong>gcp-ipi-env.sh</strong> /data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh</p>
 <p><strong>Valid Options:</strong></p>
@@ -1421,7 +1424,7 @@ to find a list of regions, you can refer to this:</p>
 <span class="n">GCP_REGION</span><span class="o">=</span><span class="s">&quot;&lt;AnyValidGCPRegion&gt;&quot;</span>
 <span class="c1">#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true</span>
 </code></pre></div>
-<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
+<p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage.</p>
 <p>For <strong>GCP</strong>, you need to download your Service Key as well.  Save this to your home path:  <strong>~/.gcp/osServiceAccount.json</strong></p>
 <ol>
 <li>In your <strong>GCP</strong> project, go to IAM and Select Service accounts</li>
@@ -1431,7 +1434,7 @@ to find a list of regions, you can refer to this:</p>
 <p>*** FYI  after you create the key, you can not view/download it.  You can only get the details at the time of creation</p>
 <p><img alt="GCP6.png" src="../../images/DeployingOCP/GCP/GCP6.png" /></p>
 <h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
-<p>To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory</p>
+<p>To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/ocp directory:</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt;</span>
 </code></pre></div>
 <p>Once your cluster is fully deployed, you can access the help menu which has a number of options.</p>
