@@ -23,7 +23,12 @@ hide:
     --md-default-fg-color--light: #eee; /* Search box result text */
 
   }
-
+  .mainPageLeftColumn {
+        width: 20%;
+  }
+  .mainPageRightColumn {
+        width: 80%;
+  }
   div.md-source-file {color: black; margin-left: 1rem;}
 </style>
 
@@ -35,7 +40,7 @@ hide:
 
   <div class=home-description>
     <div class='row'>
-      <div class='column'>
+      <div class='mainPageLeftColumn'>
         <p align = "right">
           <img src='./images/ducks.png'  align="left" width="200"
           height="100" style = "float">
@@ -43,10 +48,13 @@ hide:
         <button onclick="location.href='Deploying-OCP/Pre-Req/'" class="custom-btn btn-7"><span>New User</span></button>
         <button onclick="location.href='Deploying-OCP/'" class="custom-btn btn-7"><span>Experienced User</span></button>
       </div>
-
-      <div class='column'>
+      <div class='mainPageRightColumn'>
         <p style="margin:0;">
           Daffy is <b>D</b>eployment <b>A</b>utomation <b>F</b>ramework <b>F</b>or <b>Y</b>ou. A tool to do all the heavy lifting of the OpenShift and IBM Cloud Pak installs. The National Market Top Team created Daffy to assist the technical sales teams with the progression of IBM Cloud Pak opportunities. The goal is to provide the technical sales with a set of (easy to use) scripts that will aid in the installation of OpenShift and the IBM Cloud Pak's.
+        </p>
+        </p>
+        <p style="margin:0;">
+         Current Version <font color="#FF7C00" >v2022-08-17</font>
         </p>
       </div>
     </div>

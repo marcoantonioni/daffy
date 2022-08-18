@@ -16,19 +16,19 @@
 
 KubeTurbo is the Turbo Metric Collector designed to send metrics and usage data from the Kubernetes environment to a Turbonomic Platform instance. Installing KubeTurbo will require you to provide the Turbonomic Platform topology processor URL and the administrator password.
 
-##TURBONOMIC PLATOFRM
+##Turbonomic Platform
 
 **_REQUIRED ENVIRONMENT VARIABLES_**
 
-```
-TURBO_PLATFORM_VERSION=8.5.4
+```R
+TURBO_PLATFORM_VERSION="8.5.4"
 ```
 
-##KUBETURBO
+##Kubeturbo
 
-**_REQUIRED ENVIRONMENT VARIABLES_**
+**_OPTIONAL ENVIRONMENT VARIABLES_**
 
-```
+```R
 TURBO_PLATFORM_URL="https://topology-processor-turbo.apps.yourdomain.net"
 TURBO_KUBE_CLUSTER_NAME="gamma03"
 ```
@@ -40,7 +40,7 @@ TURBO_KUBE_CLUSTER_NAME="gamma03"
 **_OPTIONAL ENVIRONMENT VARIABLES_**
 
 
-```
+```R
 TURBO_PLATFORM_USERNAME="administrator"
 ```
 
@@ -49,20 +49,12 @@ TURBO_PLATFORM_USERNAME="administrator"
 
 === "Turbo Platform"
 
-	The script to deploy the Turbonomic Platform is located in the following directory:
-
-	**/data/daffy/turbo/platform**
-
-	``` py title="Deploy Turbo Platform"
-	/data/daffy/turbo/platform/build.sh <env-prefix>
+	``` title="Deploy Turbo Platform"
+	/data/daffy/turbo/build.sh <env-prefix>
 	```
 
 === "KubeTurbo "
 
-	The script to deploy KubeTurbo is located in the following directory:
-
-	**/data/daffy/turbo/kubeturbo**
-
-	``` py title="Deploy KubeTurbo"
-	/data/daffy/turbo/kubeturbo/build.sh <env-prefix>
+	``` title="Deploy KubeTurbo"
+	/data/daffy/turbo/service.sh <env-prefix>
 	```
