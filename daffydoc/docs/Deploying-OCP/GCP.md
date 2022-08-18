@@ -157,8 +157,8 @@ To deploy your OCP cluster to GCP, run the build.sh script from the /data/daffy/
 ```
 
 Once your cluster is fully deployed, you can access the help menu which has a number of options.
-
-**Note:** &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
+!!! Note
+      &lt;ENVIRONMENT_NAME&gt; is the first part of your name that you used for the <ENVIRONMENT_NAME>-env.sh file
 
 ```console
 /data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --help
