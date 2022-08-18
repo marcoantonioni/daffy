@@ -22,7 +22,7 @@ Deploying the Cloud Pak for Integration only requires one entry to your environm
 
 **CP4I_VERSION=<version>**
 
-You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
 CP4I_VERSION=2022.2.1
@@ -55,7 +55,7 @@ When this step is complete, up to an hour depending on your environment, you wil
 
 ## Step 3: Deploy Services
 
-Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS)
+Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS).
 
 ```R
 CP4I_ENABLE_SERVICE_ACEDESIGN="true|false"

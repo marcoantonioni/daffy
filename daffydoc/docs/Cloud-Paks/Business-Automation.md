@@ -11,7 +11,7 @@ Cloud Pak for Business Automation {: style="text-align: left;"}
 <img src='../images/ba.svg'
        style="width:100px;height:100px;"/>
 
-At this point, you have a working OCP cluster on your platform of choice. Your <**ENVIRONMENT_NAME**>-env.sh configuration file will contain details of the platform and OCP installation. You will now add to this file, the details of:
+At this point, you have a working OCP cluster on your platform of choice. Your <**ENVIRONMENT_NAME**>-env.sh configuration file will contain details of the platform and OCP installation. You will now add the following configurations to this file:
 
 1) The Cloud Pak info that you wish to install
 
@@ -59,7 +59,7 @@ Valid Options:
 - samples
 
 
-You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 CP4BA_VERSION="22.0.1"
 #CP4BA_IFIX=
@@ -77,7 +77,7 @@ content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1 or 2
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1 or 21.0.3
 samples        | Depends on sample        | 21.0.3 or 21.0.1
 
-Run the following command to deploy the Cloud Pak for Business Automation.
+Run the following command to deploy the Cloud Pak for Business Automation:
 
 ```shell
 /data/daffy/cp4ba/build.sh <ENVIRONMENT_NAME>
@@ -162,7 +162,7 @@ Valid Options:
 - samples
 
 
-You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
 
@@ -188,7 +188,7 @@ samples        | Depends on sample        | 21.0.3 or 21.0.1
 
 Be aware, this step is async, meaning that the Daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete. When the deployment of the service script is done, the service is not running yet. Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.
 
-Run the following command to deploy the Cloud Pak for Business Automation services.
+Run the following command to deploy the Cloud Pak for Business Automation services:
 
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME>

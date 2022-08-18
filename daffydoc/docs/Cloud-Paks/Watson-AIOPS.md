@@ -24,7 +24,7 @@ Deploying the Cloud Pak for Watson AIOps only requires **one** entry to your env
 
 **CP4WAIOPS_VERSION=<version>**
 
-You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
 CP4WAIOPS_VERSION=3.3.1
@@ -57,7 +57,8 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 The Event Manager for WatsonAIOps is an optional service deployment that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file.
 
-**Please Note:** as of today, you can ONLY deploy the Event Manager service as an additional component to the Cloud Pak for Watson AIOps. Installing the Watson AIOps Cloud Pak will by default install the AI Manager component. It is not possible today to only install the Event Manager component without the AI Manager.  
+!!! Warning
+      As of today, you can ONLY deploy the Event Manager service as an additional component to the Cloud Pak for Watson AIOps. Installing the Watson AIOps Cloud Pak will by default install the AI Manager component. It is not possible today to only install the Event Manager component without the AI Manager.  
 
 Here is the flag that will need to be set to enable the deployment of Event Manager with Watson AIOps:
 
