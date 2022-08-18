@@ -13,7 +13,7 @@ There are two ways to update existing daffy. Both process will replace the code 
 ```
 
 ??? Screenshot
-      <img src='../../images/daffyUpgrade1.jpg'   align="top"  style = "float">
+      <img src='../../images/tips/daffyUpgrade1.jpg'   align="top"  style = "float">
 
 ### Older version
 2) If you want to install older version of daffy.
@@ -24,8 +24,8 @@ There are two ways to update existing daffy. Both process will replace the code 
 ```
 This will give you a list of older version of daffy to downgrade to:
 ??? Screenshot
-      <img src='../../images/daffyUpgrade2.jpg'   align="top"  style = "float">
+      <img src='../../images/tips/daffyUpgrade2.jpg'   align="top"  style = "float">
 
 
 !!! Warning
-    If you have downgrade to older version of daffy and want to install another older version, you need to first upgrade to the lasted version then downgrade the other version you want. 
+    If you have downgrade to older version of daffy and want to install another older version, you need to first upgrade to the lasted version then downgrade the other version you want.
