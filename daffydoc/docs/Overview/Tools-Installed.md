@@ -348,4 +348,34 @@ Throughout the Daffy process, it will install all support tools it would need. D
       </tr>
     </table>
   </div>
+  <div class="column">RPA Server
+    <table>
+      <tr>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
+      </tr>
+      <tr>
+        <td><a href="https://developers.redhat.com/blog/2020/10/27/using-microsoft-sql-server-on-red-hat-openshift#" target=_blank>mssql2019</a></td>
+        <td>RPA Server Only</td>
+      </tr>
+      <tr>
+        <td><a href="https://hub.docker.com/r/bitnami/openldap/" target=_blank>openldap</td>
+        <td>RPA Server Only</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">CP4D
+    <table>
+      <tr>
+        <th bgcolor="#FF7C00">Tool</th>
+        <th bgcolor="#FF7C00">When</th>
+      </tr>
+      <tr>
+        <td>
+        <a href="https://github.com/IBM/cpd-cli/releases" target=_blan>cpd-cli</a></td>
+        <td>CP4D 4.5.X</td>
+      </tr>
+      <tr>
+    </table>
+  </div>
 </div>
