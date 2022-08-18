@@ -309,7 +309,9 @@ To find out the connection info to your ***RPA Server***, you can run the consol
 
 
 ## RPA Server: OpenLdap Config
-Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  The details for the next steps will come when you install Step 3 of Daffy for RPA Server, via your command line console.
+Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  
+
+The details for the next steps will come when you install Step 3 of Daffy for RPA Server, via your command line console.
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep0.jpg'   align="top"  style = "float">
 
