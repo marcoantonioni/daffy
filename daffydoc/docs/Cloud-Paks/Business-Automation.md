@@ -19,55 +19,74 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 
 ## Step 2: Deploy Cloud Pak
 
-Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh):
-
-**CP4BA_VERSION=**
-
-**CP4BA_DEPLOYMENT_STARTER_SERVICE=**
-
-With these two values, the Daffy engine will be able to install the version of Cloud Pak for Business Automation and prepare the desired service.
-
-Optional you can specify IFIX:
-
-**CP4BA_IFIX=**
-
-Valid Options:
-
-**CP4BA_VERSION=**              
-
-- 21.0.3    
-- 22.0.1    
-
-**CP4BA_IFIX=** (Optional)
-
-- IF005    
-- IF007                                            
-- IF008   
+Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/  <**ENVIRONMENT_NAME**>-env.sh):
+You need to pick starter services or production services.
 
 
+!!! Info
+      Currently Daffy only supports step 2 for Production services.  You can have daffy install the operators and create the namespace, but does not support the 3 step, deploy services just yet.
 
-**CP4BA_DEPLOYMENT_STARTER_SERVICE**
+| Variable Name                           | Info                                          | Install Type  | Required    |
+| :---------                              |    :---------                                 |   :----       |   :----     |  
+| CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
+| CP4BA_IFIX                              | The fix version of your version supported     |   Both        |   No        |
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_CONTENT     | **true** if you want to deploy content        |   Production  |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW    | **true** if you want to deploy workflow       |   Production  |   No        |
 
-- content
 
-- decisions
+***Valid Options:***
 
-- content-decisions
+| Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
+| :---------                              |    :---------       |   :----               |   :----                   |
+| CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001                   |
 
-- workflow
+| Variable Name                           | Valid Options                                         |
+| :---------                              |    :---------                                         |                      
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples |  
 
-- samples
+### RPA Server Info
+
+| Variable Name                           | Info                                          | Required            |
+| :---------                              |    :---------                                 |      :----          |  
+| CP4BA_ENABLE_SERVICE_RPA_SERVER         | **true** if you want to deploy RPA Server     |    No               |
+| CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME| Owner Full Name                               |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_SMTP_USER              | SMTP User that RPA will use to send Email     |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_SMTP_PORT              | SMTP Port that RPA will use to send Email     |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_SMTP_SERVER            | SMTP Server/IP that RPA will use to send Email|    Yes if RPA True  |
+
 
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 CP4BA_VERSION="22.0.1"
-#CP4BA_IFIX=
+CP4BA_IFIX=IF001
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
+#Prodution Services - only step 2 supported today.
+###################################################
+#CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS="true"
+#CP4BA_DEPLOYMENT_PRODUCTION_CONTENT="true"
+#CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW="true"
 
+#RPA Server
+############################################
+#CP4BA_RPA_SERVER_VERSION="21.0.3"
+#CP4BA_RPA_SERVER_IFIX=""
+#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
+#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
+#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
+#CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
+#CP4BA_RPA_SERVER_SMTP_PORT=587
+#CP4BA_RPA_SERVER_SMTP_SERVER="gmail.smtp.com"
 ```
 
-Options for Cloud Pak:
+***Service Mapping to Components:***
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
@@ -83,11 +102,14 @@ Run the following command to deploy the Cloud Pak for Business Automation:
 /data/daffy/cp4ba/build.sh <ENVIRONMENT_NAME>
 ```
 
-When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:
+When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects based on selction above:
 
 - cp4ba-starter
-
+- cp4ba-content
+- cp4ba-decisions
+- cp4ba-workflow
 - ibm-common-services
+
 
 <html>
    <head>
@@ -103,33 +125,46 @@ When this step is complete, approximately after 10 minutes depending on your env
 
 Deploying the service does not need any new values to your environment file (<**ENVIRONMENT_NAME**>-env.sh>). It will use the same values during the Cloud Pak deployment.
 
-**CP4BA_VERSION=**
+| Variable Name                           | Info                                          | Install Type  | Required    |
+| :---------                              |    :---------                                 |   :----       |   :----     |  
+| CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
+| CP4BA_IFIX                              | The fix version of your version support it    |   Both        |   No        |
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
 
-**CP4BA_DEPLOYMENT_STARTER_SERVICE=**
+***Valid Options:***
 
-With these two values, the Daffy engine will be able to install the version of Cloud Pak for Business Automation and the desired service.
+| Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
+| :---------                              |    :---------       |   :----               |   :----                   |
+| CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001                   |
+
+| Variable Name                           | Valid Options                                         |
+| :---------                              |    :---------                                         |                      
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples |  
+
 
 Instead of using the included services, you can also deploy your own sample or the included sample CR files from Daffy.
 
-**CP4BA_DEPLOYMENT_STARTER_SERVICE=**samples  
-
-**CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=**valid sample name in daffy samples folder
+Variable | Valid Option | Required
+:----------- |:-------------| -----------
+CP4BA_DEPLOYMENT_STARTER_SERVICE        | samples       | No
+CP4BA_DEPLOYMENT_STARTER_SERVICE        | see list below       | No
 
 !!! Warning "Sample Name"
-The value you use is without the .yaml in the name.
+    The value you use is without the .yaml in the name.
 
 
      cd /data/daffy/cp4ba/templates/services/samples  
 
 To use samples, you would give the name of the sample in this directory.
 
-- ocp-starter-ocs-adp-bai-IF008   
-- ocp-starter-ocs-bai-content-decisions-workflow-streams-IF007   
-- ocp-starter-ocs-workflow-IF008   
-- roks-starter-all-IF008   
-- roks-starter-nfs-all-IF008   
-- ocp-starter-ocs-all-22.0.1  
-- roks-starter-ibm-all-22.0.1  
+sample                                                       |  Info                   | Deployment Type
+:-----------                                                 |:-------------           | -----------
+ocp-starter-ocs-all-22.0.1                                   | All Starters with OpenShift Container Storage   |  OCP
+ocp-starter-ocs-all-22.0.1-IF001                             | All Starters with OpenShift Container Storage           |  OCP
+roks-starter-nfs-all-IF008                                   | All Starters NFS Storage |  ROKS
+roks-starter-ibm-all-22.0.1                                  | All Starters IBM Storage                |  ROKS
+roks-starter-ibm-all-22.0.1-IF001                            | All Starters IBM Storage                |  ROKS
 
 This is just the Daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.
 
@@ -137,40 +172,52 @@ The given sample names tell you which platform, storage, service and version.
 
 
 
-Optional:
+### OPS HUB:
 
 If  you want to deploy Open Prediction Service HUB (OPS), you can set this flag to setup it up in your cluster.
 
-**CP4BA_ENABLE_SERVICE_OPS=**<true|false>
+Variable | Valid Option | Required
+:----------- |:-------------| -----------
+CP4BA_ENABLE_SERVICE_OPS        | true or false       | No
 
-Valid Options:
 
-**CP4BA_VERSION=**             
+### RPA Server Info
 
-- 21.0.3 | 22.0.1
-
-**CP4BA_DEPLOYMENT_STARTER_SERVICE=**
-
-- content
-
-- decisions
-
-- content-decisions
-
-- workflow
-
-- samples
-
+| Variable Name                           | Info                                          | Required            |
+| :---------                              |    :---------                                 |      :----          |  
+| CP4BA_ENABLE_SERVICE_RPA_SERVER         | **true** if you want to deploy RPA Server     |    No               |
+| CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME| Owner Full Name                               |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_SMTP_USER              | SMTP User that RPA will use to send Email     |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_SMTP_PORT              | SMTP Port that RPA will use to send Email     |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_SMTP_SERVER            | SMTP Server/IP that RPA will use to send Email|    Yes if RPA True  |
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
-
 ```R
 
 CP4BA_VERSION="22.0.1"
-
+CP4BA_IFIX="IF001"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1
-#CP4BA_ENABLE_SERVICE_OPS="<true|false>"
+
+#Open Prediction Service HUB
+############################################
+#CP4BA_ENABLE_SERVICE_OPS="true"
+
+#RPA Server
+############################################
+#CP4BA_ENABLE_SERVICE_RPA_SERVER="true"
+#CP4BA_RPA_SERVER_VERSION="21.0.3"
+#CP4BA_RPA_SERVER_IFIX=""
+#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
+#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
+#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
+#CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
+#CP4BA_RPA_SERVER_SMTP_PORT=587
+#CP4BA_RPA_SERVER_SMTP_SERVER="gmail.smtp.com"
 ```
 
 Options for Services
@@ -215,11 +262,18 @@ Run the following commands to check the Cloud Pak for Business Automation to see
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --help
 ```
 
-The following command will give you the status of all components for the service you deployed:
+The following command will give you the status of all ***starter*** components for the service you deployed:
 
 
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
+```
+
+
+The following command will give you the status of ***RPA Server*** you deployed:
+
+```
+/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --RPAStatus
 ```
 
 If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command:
@@ -228,11 +282,19 @@ If you want to have a running job to refresh every few seconds,  you can run the
 watch -c /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
 ```
 
-To find out the connection info to your new service, you can run the console flag to get user names, passwords, and URLs to connect to:
+To find out the connection info to your new ***starter*** services, you can run the console flag to get user names, passwords, and URLs to connect to:
 
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole
 ```
+
+
+To find out the connection info to your ***RPA Server***, you can run the console flag to get user names, passwords, and URLs to connect to:
+
+```
+/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --RPAConsole
+```
+
 
 <html>
    <head>
@@ -247,5 +309,47 @@ To find out the connection info to your new service, you can run the console fla
 
 
 ## RPA Server: OpenLdap Config
-!!! Info
-    Content coming soon 
+Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  The details for the next steps will come when you install Step 3 of Daffy for RPA Server, via your command line console.
+
+1) Login Cloud Pak Dashboard Link via "***IBM provided credentials(admin only)***"
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep1.jpg'   align="top"  style = "float">
+
+2) From the hamburger menu bar, under Administration, select ***Access Control***
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep2.jpg'   align="top" style = "float">
+
+3) Select ***Identity provider configuration***
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep3.jpg'   align="top" style = "float">
+
+4) Select ***New Connection***
+??? Info "Screenshot"
+
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep4.jpg'   align="top" style = "float">
+
+5) Select ***LDAP*** from drop down list
+??? Info "Screenshot"
+
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep5.jpg'   align="top" style = "float">
+
+6) Fill out details from command line console output from before and test connection
+??? Info "Screenshot"
+
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep6.jpg'   align="top" style = "float">
+
+7) Fill out details from command line console output from before and hit create
+??? Info "Screenshot"
+
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep7.jpg'   align="top" style = "float">
+
+8) Close current browser tab and go back to previous tab for Cloud Pak Dashboard
+
+9) Click "***Add users"***
+??? Info "Screenshot"
+
+    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep9.jpg'   align="top"  style = "float">
+10) Logout of the Cloud Pak dashboard and close your browser.
+
+
+At this point, you are ready to logon to your RPA Server Console.
