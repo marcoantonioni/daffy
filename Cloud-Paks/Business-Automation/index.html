@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -757,12 +757,45 @@
     Step 2: Deploy Cloud Pak
   </a>
   
+    <nav class="md-nav" aria-label="Step 2: Deploy Cloud Pak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rpa-server-info" class="md-nav__link">
+    RPA Server Info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#step-3-deploy-services" class="md-nav__link">
     Step 3: Deploy Services
   </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Deploy Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ops-hub" class="md-nav__link">
+    OPS HUB:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpa-server-info_1" class="md-nav__link">
+    RPA Server Info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1290,12 +1323,45 @@
     Step 2: Deploy Cloud Pak
   </a>
   
+    <nav class="md-nav" aria-label="Step 2: Deploy Cloud Pak">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rpa-server-info" class="md-nav__link">
+    RPA Server Info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#step-3-deploy-services" class="md-nav__link">
     Step 3: Deploy Services
   </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Deploy Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ops-hub" class="md-nav__link">
+    OPS HUB:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpa-server-info_1" class="md-nav__link">
+    RPA Server Info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1338,80 +1404,210 @@
 <p>1) The Cloud Pak info that you wish to install</p>
 <p>2) The services that you wish to install on the Cloud Pak</p>
 <h2 id="step-2-deploy-cloud-pak">Step 2: Deploy Cloud Pak<a class="headerlink" href="#step-2-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
-<p>Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh):</p>
-<p><strong>CP4BA_VERSION=</strong></p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
-<p>With these two values, the Daffy engine will be able to install the version of Cloud Pak for Business Automation and prepare the desired service.</p>
-<p>Optional you can specify IFIX:</p>
-<p><strong>CP4BA_IFIX=</strong></p>
-<p>Valid Options:</p>
-<p><strong>CP4BA_VERSION=</strong>              </p>
-<ul>
-<li>21.0.3    </li>
-<li>22.0.1    </li>
-</ul>
-<p><strong>CP4BA_IFIX=</strong> (Optional)</p>
-<ul>
-<li>IF005    </li>
-<li>IF007                                            </li>
-<li>IF008   </li>
-</ul>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE</strong></p>
-<ul>
-<li>
-<p>content</p>
-</li>
-<li>
-<p>decisions</p>
-</li>
-<li>
-<p>content-decisions</p>
-</li>
-<li>
-<p>workflow</p>
-</li>
-<li>
-<p>samples</p>
-</li>
-</ul>
-<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:
-<div class="highlight"><pre><span></span><code><span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;22.0.1&quot;</span>
-<span class="c1">#CP4BA_IFIX=</span>
-<span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
-</code></pre></div></p>
-<p>Options for Cloud Pak:</p>
+<p>Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/  &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh):
+You need to pick starter services or production services.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Currently Daffy only supports step 2 for Production services.  You can have daffy install the operators and create the namespace, but does not support the 3 step, deploy services just yet.</p>
+</div>
 <table>
 <thead>
 <tr>
-<th align="left">Service</th>
-<th align="left">Components</th>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Info</th>
+<th style="text-align: left;">Install Type</th>
+<th style="text-align: left;">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_VERSION</td>
+<td style="text-align: left;">The version you want to install</td>
+<td style="text-align: left;">Both</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_IFIX</td>
+<td style="text-align: left;">The fix version of your version supported</td>
+<td style="text-align: left;">Both</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_STARTER_SERVICE</td>
+<td style="text-align: left;">The name of the service you want to deploy</td>
+<td style="text-align: left;">Starter</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS</td>
+<td style="text-align: left;"><strong>true</strong> if you want to deploy decisions</td>
+<td style="text-align: left;">Production</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_CONTENT</td>
+<td style="text-align: left;"><strong>true</strong> if you want to deploy content</td>
+<td style="text-align: left;">Production</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW</td>
+<td style="text-align: left;"><strong>true</strong> if you want to deploy workflow</td>
+<td style="text-align: left;">Production</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Valid Options:</em></strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Valid Options</th>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Valid Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_VERSION</td>
+<td style="text-align: left;">21.0.3</td>
+<td style="text-align: left;">CP4BA_IFIX</td>
+<td style="text-align: left;">IF005,IF007,IF008</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_VERSION</td>
+<td style="text-align: left;">22.0.1</td>
+<td style="text-align: left;">CP4BA_IFIX</td>
+<td style="text-align: left;">IF001</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Valid Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_STARTER_SERVICE</td>
+<td style="text-align: left;">content,decisions,content-decisions,workflow,samples</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rpa-server-info">RPA Server Info<a class="headerlink" href="#rpa-server-info" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Info</th>
+<th style="text-align: left;">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_ENABLE_SERVICE_RPA_SERVER</td>
+<td style="text-align: left;"><strong>true</strong> if you want to deploy RPA Server</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_VERSION</td>
+<td style="text-align: left;">Version of RPA to deploy</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_IFIX</td>
+<td style="text-align: left;">The fix version of your version supported</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL</td>
+<td style="text-align: left;">Owner Email Address</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID</td>
+<td style="text-align: left;">Owner user ID to login to RPA</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME</td>
+<td style="text-align: left;">Owner Full Name</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_SMTP_USER</td>
+<td style="text-align: left;">SMTP User that RPA will use to send Email</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_SMTP_PORT</td>
+<td style="text-align: left;">SMTP Port that RPA will use to send Email</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_SMTP_SERVER</td>
+<td style="text-align: left;">SMTP Server/IP that RPA will use to send Email</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+</tbody>
+</table>
+<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;22.0.1&quot;</span>
+<span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="n">IF001</span>
+<span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
+<span class="c1">#Prodution Services - only step 2 supported today.</span>
+<span class="c1">###################################################</span>
+<span class="c1">#CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS=&quot;true&quot;</span>
+<span class="c1">#CP4BA_DEPLOYMENT_PRODUCTION_CONTENT=&quot;true&quot;</span>
+<span class="c1">#CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW=&quot;true&quot;</span>
+
+<span class="c1">#RPA Server</span>
+<span class="c1">############################################</span>
+<span class="c1">#CP4BA_RPA_SERVER_VERSION=&quot;21.0.3&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_IFIX=&quot;&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL=&quot;daffy@us.ibm.com&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID=&quot;daffy&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME=&quot;Daffy Admin&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_SMTP_USER=&quot;GmailID@Gmail.com&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_SMTP_PORT=587</span>
+<span class="c1">#CP4BA_RPA_SERVER_SMTP_SERVER=&quot;gmail.smtp.com&quot;</span>
+</code></pre></div></p>
+<p><strong><em>Service Mapping to Components:</em></strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Service</th>
+<th style="text-align: left;">Components</th>
 <th>CP4BA Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">decisions</td>
-<td align="left">odm, bai</td>
+<td style="text-align: left;">decisions</td>
+<td style="text-align: left;">odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">content</td>
-<td align="left">filenet, cmis, ier, tm, bai</td>
+<td style="text-align: left;">content</td>
+<td style="text-align: left;">filenet, cmis, ier, tm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">content-decisions</td>
-<td align="left">filenet, cmis, ier, tm, odm, bai</td>
+<td style="text-align: left;">content-decisions</td>
+<td style="text-align: left;">filenet, cmis, ier, tm, odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">workflow</td>
-<td align="left">workflow, workstreams, pfs, baw_authoring, case, bai</td>
+<td style="text-align: left;">workflow</td>
+<td style="text-align: left;">workflow, workstreams, pfs, baw_authoring, case, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">samples</td>
-<td align="left">Depends on sample</td>
+<td style="text-align: left;">samples</td>
+<td style="text-align: left;">Depends on sample</td>
 <td>21.0.3 or 21.0.1</td>
 </tr>
 </tbody>
@@ -1419,14 +1615,13 @@
 <p>Run the following command to deploy the Cloud Pak for Business Automation:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/build.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
-<p>When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects:</p>
+<p>When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects based on selction above:</p>
 <ul>
-<li>
-<p>cp4ba-starter</p>
-</li>
-<li>
-<p>ibm-common-services</p>
-</li>
+<li>cp4ba-starter</li>
+<li>cp4ba-content</li>
+<li>cp4ba-decisions</li>
+<li>cp4ba-workflow</li>
+<li>ibm-common-services</li>
 </ul>
 <p><html>
    <head>
@@ -1440,96 +1635,271 @@
 <p></html></p>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
 <p>Deploying the service does not need any new values to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh&gt;). It will use the same values during the Cloud Pak deployment.</p>
-<p><strong>CP4BA_VERSION=</strong></p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
-<p>With these two values, the Daffy engine will be able to install the version of Cloud Pak for Business Automation and the desired service.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Info</th>
+<th style="text-align: left;">Install Type</th>
+<th style="text-align: left;">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_VERSION</td>
+<td style="text-align: left;">The version you want to install</td>
+<td style="text-align: left;">Both</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_IFIX</td>
+<td style="text-align: left;">The fix version of your version support it</td>
+<td style="text-align: left;">Both</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_STARTER_SERVICE</td>
+<td style="text-align: left;">The name of the service you want to deploy</td>
+<td style="text-align: left;">Starter</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em>Valid Options:</em></strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Valid Options</th>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Valid Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_VERSION</td>
+<td style="text-align: left;">21.0.3</td>
+<td style="text-align: left;">CP4BA_IFIX</td>
+<td style="text-align: left;">IF005,IF007,IF008</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_VERSION</td>
+<td style="text-align: left;">22.0.1</td>
+<td style="text-align: left;">CP4BA_IFIX</td>
+<td style="text-align: left;">IF001</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Valid Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_STARTER_SERVICE</td>
+<td style="text-align: left;">content,decisions,content-decisions,workflow,samples</td>
+</tr>
+</tbody>
+</table>
 <p>Instead of using the included services, you can also deploy your own sample or the included sample CR files from Daffy.</p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong>samples  </p>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=</strong>valid sample name in daffy samples folder</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Valid Option</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_STARTER_SERVICE</td>
+<td style="text-align: left;">samples</td>
+<td>No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_STARTER_SERVICE</td>
+<td style="text-align: left;">see list below</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 <div class="admonition warning">
 <p class="admonition-title">Sample Name</p>
-</div>
 <p>The value you use is without the .yaml in the name.</p>
-<div class="highlight"><pre><span></span><code> cd /data/daffy/cp4ba/templates/services/samples
-</code></pre></div>
+<p>cd /data/daffy/cp4ba/templates/services/samples  </p>
+</div>
 <p>To use samples, you would give the name of the sample in this directory.</p>
-<ul>
-<li>ocp-starter-ocs-adp-bai-IF008   </li>
-<li>ocp-starter-ocs-bai-content-decisions-workflow-streams-IF007   </li>
-<li>ocp-starter-ocs-workflow-IF008   </li>
-<li>roks-starter-all-IF008   </li>
-<li>roks-starter-nfs-all-IF008   </li>
-<li>ocp-starter-ocs-all-22.0.1  </li>
-<li>roks-starter-ibm-all-22.0.1  </li>
-</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">sample</th>
+<th style="text-align: left;">Info</th>
+<th>Deployment Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ocp-starter-ocs-all-22.0.1</td>
+<td style="text-align: left;">All Starters with OpenShift Container Storage</td>
+<td>OCP</td>
+</tr>
+<tr>
+<td style="text-align: left;">ocp-starter-ocs-all-22.0.1-IF001</td>
+<td style="text-align: left;">All Starters with OpenShift Container Storage</td>
+<td>OCP</td>
+</tr>
+<tr>
+<td style="text-align: left;">roks-starter-nfs-all-IF008</td>
+<td style="text-align: left;">All Starters NFS Storage</td>
+<td>ROKS</td>
+</tr>
+<tr>
+<td style="text-align: left;">roks-starter-ibm-all-22.0.1</td>
+<td style="text-align: left;">All Starters IBM Storage</td>
+<td>ROKS</td>
+</tr>
+<tr>
+<td style="text-align: left;">roks-starter-ibm-all-22.0.1-IF001</td>
+<td style="text-align: left;">All Starters IBM Storage</td>
+<td>ROKS</td>
+</tr>
+</tbody>
+</table>
 <p>This is just the Daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.</p>
 <p>The given sample names tell you which platform, storage, service and version.</p>
-<p>Optional:</p>
+<h3 id="ops-hub">OPS HUB:<a class="headerlink" href="#ops-hub" title="Permanent link">&para;</a></h3>
 <p>If  you want to deploy Open Prediction Service HUB (OPS), you can set this flag to setup it up in your cluster.</p>
-<p><strong>CP4BA_ENABLE_SERVICE_OPS=</strong><true|false></p>
-<p>Valid Options:</p>
-<p><strong>CP4BA_VERSION=</strong>             </p>
-<ul>
-<li>21.0.3 | 22.0.1</li>
-</ul>
-<p><strong>CP4BA_DEPLOYMENT_STARTER_SERVICE=</strong></p>
-<ul>
-<li>
-<p>content</p>
-</li>
-<li>
-<p>decisions</p>
-</li>
-<li>
-<p>content-decisions</p>
-</li>
-<li>
-<p>workflow</p>
-</li>
-<li>
-<p>samples</p>
-</li>
-</ul>
-<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Valid Option</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_ENABLE_SERVICE_OPS</td>
+<td style="text-align: left;">true or false</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rpa-server-info_1">RPA Server Info<a class="headerlink" href="#rpa-server-info_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Info</th>
+<th style="text-align: left;">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_ENABLE_SERVICE_RPA_SERVER</td>
+<td style="text-align: left;"><strong>true</strong> if you want to deploy RPA Server</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_VERSION</td>
+<td style="text-align: left;">Version of RPA to deploy</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_IFIX</td>
+<td style="text-align: left;">The fix version of your version supported</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL</td>
+<td style="text-align: left;">Owner Email Address</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID</td>
+<td style="text-align: left;">Owner user ID to login to RPA</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME</td>
+<td style="text-align: left;">Owner Full Name</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_SMTP_USER</td>
+<td style="text-align: left;">SMTP User that RPA will use to send Email</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_SMTP_PORT</td>
+<td style="text-align: left;">SMTP Port that RPA will use to send Email</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_RPA_SERVER_SMTP_SERVER</td>
+<td style="text-align: left;">SMTP Server/IP that RPA will use to send Email</td>
+<td style="text-align: left;">Yes if RPA True</td>
+</tr>
+</tbody>
+</table>
+<p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:
 <div class="highlight"><pre><span></span><code><span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;22.0.1&quot;</span>
-
+<span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="s">&quot;IF001&quot;</span>
 <span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
 <span class="c1">#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1</span>
-<span class="c1">#CP4BA_ENABLE_SERVICE_OPS=&quot;&lt;true|false&gt;&quot;</span>
-</code></pre></div>
+
+<span class="c1">#Open Prediction Service HUB</span>
+<span class="c1">############################################</span>
+<span class="c1">#CP4BA_ENABLE_SERVICE_OPS=&quot;true&quot;</span>
+
+<span class="c1">#RPA Server</span>
+<span class="c1">############################################</span>
+<span class="c1">#CP4BA_ENABLE_SERVICE_RPA_SERVER=&quot;true&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_VERSION=&quot;21.0.3&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_IFIX=&quot;&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL=&quot;daffy@us.ibm.com&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID=&quot;daffy&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME=&quot;Daffy Admin&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_SMTP_USER=&quot;GmailID@Gmail.com&quot;</span>
+<span class="c1">#CP4BA_RPA_SERVER_SMTP_PORT=587</span>
+<span class="c1">#CP4BA_RPA_SERVER_SMTP_SERVER=&quot;gmail.smtp.com&quot;</span>
+</code></pre></div></p>
 <p>Options for Services</p>
 <table>
 <thead>
 <tr>
-<th align="left">Service</th>
-<th align="left">Components</th>
+<th style="text-align: left;">Service</th>
+<th style="text-align: left;">Components</th>
 <th>CP4BA Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">decisions</td>
-<td align="left">odm, bai</td>
+<td style="text-align: left;">decisions</td>
+<td style="text-align: left;">odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">content</td>
-<td align="left">filenet, cmis, ier, tm, bai</td>
+<td style="text-align: left;">content</td>
+<td style="text-align: left;">filenet, cmis, ier, tm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">content-decisions</td>
-<td align="left">filenet, cmis, ier, tm, odm, bai</td>
+<td style="text-align: left;">content-decisions</td>
+<td style="text-align: left;">filenet, cmis, ier, tm, odm, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">workflow</td>
-<td align="left">workflow, workstreams, pfs, baw_authoring, case, bai</td>
+<td style="text-align: left;">workflow</td>
+<td style="text-align: left;">workflow, workstreams, pfs, baw_authoring, case, bai</td>
 <td>22.0.1 or 21.0.3</td>
 </tr>
 <tr>
-<td align="left">samples</td>
-<td align="left">Depends on sample</td>
+<td style="text-align: left;">samples</td>
+<td style="text-align: left;">Depends on sample</td>
 <td>21.0.3 or 21.0.1</td>
 </tr>
 </tbody>
@@ -1554,14 +1924,20 @@
 <p>Run the following commands to check the Cloud Pak for Business Automation to see what command flags you can run:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --help
 </code></pre></div>
-<p>The following command will give you the status of all components for the service you deployed:</p>
+<p>The following command will give you the status of all <strong><em>starter</em></strong> components for the service you deployed:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
+</code></pre></div>
+<p>The following command will give you the status of <strong><em>RPA Server</em></strong> you deployed:</p>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --RPAStatus
 </code></pre></div>
 <p>If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command:</p>
 <div class="highlight"><pre><span></span><code>watch -c /data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
 </code></pre></div>
-<p>To find out the connection info to your new service, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
+<p>To find out the connection info to your new <strong><em>starter</em></strong> services, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterConsole
+</code></pre></div>
+<p>To find out the connection info to your <strong><em>RPA Server</em></strong>, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --RPAConsole
 </code></pre></div>
 <p><html>
    <head>
@@ -1574,10 +1950,50 @@
    </body></p>
 <p></html></p>
 <h2 id="rpa-server-openldap-config">RPA Server: OpenLdap Config<a class="headerlink" href="#rpa-server-openldap-config" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Content coming soon </p>
-</div>
+<p>Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  The details for the next steps will come when you install Step 3 of Daffy for RPA Server, via your command line console.</p>
+<p>1) Login Cloud Pak Dashboard Link via "<strong><em>IBM provided credentials(admin only)</em></strong>"</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep1.jpg'   align="top"  style = "float"></p>
+</details>
+<p>2) From the hamburger menu bar, under Administration, select <strong><em>Access Control</em></strong></p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep2.jpg'   align="top" style = "float"></p>
+</details>
+<p>3) Select <strong><em>Identity provider configuration</em></strong></p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep3.jpg'   align="top" style = "float"></p>
+</details>
+<p>4) Select <strong><em>New Connection</em></strong></p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep4.jpg'   align="top" style = "float"></p>
+</details>
+<p>5) Select <strong><em>LDAP</em></strong> from drop down list</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep5.jpg'   align="top" style = "float"></p>
+</details>
+<p>6) Fill out details from command line console output from before and test connection</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep6.jpg'   align="top" style = "float"></p>
+</details>
+<p>7) Fill out details from command line console output from before and hit create</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep7.jpg'   align="top" style = "float"></p>
+</details>
+<p>8) Close current browser tab and go back to previous tab for Cloud Pak Dashboard</p>
+<p>9) Click "<strong><em>Add users"</em></strong></p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep9.jpg'   align="top"  style = "float"></p>
+</details>
+<p>10) Logout of the Cloud Pak dashboard and close your browser.</p>
+<p>At this point, you are ready to logon to your RPA Server Console.</p>
 
               
             </article>
