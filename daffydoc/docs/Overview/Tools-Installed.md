@@ -356,11 +356,11 @@ Throughout the Daffy process, it will install all support tools it would need. D
       </tr>
       <tr>
         <td><a href="https://developers.redhat.com/blog/2020/10/27/using-microsoft-sql-server-on-red-hat-openshift#" target=_blank>mssql2019</a></td>
-        <td>RPA Server Only</td>
+        <td>RPA Server</td>
       </tr>
       <tr>
         <td><a href="https://hub.docker.com/r/bitnami/openldap/" target=_blank>openldap</td>
-        <td>RPA Server Only</td>
+        <td>RPA Server</td>
       </tr>
     </table>
   </div>
