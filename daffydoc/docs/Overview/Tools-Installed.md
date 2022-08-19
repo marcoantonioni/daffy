@@ -243,11 +243,11 @@ Throughout the Daffy process, it will install all support tools it would need. D
         <th bgcolor="#FF7C00">When</th>
       </tr>
       <tr>
-        <td>haproxy</td>
+        <td><a href="http://www.haproxy.org/" target=_blank>haproxy</td>
         <td>KVM or VSphere install Only</td>
       </tr>
       <tr>
-        <td>dnsmasq</td>
+        <td><a href="https://thekelleys.org.uk/dnsmasq/doc.html" target=_blank>dnsmasq</td>
         <td>KVM or VSphere install Only</td>
       </tr>
     </table>
