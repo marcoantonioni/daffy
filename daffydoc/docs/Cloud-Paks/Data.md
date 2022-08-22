@@ -23,14 +23,16 @@ Deploying the Cloud Pak for Data requires one entry to your environment file (/d
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
-```R 
-CP4D_VERSION="4.0.9"
+```R
+CP4D_VERSION="4.5.1"
 ```
 
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
+| 4.5.1     | 4.8, 4.10    |
+| 4.5.0     | 4.8, 4.10    |
 | 4.0.9     | 4.6, 4.8     |
 | 4.0.8     | 4.6, 4.8      |
 | 4.0.7     | 4.6, 4.8      |
@@ -77,6 +79,20 @@ CP4D_ENABLE_SERVICE_DODS="true|false"
 CP4D_ENABLE_SERVICE_DMC="true|false"
 
 CP4D_ENABLE_SERVICE_COGNOS="true|false"
+
+CP4D_ENABLE_SERVICE_MATCH_360="true|false"
+
+CP4D_ENABLE_SERVICE_OPENPAGES="true|false"
+
+CP4D_ENABLE_SERVICE_ANALYTICS_ENGINE="true|false"
+
+CP4D_ENABLE_SERVICE_DB2_WAREHOUSE="true|false"
+
+CP4D_ENABLE_SERVICE_DATAPRIVACY="true|false"
+
+CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS="true|false"
+
+CP4D_ENABLE_SERVICE_DB2="true|false"
 ```
 
 With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
@@ -100,6 +116,20 @@ With these values, the daffy engine will be able to install the version of Cloud
 **DMC** - DB2 Management Console
 
 **Cognos** - Cognos
+
+**Match_360** - Match 360
+
+**Analytics_Engine** = Analytics Engine powered by Apache Spark
+
+**DB2_Warehouse** = DB2 Warehouse
+
+**DataPrivacy** = Data Privacy
+
+**OpenPages** = Open Pages
+
+**Cognos Analytics** = Cognos Analytics
+
+**DB2** = DB2 OLTP
 
 Run the following command to deploy the Cloud Pak for Data services:
 
@@ -149,6 +179,27 @@ If you want to want to see more detail status on an individual service, you can 
 ```
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --DODSStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --Match360Status
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --OpenPagesStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --AnalyticsEngineStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --DB2WarehouseStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --DataPrivacyStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --CognosAnalyticsStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --DB2Status
 ```
 ```
 /data/daffy/cp4d/build.sh <ENVIRONMENT_NAME> --Console
