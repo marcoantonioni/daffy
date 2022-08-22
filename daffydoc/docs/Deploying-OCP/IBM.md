@@ -77,6 +77,8 @@ Please see the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirement
 
 For each OpenShift deployment into **IBM**, you need to have your own **Cloud Internet Services.** (CIS) service
 
+**Important**: Create the Cloud Internet Service instance with no spaces
+
 **Important**: You must create a domain that exactly matches your Base Domain.
 
 **Important:** Once you create your domain in your CIS instance, you must point your DNS registry Name Server records to the assigned IBM DNS Name Server records listed in this domain. You will see the Name Servers listed once you have created the Domain.
