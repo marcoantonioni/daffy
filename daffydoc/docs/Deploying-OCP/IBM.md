@@ -8,7 +8,7 @@ hide:
 
 #IBM Install
 
-<img src='../images/IBM-cloud.png'  align="top" width="200" height="300" style = "float">
+<img src='../images/IBM-Cloud.png'  align="top" width="200" height="300" style = "float">
 
 ##Platform Requirements
 
