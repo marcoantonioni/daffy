@@ -7,7 +7,7 @@ hide:
 </script>
 Cloud Pak for Security {: style="text-align: left;"}
 ===============
-<img src='../images/security.png'
+<img src='../images/security-cp.png'
        style="width:100px;height:100px;"/>
 
 At this point, you have a working OCP cluster on your platform of choice. Your <**ENVIRONMENT_NAME**>-env.sh configuration file will contain details of the platform and OCP installation. You will now add the details of the Cloud Pak info that you wish to install to this file.
