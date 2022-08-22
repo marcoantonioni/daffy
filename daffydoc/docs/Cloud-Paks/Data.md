@@ -23,7 +23,7 @@ Deploying the Cloud Pak for Data requires one entry to your environment file (/d
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
-```R
+```R 
 CP4D_VERSION="4.0.9"
 ```
 
