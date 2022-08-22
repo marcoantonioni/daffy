@@ -26,7 +26,7 @@ Deploying WebSphere Automation only requires **one** entry to your environment f
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CPWSA_VERSION=1.4
+CPWSA_VERSION="1.4"
 ```
 
 With this one value, the Daffy engine will be able to install the version of WebSphere Automation.
@@ -51,7 +51,6 @@ WebSphere Automation Small Profile (consists of):
 Run the following command to deploy WebSphere Automation:
 
 ```
-
 /data/daffy/wsa/build.sh <ENVIRONMENT_NAME>
 ```
 
@@ -70,27 +69,23 @@ Currently there is one service/demo for WebSphere Automation. We are adding new 
 The service can take a few hours to complete. To help monitor the status of the service/pattern deployment you can run the help flag to see what flags you can use to get information on your service/pattern deployment:
 
 ```
-
 /data/daffy/wsa/build.sh <ENVIRONMENT_NAME> --help
 ```
 
 **Run the following commands** to check the WebSphere Automation installation progress:
 
 ```
-
 /data/daffy/wsa/service.sh <ENVIRONMENT_NAME> --status
 ```
 
 If you want to have a running job to refresh every few seconds,  you can run the status script using the watch command:
 
 ```
-
 watch -c /data/daffy/wsa/service.sh <ENVIRONMENT_NAME> --status
 ```
 
 To find out the connection info to your new service/pattern, you can run the console flag to get user names, passwords and URLs to connect to:
 
 ```
-
 /data/daffy/wsa/build.sh <ENVIRONMENT_NAME> --console
 ```
