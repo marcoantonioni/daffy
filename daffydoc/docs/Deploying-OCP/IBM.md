@@ -8,7 +8,7 @@ hide:
 
 #IBM Install
 
-<img src='../images/IBM-cloud.png'  align="top" width="200" height="300" style = "float">
+<img src='../images/IBM-Cloud.png'  align="top" width="200" height="300" style = "float">
 
 ##Platform Requirements
 
@@ -91,7 +91,7 @@ For each OpenShift deployment into **IBM**, you need to have your own **Cloud In
    </head>
    <body>
     <div style="text-align:center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Zg3eFa47PKk" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://youtu.be/4jpCXlG2ReE" frameborder="0" allowfullscreen></iframe>
       </iframe>
       </div>
    </body>
