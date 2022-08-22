@@ -52,7 +52,7 @@ You need to pick starter services or production services.
 | Variable Name                           | Info                                          | Required            |
 | :---------                              |    :---------                                 |      :----          |  
 | CP4BA_ENABLE_SERVICE_RPA_SERVER         | **true** if you want to deploy RPA Server     |    No               |
-| CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    Yes if RPA True  |
+| CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    NO               |
 | CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
