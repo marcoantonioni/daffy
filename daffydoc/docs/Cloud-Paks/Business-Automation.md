@@ -61,6 +61,12 @@ You need to pick starter services or production services.
 | CP4BA_RPA_SERVER_SMTP_PORT              | SMTP Port that RPA will use to send Email     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_SERVER            | SMTP Server/IP that RPA will use to send Email|    Yes if RPA True  |
 
+***Valid Options:***
+
+| Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
+| :---------                              |    :---------       |   :----               |   :----                   |
+| CP4BA_RPA_SERVER_VERSION                |  21.0.2             | CP4BA_RPA_SERVER_IFIX |   IF005                   |
+| CP4BA_RPA_SERVER_VERSION                |  21.0.3             | CP4BA_RPA_SERVER_IFIX |                           |
 
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
