@@ -22,6 +22,9 @@ There are three options with TechZone:
     - Does **NOT** include bastion with request
     - With this option, you will skip Daffy step 1 (build cluster) as TechZone will build for you (this would fail as you do not have access to create cluster with a TechZone setup)
     - You still need to have a bastion and core values in your <**ENVIRONMENT_NAME**>-env.sh
+    - **BASE_DOMAIN** is not needed in your environment file
+    - **OCP_INSTALL_TYPE** is needed based on provider you pick(aws-ip or azure-ipi).  All other provider info is not needed in your environment file
+
 
 
 
@@ -38,5 +41,8 @@ There are three options with TechZone:
     - Extra settings to change in your environment file:
           1. **ROKS_PROVIDER=**techzone
           2. **DAFFY_DEPLOYMENT_TYPE=**TechZone
+    - **BASE_DOMAIN** is not needed in your environment file
+    - **OCP_INSTALL_TYPE** is needed based on provider you pick(roks-msp).
+
 
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button>
