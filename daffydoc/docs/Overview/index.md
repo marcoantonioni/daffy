@@ -3,7 +3,7 @@
   document.title = "Overview";
 </script>
 <p align = "center">
-  <img src='./images/Daffy_Capabilities_2.png'  align="top"  style = "float">
+  <img src='./images/Daffy_Capabilities.png'  align="top"  style = "float">
 </p>
 
 <p align = "center">
