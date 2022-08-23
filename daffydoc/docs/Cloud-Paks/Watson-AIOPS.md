@@ -77,12 +77,12 @@ Once you have the environment file updated with the CP4WAIOPS_DEPLOY_EMGR flag s
 
 This is a screen shot of what you will see after Daffy deploys the event manager operator. Please follow the instructions to complete the configuration of the Event Manager (NOI) instance.
 
-![evntmgr_config.png](../images/evntmgr_config.png)
+<img src='../images/evntmgr_config.png'/>
 
 !!! warning
      Occasionally you may see the following error message, which is usually not a big concern. We have noticed that in some cases (***primarily on ROKS when doing an all in one deployment***) the install of the event manager will take longer than normal to deploy. In this case you may see a message like this below. If that happens, please give some additional time (usually no more than 30 minutes) to verify your installation.
 
-![evntmgr-depoly-error.png](../images/evntmgr-deploy-error.png)
+<img src='../images/evntmgr-deploy-error.png'/>
 
 Run the ***--console*** command after 30 minutes to show you the login information. Details of the ***--console*** command are below.
 
