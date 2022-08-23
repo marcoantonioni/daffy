@@ -93,7 +93,7 @@ For each OpenShift deployment into **IBM**, you need to have your own **Cloud In
    </head>
    <body>
     <div style="text-align:center">
-      <iframe width="560" height="315" src=""https://www.youtube.com/embed/4jpCXlG2ReE" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4jpCXlG2ReE" frameborder="0" allowfullscreen></iframe>
       </iframe>
       </div>
    </body>
