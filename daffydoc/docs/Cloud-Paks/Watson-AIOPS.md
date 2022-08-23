@@ -38,7 +38,7 @@ The service consist of the following products:
 
 | AIOps Supported Version    | OCP Versions |
 | :---      |    :----     |
-| 3.3.1     | 4.8     |
+| 3.3.1     | 4.8 , 4.10    |
 | 3.2.0     | 4.8     |
 
 **Run the following command** to deploy the Cloud Pak for Watson AIOps:
@@ -55,16 +55,30 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 ## Step 3: Deploy Services
 
-The Event Manager for WatsonAIOps is an optional service deployment that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file.
+The Event Manager for WatsonAIOps is an optional service deployment that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file then run the service.sh script.  
 
 !!! Warning
       As of today, you can ONLY deploy the Event Manager service as an additional component to the Cloud Pak for Watson AIOps. Installing the Watson AIOps Cloud Pak will by default install the AI Manager component. It is not possible today to only install the Event Manager component without the AI Manager.  
 
 Here is the flag that will need to be set to enable the deployment of Event Manager with Watson AIOps:
 
-```R
+```
 CP4WAIOPS_DEPLOY_EMGR=<true|false>
 ```
+
+Once you have the environment file updated with the CP4WAIOPS_DEPLOY_EMGR flag set to true, you will need to run the service.sh script.
+
+```
+/data/daffy/cp4waiops/service.sh <ENVIRONMENT_NAME>
+```
+
+!!! Note
+    The Daffy scripts for deployment of Watson AIOPS Event Manager will configure the subscription and deploy the event manager operator. You will need to configure the NOI (Event Manager) instance manually. This is because Event Manager can be configured to collect, consolidate, and correlate events and topology data from a multitude of sources, which may require additional parameters specific to your environment.  
+
+This is a screen shot of what you will see after Daffy deploys the event manager operator. Please follow the instructions to complete the configuration of the Event Manager (NOI) instance.
+
+![GCP1.png](../images/subscription_config.png)
+
 ## Step 3a: Status
 
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service/pattern deployment, you can run the help flag to see what flags you can use to get information on your service/pattern deployment:
