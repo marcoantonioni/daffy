@@ -12,10 +12,6 @@ hide:
 
 ##Platform Requirements
 
-**Important**: In order to deploy OCP on **IBM Cloud**, your account will need a section marked as on. Its located in Manage -> Account -> Account Settings and will look similar to the picture below.
-
-<img src='../images/ibm_ipi_account.jpg'/>
-
 To use Daffy on **IBM Cloud**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **IBM**, it breaks down to the following basic three items:
 
   **Account Details** - The account that you plan to install OpenShift
