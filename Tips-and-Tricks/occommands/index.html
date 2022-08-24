@@ -1067,6 +1067,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#get-cluster-name" class="md-nav__link">
+    Get Cluster Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-worker-nodes" class="md-nav__link">
+    Get Worker Nodes
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1309,6 +1323,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#get-cluster-name" class="md-nav__link">
+    Get Cluster Name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-worker-nodes" class="md-nav__link">
+    Get Worker Nodes
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1360,6 +1388,14 @@
 <summary>Screenshot</summary>
 <p><img src='../images/oclogin-5.jpg'   align="top" style = "float">   </p>
 </details>
+<h2 id="get-cluster-name">Get Cluster Name<a class="headerlink" href="#get-cluster-name" title="Permanent link">&para;</a></h2>
+<p>Sometimes you will use existing cluster for daffy, but daffy still needs to match your cluster name in the environment file with your runtime. There is an oc command that will display your cluster name.</p>
+<div class="highlight"><pre><span></span><code><span class="n">oc</span> <span class="n">describe</span> <span class="n">infrastructure</span><span class="o">/</span><span class="n">cluster</span> <span class="o">|</span> <span class="n">grep</span> <span class="s">&quot;Infrastructure Name&quot;</span>
+</code></pre></div>
+<h2 id="get-worker-nodes">Get Worker Nodes<a class="headerlink" href="#get-worker-nodes" title="Permanent link">&para;</a></h2>
+<p>Daffy will require your environment file to match your runtime environment. One area it checks is the number of worker nodes you have.  They must match.  Here is a command you can run to get the your worker nodes for your running cluster
+<div class="highlight"><pre><span></span><code><span class="n">oc</span> <span class="n">get</span> <span class="n">nodes</span> <span class="o">|</span> <span class="n">grep</span> <span class="s">&quot;worker&quot;</span>
+</code></pre></div></p>
 
               
             </article>
