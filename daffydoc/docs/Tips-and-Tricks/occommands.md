@@ -34,3 +34,16 @@ At certain parts of the install of cloud paks, you may need to get a login token
 ??? Info "Screenshot"
 
     <img src='../images/oclogin-5.jpg'   align="top" style = "float">   
+##Get Cluster Name
+
+Sometimes you will use existing cluster for daffy, but daffy still needs to match your cluster name in the environment file with your runtime. There is an oc command that will display your cluster name.
+
+```R
+oc describe infrastructure/cluster | grep "Infrastructure Name"
+```
+##Get Worker Nodes
+
+Daffy will require your environment file to match your runtime environment. One area it checks is the number of worker nodes you have.  They must match.  Here is a command you can run to get the your worker nodes for your running cluster
+```R
+oc get nodes | grep "worker"
+```
