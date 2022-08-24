@@ -5,7 +5,7 @@
 
 At certain parts of the install of cloud paks, you may need to get a login token and give to daffy.  This will show you how to do this.
 
-1) Login to our cluster
+1) Login to our cluster UI
 ??? Info "Screenshot"
 
     <img src='../images/oclogin-0.jpg'   align="top" style = "float">
