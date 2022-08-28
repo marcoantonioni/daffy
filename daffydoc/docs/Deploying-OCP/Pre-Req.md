@@ -1,3 +1,7 @@
+---
+hide:
+  - footer
+---
 <script>
   document.title = "Deploy OCP - Pre-Req";
 </script>
