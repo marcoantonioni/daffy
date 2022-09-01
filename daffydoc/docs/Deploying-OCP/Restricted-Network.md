@@ -347,9 +347,6 @@ Now you would just follow the normal steps to build your OpenShift registry.
 ```
 
 ## Demo Video
-!!! Info
-      No voice over yet in video!
-
 
 <html>
    <head>
@@ -357,7 +354,7 @@ Now you would just follow the normal steps to build your OpenShift registry.
    </head>
    <body>
       <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/stDQ1mxumKA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fFx0oC_9lwA" frameborder="0" allowfullscreen></iframe>
       </center>
    </body>
 </html>
