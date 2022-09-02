@@ -83,6 +83,7 @@ nav:
 #        - Turbonomics: overrides/software/turbonomics.md
   - Tips & Tricks:
     - Common Issues: Tips-and-Tricks/Common-Issues.md
+    - Common Commands: Tips-and-Tricks/Common-Commands.md
     - Environment File: Tips-and-Tricks/Environment-File.md
     - Edit Files: Tips-and-Tricks/Edit-Files.md
     - Daffy Upgrade: Tips-and-Tricks/Upgrade.md
