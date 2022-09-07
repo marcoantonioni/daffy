@@ -1399,12 +1399,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Run the following command</strong> to deploy the Cloud Pak for Watson AIOps:</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_NAME&gt;
-</code></pre></div>
-<p>When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services and or demos.  At this stage, the cluster consists  of common services and the Cloud Pak for Watson AIOps operators and some services in the following projects:</p>
-<p><strong>cp4waiops</strong></p>
-<p><strong>ibm-common-services</strong></p>
 <p>The Event Manager for WatsonAIOps is an optional service deployment that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file then run the service.sh script.  </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1419,6 +1413,12 @@
 </div>
 <p>This is a screen shot of what you will see after Daffy deploys the event manager operator. Please follow the instructions to complete the configuration of the Event Manager (NOI) instance.</p>
 <p><img src='../images/evntmgr_config.png'/></p>
+<p><strong>Run the following command</strong> to deploy the Cloud Pak for Watson AIOps:</p>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_NAME&gt;
+</code></pre></div>
+<p>When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services and or demos.  At this stage, the cluster consists  of common services and the Cloud Pak for Watson AIOps operators and some services in the following projects:</p>
+<p><strong>cp4waiops</strong></p>
+<p><strong>ibm-common-services</strong></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Occasionally you may see the following error message, which is usually not a big concern. We have noticed that in some cases (<strong><em>primarily on ROKS when doing an all in one deployment</em></strong>) the install of the event manager will take longer than normal to deploy. In this case you may see a message like this below. If that happens, please give some additional time (usually no more than 30 minutes) to verify your installation.</p>
