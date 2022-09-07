@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../images/ducks.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -818,13 +818,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-deploy-services" class="md-nav__link">
-    Step 3: Deploy Services
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#step-3a-status" class="md-nav__link">
     Step 3a: Status
   </a>
@@ -1350,13 +1343,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#step-3-deploy-services" class="md-nav__link">
-    Step 3: Deploy Services
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#step-3a-status" class="md-nav__link">
     Step 3a: Status
   </a>
@@ -1398,18 +1384,18 @@
 <table>
 <thead>
 <tr>
-<th align="left">AIOps Supported Version</th>
-<th align="left">OCP Versions</th>
+<th style="text-align: left;">AIOps Supported Version</th>
+<th style="text-align: left;">OCP Versions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">3.3.1</td>
-<td align="left">4.8 , 4.10</td>
+<td style="text-align: left;">3.3.1</td>
+<td style="text-align: left;">4.8 , 4.10</td>
 </tr>
 <tr>
-<td align="left">3.2.0</td>
-<td align="left">4.8</td>
+<td style="text-align: left;">3.2.0</td>
+<td style="text-align: left;">4.8</td>
 </tr>
 </tbody>
 </table>
@@ -1419,7 +1405,6 @@
 <p>When this step is complete, up to an hour depending on your environment, you have the Cloud Pak running. This will install all of the Cloud Pak operators including foundational services and the Platform Navigator. The cluster is now ready to deploy additional services and or demos.  At this stage, the cluster consists  of common services and the Cloud Pak for Watson AIOps operators and some services in the following projects:</p>
 <p><strong>cp4waiops</strong></p>
 <p><strong>ibm-common-services</strong></p>
-<h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
 <p>The Event Manager for WatsonAIOps is an optional service deployment that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file then run the service.sh script.  </p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -1427,9 +1412,6 @@
 </div>
 <p>Here is the flag that will need to be set to enable the deployment of Event Manager with Watson AIOps:</p>
 <div class="highlight"><pre><span></span><code>CP4WAIOPS_DEPLOY_EMGR=&lt;true|false&gt;
-</code></pre></div>
-<p>Once you have the environment file updated with the CP4WAIOPS_DEPLOY_EMGR flag set to true, you will need to run the service.sh script.</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
