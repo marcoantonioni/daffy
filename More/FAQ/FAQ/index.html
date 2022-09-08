@@ -1307,6 +1307,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#failed-to-watch-v1clusterversion" class="md-nav__link">
+    Failed to watch *v1.ClusterVersion?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1437,6 +1444,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#failed-to-watch-v1clusterversion" class="md-nav__link">
+    Failed to watch *v1.ClusterVersion?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1494,6 +1508,14 @@ If it is stuck for more then 60 minutes, best option is to delete the stuck pod 
 </ol>
 <p>rebuild.sh requires your env file, that drives all the info it would need.</p>
 <p>As you can see, it will destroy everything and give you new env, nothing will be saved in cluster.</p>
+<h2 id="failed-to-watch-v1clusterversion">Failed to watch *v1.ClusterVersion?<a class="headerlink" href="#failed-to-watch-v1clusterversion" title="Permanent link">&para;</a></h2>
+<p>The following error can happen on any platform.  Its not major error, more of an FYI.  Just means that during the cluster setup, the install program was disconnected. Most of the time the install is fine, just a few hiccups. You can ignore this error. 
+<div class="highlight"><pre><span></span><code>E0908 07:05:20.266253 2142422 reflector.go:138] k8s.io/client-go/tools/watch/informerwatcher.go:146: Failed to watch *v1.ClusterVersion: failed to list *v1.ClusterVersion: Get &quot;https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&amp;limit=500&amp;resourceVersion=0&quot;: EOF
+W0908 07:05:31.158887 2142422 reflector.go:324] k8s.io/client-go/tools/watch/informerwatcher.go:146: failed to list *v1.ClusterVersion: Get &quot;https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&amp;limit=500&amp;resourceVersion=0&quot;: EOF
+I0908 07:05:31.159042 2142422 trace.go:205] Trace[1375718625]: &quot;Reflector ListAndWatch&quot; name:k8s.io/client-go/tools/watch/informerwatcher.go:146 (08-Sep-2022 07:05:21.098) (total time: 10060ms):
+Trace[1375718625]: ---&quot;Objects listed&quot; error:Get &quot;https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&amp;limit=500&amp;resourceVersion=0&quot;: EOF 10060ms (07:05:31.158)
+Trace[1375718625]: [10.060656161s] [10.060656161s] END
+</code></pre></div></p>
 
               
             </article>
