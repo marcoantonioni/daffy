@@ -10,7 +10,13 @@ hide:
 
   <b>*** If  you do not have a bastion, above button/link will walk you through the process to create a Linux bastion server.</b>
 
-## Step 2: Install Daffy
+## Step 2: Sizing
+
+Go to the following site to size your OpenShift cluster to meet your software needs
+<button onclick=" window.open('https://app.ibmsalesconfigurator.com/#/', '_blank'); return false;" class="custom-btn btn-7">CloudPak Sizing</button>
+
+
+## Step 3: Install Daffy
 
 Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts:
 
@@ -22,7 +28,7 @@ wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 da
 
 <button onclick=" window.open('http://config.daffy-installer.com:1887/start', '_blank'); return false;" class="custom-btn btn-7">Online Configurator</button>
 
-## Step 3: Environment File
+## Step 4: Environment File
 
 ```R
 #Daffy Values
@@ -141,6 +147,6 @@ You are **NOW** ready to begin making the necessary edits to your /data/daffy/en
 ## Step 5b: Existing Cluster
 
 If you already have an existing cluster that was not built with Daffy, you can still use daffy for Step 2 and/or Step 3.
-The only extra step you need to do is via the command line on your bastion. You will need to login to your cluster via the **oc login** command. You can get this command from your OpenShift console. You would then move on to the Cloud Pak steps and skip the OpenShift Install. 
+The only extra step you need to do is via the command line on your bastion. You will need to login to your cluster via the **oc login** command. You can get this command from your OpenShift console. You would then move on to the Cloud Pak steps and skip the OpenShift Install.
 
 <button onclick="location.href='../../Cloud-Paks'" class="custom-btn btn-7">Cloud Paks</button>
