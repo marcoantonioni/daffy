@@ -13,6 +13,7 @@ hide:
 ## Step 2: Sizing
 
 Go to the following site to size your OpenShift cluster to meet your software needs
+
 <button onclick=" window.open('https://app.ibmsalesconfigurator.com/#/', '_blank'); return false;" class="custom-btn btn-7">CloudPak Sizing</button>
 
 
