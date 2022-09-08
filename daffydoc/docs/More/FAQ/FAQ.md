@@ -60,3 +60,14 @@ Rebuild starts over with your cluster using your environment file.
 rebuild.sh requires your env file, that drives all the info it would need.
 
 As you can see, it will destroy everything and give you new env, nothing will be saved in cluster.
+
+
+##Failed to watch *v1.ClusterVersion?
+The following error can happen on any platform.  Its not major error, more of an FYI.  Just means that during the cluster setup, the install program was disconnected. Most of the time the install is fine, just a few hiccups. You can ignore this error. 
+```
+E0908 07:05:20.266253 2142422 reflector.go:138] k8s.io/client-go/tools/watch/informerwatcher.go:146: Failed to watch *v1.ClusterVersion: failed to list *v1.ClusterVersion: Get "https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&limit=500&resourceVersion=0": EOF
+W0908 07:05:31.158887 2142422 reflector.go:324] k8s.io/client-go/tools/watch/informerwatcher.go:146: failed to list *v1.ClusterVersion: Get "https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&limit=500&resourceVersion=0": EOF
+I0908 07:05:31.159042 2142422 trace.go:205] Trace[1375718625]: "Reflector ListAndWatch" name:k8s.io/client-go/tools/watch/informerwatcher.go:146 (08-Sep-2022 07:05:21.098) (total time: 10060ms):
+Trace[1375718625]: ---"Objects listed" error:Get "https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&limit=500&resourceVersion=0": EOF 10060ms (07:05:31.158)
+Trace[1375718625]: [10.060656161s] [10.060656161s] END
+```
