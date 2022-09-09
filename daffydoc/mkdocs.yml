@@ -105,6 +105,7 @@ nav:
     - FAQ: More/FAQ/FAQ.md
     - Deployment Estimates: More/FAQ/Deployment-Estimates.md
     - IBM Entitlement Keys: More/FAQ/IBM-Entitlement-Keys.md
+    - Secure your Bastion:  More/secure-server-ssh-only-login.md
 
 markdown_extensions:
   - attr_list
