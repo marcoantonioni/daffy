@@ -31,6 +31,7 @@ You need to pick starter services or production services.
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
 | CP4BA_IFIX                              | The fix version of your version supported     |   Both        |   No        |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
+| CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        |
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        |
 | CP4BA_DEPLOYMENT_PRODUCTION_CONTENT     | **true** if you want to deploy content        |   Production  |   No        |
 | CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW    | **true** if you want to deploy workflow       |   Production  |   No        |
@@ -136,7 +137,7 @@ Deploying the service does not need any new values to your environment file (<**
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
 | CP4BA_IFIX                              | The fix version of your version support it    |   Both        |   No        |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
-
+| CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        |
 ***Valid Options:***
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
@@ -154,7 +155,7 @@ Instead of using the included services, you can also deploy your own sample or t
 Variable | Valid Option | Required
 :----------- |:-------------| -----------
 CP4BA_DEPLOYMENT_STARTER_SERVICE        | samples       | No
-CP4BA_DEPLOYMENT_STARTER_SERVICE        | see list below       | No
+CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | see list below       | No
 
 !!! Warning "Sample Name"
     The value you use is without the .yaml in the name.
