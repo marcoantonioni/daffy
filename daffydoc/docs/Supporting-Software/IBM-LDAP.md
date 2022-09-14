@@ -10,7 +10,7 @@ Before you install IBM LDAP you will need to download the IBM LDAP Software and 
 
 1)   Customer can download the software via the [Passport Advantage](https://%20https//www.ibm.com/software/passportadvantage/pao_customer.html)site.
 
-2)  Tech Sellers can download it from [IBM Internal DSW Downloads](https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Software%20Downloads/page/Overview).
+2)  Tech Sellers can download it from [IBM Internal DSW Downloads](https://w3.ibm.com/software/xl/download/ticket.wss).
 
 You will need to search for two part numbers **CN487ML** and **CN4VJML** , this is the IBM LDAP Software that will be used during the install.
 

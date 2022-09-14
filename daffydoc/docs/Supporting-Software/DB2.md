@@ -9,7 +9,7 @@ Before you install DB2, you will need to download the DB2 Software and place the
 
 1)   Customer can download the software via the [Passport Advantage](https://%20https//www.ibm.com/software/passportadvantage/pao_customer.html)site.
 
-2)  Tech Sellers can download it from [IBM Internal DSW Downloads](https://w3-connections.ibm.com/wikis/home?lang=en-us#!/wiki/Software%20Downloads/page/Overview).
+2)  Tech Sellers can download it from [IBM Internal DSW Downloads](https://w3.ibm.com/software/xl/download/ticket.wss).
 
 
 
