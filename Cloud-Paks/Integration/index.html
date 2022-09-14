@@ -1414,26 +1414,26 @@
 <table>
 <thead>
 <tr>
-<th align="left">Integration Supported Version</th>
-<th align="left">OCP Versions</th>
+<th style="text-align: left;">Integration Supported Version</th>
+<th style="text-align: left;">OCP Versions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left">2022.2.1</td>
-<td align="left">4.10</td>
+<td style="text-align: left;">2022.2.1</td>
+<td style="text-align: left;">4.10</td>
 </tr>
 <tr>
-<td align="left">2021.4.1</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">2021.4.1</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">2021.3.1</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">2021.3.1</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 <tr>
-<td align="left">2021.2.1</td>
-<td align="left">4.6, 4.8</td>
+<td style="text-align: left;">2021.2.1</td>
+<td style="text-align: left;">4.6, 4.8</td>
 </tr>
 </tbody>
 </table>
@@ -1444,68 +1444,32 @@
 <p><strong>cp4i</strong></p>
 <p><strong>ibm-common-services</strong></p>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
-<p>Deploying services within the Cloud Pak for Integration requires you to set the flags within the environment file (<ENVIRONMENT_NAME>-env.sh).</p>
-<p>With these values, the Daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Variable Name</th>
-<th align="left">Value's</th>
-<th align="left">Info</th>
-<th align="left">Required</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_ACEDESIGN</td>
-<td align="left">true / false</td>
-<td align="left">App Connect Designer</td>
-<td align="left">No</td>
-</tr>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_ACEDASH</td>
-<td align="left">true / false</td>
-<td align="left">App Connect Dashboard</td>
-<td align="left">No</td>
-</tr>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_ASSETREPO</td>
-<td align="left">true / false</td>
-<td align="left">Integration Asset Repository</td>
-<td align="left">No</td>
-</tr>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_TRACING</td>
-<td align="left">true / false</td>
-<td align="left">Operations Dashboard Tracing</td>
-<td align="left">No</td>
-</tr>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_MQSINGLE</td>
-<td align="left">true / false</td>
-<td align="left">Single Instance of MQ</td>
-<td align="left">No</td>
-</tr>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_APIC</td>
-<td align="left">true / false</td>
-<td align="left">API Connect</td>
-<td align="left">No</td>
-</tr>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_MQHA</td>
-<td align="left">true / false</td>
-<td align="left">Cloud Native MQ HA</td>
-<td align="left">No</td>
-</tr>
-<tr>
-<td align="left">CP4I_ENABLE_SERVICE_EVENTSTREAMS</td>
-<td align="left">true / false</td>
-<td align="left">Event Streams</td>
-<td align="left">No</td>
-</tr>
-</tbody>
-</table>
+<p>Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS).</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">CP4I_ENABLE_SERVICE_ACEDESIGN</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+
+<span class="n">CP4I_ENABLE_SERVICE_ACEDASH</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+
+<span class="n">CP4I_ENABLE_SERVICE_ASSETREPO</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+
+<span class="n">CP4I_ENABLE_SERVICE_TRACING</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+
+<span class="n">CP4I_ENABLE_SERVICE_MQSINGLE</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+
+<span class="n">CP4I_ENABLE_SERVICE_APIC</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+
+<span class="n">CP4I_ENABLE_SERVICE_MQHA</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+
+<span class="n">CP4I_ENABLE_SERVICE_EVENTSTREAMS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
+</code></pre></div>
+With these values, the Daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.</p>
+<p><strong>ACEDESIGN</strong> - App Connect Designer</p>
+<p><strong>ACEDASH</strong> - App Connect Dashboard</p>
+<p><strong>ASSETREPO</strong> - Integration Asset Repository</p>
+<p><strong>TRACING</strong> - Operations Dashboard Tracing</p>
+<p><strong>MQSINGLE</strong> - Single Instance of MQ</p>
+<p><strong>APIC</strong> - API Connect</p>
+<p><strong>MQHA</strong> - Cloud Native MQ HA</p>
+<p><strong>EVENTSTREAMS</strong> - Event Streams</p>
 <p><strong>Run the following command</strong> to deploy the Cloud Pak for Integration services:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4i/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
