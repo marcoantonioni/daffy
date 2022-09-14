@@ -55,42 +55,20 @@ When this step is complete, up to an hour depending on your environment, you wil
 
 ## Step 3: Deploy Services
 
-Deploying the Cloud Pak for Integration requires some entries to your environment file (<ENVIRONMENT_NAME>-env.sh). The current services supported are App Connect Designer (ACEDESIGN), App Connect Dashboard (ACEDASH), Integration Asset Repository (ASSETREPO), Operations Dashboard Tracing (TRACING), Single Instance of MQ (MQSINGLE), API Connect (APIC), Cloud Native MQ HA (MQHA), and Event Streams (EVENTSTREAMS).
+Deploying services within the Cloud Pak for Integration requires you to set the flags within the environment file (<ENVIRONMENT_NAME>-env.sh).
 
-```R
-CP4I_ENABLE_SERVICE_ACEDESIGN="true|false"
-
-CP4I_ENABLE_SERVICE_ACEDASH="true|false"
-
-CP4I_ENABLE_SERVICE_ASSETREPO="true|false"
-
-CP4I_ENABLE_SERVICE_TRACING="true|false"
-
-CP4I_ENABLE_SERVICE_MQSINGLE="true|false"
-
-CP4I_ENABLE_SERVICE_APIC="true|false"
-
-CP4I_ENABLE_SERVICE_MQHA="true|false"
-
-CP4I_ENABLE_SERVICE_EVENTSTREAMS="true|false"
-```
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.
 
-**ACEDESIGN** - App Connect Designer
-
-**ACEDASH** - App Connect Dashboard
-
-**ASSETREPO** - Integration Asset Repository
-
-**TRACING** - Operations Dashboard Tracing
-
-**MQSINGLE** - Single Instance of MQ
-
-**APIC** - API Connect
-
-**MQHA** - Cloud Native MQ HA
-
-**EVENTSTREAMS** - Event Streams
+| Variable Name| Value's |Info | Required |
+| :---------   | :----  | :-----------------   |  :----  |  
+| CP4I_ENABLE_SERVICE_ACEDESIGN | true / false   | App Connect Designer |   No  |
+| CP4I_ENABLE_SERVICE_ACEDASH | true / false   | App Connect Dashboard |  No  |
+| CP4I_ENABLE_SERVICE_ASSETREPO | true / false   | Integration Asset Repository |   No  |
+| CP4I_ENABLE_SERVICE_TRACING | true / false   | Operations Dashboard Tracing |  No  |
+| CP4I_ENABLE_SERVICE_MQSINGLE | true / false   | Single Instance of MQ |   No  |
+| CP4I_ENABLE_SERVICE_APIC | true / false   | API Connect |  No  |
+| CP4I_ENABLE_SERVICE_MQHA | true / false   | Cloud Native MQ HA |   No  |
+| CP4I_ENABLE_SERVICE_EVENTSTREAMS | true / false   | Event Streams |  No  |
 
 **Run the following command** to deploy the Cloud Pak for Integration services:
 

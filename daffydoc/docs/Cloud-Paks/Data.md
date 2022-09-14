@@ -57,79 +57,28 @@ When this step is complete, approximately after 60 minutes depending on your env
 
 ## Step 3: Deploy Services
 
-Deploying the Cloud Pak for Data requires some entries to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
+Set the flags in your environment file (<**ENVIRONMENT_NAME**>-env.sh) for the CP4D services you wish to deploy.
 
-```R
-CP4D_ENABLE_SERVICE_WKS="true|false"
+| Variable Name| Value's |Info | Required |
+| :---------   | :----  | :-----------------   |  :----  |  
+| CP4D_ENABLE_SERVICE_WKS | true / false   | Watson Knowledge Studio |   No  |
+| CP4D_ENABLE_SERVICE_WKC | true / false   | Watson Knowledge Catalog |  No  |
+| CP4D_ENABLE_SERVICE_DV | true / false   |  Data Virtualization |  No    |
+| CP4D_ENABLE_SERVICE_WS | true / false   | Watson Studio |  No    |
+| CP4D_ENABLE_SERVICE_SPSS | true / false   | Statistical Package for Social Sciences |   No |
+| CP4D_ENABLE_SERVICE_WML | true / false   | Watson Machine Learning |  No    |
+| CP4D_ENABLE_SERVICE_DATASTAGE | true / false   |  DataStage | No    |
+| CP4D_ENABLE_SERVICE_DODS | true / false   | Decision Optimization |  No    |
+| CP4D_ENABLE_SERVICE_DMC | true / false   |  DB2 Management Console | No    |
+| CP4D_ENABLE_SERVICE_COGNOS | true / false   | Cognos |  No    |
+| CP4D_ENABLE_SERVICE_MATCH_360 | true / false   | Match 360 |  No    |
+| CP4D_ENABLE_SERVICE_OPENPAGES | true / false   | Open Pages |   No    |
+| CP4D_ENABLE_SERVICE_ANALYTICS_ENGINE | true / false | Analytics Engine powered by Apache Spark | No |
+| CP4D_ENABLE_SERVICE_DB2_WAREHOUSE | true / false   |  DB2 Warehouse |  No    |
+| CP4D_ENABLE_SERVICE_DATAPRIVACY | true / false   | Data Privacy |  No    |
+| CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS | true / false   | Cognos Analytics |  No    |
+| CP4D_ENABLE_SERVICE_DB2 | true / false   |  DB2 OLTP | No    |
 
-CP4D_ENABLE_SERVICE_WKC="true|false"
-
-CP4D_ENABLE_SERVICE_DV="true|false"
-
-CP4D_ENABLE_SERVICE_WS="true|false"
-
-CP4D_ENABLE_SERVICE_SPSS="true|false"
-
-CP4D_ENABLE_SERVICE_WML="true|false"
-
-CP4D_ENABLE_SERVICE_DATASTAGE="true|false"
-
-CP4D_ENABLE_SERVICE_DODS="true|false"
-
-CP4D_ENABLE_SERVICE_DMC="true|false"
-
-CP4D_ENABLE_SERVICE_COGNOS="true|false"
-
-CP4D_ENABLE_SERVICE_MATCH_360="true|false"
-
-CP4D_ENABLE_SERVICE_OPENPAGES="true|false"
-
-CP4D_ENABLE_SERVICE_ANALYTICS_ENGINE="true|false"
-
-CP4D_ENABLE_SERVICE_DB2_WAREHOUSE="true|false"
-
-CP4D_ENABLE_SERVICE_DATAPRIVACY="true|false"
-
-CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS="true|false"
-
-CP4D_ENABLE_SERVICE_DB2="true|false"
-```
-
-With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
-
-**WKS** - Watson Knowledge Studio
-
-**WKC** - Watson Knowledge Catalog
-
-**DV** - Data Virtualization
-
-**WS** - Watson Studio
-
-**SPSS** - Statistical Package for Social Sciences
-
-**WML** - Watson Machine Learning
-
-**DataStage** - DataStage
-
-**DODS** - Decision Optimization
-
-**DMC** - DB2 Management Console
-
-**Cognos** - Cognos
-
-**Match_360** - Match 360
-
-**Analytics_Engine** = Analytics Engine powered by Apache Spark
-
-**DB2_Warehouse** = DB2 Warehouse
-
-**DataPrivacy** = Data Privacy
-
-**OpenPages** = Open Pages
-
-**Cognos Analytics** = Cognos Analytics
-
-**DB2** = DB2 OLTP
 
 Run the following command to deploy the Cloud Pak for Data services:
 
