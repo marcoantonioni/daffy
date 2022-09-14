@@ -29,7 +29,7 @@ You can override this base location (**/data/software**) by overriding it in you
 
 ## Install DB2
 
-Installing DB2 needs one new values to your environment file (<ENVIRONMENT_NAME>-env.sh).
+Installing DB2 needs one new values to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
 DB2_VERSION
 

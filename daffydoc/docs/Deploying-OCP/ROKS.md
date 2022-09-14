@@ -66,7 +66,7 @@ For you to use Daffy to install on ROKS, you need to have a Pay-As-You-Go or sub
 
 ## Environment File
 
-Deploying OpenShift on ROKS only requires one entry to your existing core environment file (<ENVIRONMENT_NAME>-env.sh).
+Deploying OpenShift on ROKS only requires one entry to your existing core environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
 
 

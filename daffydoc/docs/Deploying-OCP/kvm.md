@@ -42,7 +42,7 @@ INSERT VIDEO Here
 
 ## Environment File
 
-Deploying the OpenShift on **K**ernel-based **V**irtual **M**achine only requires three entries to your <b>existing</b> core environment file (<ENVIRONMENT_NAME>-env.sh) plus a local service account file.
+Deploying the OpenShift on **K**ernel-based **V**irtual **M**achine only requires three entries to your <b>existing</b> core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
 **Note:** you can look in the samples directory on your bastion for example of **K**ernel-based **V**irtual **M**achine install : /data/daffy/env/samples/kvm-upi-env.sh
 

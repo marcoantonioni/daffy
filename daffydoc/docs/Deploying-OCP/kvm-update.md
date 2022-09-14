@@ -50,7 +50,7 @@ You will need to create DNS entries and domain. For the OpenShift install, you n
 
 ## Environment File
 
-Deploying the OpenShift on **K**ernel-based **V**irtual **M**achine only requires two entries to your <b>existing</b> core environment file (<ENVIRONMENT_NAME>-env.sh).
+Deploying the OpenShift on **K**ernel-based **V**irtual **M**achine only requires two entries to your <b>existing</b> core environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
 !!! Note
       You can copy the sample file to build your new environment file:

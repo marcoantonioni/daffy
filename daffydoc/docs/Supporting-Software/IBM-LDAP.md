@@ -28,7 +28,7 @@ You can override this base location (/data/software) by overriding it in your en
 
 ## Install LDAP
 
-Installing LDAP needs one new values to your environment file (<ENVIRONMENT_NAME>-env.sh).
+Installing LDAP needs one new values to your environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
 IDS_VERSION=
 

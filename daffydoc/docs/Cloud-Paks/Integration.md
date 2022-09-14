@@ -55,7 +55,7 @@ When this step is complete, up to an hour depending on your environment, you wil
 
 ## Step 3: Deploy Services
 
-Deploying services within the Cloud Pak for Integration requires you to set the flags within the environment file (<ENVIRONMENT_NAME>-env.sh).
+Deploying services within the Cloud Pak for Integration requires you to set the flags within the environment file (<**ENVIRONMENT_NAME**>-env.sh).
 
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Integration and prepare for the desired services.
 
