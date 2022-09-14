@@ -1472,22 +1472,17 @@
 <p><strong>AZURE_SUBSCRIPTION_ID</strong>="<YOUR_SUB_ID>"</p>
 <p><strong>AZURE_CLIENT_ID</strong>="<YOUR_CLIENT_ID>"</p>
 <p><strong>AZURE_TENANT_ID</strong>=<YOUR_TENANT_ID>"</p>
-<p><strong>AZURE_TENANT_ID</strong>=<YOUR_TENANT_ID>"</p>
-<p><strong>AZURE_RESOURCE_GROUP_NAME</strong>="<YOUR_RESOURCE_GROUP_FOR_YOUR_CLUSTER>"</p>
-<p><strong>AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME</strong>="<YOUR_RESOURCE_GROUP_FOR_DNS>"</p>
+<p><strong>AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME</strong>=<YOUR_RESOURCE_GROUP_FOR_DNS>"</p>
 <p><strong>AZURE_REGION</strong>="<YOUR_REGION>"</p>
 <p>Optional:</p>
-<p><strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>="true"</p>
-<p><strong>AZURE_RESOURCE_GROUP_NAME_CREATE_MISSING</strong>="true"</p>
+<p><strong>OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE</strong>=true</p>
 <div class="highlight"><pre><span></span><code><span class="n">OCP_INSTALL_TYPE</span><span class="o">=</span><span class="s">&quot;azure-ipi&quot;</span>
 <span class="n">AZURE_SUBSCRIPTION_ID</span><span class="o">=</span><span class="s">&quot;999999-999999-999999-99999&quot;</span>
 <span class="n">AZURE_CLIENT_ID</span><span class="o">=</span><span class="s">&quot;999999-999999-999999-99999&quot;</span>
 <span class="n">AZURE_TENANT_ID</span><span class="o">=</span><span class="s">&quot;999999-999999-999999-99999&quot;</span>
-<span class="n">AZURE_RESOURCE_GROUP_NAME</span><span class="o">=</span><span class="s">&quot;&lt;YOUR_RESOURCE_GROUP_FOR_CLUSTER&gt;&quot;</span>
 <span class="n">AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME</span><span class="o">=</span><span class="s">&quot;&lt;YOUR_RESOURCE_GROUP_FOR_DNS&gt;&quot;</span>
 <span class="n">AZURE_REGION</span><span class="o">=</span><span class="s">&quot;&lt;YOUR_REGION&gt;&quot;</span>
-<span class="c1">#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=&quot;true&quot;</span>
-<span class="c1">#AZURE_RESOURCE_GROUP_NAME_CREATE_MISSING=&quot;true&quot;</span>
+<span class="c1">#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true</span>
 </code></pre></div>
 <p>If you plan to install a cloud pak and/or need storage, you need to set the flag to setup OCS Storage</p>
 <p><strong>** It will prompt you for the Client Secret during the install.</strong></p>

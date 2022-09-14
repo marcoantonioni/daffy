@@ -1412,50 +1412,50 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">CP4D Supported Version</th>
-<th style="text-align: left;">OCP Versions</th>
+<th align="left">CP4D Supported Version</th>
+<th align="left">OCP Versions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">4.5.1</td>
-<td style="text-align: left;">4.8, 4.10</td>
+<td align="left">4.5.1</td>
+<td align="left">4.8, 4.10</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.5.0</td>
-<td style="text-align: left;">4.8, 4.10</td>
+<td align="left">4.5.0</td>
+<td align="left">4.8, 4.10</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.9</td>
-<td style="text-align: left;">4.6, 4.8</td>
+<td align="left">4.0.9</td>
+<td align="left">4.6, 4.8</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.8</td>
-<td style="text-align: left;">4.6, 4.8</td>
+<td align="left">4.0.8</td>
+<td align="left">4.6, 4.8</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.7</td>
-<td style="text-align: left;">4.6, 4.8</td>
+<td align="left">4.0.7</td>
+<td align="left">4.6, 4.8</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.6</td>
-<td style="text-align: left;">4.6, 4.8</td>
+<td align="left">4.0.6</td>
+<td align="left">4.6, 4.8</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.5</td>
-<td style="text-align: left;">4.6, 4.8</td>
+<td align="left">4.0.5</td>
+<td align="left">4.6, 4.8</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.4</td>
-<td style="text-align: left;">4.6, 4.8</td>
+<td align="left">4.0.4</td>
+<td align="left">4.6, 4.8</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.3</td>
-<td style="text-align: left;">4.6, 4.8</td>
+<td align="left">4.0.3</td>
+<td align="left">4.6, 4.8</td>
 </tr>
 <tr>
-<td style="text-align: left;">4.0.2</td>
-<td style="text-align: left;">4.6</td>
+<td align="left">4.0.2</td>
+<td align="left">4.6</td>
 </tr>
 </tbody>
 </table>
@@ -1467,59 +1467,121 @@ When this step is complete, approximately after 60 minutes depending on your env
 <strong>cpd-operators</strong> <br />
 <strong>ibm-common-services</strong>    </p>
 <h2 id="step-3-deploy-services">Step 3: Deploy Services<a class="headerlink" href="#step-3-deploy-services" title="Permanent link">&para;</a></h2>
-<p>Deploying the Cloud Pak for Data requires some entries to your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh).</p>
-<div class="highlight"><pre><span></span><code><span class="n">CP4D_ENABLE_SERVICE_WKS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_WKC</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_DV</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_WS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_SPSS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_WML</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_DATASTAGE</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_DODS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_DMC</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_COGNOS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_MATCH_360</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_OPENPAGES</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_ANALYTICS_ENGINE</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_DB2_WAREHOUSE</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_DATAPRIVACY</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-
-<span class="n">CP4D_ENABLE_SERVICE_DB2</span><span class="o">=</span><span class="s">&quot;true|false&quot;</span>
-</code></pre></div>
-<p>With these values, the daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
-<p><strong>WKS</strong> - Watson Knowledge Studio</p>
-<p><strong>WKC</strong> - Watson Knowledge Catalog</p>
-<p><strong>DV</strong> - Data Virtualization</p>
-<p><strong>WS</strong> - Watson Studio</p>
-<p><strong>SPSS</strong> - Statistical Package for Social Sciences</p>
-<p><strong>WML</strong> - Watson Machine Learning</p>
-<p><strong>DataStage</strong> - DataStage</p>
-<p><strong>DODS</strong> - Decision Optimization</p>
-<p><strong>DMC</strong> - DB2 Management Console</p>
-<p><strong>Cognos</strong> - Cognos</p>
-<p><strong>Match_360</strong> - Match 360</p>
-<p><strong>Analytics_Engine</strong> = Analytics Engine powered by Apache Spark</p>
-<p><strong>DB2_Warehouse</strong> = DB2 Warehouse</p>
-<p><strong>DataPrivacy</strong> = Data Privacy</p>
-<p><strong>OpenPages</strong> = Open Pages</p>
-<p><strong>Cognos Analytics</strong> = Cognos Analytics</p>
-<p><strong>DB2</strong> = DB2 OLTP</p>
+<p>Set the flags in your environment file (&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh) for the CP4D services you wish to deploy.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Variable Name</th>
+<th align="left">Value's</th>
+<th align="left">Info</th>
+<th align="left">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_WKS</td>
+<td align="left">true / false</td>
+<td align="left">Watson Knowledge Studio</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_WKC</td>
+<td align="left">true / false</td>
+<td align="left">Watson Knowledge Catalog</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_DV</td>
+<td align="left">true / false</td>
+<td align="left">Data Virtualization</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_WS</td>
+<td align="left">true / false</td>
+<td align="left">Watson Studio</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_SPSS</td>
+<td align="left">true / false</td>
+<td align="left">Statistical Package for Social Sciences</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_WML</td>
+<td align="left">true / false</td>
+<td align="left">Watson Machine Learning</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_DATASTAGE</td>
+<td align="left">true / false</td>
+<td align="left">DataStage</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_DODS</td>
+<td align="left">true / false</td>
+<td align="left">Decision Optimization</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_DMC</td>
+<td align="left">true / false</td>
+<td align="left">DB2 Management Console</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_COGNOS</td>
+<td align="left">true / false</td>
+<td align="left">Cognos</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_MATCH_360</td>
+<td align="left">true / false</td>
+<td align="left">Match 360</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_OPENPAGES</td>
+<td align="left">true / false</td>
+<td align="left">Open Pages</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_ANALYTICS_ENGINE</td>
+<td align="left">true / false</td>
+<td align="left">Analytics Engine powered by Apache Spark</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_DB2_WAREHOUSE</td>
+<td align="left">true / false</td>
+<td align="left">DB2 Warehouse</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_DATAPRIVACY</td>
+<td align="left">true / false</td>
+<td align="left">Data Privacy</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS</td>
+<td align="left">true / false</td>
+<td align="left">Cognos Analytics</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_DB2</td>
+<td align="left">true / false</td>
+<td align="left">DB2 OLTP</td>
+<td align="left">No</td>
+</tr>
+</tbody>
+</table>
 <p>Run the following command to deploy the Cloud Pak for Data services:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
