@@ -91,6 +91,7 @@ cp /data/daffy/env/samples/azure-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-e
 **AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME**="<YOUR_RESOURCE_GROUP_FOR_DNS>"
 
 **AZURE_REGION**="<YOUR_REGION>"
+
 Optional:
 
 **OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**="true"
