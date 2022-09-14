@@ -8,7 +8,7 @@ With the Daffy system you can now install IBM LDAP server on a Linux server.  RH
 
 Before you install IBM LDAP you will need to download the IBM LDAP Software and place the binary's on your Linux server.
 
-1)   Customer can download the software via the [Passport Advantage](https://%20https//www.ibm.com/software/passportadvantage/pao_customer.html){target=_blank}site.
+1)   Customer can download the software via the [Passport Advantage](https://%20https//www.ibm.com/software/passportadvantage/pao_customer.html){target=_blank} site.
 
 2)  Tech Sellers can download it from [IBM Internal DSW Downloads](https://w3.ibm.com/software/xl/download/ticket.wss){target=_blank}.
 

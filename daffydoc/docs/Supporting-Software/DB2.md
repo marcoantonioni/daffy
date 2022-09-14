@@ -7,7 +7,7 @@ With the Daffy system you can now install DB2 on a Linux server.  RHEL 8.x or Ub
 
 Before you install DB2, you will need to download the DB2 Software and place the binary's on your Linux server.
 
-1)   Customer can download the software via the [Passport Advantage](https://%20https//www.ibm.com/software/passportadvantage/pao_customer.html){target=_blank}site.
+1)   Customer can download the software via the [Passport Advantage](https://%20https//www.ibm.com/software/passportadvantage/pao_customer.html){target=_blank} site.
 
 2)  Tech Sellers can download it from [IBM Internal DSW Downloads](https://w3.ibm.com/software/xl/download/ticket.wss){target=_blank}.
 
