@@ -41,6 +41,27 @@ Run the following command to view the current Daffy version.
 /data/daffy/version.sh
 ```
 
+## **Daffy Tools**
+Run the following command to install other tools you might need.
+
+```console
+/data/daffy/tools.sh
+```
+
+??? note "Tools Flags"
+      ```console
+      Daffy Tools
+      --prepareHost                          This will run the prepareHost for daffy
+      --mustGather                           This will run the mustGather for daffy
+      --installOC                            This will install the oc command line tool
+      --installAWS                           This will install the aws commandline tool
+      --installAzure                         This will install the azure commandline tool
+      --installGCloud                        This will install the gcloud commandline tool
+      --installGOVC                          This will install the govc commandline tool(VMware)
+      --installCloudCTL                      This will install the cloudctl for CP4D
+      --installCP4DCloudCLI                  This will install the CP4D Cloud CLI utility
+      ```
+
 ## **Gather Logs**
 Run the following command to package all Daffy logs into a tar file. When troubleshooting, please send the gathered logs at `#!pypylog /tmp/daffy/daffy_mustgather.tar.gz` to the Daffy team.
 
