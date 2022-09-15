@@ -1062,6 +1062,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#daffy-tools" class="md-nav__link">
+    Daffy Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gather-logs" class="md-nav__link">
     Gather Logs
   </a>
@@ -1424,6 +1431,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#daffy-tools" class="md-nav__link">
+    Daffy Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#gather-logs" class="md-nav__link">
     Gather Logs
   </a>
@@ -1483,6 +1497,24 @@
 <p>Run the following command to view the current Daffy version.</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/version.sh</span>
 </code></pre></div>
+<h2 id="daffy-tools"><strong>Daffy Tools</strong><a class="headerlink" href="#daffy-tools" title="Permanent link">&para;</a></h2>
+<p>Run the following command to install other tools you might need.</p>
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/tools.sh</span>
+</code></pre></div>
+<details class="note">
+<summary>Tools Flags</summary>
+<div class="highlight"><pre><span></span><code><span class="go">Daffy Tools</span>
+<span class="go">--prepareHost                          This will run the prepareHost for daffy</span>
+<span class="go">--mustGather                           This will run the mustGather for daffy</span>
+<span class="go">--installOC                            This will install the oc command line tool</span>
+<span class="go">--installAWS                           This will install the aws commandline tool</span>
+<span class="go">--installAzure                         This will install the azure commandline tool</span>
+<span class="go">--installGCloud                        This will install the gcloud commandline tool</span>
+<span class="go">--installGOVC                          This will install the govc commandline tool(VMware)</span>
+<span class="go">--installCloudCTL                      This will install the cloudctl for CP4D</span>
+<span class="go">--installCP4DCloudCLI                  This will install the CP4D Cloud CLI utility</span>
+</code></pre></div>
+</details>
 <h2 id="gather-logs"><strong>Gather Logs</strong><a class="headerlink" href="#gather-logs" title="Permanent link">&para;</a></h2>
 <p>Run the following command to package all Daffy logs into a tar file. When troubleshooting, please send the gathered logs at <code class="highlight"><span class="err">/tmp/daffy/daffy_mustgather.tar.gz</span><span class="w"></span></code> to the Daffy team.</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/tools.sh --mustGather</span>
