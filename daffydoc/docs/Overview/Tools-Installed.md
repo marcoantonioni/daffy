@@ -109,6 +109,14 @@ Throughout the Daffy process, it will install all support tools it would need. D
         <td>always</td>
       </tr>
       <tr>
+        <td>acl</td>
+        <td>always(RHEL)</td>
+      </tr>
+      <tr>
+        <td>dos2unix</td>
+        <td>always</td>
+      </tr>
+      <tr>
         <td>nfs-kernel-server</td>
         <td>NFS Option only </td>
       </tr>
