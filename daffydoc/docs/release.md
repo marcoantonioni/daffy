@@ -1,4 +1,8 @@
-## v2022-08-17a 
+## v2022-08-17b
+          Cloud Pak for Integration
+              Fixed Daffy code issue with Platform Navigator not finishing operator install
+
+## v2022-08-17a
           Cloud Pak for Data
               Fixed issue with operators for services stuck in Upgrade Pending
               (Known CP4D issue with release of 4.5.2, breaking previous releases of 4.5.0 and 4.5.1. Would occur with Daffy, CP4D-cli, or running manually)
