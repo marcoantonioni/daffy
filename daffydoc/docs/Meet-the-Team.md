@@ -68,7 +68,7 @@ hide:
 
   <div class="column">
     <div class="card"style="width: 13rem;">
-      <img src="../images/Jeff.jpeg" style="width:100%">
+      <img src="../images/JeffImholz.jpg" style="width:100%">
       <div class="container">
         <h2>Jeff Imholz</h2>
         <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market<br><br><br></p>
