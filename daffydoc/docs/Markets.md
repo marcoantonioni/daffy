@@ -106,10 +106,10 @@ You can find the point of contact for your market in the following list.
   </div>
 </div>
 
-## Latin America Market Leads
+<!-- ## Latin America Market Leads
 <div class="market-grid">
   <div class="market-card">
-    <!-- <img src="../images/BobReno.jpeg"> -->
+    <img src="../images/BobReno.jpeg">
     <div class="market-inner-container">
         <h2>Luis Chaves</h2>
         <p>Senior Data and AI Technical Specialist</p>
@@ -118,16 +118,16 @@ You can find the point of contact for your market in the following list.
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/SamvitRoy.png"> -->
+    <img src="../images/SamvitRoy.png">
     <div class="market-inner-container">
         <h2>Mariso Campos</h2>
         <p>Advisory Data & AI Technical Specialist</p>
-        <a href="samvit.roy@ibm.com">samvit.roy@ibm.com</a>
+        <a href="mgonzalezcampos@ibm.com">mgonzalezcampos@ibm.com</a>
     </div>
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/KhoryKotowski.jpeg"> -->
+    <img src="../images/KhoryKotowski.jpeg">
     <div class="market-inner-container">
         <h2>Jose Aguirre</h2>
         <p>Senior Data & AI Technical Specialist</p>
@@ -136,7 +136,7 @@ You can find the point of contact for your market in the following list.
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/KhoryKotowski.jpeg"> -->
+    <img src="../images/KhoryKotowski.jpeg">
     <div class="market-inner-container">
         <h2>Diego Sanchez</h2>
         <p>Senior Data & AI Technical Specialist</p>
@@ -145,7 +145,7 @@ You can find the point of contact for your market in the following list.
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/KhoryKotowski.jpeg"> -->
+    <img src="../images/KhoryKotowski.jpeg">
     <div class="market-inner-container">
         <h2>German Alfsen</h2>
         <p>Senior Data & AI Technical Specialist</p>
@@ -154,7 +154,7 @@ You can find the point of contact for your market in the following list.
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/KhoryKotowski.jpeg"> -->
+    <img src="../images/KhoryKotowski.jpeg">
     <div class="market-inner-container">
         <h2>Sidnei Moreira</h2>
         <p>Senior Data & AI Technical Specialist</p>
@@ -163,14 +163,14 @@ You can find the point of contact for your market in the following list.
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/KhoryKotowski.jpeg"> -->
+    <img src="../images/KhoryKotowski.jpeg">
     <div class="market-inner-container">
         <h2>Virginia Malca</h2>
         <p>Senior Data & AI Technical Specialist</p>
         <a href="bettsp@us.ibm.com">bettsp@us.ibm.com</a>
     </div>
   </div>
-</div>
+</div> -->
 
 ## **National Market Leads**
 <div class="market-grid">
