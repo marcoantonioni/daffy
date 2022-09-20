@@ -26,52 +26,15 @@
 }
 </style>
 
-## **National Market Leads**
-<div class="market-grid">
-  <div class="market-card">
-    <img src="../images/Kyle.jpeg">
-    <div class="market-inner-container">
-        <h2>Kyle Dawson</h2>
-        <p>Principal Automation Technical Specialist</p>
-        <a href="kyle.dawson@us.ibm.com">kyle.dawson@us.ibm.com</a>
-    </div>
-  </div>
+## **What Are Market Leads?**
+Market leads are your main contact for troubleshooting. If you run into any problems, please run `#!bash /data/daffy/tools.sh --mustGather` to gather your logs in a Tar file. Post a message explaining the issue to the #daffy-user-group Slack channel in the Americas Technical Sales workspace and make sure to include @market_lead_name and attach the Tar file.
 
-  <div class="market-card">
-    <img src="../images/David.jpeg">
-    <div class="market-inner-container">
-        <h2>David Krier</h2>
-        <p>Principal Automation Technical Specialist</p>
-        <a href="dakrier@us.ibm.com">dakrier@us.ibm.com</a>
-    </div>
-  </div>
-
-  <div class="market-card">
-    <img src="../images/JeffImholz.jpg">
-    <div class="market-inner-container">
-        <h2>Jeff Imholz</h2>
-        <p>Principal Automation Technical Specialist</p>
-        <a href="jimholz@us.ibm.com">jimholz@us.ibm.com</a>
-    </div>
-  </div>
-</div>
-
-### **Client Engineering Leads**
-<div class="market-grid">
-  <div class="market-card">
-    <img src="../images/TobyLiu.jpg">
-    <div class="market-inner-container">
-        <h2>Toby Liu</h2>
-        <p>Cloud Engineer</p>
-        <a href="Toby.Liu@ibm.com">Toby.Liu@ibm.com</a>
-    </div>
-  </div>
-</div>
+You can find the point of contact for your market in the following list.
 
 ## **Financial Market Leads**
 <div class="market-grid">
   <div class="market-card">
-    <img src="../images/MichaelSchapira.jpg">
+    <img src="../images/michael-schapira.jpg">
     <div class="market-inner-container">
         <h2>Michael Schapira</h2>
         <p>Senior Data & AI Technical Specialist</p>
@@ -80,7 +43,7 @@
   </div>
 
   <div class="market-card">
-    <img src="../images/KhoryKotowski.jpeg">
+    <img src="../images/khory-kotowski.jpeg">
     <div class="market-inner-container">
         <h2>Khory Kotowski</h2>
         <p>Client Technical Specialist: Analytics</p>
@@ -89,13 +52,13 @@
   </div>
 </div>
 
-## **Industry Market Leads**
+<!-- ## **Industry Market Leads** -->
 
 
-### Pub Fed Leads
+## Pub Fed Leads
 <div class="market-grid">
   <div class="market-card">
-    <img src="../images/BobReno.jpeg">
+    <img src="../images/bob-reno.jpeg">
     <div class="market-inner-container">
         <h2>Bob Reno</h2>
         <p>Principal Brand Technical Specialist</p>
@@ -104,7 +67,7 @@
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/KhoryKotowski.jpeg"> -->
+    <img src="../images/paul-betts.jpeg">
     <div class="market-inner-container">
         <h2>Paul Betts</h2>
         <p>Principal Brand Technical Specialist</p>
@@ -113,10 +76,10 @@
   </div>
 </div>
 
-### Canada Leads
+## Canada Leads
 <div class="market-grid">
   <div class="market-card">
-    <!-- <img src="../images/BobReno.jpeg"> -->
+    <img src="../images/rodrigo-de-la-parra.jpeg">
     <div class="market-inner-container">
         <h2>Rodrigo de la Parra</h2>
         <p>Senior Automation Technical Specialist</p>
@@ -125,7 +88,7 @@
   </div>
 
   <div class="market-card">
-    <img src="../images/SamvitRoy.png">
+    <img src="../images/samvit-roy.png">
     <div class="market-inner-container">
         <h2>Samvit Roy</h2>
         <p>Advisory Data & AI Technical Specialist</p>
@@ -134,16 +97,16 @@
   </div>
 
   <div class="market-card">
-    <!-- <img src="../images/KhoryKotowski.jpeg"> -->
+    <img src="../images/david-ma.jpeg">
     <div class="market-inner-container">
         <h2>David Ma</h2>
         <p>Senior Data & AI Technical Specialist</p>
-        <a href="bettsp@us.ibm.com">bettsp@us.ibm.com</a>
+        <a href="davidma@ca.ibm.com">davidma@ca.ibm.com</a>
     </div>
   </div>
 </div>
 
-### Latin America Market Leads
+## Latin America Market Leads
 <div class="market-grid">
   <div class="market-card">
     <!-- <img src="../images/BobReno.jpeg"> -->
@@ -155,7 +118,7 @@
   </div>
 
   <div class="market-card">
-    <img src="../images/SamvitRoy.png">
+    <!-- <img src="../images/SamvitRoy.png"> -->
     <div class="market-inner-container">
         <h2>Mariso Campos</h2>
         <p>Advisory Data & AI Technical Specialist</p>
@@ -205,6 +168,48 @@
         <h2>Virginia Malca</h2>
         <p>Senior Data & AI Technical Specialist</p>
         <a href="bettsp@us.ibm.com">bettsp@us.ibm.com</a>
+    </div>
+  </div>
+</div>
+
+## **National Market Leads**
+<div class="market-grid">
+  <div class="market-card">
+    <img src="../images/kyle-dawson.jpeg">
+    <div class="market-inner-container">
+        <h2>Kyle Dawson</h2>
+        <p>Principal Automation Technical Specialist</p>
+        <a href="kyle.dawson@us.ibm.com">kyle.dawson@us.ibm.com</a>
+    </div>
+  </div>
+
+  <div class="market-card">
+    <img src="../images/david-krier.jpeg">
+    <div class="market-inner-container">
+        <h2>David Krier</h2>
+        <p>Principal Automation Technical Specialist</p>
+        <a href="dakrier@us.ibm.com">dakrier@us.ibm.com</a>
+    </div>
+  </div>
+
+  <div class="market-card">
+    <img src="../images/jeff-imholz.jpg">
+    <div class="market-inner-container">
+        <h2>Jeff Imholz</h2>
+        <p>Principal Automation Technical Specialist</p>
+        <a href="jimholz@us.ibm.com">jimholz@us.ibm.com</a>
+    </div>
+  </div>
+</div>
+
+### **Client Engineering Leads**
+<div class="market-grid">
+  <div class="market-card">
+    <img src="../images/toby-liu.jpg">
+    <div class="market-inner-container">
+        <h2>Toby Liu</h2>
+        <p>Cloud Engineer</p>
+        <a href="Toby.Liu@ibm.com">Toby.Liu@ibm.com</a>
     </div>
   </div>
 </div>
