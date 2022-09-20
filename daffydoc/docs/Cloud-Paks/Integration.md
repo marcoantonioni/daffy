@@ -35,11 +35,11 @@ The service consist of the following products:
 platform navigator
 
 | Integration Supported Version    | OCP Versions |
-| :---      |    :----     |  
+| :---      |    :----    |  
 | 2022.2.1     | 4.10     |
-| 2021.4.1     | 4.6, 4.8      |
-| 2021.3.1     | 4.6, 4.8      |
-| 2021.2.1     | 4.6, 4.8      |
+| 2021.4.1     | 4.8      |
+| 2021.3.1     | 4.8      |
+| 2021.2.1     | 4.8      |
 
 **Run the following command** to deploy the Cloud Pak for Integration:
 

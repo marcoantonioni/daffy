@@ -33,15 +33,10 @@ With these values, the Daffy engine will be able to install the version of Cloud
 | :---      |    :----     |
 | 4.5.1     | 4.8, 4.10    |
 | 4.5.0     | 4.8, 4.10    |
-| 4.0.9     | 4.6, 4.8     |
-| 4.0.8     | 4.6, 4.8      |
-| 4.0.7     | 4.6, 4.8      |
-| 4.0.6     | 4.6, 4.8      |  
-| 4.0.5     | 4.6, 4.8      |
-| 4.0.4     | 4.6, 4.8      |
-| 4.0.3     | 4.6, 4.8      |
-| 4.0.2     | 4.6           |
-
+| 4.0.9     | 4.8          |
+| 4.0.8     | 4.8          |
+| 4.0.7     | 4.8          |
+| 4.0.6     | 4.8          |
 
 
 Run the following command to deploy the Cloud Pak for Data:
