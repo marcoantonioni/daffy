@@ -1468,9 +1468,8 @@ The IBM API key is ONLY displayed at the time of creation. When you create the a
 <p><strong>Hosted Zone (CIS)</strong></p>
 <p>For each OpenShift deployment into <strong>IBM</strong>, you need to have your own <strong>Domain</strong> and a <strong>Cloud Internet Services.</strong> (CIS) service.</p>
 <p><img src='../images/IBM-DNS-Setup-Overview.png'/></p>
-<p><strong>Important</strong>: Create the Cloud Internet Service instance with no spaces</p>
-<p><strong>Important</strong>: You must create a domain that exactly matches your Base Domain.</p>
-<p><strong>Important:</strong> Once you create your domain in your CIS instance, you must point your DNS registry Name Server records to the assigned IBM DNS Name Server records listed in this domain. You will see the Name Servers listed once you have created the Domain.</p>
+<p><strong>Important</strong>: The domain you add in the CIS Service must EXACTlY match the domain you configured in the Domain Name Registration service.  </p>
+<p><strong>Important:</strong> Once you create your domain in your CIS instance, you must point your DNS registry Name Server records to the assigned IBM DNS Name Server records assigned by the CIS Service. You will see the Name Servers listed once you have added the domain to the CIS Service.</p>
 <p><img src='../images/ibm-ipi-cis.jpg'/></p>
 <h2 id="setting-up-dns">Setting up DNS<a class="headerlink" href="#setting-up-dns" title="Permanent link">&para;</a></h2>
 <p><html>
