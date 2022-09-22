@@ -79,11 +79,9 @@ For each OpenShift deployment into **IBM**, you need to have your own **Domain**
 
 <img src='../images/IBM-DNS-Setup-Overview.png'/>
 
-**Important**: Create the Cloud Internet Service instance with no spaces
+**Important**: The domain you add in the CIS Service must EXACTlY match the domain you configured in the Domain Name Registration service.  
 
-**Important**: You must create a domain that exactly matches your Base Domain.
-
-**Important:** Once you create your domain in your CIS instance, you must point your DNS registry Name Server records to the assigned IBM DNS Name Server records listed in this domain. You will see the Name Servers listed once you have created the Domain.
+**Important:** Once you create your domain in your CIS instance, you must point your DNS registry Name Server records to the assigned IBM DNS Name Server records assigned by the CIS Service. You will see the Name Servers listed once you have added the domain to the CIS Service.
 
 <img src='../images/ibm-ipi-cis.jpg'/>
 
