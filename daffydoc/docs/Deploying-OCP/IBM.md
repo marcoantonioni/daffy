@@ -73,9 +73,11 @@ Please see the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirement
 
 <img src='../images/ibm-ipi-user.jpg'/>
 
-**Hosted Zone:**
+**Hosted Zone (CIS)**
 
-For each OpenShift deployment into **IBM**, you need to have your own **Cloud Internet Services.** (CIS) service
+For each OpenShift deployment into **IBM**, you need to have your own **Domain** and a **Cloud Internet Services.** (CIS) service.
+
+<img src='../images/IBM-DNS-Setup-Overview.png'/>
 
 **Important**: Create the Cloud Internet Service instance with no spaces
 
@@ -93,7 +95,7 @@ For each OpenShift deployment into **IBM**, you need to have your own **Cloud In
    </head>
    <body>
     <div style="text-align:center">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4jpCXlG2ReE" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/J0l5Ffb_hQA" frameborder="0" allowfullscreen></iframe>
       </iframe>
       </div>
    </body>
