@@ -7,10 +7,10 @@ Default values are based on TShirt Sizing.
 To override the default number of workers, just add the value you want to build in your environment file.
 
 
-| Variable Name               |  Default Value | Valid Options  |
-| :---------                  |  :----         |  :----         |  
-| VM_NUMBER_OF_WORKERS_MIN    |  3             |  any Number    |
-| VM_NUMBER_OF_WORKERS_LARGE  |  6             |  any Number    |
+| Variable Name               |  Install Type           |  Default Value | Valid Options  |
+| :---------                  |  :----                  |  :----         |  :----         |  
+| VM_NUMBER_OF_WORKERS_MIN    | VM_TSHIRT_SIZE="Min"    |  3             |  any Number    |
+| VM_NUMBER_OF_WORKERS_LARGE  | VM_TSHIRT_SIZE="Large"  |  6             |  any Number    |
 
 ```R
 VM_NUMBER_OF_WORKERS_LARGE="8"
