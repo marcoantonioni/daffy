@@ -1308,8 +1308,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rpa-server-info" class="md-nav__link">
-    RPA Server Info
+  <a href="#rpa-server" class="md-nav__link">
+    RPA Server
   </a>
   
 </li>
@@ -1329,14 +1329,28 @@
         
           <li class="md-nav__item">
   <a href="#ops-hub" class="md-nav__link">
-    OPS HUB:
+    OPS HUB
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rpa-server-info_1" class="md-nav__link">
-    RPA Server Info
+  <a href="#rpa-server_1" class="md-nav__link">
+    RPA Server
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decisions-production" class="md-nav__link">
+    Decisions Production
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-service" class="md-nav__link">
+    Execute Service
   </a>
   
 </li>
@@ -1362,7 +1376,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rpa-server" class="md-nav__link">
+  <a href="#rpa-server_2" class="md-nav__link">
     RPA Server
   </a>
   
@@ -1530,7 +1544,7 @@ You need to pick starter services or production services.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="rpa-server-info">RPA Server Info<a class="headerlink" href="#rpa-server-info" title="Permanent link">&para;</a></h3>
+<h3 id="rpa-server">RPA Server<a class="headerlink" href="#rpa-server" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1839,7 +1853,7 @@ You need to pick starter services or production services.</p>
 </table>
 <p>This is just the Daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.</p>
 <p>The given sample names tell you which platform, storage, service and version.</p>
-<h3 id="ops-hub">OPS HUB:<a class="headerlink" href="#ops-hub" title="Permanent link">&para;</a></h3>
+<h3 id="ops-hub">OPS HUB<a class="headerlink" href="#ops-hub" title="Permanent link">&para;</a></h3>
 <p>If  you want to deploy Open Prediction Service HUB (OPS), you can set this flag to setup it up in your cluster.</p>
 <table>
 <thead>
@@ -1857,7 +1871,7 @@ You need to pick starter services or production services.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="rpa-server-info_1">RPA Server Info<a class="headerlink" href="#rpa-server-info_1" title="Permanent link">&para;</a></h3>
+<h3 id="rpa-server_1">RPA Server<a class="headerlink" href="#rpa-server_1" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1936,7 +1950,7 @@ You need to pick starter services or production services.</p>
 <span class="c1">#CP4BA_RPA_SERVER_SMTP_PORT=587</span>
 <span class="c1">#CP4BA_RPA_SERVER_SMTP_SERVER=&quot;gmail.smtp.com&quot;</span>
 </code></pre></div></p>
-<p>Options for Services</p>
+<p>Options for Starter Services</p>
 <table>
 <thead>
 <tr>
@@ -1974,6 +1988,61 @@ You need to pick starter services or production services.</p>
 </tbody>
 </table>
 <p>Be aware, this step is async, meaning that the Daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete. When the deployment of the service script is done, the service is not running yet. Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.</p>
+<h3 id="decisions-production">Decisions Production<a class="headerlink" href="#decisions-production" title="Permanent link">&para;</a></h3>
+<p>To deploy a <strong>Decisions Production Pattern</strong>, you have to have a db2 database and an IDS LDAP server.  Daffy can either use your existing assets or can build them locally where daffy is installed.  If you just want daffy to build all the needed components on your local bastion, just set the build flags below to true and daffy will build it all.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>To have daffy build your database and LDAP config info, you need to have DB2 and IDS LDAP installed locally. Instructions: <a href="../../Supporting-Software/DB2/">DB2</a> and <a href="../../Supporting-Software/IBM-LDAP/">LDAP</a></p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Info</th>
+<th style="text-align: left;">Required</th>
+<th style="text-align: left;">Valid Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS</td>
+<td style="text-align: left;">Do you want to deploy Decisions?</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">true or false</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_DB</td>
+<td style="text-align: left;">Do you want to deploy Decisions DB2 Database locally?</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">true or false</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_LDAP</td>
+<td style="text-align: left;">Do you want to deploy Decisions LDAP locally?</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">true or false</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER</td>
+<td style="text-align: left;">DNS Name or IP address for your IDS LDAP Server?</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">true or false</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME</td>
+<td style="text-align: left;">DNS Name or IP address for your IDS DB2 Server</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;">true or false</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_DB</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_LDAP</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER</span><span class="o">=</span><span class="s">&quot;XXX.XXX.XXX.XXX&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME</span><span class="o">=</span><span class="s">&quot;XXX.XXX.XXX.XXX&quot;</span>
+</code></pre></div>
+<h3 id="execute-service">Execute Service<a class="headerlink" href="#execute-service" title="Permanent link">&para;</a></h3>
 <p>Run the following command to deploy the Cloud Pak for Business Automation services:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
@@ -2019,7 +2088,7 @@ You need to pick starter services or production services.</p>
    </body></p>
 <p></html></p>
 <h2 id="post-install-info">Post Install Info<a class="headerlink" href="#post-install-info" title="Permanent link">&para;</a></h2>
-<h3 id="rpa-server">RPA Server<a class="headerlink" href="#rpa-server" title="Permanent link">&para;</a></h3>
+<h3 id="rpa-server_2">RPA Server<a class="headerlink" href="#rpa-server_2" title="Permanent link">&para;</a></h3>
 <h4 id="openldap-config">OpenLdap Config<a class="headerlink" href="#openldap-config" title="Permanent link">&para;</a></h4>
 <p>Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  </p>
 <p>The details for the next steps will come when you install Step 3 of Daffy for RPA Server, via your command line console.</p>
