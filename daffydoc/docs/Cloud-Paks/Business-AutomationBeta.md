@@ -48,7 +48,7 @@ You need to pick starter services or production services.
 | :---------                              |    :---------                                         |                      
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples |  
 
-### RPA Server Info
+### RPA Server
 
 | Variable Name                           | Info                                          | Required            |
 | :---------                              |    :---------                                 |      :----          |  
@@ -179,7 +179,7 @@ The given sample names tell you which platform, storage, service and version.
 
 
 
-### OPS HUB:
+### OPS HUB
 
 If  you want to deploy Open Prediction Service HUB (OPS), you can set this flag to setup it up in your cluster.
 
@@ -188,7 +188,7 @@ Variable | Valid Option | Required
 CP4BA_ENABLE_SERVICE_OPS        | true or false       | No
 
 
-### RPA Server Info
+### RPA Server
 
 | Variable Name                           | Info                                          | Required            |
 | :---------                              |    :---------                                 |      :----          |  
@@ -227,7 +227,8 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_RPA_SERVER_SMTP_SERVER="gmail.smtp.com"
 ```
 
-Options for Services
+
+Options for Starter Services
 
 
 Service | Components | CP4BA Version
@@ -242,6 +243,34 @@ samples        | Depends on sample        | 21.0.3 or 21.0.1
 
 Be aware, this step is async, meaning that the Daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete. When the deployment of the service script is done, the service is not running yet. Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.
 
+### Decisions Production
+
+To deploy a **Decisions Production Pattern**, you have to have a db2 database and an IDS LDAP server.  Daffy can either use your existing assets or can build them locally where daffy is installed.  If you just want daffy to build all the needed components on your local bastion, just set the build flags below to true and daffy will build it all.
+
+!!! important
+	To have daffy build your database and LDAP config info, you need to have DB2 and IDS LDAP installed locally. Instructions: [DB2](../../Supporting-Software/DB2/) and [LDAP](../../Supporting-Software/IBM-LDAP/)
+
+
+
+| Variable Name                                     | Info                                                          | Required            |  Valid Options   |
+| :---------                                        |    :---------                                                 |      :----          |    :----         |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS             | Do you want to deploy Decisions?                              |    No               |   true or false  |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_DB    | Do you want to deploy Decisions DB2 Database locally?         |    No               |   true or false  |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_LDAP  | Do you want to deploy Decisions LDAP locally?                 |    No               |   true or false  |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER | DNS Name or IP address for your IDS LDAP Server?              |    No               |   true or false  |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME | DNS Name or IP address for your IDS DB2 Server |    No               |   true or false  |
+
+
+```R
+CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS="true"
+CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_DB="true"
+CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_LDAP="true"
+CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER="XXX.XXX.XXX.XXX"
+CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME="XXX.XXX.XXX.XXX"
+```
+
+
+### Execute Service
 Run the following command to deploy the Cloud Pak for Business Automation services:
 
 ```
