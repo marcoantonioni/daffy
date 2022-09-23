@@ -1348,19 +1348,20 @@
 <tbody>
 <tr>
 <td style="text-align: left;">VM_NUMBER_OF_WORKERS_MIN</td>
-<td style="text-align: left;">VM_TSHIRT_SIZE="Min"</td>
+<td style="text-align: left;">VM_TSHIRT_SIZE="<font color=red><strong>Min</strong></font>"</td>
 <td style="text-align: left;">3</td>
 <td style="text-align: left;">any Number</td>
 </tr>
 <tr>
 <td style="text-align: left;">VM_NUMBER_OF_WORKERS_LARGE</td>
-<td style="text-align: left;">VM_TSHIRT_SIZE="Large"</td>
+<td style="text-align: left;">VM_TSHIRT_SIZE="<font color=red><strong>Large</strong></font>"</td>
 <td style="text-align: left;">6</td>
 <td style="text-align: left;">any Number</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><span class="n">VM_NUMBER_OF_WORKERS_LARGE</span><span class="o">=</span><span class="s">&quot;8&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#VM_NUMBER_OF_WORKERS_MIN=&quot;4&quot;</span>
+<span class="n">VM_NUMBER_OF_WORKERS_LARGE</span><span class="o">=</span><span class="s">&quot;8&quot;</span>
 </code></pre></div>
 <h2 id="master-node-sizing">Master Node Sizing<a class="headerlink" href="#master-node-sizing" title="Permanent link">&para;</a></h2>
 <p>Default values are based on TShirt Sizing.</p>
@@ -1369,6 +1370,7 @@
 <thead>
 <tr>
 <th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Install Type</th>
 <th style="text-align: left;">Default Value</th>
 <th style="text-align: left;">Valid Options</th>
 </tr>
@@ -1376,17 +1378,20 @@
 <tbody>
 <tr>
 <td style="text-align: left;">VM_NUMBER_OF_MASTERS_MIN</td>
+<td style="text-align: left;">VM_TSHIRT_SIZE="<font color=red><strong>Min</strong></font>"</td>
 <td style="text-align: left;">3</td>
 <td style="text-align: left;">any Number</td>
 </tr>
 <tr>
 <td style="text-align: left;">VM_NUMBER_OF_MASTERS_LARGE</td>
+<td style="text-align: left;">VM_TSHIRT_SIZE="<font color=red><strong>Large</strong></font>"</td>
 <td style="text-align: left;">3</td>
 <td style="text-align: left;">any Number</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><span class="n">VM_NUMBER_OF_MASTERS_LARGE</span><span class="o">=</span><span class="s">&quot;4&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#VM_NUMBER_OF_MASTERS_MIN=&quot;1&quot;</span>
+<span class="n">VM_NUMBER_OF_MASTERS_LARGE</span><span class="o">=</span><span class="s">&quot;4&quot;</span>
 </code></pre></div>
 <h2 id="masters-schedulable">Masters Schedulable<a class="headerlink" href="#masters-schedulable" title="Permanent link">&para;</a></h2>
 <p>This will tell the cluster if you want the master nodes to preform workload.  Should it be
