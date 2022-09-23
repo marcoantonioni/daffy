@@ -823,9 +823,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rpa-server-openldap-config" class="md-nav__link">
-    RPA Server: OpenLdap Config
+  <a href="#post-install-info" class="md-nav__link">
+    Post Install Info
   </a>
+  
+    <nav class="md-nav" aria-label="Post Install Info">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rpa-server" class="md-nav__link">
+    RPA Server
+  </a>
+  
+    <nav class="md-nav" aria-label="RPA Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openldap-config" class="md-nav__link">
+    OpenLdap Config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decisions-server" class="md-nav__link">
+    Decisions Server
+  </a>
+  
+    <nav class="md-nav" aria-label="Decisions Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#map-ldap-groups-to-roles" class="md-nav__link">
+    Map LDAP groups to Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1453,9 +1499,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rpa-server-openldap-config" class="md-nav__link">
-    RPA Server: OpenLdap Config
+  <a href="#post-install-info" class="md-nav__link">
+    Post Install Info
   </a>
+  
+    <nav class="md-nav" aria-label="Post Install Info">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rpa-server" class="md-nav__link">
+    RPA Server
+  </a>
+  
+    <nav class="md-nav" aria-label="RPA Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openldap-config" class="md-nav__link">
+    OpenLdap Config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decisions-server" class="md-nav__link">
+    Decisions Server
+  </a>
+  
+    <nav class="md-nav" aria-label="Decisions Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#map-ldap-groups-to-roles" class="md-nav__link">
+    Map LDAP groups to Roles
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2071,7 +2163,9 @@ You need to pick starter services or production services.</p>
       </iframe>
    </body></p>
 <p></html></p>
-<h2 id="rpa-server-openldap-config">RPA Server: OpenLdap Config<a class="headerlink" href="#rpa-server-openldap-config" title="Permanent link">&para;</a></h2>
+<h2 id="post-install-info">Post Install Info<a class="headerlink" href="#post-install-info" title="Permanent link">&para;</a></h2>
+<h3 id="rpa-server">RPA Server<a class="headerlink" href="#rpa-server" title="Permanent link">&para;</a></h3>
+<h4 id="openldap-config">OpenLdap Config<a class="headerlink" href="#openldap-config" title="Permanent link">&para;</a></h4>
 <p>Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  </p>
 <p>The details for the next steps will come when you install Step 3 of Daffy for RPA Server, via your command line console.</p>
 <details class="info">
@@ -2121,6 +2215,53 @@ You need to pick starter services or production services.</p>
 </details>
 <p>10) Logout of the Cloud Pak dashboard and close your browser.</p>
 <p>At this point, you are ready to logon to your RPA Server Console.</p>
+<h3 id="decisions-server">Decisions Server<a class="headerlink" href="#decisions-server" title="Permanent link">&para;</a></h3>
+<p>Once you have installed Production Decisions Server pattern, you will need to do a few manual steps.</p>
+<ol>
+<li>Map Your LDAP Groups to IDP Roles</li>
+<li>Install and Configure your Rule Designer</li>
+</ol>
+<p>The details for the next steps will come when you install Step 3 of Daffy for Decisions , via your command line console.</p>
+<h4 id="map-ldap-groups-to-roles">Map LDAP groups to Roles<a class="headerlink" href="#map-ldap-groups-to-roles" title="Permanent link">&para;</a></h4>
+<p>1) Logon to your Cloud Pak Namespace Dashboard from data you were giving with servcies.sh  --console  flag.
+Login with the Admin Username and Admin Password</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep1.jpg'   align="top"  style = "float"></p>
+</details>
+<p>2) From the Dashboard you will need to click the hamburger icon top left</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep2.jpg'   align="top"  style = "float"></p>
+</details>
+<p>3) From the menu,  you need to click the Access Control item</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep3.jpg'   align="top"  style = "float"></p>
+</details>
+<p>4) From the dashbaord, we will need to import the LDAP groups, so click the User Groups tab</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep4.jpg'   align="top"  style = "float"></p>
+</details>
+<p>5) From the dashbaord, click the New user group button on the right</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep5.jpg'   align="top"  style = "float"></p>
+</details>
+<p>6) This wizard will need to be repeated for each group you need to import. Here is a list of all groups you should import.</p>
+<div class="highlight"><pre><span></span><code>resAdministrators
+resDeployers
+resExecutors
+resMonitor
+rtsAdministrators
+rtsConfigManagers
+rtsUsers
+</code></pre></div>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep6.jpg'   align="top"  style = "float"></p>
+</details>
 
               
             </article>
