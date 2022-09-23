@@ -314,8 +314,11 @@ To find out the connection info to your ***RPA Server***, you can run the consol
 </html>
 
 
+## Post Install Info
 
-## RPA Server: OpenLdap Config
+
+### RPA Server
+#### OpenLdap Config
 Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  
 
 The details for the next steps will come when you install Step 3 of Daffy for RPA Server, via your command line console.
@@ -365,3 +368,51 @@ The details for the next steps will come when you install Step 3 of Daffy for RP
 
 
 At this point, you are ready to logon to your RPA Server Console.
+
+
+
+### Decisions Server
+Once you have installed Production Decisions Server pattern, you will need to do a few manual steps.
+
+1. Map Your LDAP Groups to IDP Roles
+2. Install and Configure your Rule Designer
+
+The details for the next steps will come when you install Step 3 of Daffy for Decisions , via your command line console.
+
+#### Map LDAP groups to Roles
+
+1) Logon to your Cloud Pak Namespace Dashboard from data you were giving with servcies.sh  --console  flag.
+Login with the Admin Username and Admin Password
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep1.jpg'   align="top"  style = "float">
+2) From the Dashboard you will need to click the hamburger icon top left
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep2.jpg'   align="top"  style = "float">
+3) From the menu,  you need to click the Access Control item
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep3.jpg'   align="top"  style = "float">
+4) From the dashbaord, we will need to import the LDAP groups, so click the User Groups tab
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep4.jpg'   align="top"  style = "float">
+5) From the dashbaord, click the New user group button on the right
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep5.jpg'   align="top"  style = "float">
+6) This wizard will need to be repeated for each group you need to import. Here is a list of all groups you should import.
+
+    resAdministrators
+    resDeployers
+    resExecutors
+    resMonitor
+    rtsAdministrators
+    rtsConfigManagers
+    rtsUsers
+
+
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep6.jpg'   align="top"  style = "float">

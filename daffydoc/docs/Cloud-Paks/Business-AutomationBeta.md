@@ -469,3 +469,55 @@ Login with the Admin Username and Admin Password
 
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep10.jpg'   align="top"  style = "float">                  
+
+#### Rule Designer
+
+For you to be able install and deploy rule projects you need to install Eclipse with Rule Designer and the connect it to your new instance.
+
+!!! important
+	Original Instructions can be found [here](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.1?topic=manager-installing-rule-designer){target=_blank}
+
+
+1) Download and install Eclipse. [Download Eclipse](https://www.eclipse.org/downloads/packages/release/2020-06/r){target=_blank}
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep1.jpg'   align="top"  style = "float">
+
+
+2) Install ODM from Marketplace.
+>
+a. Start Eclipse. **Click Help > Eclipse Marketplace**.
+>
+b. In the Find field, enter the text ODM and click Go.
+>
+c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Rule Designer that matches the version to install, and then click **Install**.
+>
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep2.jpg'   align="top"  style = "float">
+
+3) Download truststore.jks from your cluster
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep3.jpg'   align="top"  style = "float">
+
+4) Update Eclipse.ini and add these lines at the end for example
+
+```R
+-Djavax.net.ssl.trustStore="C:/Users/Administrator/Desktop/MyTrustStores/truststore.jks"
+-Djavax.net.ssl.trustStorePassword="changeit"
+```
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep4.jpg'   align="top"  style = "float">
+
+5) Get the Zen Key API from the CPD console
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep5.jpg'   align="top"  style = "float">
+
+6) Connect Rule Designer to your new Instance
+>
+a. Import project
+>
+b. Synchronize project (edited)
+>
+
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep6.jpg'   align="top"  style = "float">
