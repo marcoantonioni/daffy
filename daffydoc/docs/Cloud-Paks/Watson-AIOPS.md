@@ -46,14 +46,14 @@ The Event Manager for WatsonAIOps is an optional service deployment that can be 
 !!! Warning
       As of today, you can ONLY deploy the Event Manager service as an additional component to the Cloud Pak for Watson AIOps. Installing the Watson AIOps Cloud Pak will by default install the AI Manager component. It is not possible today to only install the Event Manager component without the AI Manager.  
 
-Here is the flag that will need to be set to enable the deployment of Event Manager with Watson AIOps:
+Here is the flag that will need to be set to enable the deployment of Event Manager Operator:
 
 ```
 CP4WAIOPS_DEPLOY_EMGR=<true|false>
 ```
 
 !!! Note
-    The Daffy scripts for deployment of Watson AIOPS Event Manager will configure the subscription and deploy the event manager operator. You will need to configure the NOI (Event Manager) instance manually. This is because Event Manager can be configured to collect, consolidate, and correlate events and topology data from a multitude of sources, which may require additional parameters specific to your environment.  
+    **POST EVENT MANAGER INSTALL STEPS** The Daffy scripts for deployment of Watson AIOPS Event Manager will configure the subscription and deploy the event manager operator. You will need to configure the NOI (Event Manager) instance manually. This is because Event Manager can be configured to collect, consolidate, and correlate events and topology data from a multitude of sources, which may require additional parameters specific to your environment.  
 
 This is a screen shot of what you will see after Daffy deploys the event manager operator. Please follow the instructions to complete the configuration of the Event Manager (NOI) instance.
 
@@ -81,7 +81,7 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 Run the ***--console*** command after 30 minutes to show you the login information. Details of the ***--console*** command are below.
 
-## Step 3a: Status
+## Step 3: Status
 
 The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service/pattern deployment, you can run the help flag to see what flags you can use to get information on your service/pattern deployment:
 
