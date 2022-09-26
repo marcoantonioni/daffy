@@ -150,4 +150,4 @@ If you want to want to see more detail status on an individual service, you can 
 ```
 
 <img src='../images/uncomment_services.png'
-       style="width:500px;height:500px;"/>
+       style="width:1374px;height:700px;"/>
