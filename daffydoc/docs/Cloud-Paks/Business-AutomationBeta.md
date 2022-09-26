@@ -508,9 +508,10 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep5.jpg'   align="top"  style = "float">
 
 6) Connect Rule Designer to your new Instance
+
   a. Right Click your Rule Project
 
-  b. Select Decision Center | connect
+  b. Select Decision Center | Connect
 
   c. Fill out from based on daffy output from --console
 
@@ -519,8 +520,7 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
 >   3. User ID:         Decisions Admin Username
 >   4. API Key:         Decisions Admin Zen API Key
 
-  d. Click Next and then Finish
-
-
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep6.jpg'   align="top"  style = "float">
+
+  d. Click Next and then Finish
