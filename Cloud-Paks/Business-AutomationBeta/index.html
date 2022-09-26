@@ -2230,8 +2230,8 @@ rtsUsers
 <summary>Screenshot</summary>
 <p><img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep3.jpg'   align="top"  style = "float"></p>
 </details>
-<p>4) Update Eclipse.ini and add these lines at the end for example</p>
-<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="n">Djavax.net.ssl.trustStore</span><span class="o">=</span><span class="s">&quot;C:/Users/Administrator/Desktop/MyTrustStores/truststore.jks&quot;</span>
+<p>4) Update your Eclipse.ini and add these lines at the end:(update path info based on your setup)</p>
+<div class="highlight"><pre><span></span><code><span class="o">-</span><span class="n">Djavax.net.ssl.trustStore</span><span class="o">=</span><span class="n">C</span><span class="o">:/</span><span class="n">Users</span><span class="o">/</span><span class="n">Administrator</span><span class="o">/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">MyTrustStores</span><span class="o">/</span><span class="n">truststore.jks</span>
 <span class="o">-</span><span class="n">Djavax.net.ssl.trustStorePassword</span><span class="o">=</span><span class="s">&quot;changeit&quot;</span>
 </code></pre></div>
 <p>5) Get the Zen Key API from the CPD console</p>
@@ -2241,8 +2241,14 @@ rtsUsers
 </details>
 <p>6) Connect Rule Designer to your new Instance</p>
 <blockquote>
-<p>a. Import project</p>
-<p>b. Synchronize project (edited)
+<p>a. Right Click your Rule Project</p>
+<p>b. Select Decision Center | connect</p>
+<p>c. Fill out from based on daffy output from --console
+   URL  Decision Center
+   Authentication:  Zen API Key
+   User ID: Decisions Admin Username
+   API Key: Decisions Admin Zen API Key</p>
+<p>d. Click Next and then Finish
 </p>
 </blockquote>
 <details class="info">
