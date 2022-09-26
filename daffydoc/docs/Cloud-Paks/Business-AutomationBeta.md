@@ -496,10 +496,10 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep3.jpg'   align="top"  style = "float">
 
-4) Update Eclipse.ini and add these lines at the end for example
+4) Update your Eclipse.ini and add these lines at the end:(update path info based on your setup)
 
 ```R
--Djavax.net.ssl.trustStore="C:/Users/Administrator/Desktop/MyTrustStores/truststore.jks"
+-Djavax.net.ssl.trustStore=C:/Users/Administrator/Desktop/MyTrustStores/truststore.jks
 -Djavax.net.ssl.trustStorePassword="changeit"
 ```
 
@@ -509,9 +509,17 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
 
 6) Connect Rule Designer to your new Instance
 >
-a. Import project
+a. Right Click your Rule Project
 >
-b. Synchronize project (edited)
+b. Select Decision Center | connect
+>
+c. Fill out from based on daffy output from --console
+   URL  Decision Center
+   Authentication:  Zen API Key
+   User ID: Decisions Admin Username
+   API Key: Decisions Admin Zen API Key
+>
+d. Click Next and then Finish
 >
 
 ??? Info "Screenshot"
