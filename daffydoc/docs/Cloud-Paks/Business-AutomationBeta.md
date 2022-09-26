@@ -500,7 +500,7 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
 
 ```R
 -Djavax.net.ssl.trustStore=C:/Users/Administrator/Desktop/MyTrustStores/truststore.jks
--Djavax.net.ssl.trustStorePassword="changeit"
+-Djavax.net.ssl.trustStorePassword=changeit
 ```
 
 5) Get the Zen Key API from the CPD console
@@ -508,19 +508,17 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep5.jpg'   align="top"  style = "float">
 
 6) Connect Rule Designer to your new Instance
->
-a. Right Click your Rule Project
->
-b. Select Decision Center | connect
->
-c. Fill out from based on daffy output from --console
-   URL  Decision Center
-   Authentication:  Zen API Key
-   User ID: Decisions Admin Username
-   API Key: Decisions Admin Zen API Key
->
-d. Click Next and then Finish
->
+  a. Right Click your Rule Project
+  b. Select Decision Center | connect
+  c. Fill out from based on daffy output from --console
+
+     1. URL  Decision Center
+     2. Authentication:  Zen API Key
+     3. User ID: Decisions Admin Username
+     4. API Key: Decisions Admin Zen API Key
+
+  d. Click Next and then Finish
+
 
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep6.jpg'   align="top"  style = "float">
