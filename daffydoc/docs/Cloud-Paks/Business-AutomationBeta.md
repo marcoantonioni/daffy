@@ -42,7 +42,7 @@ You need to pick starter services or production services.
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
 | CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001                   |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002                   |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
@@ -73,7 +73,7 @@ You need to pick starter services or production services.
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX=IF001
+CP4BA_IFIX=IF002
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #Prodution Services - only step 2 supported today.
 ###################################################
@@ -101,7 +101,8 @@ decisions        | odm, bai        | 22.0.1 or 21.0.3
 content        | filenet, cmis, ier, tm, bai        | 22.0.1 or 21.0.3
 content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1 or 21.0.3
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1 or 21.0.3
-samples        | Depends on sample        | 21.0.3 or 21.0.1
+all            | All Components(except iccsap)        | 22.0.1 or 21.0.3
+samples        | Depends on sample        | 22.0.1 or 21.0.3
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -109,7 +110,7 @@ Run the following command to deploy the Cloud Pak for Business Automation:
 /data/daffy/cp4ba/build.sh <ENVIRONMENT_NAME>
 ```
 
-When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects based on selction above:
+When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects based on selection above:
 
 - cp4ba-starter
 - cp4ba-content
@@ -143,11 +144,11 @@ Deploying the service does not need any new values to your environment file (<**
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
 | CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001                   |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001.IF002                   |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
-| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples |  
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,all,samples |  
 
 
 Instead of using the included services, you can also deploy your own sample or the included sample CR files from Daffy.
@@ -167,10 +168,7 @@ To use samples, you would give the name of the sample in this directory.
 
 sample                                                       |  Info                   | Deployment Type
 :-----------                                                 |:-------------           | -----------
-ocp-starter-ocs-all-22.0.1                                   | All Starters with OpenShift Container Storage   |  OCP
 ocp-starter-ocs-all-22.0.1-IF001                             | All Starters with OpenShift Container Storage           |  OCP
-roks-starter-nfs-all-IF008                                   | All Starters NFS Storage |  ROKS
-roks-starter-ibm-all-22.0.1                                  | All Starters IBM Storage                |  ROKS
 roks-starter-ibm-all-22.0.1-IF001                            | All Starters IBM Storage                |  ROKS
 
 This is just the Daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.
