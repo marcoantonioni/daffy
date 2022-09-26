@@ -503,9 +503,6 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
 -Djavax.net.ssl.trustStorePassword="changeit"
 ```
 
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep4.jpg'   align="top"  style = "float">
-
 5) Get the Zen Key API from the CPD console
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep5.jpg'   align="top"  style = "float">
