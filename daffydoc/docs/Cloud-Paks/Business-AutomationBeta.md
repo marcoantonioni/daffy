@@ -470,7 +470,7 @@ Login with the Admin Username and Admin Password
 
 #### Rule Designer
 
-For you to be able install and deploy rule projects you need to install Eclipse with Rule Designer and the connect it to your new instance.
+After you installed Decisions Services, you need to install and connect Rule Designer to your new instance. For the next steps, any information you need from your environment you should be able to collect from the service.sh --console  command output of Daffy.
 
 !!! important
 	Original Instructions can be found [here](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.1?topic=manager-installing-rule-designer){target=_blank}
