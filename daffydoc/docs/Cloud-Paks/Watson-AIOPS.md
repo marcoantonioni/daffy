@@ -72,8 +72,6 @@ When this step is complete, up to an hour depending on your environment, you hav
 
 **ibm-common-services**
 
-
-
 !!! warning
      Occasionally you may see the following error message, which is usually not a big concern. We have noticed that in some cases (***primarily on ROKS when doing an all in one deployment***) the install of the event manager will take longer than normal to deploy. In this case you may see a message like this below. If that happens, please give some additional time (usually no more than 30 minutes) to verify your installation.
 
