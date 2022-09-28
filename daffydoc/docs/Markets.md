@@ -6,6 +6,7 @@
 .market-grid { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  /* grid-template-rows: 50%; */
   /* grid-auto-rows: 1fr; */
   grid-gap: 20px;
   align-items: stretch;
@@ -27,9 +28,11 @@
 </style>
 
 ## **What Are Market Leads?**
-Market leads are your main contact for troubleshooting. If you run into any problems, please run `#!bash /data/daffy/tools.sh --mustGather` to gather your logs in a Tar file. Post a message explaining the issue to the #daffy-user-group Slack channel in the Americas Technical Sales workspace and make sure to include @market_lead_name and attach the Tar file.
+Market leads are your main contact for Daffy demos, engagement requests, proof of concepts, and troubleshooting. Our team can help with demos and presentations to explain Daffy to customers, business partners, or internal IBMers. We also provide support for upcoming customer proof of concepts that require Daffy personnel.
 
-You can find the point of contact for your market in the following list.
+For troubleshooting support, please run `#!bash /data/daffy/tools.sh --mustGather` to gather your logs in a Tar file. Post a message explaining the issue to the #daffy-user-group Slack channel in the Americas Technical Sales workspace and make sure to include @market_lead_name and attach the Tar file.
+
+You can find the point of contact for your market in the following list. Alternatively you can [click on this link to fill out a request form](https://w3.ibm.com/w3publisher/daffy/request-forms), and our team will contact you.
 
 ## **Financial Market Leads**
 <div class="market-grid">
@@ -78,24 +81,6 @@ You can find the point of contact for your market in the following list.
 
 ## Canada Leads
 <div class="market-grid">
-  <div class="market-card">
-    <img src="../images/rodrigo-de-la-parra.jpeg">
-    <div class="market-inner-container">
-        <h2>Rodrigo de la Parra</h2>
-        <p>Senior Automation Technical Specialist</p>
-        <a href="rodrigo@ca.ibm.com">rodrigo@ca.ibm.com</a>
-    </div>
-  </div>
-
-  <div class="market-card">
-    <img src="../images/samvit-roy.png">
-    <div class="market-inner-container">
-        <h2>Samvit Roy</h2>
-        <p>Advisory Data & AI Technical Specialist</p>
-        <a href="samvit.roy@ibm.com">samvit.roy@ibm.com</a>
-    </div>
-  </div>
-
   <div class="market-card">
     <img src="../images/david-ma.jpeg">
     <div class="market-inner-container">
