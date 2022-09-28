@@ -54,7 +54,7 @@ The service consist of the following products:
 
 
 
-**Run the following command** to deploy the Cloud Pak for Watson AIOps:
+**Run the following command** to deploy the Cloud Pak for Watson AIOps + AI Manger:
 
 ```
 /data/daffy/cp4waiops/build.sh <ENVIRONMENT_NAME>
@@ -79,7 +79,7 @@ Run the ***--console*** command after 30 minutes to show you the login informati
 There are 2 services that can be optionally installed after you have the Cloud Pak for Watson AIOPS installed. 
 
 * Event Manager (Operator ONLY) 
-* Infrastructure 
+* Infrastructure Automation
 
 The **Event Manager** for WatsonAIOps is an optional service deployment that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file then run the service.sh script.  
 
