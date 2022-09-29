@@ -5,8 +5,14 @@ hide:
 <script>
   document.title = "AppStore";
 </script>
-#Apps
-The Daffy App 
+#What is the AppStore
+
+##Support Model
+
+##Get your App Added
+
+#Current Apps
+The Daffy App
 <html>
 <body>
 <div style="text-align:center">
