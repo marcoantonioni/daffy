@@ -1675,10 +1675,6 @@
 <h2 id="step-2-deploy-cloud-pak">Step 2: Deploy Cloud Pak<a class="headerlink" href="#step-2-deploy-cloud-pak" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/  &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh):
 You need to pick starter services or production services.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Currently Daffy only supports step 2 for Production services.  You can have daffy install the operators and create the namespace, but does not support the 3 step, deploy services just yet.</p>
-</div>
 <table>
 <thead>
 <tr>
@@ -2286,7 +2282,10 @@ You need to pick starter services or production services.</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --help
 </code></pre></div>
 <p>The following command will give you the status of all <strong><em>starter</em></strong> components for the service you deployed:</p>
-<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
+<p><div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterStatus
+</code></pre></div>
+The following command will give you the status of all <strong><em>Production</em></strong> components for the service you deployed:</p>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --Status
 </code></pre></div>
 <p>The following command will give you the status of <strong><em>RPA Server</em></strong> you deployed:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --RPAStatus
@@ -2296,6 +2295,9 @@ You need to pick starter services or production services.</p>
 </code></pre></div>
 <p>To find out the connection info to your new <strong><em>starter</em></strong> services, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --StarterConsole
+</code></pre></div>
+<p>To find out the connection info to your new <strong><em>Production</em></strong> services, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --Console
 </code></pre></div>
 <p>To find out the connection info to your <strong><em>RPA Server</em></strong>, you can run the console flag to get user names, passwords, and URLs to connect to:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4ba/service.sh &lt;ENVIRONMENT_NAME&gt; --RPAConsole
