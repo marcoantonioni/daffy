@@ -6,10 +6,13 @@ hide:
   document.title = "AppStore";
 </script>
 #What is the AppStore
+Pending info by 8/4/2022
 
 ##Support Model
+Pending info by 8/4/2022
 
 ##Get your App Added
+Pending info by 8/4/2022
 
 #Current Apps
 The Daffy App
