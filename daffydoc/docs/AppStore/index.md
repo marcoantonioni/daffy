@@ -5,17 +5,23 @@ hide:
 <script>
   document.title = "AppStore";
 </script>
-#What is the AppStore
-Pending info by 8/4/2022
+
+#What is the AppStore?
+
+Pending info by 10/4/2022
 
 ##Support Model
-Pending info by 8/4/2022
+
+Pending info by 10/4/2022
 
 ##Get your App Added
-Pending info by 8/4/2022
 
-#Current Apps
-The Daffy App
+Pending info by 10/4/2022
+
+##Current Apps
+
+
+
 <html>
 <body>
 <div style="text-align:center">

@@ -22,10 +22,6 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/  <**ENVIRONMENT_NAME**>-env.sh):
 You need to pick starter services or production services.
 
-
-!!! Info
-      Currently Daffy only supports step 2 for Production services.  You can have daffy install the operators and create the namespace, but does not support the 3 step, deploy services just yet.
-
 | Variable Name                           | Info                                          | Install Type  | Required    |
 | :---------                              |    :---------                                 |   :----       |   :----     |  
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
@@ -303,7 +299,12 @@ The following command will give you the status of all ***starter*** components f
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
 ```
+The following command will give you the status of all ***Production*** components for the service you deployed:
 
+
+```
+/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --Status
+```
 
 The following command will give you the status of ***RPA Server*** you deployed:
 
@@ -321,6 +322,12 @@ To find out the connection info to your new ***starter*** services, you can run 
 
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole
+```
+
+To find out the connection info to your new ***Production*** services, you can run the console flag to get user names, passwords, and URLs to connect to:
+
+```
+/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --Console
 ```
 
 

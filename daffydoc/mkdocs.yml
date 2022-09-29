@@ -101,7 +101,7 @@ nav:
   - Market Leaders : Markets.md
   - App Store :
     - AppStore/index.md
-    - AppStore/IBMSterlingB2B.md
+    - IBM Sterling B2B Installer: AppStore/IBMSterlingB2B.md
   - More:
     - Glossary: More/Glossary.md
     - FAQ: More/FAQ/FAQ.md
