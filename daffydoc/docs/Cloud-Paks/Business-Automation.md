@@ -256,8 +256,8 @@ To deploy a **Decisions Production Pattern**, you have to have a db2 database an
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS             | Do you want to deploy Decisions?                              |    No               |   true or false  |
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_DB    | Do you want to deploy Decisions DB2 Database locally?         |    No               |   true or false  |
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_LDAP  | Do you want to deploy Decisions LDAP locally?                 |    No               |   true or false  |
-| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER | DNS Name or IP address for your IDS LDAP Server?              |    No               |   true or false  |
-| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME | DNS Name or IP address for your IDS DB2 Server |    No               |   true or false  |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER | DNS Name or IP address for your IDS LDAP Server?              |    No               |  DNS or IP address  |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME | DNS Name or IP address for your DB2 Server |    No               |  DNS or IP address  |
 
 
 ```R
