@@ -235,6 +235,7 @@ decisions        | odm, bai        | 22.0.1 or 21.0.3
 content        | filenet, cmis, ier, tm, bai        | 22.0.1 or 21.0.3
 content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1 or 21.0.3
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1 or 21.0.3
+all            | all (except iccsap)       | 22.0.1 or 21.0.3
 samples        | Depends on sample        | 21.0.3 or 21.0.1
 
 
@@ -243,7 +244,7 @@ Be aware, this step is async, meaning that the Daffy engine will deploy the serv
 
 ### Decisions Production
 
-To deploy a **Decisions Production Pattern**, you have to have a db2 database and an IDS LDAP server.  Daffy can either use your existing assets or can build them locally where daffy is installed.  If you just want daffy to build all the needed components on your local bastion, just set the build flags below to true and daffy will build it all.
+To deploy a **Decisions Production Pattern**, you have to have a db2 database and an IDS LDAP server. This will also include BAI.  Daffy can either use your existing assets or can build them locally where daffy is installed.  If you just want daffy to build all the needed components on your local bastion, just set the build flags below to true and daffy will build it all.
 
 !!! important
 	To have daffy build your database and LDAP config info, you need to have DB2 and IDS LDAP installed locally. Instructions: [DB2](../../Supporting-Software/DB2/) and [LDAP](../../Supporting-Software/IBM-LDAP/)
