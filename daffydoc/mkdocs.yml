@@ -96,16 +96,19 @@ nav:
     #- POC Request Form: Request-Forms/POC-Request-Form.md
     #- Training: Request-Forms/Training.md
     #- L200 Adv Training: Request-Forms/L200-Adv-Training.md
-  - Meet the Team:
-    - Meet-the-Team.md
     #- Meet The teamm 2: Meet-the-Team/Meat-the-Team.md
     #- Workstreams: Meet-the-Team/Workstreams.md
+  - Market Leaders : Markets.md
+  - App Store :
+    - AppStore/index.md
+    - AppStore/IBMSterlingB2B.md
   - More:
     - Glossary: More/Glossary.md
     - FAQ: More/FAQ/FAQ.md
     - Deployment Estimates: More/FAQ/Deployment-Estimates.md
     - IBM Entitlement Keys: More/FAQ/IBM-Entitlement-Keys.md
     - Secure your Bastion:  More/secure-server-ssh-only-login.md
+    - Meet the Team: Meet-the-Team.md
 
 markdown_extensions:
   - attr_list

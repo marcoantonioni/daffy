@@ -54,7 +54,7 @@ hide:
         </p>
         </p>
         <p style="margin:0;">
-          Current Version <font color="#FF7C00" >v2022-08-17b </font><a href="release">(Release Notes)</a></font>
+          Current Version <font color="#FF7C00" >v2022-09-29 </font><a href="release">(Release Notes)</a></font>
         </p>
       </div>
     </div>

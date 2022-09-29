@@ -46,7 +46,7 @@ You need to pick starter services or production services.
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
-| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples |  
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples,all |  
 
 ### RPA Server
 

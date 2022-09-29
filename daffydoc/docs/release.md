@@ -1,3 +1,57 @@
+## v2022-09-29
+          Tested OpenShift with Current Daffy Release
+              GCP       4.8.49 / 4.10.32
+              AWS       4.8.49 / 4.10.32
+              Azure     4.8.49 / 4.10.32
+              ROKS      4.8.49 / 4.10.32
+              VSphere   4.8.49 / 4.10.32
+              KVM       4.8.49 / 4.10.32
+              IBM IPI   4.10.32
+          Cloud Pak for Business Automation
+              Added Support for 22.0.1 IF002
+              Added Support for Decision Production Service(Step 3 - Build DB and LDAP assets and Deploy Services)
+              Added new starter services all (removed old samples)
+          OpenShift
+              Added support for all IPI installs to enable Masters true (OCP_MASTER_NODES_SCHEDULABLE=true)
+              Added support to auto login to IBM Account for ROKS install (IBMCLOUD_ACCOUNT_ID="")
+              Added ability to increase wait time for VSPhere UPI reboot for  (VSPHERE_IGNITION_FILES_DEPLOYMENT_WAIT_TIME="500")
+              Added Support to override VSphere UPI network device (VSPHERE_NETWORK_ADAPTER="")
+              Added Red Hat pull secret validation precheck
+              Upgraded RHACM to 2.6
+              Upgraded Mirror Registry to 1.2.6
+              Added support for 4.11
+              Added precheck to IBM ipi for CIS instance and domain name
+              Added support for 4.11(OCP only)
+              Added support for Manual credentials mode on GCP & AWS
+              Added prechecks for bring your own VPC for GCP, AWS, & Azure
+          Cloud Pak for Data
+              Added support for 4.5.2
+              Removed support for 4.0.2-4.0.5
+          Cloud Pak for Integration
+              Removed support for 2021.3.1 & 2021.2.1
+          Cloud Pak for WAIOps
+              Added support for 3.4.1 & 3.4.2
+              Added deployment of Infrastructure Automation component (CP4WAIOPS_DEPLOY_IA=true)
+              Reconfigured scripts to align with Daffy deployment pattern.
+                  Infrastructure Automation and Event Manager will be installed with the service.sh script. AI Manager gets deployed with the base of the cloud pak.
+          IBM IPI
+              Added precheck CIS and DNS domain
+              Added VPC quota precheck that builds VPC, subnet, and instances to test for quota limits (Can be toggled off IBM_ALLOW_VPC_PRECHECK=false)
+          AppStore
+              New AppStore feature
+                New App - IBM Sterling B2B Install tool
+          Misc
+              Remove support for OCP 4.6 and 4.7 -  https://access.redhat.com/support/policy/updates/openshift
+              Updated IDS LDAP install and --console info to include search filters on output
+              During cleanup for ROKS, logout from ibmcloud
+              Added ROKS and ibm-ipi to security-cleanup tool
+              Added OpenShift Ceph Tools into any installation of OCS/ODF.
+              Added install of dos2unix util for prepare host
+              Removed install of nmon for prepare host
+              Added ROKS and IBM IPI to security-cleanup.sh
+              Added OpenShift Ceph Tools into any installation of OCS/ODF
+              Updated CloudCTL and added support to install stand alone via tools.sh
+
 ## v2022-08-17b
           Cloud Pak for Integration
               Fixed Daffy code issue with Platform Navigator not finishing operator install

@@ -3,7 +3,7 @@
   document.title = "Daffy Markets";
 </script>
 <style>
-.market-grid { 
+.market-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   /* grid-template-rows: 50%; */
@@ -82,11 +82,11 @@ You can find the point of contact for your market in the following list. Alterna
 ## Canada Leads
 <div class="market-grid">
   <div class="market-card">
-    <img src="../images/david-ma.jpeg">
+  <img src="../images/rodrigo-de-la-parra.jpeg">
     <div class="market-inner-container">
-        <h2>David Ma</h2>
-        <p>Senior Data & AI Technical Specialist</p>
-        <a href="davidma@ca.ibm.com">davidma@ca.ibm.com</a>
+        <h2>Rodrigo de la Parra</h2>
+        <p>Senior Automation Technical Specialist</p>
+        <a href="rodrigo@ca.ibm.com">rodrigo@ca.ibm.com</a>
     </div>
   </div>
 </div>
