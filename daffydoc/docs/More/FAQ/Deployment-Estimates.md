@@ -8,7 +8,7 @@
 ## Google Cloud Platform
 [Calculator](https://cloud.google.com/products/calculator){target=_blank}
 
-  | <img src='../../../Deploying-OCP/images/gcp.png'style="width:85px;height:85px;"/> | T-Shirt Size    | 1 Hour | 1 Day | 1 Week | 1 Month|
+  | <img src='../../../Deploying-OCP/images/gcpLogo.png'style="width:85px;height:85px;"/> | T-Shirt Size    | 1 Hour | 1 Day | 1 Week | 1 Month|
   | :---      |    :----:     |  :----:     |  :----:     |  :----:     |  :----:     |
   | | Large  | $6.69|$160.56|$1,123.92|$4,816.80
 
