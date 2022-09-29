@@ -6,6 +6,9 @@ hide:
   document.title = "AppStore - IBM Sterling B2B";
 </script>
 
+<img src='../images/IBM_Sterling_B2B_Integration.png'
+       style="width:100px;height:100px;"/>
+
 #Info
 Auto-installation tool for IBM-Sterling B2Bi and IBM-Sterling File Gateway containers in a clustered environment.
 

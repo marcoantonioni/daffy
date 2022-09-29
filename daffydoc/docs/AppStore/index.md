@@ -6,7 +6,7 @@ hide:
   document.title = "AppStore";
 </script>
 #Apps
-
+The Daffy App 
 <html>
 <body>
 <div style="text-align:center">
