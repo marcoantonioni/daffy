@@ -513,7 +513,7 @@ c. Locate the entry IBM Operational Decision Manager for Developers v8.11.0 - Ru
 
 5) Get the Zen Key API from the CPD console
 !!! important
-	Before the Zen API Key can be generated, you must map the **Map LDAP groups to Roles** from above and then via Browser, logon to the Cloud Pak Decisions Desktop once.
+	Before the Zen API Key can be generated, you must **Map LDAP groups to Roles** from above and then via Browser, logon to the Cloud Pak Decisions Desktop once.
 
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsRuleDesignerStep5.jpg'   align="top"  style = "float">
