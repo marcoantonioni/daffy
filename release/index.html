@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v2022-08-17b" class="md-skip">
+        <a href="#v2022-09-29" class="md-skip">
           Skip to content
         </a>
       
@@ -286,12 +286,24 @@
   
 
 
+  <li class="md-tabs__item">
+    <a href="../Markets/" class="md-tabs__link">
+      Market Leaders
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
   
   
   
     <li class="md-tabs__item">
-      <a href="../Meet-the-Team/" class="md-tabs__link">
-        Meet the Team
+      <a href="../AppStore/" class="md-tabs__link">
+        App Store
       </a>
     </li>
   
@@ -1108,30 +1120,57 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../Markets/" class="md-nav__link">
+        Market Leaders
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       
       
         
           
+            
+          
+        
+          
         
       
       
-        <label class="md-nav__link" for="__nav_8">
-          Meet the Team
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../AppStore/">App Store</a>
+          
+            <label for="__nav_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
-      <nav class="md-nav" aria-label="Meet the Team" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
+      <nav class="md-nav" aria-label="App Store" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
           <span class="md-nav__icon md-icon"></span>
-          Meet the Team
+          App Store
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -1139,8 +1178,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../Meet-the-Team/" class="md-nav__link">
-        Meet the Team
+      <a href="../AppStore/IBMSterlingB2B/" class="md-nav__link">
+        IBMSterlingB2B
       </a>
     </li>
   
@@ -1164,7 +1203,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
       
       
       
@@ -1179,15 +1218,17 @@
         
           
         
+          
+        
       
       
-        <label class="md-nav__link" for="__nav_9">
+        <label class="md-nav__link" for="__nav_10">
           More
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="More" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
+        <label class="md-nav__title" for="__nav_10">
           <span class="md-nav__icon md-icon"></span>
           More
         </label>
@@ -1263,6 +1304,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Meet-the-Team/" class="md-nav__link">
+        Meet the Team
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1292,6 +1347,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v2022-09-29" class="md-nav__link">
+    v2022-09-29
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v2022-08-17b" class="md-nav__link">
@@ -1421,6 +1483,60 @@
 
   <h1>Release</h1>
 
+<h2 id="v2022-09-29">v2022-09-29<a class="headerlink" href="#v2022-09-29" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>      Tested OpenShift with Current Daffy Release
+          GCP       4.8.49 / 4.10.32
+          AWS       4.8.49 / 4.10.32
+          Azure     4.8.49 / 4.10.32
+          ROKS      4.8.49 / 4.10.32
+          VSphere   4.8.49 / 4.10.32
+          KVM       4.8.49 / 4.10.32
+          IBM IPI   4.10.32
+      Cloud Pak for Business Automation
+          Added Support for 22.0.1 IF002
+          Added Support for Decision Production Service(Step 3 - Build DB and LDAP assets and Deploy Services)
+          Added new starter services all (removed old samples)
+      OpenShift
+          Added support for all IPI installs to enable Masters true (OCP_MASTER_NODES_SCHEDULABLE=true)
+          Added support to auto login to IBM Account for ROKS install (IBMCLOUD_ACCOUNT_ID=&quot;&quot;)
+          Added ability to increase wait time for VSPhere UPI reboot for  (VSPHERE_IGNITION_FILES_DEPLOYMENT_WAIT_TIME=&quot;500&quot;)
+          Added Support to override VSphere UPI network device (VSPHERE_NETWORK_ADAPTER=&quot;&quot;)
+          Added Red Hat pull secret validation precheck
+          Upgraded RHACM to 2.6
+          Upgraded Mirror Registry to 1.2.6
+          Added support for 4.11
+          Added precheck to IBM ipi for CIS instance and domain name
+          Added support for 4.11(OCP only)
+          Added support for Manual credentials mode on GCP &amp; AWS
+          Added prechecks for bring your own VPC for GCP, AWS, &amp; Azure
+      Cloud Pak for Data
+          Added support for 4.5.2
+          Removed support for 4.0.2-4.0.5
+      Cloud Pak for Integration
+          Removed support for 2021.3.1 &amp; 2021.2.1
+      Cloud Pak for WAIOps
+          Added support for 3.4.1 &amp; 3.4.2
+          Added deployment of Infrastructure Automation component (CP4WAIOPS_DEPLOY_IA=true)
+          Reconfigured scripts to align with Daffy deployment pattern.
+              Infrastructure Automation and Event Manager will be installed with the service.sh script. AI Manager gets deployed with the base of the cloud pak.
+      IBM IPI
+          Added precheck CIS and DNS domain
+          Added VPC quota precheck that builds VPC, subnet, and instances to test for quota limits (Can be toggled off IBM_ALLOW_VPC_PRECHECK=false)
+      AppStore
+          New AppStore feature
+            New App - IBM Sterling B2B Install tool
+      Misc
+          Remove support for OCP 4.6 and 4.7 -  https://access.redhat.com/support/policy/updates/openshift
+          Updated IDS LDAP install and --console info to include search filters on output
+          During cleanup for ROKS, logout from ibmcloud
+          Added ROKS and ibm-ipi to security-cleanup tool
+          Added OpenShift Ceph Tools into any installation of OCS/ODF.
+          Added install of dos2unix util for prepare host
+          Removed install of nmon for prepare host
+          Added ROKS and IBM IPI to security-cleanup.sh
+          Added OpenShift Ceph Tools into any installation of OCS/ODF
+          Updated CloudCTL and added support to install stand alone via tools.sh
+</code></pre></div>
 <h2 id="v2022-08-17b">v2022-08-17b<a class="headerlink" href="#v2022-08-17b" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>      Cloud Pak for Integration
           Fixed Daffy code issue with Platform Navigator not finishing operator install
