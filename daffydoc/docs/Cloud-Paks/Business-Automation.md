@@ -45,6 +45,9 @@ You need to pick starter services or production services.
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples,all |  
 
 ### RPA Server
+!!! warning
+	Currently does not support a ROKS deployment. There is known issue with RPA Server and ticket is open with IBM Support.
+
 
 | Variable Name                           | Info                                          | Required            |
 | :---------                              |    :---------                                 |      :----          |  
