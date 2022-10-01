@@ -100,7 +100,8 @@ nav:
     #- Workstreams: Meet-the-Team/Workstreams.md
   - Market Leaders : Markets.md
   - App Store :
-    - AppStore/index.md
+    - App Store: AppStore/index.md
+    - Information: AppStore/info.md
     - IBM Sterling B2B Installer: AppStore/IBMSterlingB2B.md
   - More:
     - Glossary: More/Glossary.md
