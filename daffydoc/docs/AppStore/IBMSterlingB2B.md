@@ -14,7 +14,7 @@ Auto-installation tool for IBM-Sterling B2Bi and IBM-Sterling File Gateway conta
 
 This tool was developed to simplify the basic installation of containers for IBM Sterling B2Bi-SFG on RedHat OpenShift Container Platform.
 
-# Basic assumptions / prerequisites:
+# Basic Assumptions & Prerequisites:
 
 You have already installed a ROKS cluster. You can do this manually, through TechZone or using the Daffy_RHOCP_Installer. The remainder of this documentation assumes you have already installed a ROKS cluster using the Daffy_RHOCP_Installer but can be easily adapted to the other methods of ROKS installation.
 
