@@ -23,5 +23,16 @@ You are using a UNIX / Linux bastion host to install and run the scripts. The ba
 You have already created a file containing your IBM software entitlement key on the bastion host. This key will allow access to the IBM B2Bi/SFG software in the IBM Container registry during the final helm install process.
 You already know the ingress subdomain of the cluster where you will be installing this software. This is available on the cluster dashboard webpage after Daffy installation. If you are not sure how or where to find this information click here.
 
+# Owner/Support
+Slack Channel ***#b2bi-autoinstall***
+
+[James.Myers@ibm.com](mailto:James.Myers@ibm.com?Subject=Daffy AppStore Help)
+
+
+#Install Command
+```R
+/data/daffy/tools.sh --installIBMSterlingB2Bi
+```
+
 
 <button onclick=" window.open('https://github.com/IBM/B2Bi-SFG-on-Daffy-RHOCP/', '_blank'); return false;" class="custom-btn btn-7">Install Instructions</button>
