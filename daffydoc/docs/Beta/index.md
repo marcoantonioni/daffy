@@ -28,6 +28,16 @@ If you want to switch back to the production of the daffy code, you can run this
 /data/daffy/refresh.sh
 ```
 
+
+<html>
+<body>
+<div style="text-align:center">
+<button onclick="location.href='./Business-AutomationBeta/'" class="custom-btn btn-7">Business Automation</button>
+</div>
+</body>
+</html>
+
+
 <html>
 <body>
 <div style="text-align:center">
