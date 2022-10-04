@@ -359,7 +359,7 @@ To find out the connection info to your ***RPA Server***, you can run the consol
 ## Post Daffy Steps
 
 
-### RPA Server
+### ***RPA Server***
 #### OpenLdap Config
 Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  
 
@@ -391,7 +391,7 @@ At this point, you are ready to logon to your RPA Server Console.
 
 
 
-### Decisions Server
+### ***Decisions Server***
 Once you have installed Production Decisions Server pattern, you will need to do a few manual steps.
 
 1. Map Your LDAP Groups to IDP Roles

@@ -8,7 +8,13 @@ hide:
 #Active Beta Features
 !!! Warning   
       Early features - Still in testing mode, may not always work.  User be aware!!!
-
+<html>
+<body>
+  <div style="text-align:center">
+    <button onclick="location.href='../Cloud-Paks/Business-AutomationBeta/'" class="custom-btn btn-7">Business Automation</button>
+  </div>
+</body>
+</html>
 
 To get the beta version of Daffy, run the following command on your bastion:
 ```
@@ -27,21 +33,3 @@ If you want to switch back to the production of the daffy code, you can run this
 ```
 /data/daffy/refresh.sh
 ```
-
-
-<html>
-<body>
-<div style="text-align:center">
-<button onclick="location.href='./Business-AutomationBeta/'" class="custom-btn btn-7">Business Automation</button>
-</div>
-</body>
-</html>
-
-
-<html>
-<body>
-<div style="text-align:center">
-<button onclick="location.href='./Turbo/'" class="custom-btn btn-7">Turbo</button>
-<button onclick="location.href='./IBM/'" class="custom-btn btn-7">IBM IPI</button>
-</body>
-</html>
