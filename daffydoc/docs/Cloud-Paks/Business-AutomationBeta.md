@@ -37,8 +37,7 @@ You need to pick starter services or production services.
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002                   |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002,IF003       |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
@@ -66,30 +65,31 @@ You need to pick starter services or production services.
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_RPA_SERVER_VERSION                |  21.0.2             | CP4BA_RPA_SERVER_IFIX |   IF005                   |
-| CP4BA_RPA_SERVER_VERSION                |  21.0.3             | CP4BA_RPA_SERVER_IFIX |                           |
+| CP4BA_RPA_SERVER_VERSION                |  21.0.4             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
+| CP4BA_RPA_SERVER_VERSION                |  21.0.5             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
 
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX=IF002
+CP4BA_IFIX=IF003
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #Prodution Services - only step 2 supported today.
 ###################################################
-#CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS="true"
-#CP4BA_DEPLOYMENT_PRODUCTION_CONTENT="true"
-#CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW="true"
+CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS="false"
+CP4BA_DEPLOYMENT_PRODUCTION_CONTENT="false"
+CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW="false"
 
 #RPA Server
 ############################################
-#CP4BA_RPA_SERVER_VERSION="21.0.3"
+CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
+CP4BA_RPA_SERVER_VERSION="21.0.5"
 #CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
 #CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
-#CP4BA_RPA_SERVER_SMTP_PORT=587
+#CP4BA_RPA_SERVER_SMTP_PORT="587"
 #CP4BA_RPA_SERVER_SMTP_SERVER="gmail.smtp.com"
 ```
 
@@ -97,12 +97,12 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, bai        | 22.0.1 or 21.0.3
-content        | filenet, cmis, ier, tm, bai        | 22.0.1 or 21.0.3
-content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1 or 21.0.3
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1 or 21.0.3
-all            | All Components(except iccsap)        | 22.0.1 or 21.0.3
-samples        | Depends on sample        | 22.0.1 or 21.0.3
+decisions        | odm, bai        | 22.0.1
+content        | filenet, cmis, ier, tm, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
+all            | All Components(except iccsap)        | 22.0.1
+samples        | Depends on sample        | 22.0.1
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -143,8 +143,7 @@ Deploying the service does not need any new values to your environment file (<**
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001.IF002                   |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002, IF003      |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
@@ -207,19 +206,19 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX="IF001"
+CP4BA_IFIX="IF003"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1
 
 #Open Prediction Service HUB
 ############################################
-#CP4BA_ENABLE_SERVICE_OPS="true"
+CP4BA_ENABLE_SERVICE_OPS="false"
 
 #RPA Server
 ############################################
-#CP4BA_ENABLE_SERVICE_RPA_SERVER="true"
-#CP4BA_RPA_SERVER_VERSION="21.0.3"
-#CP4BA_RPA_SERVER_IFIX=""
+CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
+CP4BA_RPA_SERVER_VERSION="21.0.5"
+CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
@@ -234,12 +233,12 @@ Options for Starter Services
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, bai        | 22.0.1 or 21.0.3
-content        | filenet, cmis, ier, tm, bai        | 22.0.1 or 21.0.3
-content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1 or 21.0.3
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1 or 21.0.3
-all            | all (except iccsap)       | 22.0.1 or 21.0.3
-samples        | Depends on sample        | 21.0.3 or 21.0.1
+decisions        | odm, bai        | 22.0.1
+content        | filenet, cmis, ier, tm, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
+all            | all (except iccsap)       | 22.0.1
+samples        | Depends on sample        | 21.0.3
 
 
 
