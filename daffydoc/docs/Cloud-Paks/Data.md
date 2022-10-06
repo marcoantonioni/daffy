@@ -149,5 +149,5 @@ If you want to want to see more detail status on an individual service, you can 
 /data/daffy/cp4d/build.sh <ENVIRONMENT_NAME> --Console
 ```
 
-<img src='../images/Uncomment_services.png'
+<img src='../images/uncomment_services.png'
        style="width:1374px;height:700px;"/>
