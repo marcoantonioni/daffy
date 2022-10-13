@@ -12,7 +12,8 @@ hide:
 <body>
   <div style="text-align:center">
     <button onclick="location.href='../Cloud-Paks/Business-AutomationBeta/'" class="custom-btn btn-7">Business Automation</button>
-      <button onclick="location.href='../Cloud-Paks/DataBeta/'" class="custom-btn btn-7">Data</button>
+    <button onclick="location.href='../Cloud-Paks/DataBeta/'" class="custom-btn btn-7">Data</button>
+    <button onclick="location.href='../AppStore/indexBeta/'" class="custom-btn btn-7">AppStore</button>
   </div>
 </body>
 </html>
