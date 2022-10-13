@@ -7,14 +7,14 @@ hide:
 </script>
 
 <img src='../images/Daffy Configurator.png'
-       style="width:100px;height:100px;"/>
+       style="width:300px;height:300px;"/>
 
 # Info
 A command line tool to build a Daffy environment file based on sets of questions. This tool was developed to simplify the creation of an environment file, figure out cluster details, copy to Daffy to run the environment file, and be able to store your environment files to your own GitHub repository.
 
 The Daffy CLI Environment Configurator will walk you through the things it needs for a successful install of OpenShift, CloudPaks, Services, and a combination of any of them that work with the Daffy steps.
 
-# Basic Assumptions & Prerequisites:
+## Prerequisites:
 
 You are using a Linux bastion that is supported by Daffy. You can get a bastion through TechZone or following the steps located at https://ibm.github.io/daffy/Supporting-Software/Bastion/. You have Daffy installed on your bastion. The rest of this document assumes that you have both of these.
 
