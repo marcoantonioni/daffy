@@ -186,15 +186,4 @@ You can find the point of contact for your market in the following list. Alterna
     </div>
   </div>
 </div>
-
-### **Client Engineering Leads**
-<div class="market-grid">
-  <div class="market-card">
-    <img src="../images/toby-liu.jpg">
-    <div class="market-inner-container">
-        <h2>Toby Liu</h2>
-        <p>Cloud Engineer</p>
-        <a href="Toby.Liu@ibm.com">Toby.Liu@ibm.com</a>
-    </div>
-  </div>
 </div>
