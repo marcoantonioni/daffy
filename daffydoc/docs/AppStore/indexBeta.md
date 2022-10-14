@@ -27,7 +27,7 @@ hide:
       <div class="app-card">
       <a class="app-link" href="../IBMDaffyCLIConfigurator">
         <div class="app-card-container">
-          <img src="../images/IBM_Sterling_B2B_Integration.png" alt="IBM Daffy CLI Configurator" />
+          <img src="../images/Daffy.png" alt="IBM Daffy CLI Configurator" />
           <div class="app-card-text">
             <h4>IBM Daffy CLI Configurator</h4>
             <p>Installer</p>
