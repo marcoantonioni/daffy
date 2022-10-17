@@ -405,7 +405,7 @@ Run the following command to Import and Map your LDAP groups to Zen roles
 ```
 
 ??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep1.jpg'   align="top"  style = "float">
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingScriptStep1.jpg'   align="top"  style = "float">
 
 #### Rule Designer
 
