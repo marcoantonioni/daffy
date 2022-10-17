@@ -406,6 +406,9 @@ Run the following command to Import and Map your LDAP groups to Zen roles
 /data/daffy/cp4ba/service.sh <env_name> --decisionImportLDAPGroups
 ```
 
+??? Info "Screenshot"
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep1.jpg'   align="top"  style = "float">
+
 #### Rule Designer
 
 After you installed Decisions Services, you need to install and connect Rule Designer to your new instance. For the next steps, any information you need from your environment you should be able to collect from the service.sh --console  command output of Daffy.
