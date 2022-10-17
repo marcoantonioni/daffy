@@ -78,6 +78,8 @@ Below are the VSphere IPI specific environment variables that must be defined in
 <u>Valid Options:</u>
 
 ```R
+#VSphere Platform Info
+########################
 VSPHERE_USERNAME="userid"     
 VSPHERE_HOSTNAME="vsphere-host-name"
 VSPHERE_DATASTORE="datastore"     
@@ -87,12 +89,12 @@ VSPHERE_DATACENTER="vsphere-datacenter"
 VSPHERE_FOLDER="/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}"
 
 #IPI Only
-############  
+########################  
 VSPHERE_API_VIP="xx.xxx.xxx.xxx"
 VSPHERE_INGRESS_VIP="xx.xxx.xxx"
 
 #UPI Only
-############
+########################
 #VSPHERE_ISO_DATASTORE="iso-datastore"     
 #VSPHERE_ISO_IMAGE_BASE="datastore-directory"
 #BASTION_HOST="xx.xxx.xxx"    
@@ -114,7 +116,7 @@ VSPHERE_INGRESS_VIP="xx.xxx.xxx"
 
 
 #Storage Option for OpenShift
-############
+########################
 #OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true
 ```
 
