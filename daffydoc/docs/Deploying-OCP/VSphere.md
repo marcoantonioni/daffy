@@ -80,7 +80,9 @@ VSPHERE_INGRESS_VIP="xx.xxx.xxx"
 #UPI Only
 ############
 VSPHERE_ISO_DATASTORE="iso-datastore"     
-VSPHERE_ISO_IMAGE_BASE="datastore-directory"    
+VSPHERE_ISO_IMAGE_BASE="datastore-directory"
+BASTION_HOST="IP-OR-DNS-Name"    
+BASTION_USER="bastion"
 
 #Storage Option for OpenShift
 ############
