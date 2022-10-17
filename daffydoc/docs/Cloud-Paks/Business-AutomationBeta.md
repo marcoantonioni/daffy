@@ -391,7 +391,7 @@ At this point, you are ready to logon to your RPA Server Console.
 
 
 ### ***Decisions Server***
-Once you have installed Production Decisions Server pattern, you will need to do a few manual steps.
+Once you have installed Production Decisions Server pattern, you will need to do a few steps.
 
 1. Map Your LDAP Groups to IDP Roles
 2. Install and Configure your Rule Designer
@@ -400,65 +400,11 @@ The details for the next steps will come when you install Step 3 of Daffy for De
 
 #### Map LDAP groups to Roles
 
-1) Logon to your Cloud Pak Namespace Dashboard from data you were giving with services.sh  --console flag.
+Run the following command to Import and Map your LDAP groups to Zen roles
 
-Login with the Admin Username and Admin Password
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep1.jpg'   align="top"  style = "float">
-
-2) From the Dashboard you will need to click the **hamburger** icon top left
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep2.jpg'   align="top"  style = "float">
-
-3) From the menu,  you need to click the **Access Control** item
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep3.jpg'   align="top"  style = "float">
-
-4) From the dashboard, we will need to import the LDAP groups, so click the **User Groups** tab
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep4.jpg'   align="top"  style = "float">
-
-5) From the dashboard, click the **New user group** button on the right
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep5.jpg'   align="top"  style = "float">
-
-6) For steps 7-10 you will need to repeat for each group listed below.
-
-    resAdministrators
-    resDeployers
-    resExecutors
-    resMonitor
-    rtsAdministrators
-    rtsConfigManagers
-    rtsUsers
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep6.jpg'   align="top"  style = "float">
-
-7) Fill in the name of the new group, easy way just use the same name as the LDAP Group name then click the blue button in bottom right corner labeled **next**.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep7.jpg'   align="top"  style = "float">
-
-8) Click the **Identity provider groups** tab to import from our new LDAP Server.  The type in the ldap group name you want to import. Once it finds it, click the result.  Then click the blue button bottom right corner labeled **next**.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep8.jpg'   align="top"  style = "float">
-
-9) Based on the LDAP group you selected, **check box** for the Role that you want to map to this new group.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep9.jpg'   align="top"  style = "float">
-
-10) Now create the new group by clicking the blue button bottom right corner labeled **Create**.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep10.jpg'   align="top"  style = "float">                  
+```
+/data/daffy/cp4ba/service.sh <env_name> --decisionImportLDAPGroups
+```
 
 #### Rule Designer
 
