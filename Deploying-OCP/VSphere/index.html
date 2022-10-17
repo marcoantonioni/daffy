@@ -1568,6 +1568,12 @@
 <td style="text-align: left;">Yes</td>
 </tr>
 <tr>
+<td style="text-align: left;"><B>VSphere</B></td>
+<td style="text-align: left;"><B>UPI</B></td>
+<td style="text-align: left;"><B>Data Only</B></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
 <td style="text-align: left;">VSPHERE_ISO_DATASTORE</td>
 <td style="text-align: left;">This is the name of the datastore where the the coreos iso is located</td>
 <td style="text-align: left;">UPI</td>
@@ -1588,6 +1594,84 @@
 <tr>
 <td style="text-align: left;">BASTION_USER</td>
 <td style="text-align: left;">This is non admin id on the bastion host that has authorzation to logon via SSH to bastion</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_GATEWAY</td>
+<td style="text-align: left;">This is gatway to assign new new VMs</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_FORWARD_DNS</td>
+<td style="text-align: left;">This is IP for DNS Server to forward request to</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_DNS</td>
+<td style="text-align: left;">This is IP for the DNS Server that will have OpenShift Node entries</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALLBOOTSTRAP_IP</td>
+<td style="text-align: left;">This is Bootstrap IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_MASTER1_IP</td>
+<td style="text-align: left;">This is Master 1 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_MASTER2_IP</td>
+<td style="text-align: left;">This is Master 2 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_MASTER3_IP</td>
+<td style="text-align: left;">This is Master 3 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_WORKER1_IP</td>
+<td style="text-align: left;">This is Worker 1 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_WORKER2_IP</td>
+<td style="text-align: left;">This is Worker 2 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_WORKER3_IP</td>
+<td style="text-align: left;">This is Worker 3 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_WORKER4_IP</td>
+<td style="text-align: left;">This is Worker 4 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_WORKER5_IP</td>
+<td style="text-align: left;">This is Worker 5 IP you want to assign</td>
+<td style="text-align: left;">UPI</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_WORKER6_IP</td>
+<td style="text-align: left;">This is Worker 6 IP you want to assign</td>
 <td style="text-align: left;">UPI</td>
 <td style="text-align: left;">Yes</td>
 </tr>
@@ -1632,6 +1716,21 @@
 <span class="n">VSPHERE_ISO_IMAGE_BASE</span><span class="o">=</span><span class="s">&quot;datastore-directory&quot;</span>
 <span class="n">BASTION_HOST</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>    
 <span class="n">BASTION_USER</span><span class="o">=</span><span class="s">&quot;bastion&quot;</span>
+<span class="n">OCP_INSTALL_GATEWAY</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_FORWARD_DNS</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_DNS</span><span class="o">=$</span><span class="p">{</span><span class="n">BASTION_HOST</span><span class="p">}</span>
+<span class="n">OCP_NODE_SUBNET_MASK</span><span class="o">=</span><span class="s">&quot;24&quot;</span>
+<span class="n">OCP_INSTALLBOOTSTRAP_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_MASTER1_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_MASTER2_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_MASTER3_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_WORKER1_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_WORKER2_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_WORKER3_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_WORKER4_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_WORKER5_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+<span class="n">OCP_INSTALL_WORKER6_IP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
+
 
 <span class="c1">#Storage Option for OpenShift</span>
 <span class="c1">############</span>
