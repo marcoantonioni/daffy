@@ -396,8 +396,6 @@ Once you have installed Production Decisions Server pattern, you will need to do
 1. Map Your LDAP Groups to IDP Roles
 2. Install and Configure your Rule Designer
 
-The details for the next steps will come when you install Step 3 of Daffy for Decisions , via your command line console.
-
 #### Map LDAP groups to Roles
 
 Run the following command to Import and Map your LDAP groups to Zen roles
