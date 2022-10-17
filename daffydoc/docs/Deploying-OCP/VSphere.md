@@ -93,24 +93,24 @@ VSPHERE_INGRESS_VIP="xx.xxx.xxx"
 
 #UPI Only
 ############
-VSPHERE_ISO_DATASTORE="iso-datastore"     
-VSPHERE_ISO_IMAGE_BASE="datastore-directory"
-BASTION_HOST="xx.xxx.xxx"    
-BASTION_USER="bastion"
-OCP_INSTALL_GATEWAY="xx.xxx.xxx"
-OCP_FORWARD_DNS="xx.xxx.xxx"
-OCP_INSTALL_DNS=${BASTION_HOST}
-OCP_NODE_SUBNET_MASK="24"
-OCP_INSTALLBOOTSTRAP_IP="xx.xxx.xxx"
-OCP_INSTALL_MASTER1_IP="xx.xxx.xxx"
-OCP_INSTALL_MASTER2_IP="xx.xxx.xxx"
-OCP_INSTALL_MASTER3_IP="xx.xxx.xxx"
-OCP_INSTALL_WORKER1_IP="xx.xxx.xxx"
-OCP_INSTALL_WORKER2_IP="xx.xxx.xxx"
-OCP_INSTALL_WORKER3_IP="xx.xxx.xxx"
-OCP_INSTALL_WORKER4_IP="xx.xxx.xxx"
-OCP_INSTALL_WORKER5_IP="xx.xxx.xxx"
-OCP_INSTALL_WORKER6_IP="xx.xxx.xxx"
+#VSPHERE_ISO_DATASTORE="iso-datastore"     
+#VSPHERE_ISO_IMAGE_BASE="datastore-directory"
+#BASTION_HOST="xx.xxx.xxx"    
+#BASTION_USER="bastion"
+#OCP_INSTALL_GATEWAY="xx.xxx.xxx"
+#OCP_FORWARD_DNS="xx.xxx.xxx"
+#OCP_INSTALL_DNS=${BASTION_HOST}
+#OCP_NODE_SUBNET_MASK="24"
+#OCP_INSTALLBOOTSTRAP_IP="xx.xxx.xxx"
+#OCP_INSTALL_MASTER1_IP="xx.xxx.xxx"
+#OCP_INSTALL_MASTER2_IP="xx.xxx.xxx"
+#OCP_INSTALL_MASTER3_IP="xx.xxx.xxx"
+#OCP_INSTALL_WORKER1_IP="xx.xxx.xxx"
+#OCP_INSTALL_WORKER2_IP="xx.xxx.xxx"
+#OCP_INSTALL_WORKER3_IP="xx.xxx.xxx"
+#OCP_INSTALL_WORKER4_IP="xx.xxx.xxx"
+#OCP_INSTALL_WORKER5_IP="xx.xxx.xxx"
+#OCP_INSTALL_WORKER6_IP="xx.xxx.xxx"
 
 
 #Storage Option for OpenShift
