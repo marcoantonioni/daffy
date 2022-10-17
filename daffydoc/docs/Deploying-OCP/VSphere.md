@@ -37,6 +37,19 @@ Some of the variables are easily understood, but a few can be a bit tricky to fi
 |VSPHERE_ISO_IMAGE_BASE|This is the directory within the datastore where the iso image is located|UPI|Yes
 |BASTION_HOST|This is the name of the bastion host, IP or  DNS value|UPI|No
 |BASTION_USER|This is non admin id on the bastion host that has authorzation to logon via SSH to bastion|UPI|Yes
+|OCP_INSTALL_GATEWAY|This is gatway to assign new new VMs|UPI|Yes
+|OCP_FORWARD_DNS|This is IP for DNS Server to forward request to|UPI|Yes
+|OCP_INSTALL_DNS|This is IP for the DNS Server that will have OpenShift Node entries |UPI|Yes
+|OCP_INSTALLBOOTSTRAP_IP|This is Bootstrap IP you want to assign |UPI|Yes
+|OCP_INSTALL_MASTER1_IP|This is Master 1 IP you want to assign|UPI|Yes
+|OCP_INSTALL_MASTER2_IP|This is Master 2 IP you want to assign|UPI|Yes
+|OCP_INSTALL_MASTER3_IP|This is Master 3 IP you want to assign|UPI|Yes
+|OCP_INSTALL_WORKER1_IP|This is Worker 1 IP you want to assign|UPI|Yes
+|OCP_INSTALL_WORKER2_IP|This is Worker 2 IP you want to assign|UPI|Yes
+|OCP_INSTALL_WORKER3_IP|This is Worker 3 IP you want to assign|UPI|Yes
+|OCP_INSTALL_WORKER4_IP|This is Worker 4 IP you want to assign|UPI|Yes
+|OCP_INSTALL_WORKER5_IP|This is Worker 5 IP you want to assign|UPI|Yes
+|OCP_INSTALL_WORKER6_IP|This is Worker 6 IP you want to assign|UPI|Yes
 
 
 
@@ -83,6 +96,21 @@ VSPHERE_ISO_DATASTORE="iso-datastore"
 VSPHERE_ISO_IMAGE_BASE="datastore-directory"
 BASTION_HOST="xx.xxx.xxx"    
 BASTION_USER="bastion"
+OCP_INSTALL_GATEWAY="xx.xxx.xxx"
+OCP_FORWARD_DNS="xx.xxx.xxx"
+OCP_INSTALL_DNS=${BASTION_HOST}
+OCP_NODE_SUBNET_MASK="24"
+OCP_INSTALLBOOTSTRAP_IP="xx.xxx.xxx"
+OCP_INSTALL_MASTER1_IP="xx.xxx.xxx"
+OCP_INSTALL_MASTER2_IP="xx.xxx.xxx"
+OCP_INSTALL_MASTER3_IP="xx.xxx.xxx
+OCP_INSTALL_WORKER1_IP="xx.xxx.xxx"
+OCP_INSTALL_WORKER2_IP="xx.xxx.xxx"
+OCP_INSTALL_WORKER3_IP="xx.xxx.xxx"
+OCP_INSTALL_WORKER4_IP="xx.xxx.xxx"
+OCP_INSTALL_WORKER5_IP="xx.xxx.xxx"
+OCP_INSTALL_WORKER6_IP="xx.xxx.xxx"
+
 
 #Storage Option for OpenShift
 ############
