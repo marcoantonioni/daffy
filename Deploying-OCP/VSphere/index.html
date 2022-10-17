@@ -1697,7 +1697,9 @@
 <p>You can look in the samples directory on your bastion for example of <strong>VSphere</strong> install : /data/daffy/env/samples/<strong>vsphere-ipi-env.sh</strong></p>
 </div>
 <p><u>Valid Options:</u></p>
-<div class="highlight"><pre><span></span><code><span class="n">VSPHERE_USERNAME</span><span class="o">=</span><span class="s">&quot;userid&quot;</span>     
+<div class="highlight"><pre><span></span><code><span class="c1">#VSphere Platform Info</span>
+<span class="c1">########################</span>
+<span class="n">VSPHERE_USERNAME</span><span class="o">=</span><span class="s">&quot;userid&quot;</span>     
 <span class="n">VSPHERE_HOSTNAME</span><span class="o">=</span><span class="s">&quot;vsphere-host-name&quot;</span>
 <span class="n">VSPHERE_DATASTORE</span><span class="o">=</span><span class="s">&quot;datastore&quot;</span>     
 <span class="n">VSPHERE_CLUSTER</span><span class="o">=</span><span class="s">&quot;cluster-name&quot;</span><span class="n">.</span>   
@@ -1706,12 +1708,12 @@
 <span class="n">VSPHERE_FOLDER</span><span class="o">=</span><span class="s">&quot;/${VSPHERE_DATACENTER}/vm/${CLUSTER_NAME}&quot;</span>
 
 <span class="c1">#IPI Only</span>
-<span class="c1">############  </span>
+<span class="c1">########################  </span>
 <span class="n">VSPHERE_API_VIP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx.xxx&quot;</span>
 <span class="n">VSPHERE_INGRESS_VIP</span><span class="o">=</span><span class="s">&quot;xx.xxx.xxx&quot;</span>
 
 <span class="c1">#UPI Only</span>
-<span class="c1">############</span>
+<span class="c1">########################</span>
 <span class="c1">#VSPHERE_ISO_DATASTORE=&quot;iso-datastore&quot;     </span>
 <span class="c1">#VSPHERE_ISO_IMAGE_BASE=&quot;datastore-directory&quot;</span>
 <span class="c1">#BASTION_HOST=&quot;xx.xxx.xxx&quot;    </span>
@@ -1733,7 +1735,7 @@
 
 
 <span class="c1">#Storage Option for OpenShift</span>
-<span class="c1">############</span>
+<span class="c1">########################</span>
 <span class="c1">#OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE=true</span>
 </code></pre></div>
 <p>Optional:</p>
