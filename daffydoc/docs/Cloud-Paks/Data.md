@@ -24,20 +24,17 @@ Deploying the Cloud Pak for Data requires one entry to your environment file (/d
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4D_VERSION="4.5.1"
+CP4D_VERSION="4.5.3"
 ```
 
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
+| 4.5.3     | 4.8, 4.10    |
+| 4.5.2     | 4.8, 4.10    |
 | 4.5.1     | 4.8, 4.10    |
 | 4.5.0     | 4.8, 4.10    |
-| 4.0.9     | 4.8          |
-| 4.0.8     | 4.8          |
-| 4.0.7     | 4.8          |
-| 4.0.6     | 4.8          |
-
 
 Run the following command to deploy the Cloud Pak for Data:
 
@@ -74,6 +71,28 @@ Set the flags in your environment file (<**ENVIRONMENT_NAME**>-env.sh) for the C
 | CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS | true / false   | Cognos Analytics |  No    |
 | CP4D_ENABLE_SERVICE_DB2 | true / false   |  DB2 OLTP | No    |
 
+
+You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
+
+```R
+CP4D_ENABLE_SERVICE_WKS="false"
+CP4D_ENABLE_SERVICE_WKC="false"
+CP4D_ENABLE_SERVICE_DV="false"
+CP4D_ENABLE_SERVICE_SPSS="false"
+CP4D_ENABLE_SERVICE_WS="false"
+CP4D_ENABLE_SERVICE_WML="false"
+CP4D_ENABLE_SERVICE_DATASTAGE="false"
+CP4D_ENABLE_SERVICE_DODS="false"
+CP4D_ENABLE_SERVICE_DMC="false"
+CP4D_ENABLE_SERVICE_COGNOS_DASHBOARDS="false"
+CP4D_ENABLE_SERVICE_MATCH_360="false"
+CP4D_ENABLE_SERVICE_OPENPAGES="false"
+CP4D_ENABLE_SERVICE_ANALYTICS_ENGINE="false"
+CP4D_ENABLE_SERVICE_DB2_WAREHOUSE="false"
+CP4D_ENABLE_SERVICE_DATAPRIVACY="false"
+CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS="false"
+CP4D_ENABLE_SERVICE_DB2="false"
+```
 
 Run the following command to deploy the Cloud Pak for Data services:
 

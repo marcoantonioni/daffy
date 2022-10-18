@@ -37,8 +37,7 @@ You need to pick starter services or production services.
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002                   |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002,IF003       |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
@@ -53,7 +52,7 @@ You need to pick starter services or production services.
 | Variable Name                           | Info                                          | Required            |
 | :---------                              |    :---------                                 |      :----          |  
 | CP4BA_ENABLE_SERVICE_RPA_SERVER         | **true** if you want to deploy RPA Server     |    No               |
-| CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    NO               |
+| CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    No               |
 | CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
@@ -66,30 +65,31 @@ You need to pick starter services or production services.
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_RPA_SERVER_VERSION                |  21.0.2             | CP4BA_RPA_SERVER_IFIX |   IF005                   |
-| CP4BA_RPA_SERVER_VERSION                |  21.0.3             | CP4BA_RPA_SERVER_IFIX |                           |
+| CP4BA_RPA_SERVER_VERSION                |  21.0.4             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
+| CP4BA_RPA_SERVER_VERSION                |  21.0.5             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
 
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX=IF002
+CP4BA_IFIX=IF003
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #Prodution Services - only step 2 supported today.
 ###################################################
-#CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS="true"
-#CP4BA_DEPLOYMENT_PRODUCTION_CONTENT="true"
-#CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW="true"
+CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS="false"
+CP4BA_DEPLOYMENT_PRODUCTION_CONTENT="false"
+CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW="false"
 
 #RPA Server
 ############################################
-#CP4BA_RPA_SERVER_VERSION="21.0.3"
+CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
+CP4BA_RPA_SERVER_VERSION="21.0.5"
 #CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
 #CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
-#CP4BA_RPA_SERVER_SMTP_PORT=587
+#CP4BA_RPA_SERVER_SMTP_PORT="587"
 #CP4BA_RPA_SERVER_SMTP_SERVER="gmail.smtp.com"
 ```
 
@@ -97,12 +97,12 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, bai        | 22.0.1 or 21.0.3
-content        | filenet, cmis, ier, tm, bai        | 22.0.1 or 21.0.3
-content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1 or 21.0.3
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1 or 21.0.3
-all            | All Components(except iccsap)        | 22.0.1 or 21.0.3
-samples        | Depends on sample        | 22.0.1 or 21.0.3
+decisions        | odm, bai        | 22.0.1
+content        | filenet, cmis, ier, tm, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
+all            | All Components(except iccsap)        | 22.0.1
+samples        | Depends on sample        | 22.0.1
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -143,8 +143,7 @@ Deploying the service does not need any new values to your environment file (<**
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  21.0.3             | CP4BA_IFIX            |   IF005,IF007,IF008       |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001.IF002                   |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002, IF003      |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
@@ -207,19 +206,19 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX="IF001"
+CP4BA_IFIX="IF003"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1
 
 #Open Prediction Service HUB
 ############################################
-#CP4BA_ENABLE_SERVICE_OPS="true"
+CP4BA_ENABLE_SERVICE_OPS="false"
 
 #RPA Server
 ############################################
-#CP4BA_ENABLE_SERVICE_RPA_SERVER="true"
-#CP4BA_RPA_SERVER_VERSION="21.0.3"
-#CP4BA_RPA_SERVER_IFIX=""
+CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
+CP4BA_RPA_SERVER_VERSION="21.0.5"
+CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
@@ -234,12 +233,12 @@ Options for Starter Services
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, bai        | 22.0.1 or 21.0.3
-content        | filenet, cmis, ier, tm, bai        | 22.0.1 or 21.0.3
-content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1 or 21.0.3
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1 or 21.0.3
-all            | all (except iccsap)       | 22.0.1 or 21.0.3
-samples        | Depends on sample        | 21.0.3 or 21.0.1
+decisions        | odm, bai        | 22.0.1
+content        | filenet, cmis, ier, tm, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
+all            | all (except iccsap)       | 22.0.1
+samples        | Depends on sample        | 21.0.3
 
 
 
@@ -359,7 +358,7 @@ To find out the connection info to your ***RPA Server***, you can run the consol
 ## Post Daffy Steps
 
 
-### RPA Server
+### ***RPA Server***
 #### OpenLdap Config
 Once you have installed RPA server, you will need add the LDAP Server from the Cloud Pak Dashboard.  The following steps will help you manually preform these steps.  
 
@@ -376,112 +375,37 @@ The details for the next steps will come when you install Step 3 of Daffy for RP
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep2.jpg'   align="top" style = "float">
 
-3) Select ***Identity provider configuration***
+
+3) Click "***Add users"***
 ??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep3.jpg'   align="top" style = "float">
-
-4) Select ***New Connection***
-??? Info "Screenshot"
-
-    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep4.jpg'   align="top" style = "float">
-
-5) Select ***LDAP*** from drop down list
-??? Info "Screenshot"
-
-    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep5.jpg'   align="top" style = "float">
-
-6) Fill out details from command line console output from before and test connection
-??? Info "Screenshot"
-
-    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep6.jpg'   align="top" style = "float">
-
-7) Fill out details from command line console output from before and hit create
-??? Info "Screenshot"
-
-    <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep7.jpg'   align="top" style = "float">
-
-8) Close current browser tab and go back to previous tab for Cloud Pak Dashboard
-
-9) Click "***Add users"***
-??? Info "Screenshot"
-
     <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep9.jpg'   align="top"  style = "float">
-10) Logout of the Cloud Pak dashboard and close your browser.
+
+4) Add your RPA user and give Acces to all roles.
+
+
+5) Logout of the Cloud Pak dashboard and close your browser.
 
 
 At this point, you are ready to logon to your RPA Server Console.
 
 
 
-### Decisions Server
-Once you have installed Production Decisions Server pattern, you will need to do a few manual steps.
+### ***Decisions Server***
+Once you have installed Production Decisions Server pattern, you will need to do a few steps.
 
 1. Map Your LDAP Groups to IDP Roles
 2. Install and Configure your Rule Designer
 
-The details for the next steps will come when you install Step 3 of Daffy for Decisions , via your command line console.
-
 #### Map LDAP groups to Roles
 
-1) Logon to your Cloud Pak Namespace Dashboard from data you were giving with services.sh  --console flag.
+Run the following command to Import and Map your LDAP groups to Zen roles
 
-Login with the Admin Username and Admin Password
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep1.jpg'   align="top"  style = "float">
-
-2) From the Dashboard you will need to click the **hamburger** icon top left
+```
+/data/daffy/cp4ba/service.sh <env_name> --decisionImportLDAPGroups
+```
 
 ??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep2.jpg'   align="top"  style = "float">
-
-3) From the menu,  you need to click the **Access Control** item
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep3.jpg'   align="top"  style = "float">
-
-4) From the dashboard, we will need to import the LDAP groups, so click the **User Groups** tab
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep4.jpg'   align="top"  style = "float">
-
-5) From the dashboard, click the **New user group** button on the right
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep5.jpg'   align="top"  style = "float">
-
-6) For steps 7-10 you will need to repeat for each group listed below.
-
-    resAdministrators
-    resDeployers
-    resExecutors
-    resMonitor
-    rtsAdministrators
-    rtsConfigManagers
-    rtsUsers
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep6.jpg'   align="top"  style = "float">
-
-7) Fill in the name of the new group, easy way just use the same name as the LDAP Group name then click the blue button in bottom right corner labeled **next**.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep7.jpg'   align="top"  style = "float">
-
-8) Click the **Identity provider groups** tab to import from our new LDAP Server.  The type in the ldap group name you want to import. Once it finds it, click the result.  Then click the blue button bottom right corner labeled **next**.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep8.jpg'   align="top"  style = "float">
-
-9) Based on the LDAP group you selected, **check box** for the Role that you want to map to this new group.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep9.jpg'   align="top"  style = "float">
-
-10) Now create the new group by clicking the blue button bottom right corner labeled **Create**.
-
-??? Info "Screenshot"
-    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingStep10.jpg'   align="top"  style = "float">                  
+    <img src='../../images/cloudpaks/cp4ba/decisions/DecisionsLDAPRoleMappingScriptStep1.jpg'   align="top"  style = "float">
 
 #### Rule Designer
 

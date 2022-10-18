@@ -1,3 +1,34 @@
+## v2022-10-18
+          Tested OpenShift with Current Daffy Release
+              GCP       4.8.49 / 4.10.32
+              AWS       4.8.49 / 4.10.32
+              Azure     4.8.49 / 4.10.32
+              ROKS      4.8.49 / 4.10.32
+              VSphere   4.8.49 / 4.10.32
+              KVM       4.8.49 / 4.10.32
+              IBM IPI            4.10.32
+          Cloud Pak for Business Automation
+              Added Support for 22.0.1 IF003
+              Removed Support for 21.0.3 and all IFIXs
+              Removed Support for 22.0.1 without IFIX
+              Added Logic for Production Decisions to automate the LDAP addition to Zen
+              RPA
+                    Added support for 21.0.4 and 21.0.5
+                    Removed support for 21.0.2 and 21.0.3
+          Cloud Pak for Data
+              Added NEW CP4DCTL Install to Tools
+              Support for 4.5.3 (ROKS issue fixed with WKC)
+              Removed support for 4.0.x
+          Cloud Pak for WAIOps
+             Added support for V3.5
+          AppStore
+              Created new /data/daffy/appstore.sh to install appstore utilities
+              New Daffy CLI environment configurator
+          Misc
+              Updated all samples to have false value and removed the comment character
+              Added new Deployment Type - PostSale via DAFFY_DEPLOYMENT_TYPE
+              Added install of openshift-install via tools.sh
+
 ## v2022-09-29
           Tested OpenShift with Current Daffy Release
               GCP       4.8.49 / 4.10.32
