@@ -14,7 +14,7 @@ hide:
 <div class="app-grid">
 
       <div class="app-card">
-       <a class="app-link" href="../IBMSterlingB2B">
+       <a class="app-link" href="../IBMSterlingB2BBeta">
         <div class="app-card-container">
           <img src="../images/IBM_Sterling_B2B_Integration.png" alt="IBM Sterling B2B" />
           <div class="app-card-text">

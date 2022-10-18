@@ -86,6 +86,8 @@ Run the following command to clear all security (or individual) credentials.
       --vsphere                        This will cleanup vsphere information
       --pullSecret                     This will cleanup your RedHat Pull Secret
       --ssh                            This will cleanup your local ssh key
+      --ibm-ipi                        This will cleanup IBM API Key for use with IBM-ipi
+      --roks                           This will cleanup IBM ROKS keys and login information
       --turbo                          This will cleanup your local ssh key
       --help|--?|?|-?|help|-help       This help menu
       ```
