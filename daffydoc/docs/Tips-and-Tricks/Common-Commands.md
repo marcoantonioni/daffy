@@ -17,7 +17,7 @@ Run the following command to delete all resources created by Daffy, including bu
 Run the following command to upgrade Daffy to the newest release.
 
 ```console
-/data/daffy/refresh.sh
+cd /data ; /data/daffy/refresh.sh
 
 ```
 
