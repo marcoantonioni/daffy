@@ -13,7 +13,7 @@
     
     
       
-        <title>indexBeta - Deployment Automation Framework For You</title>
+        <title>IBMSterlingB2BBeta - Deployment Automation Framework For You</title>
       
     
     
@@ -87,6 +87,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#info" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -117,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              indexBeta
+              IBMSterlingB2BBeta
             
           </span>
         </div>
@@ -1372,6 +1377,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1385,40 +1392,27 @@
                 
 
 
-  <h1>indexBeta</h1>
-
 <script>
-  document.title = "AppStore";
+  document.title = "AppStore - IBM Sterling B2B";
 </script>
 
-<p><head>
-  <link rel="stylesheet" href="../css/card.css">
-</head></p>
-<div class="app-grid">
-
-      <div class="app-card">
-       <a class="app-link" href="../IBMSterlingB2BBeta">
-        <div class="app-card-container">
-          <img src="../images/IBM_Sterling_B2B_Integration.png" alt="IBM Sterling B2B" />
-          <div class="app-card-text">
-            <h4>IBM Sterling B2B Integrator</h4>
-            <p>Installer</p>
-          </div>
-        </div>  
-      </a>      
-      </div>
-      <div class="app-card">
-      <a class="app-link" href="../IBMDaffyCLIConfigurator">
-        <div class="app-card-container">
-          <img src="../images/Daffy.png" alt="IBM Daffy CLI Configurator" />
-          <div class="app-card-text">
-            <h4>IBM Daffy CLI Configurator</h4>
-            <p>Installer</p>
-          </div>
-        </div>
-        </a>  
-      </div>
-</div>
+<p><img src='../images/IBM_Sterling_B2B_Integration.png'
+       style="width:100px;height:100px;"/></p>
+<h1 id="info">Info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h1>
+<p>Auto-installation tool for IBM-Sterling B2Bi and IBM-Sterling File Gateway containers in a clustered environment.</p>
+<p>This tool was developed to simplify the basic installation of containers for IBM Sterling B2Bi-SFG on RedHat OpenShift Container Platform.</p>
+<h1 id="basic-assumptions-prerequisites">Basic Assumptions &amp; Prerequisites:<a class="headerlink" href="#basic-assumptions-prerequisites" title="Permanent link">&para;</a></h1>
+<p>You have already installed a ROKS cluster. You can do this manually, through TechZone or using the Daffy_RHOCP_Installer. The remainder of this documentation assumes you have already installed a ROKS cluster using the Daffy_RHOCP_Installer but can be easily adapted to the other methods of ROKS installation.</p>
+<p>You are using a UNIX / Linux bastion host to install and run the scripts. The bastion host can be located in any cloud (AWS, Azure, GCP, IBM or private). You may also be able to use your workstation as a bastion host as long as you have the rights to install software on it.</p>
+<p>You have already created a file containing your IBM software entitlement key on the bastion host. This key will allow access to the IBM B2Bi/SFG software in the IBM Container registry during the final helm install process.
+You already know the ingress subdomain of the cluster where you will be installing this software. This is available on the cluster dashboard webpage after Daffy installation. If you are not sure how or where to find this information click here.</p>
+<h1 id="ownersupport">Owner/Support<a class="headerlink" href="#ownersupport" title="Permanent link">&para;</a></h1>
+<p>Slack Channel <strong><em>#b2bi-autoinstall</em></strong></p>
+<p><a href="mailto:James.Myers@ibm.com?Subject=Daffy AppStore Help">James.Myers@ibm.com</a></p>
+<h1 id="install-command">Install Command<a class="headerlink" href="#install-command" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">appstore.sh</span> <span class="o">--</span><span class="n">installIBMSterlingB2Bi</span>
+</code></pre></div>
+<p><button onclick=" window.open('https://github.com/IBM/B2Bi-SFG-on-Daffy-RHOCP/', '_blank'); return false;" class="custom-btn btn-7">Install Instructions</button></p>
 
               
             </article>
