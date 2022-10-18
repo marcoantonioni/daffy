@@ -25,7 +25,7 @@ cd /data ; /data/daffy/refresh.sh
 Run the following command to install older version of Daffy. This will output a list of previous releases to select and install.
 
 ```console
-/data/daffy/refresh.sh --list
+cd /data ; /data/daffy/refresh.sh --list
 ```
 
 ??? Screenshot "Example Output"
