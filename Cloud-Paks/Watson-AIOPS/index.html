@@ -1470,26 +1470,26 @@
 <h1 id="cloud-pak-for-watson-ai-ops" style="text-align: left;">Cloud Pak for Watson AI Ops<a class="headerlink" href="#cloud-pak-for-watson-ai-ops" title="Permanent link">&para;</a></h1>
 <p><img src='../images/WAIOPS.png'
        style="width:100px;height:100px;"/></p>
-<p>At this point, you should have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. To install CP4WAIOPS, you must add some additional information to the env file. Below is a description of the information, you wll need to add. </p>
+<p>At this point, you should have a working OCP cluster on your platform of choice. Your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh configuration file will contain details of the platform and OCP installation. To install CP4WAIOPS, you must add some additional information to the env file. Below is a description of the information, you wll need to add.</p>
 <p>1) Version of the CP4WAIOPS product to install</p>
 <p>2) The CP4WAIOPS services that you wish to install</p>
-<p>Daffy automation scripts currently support the deployment of </p>
+<p>Daffy automation scripts currently support the deployment of</p>
 <ul>
 <li><strong>AI Manager</strong> - (This is installed with the cp4waiops/build.sh script)</li>
-<li><strong>Event Manager</strong> - This is an optional component that can be installed with the service.sh scrpt. You must set the install fag to true before you run the service.sh script. </li>
+<li><strong>Event Manager</strong> - This is an optional component that can be installed with the service.sh scrpt. You must set the install fag to true before you run the service.sh script.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Daffy Event Manager deployment script ONLY installs the operator. You must configure and deploy the custom resource.  </p>
 </div>
 <ul>
-<li><strong>Infrastructure Automation</strong> - This is an optional component that can be installed with the service.sh scrpt. You must set the install fag to true before you run the service.sh script. </li>
+<li><strong>Infrastructure Automation</strong> - This is an optional component that can be installed with the service.sh scrpt. You must set the install fag to true before you run the service.sh script.</li>
 </ul>
 <h2 id="step-2-deploy-cloud-pak-for-waiops-ai-manager">Step 2: Deploy Cloud Pak for WAIOPS + AI Manager<a class="headerlink" href="#step-2-deploy-cloud-pak-for-waiops-ai-manager" title="Permanent link">&para;</a></h2>
 <p>Deploying the Cloud Pak for Watson AIOps only requires <strong>one</strong> entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh)</p>
 <p><strong>CP4WAIOPS_VERSION=<version></strong></p>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:</p>
-<div class="highlight"><pre><span></span><code><span class="n">CP4WAIOPS_VERSION</span><span class="o">=</span><span class="s">&quot;3.4.2&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">CP4WAIOPS_VERSION</span><span class="o">=</span><span class="s">&quot;3.5.0&quot;</span>
 </code></pre></div>
 <p>With this one value, the Daffy engine will be able to install the version of Cloud Pak for Watson AI Ops and the Platform Navigator. Along with the base cloud pak components, the AI Manager will be installed.</p>
 <p>The service consist of the following products:</p>
@@ -1502,6 +1502,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;">3.5.0</td>
+<td style="text-align: left;">4.8 , 4.10</td>
+</tr>
 <tr>
 <td style="text-align: left;">3.4.2</td>
 <td style="text-align: left;">4.8 , 4.10</td>
@@ -1537,9 +1541,9 @@
 <p><img src='../images/evntmgr-deploy-error.png'/></p>
 <p>Run the <strong><em>--console</em></strong> command after 30 minutes to show you the login information. Details of the <strong><em>--console</em></strong> command are below.</p>
 <h2 id="step-3-deploy-cloud-pak-for-waiops-optional-services">Step 3: Deploy Cloud Pak for WAIOPS Optional Services<a class="headerlink" href="#step-3-deploy-cloud-pak-for-waiops-optional-services" title="Permanent link">&para;</a></h2>
-<p>There are 2 services that can be optionally installed after you have the Cloud Pak for Watson AIOPS installed. </p>
+<p>There are 2 services that can be optionally installed after you have the Cloud Pak for Watson AIOPS installed.</p>
 <ul>
-<li>Event Manager (Operator ONLY) </li>
+<li>Event Manager (Operator ONLY)</li>
 <li>Infrastructure Automation</li>
 </ul>
 <p>The <strong>Event Manager</strong> for WatsonAIOps is an optional service deployment that can be added to your WatsonAIOps Cloud Pak deployment. To deploy the Event Manager component of WatsonAIOps, you will need to set the flag within your environment file then run the service.sh script.  </p>
@@ -1562,7 +1566,7 @@
 <p><strong>Run the following command</strong> to deploy the Cloud Pak for Watson AIOps Optional Services:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/service.sh &lt;ENVIRONMENT_NAME&gt;
 </code></pre></div>
-<p>When this step is complete you will have the Cloud Pak and the optional services running. </p>
+<p>When this step is complete you will have the Cloud Pak and the optional services running.</p>
 <h2 id="step-4-status-console">Step 4: Status &amp; Console<a class="headerlink" href="#step-4-status-console" title="Permanent link">&para;</a></h2>
 <p>The service can take a few hours to complete, based on which one you chose to deploy. To help monitor the status of the service/pattern deployment, you can run the help flag to see what flags you can use to get information on your service/pattern deployment:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4waiops/build.sh &lt;ENVIRONMENT_NAME&gt; --help
