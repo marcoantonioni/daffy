@@ -103,7 +103,7 @@ nav:
     - App Store: AppStore/index.md
     - Information: AppStore/info.md
     - IBM Sterling B2B Installer: AppStore/IBMSterlingB2B.md
-    #- IBM Daffy CLI Configurator: AppStore/IBMDaffyCLIConfigurator.md
+    - IBM Daffy CLI Configurator: AppStore/IBMDaffyCLIConfigurator.md
   - More:
     - Glossary: More/Glossary.md
     - FAQ: More/FAQ/FAQ.md
