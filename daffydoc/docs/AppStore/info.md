@@ -12,7 +12,7 @@ The Daffy app store is the official repository for all additional software, serv
 
 Installation is simple, most apps can be installed in a single command via the Daffy tools script.
 
-    /data/daffy/tools.sh
+    /data/daffy/appstore.sh
 
 ##Support Model
 
