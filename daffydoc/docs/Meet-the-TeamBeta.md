@@ -8,7 +8,7 @@ hide:
 </script>
 <link rel="stylesheet" href="../css/meetTheTeam.css">
 
-### Current Team Members
+## Creators
 <div class="row">
   <div class="column">
     <div class="card"style="width: 12rem;">
@@ -55,9 +55,8 @@ hide:
       </div>
     </div>
 </div>
-
-
-<h2><B>Past Team Members</B></h2>
+</div>
+## Contributors
 <div class="row">
   <div class="columnSmall">
     <div class="card"style="width: 7rem;">
@@ -95,4 +94,44 @@ hide:
       </div>
     </div>
   </div>
+</div>
+## Gold Star Beta Testers
+<div class="row">
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/MarkHickok.jpg" style="width:100%">
+      <div class="container">
+        <h>Mark Hickok</h>
+        <p class="titleSmall">CP4D SME <br> US National Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/HectorDiazLopez.jpg" style="width:100%">
+      <div class="container">
+        <h>Hector Diaz Lopez</h>
+        <p class="titleSmall">CPBA SME <br> US Financial Services Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/StuartJones.jpg" style="width:100%">
+      <div class="container">
+        <h>Stuart Jones</h>
+        <p class="titleSmall">CPBA SME <br> US Financial Services Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/DarrenD'Amato.jpg" style="width:100%">
+      <div class="container">
+        <h>Darren D'Amato</h>
+        <p class="titleSmall">CPBA SME <br> US National Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+
 </div>
