@@ -95,3 +95,69 @@ hide:
     </div>
   </div>
 </div>
+## Gold Star Beta Testers
+<div class="row">
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/MarkHickok.jpg" style="width:100%">
+      <div class="container">
+        <h>Mark Hickok</h>
+        <p class="titleSmall">CP4D SME <br> North America Team<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/WilliamJames.jpg" style="width:100%">
+      <div class="container">
+        <h>William James</h>
+        <p class="titleSmall">CP4D SME <br> US National Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/DanKikuchi.jpg" style="width:100%">
+      <div class="container">
+        <h>Dan Kikuchi</h>
+        <p class="titleSmall">OpenShift and CP4D SME <br> North America Team<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/HectorDiazLopez.jpg" style="width:100%">
+      <div class="container">
+        <h>Hector Diaz Lopez</h>
+        <p class="titleSmall">CPBA SME <br> US Financial Services Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/StuartJones.jpg" style="width:100%">
+      <div class="container">
+        <h>Stuart Jones</h>
+        <p class="titleSmall">CPBA SME <br> US Financial Services Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/DarrenD'Amato.jpg" style="width:100%">
+      <div class="container">
+        <h>Darren D'Amato</h>
+        <p class="titleSmall">CPBA SME <br> US National Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/MattKoscak.jpg" style="width:100%">
+      <div class="container">
+        <h>Matt Koscak</h>
+        <p class="titleSmall">CP4D SME <br> North America Team<br><br><br></p>
+      </div>
+    </div>
+  </div>
+</div>
