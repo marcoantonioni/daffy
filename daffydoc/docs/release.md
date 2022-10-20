@@ -28,6 +28,7 @@
               Updated all samples to have false value and removed the comment character
               Added new Deployment Type - PostSale via DAFFY_DEPLOYMENT_TYPE
               Added install of openshift-install via tools.sh
+              Fixed bug with image registry route for vsphere-ipi
 
 ## v2022-09-29
           Tested OpenShift with Current Daffy Release
