@@ -102,7 +102,25 @@ hide:
       <img src="../images/profiles/MarkHickok.jpg" style="width:100%">
       <div class="container">
         <h>Mark Hickok</h>
+        <p class="titleSmall">CP4D SME <br> North America Team<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/WilliamJames.jpg" style="width:100%">
+      <div class="container">
+        <h>William James</h>
         <p class="titleSmall">CP4D SME <br> US National Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+  <div class="columnSmall">
+    <div class="card"style="width: 7rem;">
+      <img src="../images/profiles/DanKikuchi.jpg" style="width:100%">
+      <div class="container">
+        <h>Dan Kikuchi</h>
+        <p class="titleSmall">OpenShift and CP4D SME <br> North America Team<br><br><br></p>
       </div>
     </div>
   </div>
