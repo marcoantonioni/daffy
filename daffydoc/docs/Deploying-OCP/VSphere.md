@@ -96,7 +96,7 @@ VSPHERE_INGRESS_VIP="xx.xxx.xxx"
 
 #UPI Only
 ########################
-OCP_INSTALL_TYPE="vsphere-upi"
+#OCP_INSTALL_TYPE="vsphere-upi"
 #VSPHERE_ISO_DATASTORE="iso-datastore"     
 #VSPHERE_ISO_IMAGE_BASE="datastore-directory"
 #BASTION_HOST="xx.xxx.xxx"    
