@@ -25,9 +25,10 @@ Log into your Bastion Machine (as root) and run the following command to downloa
 wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
 
 ```
-**Optional:** You may choose to use the Daffy Web Configurator! The purpose of this tool is to help you build an environment file
+**Optional:** You may choose to use the Daffy Web Configurator or Daffy CLI Configurator! The purpose of these tools are to help you build your environment file
 
 <button onclick=" window.open('http://config.daffy-installer.com:1887/start', '_blank'); return false;" class="custom-btn btn-7">Online Configurator</button>
+<button onclick="location.href='../../AppStore/IBMDaffyCLIConfigurator/'" class="custom-btn btn-7">CLI Configurator</button>
 
 ## Step 4: Environment File
 
@@ -36,7 +37,7 @@ wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 da
 #########################
 DAFFY_UNIQUE_ID="<YourID@email.com>"
 #This is required - Values POC/Demo/Enablement/HCCX/TechZone
-DAFFY_DEPLOYMENT_TYPE="PickValueFromAbove"
+DAFFY_DEPLOYMENT_TYPE="PickValueFromLineAbove"
 #If POC/Demo, these are required.
 #ISC number must be 18 characters
 #DAFFY_ISC_NUMBER="0045h00000w1nvKAAG"
@@ -47,8 +48,8 @@ DAFFY_DEPLOYMENT_TYPE="PickValueFromAbove"
 BASE_DOMAIN="<YOUR.BASEDOMAIN.COM>"
 CLUSTER_NAME="<ENVIRONMENT_NAME>"
 #This is required - Values aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp
-OCP_INSTALL_TYPE="<INSTALL_NAME>"
-OCP_RELEASE="4.8.36"
+OCP_INSTALL_TYPE="PickValueFromLineAbove"
+OCP_RELEASE="4.10.32"
 VM_TSHIRT_SIZE="Large"
 ```
 
@@ -104,7 +105,7 @@ cp /data/daffy/env/samples/<platform>-env.sh /data/daffy/env/<environment>-env.s
 Setting the debug flag to true will stop you at every check point and ask you to hit enter. Setting the debug flag to false will run though the script without any interference.  
 
 ```R
-DEBUG=false
+DEBUG="false"
 ```
 
 ## Step 5:  DNS Requirements
