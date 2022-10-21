@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#delete-environment" class="md-skip">
+        <a href="#precheck-environment" class="md-skip">
           Skip to content
         </a>
       
@@ -1033,6 +1033,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#precheck-environment" class="md-nav__link">
+    Precheck Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#delete-environment" class="md-nav__link">
     Delete Environment
   </a>
@@ -1477,6 +1484,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#precheck-environment" class="md-nav__link">
+    Precheck Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#delete-environment" class="md-nav__link">
     Delete Environment
   </a>
@@ -1559,6 +1573,22 @@
 </script>
 
 <p>This page lists some of the most commonly used Daffy commands for installation, troubleshooting, and cleanup.</p>
+<h2 id="precheck-environment"><strong>Precheck Environment</strong><a class="headerlink" href="#precheck-environment" title="Permanent link">&para;</a></h2>
+<p>By adding --precheck to any of the following commands in daffy, it will run all prechecks for that step and then exit without preforming the full process</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This will not work on the all-in-one command <strong>/data/daffy/build.sh <env-name> --precheck</strong></p>
+</div>
+<p>Precheck OpenShift Build
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">ocp</span><span class="o">/</span><span class="n">build.sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">precheck</span>
+</code></pre></div>
+And will work on all Cloud Pak commands as well:</p>
+<p>Precheck CP4D Build
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">cp4d</span><span class="o">/</span><span class="n">build.sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">precheck</span>
+</code></pre></div>
+Precheck CP4D Service
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">cp4d</span><span class="o">/</span><span class="n">service.sh</span> <span class="o">&lt;</span><span class="n">env</span><span class="o">-</span><span class="n">name</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">precheck</span>
+</code></pre></div></p>
 <h2 id="delete-environment"><strong>Delete Environment</strong><a class="headerlink" href="#delete-environment" title="Permanent link">&para;</a></h2>
 <p>Run the following command to delete all resources created by Daffy, including but not limited to the OpenShift cluster, Cloud Paks, services, VM systems, and tools.</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/cleanup.sh</span>
