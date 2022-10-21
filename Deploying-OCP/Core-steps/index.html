@@ -1630,8 +1630,8 @@
 <span class="c1">#########################</span>
 <span class="n">BASE_DOMAIN</span><span class="o">=</span><span class="s">&quot;&lt;YOUR.BASEDOMAIN.COM&gt;&quot;</span>
 <span class="n">CLUSTER_NAME</span><span class="o">=</span><span class="s">&quot;&lt;ENVIRONMENT_NAME&gt;&quot;</span>
-<span class="c1">#This is required - Values aws-ipi,azure-ipi,gcp-ipi,vsphere-ipi,vsphere-upi,kvm-upi,roks-msp</span>
-<span class="n">OCP_INSTALL_TYPE</span><span class="o">=</span><span class="s">&quot;&quot;</span>
+<span class="c1">#This is required - Values aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp</span>
+<span class="n">OCP_INSTALL_TYPE</span><span class="o">=</span><span class="s">&quot;&lt;INSTALL_NAME&gt;&quot;</span>
 <span class="n">OCP_RELEASE</span><span class="o">=</span><span class="s">&quot;4.8.36&quot;</span>
 <span class="n">VM_TSHIRT_SIZE</span><span class="o">=</span><span class="s">&quot;Large&quot;</span>
 </code></pre></div>
@@ -1673,6 +1673,11 @@
 <td style="text-align: left;">CLUSTER_NAME</td>
 <td style="text-align: left;">demo01</td>
 <td style="text-align: left;">The name you want to give your OpenShift Cluster</td>
+</tr>
+<tr>
+<td style="text-align: left;">OCP_INSTALL_TYPE</td>
+<td style="text-align: left;">aws-ipi</td>
+<td style="text-align: left;">The name of the install type you want  aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp</td>
 </tr>
 <tr>
 <td style="text-align: left;">OCP_RELEASE</td>
