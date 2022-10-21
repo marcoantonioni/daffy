@@ -5,7 +5,7 @@
 This page lists some of the most commonly used Daffy commands for installation, troubleshooting, and cleanup.
 
 ## **Precheck Environment**
-By adding --precheck to any of the following commands in daffy, it will run all prechecks for that step and then exit without preforming the full process
+By adding --precheck to any of the following build/service commands in daffy. It will run all prechecks for that step and then exit without preforming the full process
 !!! Info
       This will not work on the all-in-one command **/data/daffy/build.sh <env-name> --precheck**
 
@@ -25,13 +25,11 @@ Precheck CP4D Service
 ```
 
 
-
-
 ## **Delete Environment**
 Run the following command to delete all resources created by Daffy, including but not limited to the OpenShift cluster, Cloud Paks, services, VM systems, and tools.
 
 ```console
-/data/daffy/cleanup.sh
+/data/daffy/cleanup.sh <env-name>
 ```
 
 ## **Daffy Versioning**
