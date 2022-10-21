@@ -46,6 +46,8 @@ DAFFY_DEPLOYMENT_TYPE="PickValueFromAbove"
 #########################
 BASE_DOMAIN="<YOUR.BASEDOMAIN.COM>"
 CLUSTER_NAME="<ENVIRONMENT_NAME>"
+#This is required - Values aws-ipi,azure-ipi,gcp-ipi,vsphere-ipi,vsphere-upi,kvm-upi,roks-msp
+OCP_INSTALL_TYPE=""
 OCP_RELEASE="4.8.36"
 VM_TSHIRT_SIZE="Large"
 ```
