@@ -1574,7 +1574,7 @@
 
 <p>This page lists some of the most commonly used Daffy commands for installation, troubleshooting, and cleanup.</p>
 <h2 id="precheck-environment"><strong>Precheck Environment</strong><a class="headerlink" href="#precheck-environment" title="Permanent link">&para;</a></h2>
-<p>By adding --precheck to any of the following commands in daffy, it will run all prechecks for that step and then exit without preforming the full process</p>
+<p>By adding --precheck to any of the following build/service commands in daffy. It will run all prechecks for that step and then exit without preforming the full process</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>This will not work on the all-in-one command <strong>/data/daffy/build.sh <env-name> --precheck</strong></p>
@@ -1591,7 +1591,7 @@ Precheck CP4D Service
 </code></pre></div></p>
 <h2 id="delete-environment"><strong>Delete Environment</strong><a class="headerlink" href="#delete-environment" title="Permanent link">&para;</a></h2>
 <p>Run the following command to delete all resources created by Daffy, including but not limited to the OpenShift cluster, Cloud Paks, services, VM systems, and tools.</p>
-<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/cleanup.sh</span>
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/cleanup.sh &lt;env-name&gt;</span>
 </code></pre></div>
 <h2 id="daffy-versioning"><strong>Daffy Versioning</strong><a class="headerlink" href="#daffy-versioning" title="Permanent link">&para;</a></h2>
 <h3 id="upgraderefresh">Upgrade/Refresh<a class="headerlink" href="#upgraderefresh" title="Permanent link">&para;</a></h3>
