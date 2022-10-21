@@ -46,8 +46,8 @@ DAFFY_DEPLOYMENT_TYPE="PickValueFromAbove"
 #########################
 BASE_DOMAIN="<YOUR.BASEDOMAIN.COM>"
 CLUSTER_NAME="<ENVIRONMENT_NAME>"
-#This is required - Values aws-ipi,azure-ipi,gcp-ipi,vsphere-ipi,vsphere-upi,kvm-upi,roks-msp
-OCP_INSTALL_TYPE=""
+#This is required - Values aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp
+OCP_INSTALL_TYPE="<INSTALL_NAME>"
 OCP_RELEASE="4.8.36"
 VM_TSHIRT_SIZE="Large"
 ```
@@ -72,6 +72,7 @@ DAFFY_ISC_NUMBER | $ISC_NUMBER |  Required if Demo or POC
 DAFFY_CUSTOMER_NAME | Acme Shoes  | Required if Demo or POC
 BASE_DOMAIN | acme-shoes.com |  Is your DNS name your cluster will use
 CLUSTER_NAME | demo01 | The name you want to give your OpenShift Cluster
+OCP_INSTALL_TYPE | aws-ipi | The name of the install type you want  aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp
 OCP_RELEASE | 4.10.17 | What version of OpenShift you want to Install
 VM_TSHIRT_SIZE | Large | How large you want the OpenShift Cluster to be. **Min** and **Large** Supported today
 
