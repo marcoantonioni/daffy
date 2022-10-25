@@ -43,7 +43,7 @@ We have a document outlining how to create your own bastion in two ways
 1.  A paid IBM Cloud Account
 2.  IBM Technology Zone
 
-<button onclick="location.href='../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
+<button onclick="location.href='../../../Supporting-Software/Bastion/'" class="custom-btn btn-7">Create Bastion Steps</button>
 
 ##ROKS unbound immediate PersistentVolumeClaims
 This means the cluster has requested storage from MSP provider(IBM ROKS) and it is still provisioning it.  It can take a few minutes or hours at times or sometimes never get provisioned.
@@ -63,7 +63,7 @@ As you can see, it will destroy everything and give you new env, nothing will be
 
 
 ##Failed to watch *v1.ClusterVersion?
-The following error can happen on any platform.  Its not major error, more of an FYI.  Just means that during the cluster setup, the install program was disconnected. Most of the time the install is fine, just a few hiccups. You can ignore this error. 
+The following error can happen on any platform.  Its not major error, more of an FYI.  Just means that during the cluster setup, the install program was disconnected. Most of the time the install is fine, just a few hiccups. You can ignore this error.
 ```
 E0908 07:05:20.266253 2142422 reflector.go:138] k8s.io/client-go/tools/watch/informerwatcher.go:146: Failed to watch *v1.ClusterVersion: failed to list *v1.ClusterVersion: Get "https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&limit=500&resourceVersion=0": EOF
 W0908 07:05:31.158887 2142422 reflector.go:324] k8s.io/client-go/tools/watch/informerwatcher.go:146: failed to list *v1.ClusterVersion: Get "https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&limit=500&resourceVersion=0": EOF
