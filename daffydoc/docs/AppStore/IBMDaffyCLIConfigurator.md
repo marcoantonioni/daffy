@@ -54,8 +54,3 @@ To utilize GitHub to store your environment files, you can use these 2 commands
 ```R
 /data/appstore/daffy-cli/create.sh --pullfromGitHub
 ```
-
-To just copy your created environment files to Daffy, can use the following.
-```R
-/data/appstore/daffy-cli/create.sh --copytoDaffy
-```
