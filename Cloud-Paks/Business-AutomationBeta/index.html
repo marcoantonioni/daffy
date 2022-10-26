@@ -1441,9 +1441,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#production-services" class="md-nav__link">
+    Production Services
+  </a>
+  
+    <nav class="md-nav" aria-label="Production Services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#decisions-production" class="md-nav__link">
     Decisions Production
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1622,7 +1635,7 @@ You need to pick starter services or production services.</p>
 <td style="text-align: left;">CP4BA_VERSION</td>
 <td style="text-align: left;">22.0.1</td>
 <td style="text-align: left;">CP4BA_IFIX</td>
-<td style="text-align: left;">IF001,IF002,IF003</td>
+<td style="text-align: left;">IF002,IF003</td>
 </tr>
 </tbody>
 </table>
@@ -1714,13 +1727,7 @@ You need to pick starter services or production services.</p>
 <tbody>
 <tr>
 <td style="text-align: left;">CP4BA_RPA_SERVER_VERSION</td>
-<td style="text-align: left;">21.0.4</td>
-<td style="text-align: left;">CP4BA_RPA_SERVER_IFIX</td>
-<td style="text-align: left;">N/A</td>
-</tr>
-<tr>
-<td style="text-align: left;">CP4BA_RPA_SERVER_VERSION</td>
-<td style="text-align: left;">21.0.5</td>
+<td style="text-align: left;">21.0.4 or 21.0.5</td>
 <td style="text-align: left;">CP4BA_RPA_SERVER_IFIX</td>
 <td style="text-align: left;">N/A</td>
 </tr>
@@ -1730,9 +1737,13 @@ You need to pick starter services or production services.</p>
 <div class="highlight"><pre><span></span><code><span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;22.0.1&quot;</span>
 <span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="n">IF003</span>
 <span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
-<span class="c1">#Prodution Services - only step 2 supported today.</span>
+
+<span class="c1">#Prodution Services</span>
 <span class="c1">###################################################</span>
 <span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
+
+<span class="c1">#Prodution Services - only step 2 supported today.</span>
+<span class="c1">###################################################</span>
 <span class="n">CP4BA_DEPLOYMENT_PRODUCTION_CONTENT</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 <span class="n">CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 
@@ -1760,7 +1771,7 @@ You need to pick starter services or production services.</p>
 <tbody>
 <tr>
 <td style="text-align: left;">decisions</td>
-<td style="text-align: left;">odm, bai</td>
+<td style="text-align: left;">odm, ads, bai</td>
 <td>22.0.1</td>
 </tr>
 <tr>
@@ -1770,7 +1781,7 @@ You need to pick starter services or production services.</p>
 </tr>
 <tr>
 <td style="text-align: left;">content-decisions</td>
-<td style="text-align: left;">filenet, cmis, ier, tm, odm, bai</td>
+<td style="text-align: left;">filenet, cmis, ier, tm, odm, ads, bai</td>
 <td>22.0.1</td>
 </tr>
 <tr>
@@ -1869,7 +1880,7 @@ You need to pick starter services or production services.</p>
 <td style="text-align: left;">CP4BA_VERSION</td>
 <td style="text-align: left;">22.0.1</td>
 <td style="text-align: left;">CP4BA_IFIX</td>
-<td style="text-align: left;">IF001,IF002, IF003</td>
+<td style="text-align: left;">IF002, IF003</td>
 </tr>
 </tbody>
 </table>
@@ -1887,7 +1898,7 @@ You need to pick starter services or production services.</p>
 </tr>
 </tbody>
 </table>
-<p>Instead of using the included services, you can also deploy your own sample or the included sample CR files from Daffy.</p>
+<p>Instead of using the included services, you can also deploy your own sample.</p>
 <table>
 <thead>
 <tr>
@@ -1914,30 +1925,7 @@ You need to pick starter services or production services.</p>
 <p>The value you use is without the .yaml in the name.</p>
 <p>cd /data/daffy/cp4ba/templates/services/samples  </p>
 </div>
-<p>To use samples, you would give the name of the sample in this directory.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">sample</th>
-<th style="text-align: left;">Info</th>
-<th>Deployment Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">ocp-starter-ocs-all-22.0.1-IF001</td>
-<td style="text-align: left;">All Starters with OpenShift Container Storage</td>
-<td>OCP</td>
-</tr>
-<tr>
-<td style="text-align: left;">roks-starter-ibm-all-22.0.1-IF001</td>
-<td style="text-align: left;">All Starters IBM Storage</td>
-<td>ROKS</td>
-</tr>
-</tbody>
-</table>
-<p>This is just the Daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.</p>
-<p>The given sample names tell you which platform, storage, service and version.</p>
+<p>To use samples, you would have to build your own CR yaml and store in the above directory and you would give the name of the sample.</p>
 <h3 id="ops-hub">OPS HUB<a class="headerlink" href="#ops-hub" title="Permanent link">&para;</a></h3>
 <p>If  you want to deploy Open Prediction Service HUB (OPS), you can set this flag to setup it up in your cluster.</p>
 <table>
@@ -2021,7 +2009,7 @@ You need to pick starter services or production services.</p>
 <div class="highlight"><pre><span></span><code><span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;22.0.1&quot;</span>
 <span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="s">&quot;IF003&quot;</span>
 <span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
-<span class="c1">#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1</span>
+<span class="c1">#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=&quot;&lt;YourSampleHere&gt;&quot;</span>
 
 <span class="c1">#Open Prediction Service HUB</span>
 <span class="c1">############################################</span>
@@ -2051,7 +2039,7 @@ You need to pick starter services or production services.</p>
 <tbody>
 <tr>
 <td style="text-align: left;">decisions</td>
-<td style="text-align: left;">odm, bai</td>
+<td style="text-align: left;">odm, ads, bai</td>
 <td>22.0.1</td>
 </tr>
 <tr>
@@ -2061,7 +2049,7 @@ You need to pick starter services or production services.</p>
 </tr>
 <tr>
 <td style="text-align: left;">content-decisions</td>
-<td style="text-align: left;">filenet, cmis, ier, tm, odm, bai</td>
+<td style="text-align: left;">filenet, cmis, ier, tm, odm, ads, bai</td>
 <td>22.0.1</td>
 </tr>
 <tr>
@@ -2077,12 +2065,30 @@ You need to pick starter services or production services.</p>
 <tr>
 <td style="text-align: left;">samples</td>
 <td style="text-align: left;">Depends on sample</td>
-<td>21.0.3</td>
+<td>Depends on sample</td>
 </tr>
 </tbody>
 </table>
 <p>Be aware, this step is async, meaning that the Daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete. When the deployment of the service script is done, the service is not running yet. Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.</p>
-<h3 id="decisions-production">Decisions Production<a class="headerlink" href="#decisions-production" title="Permanent link">&para;</a></h3>
+<h3 id="production-services">Production Services<a class="headerlink" href="#production-services" title="Permanent link">&para;</a></h3>
+<p><strong>Options for Services</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Service</th>
+<th style="text-align: left;">Components</th>
+<th>CP4BA Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">decisions</td>
+<td style="text-align: left;">odm, ads, bai</td>
+<td>22.0.1</td>
+</tr>
+</tbody>
+</table>
+<h5 id="decisions-production">Decisions Production<a class="headerlink" href="#decisions-production" title="Permanent link">&para;</a></h5>
 <p>To deploy a <strong>Decisions Production Pattern</strong>, you have to have a db2 database and an IDS LDAP server. This will also include BAI.  Daffy can either use your existing assets or can build them locally where daffy is installed.  If you just want daffy to build all the needed components on your local bastion, just set the build flags below to true and daffy will build it all.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
