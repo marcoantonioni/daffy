@@ -1389,6 +1389,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#failed-vcpus-needed" class="md-nav__link">
+    FAILED vCPUs needed
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1554,6 +1561,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#failed-vcpus-needed" class="md-nav__link">
+    FAILED vCPUs needed
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1619,6 +1633,23 @@ I0908 07:05:31.159042 2142422 trace.go:205] Trace[1375718625]: &quot;Reflector L
 Trace[1375718625]: ---&quot;Objects listed&quot; error:Get &quot;https://api.lambda02.daffy-installer.com:6443/apis/config.openshift.io/v1/clusterversions?fieldSelector=metadata.name%3Dversion&amp;limit=500&amp;resourceVersion=0&quot;: EOF 10060ms (07:05:31.158)
 Trace[1375718625]: [10.060656161s] [10.060656161s] END
 </code></pre></div></p>
+<h2 id="failed-vcpus-needed">FAILED vCPUs needed<a class="headerlink" href="#failed-vcpus-needed" title="Permanent link">&para;</a></h2>
+<p>What does this mean?
+<div class="highlight"><pre><span></span><code>Precheck IBM Cloud VPC quota (LOG /data/daffy/log/cpdata/ocp/ibmcloud-vpc-quota.log )
+################################################################
+ibmcloud resource group-create daffy-quota-test
+ibmcloud is target --gen 2
+ibmcloud is vpc-create daffy-quota-test-vpc —resource-group-name daffy-quota-test
+ibmcloud is subnet-create daffy-quota-test-subnet daffy-quota-test-vpc us-south-3 --ipv4-cidr-block 10.240.128.0/18 --resource-group-name daffy-quota-test
+❌  FAILED vCPUs needed 176
+</code></pre></div>
+The IBM VPC zone that you're trying to deploy to does not have enough quota of VPC to have a successful deployment.
+VPC quota is based on the region so you have two options:</p>
+<ol>
+<li>Deployed to a new zone</li>
+<li>Request via IBM cloud ticket to increase your quota to 500 (edited)</li>
+</ol>
+<p><a href="https://cloud.ibm.com/docs/vpc?topic=vpc-quotas" target="_blank">https://cloud.ibm.com/docs/vpc?topic=vpc-quotas</a></p>
 
               
             </article>
