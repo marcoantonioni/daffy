@@ -106,7 +106,8 @@ nav:
     - IBM Daffy CLI Configurator: AppStore/IBMDaffyCLIConfigurator.md
   - More:
     - Glossary: More/Glossary.md
-    - FAQ: More/FAQ/FAQ.md
+    - FAQ: More/FAQ/index.md
+    - Common Errors: More/CommonErrors.md
     - Deployment Estimates: More/FAQ/Deployment-Estimates.md
     - IBM Entitlement Keys: More/FAQ/IBM-Entitlement-Keys.md
     - Secure your Bastion:  More/secure-server-ssh-only-login.md
