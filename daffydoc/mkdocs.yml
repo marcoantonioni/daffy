@@ -105,8 +105,8 @@ nav:
     - IBM Sterling B2B Installer: AppStore/IBMSterlingB2B.md
     - IBM Daffy CLI Configurator: AppStore/IBMDaffyCLIConfigurator.md
   - More:
-    - Glossary: More/Glossary.md
     - FAQ: More/FAQ/index.md
+    - Glossary: More/Glossary.md
     - Common Errors: More/CommonErrors.md
     - Deployment Estimates: More/FAQ/Deployment-Estimates.md
     - IBM Entitlement Keys: More/FAQ/IBM-Entitlement-Keys.md
