@@ -18,4 +18,4 @@ Please reach out to your IBM  technical seller or IBM business partner to reques
 
 ##Feature Request
 !!! Warning
-      For internal IBM use only, please use the following [LINK](https://w3.ibm.com/w3publisher/daffy/request-formsfeature-request)
+      For internal IBM use only, please use the following [LINK](https://w3.ibm.com/w3publisher/daffy/request-forms/feature-request)
