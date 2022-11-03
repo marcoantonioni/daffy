@@ -42,8 +42,6 @@ hide:
     <div class='row'>
       <div class='mainPageLeftColumn'>
         <p align = "right">
-          <img src='./images/ducks.png'  align="left" width="200"
-          height="100" style = "float">
         </p>
         <button onclick="location.href='Deploying-OCP/Pre-Req/'" class="custom-btn btn-7"><span>New User</span></button>
         <button onclick="location.href='Deploying-OCP/'" class="custom-btn btn-7"><span>Experienced User</span></button>
