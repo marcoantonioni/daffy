@@ -100,7 +100,7 @@ CP4BA_RPA_SERVER_VERSION="21.0.5"
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bai        | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
 content-decisions        | filenet, cmis, ier, tm, odm, ads, bai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
@@ -225,7 +225,7 @@ Options for Starter Services
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bai        | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
 content-decisions        | filenet, cmis, ier, tm, odm, ads, bai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
@@ -243,7 +243,7 @@ Be aware, this step is async, meaning that the Daffy engine will deploy the serv
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bai        | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai         | 22.0.1
 
 
 ##### Decisions Production
