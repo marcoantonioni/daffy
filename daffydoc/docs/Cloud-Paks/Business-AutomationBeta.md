@@ -102,7 +102,7 @@ Service | Components | CP4BA Version
 :----------- |:-------------| -----------
 decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, ads, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
 all            | All Components(except iccsap)        | 22.0.1
 samples        | Depends on sample        | 22.0.1
@@ -227,7 +227,7 @@ Service | Components | CP4BA Version
 :----------- |:-------------| -----------
 decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, ads, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
 all            | all (except iccsap)       | 22.0.1
 samples        | Depends on sample        | Depends on sample
