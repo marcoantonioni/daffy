@@ -119,7 +119,7 @@ When this step is complete, approximately after 10 minutes depending on your env
 - cp4ba-content
 - cp4ba-decisions
 - cp4ba-workflow
-- ibm-common-services
+- cs-control
 
 
 <html>
