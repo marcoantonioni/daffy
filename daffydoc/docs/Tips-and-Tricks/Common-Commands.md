@@ -75,12 +75,14 @@ Run the following command to install other tools you might need.
       --prepareHost                          This will run the prepareHost for daffy
       --mustGather                           This will run the mustGather for daffy
       --installOC                            This will install the oc command line tool
+      --installOpenShiftInstall              This will install the open-shift-install command line tool"
       --installAWS                           This will install the aws commandline tool
       --installAzure                         This will install the azure commandline tool
       --installGCloud                        This will install the gcloud commandline tool
       --installGOVC                          This will install the govc commandline tool(VMware)
       --installCloudCTL                      This will install the cloudctl for CP4D
       --installCP4DCloudCLI                  This will install the CP4D Cloud CLI utility
+      --installCPDCTL                        This will install the Cloud Pak 4 Data (CPDCTL) utility"
       ```
 
 ## **Gather Logs**
