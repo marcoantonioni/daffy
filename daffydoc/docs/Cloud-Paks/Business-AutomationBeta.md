@@ -96,7 +96,7 @@ CP4BA_RPA_SERVER_VERSION="21.0.5"
 #CP4BA_RPA_SERVER_SMTP_SERVER="gmail.smtp.com"
 ```
 
-***Service Mapping to Components:***
+### Starter Service Mapping
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
@@ -220,8 +220,7 @@ CP4BA_RPA_SERVER_IFIX=""
 ```
 
 
-Options for Starter Services
-
+### Starter Service Mapping
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
