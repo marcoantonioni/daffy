@@ -39,13 +39,18 @@ Will take 2 to 3 hours to install OpenShift, Cloud Pak base and start the servic
 
 Has three options
 
+!!! INFO
+       To copy and paste, just highlight the text you want to copy and it will be in your clipboard. Then paste(right click then paste menu) to other Guacamole Screens.
+
+
 1.  **CloudPak Information**
 
       This will be menu based system to give you info about your cloud pak.  Status and any Console links and ID/Passwords
+      This is where you can copy the url and passwords to paste in the Red Hat Remote Desktop Firefox Browser.
 
 2.  **Remote Red Hat Linux Desktop**
 
-      This will be GUI for the Bastion Desktop.  This is where  you would go to logon to your OpenShift Console, Cloud Pak Dashbaord, etc.
+      This will be GUI for the Bastion Desktop.  This is where  you would go to logon to your OpenShift Console, Cloud Pak Dashboard, etc. To open Firefox, on the top left of the Desktop, click the "Activities" text and select Firefox from the new menu.
 
 3.  **SSH Terminal Session**
 
