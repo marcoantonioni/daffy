@@ -37,7 +37,7 @@ You need to pick starter services or production services.
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002,IF003       |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF002,IF003       |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
@@ -55,7 +55,6 @@ You need to pick starter services or production services.
 | CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    No               |
 | CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
-| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME| Owner Full Name                               |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_USER              | SMTP User that RPA will use to send Email     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_PORT              | SMTP Port that RPA will use to send Email     |    Yes if RPA True  |
@@ -65,8 +64,7 @@ You need to pick starter services or production services.
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_RPA_SERVER_VERSION                |  21.0.4             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
-| CP4BA_RPA_SERVER_VERSION                |  21.0.5             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
+| CP4BA_RPA_SERVER_VERSION                |  21.0.4 or 21.0.5             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
 
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
@@ -74,9 +72,13 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 CP4BA_VERSION="22.0.1"
 CP4BA_IFIX=IF003
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
-#Prodution Services - only step 2 supported today.
+
+#Prodution Services
 ###################################################
 CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS="false"
+
+#Prodution Services - only step 2 supported today.
+###################################################
 CP4BA_DEPLOYMENT_PRODUCTION_CONTENT="false"
 CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW="false"
 
@@ -86,20 +88,19 @@ CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
 CP4BA_RPA_SERVER_VERSION="21.0.5"
 #CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
-#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
 #CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
 #CP4BA_RPA_SERVER_SMTP_PORT="587"
 #CP4BA_RPA_SERVER_SMTP_SERVER="gmail.smtp.com"
 ```
 
-***Service Mapping to Components:***
+### Starter Service Mapping
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, bai        | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
 all            | All Components(except iccsap)        | 22.0.1
 samples        | Depends on sample        | 22.0.1
@@ -116,7 +117,7 @@ When this step is complete, approximately after 10 minutes depending on your env
 - cp4ba-content
 - cp4ba-decisions
 - cp4ba-workflow
-- ibm-common-services
+- cs-control
 
 
 <html>
@@ -143,14 +144,14 @@ Deploying the service does not need any new values to your environment file (<**
 
 | Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
 | :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF001,IF002, IF003      |
+| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF002, IF003      |
 
 | Variable Name                           | Valid Options                                         |
 | :---------                              |    :---------                                         |                      
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,all,samples |  
 
 
-Instead of using the included services, you can also deploy your own sample or the included sample CR files from Daffy.
+Instead of using the included services, you can also deploy your own sample.
 
 Variable | Valid Option | Required
 :----------- |:-------------| -----------
@@ -163,18 +164,7 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | see list below       | No
 
      cd /data/daffy/cp4ba/templates/services/samples  
 
-To use samples, you would give the name of the sample in this directory.
-
-sample                                                       |  Info                   | Deployment Type
-:-----------                                                 |:-------------           | -----------
-ocp-starter-ocs-all-22.0.1-IF001                             | All Starters with OpenShift Container Storage           |  OCP
-roks-starter-ibm-all-22.0.1-IF001                            | All Starters IBM Storage                |  ROKS
-
-This is just the Daffy samples, you can create your own as well. Just put your CR in this folder and add your name to your env file.
-
-The given sample names tell you which platform, storage, service and version.
-
-
+To use samples, you would have to build your own CR yaml and store in the above directory and you would give the name of the sample.
 
 ### OPS HUB
 
@@ -196,7 +186,6 @@ CP4BA_ENABLE_SERVICE_OPS        | true or false       | No
 | CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
-| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME| Owner Full Name                               |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_USER              | SMTP User that RPA will use to send Email     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_PORT              | SMTP Port that RPA will use to send Email     |    Yes if RPA True  |
@@ -208,7 +197,7 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 CP4BA_VERSION="22.0.1"
 CP4BA_IFIX="IF003"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
-#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=roks-starter-ibm-all-22.0.1
+#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 
 #Open Prediction Service HUB
 ############################################
@@ -220,7 +209,6 @@ CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
 CP4BA_RPA_SERVER_VERSION="21.0.5"
 CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
-#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
 #CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
 #CP4BA_RPA_SERVER_SMTP_PORT=587
@@ -228,23 +216,32 @@ CP4BA_RPA_SERVER_IFIX=""
 ```
 
 
-Options for Starter Services
-
+### Starter Service Mapping
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, bai        | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, bai        | 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
 all            | all (except iccsap)       | 22.0.1
-samples        | Depends on sample        | 21.0.3
+samples        | Depends on sample        | Depends on sample
 
 
 
 Be aware, this step is async, meaning that the Daffy engine will deploy the service to the cluster and then complete. This only takes a few minutes to complete. When the deployment of the service script is done, the service is not running yet. Depending on your service, it can take from 1 hour to 6 to complete. You can use the status command below to watch its progress.
 
-### Decisions Production
+
+### Production Services
+
+**Options for Services**
+
+Service | Components | CP4BA Version
+:----------- |:-------------| -----------
+decisions        | odm, ads, bastudio, aae, bai         | 22.0.1
+
+
+##### Decisions Production
 
 To deploy a **Decisions Production Pattern**, you have to have a db2 database and an IDS LDAP server. This will also include BAI.  Daffy can either use your existing assets or can build them locally where daffy is installed.  If you just want daffy to build all the needed components on your local bastion, just set the build flags below to true and daffy will build it all.
 

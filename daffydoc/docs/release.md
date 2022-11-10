@@ -1,3 +1,31 @@
+## v2022-11-10
+          Tested OpenShift with Current Daffy Release
+              GCP       4.8.51 / 4.10.36
+              AWS       4.8.51 / 4.10.36
+              Azure     4.8.51 / 4.10.36
+              ROKS      4.8.51 / 4.10.36
+              VSphere   4.8.51 / 4.10.36
+              KVM       4.8.51 / 4.10.36
+              IBM IPI            4.10.36
+          Cloud Pak for Business Automation
+              Added Support for 22.0.1 IF004
+              Added ADS to Production Decisions Service and Starter Services decisions and content-decisions
+              Added support for Roks vpn-gen2 for step 2 and step 3(Cloud Pak and Services)
+              RPA
+                    Added support for ROKS
+          Cloud Pak for Data
+              Removed Storage Vendor tag (not needed for 4.5.x)
+          Cloud Pak for Integration
+              Fixed bug with APIC that would fail when apply CR if webhook wasn't finalized
+              Updated for latest releases of 2022.4.1 services
+          OpenShift
+              Added new precheck for VSPHERE_USERNAME, it cannot contain \
+          Misc
+              Added new Override for KVM Build options (KVM_VM_OPTION) and new default is to not enable VNC
+              Added new Override for Airgap (OCP_REGISTRY_IMAGE_EXPORT_FILE) to enable export of registry. Default is true
+              Added better error message for ROKS when logged into wrong IBM Cloud Account
+			  Updated refresh.sh to allow menu choice for version
+
 ## v2022-10-18
           Tested OpenShift with Current Daffy Release
               GCP       4.8.49 / 4.10.32
