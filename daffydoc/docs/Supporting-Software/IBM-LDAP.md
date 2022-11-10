@@ -2,7 +2,7 @@
   document.title = "Supporting Software - IBM LDAP";
 </script>
 
-With the Daffy system you can now install IBM LDAP server on a Linux server.  RHEL 8.x. You will need to size the server based on your needs for the Database.   Below are the steps you would need to get the software, install it and check on the status of the install.
+With the Daffy system you can now install IBM LDAP server on a Linux server.  IDS only supports RHEL 8.x. You will need to size the server based on your needs for the Database.   Below are the steps you would need to get the software, install it and check on the status of the install.
 
 !!! important
 	To install LDAP, you need to have DB2 installed locally. Instructions [here](../DB2/)

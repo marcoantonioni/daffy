@@ -3,6 +3,10 @@
 </script>
 With the Daffy system you can now install DB2 on a Linux server.  RHEL 8.x or Ubuntu 20.0.4. You will need to size the server based on your needs for the Database.   Below are the steps you would need to get the software, install it and check on the status of the install.
 
+!!! important
+	If you are looking to install DB2 to support IDS(IBM LDAP), you need to have RHEL 8.X.  IDS will only run on RHEL. You can not have UBuntu for IDS. IDS does not support it, its not a daffy issue.
+
+
 ## Obtain Software
 
 Before you install DB2, you will need to download the DB2 Software and place the binary's on your Linux server.
