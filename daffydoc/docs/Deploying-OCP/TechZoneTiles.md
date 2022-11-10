@@ -10,7 +10,7 @@ hide:
 
 <img src='../images/techzone.jpeg'   align="top" width="100"  height="200" style = "float">
 
-The Purpose of the our the following TechZone Tiles are to instlal the full OpenShift/Cloud Pak stack for you. This would enable you to start using your Cloud Pak of choice, without deep skills in OpenShift or Cloud Pak install process. From a Reservetaion to Cloud Pak use, in a few hours of runtime, but 5 min of your time.  Sitback, let Daffy Build the full stack for you.
+The Purpose of the following TechZone Tiles are to instlal the full OpenShift/Cloud Pak stack for you. This would enable you to start using your Cloud Pak of choice, without deep skills in OpenShift or Cloud Pak install process. From a Reservetaion to Cloud Pak use, in a few hours of runtime, but 5 min of your time.  Sitback, let Daffy Build the full stack for you.
 
 
 You can access the Tech Zone Environment Tiles here:

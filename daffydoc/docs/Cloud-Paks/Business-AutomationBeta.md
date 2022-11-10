@@ -55,7 +55,6 @@ You need to pick starter services or production services.
 | CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    No               |
 | CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
-| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME| Owner Full Name                               |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_USER              | SMTP User that RPA will use to send Email     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_PORT              | SMTP Port that RPA will use to send Email     |    Yes if RPA True  |
@@ -89,7 +88,6 @@ CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
 CP4BA_RPA_SERVER_VERSION="21.0.5"
 #CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
-#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
 #CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
 #CP4BA_RPA_SERVER_SMTP_PORT="587"
@@ -188,7 +186,6 @@ CP4BA_ENABLE_SERVICE_OPS        | true or false       | No
 | CP4BA_RPA_SERVER_VERSION                | Version of RPA to deploy                      |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_IFIX                   | The fix version of your version supported     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL| Owner Email Address                          |    Yes if RPA True  |
-| CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID  | Owner user ID to login to RPA                 |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME| Owner Full Name                               |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_USER              | SMTP User that RPA will use to send Email     |    Yes if RPA True  |
 | CP4BA_RPA_SERVER_SMTP_PORT              | SMTP Port that RPA will use to send Email     |    Yes if RPA True  |
@@ -212,7 +209,6 @@ CP4BA_ENABLE_SERVICE_RPA_SERVER="false"
 CP4BA_RPA_SERVER_VERSION="21.0.5"
 CP4BA_RPA_SERVER_IFIX=""
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_EMAIL="daffy@us.ibm.com"
-#CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_ID="daffy"
 #CP4BA_RPA_SERVER_FIRST_TENANT_OWNER_NAME="Daffy Admin"
 #CP4BA_RPA_SERVER_SMTP_USER="GmailID@Gmail.com"
 #CP4BA_RPA_SERVER_SMTP_PORT=587
