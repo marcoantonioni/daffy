@@ -152,7 +152,7 @@ extra:
       link: mailto:feedback@daffy-installer.com
     - icon: fontawesome/brands/youtube
       name: Daffy YouTube Channel
-      link: https://www.youtube.com/channel/UC-hFkVL6kBcgCJeWneHGoKw
+      link: https://www.youtube.com/@daffyinstaller
   analytics:
     provider: google
     property: G-L33BY57ZVG
