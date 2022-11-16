@@ -1598,7 +1598,11 @@
 <p><img src='../images/techzone.jpeg'   align="top" width="100"  height="200" style = "float"></p>
 <p>The Purpose of the following TechZone Tiles are to install the full OpenShift/Cloud Pak stack for you. This would enable you to start using your Cloud Pak of choice, without deep skills in OpenShift or Cloud Pak install process. From a Reservetaion to Cloud Pak use, in a few hours of runtime, but 5 min of your time.  Sit back, let Daffy Build the full stack for you.</p>
 <p>You can access the Tech Zone Environment Tiles here:</p>
-<p><a href="https://techzone.ibm.com/collection/daffy#tab-1" target="_blank">https://techzone.ibm.com/collection/daffy#tab-1</a></p>
+<ol>
+<li><a href="https://techzone.ibm.com/collection/daffy#tab-1" target="_blank">Cloud Pak for Business Automation</a></li>
+<li><a href="https://techzone.ibm.com/collection/daffy#tab-2" target="_blank">Cloud Pak for Data</a></li>
+<li><a href="https://techzone.ibm.com/collection/daffy#tab-3" target="_blank">Cloud Pak for Integration</a></li>
+</ol>
 <h2 id="cp4ba">CP4BA<a class="headerlink" href="#cp4ba" title="Permanent link">&para;</a></h2>
 <p>Will take 1 1/2 to 2 hours to install OpenShift, Cloud Pak base and start the services install. You will get email at this point with how to connect to your cluster. From the Guacamole console, you can connect to the Desktop or get the status of your cloud pak. Once you get the email, it can take 2-3 hours for the CP4BA services to be ready. During that time you may see failed deployment, this is normal as the operator will self heal. (Do not watch the paint dry, get a coffee and come back in a few hours)</p>
 <h2 id="cp4d">CP4D<a class="headerlink" href="#cp4d" title="Permanent link">&para;</a></h2>
@@ -1639,13 +1643,25 @@
 <p>For Windows Users</p>
 <p><strong>CTRL-ALT-SHIFT</strong></p>
 <h3 id="wireguard"><strong>Wireguard</strong><a class="headerlink" href="#wireguard" title="Permanent link">&para;</a></h3>
-<p>If you enabled the VPN on the TechZone tile and want to connect, you need to install the WireGuard Application on your local Desktop an load your own config.</p>
-<ol>
-<li>Install WireGuard <a href="https://www.wireguard.com/install/" target="_blank">https://www.wireguard.com/install/</a></li>
-<li>Download the Connction Config from the TechZone tile and import into to your local Wireguard</li>
-<li>Start up the VPN connection with new config</li>
-<li>Open your local browser and connect to the OpenShift, VCenter or Cloud Pak URLs.  </li>
-</ol>
+<p>If you enabled the VPN on the TechZone tile and want to connect, you need to install the WireGuard Application on your local Desktop and load your own config.</p>
+<p>1)  Install WireGuard <a href="https://www.wireguard.com/install/" target="_blank">https://www.wireguard.com/install/</a></p>
+<p>2) Download the Connection Config from the TechZone tile</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/DeployingOCP/TechZoneTiles/1.1WireGuard.jpg'   align="top" style = "float"></p>
+</details>
+<p>3) Import into to your local Wireguard</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/DeployingOCP/TechZoneTiles/1WireGuard.jpg'   align="top" style = "float"></p>
+</details>
+<p>4) Start up the VPN connection with new config</p>
+<details class="info">
+<summary>Screenshot</summary>
+<p><img src='../../images/DeployingOCP/TechZoneTiles/2WireGuard.jpg'   align="top" style = "float">
+<img src='../../images/DeployingOCP/TechZoneTiles/3WireGuard.jpg'   align="top" style = "float"></p>
+</details>
+<p>5)  Open your local browser and connect to the OpenShift, VCenter or Cloud Pak URLs.  </p>
 
               
             </article>
