@@ -1,3 +1,9 @@
+## v2022-11-10a
+          Cloud Pak for Data
+              Added Watson OpenScale capability
+          Misc
+              Cleanup of logs for services
+
 ## v2022-11-10
           Tested OpenShift with Current Daffy Release
               GCP       4.8.51 / 4.10.36
@@ -24,7 +30,7 @@
               Added new Override for KVM Build options (KVM_VM_OPTION) and new default is to not enable VNC
               Added new Override for Airgap (OCP_REGISTRY_IMAGE_EXPORT_FILE) to enable export of registry. Default is true
               Added better error message for ROKS when logged into wrong IBM Cloud Account
-			  Updated refresh.sh to allow menu choice for version
+			        Updated refresh.sh to allow menu choice for version
 
 ## v2022-10-18
           Tested OpenShift with Current Daffy Release
