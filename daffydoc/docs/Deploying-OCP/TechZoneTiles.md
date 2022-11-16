@@ -15,8 +15,9 @@ The Purpose of the following TechZone Tiles are to install the full OpenShift/Cl
 
 You can access the Tech Zone Environment Tiles here:
 
-[https://techzone.ibm.com/collection/daffy#tab-1](https://techzone.ibm.com/collection/daffy#tab-1){target=_blank}
-
+1.  [Cloud Pak for Business Automation](https://techzone.ibm.com/collection/daffy#tab-1){target=_blank}
+2.  [Cloud Pak for Data](https://techzone.ibm.com/collection/daffy#tab-2){target=_blank}
+3.  [Cloud Pak for Integration](https://techzone.ibm.com/collection/daffy#tab-3){target=_blank}
 
 
 ## CP4BA
@@ -37,6 +38,9 @@ Will take 2 to 3 hours to install OpenShift, Cloud Pak base and start the servic
 
 <img src='../images/TechZoneTiles/GuacamoleConsole.jpg'   align="top"  style = "float">
 
+!!! INFO
+      If you are using Firefox and unable to copy/paste in Remote Desktop Web Client, please enable. [https://sudoedit.com/firefox-async-clipboard/](https://sudoedit.com/firefox-async-clipboard/){target=_blank} via @Max Simpson
+
 Has three options
 
 !!! INFO
@@ -55,3 +59,37 @@ Has three options
 3.  **SSH Terminal Session**
 
       This is where you can go to run oc commands or other line command line tools.
+
+#### Controls
+
+If want to get the guacamole controls to have a better way to copy/paste, resize screen or change keyboard type, you can do the following to bring up the controls:
+
+For Mac users
+
+  **CONTROL-OPTION-SHIFT**
+
+For Windows Users
+
+  **CTRL-ALT-SHIFT**
+
+
+### **Wireguard**
+If you enabled the VPN on the TechZone tile and want to connect, you need to install the WireGuard Application on your local Desktop and load your own config.
+
+1)  Install WireGuard [https://www.wireguard.com/install/](https://www.wireguard.com/install/){target=_blank}
+
+2) Download the Connection Config from the TechZone tile
+??? Info "Screenshot"
+    <img src='../../images/DeployingOCP/TechZoneTiles/1.1WireGuard.jpg'   align="top" style = "float">
+
+
+3) Import into to your local Wireguard
+??? Info "Screenshot"
+    <img src='../../images/DeployingOCP/TechZoneTiles/1WireGuard.jpg'   align="top" style = "float">
+
+4) Start up the VPN connection with new config
+??? Info "Screenshot"
+    <img src='../../images/DeployingOCP/TechZoneTiles/2WireGuard.jpg'   align="top" style = "float">
+    <img src='../../images/DeployingOCP/TechZoneTiles/3WireGuard.jpg'   align="top" style = "float">
+
+5)  Open your local browser and connect to the OpenShift, VCenter or Cloud Pak URLs.  
