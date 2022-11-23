@@ -1796,14 +1796,55 @@ To do this we will use the following terms:</p>
 </ol>
 <h4 id="environment-file">Environment File<a class="headerlink" href="#environment-file" title="Permanent link">&para;</a></h4>
 <p>You should build your environment file based on the final install you want to build and should include those values in this file as well.  </p>
-<p>The following values are required specifically for <strong>airgap</strong> install.(Repo Build and Airgap)
-| Variable Name                        | Info                                                   | Install Type  | Required    |  default    |
-| :---------                           |    :---------                                          |   :----       |   :----     |   :----     |
-| LOCAL_REGISTRY_ENABLED               | Do you want this to be an air gap install              |   Both        |   Yes       |    false    |
-| LOCAL_REGISTRY_DNS_NAME              | This is your jump box DNS name                         |   Both        |   No        |             |
-| LOCAL_REGISTRY_IP                    | This is your jump box IP address                       |   Both        |   No        |             |
-| LOCAL_AIRGAP_REGISTRY_DNS_NAME       | This is your restricted network bastion DNS name       |   airgap      |   No        |             |
-| LOCAL_AIRGAP_REGISTRY_IP             | This is your restricted network bastion box IP address |   airgap      |   Yes       |             |</p>
+<p>The following values are required specifically for <strong>airgap</strong> install.(Repo Build and Airgap)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Info</th>
+<th style="text-align: left;">Install Type</th>
+<th style="text-align: left;">Required</th>
+<th style="text-align: left;">default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">LOCAL_REGISTRY_ENABLED</td>
+<td style="text-align: left;">Do you want this to be an air gap install</td>
+<td style="text-align: left;">Both</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;">LOCAL_REGISTRY_DNS_NAME</td>
+<td style="text-align: left;">This is your jump box DNS name</td>
+<td style="text-align: left;">Both</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">LOCAL_REGISTRY_IP</td>
+<td style="text-align: left;">This is your jump box IP address</td>
+<td style="text-align: left;">Both</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">LOCAL_AIRGAP_REGISTRY_DNS_NAME</td>
+<td style="text-align: left;">This is your restricted network bastion DNS name</td>
+<td style="text-align: left;">airgap</td>
+<td style="text-align: left;">No</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">LOCAL_AIRGAP_REGISTRY_IP</td>
+<td style="text-align: left;">This is your restricted network bastion box IP address</td>
+<td style="text-align: left;">airgap</td>
+<td style="text-align: left;">Yes</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <div class="highlight"><pre><span></span><code><span class="c1">#Local Registry Info</span>
 <span class="c1">###############################</span>
 <span class="n">LOCAL_REGISTRY_ENABLED</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
