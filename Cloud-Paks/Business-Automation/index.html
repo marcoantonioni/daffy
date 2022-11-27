@@ -1881,7 +1881,7 @@ You need to pick starter services or production services.</p>
 <h3 id="rpa-server">RPA Server<a class="headerlink" href="#rpa-server" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Currently does not support a ROKS deployment. There is known issue with RPA Server and ticket is open with IBM Support.</p>
+<p>Currently does not support running RPA and Cp4BA in same cluster.  Known issue with Common Services as they are not compatible versions.</p>
 </div>
 <table>
 <thead>
@@ -1955,7 +1955,7 @@ You need to pick starter services or production services.</p>
 </table>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:
 <div class="highlight"><pre><span></span><code><span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;22.0.1&quot;</span>
-<span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="n">IF003</span>
+<span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="n">IF004</span>
 <span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
 
 <span class="c1">#Prodution Services</span>
@@ -2221,7 +2221,7 @@ You need to pick starter services or production services.</p>
 </table>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:
 <div class="highlight"><pre><span></span><code><span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;22.0.1&quot;</span>
-<span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="s">&quot;IF003&quot;</span>
+<span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="s">&quot;IF004&quot;</span>
 <span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
 <span class="c1">#CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE=&quot;&lt;YourSampleHere&gt;&quot;</span>
 
