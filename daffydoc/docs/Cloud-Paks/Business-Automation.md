@@ -46,7 +46,7 @@ You need to pick starter services or production services.
 ### RPA Server
 
 !!! warning
-	Currently does not support a ROKS deployment. There is known issue with RPA Server and ticket is open with IBM Support.
+	Currently does not support running RPA and Cp4BA in same cluster.  Known issue with Common Services as they are not compatible versions.
 
 
 | Variable Name                           | Info                                          | Required            |
@@ -70,7 +70,7 @@ You need to pick starter services or production services.
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX=IF003
+CP4BA_IFIX=IF004
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 #Prodution Services
@@ -195,7 +195,7 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX="IF003"
+CP4BA_IFIX="IF004"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 
