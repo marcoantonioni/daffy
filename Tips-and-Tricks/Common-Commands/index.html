@@ -1099,6 +1099,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ocp-build-help" class="md-nav__link">
+    OCP Build Help
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#daffy-tools" class="md-nav__link">
     Daffy Tools
   </a>
@@ -1562,6 +1569,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ocp-build-help" class="md-nav__link">
+    OCP Build Help
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#daffy-tools" class="md-nav__link">
     Daffy Tools
   </a>
@@ -1644,6 +1658,53 @@ Precheck CP4D Service
 <p>Run the following command to view the current Daffy version.</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/version.sh</span>
 </code></pre></div>
+<h2 id="ocp-build-help"><strong>OCP Build Help</strong><a class="headerlink" href="#ocp-build-help" title="Permanent link">&para;</a></h2>
+<p>The OCP build process has several flags, to see all the flags, you can run the --help</p>
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;env_name&gt; --help</span>
+</code></pre></div>
+<details class="note">
+<summary>All Build Flags</summary>
+<div class="highlight"><pre><span></span><code>--precheck                            <span class="s2">&quot;This will just do a quick precheck to see if the environment is ready for a build&quot;</span>
+--tshirtSize                          <span class="s2">&quot;This will display what the current TShirt size would be with this environment&quot;</span>
+--createIBMCloudDNSEntries            <span class="s2">&quot;This will create your Public DNS enries in IBM Cloud&quot;</span>
+--approveVCenterCert                  <span class="s2">&quot;This will download VCenter certs and add to host trust store.&quot;</span>
+--removeIBMCloudDNSEntries            <span class="s2">&quot;This will remove your Public DNS enries in IBM Cloud&quot;</span>
+--displayOCPDNSRequirements           <span class="s2">&quot;This will display what DNS records that need to be created&quot;</span>
+--displayOCPLoadBalanceRules          <span class="s2">&quot;This will display the Load Balnacer rules you will need&quot;</span>
+--runOpenShiftInstallWaitBoot         <span class="s2">&quot;This will run openshift-install (wait-for boot)&quot;</span>
+--approveCSR                          <span class="s2">&quot;This will approve all pending CSR request&quot;</span>
+--runOpenShiftInstallWaitInstall      <span class="s2">&quot;This will run openshift-install (wait-for install)&quot;</span>
+--updateIngress                       <span class="s2">&quot;This will get new IBM Cert and update the main ingress certs/secret&quot;</span>
+--createOpenShiftContainerStorage     <span class="s2">&quot;This will create OpenShift Container Storage&quot;</span>
+--createNFSServer                     <span class="s2">&quot;This will create local NFS Server&quot;</span>
+--createNFSDisk                       <span class="s2">&quot;This will create local disk for NFS Server&quot;</span>
+--configureLocalStorge                <span class="s2">&quot;This will create local stroage&quot;</span>
+--createVMDashboard                   <span class="s2">&quot;This will create the VM Dashboard Web UI&quot;</span>
+--createImageRegistry                 <span class="s2">&quot;This will create the OpenShift Image Registry&quot;</span>
+--console                             <span class="s2">&quot;This will display Admin Console Info&quot;</span>
+--status                              <span class="s2">&quot;This will display cluster info&quot;</span>
+--installOpenShiftTools               <span class="s2">&quot;This will install oc, kubectl and openshift-install tools&quot;</span>
+--displayVSpherePermissionsNeeded     <span class="s2">&quot;This will display all permissions needed for VSphere Install&quot;</span>
+--validateReserverLookupDNS           <span class="s2">&quot;This will validate PTR records for UPI installs&quot;</span>
+--applyFix                            <span class="s2">&quot;This will apply a given fix to your Daffy env, pass the fix number to command&quot;</span>
+--deleteAllFailedPods                 <span class="s2">&quot;This will delete all pods in Failed state.&quot;</span>
+--MACinstallOCPTools                  <span class="s2">&quot;This will install oc and kubectl tools locally on your Mac&quot;</span>
+--installRHACM                        <span class="s2">&quot;This will install Red Hat Advanced Cluster Management&quot;</span>
+--CephStatus                          <span class="s2">&quot;This will show the status of ceph using ceph tools inside of OpenShift Storage&quot;</span>
+--createAdminAccount                  <span class="s2">&quot;This will create local htaccess admin account&quot;</span>
+--help<span class="p">|</span>--?<span class="p">|</span>?<span class="p">|</span>-?<span class="p">|</span>help<span class="p">|</span>-help            <span class="s2">&quot;This help menu&quot;</span>
+</code></pre></div>
+</details>
+<p><strong>Examples</strong></p>
+<p>To show OpenShift Console info, ID/Password and URL
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;env_name&gt; --console</span>
+</code></pre></div>
+To show OpenShift status
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;env_name&gt; --status</span>
+</code></pre></div>
+To show OpenShift Node sizes based on your environment file
+<div class="highlight"><pre><span></span><code><span class="go">/data/daffy/ocp/build.sh &lt;env_name&gt; --tshirtSize</span>
+</code></pre></div></p>
 <h2 id="daffy-tools"><strong>Daffy Tools</strong><a class="headerlink" href="#daffy-tools" title="Permanent link">&para;</a></h2>
 <p>Run the following command to install other tools you might need.</p>
 <div class="highlight"><pre><span></span><code><span class="go">/data/daffy/tools.sh</span>
