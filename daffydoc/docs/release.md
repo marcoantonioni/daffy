@@ -1,3 +1,14 @@
+## v2022-11-10b
+          Airgap
+              Bug fix for testing internet access when firewall blocks but does not drop connections
+              Replace podman default auth file (/run/user/0/containers/auth.json) with new podman command override REGISTRY_AUTH_FILE
+              Ability to build local repo on internet facing bastion, no need to export and move to airgap
+              mirror-registry precheck - tool requires hostname be in /etc/hosts or mirror-registry crashes
+          OpenShift
+              Updated versions for CoreOS(VSphere Airgap) and logic to download correct versions   
+          WebSpher Automation
+              Bug fix - missing step to prepare input files is service.sh(step 3)          
+
 ## v2022-11-10a
           Cloud Pak for Data
               Added Watson OpenScale capability
