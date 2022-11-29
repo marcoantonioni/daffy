@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v2022-11-10a" class="md-skip">
+        <a href="#v2022-11-10b" class="md-skip">
           Skip to content
         </a>
       
@@ -1411,6 +1411,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v2022-11-10b" class="md-nav__link">
+    v2022-11-10b
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v2022-11-10a" class="md-nav__link">
     v2022-11-10a
   </a>
@@ -1566,6 +1573,17 @@
 
   <h1>Release</h1>
 
+<h2 id="v2022-11-10b">v2022-11-10b<a class="headerlink" href="#v2022-11-10b" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>      Airgap
+          Bug fix for testing internet access when firewall blocks but does not drop connections
+          Replace podman default auth file (/run/user/0/containers/auth.json) with new podman command override REGISTRY_AUTH_FILE
+          Ability to build local repo on internet facing bastion, no need to export and move to airgap
+          mirror-registry precheck - tool requires hostname be in /etc/hosts or mirror-registry crashes
+      OpenShift
+          Updated versions for CoreOS(VSphere Airgap) and logic to download correct versions   
+      WebSpher Automation
+          Bug fix - missing step to prepare input files is service.sh(step 3)
+</code></pre></div>
 <h2 id="v2022-11-10a">v2022-11-10a<a class="headerlink" href="#v2022-11-10a" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>      Cloud Pak for Data
           Added Watson OpenScale capability
