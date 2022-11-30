@@ -15,9 +15,9 @@ The Purpose of the following TechZone Tiles are to install the full OpenShift/Cl
 
 You can access the Tech Zone Environment Tiles here:
 
-1.  [Cloud Pak for Business Automation](https://techzone.ibm.com/collection/daffy#tab-1){target=_blank}
-2.  [Cloud Pak for Data](https://techzone.ibm.com/collection/daffy#tab-2){target=_blank}
-3.  [Cloud Pak for Integration](https://techzone.ibm.com/collection/daffy#tab-3){target=_blank}
+1.  [Cloud Pak for Business Automation](https://techzone.ibm.com/collection/PakInstaller#tab-1){target=_blank}
+2.  [Cloud Pak for Data](https://techzone.ibm.com/collection/PakInstaller#tab-2){target=_blank}
+3.  [Cloud Pak for Integration](https://techzone.ibm.com/collection/PakInstaller#tab-3){target=_blank}
 
 
 ## CP4BA
