@@ -599,8 +599,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-requirements" class="md-nav__link">
-    Platform Requirements
+  <a href="#tech-zone-awsazure" class="md-nav__link">
+    Tech Zone AWS/Azure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tech-zone-vsphere" class="md-nav__link">
+    Tech Zone VSphere
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#techzone-roks" class="md-nav__link">
+    TechZone Roks
   </a>
   
 </li>
@@ -1462,8 +1476,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-requirements" class="md-nav__link">
-    Platform Requirements
+  <a href="#tech-zone-awsazure" class="md-nav__link">
+    Tech Zone AWS/Azure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tech-zone-vsphere" class="md-nav__link">
+    Tech Zone VSphere
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#techzone-roks" class="md-nav__link">
+    TechZone Roks
   </a>
   
 </li>
@@ -1489,15 +1517,12 @@
 <h1 id="techzone-install">TechZone Install<a class="headerlink" href="#techzone-install" title="Permanent link">&para;</a></h1>
 <p><img src='../images/techzone.jpeg'   align="top" width="100"  height="200" style = "float"></p>
 <p>At this point, you have a <strong>bastion</strong> machine where you have installed the Daffy tool, created your core &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh.  Depending on if you use TechZone to build your cluster, you may skip Daffy Step 1, which builds your cluster. You will not use the bastion to build your cluster, but follow the steps to have TechZone build your cluster.  Once that is done, you would move on with the Daffy process and install your Cloud Paks from your new <strong>bastion.</strong></p>
-<h2 id="platform-requirements">Platform Requirements<a class="headerlink" href="#platform-requirements" title="Permanent link">&para;</a></h2>
-<p>There are three options with TechZone:</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>For IBM and Business Partners use only</p>
 </div>
-<ol>
-<li>
-<p>OpenShift Cluster via AWS, Azure (<strong>prebuilt</strong> cluster):   <a href="https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters" target="_blank">https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters</a></p>
+<h2 id="tech-zone-awsazure">Tech Zone AWS/Azure<a class="headerlink" href="#tech-zone-awsazure" title="Permanent link">&para;</a></h2>
+<p>(<strong>prebuilt</strong> cluster):   <a href="https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters" target="_blank">https://techzone.ibm.com/collection/third-party-cloud-openshift-clusters</a></p>
 <ul>
 <li>Does <strong>NOT</strong> include bastion with request</li>
 <li>With this option, you will skip Daffy step 1 (build cluster) as TechZone will build for you (this would fail as you do not have access to create cluster with a TechZone setup)</li>
@@ -1505,9 +1530,8 @@
 <li><strong>BASE_DOMAIN</strong> is not needed in your environment file</li>
 <li><strong>OCP_INSTALL_TYPE</strong> is needed based on provider you pick(aws-ip or azure-ipi).  All other provider info is not needed in your environment file</li>
 </ul>
-</li>
-<li>
-<p>Tech Zone VSphere (<strong>Daffy</strong> builds cluster): <a href="https://techzone.ibm.com/collection/ocp-gymnasium" target="_blank">https://techzone.ibm.com/collection/ocp-gymnasium</a></p>
+<h2 id="tech-zone-vsphere">Tech Zone VSphere<a class="headerlink" href="#tech-zone-vsphere" title="Permanent link">&para;</a></h2>
+<p>(<strong>Daffy</strong> builds cluster): <a href="https://techzone.ibm.com/collection/ocp-gymnasium" target="_blank">https://techzone.ibm.com/collection/ocp-gymnasium</a></p>
 <ul>
 <li>Includes bastion with request</li>
 <li>Once you create the request and the VSPhere environment has been provisioned, it will create your own bastion and give you the instructions on how to use Daffy in that environment with the prebuilt <strong>/data/daffy/env/vmware-ipi-env.sh</strong></li>
@@ -1516,9 +1540,8 @@
 </code></pre></div>
 </li>
 </ul>
-</li>
-<li>
-<p>TechZone Roks (<strong>prebuilt</strong> cluster): <a href="https://techzone.ibm.com/collection/custom-roks-vmware-requests" target="_blank">https://techzone.ibm.com/collection/custom-roks-vmware-requests</a></p>
+<h2 id="techzone-roks">TechZone Roks<a class="headerlink" href="#techzone-roks" title="Permanent link">&para;</a></h2>
+<p>(<strong>prebuilt</strong> cluster): <a href="https://techzone.ibm.com/collection/custom-roks-vmware-requests" target="_blank">https://techzone.ibm.com/collection/custom-roks-vmware-requests</a></p>
 <ul>
 <li>Does <strong>NOT</strong> include bastion with request</li>
 <li>With this option, you will skip Daffy step 1 (build cluster) as TechZone will build for you (this will fail as you do not have access to create cluster with a TechZone setup)</li>
@@ -1532,8 +1555,6 @@
 <li><strong>BASE_DOMAIN</strong> is not needed in your environment file</li>
 <li><strong>OCP_INSTALL_TYPE</strong> is needed based on provider you pick(roks-msp).</li>
 </ul>
-</li>
-</ol>
 <p><button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button></p>
 
               
