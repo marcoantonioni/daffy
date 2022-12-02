@@ -1511,17 +1511,15 @@
 <ul>
 <li>Includes bastion with request</li>
 <li>Once you create the request and the VSPhere environment has been provisioned, it will create your own bastion and give you the instructions on how to use Daffy in that environment with the prebuilt <strong>/data/daffy/env/vmware-ipi-env.sh</strong></li>
+<li>To run daffy, you must be full root, do not just sudo the script (sudo /data/daffy/ocp/build.sh vmware-ipi).
+  Run next command first:<div class="highlight"><pre><span></span><code>  sudo su -
+</code></pre></div>
+</li>
 </ul>
 </li>
-</ol>
-<div class="admonition info">
-<p class="admonition-title">Info<p>To run daffy, you must be full root, do not just sudo the script (sudo /data/daffy/ocp/build.sh vmware-ipi). Run next command first:</p>
-<div class="highlight"><pre><span></span><code>  sudo su -
-</code></pre></div>
-</p>
-</div>
-<ol>
-<li>TechZone Roks (<strong>prebuilt</strong> cluster): <a href="https://techzone.ibm.com/collection/custom-roks-vmware-requests" target="_blank">https://techzone.ibm.com/collection/custom-roks-vmware-requests</a><ul>
+<li>
+<p>TechZone Roks (<strong>prebuilt</strong> cluster): <a href="https://techzone.ibm.com/collection/custom-roks-vmware-requests" target="_blank">https://techzone.ibm.com/collection/custom-roks-vmware-requests</a></p>
+<ul>
 <li>Does <strong>NOT</strong> include bastion with request</li>
 <li>With this option, you will skip Daffy step 1 (build cluster) as TechZone will build for you (this will fail as you do not have access to create cluster with a TechZone setup)</li>
 <li>Once you create the request, you would follow the same steps as ROKS with Daffy</li>
