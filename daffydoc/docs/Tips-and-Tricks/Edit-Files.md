@@ -11,7 +11,7 @@ hide:
 
 Use the arrows on your keyboard to go to location you want to edit, you can not use your mouse.
 
-++esc++    starts all modes and ++esc++  will end all modes.
+++esc++    starts all modes and ++esc++  will end all modes. **The ++esc++ character is your friend!!!!!!**
 
 Modes:
 
@@ -25,11 +25,11 @@ Modes:
 
 Once done, the following will save your file:
 
-++esc++ - ++shift++ - ++colon++ - ++w++ - ++q++ - ++enter++   
+++esc++ - ++colon++ - ++w++ - ++q++ - ++enter++ (lower case w and q)  
 
 If you messed up the file and you want to exit and not save your file:
 
-++esc++ - ++shift++ - ++colon++ - ++q++ - ++exclamation++ - ++enter++    
+++esc++ -  ++colon++ - ++q++ - ++exclamation++ - ++enter++ (lower case q)    
 
 VI Cheat-sheet -
 
