@@ -1,3 +1,27 @@
+## v2022-12-02
+          Tested OpenShift with Current Daffy Release
+              GCP       4.8.51 / 4.10.39
+              AWS       4.8.51 / 4.10.39
+              Azure     4.8.51 / 4.10.39
+              ROKS      4.8.51 / 4.10.39
+              VSphere   4.8.51 / 4.10.39
+              KVM       4.8.51 / 4.10.39
+              IBM IPI            4.10.39
+          Airgap
+              Ability to build local repo on internet facing bastion, Loads openshift catalog into local Repository
+          Cloud Pak for Data
+             Support for 4.6.
+             Added Watson Pipelines (Only supported 4.6.0)
+          Websphere Automation
+             Added support for NFS Storge defaults
+          AppStore
+             Added CP4D Backup and Restore(DR Usecase)
+          TechZone Tiles
+             Cloud Pak for Data
+                   Added support for CP4D 4.6.0
+                   Added Watson Pipelines
+                   Added Watson OpenScale
+                   
 ## v2022-11-10b
           Airgap
               Bug fix for testing internet access when firewall blocks but does not drop connections
