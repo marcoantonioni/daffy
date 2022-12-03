@@ -20,7 +20,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 ## Step 2: Deploy Cloud Pak
 
 Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/  <**ENVIRONMENT_NAME**>-env.sh):
-You need to pick starter services or production services.
+You need to pick starter services and/or production services or RPA service.
 
 | Variable Name                           | Info                                          | Install Type  | Required    |
 | :---------                              |    :---------                                 |   :----       |   :----     |  
