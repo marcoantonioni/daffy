@@ -24,13 +24,14 @@ Deploying the Cloud Pak for Data requires one entry to your environment file (/d
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4D_VERSION="4.5.3"
+CP4D_VERSION="4.6.0"
 ```
 
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
+| 4.6.0     | 4.8, 4.10    |
 | 4.5.3     | 4.8, 4.10    |
 | 4.5.2     | 4.8, 4.10    |
 | 4.5.1     | 4.8, 4.10    |
@@ -70,7 +71,8 @@ Set the flags in your environment file (<**ENVIRONMENT_NAME**>-env.sh) for the C
 | CP4D_ENABLE_SERVICE_DATAPRIVACY | true / false   | Data Privacy |  No    |
 | CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS | true / false   | Cognos Analytics |  No    |
 | CP4D_ENABLE_SERVICE_DB2 | true / false   |  DB2 OLTP | No    |
-
+CP4D_ENABLE_SERVICE_WATSON_OPENSCALE | true / false   |  Watson OpenScale | No    |
+CP4D_ENABLE_SERVICE_WS_PIPELINES| true / false   |  Watson Pipelines | No    |
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
@@ -92,6 +94,8 @@ CP4D_ENABLE_SERVICE_DB2_WAREHOUSE="false"
 CP4D_ENABLE_SERVICE_DATAPRIVACY="false"
 CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS="false"
 CP4D_ENABLE_SERVICE_DB2="false"
+CP4D_ENABLE_SERVICE_WATSON_OPENSCALE="false"
+CP4D_ENABLE_SERVICE_WS_PIPELINES="false"
 ```
 
 Run the following command to deploy the Cloud Pak for Data services:
@@ -163,6 +167,12 @@ If you want to want to see more detail status on an individual service, you can 
 ```
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --DB2Status
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --OpenscaleStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --WSPipelinesStatus
 ```
 ```
 /data/daffy/cp4d/build.sh <ENVIRONMENT_NAME> --Console
