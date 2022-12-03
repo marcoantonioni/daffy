@@ -1523,7 +1523,7 @@
 <p>Deploying the Cloud Pak for Data requires one entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh).</p>
 <p><strong>CP4D_VERSION=</strong></p>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:</p>
-<div class="highlight"><pre><span></span><code><span class="n">CP4D_VERSION</span><span class="o">=</span><span class="s">&quot;4.5.3&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">CP4D_VERSION</span><span class="o">=</span><span class="s">&quot;4.6.0&quot;</span>
 </code></pre></div>
 <p>With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
 <table>
@@ -1534,6 +1534,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;">4.6.0</td>
+<td style="text-align: left;">4.8, 4.10</td>
+</tr>
 <tr>
 <td style="text-align: left;">4.5.3</td>
 <td style="text-align: left;">4.8, 4.10</td>
@@ -1673,6 +1677,18 @@ When this step is complete, approximately after 60 minutes depending on your env
 <td style="text-align: left;">DB2 OLTP</td>
 <td style="text-align: left;">No</td>
 </tr>
+<tr>
+<td style="text-align: left;">CP4D_ENABLE_SERVICE_WATSON_OPENSCALE</td>
+<td style="text-align: left;">true / false</td>
+<td style="text-align: left;">Watson OpenScale</td>
+<td style="text-align: left;">No</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4D_ENABLE_SERVICE_WS_PIPELINES</td>
+<td style="text-align: left;">true / false</td>
+<td style="text-align: left;">Watson Pipelines</td>
+<td style="text-align: left;">No</td>
+</tr>
 </tbody>
 </table>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:</p>
@@ -1693,6 +1709,8 @@ When this step is complete, approximately after 60 minutes depending on your env
 <span class="n">CP4D_ENABLE_SERVICE_DATAPRIVACY</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 <span class="n">CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 <span class="n">CP4D_ENABLE_SERVICE_DB2</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
+<span class="n">CP4D_ENABLE_SERVICE_WATSON_OPENSCALE</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
+<span class="n">CP4D_ENABLE_SERVICE_WS_PIPELINES</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 </code></pre></div>
 <p>Run the following command to deploy the Cloud Pak for Data services:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt;
@@ -1738,6 +1756,10 @@ If you want to want to see more detail status on an individual service, you can 
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --CognosAnalyticsStatus
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --DB2Status
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --OpenscaleStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WSPipelinesStatus
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/build.sh &lt;ENVIRONMENT_NAME&gt; --Console
 </code></pre></div></p>
