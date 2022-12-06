@@ -5,6 +5,8 @@
           Cloud Pak for Data
               Updated default value for CRIO PIDS tunning to 16384
               Bug fix for SPSS and WS - version flag change
+          Misc
+              New logic to install podman on Ubuntu - Issue with opensuse.org cert (Solution from green@techd.com)
 
 ## v2022-12-02
           Tested OpenShift with Current Daffy Release

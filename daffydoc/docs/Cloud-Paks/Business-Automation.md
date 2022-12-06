@@ -20,7 +20,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 ## Step 2: Deploy Cloud Pak
 
 Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/  <**ENVIRONMENT_NAME**>-env.sh):
-You need to pick starter services or production services.
+You need to pick starter services and/or production services or RPA service.
 
 | Variable Name                           | Info                                          | Install Type  | Required    |
 | :---------                              |    :---------                                 |   :----       |   :----     |  
@@ -35,13 +35,11 @@ You need to pick starter services or production services.
 
 ***Valid Options:***
 
-| Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
-| :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF002,IF003       |
-
-| Variable Name                           | Valid Options                                         |
-| :---------                              |    :---------                                         |                      
-| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,samples,all |  
+| Variable Name                           | Valid Options       |
+| :---------                              |    :---------       |  
+| CP4BA_VERSION                           |  22.0.1             |
+| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005      |                
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
 
@@ -62,15 +60,17 @@ You need to pick starter services or production services.
 
 ***Valid Options:***
 
-| Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
-| :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_RPA_SERVER_VERSION                |  21.0.4 or 21.0.5             | CP4BA_RPA_SERVER_IFIX |   N/A                     |
-
+| Variable Name                           | Valid Options       |
+| :---------                              |    :---------       |  
+| CP4BA_RPA_SERVER_VERSION                |  21.0.4 or 21.0.5   |           
+| CP4BA_RPA_SERVER_IFIX                   |   N/A               |
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
+#Core CP4BA Settings
+###################################################
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX=IF004
+CP4BA_IFIX="IF005"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 #Prodution Services
@@ -102,6 +102,7 @@ decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
+docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.1
 all            | All Components(except iccsap)        | 22.0.1
 samples        | Depends on sample        | 22.0.1
 
@@ -139,15 +140,14 @@ Deploying the service does not need any new values to your environment file (<**
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
 | CP4BA_IFIX                              | The fix version of your version support it    |   Both        |   No        |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        |
 ***Valid Options:***
 
-| Variable Name                           | Valid Options       | Variable Name         | Valid Options             |
-| :---------                              |    :---------       |   :----               |   :----                   |
-| CP4BA_VERSION                           |  22.0.1             | CP4BA_IFIX            |   IF002, IF003      |
-
-| Variable Name                           | Valid Options                                         |
-| :---------                              |    :---------                                         |                      
+| Variable Name                           | Valid Options       |
+| :---------                              |    :---------       |  
+| CP4BA_VERSION                           |  22.0.1             |
+| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005      |       
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,all,samples |  
 
 
@@ -193,9 +193,10 @@ CP4BA_ENABLE_SERVICE_OPS        | true or false       | No
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
-
+#Core CP4BA Settings
+###################################################
 CP4BA_VERSION="22.0.1"
-CP4BA_IFIX="IF004"
+CP4BA_IFIX="IF005"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 
@@ -224,6 +225,7 @@ decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
 content        | filenet, cmis, ier, tm, bai        | 22.0.1
 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.1
 workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
+docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.1
 all            | all (except iccsap)       | 22.0.1
 samples        | Depends on sample        | Depends on sample
 
