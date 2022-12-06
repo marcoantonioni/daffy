@@ -1,3 +1,11 @@
+## v2022-12-02a
+          Cloud Pak for Business Automation
+              Added Support for 22.0.1 IF005
+              Added new Service docprocessing(Automation Document Processing - ADP)
+          Cloud Pak for Data
+              Updated default value for CRIO PIDS tunning to 16384
+              Bug fix for SPSS and WS - version flag change
+
 ## v2022-12-02
           Tested OpenShift with Current Daffy Release
               GCP       4.8.51 / 4.10.39
@@ -21,7 +29,7 @@
                    Added support for CP4D 4.6.0
                    Added Watson Pipelines
                    Added Watson OpenScale
-                   
+
 ## v2022-11-10b
           Airgap
               Bug fix for testing internet access when firewall blocks but does not drop connections
@@ -31,7 +39,9 @@
           OpenShift
               Updated versions for CoreOS(VSphere Airgap) and logic to download correct versions   
           WebSpher Automation
-              Bug fix - missing step to prepare input files is service.sh(step 3)          
+              Bug fix - missing step to prepare input files is service.sh(step 3)  
+          AppStore
+              Added new CP4D Backup and Restore(Use case for DR)
 
 ## v2022-11-10a
           Cloud Pak for Data
