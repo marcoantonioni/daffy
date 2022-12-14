@@ -1506,7 +1506,7 @@
 <h2 id="setting-up-the-environment-variables">Setting up the environment variables<a class="headerlink" href="#setting-up-the-environment-variables" title="Permanent link">&para;</a></h2>
 <p>Edit the following environment file with your specific informtion for your cluster and your S3 Bucket.</p>
 <p><strong>Cluster Information</strong></p>
-<div class="highlight"><pre><span></span><code><span class="n">OCP_URL</span><span class="o">=</span><span class="s">&quot;https://api.&lt;clustername&gt;.dojo-demo.net:6443&quot;</span>  <span class="c1"># API URL</span>
+<div class="highlight"><pre><span></span><code><span class="n">OCP_URL</span><span class="o">=</span><span class="s">&quot;https://api.&lt;clustername&gt;.dojo-demo.net:6443&quot;</span>  <span class="c1"># API URL Used for login to your cluster</span>
 <span class="n">OCP_TYPE</span><span class="o">=</span><span class="s">&quot;self-managed&quot;</span>  <span class="c1"># Valid values: aro, roks, rosa, self-managed</span>
 <span class="n">OCP_USERNAME</span><span class="o">=</span><span class="s">&quot;ocpadmin&quot;</span>
 <span class="n">OCP_PASSWORD</span><span class="o">=</span><span class="s">&quot;********&quot;</span>
@@ -1525,12 +1525,14 @@
 <span class="n">OBJECT_STORE_S3_BUCKET_NAME</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div>
 <p><strong>Name Your Backup</strong></p>
+<p>This is the prefix name of your backup files that are stored in the S3 bucket.</p>
 <div class="highlight"><pre><span></span><code><span class="n">OADP_BACKUP_NAME</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div>
 <p><strong>IBM Entitlement Key</strong></p>
 <div class="highlight"><pre><span></span><code><span class="n">IBM_ENTITLEMENT_KEY</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div>
 <p><strong>Cloud Pak for Data Backup Version</strong></p>
+<p>Supported versions are 4.5.x - 4.6.0</p>
 <div class="highlight"><pre><span></span><code><span class="n">CP4DBR_VERSION</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div>
 <h2 id="running-the-tool">Running the tool<a class="headerlink" href="#running-the-tool" title="Permanent link">&para;</a></h2>
