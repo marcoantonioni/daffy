@@ -74,7 +74,7 @@ Edit the following environment file with your specific informtion for your clust
 **Cluster Information**
 
 ```R
-OCP_URL="https://api.<clustername>.dojo-demo.net:6443"  # API URL
+OCP_URL="https://api.<clustername>.dojo-demo.net:6443"  # API URL Used for login to your cluster
 OCP_TYPE="self-managed"  # Valid values: aro, roks, rosa, self-managed
 OCP_USERNAME="ocpadmin"
 OCP_PASSWORD="********"
