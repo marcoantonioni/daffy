@@ -83,10 +83,10 @@ OCP_PASSWORD="********"
 **Project / Namespaces**
 
 ```R
-PROJECT_CPFS_OPS=ibm-common-services
-PROJECT_CPD_OPS=ibm-common-services
-PROJECT_CATSRC=openshift-marketplace
-PROJECT_CPD_INSTANCE=cpd-instance
+PROJECT_CPFS_OPS="ibm-common-services"
+PROJECT_CPD_OPS="ibm-common-services"
+PROJECT_CATSRC="openshift-marketplace"
+PROJECT_CPD_INSTANCE="cpd-instance"
 ```
 
 **Object Store**
