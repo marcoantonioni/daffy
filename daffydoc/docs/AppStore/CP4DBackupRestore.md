@@ -101,6 +101,8 @@ OBJECT_STORE_S3_BUCKET_NAME=""
 
 **Name Your Backup**
 
+This is the prefix name of your backup files that are stored in the S3 bucket.
+
 ```R
 OADP_BACKUP_NAME=""
 ```
@@ -112,6 +114,8 @@ IBM_ENTITLEMENT_KEY=""
 ```
 
 **Cloud Pak for Data Backup Version**
+
+Supported versions are 4.5.x - 4.6.0
 
 ```R
 CP4DBR_VERSION=""
