@@ -6,7 +6,7 @@ hide:
   document.title = "AppStore - CP4D Backup & Restore Utility";
 </script>
 
-<img src='./images/cp4d-backup-restore/CP4D-Backup-Restore-Logo.png'
+<img src='../images/cp4d-backup-restore/CP4D-Backup-Restore-Logo.png'
        style="width:350px;height:225px;"/>
 
 # Info
@@ -16,7 +16,7 @@ It should be noted that there are multiple backup / restore methods. This utilit
 
 **Below is a diagram of what the process looks like**
 
-<img src='./images/cp4d-backup-restore/CP4D-Pic-1.png'/>
+<img src='../images/cp4d-backup-restore/CP4D-Pic-1.png'/>
 
 # Prerequisites:
 
@@ -46,11 +46,11 @@ Installation of OpenShift & Cloud Pak for Data is outside the scope of this util
 
 (read about the Open S3 API [here](https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html)
 
-<img src='./images/cp4d-backup-restore/CP4D-Pic-2.png'/>
+<img src='../images/cp4d-backup-restore/CP4D-Pic-2.png'/>
 
 # Outline of Automated Steps
 
-<img src='./images/cp4d-backup-restore/CP4D-Pic-3.png'/>
+<img src='../images/cp4d-backup-restore/CP4D-Pic-3.png'/>
 
 
 ## Owner/Support
@@ -59,17 +59,17 @@ Slack Channel ***#daffy-user-group***
 [dakrier@us.ibm.com](mailto:dakrier@us.ibm.com?Subject=Daffy AppStore Help)
 
 
-## Install Command 
+## Install Command
 
-Use this command to install the CP4D Backup & Restore utility on the bastion machine. 
-    
+Use this command to install the CP4D Backup & Restore utility on the bastion machine.
+
 ```R
 /data/daffy/appstore.sh --CP4DBackupRestore
 ```
 
 ## Setting up the environment variables
 
-Edit the following environment file with your specific informtion for your cluster and your S3 Bucket. 
+Edit the following environment file with your specific informtion for your cluster and your S3 Bucket.
 
 **Cluster Information**
 
@@ -89,7 +89,7 @@ PROJECT_CATSRC=openshift-marketplace
 PROJECT_CPD_INSTANCE=cpd-instance
 ```
 
-**Object Store** 
+**Object Store**
 
 ```R
 OBJECT_STORE_ACCESS_KEY=""
@@ -120,13 +120,13 @@ CP4DBR_VERSION=""
 
 ## Running the tool
 
-The tool by default will be installed in /data/appstore/cpd-backup-restore. 
+The tool by default will be installed in /data/appstore/cpd-backup-restore.
 
 ```R
 /data/appstore/cpd-backup-restore/run.sh
 ```
 
-The help menu will show you what flags are available to run. 
+The help menu will show you what flags are available to run.
 
 ```R
 Help Menu for CP4D Backup Restore Tool
@@ -139,16 +139,16 @@ Help Menu for CP4D Backup Restore Tool
 
 ## Performing a Backup
 
-You will need to prepare both the Backup Cluster & the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used for the deployment of OpenShift & Cloud Pak for Data on the cluster you wish to take a backup of. 
+You will need to prepare both the Backup Cluster & the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used for the deployment of OpenShift & Cloud Pak for Data on the cluster you wish to take a backup of.
 
 ```R
-/data/appstore/cpd-backup-restore/run.sh --prepareCluster 
+/data/appstore/cpd-backup-restore/run.sh --prepareCluster
 ```
 
-Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup. 
+Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup.
 
 ```R
-/data/appstore/cpd-backup-restore/run.sh --runBackup 
+/data/appstore/cpd-backup-restore/run.sh --runBackup
 ```
 
 **Plase Note: This may take a while. Do not close your session while the script is running.**
@@ -159,14 +159,13 @@ Once you have completed the prepareCluster step and there are no issues, you can
 You will need to prepare both the Backup Cluster & the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used to install OpenShift for the Restore cluster.
 
 ```R
-/data/appstore/cpd-backup-restore/run.sh --prepareCluster 
+/data/appstore/cpd-backup-restore/run.sh --prepareCluster
 ```
 
-Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup. 
+Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup.
 
 ```R
-/data/appstore/cpd-backup-restore/run.sh --runRestore 
+/data/appstore/cpd-backup-restore/run.sh --runRestore
 ```
 
 **Plase Note: This may take a while. Do not close your session while the script is running.**
-
