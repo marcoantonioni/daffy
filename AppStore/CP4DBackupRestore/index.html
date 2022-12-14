@@ -1461,13 +1461,13 @@
   document.title = "AppStore - CP4D Backup & Restore Utility";
 </script>
 
-<p><img src='./images/cp4d-backup-restore/CP4D-Backup-Restore-Logo.png'
+<p><img src='../images/cp4d-backup-restore/CP4D-Backup-Restore-Logo.png'
        style="width:350px;height:225px;"/></p>
 <h1 id="info">Info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h1>
 <p>A Cloud Pak for Data Backup &amp; Restore Utility that automates the steps to take an off-line restic backup and/or perform a full restore to a NEW OpenShift cluster. This utility was created for demonstration puroposes.</p>
 <p>It should be noted that there are multiple backup / restore methods. This utility <strong>ONLY</strong> automates the steps for a <strong>FULL off-line restic</strong> backup and restore to a NEW OpenShift Cluster. Please refer to the <a href="https://www.ibm.com/docs/en/cloud-paks/cp-data/4.6.x?topic=administering-backing-up-restoring-cloud-pak-data">Cloud Pak for Data knowledge center</a> for full details on all the backup / restore methods.</p>
 <p><strong>Below is a diagram of what the process looks like</strong></p>
-<p><img src='./images/cp4d-backup-restore/CP4D-Pic-1.png'/></p>
+<p><img src='../images/cp4d-backup-restore/CP4D-Pic-1.png'/></p>
 <h1 id="prerequisites">Prerequisites:<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h1>
 <ul>
 <li><strong>Bastion Machine</strong> (Pre-loaded with the latest Daffy Scripts)</li>
@@ -1493,18 +1493,18 @@
 </ul>
 <p><strong>If you wish to use IBM Cloud Object Storage, here is some informatino that will help you setup the security for your Object Store.</strong></p>
 <p>(read about the Open S3 API <a href="https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html">here</a></p>
-<p><img src='./images/cp4d-backup-restore/CP4D-Pic-2.png'/></p>
+<p><img src='../images/cp4d-backup-restore/CP4D-Pic-2.png'/></p>
 <h1 id="outline-of-automated-steps">Outline of Automated Steps<a class="headerlink" href="#outline-of-automated-steps" title="Permanent link">&para;</a></h1>
-<p><img src='./images/cp4d-backup-restore/CP4D-Pic-3.png'/></p>
+<p><img src='../images/cp4d-backup-restore/CP4D-Pic-3.png'/></p>
 <h2 id="ownersupport">Owner/Support<a class="headerlink" href="#ownersupport" title="Permanent link">&para;</a></h2>
 <p>Slack Channel <strong><em>#daffy-user-group</em></strong></p>
 <p><a href="mailto:dakrier@us.ibm.com?Subject=Daffy AppStore Help">dakrier@us.ibm.com</a></p>
 <h2 id="install-command">Install Command<a class="headerlink" href="#install-command" title="Permanent link">&para;</a></h2>
-<p>Use this command to install the CP4D Backup &amp; Restore utility on the bastion machine. </p>
+<p>Use this command to install the CP4D Backup &amp; Restore utility on the bastion machine.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">appstore.sh</span> <span class="o">--</span><span class="n">CP4DBackupRestore</span>
 </code></pre></div>
 <h2 id="setting-up-the-environment-variables">Setting up the environment variables<a class="headerlink" href="#setting-up-the-environment-variables" title="Permanent link">&para;</a></h2>
-<p>Edit the following environment file with your specific informtion for your cluster and your S3 Bucket. </p>
+<p>Edit the following environment file with your specific informtion for your cluster and your S3 Bucket.</p>
 <p><strong>Cluster Information</strong></p>
 <div class="highlight"><pre><span></span><code><span class="n">OCP_URL</span><span class="o">=</span><span class="s">&quot;https://api.&lt;clustername&gt;.dojo-demo.net:6443&quot;</span>  <span class="c1"># API URL</span>
 <span class="n">OCP_TYPE</span><span class="o">=</span><span class="s">&quot;self-managed&quot;</span>  <span class="c1"># Valid values: aro, roks, rosa, self-managed</span>
@@ -1517,7 +1517,7 @@
 <span class="n">PROJECT_CATSRC</span><span class="o">=</span><span class="n">openshift</span><span class="o">-</span><span class="n">marketplace</span>
 <span class="n">PROJECT_CPD_INSTANCE</span><span class="o">=</span><span class="n">cpd</span><span class="o">-</span><span class="n">instance</span>
 </code></pre></div>
-<p><strong>Object Store</strong> </p>
+<p><strong>Object Store</strong></p>
 <div class="highlight"><pre><span></span><code><span class="n">OBJECT_STORE_ACCESS_KEY</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 <span class="n">OBJECT_STORE_SECRET_ACCESS_KEY</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 <span class="n">OBJECT_STORE_S3_URL</span><span class="o">=</span><span class="s">&quot;&quot;</span>
@@ -1534,10 +1534,10 @@
 <div class="highlight"><pre><span></span><code><span class="n">CP4DBR_VERSION</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div>
 <h2 id="running-the-tool">Running the tool<a class="headerlink" href="#running-the-tool" title="Permanent link">&para;</a></h2>
-<p>The tool by default will be installed in /data/appstore/cpd-backup-restore. </p>
+<p>The tool by default will be installed in /data/appstore/cpd-backup-restore.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span>
 </code></pre></div>
-<p>The help menu will show you what flags are available to run. </p>
+<p>The help menu will show you what flags are available to run.</p>
 <div class="highlight"><pre><span></span><code><span class="n">Help</span> <span class="n">Menu</span> <span class="n">for</span> <span class="n">CP4D</span> <span class="n">Backup</span> <span class="n">Restore</span> <span class="n">Tool</span>
 <span class="c1">################################################################</span>
 <span class="o">--</span><span class="n">help</span><span class="o">|--?|?|-?|</span><span class="n">help</span><span class="o">|-</span><span class="n">help</span>            <span class="n">This</span> <span class="n">help</span> <span class="n">menu</span>
@@ -1546,19 +1546,19 @@
 <span class="o">--</span><span class="n">runRestore</span>                          <span class="n">Run</span> <span class="n">Restore</span>
 </code></pre></div>
 <h2 id="performing-a-backup">Performing a Backup<a class="headerlink" href="#performing-a-backup" title="Permanent link">&para;</a></h2>
-<p>You will need to prepare both the Backup Cluster &amp; the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used for the deployment of OpenShift &amp; Cloud Pak for Data on the cluster you wish to take a backup of. </p>
-<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">prepareCluster</span> 
+<p>You will need to prepare both the Backup Cluster &amp; the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used for the deployment of OpenShift &amp; Cloud Pak for Data on the cluster you wish to take a backup of.</p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">prepareCluster</span>
 </code></pre></div>
-<p>Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup. </p>
-<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">runBackup</span> 
+<p>Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup.</p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">runBackup</span>
 </code></pre></div>
 <p><strong>Plase Note: This may take a while. Do not close your session while the script is running.</strong></p>
 <h2 id="performing-a-restore">Performing a Restore<a class="headerlink" href="#performing-a-restore" title="Permanent link">&para;</a></h2>
 <p>You will need to prepare both the Backup Cluster &amp; the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used to install OpenShift for the Restore cluster.</p>
-<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">prepareCluster</span> 
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">prepareCluster</span>
 </code></pre></div>
-<p>Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup. </p>
-<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">runRestore</span> 
+<p>Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup.</p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">runRestore</span>
 </code></pre></div>
 <p><strong>Plase Note: This may take a while. Do not close your session while the script is running.</strong></p>
 
