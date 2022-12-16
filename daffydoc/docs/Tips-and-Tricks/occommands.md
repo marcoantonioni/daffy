@@ -47,3 +47,7 @@ Daffy will require your environment file to match your runtime environment. One 
 ```R
 oc get nodes | grep "worker"
 ```
+
+## Other Helpful Sites
+
+[OpenShif Tips Site](https://openshift.tips/oc/)
