@@ -105,6 +105,7 @@ nav:
     - Information: AppStore/info.md
     - IBM Sterling B2B Installer: AppStore/IBMSterlingB2B.md
     - IBM Daffy CLI Configurator: AppStore/IBMDaffyCLIConfigurator.md
+    - IBM CP4D Backup & Restore: AppStore/CP4DBackupRestore.md
   - More:
     - FAQ: More/FAQ/index.md
     - Glossary: More/Glossary.md
