@@ -116,6 +116,13 @@ To show OpenShift Node sizes based on your environment file
 /data/daffy/ocp/build.sh <env_name> --tshirtSize
 ```
 
+## **ODF Existing Cluster**
+If you have existing cluster, you can run the follow command to setup OpenShift Data Foundation on your existing cluster.
+
+```console
+/data/daffy/ocp/build.sh <env_name> --createOpenShiftContainerStorage
+```
+
 ## **Daffy Tools**
 Run the following command to install other tools you might need.
 
