@@ -155,6 +155,10 @@ You are **NOW** ready to begin making the necessary edits to your /data/daffy/en
 If you already have an existing cluster that was not built with Daffy, you can still use daffy for Step 2 and/or Step 3.
 The only extra step you need to do is via the command line on your bastion. You will need to login to your cluster via the **oc login** command. You can get this command from your OpenShift console. You would then move on to the Cloud Pak steps and skip the OpenShift Install.
 
+!!! INFO   
+      Before you start to install OpenShift on the Provider, please look at the OpenShift [Requirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
+
+
 **For Step 6b only**, If you do not have the oc command installed on your bastion, you can use the daffy tools command to installing it for you.
 
 [https://ibm.github.io/daffy/Tips-and-Tricks/Common-Commands/#daffy-tools](https://ibm.github.io/daffy/Tips-and-Tricks/Common-Commands/#daffy-tools){target=_blank}
