@@ -24,7 +24,7 @@ At this point, you have a **bastion** machine where you have installed the Daffy
 - **BASE_DOMAIN** is not needed in your environment file
 - **OCP_INSTALL_TYPE** is needed based on provider you pick(aws-ip or azure-ipi).  All other provider info is not needed in your environment file
 
-## Tech Zone VSphere
+## Tech Zone VSphere Gym
 (**Daffy** builds cluster): [https://techzone.ibm.com/collection/ocp-gymnasium](https://techzone.ibm.com/collection/ocp-gymnasium){target=_blank}
 
 - Includes bastion with request
@@ -34,18 +34,20 @@ At this point, you have a **bastion** machine where you have installed the Daffy
 
           sudo su -
 
-## TechZone Roks
+## TechZone Roks-VSphere
 (**prebuilt** cluster): [https://techzone.ibm.com/collection/custom-roks-vmware-requests](https://techzone.ibm.com/collection/custom-roks-vmware-requests){target=_blank}
 
 - Does **NOT** include bastion with request
+- No need for VPN, public direct access to cluster
+- Comes with IBM Storage for ROKS and ODF with VSphere
 - With this option, you will skip Daffy step 1 (build cluster) as TechZone will build for you (this will fail as you do not have access to create cluster with a TechZone setup)
 - Once you create the request, you would follow the same steps as ROKS with Daffy
 - You still need to have a bastion and core values in your <**ENVIRONMENT_NAME**>-env.sh  
 - Extra settings to change in your environment file:
-      1. **ROKS_PROVIDER=**techzone
+      1. **ROKS_PROVIDER=**techzone #(ROKS only)
       2. **DAFFY_DEPLOYMENT_TYPE=**TechZone
 - **BASE_DOMAIN** is not needed in your environment file
-- **OCP_INSTALL_TYPE** is needed based on provider you pick(roks-msp).
+- **OCP_INSTALL_TYPE** is needed based on provider you pick(roks-msp or vsphere-ipi).
 
 
 <button onclick="location.href='../../Cloud-Paks/'" class="custom-btn btn-7">Installing Cloud Paks</button>
