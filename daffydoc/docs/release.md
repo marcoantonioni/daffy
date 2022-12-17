@@ -20,7 +20,7 @@
           Airgap
               Ability to build local repo on internet facing bastion, Loads openshift catalog into local Repository
           Cloud Pak for Data
-             Support for 4.6.
+             Support for 4.6.0
              Added Watson Pipelines (Only supported 4.6.0)
           Websphere Automation
              Added support for NFS Storge defaults
