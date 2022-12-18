@@ -1595,7 +1595,7 @@ to find a list of regions, you can refer to this:</p>
 <p>For each <strong>GCP</strong> project, you need to enable API access. Within your <strong>GCP</strong> project, you would need to enable each API needed for the OpenShift install. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements">requirements doc</a>, you can search for each API and confirm/enable each API Service.</p>
 <p><img alt="GCP3.png" src="../../images/DeployingOCP/GCP/GCP3.png" /></p>
 <p><strong>Quota:</strong></p>
-<p>For each <strong>GCP</strong> project, you need to enable API access. Within your <strong>GCP</strong> project, you would need to enable each API needed for the OpenShift install. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements" target="_blank">requirements doc</a>, you can search for each API and confirm/enable each API Service.</p>
+<p>For each <strong>GCP</strong> project, you need to enable correct amount of quota to run openshift. Within your <strong>GCP</strong> project, you would need to Verify your current quota. From the <a href="https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements" target="_blank">requirements doc</a>, you can search for each quota to find current limit.</p>
 <ol>
 <li>Search for "Quotas" within your GCP project</li>
 <li>Select the "All Quotas"</li>
@@ -1606,7 +1606,7 @@ to find a list of regions, you can refer to this:</p>
 <p><strong>Once you open the "All Quotas" page, you can search for each quota to see its limits.</strong></p>
 <p><img alt="GCP5.png" src="../../images/DeployingOCP/GCP/GCP5.png" /></p>
 <p><strong>Dedicated public host Zone:</strong></p>
-<p>You will need to create a DZS hosted Zone project.  For the OpenShift install, you need the following:</p>
+<p>You will need to create a DNS hosted Zone project.  For the OpenShift install, you need the following:</p>
 <ol>
 <li>Registered DNS Name <strong>- myexample.com</strong></li>
 <li>GCP DNS Zone        <strong>- myexample-com</strong></li>
