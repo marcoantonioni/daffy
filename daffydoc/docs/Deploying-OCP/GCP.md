@@ -79,7 +79,7 @@ For each **GCP** project, you need to enable API access. Within your **GCP** pro
 
 **Quota:**
 
-For each **GCP** project, you need to enable API access. Within your **GCP** project, you would need to enable each API needed for the OpenShift install. From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements){target=_blank}, you can search for each API and confirm/enable each API Service.
+For each **GCP** project, you need to enable correct amount of quota to run openshift. Within your **GCP** project, you would need to Verify your current quota. From the [requirements doc](https://ibm.ent.box.com/file/888540482997?v=DaffyProviderRequirements){target=_blank}, you can search for each quota to find current limit.
 
 1. Search for "Quotas" within your GCP project
 2. Select the "All Quotas"
@@ -94,7 +94,7 @@ For each **GCP** project, you need to enable API access. Within your **GCP** pro
 
 **Dedicated public host Zone:**
 
-You will need to create a DZS hosted Zone project.  For the OpenShift install, you need the following:
+You will need to create a DNS hosted Zone project.  For the OpenShift install, you need the following:
 
 1. Registered DNS Name **- myexample.com**
 2. GCP DNS Zone        **- myexample-com**
