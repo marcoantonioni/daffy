@@ -399,6 +399,8 @@
         
           
         
+          
+        
       
       
         
@@ -419,6 +421,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Overview/Process/" class="md-nav__link">
+        Process
+      </a>
+    </li>
+  
+
             
           
             
@@ -1445,6 +1461,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tshirt-sizing" class="md-nav__link">
+    TShirt Sizing
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1544,6 +1567,38 @@ considered part of the other worker nodes.</p>
 </tbody>
 </table>
 <div class="highlight"><pre><span></span><code><span class="n">OCP_MASTER_NODES_SCHEDULABLE</span><span class="o">=</span><span class="s">&quot;true&quot;</span>
+</code></pre></div>
+<h2 id="tshirt-sizing">TShirt Sizing<a class="headerlink" href="#tshirt-sizing" title="Permanent link">&para;</a></h2>
+<p>If you want to see what the current TShirt sizing is or what values you can override in your env file, just run the following command. It will show you current values and the names you can override in your file.</p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">daffy</span><span class="o">/</span><span class="n">ocp</span><span class="o">/</span><span class="n">build.sh</span> <span class="o">&lt;</span><span class="n">env_name</span><span class="o">&gt;</span> <span class="o">--</span><span class="n">tshirtSize</span>
+</code></pre></div>
+<p>Example of GCP:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Current</span> <span class="bp">T</span><span class="o">-</span><span class="n">Shirt</span> <span class="n">Sizing</span> <span class="n">Info</span>
+<span class="c1">################################################################</span>
+<span class="n">Setting</span> <span class="n">VM</span> <span class="bp">T</span><span class="o">-</span><span class="n">Shirt</span> <span class="n">Size</span> <span class="n">to</span> <span class="n">Large</span>
+<span class="n">Google</span> <span class="n">Cloud</span> <span class="n">Platform</span><span class="o">:</span>
+<span class="n">Bootstrap</span> <span class="n">Node</span> <span class="n">type</span> <span class="o">=</span> <span class="n">n1</span><span class="o">-</span><span class="n">standard</span><span class="m">-2</span>
+<span class="n">GCP_MACHINE_TYPE_BOOTSTRAP_CPU_LARGE</span><span class="o">=</span><span class="s">&quot;2&quot;</span>
+
+<span class="n">Master</span> <span class="n">Nodes</span><span class="o">:</span>
+<span class="o">--------------------------------------------------</span>
+<span class="n">GCP_MACHINE_TYPE_MASTER_LARGE</span><span class="o">=</span><span class="s">&quot;n1-standard-8&quot;</span>
+<span class="n">VM_NUMBER_OF_MASTERS_LARGE</span><span class="o">=</span><span class="s">&quot;3&quot;</span>
+<span class="n">GCP_MACHINE_TYPE_MASTER_CPU_LARGE</span><span class="o">=</span><span class="s">&quot;8&quot;</span>
+
+<span class="n">Worker</span> <span class="n">Nodes</span><span class="o">:</span>
+<span class="o">--------------------------------------------------</span>
+<span class="n">GCP_MACHINE_TYPE_WORKER_LARGE</span><span class="o">=</span><span class="s">&quot;n1-standard-16&quot;</span>
+<span class="n">VM_NUMBER_OF_WORKERS_LARGE</span><span class="o">=</span><span class="s">&quot;6&quot;</span>
+<span class="n">GCP_MACHINE_TYPE_WORKER_CPU_LARGE</span><span class="o">=</span><span class="s">&quot;16&quot;</span>
+
+<span class="n">OpenShift</span> <span class="n">Storage</span> <span class="n">Cluster</span> <span class="nf">Storage</span><span class="p">(</span><span class="n">Block</span><span class="p">)</span><span class="o">:</span>
+<span class="o">--------------------------------------------------</span>
+<span class="n">VM_WORKER_DISK2_LARGE</span><span class="o">=</span><span class="s">&quot;50G&quot;</span>
+
+<span class="n">OpenShift</span> <span class="n">Storage</span> <span class="n">Cluster</span> <span class="nf">Storage</span><span class="p">(</span><span class="n">Block</span><span class="p">)</span><span class="o">:</span>
+<span class="o">--------------------------------------------------</span>
+<span class="n">VM_WORKER_DISK3_LARGE</span><span class="o">=</span><span class="s">&quot;200G&quot;</span>
 </code></pre></div>
 
               
