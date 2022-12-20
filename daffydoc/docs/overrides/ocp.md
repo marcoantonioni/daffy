@@ -44,3 +44,40 @@ considered part of the other worker nodes.
 ```R
 OCP_MASTER_NODES_SCHEDULABLE="true"
 ```
+## TShirt Sizing
+If you want to see what the current TShirt sizing is or what values you can override in your env file, just run the following command. It will show you current values and the names you can override in your file.
+
+```R
+/data/daffy/ocp/build.sh <env_name> --tshirtSize
+```
+
+Example of GCP:
+
+```R
+Current T-Shirt Sizing Info
+################################################################
+Setting VM T-Shirt Size to Large
+Google Cloud Platform:
+Bootstrap Node type = n1-standard-2
+GCP_MACHINE_TYPE_BOOTSTRAP_CPU_LARGE="2"
+
+Master Nodes:
+--------------------------------------------------
+GCP_MACHINE_TYPE_MASTER_LARGE="n1-standard-8"
+VM_NUMBER_OF_MASTERS_LARGE="3"
+GCP_MACHINE_TYPE_MASTER_CPU_LARGE="8"
+
+Worker Nodes:
+--------------------------------------------------
+GCP_MACHINE_TYPE_WORKER_LARGE="n1-standard-16"
+VM_NUMBER_OF_WORKERS_LARGE="6"
+GCP_MACHINE_TYPE_WORKER_CPU_LARGE="16"
+
+OpenShift Storage Cluster Storage(Block):
+--------------------------------------------------
+VM_WORKER_DISK2_LARGE="50G"
+
+OpenShift Storage Cluster Storage(Block):
+--------------------------------------------------
+VM_WORKER_DISK3_LARGE="200G"
+```

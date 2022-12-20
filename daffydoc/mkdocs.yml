@@ -29,6 +29,7 @@ nav:
   - Home: index.md
   - Overview:
     - Overview/index.md
+    - Process: Overview/Process.md
     - Tools Installed: Overview/Tools-Installed.md
   - Deploying OCP:
     - Deploying-OCP/index.md
