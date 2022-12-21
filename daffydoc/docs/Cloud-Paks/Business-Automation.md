@@ -379,7 +379,7 @@ The details for the next steps will come when you install Step 3 of Daffy for RP
 ??? Info "Screenshot"
     <img src='../../images/cloudpaks/cp4ba/rpaserver/LDAPStep9.jpg'   align="top"  style = "float">
 
-4) Add your RPA user and give Acces to all roles.
+4) Add your RPA user and give Access to all roles.
 
 
 5) Logout of the Cloud Pak dashboard and close your browser.
