@@ -27,10 +27,10 @@ You need to pick starter services and/or production services or RPA service.
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       | | |
 | CP4BA_IFIX                              | The fix version of your version supported     |   Both        |   No        | | |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        | | |
-| CP4BA_DEPLOYMENT_STARTER_DECISIONS      | Decisions in its own namespace                |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING  | Doc Procession in its own namespace           |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_CONTENT        | Content in its own namespace                  |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_WORKFLOW       | Workflow its own namespace                    |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_DECISIONS      | Decisions in its own namespace                |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING  | Doc Procession in its own namespace           |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_CONTENT        | Content in its own namespace                  |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_WORKFLOW       | Workflow its own namespace                    |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        | | |
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        | | |
 | CP4BA_DEPLOYMENT_PRODUCTION_CONTENT     | **true** if you want to deploy content        |   Production  |   No        | | |
@@ -151,10 +151,10 @@ Deploying the service does not need any new values to your environment file (<**
 | :---------                              |    :---------                                 |   :----       |   :----     |  :----             |   :----     |
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       | | |
 | CP4BA_IFIX                              | The fix version of your version support it    |   Both        |   No        | | |
-| CP4BA_DEPLOYMENT_STARTER_DECISIONS      | Decisions in its own namespace                |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING  | Doc Procession in its own namespace           |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_CONTENT        | Content in its own namespace                  |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_WORKFLOW       | Workflow its own namespace                    |   Starter     |   No        | true or false       |  New - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_DECISIONS      | Decisions in its own namespace                |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING  | Doc Procession in its own namespace           |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_CONTENT        | Content in its own namespace                  |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
+| CP4BA_DEPLOYMENT_STARTER_WORKFLOW       | Workflow its own namespace                    |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        | | |
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        | | |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        | | |
