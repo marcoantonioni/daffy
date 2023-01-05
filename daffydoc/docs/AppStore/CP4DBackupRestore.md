@@ -56,7 +56,8 @@ The S3 URL, Region, & Bucket name can be found on the IBM Cloud Object Storage B
 
 <img src='../images/cp4d-backup-restore/CP4D-Pic-3.png'/>
 
-!!! Note These are the steps that will be automated by the scripts. The outline here is simply to outline all the individual steps that are automated by the scirpts.  
+!!! Note 
+	These are the steps that will be automated by the scripts. The outline here is simply to outline all the individual steps that are automated by the scirpts.  
 
 
 ## Owner/Support
@@ -120,7 +121,8 @@ OBJECT_STORE_S3_BUCKET_NAME="cp4d-backup"
 
 This is the prefix name of your backup files that are stored in the S3 bucket.
 
-!!! Note There is a 40 character limit on the name of the backups. Please keep your backup name under 30 characters. The scripts will appended -operators to your backup name.  
+!!! Note 
+	There is a 40 character limit on the name of the backups. Please keep your backup name under 30 characters. The scripts will appended -operators to your backup name.  
 
 ```R
 OADP_BACKUP_NAME=""
@@ -181,7 +183,8 @@ The run script with this flag will execute a CP4D backup. This ONLY needs to be 
 
 The run script with this flag will execute a CP4D restore. This ONLY needs to be executed on the baston that will connect to the OCP cluster your planning to restore to. 
 
-!!! Note You do NOT need to install CP4D before running the restore. The restore process will install CP4D as part of the restore process. 
+!!! Note 
+	You do NOT need to install CP4D before running the restore. The restore process will install CP4D as part of the restore process. 
 
 ## Performing a Backup
 
@@ -214,4 +217,5 @@ Once you have completed the prepareCluster step and there are no issues, you can
 /data/appstore/cpd-backup-restore/run.sh --runRestore
 ```
 
-!!! Note Plase Note: This may take a while. Do not close your session while the script is running.
+!!! Note 
+	Plase Note: This may take a while. Do not close your session while the script is running.
