@@ -1584,8 +1584,8 @@
 <span class="o">--</span><span class="n">runBackup</span>                           <span class="n">Run</span> <span class="n">Backup</span>
 <span class="o">--</span><span class="n">runRestore</span>                          <span class="n">Run</span> <span class="n">Restore</span>
 </code></pre></div>
-<p><strong>--prepareCluster Flag - What does it do?</strong>
-The run script with this flag MUST be run on BOTH the bastion where you will perform the backup from. It will install the necessary tools and deploy the necesary operators to the OCP cluster(s).</p>
+<p><strong>--prepareCluster Flag - What does it do?</strong></p>
+<p>The run script with this flag MUST be run on BOTH the bastion where you will perform the backup from. It will install the necessary tools and deploy the necesary operators to the OCP cluster(s).</p>
 <p>See the picture above that outlines the high level steps. This script will perform steps 2 - 6</p>
 <p><strong>--runBackup Flag - What does it do?</strong></p>
 <p>The run script with this flag will execute a CP4D backup. This ONLY needs to be executed on the baston that will connect to the OCP/CP4D cluster your taking a backup from. </p>
@@ -1602,7 +1602,10 @@ The run script with this flag MUST be run on BOTH the bastion where you will per
 <p>Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">runBackup</span>
 </code></pre></div>
-<p><strong>Plase Note: This may take a while. Do not close your session while the script is running.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This may take a while. Do not close your session while the script is running.**</p>
+</div>
 <h2 id="performing-a-restore">Performing a Restore<a class="headerlink" href="#performing-a-restore" title="Permanent link">&para;</a></h2>
 <p>You will need to prepare both the Backup Cluster &amp; the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used to install OpenShift for the Restore cluster.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">prepareCluster</span>
