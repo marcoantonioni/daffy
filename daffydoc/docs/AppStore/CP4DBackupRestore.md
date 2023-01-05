@@ -171,6 +171,7 @@ Help Menu for CP4D Backup Restore Tool
 ```
 
 **--prepareCluster Flag - What does it do?**
+
 The run script with this flag MUST be run on BOTH the bastion where you will perform the backup from. It will install the necessary tools and deploy the necesary operators to the OCP cluster(s).
 
 See the picture above that outlines the high level steps. This script will perform steps 2 - 6
@@ -200,7 +201,8 @@ Once you have completed the prepareCluster step and there are no issues, you can
 /data/appstore/cpd-backup-restore/run.sh --runBackup
 ```
 
-**Plase Note: This may take a while. Do not close your session while the script is running.**
+!!! Note
+	 This may take a while. Do not close your session while the script is running.**
 
 
 ## Performing a Restore
