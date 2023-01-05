@@ -1512,7 +1512,10 @@
 <p><img src='../images/cp4d-backup-restore/IBM-COS-endpoints.png'/></p>
 <h1 id="outline-of-automated-steps">Outline of Automated Steps<a class="headerlink" href="#outline-of-automated-steps" title="Permanent link">&para;</a></h1>
 <p><img src='../images/cp4d-backup-restore/CP4D-Pic-3.png'/></p>
-<p>!!! Note These are the steps that will be automated by the scripts. The outline here is simply to outline all the individual steps that are automated by the scirpts.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These are the steps that will be automated by the scripts. The outline here is simply to outline all the individual steps that are automated by the scirpts.  </p>
+</div>
 <h2 id="ownersupport">Owner/Support<a class="headerlink" href="#ownersupport" title="Permanent link">&para;</a></h2>
 <p>Slack Channel <strong><em>#daffy-user-group</em></strong></p>
 <p><a href="mailto:dakrier@us.ibm.com?Subject=Daffy AppStore Help">dakrier@us.ibm.com</a></p>
@@ -1551,7 +1554,10 @@
 </code></pre></div>
 <p><strong>Name Your Backup</strong></p>
 <p>This is the prefix name of your backup files that are stored in the S3 bucket.</p>
-<p>!!! Note There is a 40 character limit on the name of the backups. Please keep your backup name under 30 characters. The scripts will appended -operators to your backup name.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There is a 40 character limit on the name of the backups. Please keep your backup name under 30 characters. The scripts will appended -operators to your backup name.  </p>
+</div>
 <div class="highlight"><pre><span></span><code><span class="n">OADP_BACKUP_NAME</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div>
 <p><strong>IBM Entitlement Key</strong></p>
@@ -1585,7 +1591,10 @@ The run script with this flag MUST be run on BOTH the bastion where you will per
 <p>The run script with this flag will execute a CP4D backup. This ONLY needs to be executed on the baston that will connect to the OCP/CP4D cluster your taking a backup from. </p>
 <p><strong>--runRestore Flag - What does it to?</strong></p>
 <p>The run script with this flag will execute a CP4D restore. This ONLY needs to be executed on the baston that will connect to the OCP cluster your planning to restore to. </p>
-<p>!!! Note You do NOT need to install CP4D before running the restore. The restore process will install CP4D as part of the restore process. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You do NOT need to install CP4D before running the restore. The restore process will install CP4D as part of the restore process. </p>
+</div>
 <h2 id="performing-a-backup">Performing a Backup<a class="headerlink" href="#performing-a-backup" title="Permanent link">&para;</a></h2>
 <p>You will need to prepare both the Backup Cluster &amp; the Restore Cluster. Please run the following command to install the required tools and Cloud Pack for Data scripts on the bastion machine used for the deployment of OpenShift &amp; Cloud Pak for Data on the cluster you wish to take a backup of.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">prepareCluster</span>
@@ -1601,7 +1610,10 @@ The run script with this flag MUST be run on BOTH the bastion where you will per
 <p>Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">runRestore</span>
 </code></pre></div>
-<p>!!! Note Plase Note: This may take a while. Do not close your session while the script is running.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Plase Note: This may take a while. Do not close your session while the script is running.</p>
+</div>
 
 
   
