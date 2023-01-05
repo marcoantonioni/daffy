@@ -1542,12 +1542,13 @@
 <span class="n">OBJECT_STORE_S3_REGION</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 <span class="n">OBJECT_STORE_S3_BUCKET_NAME</span><span class="o">=</span><span class="s">&quot;&quot;</span>
 </code></pre></div>
-<p>As an example.. Here is a quick sample. </p>
-<p><code>OBJECT_STORE_ACCESS_KEY="3336567Y4a3941868123456789012345"
-OBJECT_STORE_SECRET_ACCESS_KEY="0aa235c11a4fe72795ceb61q2w3e4r56f123456789012345"
-OBJECT_STORE_S3_URL="https://s3.us-east.cloud-object-storage.appdomain.cloud"
-OBJECT_STORE_S3_REGION="us-east"
-OBJECT_STORE_S3_BUCKET_NAME="cp4d-backup"</code></p>
+<p><strong>As an example.. Here is a sample. </strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">OBJECT_STORE_ACCESS_KEY</span><span class="o">=</span><span class="s">&quot;3336567Y4a3941868123456789012345&quot;</span>
+<span class="n">OBJECT_STORE_SECRET_ACCESS_KEY</span><span class="o">=</span><span class="s">&quot;0aa235c11a4fe72795ceb61q2w3e4r56f123456789012345&quot;</span>
+<span class="n">OBJECT_STORE_S3_URL</span><span class="o">=</span><span class="s">&quot;https://s3.us-east.cloud-object-storage.appdomain.cloud&quot;</span>
+<span class="n">OBJECT_STORE_S3_REGION</span><span class="o">=</span><span class="s">&quot;us-east&quot;</span>
+<span class="n">OBJECT_STORE_S3_BUCKET_NAME</span><span class="o">=</span><span class="s">&quot;cp4d-backup&quot;</span>
+</code></pre></div>
 <p><strong>Name Your Backup</strong></p>
 <p>This is the prefix name of your backup files that are stored in the S3 bucket.</p>
 <p>!!! Note There is a 40 character limit on the name of the backups. Please keep your backup name under 30 characters. The scripts will appended -operators to your backup name.  </p>
@@ -1577,12 +1578,12 @@ OBJECT_STORE_S3_BUCKET_NAME="cp4d-backup"</code></p>
 <span class="o">--</span><span class="n">runBackup</span>                           <span class="n">Run</span> <span class="n">Backup</span>
 <span class="o">--</span><span class="n">runRestore</span>                          <span class="n">Run</span> <span class="n">Restore</span>
 </code></pre></div>
-<h3 id="-preparecluster-flag-what-does-it-do">--prepareCluster Flag - What does it do?<a class="headerlink" href="#-preparecluster-flag-what-does-it-do" title="Permanent link">&para;</a></h3>
-<p>The run script with this flag MUST be run on BOTH the bastion where you will perform the backup from. It will install the necessary tools and deploy the necesary operators to the OCP cluster(s).</p>
+<p><strong>--prepareCluster Flag - What does it do?</strong>
+The run script with this flag MUST be run on BOTH the bastion where you will perform the backup from. It will install the necessary tools and deploy the necesary operators to the OCP cluster(s).</p>
 <p>See the picture above that outlines the high level steps. This script will perform steps 2 - 6</p>
-<h3 id="-runbackup-flag-what-does-it-do">--runBackup Flag - What does it do?<a class="headerlink" href="#-runbackup-flag-what-does-it-do" title="Permanent link">&para;</a></h3>
+<p><strong>--runBackup Flag - What does it do?</strong></p>
 <p>The run script with this flag will execute a CP4D backup. This ONLY needs to be executed on the baston that will connect to the OCP/CP4D cluster your taking a backup from. </p>
-<h3 id="-runrestore-flag-what-does-it-to">--runRestore Flag - What does it to?<a class="headerlink" href="#-runrestore-flag-what-does-it-to" title="Permanent link">&para;</a></h3>
+<p><strong>--runRestore Flag - What does it to?</strong></p>
 <p>The run script with this flag will execute a CP4D restore. This ONLY needs to be executed on the baston that will connect to the OCP cluster your planning to restore to. </p>
 <p>!!! Note You do NOT need to install CP4D before running the restore. The restore process will install CP4D as part of the restore process. </p>
 <h2 id="performing-a-backup">Performing a Backup<a class="headerlink" href="#performing-a-backup" title="Permanent link">&para;</a></h2>
@@ -1600,7 +1601,7 @@ OBJECT_STORE_S3_BUCKET_NAME="cp4d-backup"</code></p>
 <p>Once you have completed the prepareCluster step and there are no issues, you can proceed to taking a CP4D Backup.</p>
 <div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">appstore</span><span class="o">/</span><span class="n">cpd</span><span class="o">-</span><span class="n">backup</span><span class="o">-</span><span class="n">restore</span><span class="o">/</span><span class="n">run.sh</span> <span class="o">--</span><span class="n">runRestore</span>
 </code></pre></div>
-<p><strong>Plase Note: This may take a while. Do not close your session while the script is running.</strong></p>
+<p>!!! Note Plase Note: This may take a while. Do not close your session while the script is running.</p>
 
 
   
