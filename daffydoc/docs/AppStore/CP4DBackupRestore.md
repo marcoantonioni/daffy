@@ -48,9 +48,15 @@ Installation of OpenShift & Cloud Pak for Data is outside the scope of this util
 
 <img src='../images/cp4d-backup-restore/CP4D-Pic-2.png'/>
 
+The S3 URL, Region, & Bucket name can be found on the IBM Cloud Object Storage Bucket information page. Selecting the bucket and displaying the configuration tab will show you the endpoints. See image below.
+
+<img src='../images/cp4d-backup-restore/IBM-COS-endpoints.png'/>
+
 # Outline of Automated Steps
 
 <img src='../images/cp4d-backup-restore/CP4D-Pic-3.png'/>
+
+!!! Note These are the steps that will be automated by the scripts. The outline here is simply to outline all the individual steps that are automated by the scirpts.  
 
 
 ## Owner/Support
@@ -87,6 +93,7 @@ PROJECT_CPFS_OPS="ibm-common-services"
 PROJECT_CPD_OPS="ibm-common-services"
 PROJECT_CATSRC="openshift-marketplace"
 PROJECT_CPD_INSTANCE="cpd-instance"
+FOUNDATION_NAMESPACE="ibm-common-services"
 ```
 
 **Object Store**
@@ -99,9 +106,19 @@ OBJECT_STORE_S3_REGION=""
 OBJECT_STORE_S3_BUCKET_NAME=""
 ```
 
+As an example.. Here is a quick sample. 
+
+`OBJECT_STORE_ACCESS_KEY="3336567Y4a3941868123456789012345"
+OBJECT_STORE_SECRET_ACCESS_KEY="0aa235c11a4fe72795ceb61q2w3e4r56f123456789012345"
+OBJECT_STORE_S3_URL="https://s3.us-east.cloud-object-storage.appdomain.cloud"
+OBJECT_STORE_S3_REGION="us-east"
+OBJECT_STORE_S3_BUCKET_NAME="cp4d-backup"`
+
 **Name Your Backup**
 
 This is the prefix name of your backup files that are stored in the S3 bucket.
+
+!!! Note There is a 40 character limit on the name of the backups. Please keep your backup name under 30 characters. The scripts will appended -operators to your backup name.  
 
 ```R
 OADP_BACKUP_NAME=""
@@ -124,15 +141,23 @@ CP4DBR_VERSION=""
 
 ## Running the tool
 
-The tool by default will be installed in /data/appstore/cpd-backup-restore.
+The CP4D Backup & Recovery scripts will be cloned to the following directory 
+
+```R
+/data/appstore/cpd-backup-restore
+```
+
+!!! Note This should not be confused with the appstore install scripts in the **/data/daffy/appstore/cp4d-backup-restore** directory,  which are used to clone the backup and recovery scripts to your bastion. The appstore directory should not be modified!!
 
 ```R
 /data/appstore/cpd-backup-restore/run.sh
 ```
 
-The help menu will show you what flags are available to run.
+The **--help** menu will show you what flags are available to run.
 
 ```R
+/data/appstore/cpd-backup-restore/run.sh --help
+
 Help Menu for CP4D Backup Restore Tool
 ################################################################
 --help|--?|?|-?|help|-help            This help menu
@@ -140,6 +165,22 @@ Help Menu for CP4D Backup Restore Tool
 --runBackup                           Run Backup
 --runRestore                          Run Restore
 ```
+
+###--prepareCluster Flag - What does it do?
+
+The run script with this flag MUST be run on BOTH the bastion where you will perform the backup from. It will install the necessary tools and deploy the necesary operators to the OCP cluster(s).
+
+See the picture above that outlines the high level steps. This script will perform steps 2 - 6
+
+###--runBackup Flag - What does it do?
+
+The run script with this flag will execute a CP4D backup. This ONLY needs to be executed on the baston that will connect to the OCP/CP4D cluster your taking a backup from. 
+
+###--runRestore Flag - What does it to?
+
+The run script with this flag will execute a CP4D restore. This ONLY needs to be executed on the baston that will connect to the OCP cluster your planning to restore to. 
+
+!!! Note You do NOT need to install CP4D before running the restore. The restore process will install CP4D as part of the restore process. 
 
 ## Performing a Backup
 
