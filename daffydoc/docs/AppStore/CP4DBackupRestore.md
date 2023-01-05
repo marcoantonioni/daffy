@@ -106,13 +106,15 @@ OBJECT_STORE_S3_REGION=""
 OBJECT_STORE_S3_BUCKET_NAME=""
 ```
 
-As an example.. Here is a quick sample. 
+**As an example.. Here is a sample. **
 
-`OBJECT_STORE_ACCESS_KEY="3336567Y4a3941868123456789012345"
+```R
+OBJECT_STORE_ACCESS_KEY="3336567Y4a3941868123456789012345"
 OBJECT_STORE_SECRET_ACCESS_KEY="0aa235c11a4fe72795ceb61q2w3e4r56f123456789012345"
 OBJECT_STORE_S3_URL="https://s3.us-east.cloud-object-storage.appdomain.cloud"
 OBJECT_STORE_S3_REGION="us-east"
-OBJECT_STORE_S3_BUCKET_NAME="cp4d-backup"`
+OBJECT_STORE_S3_BUCKET_NAME="cp4d-backup"
+```
 
 **Name Your Backup**
 
@@ -166,17 +168,16 @@ Help Menu for CP4D Backup Restore Tool
 --runRestore                          Run Restore
 ```
 
-###--prepareCluster Flag - What does it do?
-
+**--prepareCluster Flag - What does it do?**
 The run script with this flag MUST be run on BOTH the bastion where you will perform the backup from. It will install the necessary tools and deploy the necesary operators to the OCP cluster(s).
 
 See the picture above that outlines the high level steps. This script will perform steps 2 - 6
 
-###--runBackup Flag - What does it do?
+**--runBackup Flag - What does it do?**
 
 The run script with this flag will execute a CP4D backup. This ONLY needs to be executed on the baston that will connect to the OCP/CP4D cluster your taking a backup from. 
 
-###--runRestore Flag - What does it to?
+**--runRestore Flag - What does it to?**
 
 The run script with this flag will execute a CP4D restore. This ONLY needs to be executed on the baston that will connect to the OCP cluster your planning to restore to. 
 
@@ -213,4 +214,4 @@ Once you have completed the prepareCluster step and there are no issues, you can
 /data/appstore/cpd-backup-restore/run.sh --runRestore
 ```
 
-**Plase Note: This may take a while. Do not close your session while the script is running.**
+!!! Note Plase Note: This may take a while. Do not close your session while the script is running.
