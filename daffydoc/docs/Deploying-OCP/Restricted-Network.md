@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 <script>
-  document.title = "Deploy OCP - Restricted Network";
+  document.title = "Deploy OCP - Restricted Network or Air-Gap";
 </script>
 <!-- CSS FOR SLIDESHOW -->
 ## Slide Show
