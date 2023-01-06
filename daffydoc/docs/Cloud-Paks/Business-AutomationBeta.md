@@ -22,19 +22,15 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 Deploying the Cloud Pak for Business Automation only requires two entries to your environment file (/data/daffy/env/  <**ENVIRONMENT_NAME**>-env.sh):
 You need to pick starter services and/or production services or RPA service.
 
-| Variable Name                           | Info                                          | Install Type  | Required    |   Valid Options    |   Notes    |
-| :---------                              |    :---------                                 |   :----       |   :----     |  :----             |   :----     |
-| CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       | | |
-| CP4BA_IFIX                              | The fix version of your version supported     |   Both        |   No        | | |
-| CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        | | |
-| CP4BA_DEPLOYMENT_STARTER_DECISIONS      | Decisions in its own namespace                |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING  | Doc Procession in its own namespace           |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_CONTENT        | Content in its own namespace                  |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_WORKFLOW       | Workflow its own namespace                    |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        | | |
-| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        | | |
-| CP4BA_DEPLOYMENT_PRODUCTION_CONTENT     | **true** if you want to deploy content        |   Production  |   No        | | |
-| CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW    | **true** if you want to deploy workflow       |   Production  |   No        | | |
+| Variable Name                           | Info                                          | Install Type  | Required    |
+| :---------                              |    :---------                                 |   :----       |   :----     |
+| CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
+| CP4BA_IFIX                              | The fix version of your version supported     |   Both        |   No        |
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
+| CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_CONTENT     | **true** if you want to deploy content        |   Production  |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW    | **true** if you want to deploy workflow       |   Production  |   No        |
 
 
 ***Valid Options:***
@@ -74,12 +70,8 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 #Core CP4BA Settings
 ###################################################
 CP4BA_VERSION="22.0.2"
-#CP4BA_IFIX="IF005"
+#CP4BA_IFIX="IF001"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
-CP4BA_DEPLOYMENT_STARTER_DECISIONS="false"
-CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING="false"
-CP4BA_DEPLOYMENT_STARTER_CONTENT="false"
-CP4BA_DEPLOYMENT_STARTER_WORKFLOW="false"
 
 #Prodution Services
 ###################################################
@@ -147,17 +139,13 @@ When this step is complete, approximately after 10 minutes depending on your env
 
 Deploying the service does not need any new values to your environment file (<**ENVIRONMENT_NAME**>-env.sh>). It will use the same values during the Cloud Pak deployment.
 
-| Variable Name                           | Info                                          | Install Type  | Required    |   Valid Options    |   Notes    |
-| :---------                              |    :---------                                 |   :----       |   :----     |  :----             |   :----     |
-| CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       | | |
-| CP4BA_IFIX                              | The fix version of your version support it    |   Both        |   No        | | |
-| CP4BA_DEPLOYMENT_STARTER_DECISIONS      | Decisions in its own namespace                |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING  | Doc Procession in its own namespace           |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_CONTENT        | Content in its own namespace                  |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_WORKFLOW       | Workflow its own namespace                    |   Starter     |   No        | true or false       |  **New** - allows multiple Starter Services |
-| CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        | | |
-| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        | | |
-| CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        | | |
+| Variable Name                           | Info                                          | Install Type  | Required    |
+| :---------                              |    :---------                                 |   :----       |   :----     |
+| CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
+| CP4BA_IFIX                              | The fix version of your version support it    |   Both        |   No        |
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS   | **true** if you want to deploy decisions      |   Production  |   No        |
+| CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | The name of sample yaml you want to deploy    |   Starter     |   No        |
 ***Valid Options:***
 
 | Variable Name                           | Valid Options       |
@@ -214,10 +202,6 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 CP4BA_VERSION="22.0.21"
 #CP4BA_IFIX="IF005"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
-CP4BA_DEPLOYMENT_STARTER_DECISIONS="false"
-CP4BA_DEPLOYMENT_STARTER_DOCPROCESSING="false"
-CP4BA_DEPLOYMENT_STARTER_CONTENT="false"
-CP4BA_DEPLOYMENT_STARTER_WORKFLOW="false"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 
 #Open Prediction Service HUB
