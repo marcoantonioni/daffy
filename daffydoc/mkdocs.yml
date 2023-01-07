@@ -147,7 +147,7 @@ extra_css:
     - css/extra.css
     - css/code.css
     - css/button.css
-copyright: Copyright &copy; 2021 - 2022 IBM Black Belt Team
+copyright: Copyright &copy; 2021 - 2023 IBM Black Belt Team
 extra:
   social:
     - icon: fontawesome/solid/paper-plane
