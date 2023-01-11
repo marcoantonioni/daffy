@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v2022-12-02a" class="md-skip">
+        <a href="#v2023-01-11" class="md-skip">
           Skip to content
         </a>
       
@@ -1457,6 +1457,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v2023-01-11" class="md-nav__link">
+    v2023-01-11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v2022-12-02a" class="md-nav__link">
     v2022-12-02a
   </a>
@@ -1633,6 +1640,41 @@
 
   <h1>Release</h1>
 
+<h2 id="v2023-01-11">v2023-01-11<a class="headerlink" href="#v2023-01-11" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>      Tested OpenShift with Current Daffy Release
+          GCP       4.8.51 / 4.10.36
+          AWS       4.8.51 / 4.10.36
+          Azure     4.8.51 / 4.10.36
+          ROKS      4.8.51 / 4.10.43
+          VSphere   4.8.51 / 4.10.36
+          KVM       4.8.51 / 4.10.36
+          IBM IPI            4.10.36
+          ROSA               4.10.36
+          *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+      Cloud Pak for Integration
+          Added Support for 2022.4.1
+      WebSphere Automation
+          Added Support for 1.5
+      Cloud Pak for Business Automation
+          Added Support for 22.0.2
+      Cloud Pak for Watson AIOPS
+          Added support for 3.5.1
+          Added support for 3.6.0
+          Removed support for all 3.3.x versions
+      OpenShift
+          Support for AWS Rosa(Install OCP and Cloud Paks)
+          Support for EFS for storage(will setup EFS Storage on AWS/ROSA) -Build Cluster and CP4I and CP4BA support
+            Create EFS Provider and Setup in Cluster
+          Bug fix - Proxy install on RHEL, convert NO_PROXY to lower case no_proxy. Lower case works on both Ubuntu and RHEL
+      VSphere
+          New Flag to skip building vsphere folders. If large VSphere network, the checking of folders can take a long time (10 min)  Default : VSPHERE_CREATE_FOLDERS=&quot;true&quot;
+          Support for full path of Network Path VSPHERE_NETWORK1=&quot;itzna-itz-wdc04-private/itz-550005mqws-arcqrk30-segment&quot;
+      AirGap
+          Support for OCP 4.9 and 4.10 and ODF(Support from dwakeman@us.ibm.com)
+      OpenShift Data Foundation(ODF)
+          Changed core logic for ODF to build new machine sets for Infra Storage nodes Separate from standard worker machine sets
+               aws-ipi, vsphere-ipi, azure-ipi, ibm-ipi
+</code></pre></div>
 <h2 id="v2022-12-02a">v2022-12-02a<a class="headerlink" href="#v2022-12-02a" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>      Cloud Pak for Business Automation
           Added Support for 22.0.1 IF005
