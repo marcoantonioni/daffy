@@ -23,7 +23,7 @@ Deploying the Cloud Pak for Business Automation only requires two entries to you
 You need to pick starter services and/or production services or RPA service.
 
 | Variable Name                           | Info                                          | Install Type  | Required    |
-| :---------                              |    :---------                                 |   :----       |   :----     |  
+| :---------                              |    :---------                                 |   :----       |   :----     |
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
 | CP4BA_IFIX                              | The fix version of your version supported     |   Both        |   No        |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
@@ -37,9 +37,9 @@ You need to pick starter services and/or production services or RPA service.
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  22.0.1             |
-| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005      |                
-| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,docprocessing,samples,all |  
+| CP4BA_VERSION                           |  22.0.2 or 22.0.1   |
+| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005 (only for 22.0.1)     |                
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
 
@@ -69,8 +69,8 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 #Core CP4BA Settings
 ###################################################
-CP4BA_VERSION="22.0.1"
-CP4BA_IFIX="IF005"
+CP4BA_VERSION="22.0.2"
+#CP4BA_IFIX="IF001"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 #Prodution Services
@@ -98,13 +98,13 @@ CP4BA_RPA_SERVER_VERSION="21.0.5"
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
-content        | filenet, cmis, ier, tm, bai        | 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.1
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
-docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.1
-all            | All Components(except iccsap)        | 22.0.1
-samples        | Depends on sample        | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        |  22.0.2 or 22.0.1
+content        | filenet, cmis, ier, tm, bai        | 22.0.2 or 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.2 or 22.0.1
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 or 22.0.1
+docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2 or 22.0.1
+all            | All Components(except iccsap)        | 22.0.2 or 22.0.1
+samples        | Depends on sample        | 22.0.2 or 22.0.1
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -115,6 +115,10 @@ Run the following command to deploy the Cloud Pak for Business Automation:
 When this step is complete, approximately after 10 minutes depending on your environment, you will have the Cloud Pak running. These are just the core Cloud Pak operators, no service is running at this point. The cluster is now ready to deploy the service.  At this stage, the cluster consists of IBM Foundation Services and the Cloud Pak for Business Automation operators in the following projects based on selection above:
 
 - cp4ba-starter
+- cp4ba-starter-decisions
+- cp4ba-starter-docprocessing
+- cp4ba-starter-content
+- cp4ba-starter-workflow
 - cp4ba-content
 - cp4ba-decisions
 - cp4ba-workflow
@@ -136,7 +140,7 @@ When this step is complete, approximately after 10 minutes depending on your env
 Deploying the service does not need any new values to your environment file (<**ENVIRONMENT_NAME**>-env.sh>). It will use the same values during the Cloud Pak deployment.
 
 | Variable Name                           | Info                                          | Install Type  | Required    |
-| :---------                              |    :---------                                 |   :----       |   :----     |  
+| :---------                              |    :---------                                 |   :----       |   :----     |
 | CP4BA_VERSION                           | The version you want to install               |   Both        |   Yes       |
 | CP4BA_IFIX                              | The fix version of your version support it    |   Both        |   No        |
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        | The name of the service you want to deploy    |   Starter     |   No        |
@@ -146,9 +150,9 @@ Deploying the service does not need any new values to your environment file (<**
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  22.0.1             |
-| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005      |       
-| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,content-decisions,workflow,all,samples |  
+| CP4BA_VERSION                           |  22.0.2 or 22.0.1             |
+| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005(only 22.0.1)      |       
+| CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,all,samples |  
 
 
 Instead of using the included services, you can also deploy your own sample.
@@ -195,8 +199,8 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 #Core CP4BA Settings
 ###################################################
-CP4BA_VERSION="22.0.1"
-CP4BA_IFIX="IF005"
+CP4BA_VERSION="22.0.21"
+#CP4BA_IFIX="IF005"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 
@@ -221,12 +225,12 @@ CP4BA_RPA_SERVER_IFIX=""
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        | 22.0.1
-content        | filenet, cmis, ier, tm, bai        | 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.1
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.1
-docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.1
-all            | all (except iccsap)       | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        | 22.0.2 or 22.0.1
+content        | filenet, cmis, ier, tm, bai        | 22.0.2 or 22.0.1
+content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.2 or 22.0.1
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 or 22.0.1
+docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2 or 22.0.1
+all            | all (except iccsap)       | 22.0.2 or 22.0.1
 samples        | Depends on sample        | Depends on sample
 
 
@@ -240,7 +244,7 @@ Be aware, this step is async, meaning that the Daffy engine will deploy the serv
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai         | 22.0.1
+decisions        | odm, ads, bastudio, aae, bai         | 22.0.2 or 22.0.1
 
 
 ##### Decisions Production
@@ -258,7 +262,7 @@ To deploy a **Decisions Production Pattern**, you have to have a db2 database an
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_DB    | Do you want to deploy Decisions DB2 Database locally?         |    No               |   true or false  |
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_BUILD_LDAP  | Do you want to deploy Decisions LDAP locally?                 |    No               |   true or false  |
 | CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER | DNS Name or IP address for your IDS LDAP Server?              |    No               |  DNS or IP address  |
-| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME | DNS Name or IP address for your DB2 Server |    No               |  DNS or IP address  |
+| CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_DC_ODM_DATABASE_SERVERNAME | DNS Name or IP address for your DB2 Server     |    No               |  DNS or IP address  |
 
 
 ```R
@@ -304,6 +308,14 @@ The following command will give you the status of all ***starter*** components f
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
 ```
+
+If you want to show just one status of ***starter*** service that you deployed for example CP4BA_DEPLOYMENT_STARTER_DECISIONS:
+
+```
+/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus decisions
+```
+
+
 The following command will give you the status of all ***Production*** components for the service you deployed:
 
 
@@ -327,6 +339,12 @@ To find out the connection info to your new ***starter*** services, you can run 
 
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole
+```
+
+If you want to show just one console of ***starter*** service that you deployed for example CP4BA_DEPLOYMENT_STARTER_DECISIONS:
+
+```
+/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole decisions
 ```
 
 To find out the connection info to your new ***Production*** services, you can run the console flag to get user names, passwords, and URLs to connect to:
