@@ -35,7 +35,7 @@ Deploying the Cloud Pak for Watson AIOps only requires **one** entry to your env
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4WAIOPS_VERSION="3.5.0"
+CP4WAIOPS_VERSION="3.6.0"
 ```
 
 With this one value, the Daffy engine will be able to install the version of Cloud Pak for Watson AI Ops and the Platform Navigator. Along with the base cloud pak components, the AI Manager will be installed.
