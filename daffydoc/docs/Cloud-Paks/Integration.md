@@ -25,7 +25,7 @@ Deploying the Cloud Pak for Integration only requires one entry to your environm
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4I_VERSION="2022.2.1"
+CP4I_VERSION="2022.4.1"
 ```
 
 With this one value, the Daffy engine will be able to install the version of Cloud Pak for Integration and the Platform Navigator.
