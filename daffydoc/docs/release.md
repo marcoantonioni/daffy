@@ -31,7 +31,7 @@
               Support for OCP 4.9 and 4.10 and ODF(Support from dwakeman@us.ibm.com)
           OpenShift Data Foundation(ODF)
               Changed core logic for ODF to build new machine sets for Infra Storage nodes Separate from standard worker machine sets
-                   aws-ipi, vsphere-ipi, azure-ipi, ibm-ipi
+                   aws-ipi, vsphere-ipi, azure-ipi, ibm-ipi, gcp-ipi
 
 ## v2022-12-02a
           Cloud Pak for Business Automation
