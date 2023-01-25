@@ -22,7 +22,7 @@ Go to the following site to size your OpenShift cluster to meet your software ne
 Log into your Bastion Machine (as root) and run the following command to download the latest Daffy Scripts:
 
 ```console
-wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 777 daffy-init.sh;./daffy-init.sh
+wget http://get.daffy-installer.com/download-scripts/daffy-init.sh; chmod 755 daffy-init.sh;./daffy-init.sh
 
 ```
 **Optional:** You may choose to use the Daffy Web Configurator or Daffy CLI Configurator! The purpose of these tools are to help you build your environment file
