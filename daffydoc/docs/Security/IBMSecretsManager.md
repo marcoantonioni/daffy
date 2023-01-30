@@ -5,7 +5,7 @@ hide:
 <script>
   document.title = "IBM Cloud Secrets Manager";
 </script>
-
+#IBM Cloud Secrets Manager
 ## Assumptions
 
 With IBM Cloud Secrets Manager, you can create, lease, and centrally manage secrets that are used in IBM Cloud services or your custom-built applications. Secrets are stored in a dedicated instance of Secrets Manager, built on open source HashiCorp Vault.
