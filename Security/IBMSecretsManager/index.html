@@ -1393,8 +1393,109 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    Assumptions
+  </a>
+  
+    <nav class="md-nav" aria-label="Assumptions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#find-your-values" class="md-nav__link">
+    Find Your Values
+  </a>
+  
+    <nav class="md-nav" aria-label="Find Your Values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cert-api-key" class="md-nav__link">
+    Cert API Key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service-api-url" class="md-nav__link">
+    Service API Url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cert-id-ingress-api" class="md-nav__link">
+    Cert ID Ingress API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cert-id-ingress-apps" class="md-nav__link">
+    Cert ID Ingress APPS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution" class="md-nav__link">
+    Execution
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cluster-install-time" class="md-nav__link">
+    Cluster Install Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-cluster-install" class="md-nav__link">
+    Post Cluster Install
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-links" class="md-nav__link">
+    Useful Links
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1408,17 +1509,113 @@
                 
 
 
+  <h1>IBMSecretsManager</h1>
+
 <script>
   document.title = "IBM Cloud Secrets Manager";
 </script>
 
-<h1 id="assumptions">Assumptions<a class="headerlink" href="#assumptions" title="Permanent link">&para;</a></h1>
-<h1 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h1>
-<h1 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h1>
-<h2 id="cluster-install-time">Cluster Install Time<a class="headerlink" href="#cluster-install-time" title="Permanent link">&para;</a></h2>
-<h2 id="post-cluster-install">Post Cluster Install<a class="headerlink" href="#post-cluster-install" title="Permanent link">&para;</a></h2>
-<h1 id="useful-links">Useful Links<a class="headerlink" href="#useful-links" title="Permanent link">&para;</a></h1>
+<h2 id="assumptions">Assumptions<a class="headerlink" href="#assumptions" title="Permanent link">&para;</a></h2>
+<p>With IBM Cloud Secrets Manager, you can create, lease, and centrally manage secrets that are used in IBM Cloud services or your custom-built applications. Secrets are stored in a dedicated instance of Secrets Manager, built on open source HashiCorp Vault.</p>
+<p>For daffy to be able to download your certs from IBM Secrets Manager, we just need a few variables.  Below are the variables you will need and how to obtain them from the <a href="https://cloud.ibm.com/" target="_blank">IBM Cloud Web Portal IBM </a>.</p>
+<p><strong><em>The process can only be used for the OpenShift Ingress certs today. Daffy does not support any other cert process.</em></strong></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>We will not show you how to setup IBM Secrets Manager, Cert Authority or request your certs. Please follow the standard IBM Doc listed in the useful links below.</p>
+<h3 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Info</th>
+<th style="text-align: left;">Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">IBM_SECRET_CERT_API_KEY</td>
+<td style="text-align: left;">The API key that can access your Secrets</td>
+<td style="text-align: left;">Yes(Will Prompt at runtime if the other three are present)</td>
+</tr>
+<tr>
+<td style="text-align: left;">IBM_SECRET_SERVICE_API_URL</td>
+<td style="text-align: left;">The host name for your Secret Service</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">IBM_SECRET_CERT_ID_INGRESS_API</td>
+<td style="text-align: left;">The ID for your API Cert</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+<tr>
+<td style="text-align: left;">IBM_SECRET_CERT_ID_INGRESS_APPS</td>
+<td style="text-align: left;">The ID for your APPS Cert</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="find-your-values">Find Your Values<a class="headerlink" href="#find-your-values" title="Permanent link">&para;</a></h3>
+<h4 id="cert-api-key">Cert API Key<a class="headerlink" href="#cert-api-key" title="Permanent link">&para;</a></h4>
+<p><Font color=blue>IBM_SECRET_CERT_API_KEY</Font></p>
+<p>In your IBM Cloud account, you need to create/use an API key that has authority to access your secrets.</p>
 <ul>
+<li><a href="https://cloud.ibm.com/iam/apikeys" target="_blank">IBM Cloud API Keys</a></li>
+</ul>
+<details class="info">
+<summary>Create Key</summary>
+<p><img src='../../images/security/ibmsecretsmanager/ibmSecretCertApiKey1.jpg'   align="top"  style = "float"></p>
+</details>
+<h4 id="service-api-url">Service API Url<a class="headerlink" href="#service-api-url" title="Permanent link">&para;</a></h4>
+<p><Font color=blue>IBM_SECRET_SERVICE_API_URL</Font></p>
+<p>This is the Service API Url for your Secretes Manger Instance</p>
+<details class="info">
+<summary>Get Service URL</summary>
+<p><img src='../../images/security/ibmsecretsmanager/ibmSecretServiceAPIURL.jpg'   align="top"  style = "float"></p>
+</details>
+<h4 id="cert-id-ingress-api">Cert ID Ingress API<a class="headerlink" href="#cert-id-ingress-api" title="Permanent link">&para;</a></h4>
+<p><Font color=blue>IBM_SECRET_CERT_ID_INGRESS_API</Font></p>
+<p>Each Cert you create has a unique ID, we will use that ID to download the cert via the command line.</p>
+<details class="info">
+<summary>Secret (Cert) Show Details</summary>
+<p><img src='../../images/security/ibmsecretsmanager/ibmSecretCertIDIngressAPI1.jpg'   align="top"  style = "float"></p>
+</details>
+<details class="info">
+<summary>Secret (Cert) ID</summary>
+<p><img src='../../images/security/ibmsecretsmanager/ibmSecretCertIDIngressAPI2.jpg'   align="top"  style = "float"></p>
+</details>
+<h4 id="cert-id-ingress-apps">Cert ID Ingress APPS<a class="headerlink" href="#cert-id-ingress-apps" title="Permanent link">&para;</a></h4>
+<p><Font color=blue>IBM_SECRET_CERT_ID_INGRESS_APPS</Font></p>
+<p>Each Cert you create has a unique ID, we will use that ID to download the cert via the command line.</p>
+<details class="info">
+<summary>Secret (Cert) Show Details</summary>
+<p><img src='../../images/security/ibmsecretsmanager/ibmSecretCertIDIngressAPPS1.jpg'   align="top"  style = "float"></p>
+</details>
+<details class="info">
+<summary>Secret (Cert) ID</summary>
+<p><img src='../../images/security/ibmsecretsmanager/ibmSecretCertIDIngressAPPS2.jpg'   align="top"  style = "float"></p>
+</details>
+<p><B><Font color=red>There is one import fact about the apps cert.  It needs to be a wild card certs</Font></B>  </p>
+<p>*.apps.${CLUSTER_NAME}.${BASE_DOMAIN}</p>
+<details class="info">
+<summary>Apps Cert Common Name</summary>
+<p><img src='../../images/security/ibmsecretsmanager/AppsCertCommonName.jpg'   align="top"  style = "float"></p>
+</details>
+<h2 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h2>
+<h3 id="cluster-install-time">Cluster Install Time<a class="headerlink" href="#cluster-install-time" title="Permanent link">&para;</a></h3>
+<p>If you have your required Environment variables in your file, during the cluster install, it will pick them up and download the certs to the correct location.</p>
+<p><B>/data/daffy/certs/${CLUSTER_NAME}</B></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If you are missing any of the variables, the cluster install process will continue and not download your certs, no errors or warnings. You can run as post cluster install step.</p>
+</div>
+<h3 id="post-cluster-install">Post Cluster Install<a class="headerlink" href="#post-cluster-install" title="Permanent link">&para;</a></h3>
+<p>If you already have a cluster up and running, you can run the build.sh post flag to install download your certs.  Because this is explicit call to download certs, it will precheck to see all of your variables are there.  If not it will give you error and not continue.</p>
+<div class="highlight"><pre><span></span><code>/data/daffy/ocp/build.sh &lt;ENVIRONMENT_NAME&gt; --downloadIBMCloudIngressCerts
+</code></pre></div>
+<h2 id="useful-links">Useful Links<a class="headerlink" href="#useful-links" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://cloud.ibm.com/docs/secrets-manager?topic=secrets-manager-getting-started&amp;mhsrc=ibmsearch_a&amp;mhq=Secrets+Manager" target="_blank">Getting started with Secrets Manager</a></li>
 <li><a href="https://cloud.ibm.com/docs/secrets-manager?topic=secrets-manager-cli-plugin-secrets-manager-cli" target="_blank">IBM Cloud Secrets Manger cli</a></li>
 </ul>
 
