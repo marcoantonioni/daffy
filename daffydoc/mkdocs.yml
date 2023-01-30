@@ -84,6 +84,10 @@ nav:
   #      - DB2: overrides/software/db2.md
   #      - LDAP: overrides/software/ldap.md
   #      - Turbonomics: overrides/software/turbonomics.md
+  #- Security:
+  #  - Security/index.md
+  #  - IBM Cloud Secrets Manager: Security/IBMSecretsManager.md
+  #  - SSL Certificates: Security/SSLCertificates.md
   - Tips & Tricks:
     - Common Issues: Tips-and-Tricks/Common-Issues.md
     - Common Commands: Tips-and-Tricks/Common-Commands.md
