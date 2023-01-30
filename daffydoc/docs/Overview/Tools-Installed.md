@@ -124,6 +124,10 @@ Throughout the Daffy process, it will install all support tools it would need. D
         <td>nfs-common</td>
         <td>NFS Option only </td>
       </tr>
+      <tr>
+        <td>openssl</td>
+        <td>always </td>
+      </tr>      
     </table>
   </div>
   <div class="column">Cloud CLI
