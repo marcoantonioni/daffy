@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 <script>
-  document.title = "Security";
+  document.title = "Security - BETA";
 </script>
 #Security
 

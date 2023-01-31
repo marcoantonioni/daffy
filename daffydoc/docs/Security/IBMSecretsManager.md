@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 <script>
-  document.title = "IBM Cloud Secrets Manager";
+  document.title = "IBM Cloud Secrets Manager - BETA";
 </script>
 #IBM Cloud Secrets Manager
 ## Assumptions

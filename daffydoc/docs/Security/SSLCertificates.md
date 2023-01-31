@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 <script>
-  document.title = "SSL Certificates";
+  document.title = "SSL Certificates - BETA";
 </script>
 #SSL Certificates
 
