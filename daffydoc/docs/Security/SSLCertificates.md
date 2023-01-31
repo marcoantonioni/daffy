@@ -5,7 +5,7 @@ hide:
 <script>
   document.title = "SSL Certificates - BETA";
 </script>
-#SSL Certificates
+#SSL Certificates - BETA
 
 ## Ingress Certificates
 The Ingress Operator makes it possible for external clients to access your service by deploying and managing one or more HAProxy-based Ingress Controllers to handle routing. You can use the Ingress Operator to route traffic by specifying OpenShift Container Platform Route and Kubernetes Ingress resources. Configurations within the Ingress Controller, such as the ability to define endpointPublishingStrategy type and internal load balancing, provide ways to publish Ingress Controller endpoints.

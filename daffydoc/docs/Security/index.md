@@ -5,7 +5,7 @@ hide:
 <script>
   document.title = "Security - BETA";
 </script>
-#Security
+#Security - BETA
 
 <html>
 <body>
