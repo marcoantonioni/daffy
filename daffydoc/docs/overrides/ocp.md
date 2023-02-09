@@ -10,7 +10,7 @@ To override the default number of workers, just add the value you want to build 
 | Variable Name               |  Install Type           |  Default Value | Valid Options  |
 | :---------                  |  :----                  |  :----         |  :----         |  
 | VM_NUMBER_OF_WORKERS_MIN    | VM_TSHIRT_SIZE="<font color=red>**Min**</font>"    |  3             |  any Number    |
-| VM_NUMBER_OF_WORKERS_LARGE  | VM_TSHIRT_SIZE="<font color=red>**Large**</font>"  |  6             |  any Number    |
+| VM_NUMBER_OF_WORKERS_LARGE  | VM_TSHIRT_SIZE="<font color=red>**Large**</font>"  |  3(+3 if ODF true)             |  any Number    |
 
 ```R
 #VM_NUMBER_OF_WORKERS_MIN="4"
