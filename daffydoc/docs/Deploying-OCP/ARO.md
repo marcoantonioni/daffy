@@ -3,11 +3,11 @@ hide:
   - footer
 ---
 <script>
-  document.title = "Deploy OCP - Azure";
+  document.title = "Deploy OCP - Azure ARO";
 </script>
 
 #Azure Install
-<img src='../images/Azure-Logo-1024x752.jpeg'   align="top" width="200"  height="300" style = "float">
+<img src='../images/aro.png'   align="top" width="200"  height="300" style = "float">
 
 At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh and can execute the install of OCP on Azure.
 
@@ -21,6 +21,8 @@ To use Daffy on **Azure**, there are some platform info and requirements that ne
 
 **Quota** - The ability to add new workload to that platform
 
+
+**Base Domain Resource Group Name"
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
 [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
@@ -29,52 +31,56 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 
 To install Daffy on Azure, the hardest part can be finding the provider details.
 
+
+| Variable Name                           | Info                                          | Required    |
+| :---------                              |    :---------                                 |   :----     |
+| AZURE_REGION                            | What region you want to deploy to             |   Yes       |
+| AZURE_SUBSCRIPTION_ID                   | The fix version of your version supported     |   Yes       |
+| AZURE_CLIENT_ID                         | The name of the service you want to deploy    |   Yes       |
+| AZURE_TENANT_ID                         | The name of sample yaml you want to deploy    |   Yes       |
+
+
+
 [Subscription ID](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription ){target=_blank}
 ??? Info "Screenshot"
     <img src='../../Deploying-OCP/images/azure/AccountDetails-Subscriptions1.png'   align="top"  style = "float">
     ??? Info "Screenshot"
 
+[Client ID](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription ){target=_blank}
+    ??? Info "Screenshot"
+        <img src='../../Deploying-OCP/images/azure/AccountDetails-Subscriptions1.png'   align="top"  style = "float">
+        ??? Info "Screenshot"
+
+[Tenant ID](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription ){target=_blank}
 ??? Info "Screenshot"
-    <img src='../../Deploying-OCP/images/azure/AccountDetails-Subscriptions2.png'   align="top"  style = "float">
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-Subscriptions1.png'   align="top"  style = "float">
+    ??? Info "Screenshot"
 
-Client ID:Details coming soon !!!
+[Region](https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?products=openshift&regions=all ){target=_blank}
 
-Client Secret:Details coming soon !!!
+[Quota](https://learn.microsoft.com/en-us/azure/networking/check-usage-against-limits){target=_blank}
+    ??? Info "Screenshot"
+        <img src='../../Deploying-OCP/images/azure/AccountDetails-Subscriptions1.png'   align="top"  style = "float">
+        ??? Info "Screenshot"
 
-Tenant ID:Details coming soon !!!
 
-Base Domain Resource Group Name:Details coming soon !!!
 
-Region:Details coming soon !!!
-
-Quota:Details coming soon !!!
 
 **Permission:**
 
 Within your Azure project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements), make sure your service account has the correct permissions.
 
-**Dedicated public host Zone:**
-
-You will need to create a DNS Zone within a new/existing resource group.  For the OpenShift install, you need the following:
-
-1. Registered DNS Name - **myexample.com**
-2. Azure DNS Zone              - **myexample-com**
-3. Transfer the domain to **Azure** Name services listed in your new **Azure** DNS Zone
-
-## Setting up DNS
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/V8biZjrHfOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Environment File
 
 Deploying the OpenShift on Azure only requires three entries to your **existing** core environment file (<**ENVIRONMENT_NAME**>-env.sh) plus a local service account file.
 
 !!! Note
-    You can look in the samples directory on your bastion for example of Azure install : /data/daffy/env/samples/**azure-ipi-env.sh**
+    You can look in the samples directory on your bastion for example of Azure install : /data/daffy/env/samples/**azro-msp-env.sh**
 
 You can copy the sample file to build your new environment  file:
 ```R
-cp /data/daffy/env/samples/azure-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env.sh
+cp /data/daffy/env/samples/aro-msp-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-env.sh
 ```
 
 

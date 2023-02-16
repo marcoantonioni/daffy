@@ -12,10 +12,9 @@ With IBM Cloud Secrets Manager, you can create, lease, and centrally manage secr
 
 For daffy to be able to download your certs from IBM Secrets Manager, we just need a few variables.  Below are the variables you will need and how to obtain them from the [IBM Cloud Web Portal IBM ](https://cloud.ibm.com/){target=_blank}.
 
-***The process can only be used for the OpenShift Ingress certs today. Daffy does not support any other cert process.***
 
 !!! INFO
- We will not show you how to setup IBM Secrets Manager, Cert Authority or request your certs. Please follow the standard IBM Doc listed in the useful links below.
+    We will not show you how to setup IBM Secrets Manager, Cert Authority or request your certs. Please follow the standard IBM Doc listed in the useful links below.
 
 
 
@@ -77,7 +76,7 @@ Each Cert you create has a unique ID, we will use that ID to download the cert v
     <img src='../../images/security/ibmsecretsmanager/ibmSecretCertIDIngressAPPS2.jpg'   align="top"  style = "float">
 
 
-<B><Font color=red>There is one import fact about the apps cert.  It needs to be a wild card certs</Font></B>  
+<B><Font color=red>There is one important fact about the apps cert.  It needs to be a wild card certs</Font></B>  
 
 *.apps.${CLUSTER_NAME}.${BASE_DOMAIN}
 ??? Info "Apps Cert Common Name"

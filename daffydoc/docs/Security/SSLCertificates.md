@@ -67,11 +67,65 @@ If you already have a cluster up and running, you can run the build.sh post flag
 
 
 ```shell
-/data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --updateIngress
+/data/daffy/ocp/build.sh <ENVIRONMENT_NAME> --updateIngressCerts
 ```
+
+
+## CP4BA
+
+There are two main ingress access points for CP4BA.
+
+  - cp-console(icp-management-ingress)
+  - cpd(ibm-nginx-svc).
+
+By default, these are setup with self-signed certs. If you want to replace them with trusted certs from any major CA, this process will allow that.
+
+
+For ingress there is a base urls.  
+
+  - *.apps.${CLUSTER_NAME}.${BASE_DOMAIN}
+
+
+### Assumptions
+1.  Must have valid Certificate in PEM format
+2.  Must have private key from the cert
+3.  Must have trust chain cert form the CA that issued the cert
+4.  The apps Ingress cert must have wild card Common Name  *.apps.${CLUSTER_NAME}.${BASE_DOMAIN}
+
+
+### Location of certs
+1. <B><Font color=blue>CP4BA ingress</Font></B>
+
+    When the daffy process runs, it will look in the certs folder for your certs.  If it finds all three certs, it will apply them to the cluster.
+
+    /data/daffy/certs/${CLUSTER_NAME}/<B><Font color=red>apps</Font></B>.${CLUSTER_NAME}.${BASE_DOMAIN}**.crt**
+
+    /data/daffy/certs/${CLUSTER_NAME}/<B><Font color=red>apps</Font></B>.${CLUSTER_NAME}.${BASE_DOMAIN}**.key**
+
+    /data/daffy/certs/${CLUSTER_NAME}/${OCP_TRUSTE_CA_FILE}**.pem**
+
+
+### Environment variables
+| Variable Name           | Info                                          | Default value       | Required    |
+| :---------              |    :---------                                 |   :----             |   :----     |
+| OCP_TRUSTE_CA_NAME      | The display name of your CA Cert in OpenShift |   lets-encrypt      |   No       |
+| OCP_TRUSTE_CA_FILE      | The file name of your CA Cert                 |   lets-encrypt.pem  |   No       |
+
+### Execution
+
+#### Post CP4BA Install Time
+For you to run this, the cloud pak must be up and running.  This process can only updated existing pods and secrets.
+
+
+```shell
+/data/daffy/cp4ba/build.sh <ENVIRONMENT_NAME> --updateIngressCerts
+```
+
 
 
 ## Useful Links
 - [PEM Certificate](https://aboutssl.org/what-is-pem-certificate-file/){target=_blank}
 - [OpenShift Ingress Api](https://docs.openshift.com/container-platform/4.10/security/certificates/api-server.html){target=_blank}
 - [OpenShift Ingress Apps](https://docs.openshift.com/container-platform/4.10/security/certificates/replacing-default-ingress-certificate.html){target=_blank}
+- [Common Services Ingress](https://www.ibm.com/docs/en/cloud-paks/cp-integration/2022.4?topic=certificates-creating-custom-hostname){target=_blank}
+- [CP4BA Services Ingress](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=security-customizing-cloud-pak-entry-point){target=_blank}
