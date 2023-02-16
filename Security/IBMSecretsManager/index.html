@@ -1518,11 +1518,10 @@
 <h2 id="assumptions">Assumptions<a class="headerlink" href="#assumptions" title="Permanent link">&para;</a></h2>
 <p>With IBM Cloud Secrets Manager, you can create, lease, and centrally manage secrets that are used in IBM Cloud services or your custom-built applications. Secrets are stored in a dedicated instance of Secrets Manager, built on open source HashiCorp Vault.</p>
 <p>For daffy to be able to download your certs from IBM Secrets Manager, we just need a few variables.  Below are the variables you will need and how to obtain them from the <a href="https://cloud.ibm.com/" target="_blank">IBM Cloud Web Portal IBM </a>.</p>
-<p><strong><em>The process can only be used for the OpenShift Ingress certs today. Daffy does not support any other cert process.</em></strong></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-</div>
 <p>We will not show you how to setup IBM Secrets Manager, Cert Authority or request your certs. Please follow the standard IBM Doc listed in the useful links below.</p>
+</div>
 <h3 id="environment-variables">Environment variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
@@ -1595,7 +1594,7 @@
 <summary>Secret (Cert) ID</summary>
 <p><img src='../../images/security/ibmsecretsmanager/ibmSecretCertIDIngressAPPS2.jpg'   align="top"  style = "float"></p>
 </details>
-<p><B><Font color=red>There is one import fact about the apps cert.  It needs to be a wild card certs</Font></B>  </p>
+<p><B><Font color=red>There is one important fact about the apps cert.  It needs to be a wild card certs</Font></B>  </p>
 <p>*.apps.${CLUSTER_NAME}.${BASE_DOMAIN}</p>
 <details class="info">
 <summary>Apps Cert Common Name</summary>
