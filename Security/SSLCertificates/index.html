@@ -1403,11 +1403,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ingress-certificates" class="md-nav__link">
-    Ingress Certificates
+  <a href="#cluster-ingress-certificates" class="md-nav__link">
+    Cluster Ingress Certificates
   </a>
   
-    <nav class="md-nav" aria-label="Ingress Certificates">
+    <nav class="md-nav" aria-label="Cluster Ingress Certificates">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1548,7 +1548,7 @@
   document.title = "SSL Certificates - BETA";
 </script>
 <h1 id="ssl-certificates-beta">SSL Certificates - BETA<a class="headerlink" href="#ssl-certificates-beta" title="Permanent link">&para;</a></h1>
-<h2 id="ingress-certificates">Ingress Certificates<a class="headerlink" href="#ingress-certificates" title="Permanent link">&para;</a></h2>
+<h2 id="cluster-ingress-certificates">Cluster Ingress Certificates<a class="headerlink" href="#cluster-ingress-certificates" title="Permanent link">&para;</a></h2>
 <p>The Ingress Operator makes it possible for external clients to access your service by deploying and managing one or more HAProxy-based Ingress Controllers to handle routing. You can use the Ingress Operator to route traffic by specifying OpenShift Container Platform Route and Kubernetes Ingress resources. Configurations within the Ingress Controller, such as the ability to define endpointPublishingStrategy type and internal load balancing, provide ways to publish Ingress Controller endpoints.</p>
 <p>By default Openshift will create self-signed, untrusted certs in the cluster.  But if you want to install a trusted cert from a Trusted Certificate Authority(CA), this will allow you to do that.  Daffy supports any valid cert from any Certificate Authority(CA), public or private.  Just needs to be in the PEM format.</p>
 <p>For ingress there are two major urls.  </p>
