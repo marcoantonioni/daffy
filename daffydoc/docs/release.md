@@ -1,3 +1,54 @@
+## v2023-03-09
+          Tested OpenShift with Current Daffy Release
+              GCP                4.10.36/4.12.2(OCP Only)
+              AWS                4.10.36/4.12.2(OCP Only)
+              Azure              4.10.36/4.12.2(OCP Only)
+              ROKS               4.10.47/4.12.3(OCP Only)
+              VSphere            4.10.36/4.12.2(OCP Only)
+              KVM                4.10.36/4.12.2(OCP Only)
+              IBM IPI            4.10.36/4.12.2(OCP Only)
+              ROSA               4.10.36/4.12.1(OCP Only)
+              ARO                4.10.40
+              *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+          Turbonomic
+              Added Support 8.7.0 & 8.7.5
+              Added Support for KubeTurbo to OCP Build
+                 Must have TURBO_KUBE_MONITORING=true in the env file along with the KubeTurbo necessary vars
+          Airgap
+              Added new option to mirror OpenShift Catalog as stand only command line flag
+          Instana
+              Added support for Instana agent to be used in all Cloud Paks (must have an instana download key)
+                INSTANA_MONITORING="true"
+          Cloud Pak for Business Automation
+              Added Support for 22.0.2 IF001 and IF001
+              Added bring your own SSL certificates to CP4BA(cp-console and cpd)
+                  Download SSL certificates from IBM Secrets Manager(Optionally)
+              Removed Support for OPS(Open Prediction Service)              
+          Cloud Pak for Integration
+              Added bring your own SSL certificates to CP4I
+              Added support for Event Endpoint Management by default when deploying API Connect
+              Support for cluster logging and monitoring
+          Cloud Pak for Data
+              Support for 4.6.1,4.6.2 and 4.6.3
+              Support for new service AI FactSheets
+			  Support for new service Data Replication
+			  Added flags for Manta with WKC
+          OpenShift
+              Support for Azure ARO Cluster install
+                  Cloud Paks Supported - CP4BA, CP4I and WSA
+              Support for Ingress Certs install *.apps and api URLs. If stored in /data/daffy/certs/${CLUSTER_NAME}
+              Support for OpenShift 4.12
+                   IBM,AWS,Azure,GCP,KVM,VSphere,Rosa,ROKS
+              AWS Added support during cleanup to remove S3 Buckets that were part of cluster (Default this is off AWS_S3_CLEANUP_CLUSTER_BUCKETS_ON_DESTROY=false)
+              IBM IPI added improvements to cluster cleanup(Retry logic and improved timing and geting IBM Cloud support to fix their backend)
+          IBM
+              Support to download Certs from IBM Cloud Secrets Manager and stored in /data/daffy/certs/${CLUSTER_NAME}
+          Db2
+              Added new precheck for running as root user
+          Misc
+              Added cleanup logic to remove older log files.  Default is 30 days.  LOG_DIR_RETENTION=30
+              Blink messages that are long, will now show a count down to how much longer it will wait for certain functions plus total time
+              
 ## v2023-01-11
           Tested OpenShift with Current Daffy Release
               GCP       4.8.51 / 4.10.36

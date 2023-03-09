@@ -38,7 +38,7 @@ You need to pick starter services and/or production services or RPA service.
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
 | CP4BA_VERSION                           |  22.0.2 or 22.0.1   |
-| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005 (only for 22.0.1)     |                
+| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005 (only for 22.0.1)  IF001 (only for 22.0.2 only)    |                
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
@@ -151,7 +151,7 @@ Deploying the service does not need any new values to your environment file (<**
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
 | CP4BA_VERSION                           |  22.0.2 or 22.0.1             |
-| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005(only 22.0.1)      |       
+| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005(only 22.0.1) IF001 (only for 22.0.2 only)      |       
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,all,samples |  
 
 
