@@ -37,8 +37,8 @@ You need to pick starter services and/or production services or RPA service.
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  22.0.2 or 22.0.1   |
-| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005 (only for 22.0.1)  IF001 (only for 22.0.2 only)    |                
+| CP4BA_VERSION                           |  22.0.2             |
+| CP4BA_IFIX                              |  IF001, IF002       |                
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
@@ -70,7 +70,7 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 #Core CP4BA Settings
 ###################################################
 CP4BA_VERSION="22.0.2"
-#CP4BA_IFIX="IF001"
+CP4BA_IFIX="IF002"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 #Prodution Services
@@ -98,13 +98,12 @@ CP4BA_RPA_SERVER_VERSION="21.0.5"
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        |  22.0.2 or 22.0.1
-content        | filenet, cmis, ier, tm, bai        | 22.0.2 or 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.2 or 22.0.1
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 or 22.0.1
-docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2 or 22.0.1
-all            | All Components(except iccsap)        | 22.0.2 or 22.0.1
-samples        | Depends on sample        | 22.0.2 or 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        |  22.0.2 
+content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.2 
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 
+docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2
+all            | All Components(except iccsap)        | 22.0.2 
+samples        | Depends on sample        | 22.0.2
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -150,8 +149,8 @@ Deploying the service does not need any new values to your environment file (<**
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  22.0.2 or 22.0.1             |
-| CP4BA_IFIX                              |  IF002, IF003, IF004 and IF005(only 22.0.1) IF001 (only for 22.0.2 only)      |       
+| CP4BA_VERSION                           |  22.0.2             |
+| CP4BA_IFIX                              |  IF001, IF002       |       
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,all,samples |  
 
 
@@ -169,15 +168,6 @@ CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE | see list below       | No
      cd /data/daffy/cp4ba/templates/services/samples  
 
 To use samples, you would have to build your own CR yaml and store in the above directory and you would give the name of the sample.
-
-### OPS HUB
-
-If  you want to deploy Open Prediction Service HUB (OPS), you can set this flag to setup it up in your cluster.
-
-Variable | Valid Option | Required
-:----------- |:-------------| -----------
-CP4BA_ENABLE_SERVICE_OPS        | true or false       | No
-
 
 ### RPA Server
 
@@ -199,14 +189,10 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 #Core CP4BA Settings
 ###################################################
-CP4BA_VERSION="22.0.21"
-#CP4BA_IFIX="IF005"
+CP4BA_VERSION="22.0.2"
+CP4BA_IFIX="IF001"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
-
-#Open Prediction Service HUB
-############################################
-CP4BA_ENABLE_SERVICE_OPS="false"
 
 #RPA Server
 ############################################
@@ -225,12 +211,11 @@ CP4BA_RPA_SERVER_IFIX=""
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        | 22.0.2 or 22.0.1
-content        | filenet, cmis, ier, tm, bai        | 22.0.2 or 22.0.1
-content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.2 or 22.0.1
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 or 22.0.1
-docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2 or 22.0.1
-all            | all (except iccsap)       | 22.0.2 or 22.0.1
+decisions        | odm, ads, bastudio, aae, bai        | 22.0.2 
+content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.2 
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 
+docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2 
+all            | all (except iccsap)       | 22.0.2 
 samples        | Depends on sample        | Depends on sample
 
 
@@ -244,7 +229,7 @@ Be aware, this step is async, meaning that the Daffy engine will deploy the serv
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai         | 22.0.2 or 22.0.1
+decisions        | odm, ads, bastudio, aae, bai         | 22.0.2
 
 
 ##### Decisions Production
@@ -429,7 +414,7 @@ Run the following command to Import and Map your LDAP groups to Zen roles
 After you installed Decisions Services, you need to install and connect Rule Designer to your new instance. For the next steps, any information you need from your environment you should be able to collect from the service.sh --console  command output of Daffy.
 
 !!! important
-	Original Instructions can be found [here](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.1?topic=manager-installing-rule-designer){target=_blank}
+	Original Instructions can be found [here](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=manager-installing-rule-designer){target=_blank}
 
 
 1) Download and install Eclipse. [Download Eclipse](https://www.eclipse.org/downloads/packages/release/2020-06/r){target=_blank}
