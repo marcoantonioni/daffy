@@ -45,8 +45,6 @@ WebSphere Automation Small Profile (consists of):
 | WSA Supported Version    | OCP Versions |
 | :---      |    :----     |  
 | 1.4    | 4.10   |
-| 1.3    |  4.8   |
-| 1.2     | 4.8   |
 
 Run the following command to deploy WebSphere Automation:
 

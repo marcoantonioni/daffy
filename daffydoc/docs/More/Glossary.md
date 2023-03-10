@@ -85,7 +85,7 @@ The Ingress Operator makes it possible for external clients to access your servi
 
 - In a nutshell, it allows external access to your cluster and all the running pods/services/applications. Its basically an inbound router for your OpenShift Cluster.
 
-[Ingress Operator](https://docs.openshift.com/container-platform/4.8/networking/ingress-operator.html){target=_blank}
+[Ingress Operator](https://docs.openshift.com/container-platform/4.10/networking/ingress-operator.html){target=_blank}
 
 
 ## Install Type IPI

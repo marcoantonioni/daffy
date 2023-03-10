@@ -31,11 +31,10 @@ With these values, the Daffy engine will be able to install the version of Cloud
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
-| 4.6.0     | 4.8, 4.10    |
-| 4.5.3     | 4.8, 4.10    |
-| 4.5.2     | 4.8, 4.10    |
-| 4.5.1     | 4.8, 4.10    |
-| 4.5.0     | 4.8, 4.10    |
+| 4.6.3     | 4.10    |
+| 4.6.2     | 4.10    |
+| 4.6.1     | 4.10    |
+| 4.6.0     | 4.10    |
 
 Run the following command to deploy the Cloud Pak for Data:
 

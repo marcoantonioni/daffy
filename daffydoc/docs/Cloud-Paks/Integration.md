@@ -38,7 +38,6 @@ platform navigator
 | :---      |    :----    |  
 | 2022.4.1     | 4.10     |
 | 2022.2.1     | 4.10     |
-| 2021.4.1     | 4.8      |
 
 **Run the following command** to deploy the Cloud Pak for Integration:
 

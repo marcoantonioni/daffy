@@ -197,10 +197,6 @@ Throughout the Daffy process, it will install all support tools it would need. D
         <td>VSphere IPI only</td>
       </tr>
       <tr>
-        <td>rhcos-4.8.XX-x86_64-vmware.x86_64.ova</td>
-        <td>VSphere IPI only </td>
-      </tr>
-      <tr>
         <td>rhcos-4.9.XX-x86_64-vmware.x86_64.ova</td>
         <td>VSphere IPI only </td>
       </tr>
@@ -230,10 +226,6 @@ Throughout the Daffy process, it will install all support tools it would need. D
       </tr>
       <tr>
         <td>rhcos-4.7.XX-x86_64-live.x86_64.iso </td>
-        <td>build local registry only</td>
-      </tr>
-      <tr>
-        <td>rhcos-4.8.XX-x86_64-live.x86_64.iso </td>
         <td>build local registry only</td>
       </tr>
       <tr>
