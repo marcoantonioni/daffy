@@ -20,7 +20,7 @@
               Added support for Instana agent to be used in all Cloud Paks (must have an instana download key)
                 INSTANA_MONITORING="true"
           Cloud Pak for Business Automation
-              Added Support for 22.0.2 IF001 and IF001
+              Added Support for 22.0.2 IF001 and IF002
               Added bring your own SSL certificates to CP4BA(cp-console and cpd)
                   Download SSL certificates from IBM Secrets Manager(Optionally)
               Removed Support for OPS(Open Prediction Service)              
