@@ -6,11 +6,18 @@
 
 ## Bastion
 
-Content coming!
+A bastion host is a server whose purpose is to provide access to a private/public network from an external/internal network, such as the Internet or private lan. We use this primarily for the install and tempory management of the OpenShift Cluster. The server will have install tools, access to destired openshift cluster network and may be removed post install. 
 
-## Catalog
+## Operator catalogs
 
-Content coming!
+An Operator catalog is a repository of metadata that Operator Lifecycle Manager (OLM) can query to discover and install Operators and their dependencies on a cluster. OLM always installs Operators from the latest version of a catalog. As of OpenShift Container Platform 4.6, Red Hat-provided catalogs are distributed using index images.
+
+An index image, based on the Operator bundle format, is a containerized snapshot of a catalog. It is an immutable artifact that contains the database of pointers to a set of Operator manifest content. A catalog can reference an index image to source its content for OLM on the cluster.
+
+As catalogs are updated, the latest versions of Operators change, and older versions may be removed or altered. In addition, when OLM runs on an OpenShift Container Platform cluster in a restricted network environment, it is unable to access the catalogs directly from the internet to pull the latest content.
+
+As a cluster administrator, you can create your own custom index image, either based on a Red Hat-provided catalog or from scratch, which can be used to source the catalog content on the cluster. Creating and updating your own index image provides a method for customizing the set of Operators available on the cluster, while also avoiding the aforementioned restricted network environment issues.
+
 
 ## Cloud Pak
 
@@ -88,13 +95,20 @@ The Ingress Operator makes it possible for external clients to access your servi
 [Ingress Operator](https://docs.openshift.com/container-platform/4.10/networking/ingress-operator.html){target=_blank}
 
 
+## Install Type UPI
+
+User-provisioned Infrastructure (UPI) provides the ablith to deploy the Openshift container platform (OCP) on existing infrastuure that you created. The user, will create the VMs, networks, loadbalancer, etc.  You must create all require infrastrue before you can start the openshift install process.  Most users use terraform to build these resources.  
+
+With Daffy, we call it a UPI, but daffy is the user in the perspective.  Daffy will build all the infrastrure components for you.  From the user point of view, with daffy, this performs like an IPI install. 
+
+
 ## Install Type IPI
 
-Content coming!
+Installer-provisioned Infrastructure (IPI) provides a full-stack installation and setup of the Openshift container platform (OCP). It creates Bootstrapping node which will take care deploying the cluster. It will create the VMs, networks, loadbalancer, etc.  It creates all require infrastrue during the install for you. With he corrent promission on the provider, this the easiest install.
 
 ## Instal Type MSP
 
-Content coming!
+Daffy coined this acronym. Managed Service Provider(MSP).  This is when a provider does the heavy lifting of install of Openshift container platform (OCP) and also the management of the running cluster. This includes ROSA(AWS), ROKS(IBM) and ARO(Azure). Daffy will call the exposed API from the provider to provision the cluster for you. 
 
 ## Master Node
 
@@ -110,15 +124,24 @@ The master node is responsible for running several Kubernetes processes that are
 
 ## Namespace
 
-Content coming!
+What is a namespace in OpenShift?
+Namespaces. A Kubernetes namespace provides a mechanism to scope resources in a cluster. In OpenShift Online, a project is a Kubernetes namespace with additional annotations. Namespaces provide a unique scope for: Named resources to avoid basic naming collisions.
+
+[Referance](https://docs.openshift.com/online/pro/architecture/core_concepts/projects_and_users.html#namespaces){target=_blank}
 
 ## Node
 
-Content coming!
+A node is a virtual or bare-metal machine in a Kubernetes cluster. Worker nodes host your application containers, grouped as pods. The control plane nodes run services that are required to control the Kubernetes cluster. In OpenShift Container Platform, the control plane nodes contain more than just the Kubernetes services for managing the OpenShift Container Platform cluster.
+
+[Referance](https://docs.openshift.com/container-platform/4.10/nodes/index.html#nodes-overview){target=_blank}
+
 
 ## Operator
 
-Content coming!
+Red Hat® OpenShift® Operators automate the creation, configuration, and management of instances of Kubernetes-native applications. Operators provide automation at every level of the stack—from managing the parts that make up the platform all the way to applications that are provided as a managed service.
+
+[Referance](https://www.redhat.com/en/technologies/cloud-computing/openshift/what-are-openshift-operators){target=_blank}
+
 
 ## Pod
 
@@ -130,11 +153,14 @@ As well as application containers, a Pod can contain init containers that run du
 
 ## Service
 
-Content coming!
+A Kubernetes service serves as an internal load balancer. It identifies a set of replicated pods in order to proxy the connections it receives to them. Backing pods can be added to or removed from a service arbitrarily while the service remains consistently available, enabling anything that depends on the service to refer to it at a consistent address. The default service clusterIP addresses are from the OpenShift Online internal network and they are used to permit pods to access each other.
 
-## Suscription
+[Referance](https://docs.openshift.com/online/pro/architecture/core_concepts/pods_and_services.html#services){target=_blank}
 
-Content coming!
+## Subscription
+
+With OpenShift, you need to have a subscription to deploy and run the cluster. This subscription is tied to a billing account for Yearly bililng and payment.  You cluster is tied to the subscription via the pull secret that is stored in the cluster.  At installed time you supplied this but can change this post install at anytime.
+
 
 ## Storage Class
 

@@ -27,6 +27,6 @@ The IBM VPC zone that you're trying to deploy to does not have enough quota of V
 VPC quota is based on the region so you have two options:
 
 1.  Deployed to a new zone
-2.  Request via IBM cloud ticket to increase your quota to 500 (edited)
+2.  Request via IBM cloud ticket to increase your quota to 500
 
 [https://cloud.ibm.com/docs/vpc?topic=vpc-quotas](https://cloud.ibm.com/docs/vpc?topic=vpc-quotas){target=_blank}

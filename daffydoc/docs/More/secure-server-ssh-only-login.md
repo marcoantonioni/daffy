@@ -1,6 +1,6 @@
 
 # Enable SSH Key ONLY Login - Disable Password 
-It is highly recommended that you disable passwword login for root access and ONLY allow login with ssh key. To do that follow these steps. 
+It is highly recommended that you disable password login for root access and ONLY allow login with ssh key. To do that follow these steps. 
 
 
 !!! warning
@@ -21,12 +21,15 @@ Edit the ssh configuratioh file
 
 Modify these to values.
 	  
-	  ChallengeResponseAuthentication no
+	 ChallengeResponseAuthentication no
      PasswordAuthentication no
 
 ## Reload the SSH Config
-Execute the reload command to enable the changes. 
+Execute the reload command to enable the changes(as root user). 
      
-     /etc/init.d/ssh reload
- 
+     Ubuntu
+	 systemctl restart ssh.service
+	
+	 RHEL
+ 	 systemctl restart sshd.service
     
