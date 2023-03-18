@@ -1,3 +1,8 @@
+---
+hide:
+  - footer
+---
+
 <script>
   document.title = "Overrides - OpenShift";
 </script>

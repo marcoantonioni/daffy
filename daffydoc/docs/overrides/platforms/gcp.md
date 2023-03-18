@@ -1,6 +1,13 @@
+---
+hide:
+  - footer
+---
+
 <script>
   document.title = "Overrides - GCP";
 </script>
+#GCP Overrides
+
 ## Section 1
 
 

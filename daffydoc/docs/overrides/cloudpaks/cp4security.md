@@ -1,6 +1,12 @@
+---
+hide:
+  - footer
+---
+
 <script>
   document.title = "Overrides - CP4Security";
 </script>
+#CP4Security Overrides
 ## Section 1
 
 

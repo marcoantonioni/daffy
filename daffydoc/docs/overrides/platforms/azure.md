@@ -1,6 +1,13 @@
+---
+hide:
+  - footer
+---
+
 <script>
   document.title = "Overrides - Azure";
 </script>
+#Azure Overrides
+
 ## Section 1
 
 

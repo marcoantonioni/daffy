@@ -1,3 +1,13 @@
+---
+hide:
+  - footer
+---
+
+<script>
+  document.title = "Overrides - LDAP";
+</script>
+#LDAP Overrides 
+
 ## Section 1
 
 

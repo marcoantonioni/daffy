@@ -82,7 +82,7 @@ In the Qutoa section, you can filter by regtion and type.  Then you can see your
 
 ### Permission
 
-Within your Azure project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements), make sure your service account has the correct permissions.  Look at the Azure section, it is same plus a few extra needed for ARO.
+Within your Azure project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements), make sure your service account has the correct permissions.  Look at the Azure section, it is same plus a few extra needed for ARO. Specifically Access to Active Directory.
 
 
 ## Environment File

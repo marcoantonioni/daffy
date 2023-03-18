@@ -1,6 +1,13 @@
+---
+hide:
+  - footer
+---
+
 <script>
   document.title = "Overrides - AWS";
 </script>
+#AWS Overrides
+
 ## Section 1
 
 
