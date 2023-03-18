@@ -57,35 +57,37 @@ nav:
     - Data: Cloud-Paks/Data.md
     - Integration: Cloud-Paks/Integration.md
     - Watson AIOPS: Cloud-Paks/Watson-AIOPS.md
-    - Security: Cloud-Paks/Security.md
+    # - Security: Cloud-Paks/Security.md
     - WebSphere Automation: Cloud-Paks/WebSphere-Automation.md
   - Supporting Software:
     - Supporting-Software/index.md
     - Bastion: Supporting-Software/Bastion.md
     - DB2: Supporting-Software/DB2.md
     - IBM LDAP: Supporting-Software/IBM-LDAP.md
-    - Turbo: Supporting-Software/Turbo.md
-  #- Overrides:
-  #  - overrides/index.md
-  #  - Daffy: overrides/daffy.md
-  #  - OpenShift: overrides/ocp.md
-  #  - Platforms:
-  #      - overrides/cloudpaks/index.md
-  #      - AWS: overrides/platforms/aws.md
-  #      - Azure: overrides/platforms/azure.md
-  #      - Google: overrides/platforms/gcp.md
-  #      - VSphere: overrides/platforms/vsphere.md
-  #  - Cloud Paks:
-  #      - overrides/platforms/index.md
-  #      - Business Automation: overrides/cloudpaks/cp4ba.md
-  #      - Data: overrides/cloudpaks/cp4d.md
-  #      - Integration: overrides/cloudpaks/cp4i.md
-  #      - Security: overrides/cloudpaks/cp4security.md
-  #      - Wations AIOps: overrides/cloudpaks/cp4waiops.md
-  #  - Software:
-  #      - DB2: overrides/software/db2.md
-  #      - LDAP: overrides/software/ldap.md
-  #      - Turbonomics: overrides/software/turbonomics.md
+    - Turbonomics: Supporting-Software/Turbonomics.md
+    - Instana: Supporting-Software/Instana.md
+  - Overrides:
+    - overrides/index.md
+    - Daffy: overrides/daffy.md
+    - OpenShift: overrides/ocp.md
+    - Platforms:
+        - overrides/cloudpaks/index.md
+        - AWS: overrides/platforms/aws.md
+        - Azure: overrides/platforms/azure.md
+        - Google: overrides/platforms/gcp.md
+        - IBM: overrides/platforms/ibm.md
+        - VSphere: overrides/platforms/vsphere.md
+    - Cloud Paks:
+        - overrides/platforms/index.md
+        - Business Automation: overrides/cloudpaks/cp4ba.md
+        - Data: overrides/cloudpaks/cp4d.md
+        - Integration: overrides/cloudpaks/cp4i.md
+        # - Security: overrides/cloudpaks/cp4security.md
+        - Wations AIOps: overrides/cloudpaks/cp4waiops.md
+    - Software:
+        - DB2: overrides/software/db2.md
+        - LDAP: overrides/software/ldap.md
+        - Turbonomics: overrides/software/turbonomics.md
   - Security:
     - Security/index.md
     - IBM Cloud Secrets Manager: Security/IBMSecretsManager.md
@@ -97,16 +99,6 @@ nav:
     - Edit Files: Tips-and-Tricks/Edit-Files.md
     - Daffy Upgrade: Tips-and-Tricks/Upgrade.md
     - OC Commands: Tips-and-Tricks/occommands.md
-  #- Request Forms:
-  #  - Request-Forms/index.md
-    #- Demo Request: Request-Forms/Demo-Request.md
-    #- Feature Request: Request-Forms/Feature-Requests.md
-    #- Get Involved: Request-Forms/Get-Involved.md
-    #- POC Request Form: Request-Forms/POC-Request-Form.md
-    #- Training: Request-Forms/Training.md
-    #- L200 Adv Training: Request-Forms/L200-Adv-Training.md
-    #- Meet The teamm 2: Meet-the-Team/Meat-the-Team.md
-    #- Workstreams: Meet-the-Team/Workstreams.md
   - Market Leaders : Markets.md
   - App Store :
     - App Store: AppStore/index.md

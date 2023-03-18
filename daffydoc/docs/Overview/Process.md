@@ -16,9 +16,9 @@ The daffy tool allows you to start at any step.  Before you start, you need to s
 Then you need to decide your end goal and what you want daffy to assist with.
 
 1.  I need to build full stack (OpenShift, Cloud Pak Operators and Cloud Pak Services)  **Run Step 1, 2 and 3**
-2.  Do you need to build the OpenShift Cluster?  **Run Step 1**  
+2.  Do you need to build just the OpenShift Cluster?  **Run Step 1**  
 3.  Do you need to deploy just the Cloud Pak Operators?  **Run Step 2**
-4.  Do you need to deploy cloud Pak Services?  **Run Step 3**
+4.  Do you need to deploy just cloud Pak Services?  **Run Step 3**
 
 
 #Step 1

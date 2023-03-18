@@ -5,7 +5,7 @@ hide:
 <script>
   document.title = "Beta";
 </script>
-#Active Beta Features
+#Active Beta Features - <font color=red>Currently Closed</font>
 !!! Warning   
       Early features - Still in testing mode, may not always work.  User be aware!!!
 <html>
