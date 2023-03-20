@@ -13,7 +13,7 @@ At this point, you have a bastion machine where you have installed the Daffy too
 
 ## Platform Requirements
 
-To use Daffy on **Azure**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **Azure ARO**, it breaks down to the following basic three items:
+To use Daffy on **Azure ARO**, there are some platform info and requirements that need to be gathered or met. We have a simple doc that you should refer to that list all providers and what would be needed.  For **Azure ARO**, it breaks down to the following basic three items:
 
 **Account Details** - The account that you plan to install OpenShift
 
@@ -27,7 +27,7 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 
 ## Finding Provider Details
 
-To install Daffy on Azure, the hardest part can be finding the provider details.
+To install Daffy on Azure ARO, the hardest part can be finding the provider details.
 
 ### <font color="red">Subscription ID</font>
 First find subscriptions in your account from the search box
