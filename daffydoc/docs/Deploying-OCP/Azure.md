@@ -29,25 +29,57 @@ For detailed list of the above, you can find in the Daffy Provider Requirements.
 
 To install Daffy on Azure, the hardest part can be finding the provider details.
 
-[Subscription ID](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription ){target=_blank}
-??? Info "Screenshot"
+### <font color="red">Subscription ID</font>
+First find subscriptions in your account from the search box
+??? Info "Screenshot Locate Subscriptions"
     <img src='../../Deploying-OCP/images/azure/AccountDetails-Subscriptions1.png'   align="top"  style = "float">
-    ??? Info "Screenshot"
 
-??? Info "Screenshot"
+[<img src='../../images/httpLinkIcon.png' height="1%" width="1%"> More Info](https://learn.microsoft.com/en-us/azure/azure-portal/get-subscription-tenant-id#find-your-azure-subscription ){target=_blank}
+
+Once you find the subscription you want to use, you can see the Subscription ID
+??? Info "Screenshot Locate Subscription ID"
     <img src='../../Deploying-OCP/images/azure/AccountDetails-Subscriptions2.png'   align="top"  style = "float">
 
-Client ID:Details coming soon !!!
+### <font color="red">Tenant ID</font>
+First you need to find the Active Direcotry for your account
+??? Info "Screenshot Active Directory"
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-ActiveDirectory1.png'   align="top"  style = "float">
 
-Client Secret:Details coming soon !!!
+From your active directory, you can locate the Tenant ID    
+??? Info "Screenshot Tenant ID"
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-TenantID.png'   align="top"  style = "float">
 
-Tenant ID:Details coming soon !!!
+[<img src='../../images/httpLinkIcon.png' height="1%" width="1%"> More Info](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant ){target=_blank}
 
-Base Domain Resource Group Name:Details coming soon !!!
+### <font color="red">Client ID</font>
+First you need to find the Active Directory for your account
+??? Info "Screenshot Active Directory"
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-ActiveDirectory1.png'   align="top"  style = "float">
 
-Region:Details coming soon !!!
+Search for your appliation and from here you can find the client ID for the application you plan to use 
+??? Info "Screenshot Client ID"
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-ClientID1.png'   align="top"  style = "float">
 
-Quota:Details coming soon !!!
+[<img src='../../images/httpLinkIcon.png' height="1%" width="1%"> More Info](https://docs.lacework.com/onboarding/gather-the-required-azure-client-id-tenant-id-and-client-secret ){target=_blank}
+
+### <font color="red">Region</font>
+[<img src='../../images/httpLinkIcon.png' height="1%" width="1%"> More Info](https://www.jlaundry.nz/2022/azure_region_abbreviations/ ){target=_blank}
+
+To find the region name, you can use the above link to list all azure region names, make sure you pick one that has avaiblity zone support
+??? Info "Screenshot"
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-Region1.png'   align="top"  style = "float">
+
+### <font color="red">Quota</font>
+In your subscription, under settings, you can find Usage + Quotas
+??? Info "Screenshot"
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-Quota1.png'   align="top"  style = "float">
+
+In the Qutoa section, you can filter by regtion and type.  Then you can see your used and your max qutoa limits.
+??? Info "Screenshot"
+    <img src='../../Deploying-OCP/images/azure/AccountDetails-Quota2.png'   align="top"  style = "float"> 
+
+[<img src='../../images/httpLinkIcon.png' height="1%" width="1%"> More Info](https://learn.microsoft.com/en-us/azure/networking/check-usage-against-limits){target=_blank}
+
 
 **Permission:**
 
@@ -82,29 +114,22 @@ cp /data/daffy/env/samples/azure-ipi-env.sh /data/daffy/env/<ENVIRONMENT_NAME>-e
 **Valid Options:**
 </u>
 
-**OCP_INSTALL_TYPE**="azure-ipi"
+| Variable Name                           | Info                                          | Default Value     | Required     |
+| :---------                              |    :---------                                 |                   |   :----      |
+| OCP_INSTALL_TYPE                        | Install type must be aro-msp                  |                   |   Yes        |
+| AZURE_SUBSCRIPTION_ID                   | The subscription ID for your account in Azure |                   |   Yes        |
+| AZURE_CLIENT_ID                         | The client ID for your account in Azure       |                   |   Yes        |
+| AZURE_TENANT_ID                         | The Tenant ID for your account in Azure       |                   |   Yes        |
+| AZURE_REGION                            | The Azure region you want to deploy to        |                   |   Yes        |
+| AZURE_RESOURCE_GROUP_NAME               | The Azure network resource group name         |                   |   No         |
+| AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME   | The Azure clsuter resource group name         |                   |   No         |
+| OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE  | Do you want to deploy ODF storage             |       false       |   No         |
+| AZURE_RESOURCE_GROUP_NAME_CREATE_MISSING| Do you want to deploy ODF storage             |       false       |   No         |
 
-**AZURE_SUBSCRIPTION_ID**="<YOUR_SUB_ID>"
-
-**AZURE_CLIENT_ID**="<YOUR_CLIENT_ID>"
-
-**AZURE_TENANT_ID**=<YOUR_TENANT_ID>"
-
-**AZURE_TENANT_ID**=<YOUR_TENANT_ID>"
-
-**AZURE_RESOURCE_GROUP_NAME**="<YOUR_RESOURCE_GROUP_FOR_YOUR_CLUSTER>"
-
-**AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME**="<YOUR_RESOURCE_GROUP_FOR_DNS>"
-
-**AZURE_REGION**="<YOUR_REGION>"
-
-Optional:
-
-**OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE**="true"
-
-**AZURE_RESOURCE_GROUP_NAME_CREATE_MISSING**="true"
 
 ```R
+#Azure Base Settings
+####################
 OCP_INSTALL_TYPE="azure-ipi"
 AZURE_SUBSCRIPTION_ID="999999-999999-999999-99999"
 AZURE_CLIENT_ID="999999-999999-999999-99999"
@@ -112,6 +137,9 @@ AZURE_TENANT_ID="999999-999999-999999-99999"
 AZURE_RESOURCE_GROUP_NAME="<YOUR_RESOURCE_GROUP_FOR_CLUSTER>"
 AZURE_BASE_DOMAIN_RESOURCE_GROUP_NAME="<YOUR_RESOURCE_GROUP_FOR_DNS>"
 AZURE_REGION="<YOUR_REGION>"
+
+#OpenShift Storage
+####################
 #OCP_CREATE_OPENSHIFT_CONTAINER_STORAGE="true"
 #AZURE_RESOURCE_GROUP_NAME_CREATE_MISSING="true"
 ```

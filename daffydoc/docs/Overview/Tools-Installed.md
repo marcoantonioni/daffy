@@ -150,7 +150,7 @@ Throughout the Daffy process, it will install all support tools it would need. D
       </tr>
       <tr>
         <td>cloudctl</td>
-        <td>cloudctl Flag</td>
+        <td>CP4D/CP4BA</td>
       </tr>
       <tr>
         <td>python2</td>
@@ -170,7 +170,7 @@ Throughout the Daffy process, it will install all support tools it would need. D
       </tr>
       <tr>
         <td>ibmcloud</td>
-        <td>ROKS & IBM DNS</td>
+        <td>ROKS/IBM-IPI/IBM DNS/Secrets Manager</td>
       </tr>
       <tr>
         <td>ibm-cp-automation </td>
@@ -178,7 +178,7 @@ Throughout the Daffy process, it will install all support tools it would need. D
       </tr>
       <tr>
         <td>podman</td>
-        <td>CP4BA Install</td>
+        <td>All Cloud Paks</td>
       </tr>
     </table>
   </div>
