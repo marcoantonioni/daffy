@@ -34,7 +34,7 @@ Run the following command to delete all resources created by Daffy, including bu
 
 ## **Daffy Versioning**
 
-### Upgrade/Refresh
+### Upgrade
 Run the following command to upgrade Daffy to the newest release.
 
 ```console
@@ -42,7 +42,7 @@ cd /data ; /data/daffy/refresh.sh
 
 ```
 
-### Downgrade Version
+### Downgrade
 Run the following command to install older version of Daffy. This will output a list of previous releases to select and install.
 
 ```console
@@ -55,12 +55,27 @@ cd /data ; /data/daffy/refresh.sh --list
 !!! Warning
     If you already downgraded to an older version and want to install another older version, you must first upgrade to the latest release and then downgrade to the other version you want.
 
+### Install Older
+If you want to install an older version from the begining, you can with this command:
+
+```console
+curl http://get.daffy-installer.com/download-scripts/daffy-init.sh | sudo -E bash -s -- v2023-01-11.tar
+```
+??? note "Version name format"
+    Just supply the name of the tar version you want to install.
+
+    Format  <font color="orange">v</font><font color="blue">${YEAR}</font><font color="red">-${MONTH}</font><font color="green">-${DAY}</font>.tar </font>
+
+
 ### Get Version
 Run the following command to view the current Daffy version.
 
 ```console
 /data/daffy/version.sh
 ```
+
+
+
 
 ## **OCP Build Help**
 The OCP build process has several flags, to see all the flags, you can run the --help
