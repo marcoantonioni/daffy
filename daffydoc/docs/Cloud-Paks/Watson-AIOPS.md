@@ -46,12 +46,11 @@ The service consist of the following products:
 
 | AIOps Supported Version    | OCP Versions |
 | :---      |    :----     |
+| 3.6.2     | 4.10    |
+| 3.6.1     | 4.10    |
 | 3.6.0     | 4.10    |
 | 3.5.1     | 4.10    |
 | 3.5.0     | 4.10    |
-| 3.4.2     | 4.10    |
-| 3.4.1     | 4.10    |
-| 3.4.0     | 4.10    |
 
 
 
