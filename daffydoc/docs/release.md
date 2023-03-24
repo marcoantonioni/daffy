@@ -1,3 +1,23 @@
+## v2023-03-24
+          Cloud Pak for Security
+              Removed entire cloud pak
+          Cloud Pak for Business Automation
+              Support for OpenShift 4.12
+              Removed Support for 22.0.1
+              Removed Support for OPS
+          CLoud Pak for WAIOPS
+              Removed Support for 3.4.0 and 3.4.1
+              Added Support for 3.6.1 and 3.6.2
+          Cloud Pak for Data
+              Removed Support for 4.5.1 and 4.5.2
+          Cloud Pak for Integration
+              Added Support for OpenShift 4.12
+          OpenShift
+              Removed Support for 4.8 and 4.9 
+          Misc
+              Added basic info during the setup of Daffy.  Install location, version, cert folder, samples, etc
+              Removed daffy fixpak feature
+              Removed support for running daffy on mac desktop
 ## v2023-03-09
           Tested OpenShift with Current Daffy Release
               GCP                4.10.36/4.12.2(OCP Only)
