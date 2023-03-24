@@ -190,7 +190,7 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 #Core CP4BA Settings
 ###################################################
 CP4BA_VERSION="22.0.2"
-CP4BA_IFIX="IF001"
+CP4BA_IFIX="IF002"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 
