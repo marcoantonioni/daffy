@@ -14,17 +14,4 @@ Daffy allows you to override many settings.  Most common installs do not need to
 
 Overrides are simple, just add the override to your own Environment file with the value you want to override.
 
-## Section 1
-
-
-## Section 2
-
-
-## Section 3
-
-
-## Section 4
-
-
-## Section 5
 

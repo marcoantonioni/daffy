@@ -49,7 +49,7 @@ BASE_DOMAIN="<YOUR.BASEDOMAIN.COM>"
 CLUSTER_NAME="<ENVIRONMENT_NAME>"
 #This is required - Values aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp
 OCP_INSTALL_TYPE="PickValueFromLineAbove"
-OCP_RELEASE="4.10.32"
+OCP_RELEASE="4.10.36"
 VM_TSHIRT_SIZE="Large"
 ```
 

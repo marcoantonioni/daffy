@@ -58,7 +58,6 @@ nav:
     - Data: Cloud-Paks/Data.md
     - Integration: Cloud-Paks/Integration.md
     - Watson AIOPS: Cloud-Paks/Watson-AIOPS.md
-    # - Security: Cloud-Paks/Security.md
     - WebSphere Automation: Cloud-Paks/WebSphere-Automation.md
   - Supporting Software:
     - Supporting-Software/index.md
