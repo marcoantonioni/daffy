@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 <script>
-  document.title = "Deploy OCP - Restricted Network or Air-Gap";
+  document.title = "Deploy OCP - Restricted Network";
 </script>
 <!-- CSS FOR SLIDESHOW -->
 ## Slide Show
@@ -207,9 +207,13 @@ function showSlides(n) {
 </script>
 <!-- END OF JS-->
 
+<button onclick="location.href='../Daffy-AirgapVsProxy.pdf'" class="custom-btn btn-7">Download Slides</button>
+
 
 ## Overview
 Deploying OpenShift in a restricted network (air gap), can be done with the Daffy Restricted Network scripts. This page will primarily focus on the steps to perform an air gap install. However, please note the Proxy Install approach can be a viable option and is a easier approach. Regardless of which one you choose, both install options will result in an OpenShift cluster with restricted network access. Also, note that the air gap install is more complicated and will require a JUMP BOX that has internet access to the Quay Repository.
+
+
 
 ***There are two basic options for deployment***
 
@@ -244,34 +248,45 @@ To do this we will use the following terms:
 2. **Bastion**  - machine that will install the cluster and have direct access to the restricted network where the cluster will run.
 
 #### Requirements
-1. **Jump Box**  - 4X32 100GB Disk (disk depending on what you plan to mirror)
-    1.  Default will need storage **/data/export** and **/mirror/registry**
-2. **Bastion**   - 4X32 100GB Disk (disk depending on what you plan to mirror)
-    1.  Default will need storage **/data/import** and **/mirror/registry**
+1. **Jump Box**  - 4X32 300GB Disk (disk depending on what you plan to mirror)
+    1.  Default will need storage **/data/export**(100GB) and **/mirror/registry**(100GB)
+2. **Bastion**   - 4X32 300GB Disk (disk depending on what you plan to mirror)
+    1.  Default will need storage **/data/import**(100GB) and **/mirror/registry**(100GB)
 
 
 
 #### Environment File
-You should build your environment file based on the final install you want to  build and should include those values in this file as well.  
+You should build your environment file based on the final install you want to build and should include those values in this file as well.  
 
-The following values are required specifically for **air gap** install.
+The following values are required specifically for **airgap** install.(Repo Build and Airgap)
 
-**LOCAL_REGISTRY_ENABLED =** do you want this to be an air gap install true|false    
-**LOCAL_REGISTRY_DNS_NAME =** this is your jump box DNS name. If you not have DNS, you can also put the ip address   
-**LOCAL_REGISTRY_IP =** this is your jump box IP address    
-**LOCAL_AIRGAP_REGISTRY_DNS_NAME =** this is your restricted network bastion box DNS name. If you not have DNS, you can also put the ip address.    
-**LOCAL_AIRGAP_REGISTRY_IP =** this is your restricted network bastion box IP address   
+| Variable Name                  | Info                                                   | Install Type  | Required    |  default    |
+| :---------                     |    :---------                                          |   :----       |   :----     |   :----     |
+| LOCAL_REGISTRY_ENABLED         | Do you want this to be an air gap install              |   Both        |   Yes       |    false    |
+| LOCAL_REGISTRY_DNS_NAME        | This is your jump box DNS name(can Be IP value)        |   Both        |   Yes       |             |
+| LOCAL_REGISTRY_IP              | This is your jump box IP address                       |   Both        |   Yes       |             |
+| LOCAL_AIRGAP_REGISTRY_DNS_NAME | This is your restricted network bastion DNS name(can Be IP value) | airgap |  Yes(if Airgap)|      |
+| LOCAL_AIRGAP_REGISTRY_IP       | This is your restricted network bastion box IP address |   airgap      |   Yes(if Airgap)|         |
 
 ```R
 #Local Registry Info
 ###############################
-LOCAL_REGISTRY_ENABLED=<true|false>
-LOCAL_REGISTRY_DNS_NAME=
-LOCAL_REGISTRY_IP=
-LOCAL_AIRGAP_REGISTRY_DNS_NAME=
-LOCAL_AIRGAP_REGISTRY_IP=
+LOCAL_REGISTRY_ENABLED="true"
+LOCAL_REGISTRY_DNS_NAME="<LOCAL IP>"
+LOCAL_REGISTRY_IP="<LOCAL IP>"
+#LOCAL_AIRGAP_REGISTRY_DNS_NAME="<Optional DNS Name>"
+#LOCAL_AIRGAP_REGISTRY_IP="<Optional DNS Name>"
 ```
+##### Repo Only
+If you want to just build a repo on your internet facing bastion, here is only settings you need to mirror.
+```R
+#Local Registry Info
+###############################
+LOCAL_REGISTRY_ENABLED="true"
+LOCAL_REGISTRY_IP="<LOCAL IP>"
+#LOCAL_REGISTRY_DNS_NAME="<Optional DNS Name>"
 
+```
 >##### Overrides
 Current values that you can add to your own environment file to override if needed but not required:
 <details>
