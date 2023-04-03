@@ -28,7 +28,29 @@ For daffy to be able to download your certs from IBM Secrets Manager, we just ne
 | IBM_SECRET_CERT_ID_INGRESS_APPS| The ID for your APPS Cert                        |  Yes       |
 
 
+### Building Certs
+
+When you build your certs, you have two options.
+
+1.  You can build a cert for each URL (*.apps & api ) 
+
+    1.  Apps Cert 
+        1.  **Common Name** - *.apps.${CLUSTER}.${BASE_DOMAIN}
+    2.  API Cert 
+        2.  **Common Name** - api.${CLUSTER}.${BASE_DOMAIN}
+
+
+2.  You can build a single cert with both URLs as alt names of the cert
+    1.  **Common Name** - ${CLUSTER}.${BASE_DOMAIN}
+    2.  **Alt Names**   - ${CLUSTER}.${BASE_DOMAIN}, *.apps.${CLUSTER}.${BASE_DOMAIN}, app.${CLUSTER}.${BASE_DOMAIN}
+
+
+!!! INFO
+    <Font color=red>If you build one cert, you would just use the same cert ID for both apps and api values in env file</Font>
+
+
 ### Find Your Values
+
 
 #### Cert API Key
 <Font color=blue>IBM_SECRET_CERT_API_KEY</Font>

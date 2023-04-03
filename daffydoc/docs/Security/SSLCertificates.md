@@ -24,6 +24,26 @@ For ingress there are two major urls.
 4.  The apps Ingress cert must have wild card Common Name  *.apps.yourcluster.acme.com
 
 
+When you build your certs, you have two options.
+
+1.  You can build a cert for each URL (*.apps & api ) 
+
+    1.  Apps Cert 
+        1.  **Common Name** - *.apps.${CLUSTER}.${BASE_DOMAIN}
+    2.  API Cert 
+        2.  **Common Name** - api.${CLUSTER}.${BASE_DOMAIN}
+
+
+2.  You can build a single cert with both URLs as alt names of the cert
+    1.  **Common Name** - ${CLUSTER}.${BASE_DOMAIN}
+    2.  **Alt Names**   - ${CLUSTER}.${BASE_DOMAIN}, *.apps.${CLUSTER}.${BASE_DOMAIN}, app.${CLUSTER}.${BASE_DOMAIN}
+
+
+!!! INFO
+    <Font color=red>If you build one cert, you would just duplicate the cert/key files with each name for apps and api</Font>
+
+
+
 #### Location of certs
 1. <B><Font color=blue>Apps ingress</Font></B>
 
