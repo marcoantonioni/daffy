@@ -1,3 +1,9 @@
+## v2023-03-24a
+          Cloud Pak for Business Automation
+              SSL certificates allowed as Alt name *.apps.${CLUSTER}.${BASE_DOMAIN}
+          OpenShift
+              SSL certificates allowed as Alt name *.apps.${CLUSTER}.${BASE_DOMAIN} and api.${CLUSTER}.${BASE_DOMAIN}
+              
 ## v2023-03-24
           Cloud Pak for Security
               Removed entire cloud pak
