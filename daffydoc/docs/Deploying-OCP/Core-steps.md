@@ -46,6 +46,7 @@ DAFFY_DEPLOYMENT_TYPE="PickValueFromLineAbove"
 #Core Values
 #########################
 BASE_DOMAIN="<YOUR.BASEDOMAIN.COM>"
+#Cluster name must only be lowercase/alphanumberic and "-", no spaces
 CLUSTER_NAME="<ENVIRONMENT_NAME>"
 #This is required - Values aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp
 OCP_INSTALL_TYPE="PickValueFromLineAbove"
@@ -66,16 +67,16 @@ Best practice is to set <**ENVIRONMENT_NAME**> as your cluster name, but that is
 
 
 
-Name  | Example Values  | Description
-:----------- |:----------- |:-----------
-DAFFY_DEPLOYMENT_TYPE | Enablement |  POC/Demo/Enablement/HCCX/TechZone/PostSale |
-DAFFY_ISC_NUMBER | 0045h00000w1nvKAAG |  Required if Demo, POC or PostSale
-DAFFY_CUSTOMER_NAME | Acme Shoes  | Required if Demo, POC or PostSale
-BASE_DOMAIN | acme-shoes.com |  Is your DNS name your cluster will use
-CLUSTER_NAME | demo01 | The name you want to give your OpenShift Cluster
-OCP_INSTALL_TYPE | aws-ipi | The name of the install type you want  aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp
-OCP_RELEASE | 4.10.17 | What version of OpenShift you want to Install
-VM_TSHIRT_SIZE | Large | How large you want the OpenShift Cluster to be. **Min** and **Large** Supported today
+Name  | Example Values  | Description    | Requirements
+:----------- |:----------- |:----------- |:-----------
+DAFFY_DEPLOYMENT_TYPE   | Enablement          | The type of Depolment this will be for | POC/Demo/Enablement/HCCX/TechZone/PostSale 
+DAFFY_ISC_NUMBER        | 0045h00000w1nvKAAG  | Required if Demo, POC or PostSale
+DAFFY_CUSTOMER_NAME     | Acme Shoes          | Required if Demo, POC or PostSale | May contain spaces
+BASE_DOMAIN             | acme-shoes.com      | Is your DNS name your cluster will use | valid dns domain name
+CLUSTER_NAME            | demo01              | The name you want to give your OpenShift Cluster | Only lowercase/alphanumeric and "-", no spaces
+OCP_INSTALL_TYPE        | aws-ipi             | The name of the install type you want |  aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp
+OCP_RELEASE             | 4.10.17             | What version of OpenShift you want to Install
+VM_TSHIRT_SIZE          | Large               | How large you want the OpenShift Cluster to be. **Min** and **Large** Supported today
 
 !!! Info
       If **MSP** type install like ROKS, **BASE_DOMAIN** is not needed.
