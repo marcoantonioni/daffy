@@ -2242,6 +2242,7 @@
 <span class="c1">#Core Values</span>
 <span class="c1">#########################</span>
 <span class="n">BASE_DOMAIN</span><span class="o">=</span><span class="s">&quot;&lt;YOUR.BASEDOMAIN.COM&gt;&quot;</span>
+<span class="c1">#Cluster name must only be lowercase/alphanumberic and &quot;-&quot;, no spaces</span>
 <span class="n">CLUSTER_NAME</span><span class="o">=</span><span class="s">&quot;&lt;ENVIRONMENT_NAME&gt;&quot;</span>
 <span class="c1">#This is required - Values aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp</span>
 <span class="n">OCP_INSTALL_TYPE</span><span class="o">=</span><span class="s">&quot;PickValueFromLineAbove&quot;</span>
@@ -2259,48 +2260,57 @@
 <th style="text-align: left;">Name</th>
 <th style="text-align: left;">Example Values</th>
 <th style="text-align: left;">Description</th>
+<th style="text-align: left;">Requirements</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">DAFFY_DEPLOYMENT_TYPE</td>
 <td style="text-align: left;">Enablement</td>
+<td style="text-align: left;">The type of Depolment this will be for</td>
 <td style="text-align: left;">POC/Demo/Enablement/HCCX/TechZone/PostSale</td>
 </tr>
 <tr>
 <td style="text-align: left;">DAFFY_ISC_NUMBER</td>
 <td style="text-align: left;">0045h00000w1nvKAAG</td>
 <td style="text-align: left;">Required if Demo, POC or PostSale</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">DAFFY_CUSTOMER_NAME</td>
 <td style="text-align: left;">Acme Shoes</td>
 <td style="text-align: left;">Required if Demo, POC or PostSale</td>
+<td style="text-align: left;">May contain spaces</td>
 </tr>
 <tr>
 <td style="text-align: left;">BASE_DOMAIN</td>
 <td style="text-align: left;">acme-shoes.com</td>
 <td style="text-align: left;">Is your DNS name your cluster will use</td>
+<td style="text-align: left;">valid dns domain name</td>
 </tr>
 <tr>
 <td style="text-align: left;">CLUSTER_NAME</td>
 <td style="text-align: left;">demo01</td>
 <td style="text-align: left;">The name you want to give your OpenShift Cluster</td>
+<td style="text-align: left;">Only lowercase/alphanumeric and "-", no spaces</td>
 </tr>
 <tr>
 <td style="text-align: left;">OCP_INSTALL_TYPE</td>
 <td style="text-align: left;">aws-ipi</td>
-<td style="text-align: left;">The name of the install type you want  aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp</td>
+<td style="text-align: left;">The name of the install type you want</td>
+<td style="text-align: left;">aws-ipi/azure-ipi/gcp-ipi/vsphere-ipi/vsphere-upi/kvm-upi/roks-msp</td>
 </tr>
 <tr>
 <td style="text-align: left;">OCP_RELEASE</td>
 <td style="text-align: left;">4.10.17</td>
 <td style="text-align: left;">What version of OpenShift you want to Install</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;">VM_TSHIRT_SIZE</td>
 <td style="text-align: left;">Large</td>
 <td style="text-align: left;">How large you want the OpenShift Cluster to be. <strong>Min</strong> and <strong>Large</strong> Supported today</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
