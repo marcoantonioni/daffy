@@ -36,7 +36,7 @@ When you build your certs, you have two options.
 
 2.  You can build a single cert with both URLs as alt names of the cert
     1.  **Common Name** - ${CLUSTER}.${BASE_DOMAIN}
-    2.  **Alt Names**   - ${CLUSTER}.${BASE_DOMAIN}, *.apps.${CLUSTER}.${BASE_DOMAIN}, app.${CLUSTER}.${BASE_DOMAIN}
+    2.  **Alt Names**   - ${CLUSTER}.${BASE_DOMAIN}, <Font color=red>*.apps</Font>.${CLUSTER}.${BASE_DOMAIN}, <Font color=red>api</Font>.${CLUSTER}.${BASE_DOMAIN}
 
 
 !!! INFO
