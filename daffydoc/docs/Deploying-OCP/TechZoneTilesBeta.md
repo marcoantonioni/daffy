@@ -14,6 +14,7 @@ The Purpose of the following TechZone Tiles are to install the full OpenShift/Cl
 
 1.  This collection of tiles will build a public facing cluster.  <font color=red>No VPN is require or provided</font>
 2.  More then one user is allowed to access your Cluster and Cloud Pak.  The only limitation is your cloud pak and the size that was built.
+3. All Access Points via trusted SSL Certs. No Browser Popup
 
 
 You can access the Tech Zone Environment Tiles here:

@@ -36,6 +36,17 @@ Will take 2 to 3 hours to install OpenShift, Cloud Pak base and start the servic
 
 ### Guacamole
 
+
+!!! INFO
+        Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.
+
+        We call it clientless because no plugins or client software are required.
+
+        Thanks to HTML5, once Guacamole is installed on a server, all you need to access your desktops is a web browser.
+
+        <font color=red>With Guacamole, it allows you to connect to this new private network OpenShift/Cloud Pak Cluster.</font> 
+
+
 <img src='../images/TechZoneTiles/GuacamoleConsole.jpg'   align="top"  style = "float">
 
 !!! INFO
@@ -74,6 +85,8 @@ For Windows Users
 
 
 ### **Wireguard**
+WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. With this sofware, you can connect from your desktop to the new private network OpenShift/Cloud Pak Cluster.
+
 If you enabled the VPN on the TechZone tile and want to connect, you need to install the WireGuard Application on your local Desktop and load your own config.
 
 1)  Install WireGuard [https://www.wireguard.com/install/](https://www.wireguard.com/install/){target=_blank}
