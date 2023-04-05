@@ -62,13 +62,19 @@ These pages update every few minutes with any updated information.  This portal 
 
 ### **Tabs**
 
+The Pak Installer portal has 5 tabs at the top of the page. Each tab is designed to give you more info for that topic.
+
+??? Info "Tabs Preview"
+    <img src='../images/TechZoneTiles/tabs.jpg'   align="top"  style = "float">
+
+
 #### Instructions 
 
 This page to explain the tabs within the Portal. Points to the Daffy Public documentation site from within your local cluster Portal page 
 
 #### Bastion 
 
-Connection info to the bastion(RHEL server).  It will gave you the host name, port, userID and password you can use if you want to connect to the bastion server for this new enviornemt. 
+Connection info to the bastion(RHEL server).  It will gave you the host name, port, userID and password you can use if you want to connect to the bastion server for this new environment. 
 
 ??? INFO
     This info is not required to be used to run/access your Cloud Pak, but here if you needed it. 
@@ -82,7 +88,7 @@ Connection info to your new OpenShift Cluster. You can see both ids you can use 
 
 #### Cloud Pak Status 
 
-This page is where can see overall status of the cloud pak and all the sevcies you requeted. The Cloud Pak Status page will auto refresh every few minutes and where you can watch as your services come online. As stated before, this can take 1 -5 hours to get to "Ready" state for all services componets. Once services are ready, it will then update the console tab with your connection.
+This page is where can see overall status of the cloud pak and all the sevcies you requeted. The Cloud Pak Status page will auto refresh every few minutes and where you can watch as your services come online. As stated before, this can take 1 -5 hours to get to "Ready" state for all services componets. Once services are ready, it will then update the console tab with your console connection info.
 
 
 #### Cloud Pak Console 
