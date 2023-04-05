@@ -36,6 +36,7 @@ Will take 2 to 3 hours to install OpenShift, Cloud Pak base and start the servic
 
 ### Guacamole
 
+Once you get your TechZone reservation, the email and your TechZone Reservation page will give  you a link to the Guacamole Desktop.  You will use that to access your new environment. 
 
 !!! INFO
         Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.
