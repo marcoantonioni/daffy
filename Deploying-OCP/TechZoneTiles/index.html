@@ -2195,6 +2195,13 @@
 <p>Will take 2 to 3 hours to install OpenShift, Cloud Pak base and start the services install. You will get email at this point with how to connect to your cluster. From the Guacamole console, you can connect to the Desktop or get the status of your cloud pak. Once you get the email, it can take 1-2 hours for the CP4I services to be ready. During that time you may see failed deployment, this is normal as the operator will self heal. (Do not watch the paint dry, get a coffee and come back in a few hours)</p>
 <h2 id="tips-and-tricks">Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permanent link">&para;</a></h2>
 <h3 id="guacamole">Guacamole<a class="headerlink" href="#guacamole" title="Permanent link">&para;</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info<p>Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.</p>
+<p>We call it clientless because no plugins or client software are required.</p>
+<p>Thanks to HTML5, once Guacamole is installed on a server, all you need to access your desktops is a web browser.</p>
+<p><font color=red>With Guacamole, it allows you to connect to this new private network OpenShift/Cloud Pak Cluster.</font> </p>
+</p>
+</div>
 <p><img src='../images/TechZoneTiles/GuacamoleConsole.jpg'   align="top"  style = "float"></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2227,6 +2234,7 @@
 <p>For Windows Users</p>
 <p><strong>CTRL-ALT-SHIFT</strong></p>
 <h3 id="wireguard"><strong>Wireguard</strong><a class="headerlink" href="#wireguard" title="Permanent link">&para;</a></h3>
+<p>WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. With this sofware, you can connect from your desktop to the new private network OpenShift/Cloud Pak Cluster.</p>
 <p>If you enabled the VPN on the TechZone tile and want to connect, you need to install the WireGuard Application on your local Desktop and load your own config.</p>
 <p>1)  Install WireGuard <a href="https://www.wireguard.com/install/" target="_blank">https://www.wireguard.com/install/</a></p>
 <p>2) Download the Connection Config from the TechZone tile</p>
