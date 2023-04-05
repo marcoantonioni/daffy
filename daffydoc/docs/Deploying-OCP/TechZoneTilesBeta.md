@@ -6,7 +6,7 @@ hide:
   document.title = "Deploy OCP - TechZone Tiles - Beta";
 </script>
 
-# TechZone Tile Info
+# TechZone Tile Info - Beta
 
 <img src='../images/techzone.jpeg'   align="top" width="100"  height="200" style = "float">
 
