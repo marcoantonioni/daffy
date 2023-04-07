@@ -34,8 +34,8 @@ At this point, you have a **bastion** machine where you have installed the Daffy
 
           sudo su -
 
-## TechZone Roks-VSphere
-(**prebuilt** cluster): [https://techzone.ibm.com/collection/custom-roks-vmware-requests](https://techzone.ibm.com/collection/custom-roks-vmware-requests){target=_blank}
+## TechZone VMWare/Roks
+(**prebuilt** cluster): [https://techzone.ibm.com/collection/5fb3200cec8dd00017c57f20](https://techzone.ibm.com/collection/5fb3200cec8dd00017c57f20){target=_blank}
 
 - Does **NOT** include bastion with request
 - No need for VPN, public direct access to cluster
