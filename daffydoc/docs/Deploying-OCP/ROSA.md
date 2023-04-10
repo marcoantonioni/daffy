@@ -6,7 +6,7 @@ hide:
   document.title = "Deploy OCP - AWS ROSA";
 </script>
 
-#Azure Install
+#ROSA Install
 <img src='../images/aws/rosa.jpg'   align="top" width="200"  height="300" style = "float">
 
 At this point, you have a bastion machine where you have installed the Daffy tool, and ready to created your core <b>environment-name</b>-env.sh and so you can execute the install of OCP on AWS via ROSA.
@@ -21,27 +21,79 @@ To use Daffy on **AWS**, there are some platform info and requirements that need
 
 **Quota** - The ability to add new workload to that platform
 
+For detailed list of ROSA instructions, refer to the ROSA documentation.
+
+[https://docs.openshift.com/rosa/welcome/index.html](ROSA Documentation){target=_blank}
+
 For detailed list of the above, you can find in the Daffy Provider Requirements. Please review before proceeding.
 
 [https://ibm.box.com/v/DaffyProviderRequirements](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank}
 
+## One time ROSA setup
+
+First login to the AWS Console, and search for ROSA service.
+
+<img src='../images/rosa-search.jpg'/>
+
+Click **Enable OpenShift** button in the ROSA Services page.
+
+<img src='../images/rosa-enable.jpg'/>
+
+Next, go to the Red Hat token page to get a ROSA token for login and generate or load an OpenShift Cluster Manager API Token.
+
+!!! Note
+    You must have a valid Red Hat login id. You can signup with any email address
+
+[https://console.redhat.com/openshift/token/rosa](ROSA Token){target=_blank}
+
+<img src='../images/rosa_token.jpg'/>
+
 ## Finding Provider Details
 
-To install Daffy on AWS, the hardest part can be finding the provider details.
+To install OpenShift on **AWS ROSA** using Daffy, the hardest part can be finding the provider details.
 
-More Details Comming!!!!!!!!!!!!!
+To create or use an existing **AWS Access Key ID** you can refer to this:
 
-### <font color="red">Access Key ID</font>
-First search for........?????
-??? Info "Screenshot Locate Access Key ID"
-    <img src='../../images/Under_construction_icon-yellow.svg.png' height="10%" width="10%"  align="top"  style = "float">
+[https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html?icmpid=docs_iam_console#Using_CreateAccessKey){target=_blank}
 
-[<img src='../../images/httpLinkIcon.png' height="1%" width="1%"> More Info](http://www.google.com ){target=_blank}
+**Note:** Use the Identity and Access Management (IAM) service to manage access keys.
 
-### Permission
+1. Select Search - find   IAM   service
+2. You can create a new access key or use an existing key. The access key must have authority to the account you wan to install OpenShift into.
 
-Within your AWS project, you would need to go to IAM  Section and create/use Service Account.  From the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements), make sure your service account has the correct permissions.  Look at the AWS section, it is same plus a few extra needed for ROSA.
+<img src='../images/aws_1.png'/>
+<img src='../images/aws_2.png'/>
+<img src='../images/aws_3.png'/>
+<img src='../images/aws_4.png'/>
+<img src='../images/aws_5.png'/>
 
+**Secret Access Key:**
+The secret access key is ONLY displayed at the time of creation. When you create the access key, you will then have the opportunity to capture the secret access key
+
+!!! Note
+      This is sensitive information, please make sure you store this in a secure location
+
+The screen to the right is an example of what you will see when you create a NEW access Key.
+<img src='../images/aws_6.png'/>
+
+**Region:**
+
+For you to use Daffy to install on **AWS** you need to choose a valid region identifier. This will be the target region you are planning to deploy OpenShift into.  
+
+To see a complete list of available AWS Regions, you can select the region drop down list in the AWA Portal. This will be in the upper right hand corner next to your account name. (See picture to the right)
+
+**Note:** Take note of the region identifier such as: us-east-2. This is the value you would use to deploy a OCP cluster into the US East (Ohio) region.  
+<img src='../images/aws_7.png'/>  
+
+**Permission:**
+
+Within your **AWS** project, you would need to go to IAM  Section and make sure the user that is associated with your Access Key is assigned the correct roles.  
+
+At minimum, you need to have this role: AdministratorAccess
+
+Please see the [requirements doc](https://ibm.box.com/v/DaffyProviderRequirements){target=_blank} for more information!
+
+<img src='../images/aws_8.png'/>
 
 ## Environment File
 
