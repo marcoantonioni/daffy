@@ -39,7 +39,7 @@ Click **Enable OpenShift** button in the ROSA Services page.
 
 <img src='../images/rosa-enable.jpg'/>
 
-Next, go to the Red Hat token page to get a ROSA token for login and generate or load an OpenShift Cluster Manager API Token.
+Next, go to the Red Hat token page to get a ROSA token for login and generate or load an OpenShift Cluster Manager API Token. Daffy scripts will prompt you for this token at install time.
 
 !!! Note
     You must have a valid Red Hat login id. You can signup with any email address
