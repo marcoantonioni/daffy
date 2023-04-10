@@ -1354,9 +1354,128 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Business Automation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Business Automation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    Storage
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roks" class="md-nav__link">
+    ROKS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roks-vpc2" class="md-nav__link">
+    ROKS VPC2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rosa" class="md-nav__link">
+    ROSA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-others" class="md-nav__link">
+    All Others
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespace" class="md-nav__link">
+    Namespace
+  </a>
+  
+    <nav class="md-nav" aria-label="Namespace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starter" class="md-nav__link">
+    Starter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#odm-production" class="md-nav__link">
+    ODM Production
+  </a>
+  
+    <nav class="md-nav" aria-label="ODM Production">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ldap-overrides" class="md-nav__link">
+    LDAP Overrides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2008,6 +2127,109 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#storage" class="md-nav__link">
+    Storage
+  </a>
+  
+    <nav class="md-nav" aria-label="Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#roks" class="md-nav__link">
+    ROKS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roks-vpc2" class="md-nav__link">
+    ROKS VPC2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rosa" class="md-nav__link">
+    ROSA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-others" class="md-nav__link">
+    All Others
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespace" class="md-nav__link">
+    Namespace
+  </a>
+  
+    <nav class="md-nav" aria-label="Namespace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starter" class="md-nav__link">
+    Starter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production" class="md-nav__link">
+    Production
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#odm-production" class="md-nav__link">
+    ODM Production
+  </a>
+  
+    <nav class="md-nav" aria-label="ODM Production">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ldap-overrides" class="md-nav__link">
+    LDAP Overrides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2024,7 +2246,132 @@
   document.title = "Overrides - CP4BA";
 </script>
 <h1 id="cp4ba-overrides">CP4BA Overrides<a class="headerlink" href="#cp4ba-overrides" title="Permanent link">&para;</a></h1>
-<p>In progress !!!!!</p>
+<h2 id="storage">Storage<a class="headerlink" href="#storage" title="Permanent link">&para;</a></h2>
+<p>Based on the platform you delopy to, a default storge will be picked. If you want to override any, just add to your environment file based on names below and new stroage class name that is in the cluster. </p>
+<p>There are 6 storage class variables that are set:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Storage Type</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_AUTO_STORAGE_CLASS_OCP_BLOCK</td>
+<td style="text-align: left;">Block Storage</td>
+<td>This is <strong><font color=red>block storage</font></strong>, NFS is not block storage</td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_AUTO_STORAGE_CLASS_FAST_ROKS</td>
+<td style="text-align: left;">File Storage</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_AUTO_STORAGE_CLASS_OCP</td>
+<td style="text-align: left;">File Storage</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_AUTO_STORAGE_CLASS_OCP_SLOW</td>
+<td style="text-align: left;">File Storage</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_AUTO_STORAGE_CLASS_OCP_MEDIUM</td>
+<td style="text-align: left;">File Storage</td>
+<td></td>
+</tr>
+<tr>
+<td style="text-align: left;">CP4BA_AUTO_STORAGE_CLASS_OCP_FAST</td>
+<td style="text-align: left;">File Storage</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="roks">ROKS<a class="headerlink" href="#roks" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_AUTO_STORAGE_CLASS_FAST_ROKS</span><span class="o">=</span><span class="s">&quot;ibmc-file-gold-gid&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP</span><span class="o">=</span><span class="s">&quot;ibmc-file-gold-gid&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_BLOCK</span><span class="o">=</span><span class="s">&quot;ibmc-block-gold&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_SLOW</span><span class="o">=</span><span class="s">&quot;ibmc-file-bronze-gid&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_MEDIUM</span><span class="o">=</span><span class="s">&quot;ibmc-file-silver-gid&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_FAST</span><span class="o">=</span><span class="s">&quot;ibmc-file-gold-gid&quot;</span>
+</code></pre></div>
+<h3 id="roks-vpc2">ROKS VPC2<a class="headerlink" href="#roks-vpc2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_AUTO_STORAGE_CLASS_FAST_ROKS</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_BLOCK</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-ceph-rbd&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_SLOW</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_MEDIUM</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_FAST</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+</code></pre></div>
+<h3 id="rosa">ROSA<a class="headerlink" href="#rosa" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_AUTO_PLATFORM</span><span class="o">=</span><span class="n">OCP</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_FAST_ROKS</span><span class="o">=</span><span class="s">&quot;efs-nfs-client&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP</span><span class="o">=</span><span class="s">&quot;efs-nfs-client&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_BLOCK</span><span class="o">=</span><span class="s">&quot;gp3&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_SLOW</span><span class="o">=</span><span class="s">&quot;efs-nfs-client&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_MEDIUM</span><span class="o">=</span><span class="s">&quot;efs-nfs-client&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_FAST</span><span class="o">=</span><span class="s">&quot;efs-nfs-client&quot;</span>
+</code></pre></div>
+<h3 id="all-others">All Others<a class="headerlink" href="#all-others" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_BLOCK</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-ceph-rbd&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_SLOW</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_MEDIUM</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+<span class="n">CP4BA_AUTO_STORAGE_CLASS_OCP_FAST</span><span class="o">=</span><span class="s">&quot;ocs-storagecluster-cephfs&quot;</span>
+</code></pre></div>
+<h2 id="namespace">Namespace<a class="headerlink" href="#namespace" title="Permanent link">&para;</a></h2>
+<p>A default namespace will be used, but if you want to override it, just update the following variable based on your deployment type and your new name in your environment file</p>
+<h3 id="starter">Starter<a class="headerlink" href="#starter" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_AUTO_NAMESPACE_STARTER</span><span class="o">=</span><span class="s">&quot;cp4ba-starter&quot;</span>
+</code></pre></div>
+<h3 id="production">Production<a class="headerlink" href="#production" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_NAMESPACE</span><span class="o">=</span><span class="s">&quot;cp4ba-decisions&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_CONTENT_NAMESPACE</span><span class="o">=</span><span class="s">&quot;cp4ba-content&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_WORKFLOW_RUNTIME_NAMESPACE</span><span class="o">=</span><span class="s">&quot;cp4ba-workflow-runtime&quot;</span>
+</code></pre></div>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>By default, daffy will use a non-production license value during deployment. If you wish to change this, add the following varaible and update based on need to your environment file.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Variable Name</th>
+<th style="text-align: left;">Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">CP4BA_DEPLOYMENT_LICENSE</td>
+<td style="text-align: left;">non-production or production</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_DEPLOYMENT_LICENSE</span><span class="o">=</span><span class="s">&quot;non-production&quot;</span>
+</code></pre></div>
+<h2 id="odm-production">ODM Production<a class="headerlink" href="#odm-production" title="Permanent link">&para;</a></h2>
+<h3 id="ldap-overrides">LDAP Overrides<a class="headerlink" href="#ldap-overrides" title="Permanent link">&para;</a></h3>
+<p>If you have existing LDAP Server and want to integrate with the ODM production deployment, below are the dafault values you can override to point to a new LDAP Server.  Just add variable name and new value to your environment file.
+<div class="highlight"><pre><span></span><code><span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_OU</span><span class="o">=</span><span class="s">&quot;${PROJECT_NAME}&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_TYPE</span><span class="o">=</span><span class="s">&quot;IBM Security Directory Server&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SERVER</span><span class="o">=</span><span class="s">&quot;&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_PORT</span><span class="o">=</span><span class="s">&quot;389&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_ADMIN_USER</span><span class="o">=</span><span class="s">&quot;odmAdmin&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_BIND_SECRET</span><span class="o">=</span><span class="s">&quot;ldap-bind-secret&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_BASE_DN</span><span class="o">=</span><span class="s">&quot;ou=${PROJECT_NAME},ou=odm,dc=ibm,dc=com&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SSL_ENABLED</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_SECRET_NAME</span><span class="o">=</span><span class="s">&quot;ldap-ssl-cert&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_USER_NAME_ATTRIBUTE</span><span class="o">=</span><span class="s">&quot;*:uid&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_USER_DISPLAY_NAME_ATTR</span><span class="o">=</span><span class="s">&quot;uid&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_GROUP_BASE_DN</span><span class="o">=</span><span class="s">&quot;ou=Groups,ou=${PROJECT_NAME},ou=odm,dc=ibm,dc=com&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_GROUP_NAME_ATTRIBUTE</span><span class="o">=</span><span class="s">&quot;*:cn&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_GROUP_DISPLAY_NAME_ATTR</span><span class="o">=</span><span class="s">&quot;cn&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_GROUP_MEMBERSHIP_SEARCH_FILTER</span><span class="o">=</span><span class="s">&quot;(|(\&amp;(objectclass=groupofnames)(member={0}))(\&amp;amp;(objectclass=groupofuniquenames)(uniquemember={0})))&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_GROUP_MEMBER_ID_MAP</span><span class="o">=</span><span class="s">&quot;groupofnames:member&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_TDS_LC_USER_FILTER</span><span class="o">=</span><span class="s">&quot;(\&amp;amp;(cn=%v)(objectclass=person))&quot;</span>
+<span class="n">CP4BA_DEPLOYMENT_PRODUCTION_DECISIONS_LDAP_TDS_LC_GROUP_FILTER</span><span class="o">=</span><span class="s">&quot;(\&amp;amp;(cn=%v)(|(objectclass=groupofnames)(objectclass=groupofuniquenames)(objectclass=groupofurls)))&quot;</span>
+</code></pre></div></p>
 
               
             </article>
