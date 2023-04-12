@@ -97,5 +97,5 @@ This page is where can see overall status of the cloud pak and all the sevcies y
 
 #### Cloud Pak Console 
 
-This page is where can see the connection info for your cloud Pak. This is the page where you will get your URL's, usernames and passwords once the services are up and running. The page will refresh every few minutes. You will not see any values until the CP4B operators have completed there task. Once operators are done, it will populate this page with all of your connection details.
+This page is where can see the connection info for your cloud Pak. This is the page where you will get your URL's, usernames and passwords once the services are up and running. The page will refresh every few minutes. You will not see any values until the operators have completed there task. Once operators are done, it will populate this page with all of your connection details.
 
