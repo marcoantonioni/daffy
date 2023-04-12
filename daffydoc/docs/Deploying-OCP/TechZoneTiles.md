@@ -6,104 +6,93 @@ hide:
   document.title = "Deploy OCP - TechZone Tiles";
 </script>
 
-# TechZone Tile Info
+# TechZone Tile Info - Beta
 
 <img src='../images/techzone.jpeg'   align="top" width="100"  height="200" style = "float">
 
-The Purpose of the following TechZone Tiles are to install the full OpenShift/Cloud Pak stack for you. This would enable you to start using your Cloud Pak of choice, without deep skills in OpenShift or Cloud Pak install process. From a Reservetaion to Cloud Pak use, in a few hours of runtime, but 5 min of your time.  Sit back, let Daffy Build the full stack for you.
+The Purpose of the following TechZone Tiles are to install the full OpenShift/Cloud Pak stack for you. This would enable you to start using your Cloud Pak of choice, without deep skills in OpenShift or Cloud Pak install process. From a Reservetaion to Cloud Pak use, in a few hours of runtime, but 5 min of your time.  Sit back, let Daffy/PakInstaller Build the full stack for you. 
+
+1.  This collection of tiles will build a public facing cluster.  <font color=red>No VPN is require or provided</font>
+2.  More then one user is allowed to access your Cluster and Cloud Pak.  The only limitation is your cloud pak and the size that was built.
+3. All Access Points via trusted SSL Certs. No Browser Popup
 
 
 You can access the Tech Zone Environment Tiles here:
 
 1.  [Cloud Pak for Business Automation](https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-business-automation){target=_blank}
-2.  [Cloud Pak for Data](https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-data){target=_blank}
-3.  [Cloud Pak for Integration](https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-integration){target=_blank}
+
+2.  [Cloud Pak for Integration](https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-integration){target=_blank}
 
 
-## CP4BA
+## **Over all Process**
 
-Will take 1 1/2 to 2 hours to install OpenShift, Cloud Pak base and start the services install. You will get email at this point with how to connect to your cluster. From the Guacamole console, you can connect to the Desktop or get the status of your cloud pak. Once you get the email, it can take 2-3 hours for the CP4BA services to be ready. During that time you may see failed deployment, this is normal as the operator will self heal. (Do not watch the paint dry, get a coffee and come back in a few hours)
+Overall Process can take 4 - 8 hours. 
 
-## CP4D
+Of that, it will take 2 to 3 hours to install OpenShift, Cloud Pak base and install/start the services for the cloud pak. You will get email at each major step.  Then you will have to wait the 1 -5 hours until your serivces are fully running.
 
-Will take 3 to 4 hours to install OpenShift, Cloud Pak base and start the services install. You will get email at this point with how to connect to your cluster. From the Guacamole console, you can connect to the Desktop or get the status of your cloud pak. Once you get the email, it can take 3-6 hours for the CP4D services to be ready, depending which ones you deployed. During that time you may see failed deployment, this is normal as the operator will self heal. (Do not watch the paint dry, get a coffee and come back in a few hours)
+### **Status Email Messages**
 
-## CP4I
+1)  After Cluster is installed - OpenShift is up and running,  you can logon to the OpenShift Cluster console
 
-Will take 2 to 3 hours to install OpenShift, Cloud Pak base and start the services install. You will get email at this point with how to connect to your cluster. From the Guacamole console, you can connect to the Desktop or get the status of your cloud pak. Once you get the email, it can take 1-2 hours for the CP4I services to be ready. During that time you may see failed deployment, this is normal as the operator will self heal. (Do not watch the paint dry, get a coffee and come back in a few hours)
+??? Info "Email Sample"
+    <img src='../images/TechZoneTiles/emailMessage1.jpg'   align="top"  style = "float">
 
-## Tips and Tricks
+2)  After the Cloud Pak Base is installed - Cloud Pak Name Spaces is create and All Cloud Pak Operators are installed
 
-### Guacamole
+??? Info "Email Sample"
+    <img src='../images/TechZoneTiles/emailMessage2.jpg'   align="top"  style = "float">
 
-Once you get your TechZone reservation, the email and your TechZone Reservation page will give  you a link to the Guacamole Desktop.  You will use that to access your new environment. 
+3) After the Cloud Pak Services have be installed - This is that the starting process, servics are not ready yet. This is <font color=red>final</font> email as the Pak Installer automation process is over. Now the cloud pak operators take over and can take another <font color=red>1 - 5 hours</font>
 
-!!! INFO
-        Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC, RDP, and SSH.
+??? Info "Email Sample"
+    <img src='../images/TechZoneTiles/emailMessage3.jpg'   align="top"  style = "float">
 
-        We call it clientless because no plugins or client software are required.
+<br>
 
-        Thanks to HTML5, once Guacamole is installed on a server, all you need to access your desktops is a web browser.
-
-        <font color=red>With Guacamole, it allows you to connect to this new private network OpenShift/Cloud Pak Cluster.</font> 
-
-
-<img src='../images/TechZoneTiles/GuacamoleConsole.jpg'   align="top"  style = "float">
-
-!!! INFO
-      If you are using Firefox and unable to copy/paste in Remote Desktop Web Client, please enable. [https://sudoedit.com/firefox-async-clipboard/](https://sudoedit.com/firefox-async-clipboard/){target=_blank} via @Max Simpson
-
-Has three options
-
-!!! INFO
-       To copy and paste, just highlight the text you want to copy and it will be in your clipboard. Then paste(right click then paste menu) to other Guacamole Screens.
+??? INFO "TechZone Emails"
+    TechZone will also send you emails, at the begging of the reserveration and and the end once the PakInstaller automation is done. You will get a total of 5 emails for this process. 
 
 
-1.  **CloudPak Information**
-
-      This will be menu based system to give you info about your cloud pak.  Status and any Console links and ID/Passwords
-      This is where you can copy the url and passwords to paste in the Red Hat Remote Desktop Firefox Browser.
-
-2.  **Remote Red Hat Linux Desktop**
-
-      This will be GUI for the Bastion Desktop.  This is where  you would go to logon to your OpenShift Console, Cloud Pak Dashboard, etc. To open Firefox, on the top left of the Desktop, click the "Activities" text and select Firefox from the new menu.
-
-3.  **SSH Terminal Session**
-
-      This is where you can go to run oc commands or other line command line tools.
-
-#### Controls
-
-If want to get the guacamole controls to have a better way to copy/paste, resize screen or change keyboard type, you can do the following to bring up the controls:
-
-For Mac users
-
-  **CONTROL-OPTION-SHIFT**
-
-For Windows Users
-
-  **CTRL-ALT-SHIFT**
 
 
-### **Wireguard**
-WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. With this sofware, you can connect from your desktop to the new private network OpenShift/Cloud Pak Cluster.
+## Pak Installer Portal
 
-If you enabled the VPN on the TechZone tile and want to connect, you need to install the WireGuard Application on your local Desktop and load your own config.
+To make the process simple, the end result for your TechZone Reservation will be a single link to the Pak Installer Portal. This portal is your one stop for status and connection info for you cluster and the cloud pak. The Portal requires userid/password to connect to as this cluster is a public facing cluster. 
 
-1)  Install WireGuard [https://www.wireguard.com/install/](https://www.wireguard.com/install/){target=_blank}
+These pages update every few minutes with any updated information.  This portal is where you would go to monitor the status of your servies and to find out when they are ready.  You will <font color=red>not</font> get email when they are ready as this can take from 1 - 5 hours to finish. Please use the "Cloud Pak Status" tab to monitor the status.
 
-2) Download the Connection Config from the TechZone tile
-??? Info "Screenshot"
-    <img src='../../images/DeployingOCP/TechZoneTiles/1.1WireGuard.jpg'   align="top" style = "float">
+### **Tabs**
+
+The Pak Installer portal has 5 tabs at the top of the page. Each tab is designed to give you more info for that topic.
+
+??? Info "Tabs Preview"
+    <img src='../images/TechZoneTiles/tabs.jpg'   align="top"  style = "float">
 
 
-3) Import into to your local Wireguard
-??? Info "Screenshot"
-    <img src='../../images/DeployingOCP/TechZoneTiles/1WireGuard.jpg'   align="top" style = "float">
+#### Instructions 
 
-4) Start up the VPN connection with new config
-??? Info "Screenshot"
-    <img src='../../images/DeployingOCP/TechZoneTiles/2WireGuard.jpg'   align="top" style = "float">
-    <img src='../../images/DeployingOCP/TechZoneTiles/3WireGuard.jpg'   align="top" style = "float">
+This page to explain the tabs within the Portal. Points to the Daffy Public documentation site from within your local cluster Portal page 
 
-5)  Open your local browser and connect to the OpenShift, VCenter or Cloud Pak URLs.  
+#### Bastion 
+
+Connection info to the bastion(RHEL server).  It will gave you the host name, port, userID and password you can use if you want to connect to the bastion server for this new environment. 
+
+??? INFO
+    This info is not required to be used to run/access your Cloud Pak, but here if you needed it. 
+
+#### OpenShift Console 
+
+Connection info to your new OpenShift Cluster. You can see both ids you can use to connect to the cluster via command line or Web URl. It also shows overall cluster info like version, bastion OS, daffy version, etc. 
+
+??? INFO 
+    This info is not required to be used to run/access your Cloud Pak, but here if you needed it. 
+
+#### Cloud Pak Status 
+
+This page is where can see overall status of the cloud pak and all the sevcies you requeted. The Cloud Pak Status page will auto refresh every few minutes and where you can watch as your services come online. As stated before, this can take 1 -5 hours to get to "Ready" state for all services componets. Once services are ready, it will then update the console tab with your console connection info.
+
+
+#### Cloud Pak Console 
+
+This page is where can see the connection info for your cloud Pak. This is the page where you will get your URL's, usernames and passwords once the services are up and running. The page will refresh every few minutes. You will not see any values until the CP4B operators have completed there task. Once operators are done, it will populate this page with all of your connection details.
+
