@@ -158,7 +158,8 @@ Run the following command to install other tools you might need.
       --installGOVC                          This will install the govc commandline tool(VMware)
       --installCloudCTL                      This will install the cloudctl for CP4D
       --installCP4DCloudCLI                  This will install the CP4D Cloud CLI utility
-      --installCPDCTL                        This will install the Cloud Pak 4 Data (CPDCTL) utility"
+      --installCPDCTL                        This will install the Cloud Pak 4 Data (CPDCTL) utility
+      --installCP4BACase                     This will install the Cloud Pak 4 Business Automation (case) utility
       ```
 
 ## **Gather Logs**
