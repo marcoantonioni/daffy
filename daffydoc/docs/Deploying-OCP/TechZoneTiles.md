@@ -6,7 +6,7 @@ hide:
   document.title = "Deploy OCP - TechZone Tiles";
 </script>
 
-# TechZone Tile Info - Beta
+# TechZone Tile Info
 
 <img src='../images/techzone.jpeg'   align="top" width="100"  height="200" style = "float">
 
@@ -22,6 +22,9 @@ You can access the Tech Zone Environment Tiles here:
 1.  [Cloud Pak for Business Automation](https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-business-automation){target=_blank}
 
 2.  [Cloud Pak for Integration](https://techzone.ibm.com/collection/PakInstaller/journey-cloud-pak-for-integration){target=_blank}
+
+!!! Warning   
+      For IBM and Business Partners use only
 
 
 ## **Over all Process**
