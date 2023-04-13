@@ -53,7 +53,7 @@ Of that, it will take 2 to 3 hours to install OpenShift, Cloud Pak base and inst
 <br>
 
 ??? INFO "TechZone Emails"
-    TechZone will also send you emails, at the begging of the reserveration and and the end once the PakInstaller automation is done. You will get a total of 5 emails for this process. 
+    TechZone will also send you emails, at the beginning of the reserveration and and the end once the PakInstaller automation is done. You will get a total of 5 emails for this process. 
 
 
 
