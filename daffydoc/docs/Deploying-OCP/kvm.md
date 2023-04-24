@@ -10,7 +10,7 @@ hide:
 
 <img src='../images/kvm.jpeg'  align="top" width="200"  height="300" style = "float">
 
-  At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh, and can execute the install of OCP on ROKS.
+  At this point, you have a bastion machine where you have installed the Daffy tool, created your core <b>environment-name</b>-env.sh, and can execute the install of OCP on KVM.
 
 ## Platform Requirements
 
