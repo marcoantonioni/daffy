@@ -31,7 +31,7 @@ With these values, the Daffy engine will be able to install the version of Cloud
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
-| 4.6.4     | 4.10    |
+| 4.6.4     | 4.10, 4.12    |
 | 4.6.3     | 4.10    |
 | 4.6.2     | 4.10    |
 | 4.6.1     | 4.10    |

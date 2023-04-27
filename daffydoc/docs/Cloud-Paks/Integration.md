@@ -36,7 +36,7 @@ platform navigator
 
 | Integration Supported Version    | OCP Versions |
 | :---      |    :----    |  
-| 2022.4.1     | 4.10     |
+| 2022.4.1     | 4.10 & 4.12     |
 | 2022.2.1     | 4.10     |
 
 **Run the following command** to deploy the Cloud Pak for Integration:
