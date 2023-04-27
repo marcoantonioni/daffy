@@ -15,10 +15,11 @@ With the Daffy scripts you can now install Instana monitoring. The scripts suppo
 
 Documentation on how to obtain a license key can be found here
 
-(Seismic Link to how to obtain a Instana License Key)[https://ibm.seismic.com/Link/Content/DCj2qgpG29qPj8cHGVFXH8jppBRj]
+[Seismic Link to how to obtain a Instana License Key](https://ibm.seismic.com/Link/Content/DCj2qgpG29qPj8cHGVFXH8jppBRj)
 
 If you are looking to gain a license key for Customer Evaluation, you will need access to the Portal. To gain access to the portal you need to request access via AccessHub. Below is documentation on how to request access to the Instana License Portal on AccessHub. 
-(AccessHub Access Hub Documentation)[https://ibm.ent.box.com/s/cssvm4bhrij85cijkl25numzcrxv1anm]
+
+[AccessHub Access Hub Documentation])https://ibm.ent.box.com/s/cssvm4bhrij85cijkl25numzcrxv1anm)
 
 
 ## Install 
