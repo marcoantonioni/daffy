@@ -1,3 +1,37 @@
+
+## v2023-04-27
+          Tested OpenShift with Current Daffy Release
+              GCP                4.10.36/4.12.9
+              AWS                4.10.36/4.12.9
+              Azure              4.10.36/4.12.9
+              ROKS               4.10.53/4.12.7
+              VSphere            4.10.36/4.12.9
+              KVM                4.10.36/4.12.9
+              IBM IPI            4.10.36/4.12.9
+              ROSA               4.10.36/4.12.9
+              ARO                4.10.40
+              *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+          Cloud Pak for Integration
+              Updated to latest versions of subscriptions and services
+          Cloud Pak for Data
+              Updated to 4.6.4 with support on OpenShift 4.12
+              New Watson Knowledge Catalog settings (WKC)
+                Data Quality - CP4D_WKC_ENABLE_DQ="true"
+                Data Graph - CP4D_WKC_ENABLE_GRAPH="true"
+                Data Lineage (Manta) - CP4D_WKC_ENABLE_MANTA="true"
+                CP4D_WKC_MANTA_KEYLOC="directory where license key for manta is stored Default is /tmp"
+                CP4D_WKC_MANTA_LICENSE="Name of Manta license file, Default is license.key"
+              New Data Replication Service
+          Cloud Pak for Watson AIOPS
+              Added support for 3.7.0
+              Remove support for all versions below 3.5.0
+          Instana Server
+              Added Support for 239-246 for backend Instana Server on OpenShift (must have sales & agent keys)
+              INSTANA_SERVER_INSTALL=true
+          Misc
+              Added support for KVM and Ubuntu 22.04 (deprecating 20.04 in next release)
+              Added support for Ubuntu 22.04 as new bastion (deprecating 20.04 in next release)    
+              
 ## v2023-03-24a
           Cloud Pak for Business Automation
               SSL certificates allowed as Alt name *.apps.${CLUSTER}.${BASE_DOMAIN}
