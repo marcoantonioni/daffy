@@ -16,13 +16,15 @@ With the Daffy scripts you can now install Instana monitoring. The scripts suppo
 
 ## Install 
 
-**_REQUIRED ENVIRONMENT VARIABLES_**
+**_INSTANA BACKEND SERVER PLATFORM - REQUIRED ENVIRONMENT VARIABLES_**
 
 To install the backend platform you must have this variable set in your env file. 
 
 ```R
 INSTANA_SERVER_INSTALL=true
 ```
+
+**_INSTANA BACKEND SERVER PLATFORM - OPTIONAL ENVIRONMENT VARIABLES_**
 
 The version of the instana platform will default to the latest version supported by the daffy scripts. You may choose to set it to a specific version, but it must be a version that is supported by the Daffy installer. 
 
@@ -32,11 +34,15 @@ Currently the supported versions for the Instana Backend Platform is: (239 - 246
 INSTANA_VERSION=246
 ```
 
+**_INSTANA MONITORING - REQUIRED ENVIRONMENT VARIABLES_**
+
 To install the Instana monitoring agent for your OpenShift cluster, you must have this variable in your env file. 
 
 ```R
 INSTANA_MONITORING=true
 ```
+
+**_INSTANA MONITORING - OPTIONAL ENVIRONMENT VARIABLES_**
 
 If you are installing the Instana monitoring agent on the same OpenShift cluster as the Instana platform server, you can use this variable. If you are installing just the Instana agent and sending monitoring data to a remote Instna Platform, this variable must be set to the remote Instna Server Agent URL. 
 
