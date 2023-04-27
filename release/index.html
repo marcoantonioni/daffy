@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v2023-03-24a" class="md-skip">
+        <a href="#v2023-04-27" class="md-skip">
           Skip to content
         </a>
       
@@ -1997,6 +1997,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v2023-04-27" class="md-nav__link">
+    v2023-04-27
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v2023-03-24a" class="md-nav__link">
     v2023-03-24a
   </a>
@@ -2202,6 +2209,39 @@
 
   <h1>Release</h1>
 
+<h2 id="v2023-04-27">v2023-04-27<a class="headerlink" href="#v2023-04-27" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>      Tested OpenShift with Current Daffy Release
+          GCP                4.10.36/4.12.9
+          AWS                4.10.36/4.12.9
+          Azure              4.10.36/4.12.9
+          ROKS               4.10.53/4.12.7
+          VSphere            4.10.36/4.12.9
+          KVM                4.10.36/4.12.9
+          IBM IPI            4.10.36/4.12.9
+          ROSA               4.10.36/4.12.9
+          ARO                4.10.40
+          *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+      Cloud Pak for Integration
+          Updated to latest versions of subscriptions and services
+      Cloud Pak for Data
+          Updated to 4.6.4 with support on OpenShift 4.12
+          New Watson Knowledge Catalog settings (WKC)
+            Data Quality - CP4D_WKC_ENABLE_DQ=&quot;true&quot;
+            Data Graph - CP4D_WKC_ENABLE_GRAPH=&quot;true&quot;
+            Data Lineage (Manta) - CP4D_WKC_ENABLE_MANTA=&quot;true&quot;
+            CP4D_WKC_MANTA_KEYLOC=&quot;directory where license key for manta is stored Default is /tmp&quot;
+            CP4D_WKC_MANTA_LICENSE=&quot;Name of Manta license file, Default is license.key&quot;
+          New Data Replication Service
+      Cloud Pak for Watson AIOPS
+          Added support for 3.7.0
+          Remove support for all versions below 3.5.0
+      Instana Server
+          Added Support for 239-246 for backend Instana Server on OpenShift (must have sales &amp; agent keys)
+          INSTANA_SERVER_INSTALL=true
+      Misc
+          Added support for KVM and Ubuntu 22.04 (deprecating 20.04 in next release)
+          Added support for Ubuntu 22.04 as new bastion (deprecating 20.04 in next release)
+</code></pre></div>
 <h2 id="v2023-03-24a">v2023-03-24a<a class="headerlink" href="#v2023-03-24a" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>      Cloud Pak for Business Automation
           SSL certificates allowed as Alt name *.apps.${CLUSTER}.${BASE_DOMAIN}
