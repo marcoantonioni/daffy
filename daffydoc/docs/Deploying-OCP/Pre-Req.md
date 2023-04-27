@@ -17,10 +17,14 @@ Before you can use the Daffy scripts, you must have the following:
 - The Termius installer can be found here:  [Windows](https://termius.com/windows){target=_blank} or [Mac](https://termius.com/mac-os){target=_blank}  (only the free version is needed)
 
 ### A Bastion Machine
+
+!!! attention
+     Ubuntu 20.04 has been depricated for use with the Daffy Scripts! While it may still work, it is no-longer being tested. Please upgrade to v22.04. 
+
 - [Create Bastion Instructions](../../Supporting-Software/Bastion/)
-- Ubuntu 20.04 (Minimum Requirements: 2   CPU, 2GB    Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
-- Ubuntu 20.04 (Minimum Requirements: 60+ CPU, 128GB+ Memory) with full root access  **(KVM-UPI)**
-- Ubuntu 20.04 (Minimum Requirements: 4+  CPU, 32GB+  Memory, 100 GB Disk) with full root access  **(AirGap Bastion/Jump Box Mirror Registry)**
+- Ubuntu 22.04 (Minimum Requirements: 2   CPU, 2GB    Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
+- Ubuntu 22.04 (Minimum Requirements: 60+ CPU, 128GB+ Memory) with full root access  **(KVM-UPI)**
+- Ubuntu 22.04 (Minimum Requirements: 4+  CPU, 32GB+  Memory, 100 GB Disk) with full root access  **(AirGap Bastion/Jump Box Mirror Registry)**
 - RHEL 8.X     (Minimum Requirements: 2   CPU, 2GB    Memory) with full root access  **(VSphere-UPI, *-IPI and *-MSP)**
 - RHEL 8.X     (Minimum Requirements: 4+  CPU, 32GB+  Memory, 100 GB Disk) with full root access  **(AirGap Bastion/Jump Box Mirror Registry)**
 
