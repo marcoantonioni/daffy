@@ -28,7 +28,7 @@ hide:
 <button onclick="location.href='./TechZoneTiles/'" class="custom-btn btn-7">TechZoneTiles</button>
 
 <div><B>UPI Installs</B></div>
-<button onclick="location.href='./KVM/'" class="custom-btn btn-7">KVM</button>
+<button onclick="location.href='./kvm/'" class="custom-btn btn-7">KVM</button>
 <button onclick="location.href='./VSphere/'" class="custom-btn btn-7">VSphere</button>
 
 
