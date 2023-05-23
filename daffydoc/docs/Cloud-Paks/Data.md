@@ -24,13 +24,14 @@ Deploying the Cloud Pak for Data requires one entry to your environment file (/d
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4D_VERSION="4.6.4"
+CP4D_VERSION="4.6.5"
 ```
 
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
+| 4.6.5     | 4.10, 4.12    |
 | 4.6.4     | 4.10, 4.12    |
 | 4.6.3     | 4.10    |
 | 4.6.2     | 4.10    |
@@ -71,8 +72,10 @@ Set the flags in your environment file (<**ENVIRONMENT_NAME**>-env.sh) for the C
 | CP4D_ENABLE_SERVICE_DATAPRIVACY | true / false   | Data Privacy |  No    |
 | CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS | true / false   | Cognos Analytics |  No    |
 | CP4D_ENABLE_SERVICE_DB2 | true / false   |  DB2 OLTP | No    |
-CP4D_ENABLE_SERVICE_WATSON_OPENSCALE | true / false   |  Watson OpenScale | No    |
-CP4D_ENABLE_SERVICE_WS_PIPELINES| true / false   |  Watson Pipelines | No    |
+| CP4D_ENABLE_SERVICE_WATSON_OPENSCALE | true / false   |  Watson OpenScale | No    |
+| CP4D_ENABLE_SERVICE_WS_PIPELINES| true / false   |  Watson Pipelines | No    |
+| CP4D_ENABLE_SERVICE_FACTSHEETS| true / false   |  AI FactSheets | No    |
+| CP4D_ENABLE_SERVICE_REPLICATION| true / false   |  Data Replication | No    |
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
@@ -96,6 +99,8 @@ CP4D_ENABLE_SERVICE_COGNOS_ANALYTICS="false"
 CP4D_ENABLE_SERVICE_DB2="false"
 CP4D_ENABLE_SERVICE_WATSON_OPENSCALE="false"
 CP4D_ENABLE_SERVICE_WS_PIPELINES="false"
+CP4D_ENABLE_SERVICE_FACTSHEETS="false"
+CP4D_ENABLE_SERVICE_REPLICATION="false"
 ```
 
 Run the following command to deploy the Cloud Pak for Data services:
@@ -173,6 +178,12 @@ If you want to want to see more detail status on an individual service, you can 
 ```
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --WSPipelinesStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --FactsheetStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --ReplicationStatus
 ```
 ```
 /data/daffy/cp4d/build.sh <ENVIRONMENT_NAME> --Console

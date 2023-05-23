@@ -38,7 +38,7 @@ You need to pick starter services and/or production services or RPA service.
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
 | CP4BA_VERSION                           |  22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002       |                
+| CP4BA_IFIX                              |  IF001, IF002. IF003       |                
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
@@ -98,11 +98,11 @@ CP4BA_RPA_SERVER_VERSION="21.0.5"
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        |  22.0.2 
-content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.2 
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 
+decisions        | odm, ads, bastudio, aae, bai        |  22.0.2
+content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.2
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2
 docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2
-all            | All Components(except iccsap)        | 22.0.2 
+all            | All Components(except iccsap)        | 22.0.2
 samples        | Depends on sample        | 22.0.2
 
 Run the following command to deploy the Cloud Pak for Business Automation:
@@ -150,7 +150,7 @@ Deploying the service does not need any new values to your environment file (<**
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
 | CP4BA_VERSION                           |  22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002       |       
+| CP4BA_IFIX                              |  IF001, IF002, IF003       |       
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,all,samples |  
 
 
@@ -211,11 +211,11 @@ CP4BA_RPA_SERVER_IFIX=""
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        | 22.0.2 
-content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.2 
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2 
-docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2 
-all            | all (except iccsap)       | 22.0.2 
+decisions        | odm, ads, bastudio, aae, bai        | 22.0.2
+content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.2
+workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2
+docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2
+all            | all (except iccsap)       | 22.0.2
 samples        | Depends on sample        | Depends on sample
 
 

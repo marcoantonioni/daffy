@@ -1,4 +1,31 @@
 
+## v2023-05-22
+        Tested OpenShift with Current Daffy Release
+              GCP                4.10.56/4.12.12
+              AWS                4.10.56/4.12.12
+              Azure              4.10.56/4.12.12
+              ROKS               4.10.53/4.12.7
+              VSphere            4.10.56/4.12.12
+              KVM                4.10.56/4.12.12
+              IBM IPI            4.10.56/4.12.12
+              ROSA               4.10.56/4.12.12
+              ARO                4.10.40
+              *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+          Cloud Pak for Business Automation
+              Added Support for 22.0.2 IF003
+          Cloud Pak for Watson AIOps
+              Added Support for 3.7.1
+          Cloud Pak for Data
+              Added Support for 4.6.5
+              Streamlined status messages for only those enabled
+              Added --exportcpdvars to build and services to get the variables for upgrades
+          Cloud Pak for Integration
+              Updated versions with MQ, ACE, APIC
+              Streamlined status messages for only those enabled
+          WebSphere Automation
+              Added support for 1.6
+          Misc
+              Removed support for 4.12.11 and 4.11.35 and below on AWS/ROSA due to known OCP bug with AWS
 ## v2023-04-27
           Tested OpenShift with Current Daffy Release
               GCP                4.10.36/4.12.9
@@ -31,13 +58,13 @@
           Misc
               Added support for KVM and Ubuntu 22.04 (deprecating 20.04 in next release)
               Added support for Ubuntu 22.04 as new bastion (deprecating 20.04 in next release)    
-              
+
 ## v2023-03-24a
           Cloud Pak for Business Automation
               SSL certificates allowed as Alt name *.apps.${CLUSTER}.${BASE_DOMAIN}
           OpenShift
               SSL certificates allowed as Alt name *.apps.${CLUSTER}.${BASE_DOMAIN} and api.${CLUSTER}.${BASE_DOMAIN}
-              
+
 ## v2023-03-24
           Cloud Pak for Security
               Removed entire cloud pak
@@ -53,7 +80,7 @@
           Cloud Pak for Integration
               Added Support for OpenShift 4.12
           OpenShift
-              Removed Support for 4.8 and 4.9 
+              Removed Support for 4.8 and 4.9
           Misc
               Added basic info during the setup of Daffy.  Install location, version, cert folder, samples, etc
               Removed daffy fixpak feature
@@ -108,7 +135,7 @@
           Misc
               Added cleanup logic to remove older log files.  Default is 30 days.  LOG_DIR_RETENTION=30
               Blink messages that are long, will now show a count down to how much longer it will wait for certain functions plus total time
-              
+
 ## v2023-01-11
           Tested OpenShift with Current Daffy Release
               GCP       4.8.51 / 4.10.36
