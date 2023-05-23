@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v2023-04-27" class="md-skip">
+        <a href="#v2023-05-22" class="md-skip">
           Skip to content
         </a>
       
@@ -1995,6 +1995,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v2023-05-22" class="md-nav__link">
+    v2023-05-22
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v2023-04-27" class="md-nav__link">
     v2023-04-27
   </a>
@@ -2206,6 +2213,34 @@
 
   <h1>Release</h1>
 
+<h2 id="v2023-05-22">v2023-05-22<a class="headerlink" href="#v2023-05-22" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>    Tested OpenShift with Current Daffy Release
+          GCP                4.10.56/4.12.12
+          AWS                4.10.56/4.12.12
+          Azure              4.10.56/4.12.12
+          ROKS               4.10.53/4.12.7
+          VSphere            4.10.56/4.12.12
+          KVM                4.10.56/4.12.12
+          IBM IPI            4.10.56/4.12.12
+          ROSA               4.10.56/4.12.12
+          ARO                4.10.40
+          *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+      Cloud Pak for Business Automation
+          Added Support for 22.0.2 IF003
+      Cloud Pak for Watson AIOps
+          Added Support for 3.7.1
+      Cloud Pak for Data
+          Added Support for 4.6.5
+          Streamlined status messages for only those enabled
+          Added --exportcpdvars to build and services to get the variables for upgrades
+      Cloud Pak for Integration
+          Updated versions with MQ, ACE, APIC
+          Streamlined status messages for only those enabled
+      WebSphere Automation
+          Added support for 1.6
+      Misc
+          Removed support for 4.12.11 and 4.11.35 and below on AWS/ROSA due to known OCP bug with AWS
+</code></pre></div>
 <h2 id="v2023-04-27">v2023-04-27<a class="headerlink" href="#v2023-04-27" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>      Tested OpenShift with Current Daffy Release
           GCP                4.10.36/4.12.9
@@ -2260,7 +2295,7 @@
       Cloud Pak for Integration
           Added Support for OpenShift 4.12
       OpenShift
-          Removed Support for 4.8 and 4.9 
+          Removed Support for 4.8 and 4.9
       Misc
           Added basic info during the setup of Daffy.  Install location, version, cert folder, samples, etc
           Removed daffy fixpak feature
