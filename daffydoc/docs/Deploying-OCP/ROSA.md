@@ -44,7 +44,7 @@ Next, go to the Red Hat token page to get a ROSA token for login and generate or
 !!! Note
     You must have a valid Red Hat login id. You can signup with any email address
 
-[https://console.redhat.com/openshift/token/rosa](ROSA Token){target=_blank}
+[https://console.redhat.com/openshift/token/rosa](https://console.redhat.com/openshift/token/rosa){target=_blank}
 
 <img src='../images/rosa_token.jpg'/>
 
