@@ -23,7 +23,7 @@ Turbonomic is an Application Resource Management (ARM) tool used to identify and
 **_REQUIRED ENVIRONMENT VARIABLES_**
 
 ```R
-TURBO_PLATFORM_VERSION="8.5.4"
+TURBO_PLATFORM_VERSION="8.9.2"
 ```
 
 ##Kubeturbo
