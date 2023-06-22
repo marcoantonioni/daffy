@@ -38,7 +38,7 @@ You need to pick starter services and/or production services or RPA service.
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
 | CP4BA_VERSION                           |  22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002. IF003       |                
+| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005       |                
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
@@ -70,7 +70,7 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 #Core CP4BA Settings
 ###################################################
 CP4BA_VERSION="22.0.2"
-CP4BA_IFIX="IF002"
+CP4BA_IFIX="IF005"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 #Prodution Services
@@ -150,7 +150,7 @@ Deploying the service does not need any new values to your environment file (<**
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
 | CP4BA_VERSION                           |  22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002, IF003       |       
+| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005       |       
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,all,samples |  
 
 
@@ -190,7 +190,7 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 #Core CP4BA Settings
 ###################################################
 CP4BA_VERSION="22.0.2"
-CP4BA_IFIX="IF002"
+CP4BA_IFIX="IF005"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 

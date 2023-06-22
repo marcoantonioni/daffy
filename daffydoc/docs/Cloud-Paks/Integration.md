@@ -25,7 +25,7 @@ Deploying the Cloud Pak for Integration only requires one entry to your environm
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4I_VERSION="2022.4.1"
+CP4I_VERSION="2023.2.1"
 ```
 
 With this one value, the Daffy engine will be able to install the version of Cloud Pak for Integration and the Platform Navigator.
@@ -35,7 +35,8 @@ The service consist of the following products:
 platform navigator
 
 | Integration Supported Version    | OCP Versions |
-| :---      |    :----    |  
+| :---      |    :----    |
+| 2023.2.1     | 4.10 & 4.12     |
 | 2022.4.1     | 4.10 & 4.12     |
 | 2022.2.1     | 4.10     |
 
@@ -67,6 +68,7 @@ With these values, the Daffy engine will be able to install the version of Cloud
 | CP4I_ENABLE_SERVICE_APIC | true / false   | API Connect |  No  |
 | CP4I_ENABLE_SERVICE_MQHA | true / false   | Cloud Native MQ HA |   No  |
 | CP4I_ENABLE_SERVICE_EVENTSTREAMS | true / false   | Event Streams |  No  |
+| CP4I_ENABLE_SERVICE_ENDPOINT_MGMT | true / false   | Event Endpoint Management |  No  |
 
 **Run the following command** to deploy the Cloud Pak for Integration services:
 
@@ -112,6 +114,9 @@ If you want to want to see more detail status on an individual service, you can 
 ```
 ```
 /data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --EventStreamsStatus
+```
+```
+/data/daffy/cp4i/service.sh <ENVIRONMENT_NAME> --EEMStatus
 ```
 To find out the connection info to your Integration Platform Navigator instance, you can run the console flag to get user names, passwords, and URLs to connect to:
 

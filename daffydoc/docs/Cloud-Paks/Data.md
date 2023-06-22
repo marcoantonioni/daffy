@@ -24,13 +24,14 @@ Deploying the Cloud Pak for Data requires one entry to your environment file (/d
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4D_VERSION="4.6.5"
+CP4D_VERSION="4.6.6"
 ```
 
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
+| 4.6.6     | 4.10, 4.12    |
 | 4.6.5     | 4.10, 4.12    |
 | 4.6.4     | 4.10, 4.12    |
 | 4.6.3     | 4.10    |
@@ -191,3 +192,91 @@ If you want to want to see more detail status on an individual service, you can 
 
 <img src='../images/uncomment_services.png'
        style="width:1374px;height:700px;"/>
+
+## Day 2 Operations: Upgrade
+
+Read the documentation for complete instructions and help - [https://www.ibm.com/docs/en/cloud-paks/cp-data/4.6.x?topic=upgrading](https://www.ibm.com/docs/en/cloud-paks/cp-data/4.6.x?topic=upgrading){target=_blank}. This assumes you have an environment file filled out with the correct information about the storage, services, and current cloud pak version.
+
+Step 1: Update the cpd-cli
+
+Run the following command to download the Cloud Pak for Data command line utility and choose the version you want to upgrade to:
+```
+/data/daffy/tools.sh --installCP4DCloudCLI
+```
+
+Step 2: Login to the cpd-cli
+
+Run the following command to login using the command line utility previously (must already be logged into OpenShift):
+```
+/data/daffy/tmp/cpdcli/<CPDCLI_VERSION_INFO>/cpd-cli manage login-to-ocp --token=$(oc whoami -t) --server=<OPENSHIFT_API_ADDRESS>
+```
+
+Step 3: Export the CPD variables for base cloud pak
+
+Run the following command to get the cp4d variables exported for the base cloud pak platform:
+```
+/data/daffy/cp4d/build.sh <ENVIRONMENT_NAME> --exportcpdvars
+```
+
+Step 4: Update the version in your variables environment to match the version you want to get to. The file will be located in /data/daffy/tmp/<CLUSTER_NAME>/cp4d/cpd_vars.sh. Find the line export VERSION=4.6.x
+
+Step 5: Check to make sure the status of the components all say completed.
+
+Run the following commands to update the base cloud pak OLM objects
+```
+source /data/daffy/tmp/<CLUSTER_NAME>/cp4d/cpd_vars.sh
+/data/daffy/tmp/cpdcli/<CPDCLI_VERSION_INFO>/cpd-cli manage get-cr-status --cpd_instance_ns=${PROJECT_CPD_INSTANCE}
+```
+
+Step 6: Update the base cloud pak (OLM Objects)
+
+Run the following commands to update the base cloud pak OLM objects
+```
+/data/daffy/tmp/cpdcli/<CPDCLI_VERSION_INFO>/cpd-cli manage apply-olm --release=${VERSION} --cpd_operator_ns=${PROJECT_CPD_OPS} --upgrade=true
+```
+
+Step 7: Update the base cloud pak services
+
+Run the following command to update base cloud pak services:
+```
+/data/daffy/tmp/cpdcli/<CPDCLI_VERSION_INFO>/cpd-cli manage apply-cr \
+--components=${COMPONENTS} \
+--release=${VERSION} \
+--cpd_instance_ns=${PROJECT_CPD_INSTANCE} \
+--block_storage_class=${STG_CLASS_BLOCK} \
+--file_storage_class=${STG_CLASS_FILE} \
+--license_acceptance=true \
+--upgrade=true
+```
+
+Step 8: Export the services cp4d variables
+
+!!! warning
+	This will overwrite the cpd_vars file from the platform steps and will only look at the components/services installed. Make sure you update the version again as in step 4.
+
+Run the following command to get the cp4d variables exported for the cloud pak services that are installed:
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --exportcpdvars
+```
+
+Step 9: Upgrade the components/services
+
+Run the following command to update cloud pak services:
+```
+source /data/daffy/tmp/<CLUSTER_NAME>/cp4d/cpd_vars.sh
+/data/daffy/tmp/cpdcli/<CPDCLI_VERSION_INFO>/cpd-cli manage apply-cr \
+--components=${COMPONENTS} \
+--release=${VERSION} \
+--cpd_instance_ns=${PROJECT_CPD_INSTANCE} \
+--block_storage_class=${STG_CLASS_BLOCK} \
+--file_storage_class=${STG_CLASS_FILE} \
+--license_acceptance=true \
+--upgrade=true
+```
+
+!!! warning
+	If Step 9 fails for some reason, run the following command and then step 8 again.
+  ```
+  source /data/daffy/tmp/<CLUSTER_NAME>/cp4d/cpd_vars.sh
+  /data/daffy/tmp/cpdcli/<CPDCLI_VERSION_INFO>/cpd-cli manage restart-container
+  ```
