@@ -1,4 +1,38 @@
-
+## v2023-06-22
+        Tested OpenShift with Current Daffy Release
+              GCP                4.10.56/4.12.16/4.13.2
+              AWS                4.10.56/4.12.16/4.13.2
+              Azure              4.10.56/4.12.16/4.13.2
+              ROKS               4.10.53/4.12.16
+              VSphere            4.10.56/4.12.16/4.13.2
+              KVM                4.10.56/4.12.16/4.13.2
+              IBM IPI            4.10.56/4.12.16/4.13.2
+              ROSA               4.10.56/4.12.16/4.13.0
+              ARO                4.10.40
+              *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+        Cloud Pak for Business Automation
+            Added Support for 22.0.2 IF004
+            Added Support for 22.0.2 IF005
+        Cloud Pak for Data
+            Added Support for 4.6.6
+            Update process documented using Daffy (https://ibm.github.io/daffy/Cloud-Paks/Data/#day-2-operations-upgrade)
+        Cloud Pak for Integration
+            Updated to support cloud pak foundational services in a custom namespace (cp4i-fs)
+            Added support for 2023.2.1
+            Removed ability to deploy operations dashboard with 2023 as its deprecated.
+            Added Event Endpoint Management as its own deployable service
+        Cloud Pak for Watson AIOps
+            Added support for V 3.7.2
+        OpenShift
+            Added Support for 4.13
+            Update mirror-registry to 1.3.6
+        Turbonomic
+            Added support for 8.9.2
+            Added support for 8.9.0
+            Removed support for all versions prior to 8.7.5
+        Misc
+            On-line Configurator Updated to support latest versions of cloud pak's
+            Command-line configurator updated to support latest updates
 ## v2023-05-22
         Tested OpenShift with Current Daffy Release
               GCP                4.10.56/4.12.12
