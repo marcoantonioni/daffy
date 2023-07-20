@@ -19,6 +19,7 @@ hide:
       </div>
     </div>
   </div>
+  <div class="column">
     <div class="card"style="width: 12rem;">
       <img src="../images/david-krier.jpeg"style="width:100%">
       <div class="container">
