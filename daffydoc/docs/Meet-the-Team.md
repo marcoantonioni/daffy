@@ -12,6 +12,14 @@ hide:
 <div class="row">
     <div class="column">
     <div class="card"style="width: 12rem;">
+      <img src="../images/kyle-dawson.jpeg" style="width:100%">
+      <div class="container">
+        <h2>Kyle Dawson</h2>
+        <p class="title">Principal Automation Technical Specialist, IBM Technology, US National Market<br><br><br></p>
+      </div>
+    </div>
+  </div>
+    <div class="card"style="width: 12rem;">
       <img src="../images/david-krier.jpeg"style="width:100%">
       <div class="container">
         <h2>David Krier</h2>
