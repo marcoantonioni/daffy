@@ -37,8 +37,8 @@ You need to pick starter services and/or production services or RPA service.
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005       |                
+| CP4BA_VERSION                           |  23.0.1 or 22.0.2             |
+| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005(22.0.2 only)       |                
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
@@ -69,8 +69,8 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 #Core CP4BA Settings
 ###################################################
-CP4BA_VERSION="22.0.2"
-CP4BA_IFIX="IF005"
+CP4BA_VERSION="23.0.1"
+#CP4BA_IFIX=""
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 #Prodution Services
@@ -96,14 +96,15 @@ CP4BA_RPA_SERVER_VERSION="21.0.5"
 
 ### Starter Service Mapping
 
-Service | Components | CP4BA Version
-:----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        |  22.0.2
-content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai        | 22.0.2
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2
-docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2
-all            | All Components(except iccsap)        | 22.0.2
-samples        | Depends on sample        | 22.0.2
+Service             | Components                                                | CP4BA Version
+:-----------        |:-------------                                             | -----------
+decisions           | odm, ads, bastudio, aae, bai                              | 23.0.1 or 22.0.2
+content             | filenet, cmis, ier, tm, bai                               | 23.0.1 or 22.0.2 
+content-decisions   | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai       | 23.0.1 or 22.0.2
+workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1 or 22.0.2
+docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1 or 22.0.2
+all                 | All Components(except iccsap)                             | 23.0.1 or 22.0.2
+samples             | Depends on sample                                         | 23.0.1 or 22.0.2
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -121,7 +122,9 @@ When this step is complete, approximately after 10 minutes depending on your env
 - cp4ba-content
 - cp4ba-decisions
 - cp4ba-workflow
-- cs-control
+- cs-control  (22.0.2 only)
+- ibm-licensing (23.0.1 only)
+- ibm-cert-manager (23.0.1 only)
 
 
 <html>
@@ -149,8 +152,8 @@ Deploying the service does not need any new values to your environment file (<**
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005       |       
+| CP4BA_VERSION                           |  23.0.01 or 22.0.2             |
+| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005 (only 22.0.2)      |       
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,all,samples |  
 
 
@@ -189,8 +192,8 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 ```R
 #Core CP4BA Settings
 ###################################################
-CP4BA_VERSION="22.0.2"
-CP4BA_IFIX="IF005"
+CP4BA_VERSION="23.0.1"
+#CP4BA_IFIX=""
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 #CP4BA_DEPLOYMENT_STARTER_SERVICE_SAMPLE="<YourSampleHere>"
 
@@ -210,13 +213,14 @@ CP4BA_RPA_SERVER_IFIX=""
 ### Starter Service Mapping
 
 Service | Components | CP4BA Version
-:----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai        | 22.0.2
-content        | filenet, cmis, ier, tm, bai        | 22.0.2 content-decisions        | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai        | 22.0.2
-workflow       | workflow, workstreams, pfs, baw_authoring, case, bai       | 22.0.2
-docprocessing  | docprocessing, content, cmis, css, tm      | 22.0.2
-all            | all (except iccsap)       | 22.0.2
-samples        | Depends on sample        | Depends on sample
+:-----------        |:-------------| -----------
+decisions           | odm, ads, bastudio, aae, bai                              | 23.0.1 or 22.0.2
+content             | filenet, cmis, ier, tm, bai                               | 23.0.1 or 22.0.2 
+ontent-decisions    | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai       | 22.0.2
+workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1 or 22.0.2
+docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1 or 22.0.2
+all                 | all (except iccsap)                                       | 23.0.1 or 22.0.2
+samples              | Depends on sample                                        | Depends on sample
 
 
 
@@ -229,7 +233,7 @@ Be aware, this step is async, meaning that the Daffy engine will deploy the serv
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai         | 22.0.2
+decisions        | odm, ads, bastudio, aae, bai         | 23.0.1 or 22.0.2
 
 
 ##### Decisions Production
@@ -287,26 +291,13 @@ Run the following commands to check the Cloud Pak for Business Automation to see
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --help
 ```
 
-The following command will give you the status of all ***starter*** components for the service you deployed:
-
-
-```
-/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
-```
-
-If you want to show just one status of ***starter*** service that you deployed for example CP4BA_DEPLOYMENT_STARTER_DECISIONS:
-
-```
-/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus decisions
-```
-
-
-The following command will give you the status of all ***Production*** components for the service you deployed:
+The following command will give you the status of all ***starter and productin*** components for the service you deployed:
 
 
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --Status
 ```
+
 
 The following command will give you the status of ***RPA Server*** you deployed:
 
@@ -317,27 +308,14 @@ The following command will give you the status of ***RPA Server*** you deployed:
 If you want to have a running job to refresh every few seconds,  you can run the above command via the watch command:
 
 ```
-watch -c /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterStatus
+watch -c /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --Status
 ```
 
-To find out the connection info to your new ***starter*** services, you can run the console flag to get user names, passwords, and URLs to connect to:
-
-```
-/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole
-```
-
-If you want to show just one console of ***starter*** service that you deployed for example CP4BA_DEPLOYMENT_STARTER_DECISIONS:
-
-```
-/data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --StarterConsole decisions
-```
-
-To find out the connection info to your new ***Production*** services, you can run the console flag to get user names, passwords, and URLs to connect to:
+To find out the connection info to your new ***starter and productin***  services, you can run the console flag to get user names, passwords, and URLs to connect to:
 
 ```
 /data/daffy/cp4ba/service.sh <ENVIRONMENT_NAME> --Console
 ```
-
 
 To find out the connection info to your ***RPA Server***, you can run the console flag to get user names, passwords, and URLs to connect to:
 
@@ -395,12 +373,12 @@ At this point, you are ready to logon to your RPA Server Console.
 ### ***Decisions Server***
 Once you have installed Production Decisions Server pattern, you will need to do a few steps.
 
-1. Map Your LDAP Groups to IDP Roles
+1. Map Your LDAP Groups to IDP Roles(<font color=red>only for 22.0.2 - not needed for 23.0.1)</font>
 2. Install and Configure your Rule Designer
 
 #### Map LDAP groups to Roles
 
-Run the following command to Import and Map your LDAP groups to Zen roles
+Run the following command to Import and Map your LDAP groups to Zen roles (<font color=red>only for 22.0.2 - not needed for 23.0.1)</font>
 
 ```
 /data/daffy/cp4ba/service.sh <env_name> --decisionImportLDAPGroups
