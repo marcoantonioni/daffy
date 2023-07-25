@@ -1,3 +1,32 @@
+## v2023-07-24
+        Tested OpenShift with Current Daffy Release
+              GCP                4.10.56/4.12.16/4.13.2
+              AWS                4.10.56/4.12.16/4.13.2
+              Azure              4.10.56/4.12.16/4.13.2
+              ROKS               4.10.61/4.12.20/4.13.0
+              VSphere            4.10.56/4.12.16/4.13.2
+              KVM                4.10.56/4.12.16/4.13.2
+              IBM IPI            4.10.56/4.12.16/4.13.2
+              ROSA               4.10.56/4.12.16/4.13.0
+              ARO                4.10.40
+              *** Known issue with OCP 4.10.39 and above.  Operators fail to install sporadically on all Cloud Paks
+        Instana
+              Added support for 247-0
+        Cloud Pak for Business Automation
+              Added Support for 23.0.1
+        Cloud Pak for Data
+              Added support for 4.7.0
+              Deprecated support for 4.5.3
+        Cloud Pak for Integration
+              Added support for cluster scoped install
+              Updated App Connect to 12.0.8.0-r3
+        Cloud Pak for Watston AIOps
+              Added support for V4.1.0
+              Removed support for 3.5.x
+        Misc
+              Daffy bastion support for RHEL 9.x
+              Fixed variable for GCP Install
+              Fixed bug in AWS where it wouldn't build ODF machine sets if brought own VPC
 ## v2023-06-22
         Tested OpenShift with Current Daffy Release
               GCP                4.10.56/4.12.16/4.13.2
