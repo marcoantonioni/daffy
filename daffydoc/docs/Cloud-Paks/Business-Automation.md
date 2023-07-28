@@ -373,12 +373,12 @@ At this point, you are ready to logon to your RPA Server Console.
 ### ***Decisions Server***
 Once you have installed Production Decisions Server pattern, you will need to do a few steps.
 
-1. Map Your LDAP Groups to IDP Roles(<font color=red>only for 22.0.2 - not needed for 23.0.1)</font>
+1. Map Your LDAP Groups to IDP Roles</font>
 2. Install and Configure your Rule Designer
 
 #### Map LDAP groups to Roles
 
-Run the following command to Import and Map your LDAP groups to Zen roles (<font color=red>only for 22.0.2 - not needed for 23.0.1)</font>
+Run the following command to Import and Map your LDAP groups to Zen roles
 
 ```
 /data/daffy/cp4ba/service.sh <env_name> --decisionImportLDAPGroups
