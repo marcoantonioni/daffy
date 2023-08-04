@@ -2094,7 +2094,7 @@
 <p>Deploying the Cloud Pak for Data requires one entry to your environment file (/data/daffy/env/&lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh).</p>
 <p><strong>CP4D_VERSION=</strong></p>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:</p>
-<div class="highlight"><pre><span></span><code><span class="n">CP4D_VERSION</span><span class="o">=</span><span class="s">&quot;4.7.0&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">CP4D_VERSION</span><span class="o">=</span><span class="s">&quot;4.7.1&quot;</span>
 </code></pre></div>
 <p>With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.</p>
 <table>
@@ -2105,6 +2105,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td align="left">4.7.1</td>
+<td align="left">4.10, 4.12</td>
+</tr>
 <tr>
 <td align="left">4.7.0</td>
 <td align="left">4.10, 4.12</td>
@@ -2264,6 +2268,12 @@ When this step is complete, approximately after 60 minutes depending on your env
 <td align="left">Data Replication</td>
 <td align="left">No</td>
 </tr>
+<tr>
+<td align="left">CP4D_ENABLE_SERVICE_WATSONX_DATA</td>
+<td align="left">true / false</td>
+<td align="left">Data Replication</td>
+<td align="left">No</td>
+</tr>
 </tbody>
 </table>
 <p>You can copy the following to your &lt;<strong>ENVIRONMENT_NAME</strong>&gt;-env.sh:</p>
@@ -2288,6 +2298,7 @@ When this step is complete, approximately after 60 minutes depending on your env
 <span class="n">CP4D_ENABLE_SERVICE_WS_PIPELINES</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 <span class="n">CP4D_ENABLE_SERVICE_FACTSHEETS</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 <span class="n">CP4D_ENABLE_SERVICE_REPLICATION</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
+<span class="n">CP4D_ENABLE_SERVICE_WATSONX_DATA</span><span class="o">=</span><span class="s">&quot;false&quot;</span>
 </code></pre></div>
 <p>Run the following command to deploy the Cloud Pak for Data services:</p>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt;
@@ -2341,6 +2352,8 @@ If you want to want to see more detail status on an individual service, you can 
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --FactsheetStatus
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --ReplicationStatus
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>/data/daffy/cp4d/service.sh &lt;ENVIRONMENT_NAME&gt; --WatsonxDataStatus
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>/data/daffy/cp4d/build.sh &lt;ENVIRONMENT_NAME&gt; --Console
 </code></pre></div></p>
