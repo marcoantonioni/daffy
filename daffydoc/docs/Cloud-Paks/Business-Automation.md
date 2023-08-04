@@ -70,7 +70,7 @@ You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 #Core CP4BA Settings
 ###################################################
 CP4BA_VERSION="23.0.1"
-#CP4BA_IFIX=""
+CP4BA_IFIX="IF001"
 CP4BA_DEPLOYMENT_STARTER_SERVICE="content"
 
 #Prodution Services
@@ -104,7 +104,7 @@ content-decisions   | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai       
 workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1
 docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1
 all                 | All Components(except iccsap)                             | 23.0.1
-samples             | Depends on sample                                         | 23.0.1 
+samples             | Depends on sample                                         | 23.0.1
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -122,7 +122,6 @@ When this step is complete, approximately after 10 minutes depending on your env
 - cp4ba-content
 - cp4ba-decisions
 - cp4ba-workflow
-- cs-control  (22.0.2 only)
 - ibm-licensing (23.0.1 only)
 - ibm-cert-manager (23.0.1 only)
 
@@ -214,12 +213,12 @@ CP4BA_RPA_SERVER_IFIX=""
 
 Service | Components | CP4BA Version
 :-----------        |:-------------| -----------
-decisions           | odm, ads, bastudio, aae, bai                              | 23.0.1 or 22.0.2
-content             | filenet, cmis, ier, tm, bai                               | 23.0.1 or 22.0.2
-ontent-decisions    | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai       | 22.0.2
-workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1 or 22.0.2
-docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1 or 22.0.2
-all                 | all (except iccsap)                                       | 23.0.1 or 22.0.2
+decisions           | odm, ads, bastudio, aae, bai                              | 23.0.1
+content             | filenet, cmis, ier, tm, bai                               | 23.0.1
+ontent-decisions    | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai       | 23.0.1
+workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1
+docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1
+all                 | all (except iccsap)                                       | 23.0.1
 samples              | Depends on sample                                        | Depends on sample
 
 
@@ -392,7 +391,7 @@ Run the following command to Import and Map your LDAP groups to Zen roles
 After you installed Decisions Services, you need to install and connect Rule Designer to your new instance. For the next steps, any information you need from your environment you should be able to collect from the service.sh --console  command output of Daffy.
 
 !!! important
-	Original Instructions can be found [here](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=manager-installing-rule-designer){target=_blank}
+	Original Instructions can be found [here](https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/23.0.1?topic=manager-installing-rule-designer){target=_blank}
 
 
 1) Download and install Eclipse. [Download Eclipse](https://www.eclipse.org/downloads/packages/release/2020-06/r){target=_blank}
