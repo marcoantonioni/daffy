@@ -2490,7 +2490,7 @@ You need to pick starter services and/or production services or RPA service.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">#Core CP4BA Settings</span>
 <span class="c1">###################################################</span>
 <span class="n">CP4BA_VERSION</span><span class="o">=</span><span class="s">&quot;23.0.1&quot;</span>
-<span class="c1">#CP4BA_IFIX=&quot;&quot;</span>
+<span class="n">CP4BA_IFIX</span><span class="o">=</span><span class="s">&quot;IF001&quot;</span>
 <span class="n">CP4BA_DEPLOYMENT_STARTER_SERVICE</span><span class="o">=</span><span class="s">&quot;content&quot;</span>
 
 <span class="c1">#Prodution Services</span>
@@ -2573,7 +2573,6 @@ You need to pick starter services and/or production services or RPA service.</p>
 <li>cp4ba-content</li>
 <li>cp4ba-decisions</li>
 <li>cp4ba-workflow</li>
-<li>cs-control  (22.0.2 only)</li>
 <li>ibm-licensing (23.0.1 only)</li>
 <li>ibm-cert-manager (23.0.1 only)</li>
 </ul>
@@ -2775,32 +2774,32 @@ You need to pick starter services and/or production services or RPA service.</p>
 <tr>
 <td align="left">decisions</td>
 <td align="left">odm, ads, bastudio, aae, bai</td>
-<td>23.0.1 or 22.0.2</td>
+<td>23.0.1</td>
 </tr>
 <tr>
 <td align="left">content</td>
 <td align="left">filenet, cmis, ier, tm, bai</td>
-<td>23.0.1 or 22.0.2</td>
+<td>23.0.1</td>
 </tr>
 <tr>
 <td align="left">ontent-decisions</td>
 <td align="left">filenet, cmis, ier, tm, odm, ads, bastudio, aae bai</td>
-<td>22.0.2</td>
+<td>23.0.1</td>
 </tr>
 <tr>
 <td align="left">workflow</td>
 <td align="left">workflow, workstreams, pfs, baw_authoring, case, bai</td>
-<td>23.0.1 or 22.0.2</td>
+<td>23.0.1</td>
 </tr>
 <tr>
 <td align="left">docprocessing</td>
 <td align="left">docprocessing, content, cmis, css, tm</td>
-<td>23.0.1 or 22.0.2</td>
+<td>23.0.1</td>
 </tr>
 <tr>
 <td align="left">all</td>
 <td align="left">all (except iccsap)</td>
-<td>23.0.1 or 22.0.2</td>
+<td>23.0.1</td>
 </tr>
 <tr>
 <td align="left">samples</td>
@@ -2972,7 +2971,7 @@ You need to pick starter services and/or production services or RPA service.</p>
 <p>After you installed Decisions Services, you need to install and connect Rule Designer to your new instance. For the next steps, any information you need from your environment you should be able to collect from the service.sh --console  command output of Daffy.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Original Instructions can be found <a href="https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/22.0.2?topic=manager-installing-rule-designer" target="_blank">here</a></p>
+<p>Original Instructions can be found <a href="https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/23.0.1?topic=manager-installing-rule-designer" target="_blank">here</a></p>
 </div>
 <p>1) Download and install Eclipse. <a href="https://www.eclipse.org/downloads/packages/release/2020-06/r" target="_blank">Download Eclipse</a></p>
 <details class="info">
