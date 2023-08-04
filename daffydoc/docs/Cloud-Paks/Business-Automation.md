@@ -37,8 +37,8 @@ You need to pick starter services and/or production services or RPA service.
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  23.0.1 or 22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005(22.0.2 only)       |                
+| CP4BA_VERSION                           |  23.0.1              |
+| CP4BA_IFIX                              |  IF001       |                
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,docprocessing,samples,all |  
 
 ### RPA Server
@@ -98,13 +98,13 @@ CP4BA_RPA_SERVER_VERSION="21.0.5"
 
 Service             | Components                                                | CP4BA Version
 :-----------        |:-------------                                             | -----------
-decisions           | odm, ads, bastudio, aae, bai                              | 23.0.1 or 22.0.2
-content             | filenet, cmis, ier, tm, bai                               | 23.0.1 or 22.0.2 
-content-decisions   | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai       | 23.0.1 or 22.0.2
-workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1 or 22.0.2
-docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1 or 22.0.2
-all                 | All Components(except iccsap)                             | 23.0.1 or 22.0.2
-samples             | Depends on sample                                         | 23.0.1 or 22.0.2
+decisions           | odm, ads, bastudio, aae, bai                              | 23.0.1
+content             | filenet, cmis, ier, tm, bai                               | 23.0.1  
+content-decisions   | filenet, cmis, ier, tm, odm, ads, bastudio, aae, ai       | 23.0.1
+workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1
+docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1
+all                 | All Components(except iccsap)                             | 23.0.1
+samples             | Depends on sample                                         | 23.0.1 
 
 Run the following command to deploy the Cloud Pak for Business Automation:
 
@@ -152,8 +152,8 @@ Deploying the service does not need any new values to your environment file (<**
 
 | Variable Name                           | Valid Options       |
 | :---------                              |    :---------       |  
-| CP4BA_VERSION                           |  23.0.01 or 22.0.2             |
-| CP4BA_IFIX                              |  IF001, IF002, IF003, IF004, IF005 (only 22.0.2)      |       
+| CP4BA_VERSION                           |  23.0.1              |
+| CP4BA_IFIX                              |  IF001      |       
 | CP4BA_DEPLOYMENT_STARTER_SERVICE        |  content,decisions,docprocessing,content-decisions,workflow,all,samples |  
 
 
@@ -215,7 +215,7 @@ CP4BA_RPA_SERVER_IFIX=""
 Service | Components | CP4BA Version
 :-----------        |:-------------| -----------
 decisions           | odm, ads, bastudio, aae, bai                              | 23.0.1 or 22.0.2
-content             | filenet, cmis, ier, tm, bai                               | 23.0.1 or 22.0.2 
+content             | filenet, cmis, ier, tm, bai                               | 23.0.1 or 22.0.2
 ontent-decisions    | filenet, cmis, ier, tm, odm, ads, bastudio, aae bai       | 22.0.2
 workflow            | workflow, workstreams, pfs, baw_authoring, case, bai      | 23.0.1 or 22.0.2
 docprocessing       | docprocessing, content, cmis, css, tm                     | 23.0.1 or 22.0.2
@@ -233,7 +233,7 @@ Be aware, this step is async, meaning that the Daffy engine will deploy the serv
 
 Service | Components | CP4BA Version
 :----------- |:-------------| -----------
-decisions        | odm, ads, bastudio, aae, bai         | 23.0.1 or 22.0.2
+decisions        | odm, ads, bastudio, aae, bai         | 23.0.1
 
 
 ##### Decisions Production

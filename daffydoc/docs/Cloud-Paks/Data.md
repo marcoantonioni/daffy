@@ -24,13 +24,14 @@ Deploying the Cloud Pak for Data requires one entry to your environment file (/d
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
 ```R
-CP4D_VERSION="4.7.0"
+CP4D_VERSION="4.7.1"
 ```
 
 With these values, the Daffy engine will be able to install the version of Cloud Pak for Data and prepare for the desired services.
 
 | CP4D Supported Version    | OCP Versions |
 | :---      |    :----     |
+| 4.7.1     | 4.10, 4.12    |
 | 4.7.0     | 4.10, 4.12    |
 | 4.6.[4-6]     | 4.10, 4.12    |
 | 4.6.[0-3]     | 4.10    |
@@ -73,6 +74,7 @@ Set the flags in your environment file (<**ENVIRONMENT_NAME**>-env.sh) for the C
 | CP4D_ENABLE_SERVICE_WS_PIPELINES| true / false   |  Watson Pipelines | No    |
 | CP4D_ENABLE_SERVICE_FACTSHEETS| true / false   |  AI FactSheets | No    |
 | CP4D_ENABLE_SERVICE_REPLICATION| true / false   |  Data Replication | No    |
+| CP4D_ENABLE_SERVICE_WATSONX_DATA| true / false   |  Data Replication | No    |
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
@@ -98,6 +100,7 @@ CP4D_ENABLE_SERVICE_WATSON_OPENSCALE="false"
 CP4D_ENABLE_SERVICE_WS_PIPELINES="false"
 CP4D_ENABLE_SERVICE_FACTSHEETS="false"
 CP4D_ENABLE_SERVICE_REPLICATION="false"
+CP4D_ENABLE_SERVICE_WATSONX_DATA="false"
 ```
 
 Run the following command to deploy the Cloud Pak for Data services:
@@ -181,6 +184,9 @@ If you want to want to see more detail status on an individual service, you can 
 ```
 ```
 /data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --ReplicationStatus
+```
+```
+/data/daffy/cp4d/service.sh <ENVIRONMENT_NAME> --WatsonxDataStatus
 ```
 ```
 /data/daffy/cp4d/build.sh <ENVIRONMENT_NAME> --Console
