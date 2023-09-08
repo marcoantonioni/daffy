@@ -11,7 +11,7 @@ Requirements for completing this task is to have an IBMid, an IBM cloud account,
 
 
 !!! important
-	Regardless of where your bastion is hosted, if it is accessable on the public internet it is HIGHLY recommended that you disable root user password authentication and ONLY allow SSH Key login. Please refer to the instructions [here](/daffy/More/secure-server-ssh-only-login) for more information on how to do that. 
+	Regardless of where your bastion is hosted, if it is accessable on the public internet it is HIGHLY recommended that you disable root user password authentication and ONLY allow SSH Key login. Please refer to the instructions [here](/daffy/More/secure-server-ssh-only-login) for more information on how to do that.
 
 
 Detailed below are the instructions to build your own bastion to do an IPI or MSP install.
@@ -71,12 +71,10 @@ There are three options with TechZone
 !!! Warning   
       For internal IBM or Business partner use only
 
-1. Use this link to navigate to **IBM Technology Zone:** https://techzone.ibm.com/collection/base-images
-
-2. Scroll down to environments, and choose **IBM Virtual Server Instance (Classic)**
+1.Find one on **IBM Technology Zone:** https://techzone.ibm.com/
 
 ![10.png](../images/SupportingSoftware/CreateYourOwnBastion/10.png)
 
-3. From there, complete your reservation. Make sure to **fill out items 1 – 4**, leaving the other fields **blank**.
+2. From there, complete your reservation. Make sure to **fill out items 1 – 4**, leaving the other fields **blank**.
 
 ![11.png](../images/SupportingSoftware/CreateYourOwnBastion/11.png)
