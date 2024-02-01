@@ -24,7 +24,7 @@ Deploying the Cloud Pak for Integration only requires one entry to your environm
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
-```R
+```
 CP4I_VERSION="2023.4.1"
 ```
 
