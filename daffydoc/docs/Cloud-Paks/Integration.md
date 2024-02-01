@@ -20,7 +20,7 @@ At this point, you have a working OCP cluster on your platform of choice. Your <
 
 Deploying the Cloud Pak for Integration only requires one entry to your environment file (/data/daffy/env/<**ENVIRONMENT_NAME**>-env.sh)
 
-**CP4I_VERSION=<version>**
+**CP4I_VERSION=2023.4.1**
 
 You can copy the following to your <**ENVIRONMENT_NAME**>-env.sh:
 
