@@ -14,17 +14,6 @@ hide:
 <div class="app-grid">
 
       <div class="app-card">
-       <a class="app-link" href="../IBMSterlingB2BBeta">
-        <div class="app-card-container">
-          <img src="../images/IBM_Sterling_B2B_Integration.png" alt="IBM Sterling B2B" />
-          <div class="app-card-text">
-            <h4>IBM Sterling B2B Integrator</h4>
-            <p>Installer</p>
-          </div>
-        </div>  
-      </a>      
-      </div>
-      <div class="app-card">
       <a class="app-link" href="../IBMDaffyCLIConfigurator">
         <div class="app-card-container">
           <img src="../images/DaffyCli.jpg" alt="IBM Daffy CLI Configurator"/>

@@ -1,3 +1,27 @@
+## v2024-01-31
+        Tested OpenShift with Current Daffy Release
+              GCP                4.12.40/4.14.6
+              AWS                4.12.40/4.14.6
+              Azure              4.12.40/4.14.6
+              ROKS               4.12.44/4.14.5
+              VSphere            4.12.40/4.14.6
+              KVM                4.12.40/4.14.6
+              IBM IPI            4.12.40/4.14.6
+              ROSA               4.12.40/4.14.6
+              ARO                4.12.40
+
+        Cloud Pak for Data
+              Added support for 4.7.2, 4.7.3, & 4.7.4
+              Deprecated support for 4.6.*
+        Cloud Pak for Business Automation
+              Added Support for 23.0.1 IFX005
+        Cloud Pak for Integration
+              Added Support for 2023.4.1
+        OpenShift
+              Added Support for 4.14
+              Removed support for 4.10 & 4.11
+        Misc
+              Remove appstore apps
 ## v2023-08-04
         Tested OpenShift with Current Daffy Release
               GCP                4.10.56/4.12.21/4.13.2
