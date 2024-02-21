@@ -36,7 +36,6 @@ nav:
     - Pre-Req: Deploying-OCP/Pre-Req.md
     - Core Steps: Deploying-OCP/Core-steps.md
     - Deployment Target:
-      - HCCX Gym: Deploying-OCP/HCCX-gym.md
       - TechZone: Deploying-OCP/TechZone.md
       - ROKS: Deploying-OCP/ROKS.md
       - Azure: Deploying-OCP/Azure.md
