@@ -22,10 +22,6 @@ hide:
 <button onclick="location.href='./ROKS/'" class="custom-btn btn-7">ROKS</button>
 <button onclick="location.href='./ROSA/'" class="custom-btn btn-7">ROSA</button>
 
-<div><B>Other Installs</B></div>
-<button onclick="location.href='./TechZone/'" class="custom-btn btn-7">TechZone</button>
-<button onclick="location.href='./TechZoneTiles/'" class="custom-btn btn-7">TechZoneTiles</button>
-
 <div><B>UPI Installs</B></div>
 <button onclick="location.href='./kvm/'" class="custom-btn btn-7">KVM</button>
 <button onclick="location.href='./VSphere/'" class="custom-btn btn-7">VSphere</button>

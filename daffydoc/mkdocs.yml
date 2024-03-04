@@ -36,7 +36,6 @@ nav:
     - Pre-Req: Deploying-OCP/Pre-Req.md
     - Core Steps: Deploying-OCP/Core-steps.md
     - Deployment Target:
-      - TechZone: Deploying-OCP/TechZone.md
       - ROKS: Deploying-OCP/ROKS.md
       - Azure: Deploying-OCP/Azure.md
       - ARO: Deploying-OCP/ARO.md
@@ -48,7 +47,6 @@ nav:
       - VSphere: Deploying-OCP/VSphere.md
       - Restricted Network: Deploying-OCP/Restricted-Network.md
       - Air Gap: Deploying-OCP/Restricted-Network.md
-      - TechZoneTiles: Deploying-OCP/TechZoneTiles.md
 #   - Extra Features: Deploying-OCP/extra_features.md
 #    - Pre-built Clusters: Deploying-OCP/Pre-Built-Cluster.md
   - Cloud Paks:
